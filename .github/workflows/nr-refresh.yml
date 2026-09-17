@@ -1,0 +1,26 @@
+name: Refresh New Recruit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Prohammer 30k.gst'
+      - 'Legiones Astartes.cat'
+      - 'index.xml'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask New Recruit to refresh this source
+        run: |
+          set +e
+          code=$(curl -sS -o /tmp/body.txt -w '%{http_code}' 'https://www.newrecruit.eu/api/check-for-update/Azubi1234/Prohammer-30k-live')
+          echo "HTTP $code"
+          cat /tmp/body.txt || true
+          if [ "$code" -ge 200 ] && [ "$code" -lt 300 ]; then
+            exit 0
+          fi
+          echo "New Recruit refresh endpoint did not accept the refresh yet. The repository itself remains valid and can still be added manually."
+          exit 0
