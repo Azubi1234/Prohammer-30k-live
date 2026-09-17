@@ -1,0 +1,26 @@
+name: Diagnose R8 command retinues
+on:
+  push:
+    paths:
+      - '.github/build/diag_r8_command_retinues.py'
+      - '.github/workflows/diag-r8-command-retinues.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python .github/build/diag_r8_command_retinues.py
+      - name: Commit diagnostic
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-r8-command-retinues.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: R8 command retinues'
+          git pull --rebase origin main
+          git push
