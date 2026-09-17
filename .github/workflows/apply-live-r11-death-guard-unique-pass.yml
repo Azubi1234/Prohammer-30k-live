@@ -1,0 +1,41 @@
+name: Apply Live R11 Death Guard unique pass
+on:
+  push:
+    paths:
+      - '.github/build/live_r11_death_guard_unique_pass.py'
+      - '.github/workflows/apply-live-r11-death-guard-unique-pass.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply Death Guard unique pass
+        run: python .github/build/live_r11_death_guard_unique_pass.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision')=='11'
+          assert r.get('gameSystemRevision')=='1'
+          idx=Path('index.xml').read_text(encoding='utf-8')
+          assert 'dataRevision="11"' in idx
+          t=Path('inspection-live-r11-death-guard-unique-pass.txt').read_text(encoding='utf-8')
+          assert 'Deathshroud' in t and 'Mortus Poisoner' in t and 'Mortarion' in t
+          print(t)
+          PY
+      - name: Commit Live R11
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r11-death-guard-unique-pass.txt
+          git diff --cached --quiet || git commit -m 'Live R11: begin Death Guard functional audit'
+          git pull --rebase origin main
+          git push
