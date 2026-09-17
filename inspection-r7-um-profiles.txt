@@ -1,0 +1,918 @@
+=== r41-unit-xiii-0-invictarus-suzerain-squad INVICTARUS SUZERAIN SQUAD ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+        
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Suzerain Legate" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-0-invictarus-suzerain-squad-profile-1">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+CHILD r41-unit-xiii-0-invictarus-suzerain-squad-additional Squad Models type=model default=5
+=== r41-unit-xiii-1-fulmentarus-terminator-squad FULMENTARUS TERMINATOR SQUAD ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Fulmentarus Terminator" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/4+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+        
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Fulmentarus Decurion" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-profile-1">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/4+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+CHILD r41-unit-xiii-1-fulmentarus-terminator-squad-additional Squad Models type=model default=5
+=== r41-unit-xiii-2-locutarus-storm-squad LOCUTARUS STORM SQUAD ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Locutarus" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+        
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Locutarus Strike Leader" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-profile-1">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+CHILD r41-unit-xiii-2-locutarus-storm-squad-additional Squad Models type=model default=5
+=== r41-unit-xiii-3-nemesis-destroyer-squad NEMESIS DESTROYER SQUAD ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Nemesis Destroyer" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">1</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+        
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Nemesis Destroyer Sergeant" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-profile-1">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+CHILD r41-unit-xiii-3-nemesis-destroyer-squad-additional Squad Models type=model default=5
+=== r41-unit-xiii-4-marius-gage-first-master MARIUS GAGE, FIRST MASTER ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Marius Gage" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-4-marius-gage-first-master-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">6</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">5</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">3</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">4</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/4+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Veteran" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-vets-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Apothecary" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-apoth-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Standard Bearer" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-standard-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Champion" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-champ-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Achilles" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Veteran" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-vets-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Apothecary" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-apoth-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Standard Bearer" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-standard-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Champion" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-champ-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Achilles" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-tc-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+        
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Suzerain Legate" typeId="prof-model" typeName="Model" hidden="false" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-profile-1">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+=== r41-unit-xiii-5-remus-ventanus REMUS VENTANUS ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Remus Ventanus" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-5-remus-ventanus-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">5</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">2</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Veteran" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-vets-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Apothecary" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-apoth-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Standard Bearer" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-standard-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Champion" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-champ-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Achilles" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+=== r41-unit-xiii-7-honoured-telemechrus HONOURED TELEMECHRUS ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Honoured Telemechrus" typeId="prof-walker" typeName="Walker" hidden="false" id="r41-unit-xiii-7-honoured-telemechrus-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="walker-ws">6</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="walker-bs">5</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="walker-s">7</ns0:characteristic>
+            <ns0:characteristic name="Front" typeId="walker-front">13</ns0:characteristic>
+            <ns0:characteristic name="Side" typeId="walker-side">12</ns0:characteristic>
+            <ns0:characteristic name="Rear" typeId="walker-rear">10</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="walker-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="walker-a">4</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+=== r41-unit-xiii-8-titus-prayto TITUS PRAYTO ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Titus Prayto" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-8-titus-prayto-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">5</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">3</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Veteran" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-vets-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Apothecary" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-apoth-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Standard Bearer" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-standard-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Champion" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-champ-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Achilles" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Smite" id="r7-prayto-r29-lib-power-0-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">2</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 4</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Life Leech" id="r7-prayto-r29-lib-power-3-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">6</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">2</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Flame Breath" id="r7-prayto-r29-lib-power-14-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">Template</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">5</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">4</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Soul Blaze</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Molton Beam" id="r7-prayto-r29-lib-power-16-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">12”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">8</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">1</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Melta</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Sunburst" id="r7-prayto-r29-lib-power-18-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">9”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">5</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2D6, Ignores Cover, Soul Blaze</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Inferno" id="r7-prayto-r29-lib-power-19-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">24”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">5</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Large Blast, Ignores Cover, Soul Blaze</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Assail" id="r7-prayto-r29-lib-power-21-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">6</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">–</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Strikedown</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Shockwave" id="r7-prayto-r29-lib-power-24-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">9”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">–</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2D6, Pinning</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Psychic Maelstrom" id="r7-prayto-r29-lib-power-27-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">12”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">10</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">1</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Barrage, Large Blast</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+=== r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son XIII — ROBOUTE GUILLIMAN, THE AVENGING SON ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Roboute Guilliman" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">7</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">6</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">6</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">6</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">6</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">6</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">5</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">1+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Champion" id="r6-guilliman-ret-0-hq-praetor-ret-honour-champ-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">6</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">5</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">2</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Honour Guard" id="r6-guilliman-ret-0-hq-praetor-ret-honour-base-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">5</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="r6-guilliman-ret-0-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="r6-guilliman-ret-0-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Achilles" id="r6-guilliman-ret-0-hq-praetor-ret-honour-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="r6-guilliman-ret-0-r83-ih-scions-12-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="r6-guilliman-ret-0-r83-ih-scions-13-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                            <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                            <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                            <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Veteran" id="r6-guilliman-ret-1-hq-praetor-ret-tc-vets-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Apothecary" id="r6-guilliman-ret-1-hq-praetor-ret-tc-apoth-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Standard Bearer" id="r6-guilliman-ret-1-hq-praetor-ret-tc-standard-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Terminator Champion" id="r6-guilliman-ret-1-hq-praetor-ret-tc-champ-prof" typeId="prof-model" typeName="Model" hidden="false">
+                      <ns0:characteristics>
+                        <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                        <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                        <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                        <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                        <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                        <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                        <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                        <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                        <ns0:characteristic name="Sv" typeId="model-sv">2+</ns0:characteristic>
+                      </ns0:characteristics>
+                    </ns0:profile>
+                  
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Phobos" id="r6-guilliman-ret-1-hq-praetor-ret-tc-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Proteus" id="r6-guilliman-ret-1-hq-praetor-ret-tc-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Land Raider Achilles" id="r6-guilliman-ret-1-hq-praetor-ret-tc-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                              <ns0:characteristics>
+                                <ns0:characteristic name="BS" typeId="vehicle-bs">4</ns0:characteristic>
+                                <ns0:characteristic name="Front" typeId="vehicle-front">14</ns0:characteristic>
+                                <ns0:characteristic name="Side" typeId="vehicle-side">14</ns0:characteristic>
+                                <ns0:characteristic name="Rear" typeId="vehicle-rear">14</ns0:characteristic>
+                              </ns0:characteristics>
+                            </ns0:profile>
+                          
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+        
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Suzerain Legate" typeId="prof-model" typeName="Model" hidden="false" id="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-profile-1">
+          <ns0:characteristics>
+            <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+            <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+            <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+            <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+            <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+            <ns0:characteristic name="I" typeId="model-i">5</ns0:characteristic>
+            <ns0:characteristic name="A" typeId="model-a">3</ns0:characteristic>
+            <ns0:characteristic name="Ld" typeId="model-ld">10</ns0:characteristic>
+            <ns0:characteristic name="Sv" typeId="model-sv">2+/5+</ns0:characteristic>
+          </ns0:characteristics>
+        </ns0:profile>
+      
+=== tac-marine Legion Tactical Marine ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Tactical Marine" typeId="prof-model" typeName="Model" hidden="false" id="prof-tac-marine">
+              <ns0:characteristics>
+                <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                <ns0:characteristic name="A" typeId="model-a">1</ns0:characteristic>
+                <ns0:characteristic name="Ld" typeId="model-ld">8</ns0:characteristic>
+                <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+              </ns0:characteristics>
+            </ns0:profile>
+          
+=== tac-sergeant Legion Tactical Sergeant ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Tactical Sergeant" typeId="prof-model" typeName="Model" hidden="false" id="prof-tac-sergeant">
+              <ns0:characteristics>
+                <ns0:characteristic name="WS" typeId="model-ws">4</ns0:characteristic>
+                <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+              </ns0:characteristics>
+            </ns0:profile>
+          
+=== veteran-sergeant Legion Veteran Sergeant ===
+<ns0:profile xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Legion Veteran Sergeant" id="veteran-sergeant-prof" typeId="prof-model" typeName="Model" hidden="false">
+              <ns0:characteristics>
+                <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+              </ns0:characteristics>
+            </ns0:profile>
+          
