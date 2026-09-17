@@ -31,4 +31,4 @@ jobs:
           git add inspection-r18-thousand-sons-final-audit-dry-run.txt
           git diff --cached --quiet || git commit -m "Inspect R18 Thousand Sons final audit"
           git push
-# rerun after Sekhmet transport-source fix
+# rerun after final Sekhmet transport validator fix
