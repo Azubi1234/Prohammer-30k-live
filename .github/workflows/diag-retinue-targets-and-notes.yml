@@ -1,0 +1,60 @@
+name: Diagnose retinue targets and pending notes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diag-retinue-targets-and-notes.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect targets and pending notes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          NS='http://www.battlescribe.net/schema/catalogueSchema'; C=lambda t:f'{{{NS}}}{t}'
+          root=ET.parse('Legiones Astartes.cat').getroot(); top=root.find(C('selectionEntries'))
+          lines=[]
+          targets=[
+            'Legion Command Squad','Legion Terminator Command Squad','Legion Honour Guard Squad',
+            'Rampager Squad','Red Hand Destroyer','Triarii','Invictarus Suzerain','Deathshroud','Mortus Poisoner',
+            'Ammitara','Seeker Squad','Khenetai','Justaerin','Chieftain','Veteran Squad','Reaver Attack',
+            'Gal Vorbak','Firedrake','Lernaean','Sekhmet','Deathwing Companion','Deathwing Terminator Companion',
+            'Dreadwing Interemptor','Terror Squad','Contekar','Atramentar','Varagyr','Phoenix Terminator'
+          ]
+          lines.append('=== TOP-LEVEL TARGET CANDIDATES ===')
+          for e in top.findall(C('selectionEntry')):
+            nm=e.get('name') or ''
+            if any(t.lower() in nm.lower() for t in targets):
+              cats=[f"{x.get('name')}:{x.get('targetId')}" for x in e.findall('./'+C('categoryLinks')+'/'+C('categoryLink'))]
+              costs=[f"{x.get('name')}={x.get('value')}" for x in e.findall('./'+C('costs')+'/'+C('cost'))]
+              lines.append(f"{e.get('id')} | {nm} | {';'.join(costs)} | cats={';'.join(cats)}")
+          lines.append('\n=== WHITE SCARS SHIBAN/HIBOU RETINUE GROUPS FULL ===')
+          for gid in ('r60-ws-shiban-retinue','r60-ws-hibou-retinue'):
+            g=next((x for x in root.iter(C('selectionEntryGroup')) if x.get('id')==gid),None)
+            if g is not None:
+              lines.append(ET.tostring(g,encoding='unicode'))
+          lines.append('\n=== FABIUS AND COMMON EC UNIT IDS ===')
+          for e in top.findall(C('selectionEntry')):
+            blob=((e.get('id') or '')+' '+(e.get('name') or '')).lower()
+            if any(k in blob for k in ('fabius','palatine','tactical','assault squad','breacher','veteran','destroyer','phoenix terminator','command squad')):
+              lines.append(f"{e.get('id')} | {e.get('name')}")
+          lines.append('\n=== FULGRIM TRANSFIGURED FULL ===')
+          ft=next((e for e in top.findall(C('selectionEntry')) if e.get('id')=='r41-unit-iii-10-fulgrim-transfigured'),None)
+          if ft is not None: lines.append(ET.tostring(ft,encoding='unicode'))
+          Path('inspection-retinue-targets-and-notes.txt').write_text('\n'.join(lines),encoding='utf-8')
+          print('\n'.join(lines)[:50000])
+          PY
+      - name: Commit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-retinue-targets-and-notes.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: retinue targets and pending notes'
+          git pull --rebase origin main
+          git push
