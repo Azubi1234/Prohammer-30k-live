@@ -1,0 +1,72 @@
+=== r41-unit-xii-2-red-hand-destroyer-mortalis-squad RED HAND DESTROYER MORTALIS SQUAD ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" import="true" name="Krak grenades" hidden="false" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-krak-grenades">
+              <ns0:constraints>
+                <ns0:constraint id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="0" />
+              </ns0:costs>
+              <ns0:rules>
+                <ns0:rule name="Option restriction" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-context" hidden="false">
+                  <ns0:description>• The entire squad may take:</ns0:description>
+                </ns0:rule>
+                <ns0:rule name="Squad-wide cost note" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-squadwide" hidden="false">
+                  <ns0:description>The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</ns0:description>
+                </ns0:rule>
+              <ns0:rule id="r86-scaled-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-krak-grenades" name="Per-model cost" hidden="false"><ns0:description>This upgrade costs +2 points per model and automatically scales with the squad size selected.</ns0:description></ns0:rule></ns0:rules>
+            <ns0:modifiers /></ns0:selectionEntry>
+            
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" import="true" name="Melta bombs" hidden="false" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-melta-bombs">
+              <ns0:constraints>
+                <ns0:constraint id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="0" />
+              </ns0:costs>
+              <ns0:rules>
+                <ns0:rule name="Option restriction" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-context" hidden="false">
+                  <ns0:description>• The entire squad may take:</ns0:description>
+                </ns0:rule>
+                <ns0:rule name="Squad-wide cost note" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-squadwide" hidden="false">
+                  <ns0:description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</ns0:description>
+                </ns0:rule>
+              <ns0:rule id="r86-scaled-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-melta-bombs" name="Per-model cost" hidden="false"><ns0:description>This upgrade costs +5 points per model and automatically scales with the squad size selected.</ns0:description></ns0:rule></ns0:rules>
+            <ns0:modifiers /></ns0:selectionEntry>
+            
+=== r41-unit-xii-0-rampager-squad RAMPAGER SQUAD ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" import="true" name="Krak grenades" hidden="false" id="r41-unit-xii-0-rampager-squad-opt-4-krak-grenades">
+              <ns0:constraints>
+                <ns0:constraint id="r41-unit-xii-0-rampager-squad-opt-4-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="0" />
+              </ns0:costs>
+              <ns0:rules>
+                <ns0:rule name="Option restriction" id="r41-unit-xii-0-rampager-squad-opt-4-context" hidden="false">
+                  <ns0:description>• The entire squad may take:</ns0:description>
+                </ns0:rule>
+                <ns0:rule name="Squad-wide cost note" id="r41-unit-xii-0-rampager-squad-opt-4-squadwide" hidden="false">
+                  <ns0:description>The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</ns0:description>
+                </ns0:rule>
+              <ns0:rule id="r86-scaled-r41-unit-xii-0-rampager-squad-opt-4-krak-grenades" name="Per-model cost" hidden="false"><ns0:description>This upgrade costs +2 points per model and automatically scales with the squad size selected.</ns0:description></ns0:rule></ns0:rules>
+            <ns0:modifiers /></ns0:selectionEntry>
+            
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" import="true" name="Jump Packs" hidden="false" id="r41-unit-xii-0-rampager-squad-opt-5-jump-packs">
+              <ns0:constraints>
+                <ns0:constraint id="r41-unit-xii-0-rampager-squad-opt-5-jump-packs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="0" />
+              </ns0:costs>
+              <ns0:rules>
+                <ns0:rule name="Option restriction" id="r41-unit-xii-0-rampager-squad-opt-5-context" hidden="false">
+                  <ns0:description>• The entire squad may take:</ns0:description>
+                </ns0:rule>
+                <ns0:rule name="Squad-wide cost note" id="r41-unit-xii-0-rampager-squad-opt-5-squadwide" hidden="false">
+                  <ns0:description>The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</ns0:description>
+                </ns0:rule>
+              <ns0:rule id="r86-scaled-r41-unit-xii-0-rampager-squad-opt-5-jump-packs" name="Per-model cost" hidden="false"><ns0:description>This upgrade costs +15 points per model and automatically scales with the squad size selected.</ns0:description></ns0:rule></ns0:rules>
+            <ns0:modifiers /></ns0:selectionEntry>
+          
+=== tactical-unit Legion Tactical Squad ===
+=== assault-unit Legion Assault Squad ===
