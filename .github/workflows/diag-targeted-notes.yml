@@ -1,0 +1,54 @@
+name: Diagnose targeted character notes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diag-targeted-notes.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect targeted entries
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          NS='http://www.battlescribe.net/schema/catalogueSchema'; C=lambda t:f'{{{NS}}}{t}'
+          root=ET.parse('Legiones Astartes.cat').getroot(); top=root.find(C('selectionEntries'))
+          ids=['r41-unit-iii-7-fabius-bile','r41-unit-iii-10-fulgrim-transfigured','r41-unit-v-6-shiban-khan','r41-unit-v-7-hibou-khan']
+          out=[]
+          for uid in ids:
+            e=next((x for x in top.findall(C('selectionEntry')) if x.get('id')==uid),None)
+            if e is None: continue
+            out.append(f'=== {uid} | {e.get("name")} ===')
+            out.append('profiles: '+', '.join(p.get('name','') for p in e.findall('./'+C('profiles')+'/'+C('profile'))))
+            out.append('rules: '+', '.join(r.get('name','') for r in e.findall('./'+C('rules')+'/'+C('rule'))))
+            out.append('groups: '+', '.join(g.get('name','')+'['+g.get('id','')+']' for g in e.findall('./'+C('selectionEntryGroups')+'/'+C('selectionEntryGroup'))))
+            out.append('entries: '+', '.join(x.get('name','')+'['+x.get('id','')+']' for x in e.findall('./'+C('selectionEntries')+'/'+C('selectionEntry'))))
+            for g in e.findall('./'+C('selectionEntryGroups')+'/'+C('selectionEntryGroup')):
+              out.append(' GROUP '+g.get('name','')+':')
+              for x in g.findall('./'+C('selectionEntries')+'/'+C('selectionEntry')):
+                out.append('   ENTRY '+x.get('name','')+' '+x.get('id',''))
+              for l in g.findall('./'+C('entryLinks')+'/'+C('entryLink')):
+                out.append('   LINK '+l.get('name','')+' -> '+l.get('targetId','')+' '+l.get('id',''))
+              for m in g.findall('./'+C('modifiers')+'/'+C('modifier')):
+                out.append('   MOD '+str(m.attrib))
+                for c in m.findall('.//'+C('condition')): out.append('      COND '+str(c.attrib))
+            for p in e.findall('./'+C('profiles')+'/'+C('profile')):
+              vals=', '.join(f"{c.get('name')}={c.text}" for c in p.findall('./'+C('characteristics')+'/'+C('characteristic')))
+              out.append(' PROFILE '+p.get('name','')+': '+vals)
+          Path('inspection-targeted-notes.txt').write_text('\n'.join(out),encoding='utf-8')
+          print('\n'.join(out))
+          PY
+      - name: Commit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-targeted-notes.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: targeted character notes'
+          git pull --rebase origin main
+          git push
