@@ -1,0 +1,5 @@
+modifier r63-sw-hvarl-1500 None :: <ns0:condition xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="lessThan" value="1500" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+          
+selectionEntry r41-unit-x-6-gabriel-santar GABRIEL SANTAR :: <ns0:constraint xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r79-ih-santar-1500" type="min" value="1500" field="limit::points" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" percentValue="false" />
+      
+selectionEntry r41-unit-xii-6-kharn-the-bloody KHÂRN THE BLOODY :: <ns0:constraint xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r86-kharn-1500" type="min" value="1500" field="limit::points" scope="roster" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" />
