@@ -1,0 +1,38 @@
+name: Diagnose retinue structure
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diag-retinue-structure.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract working retinue structures
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          NS='http://www.battlescribe.net/schema/catalogueSchema'; C=lambda t:f'{{{NS}}}{t}'
+          root=ET.parse('Legiones Astartes.cat').getroot()
+          wanted={'hq-centurion-retinue','r60-ws-shiban-retinue','r60-ws-hibou-retinue'}
+          out=[]
+          for g in root.iter(C('selectionEntryGroup')):
+              if g.get('id') in wanted:
+                  out.append('=== '+g.get('id')+' | '+(g.get('name') or '')+' ===')
+                  out.append(ET.tostring(g,encoding='unicode'))
+          Path('inspection-retinue-structure.txt').write_text('\n'.join(out),encoding='utf-8')
+          print('\n'.join(out)[:30000])
+          PY
+      - name: Commit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-retinue-structure.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: retinue XML structure'
+          git pull --rebase origin main
+          git push
