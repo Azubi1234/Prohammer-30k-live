@@ -1,0 +1,42 @@
+name: Apply Live R2 retinues and character fixes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/build/live_r2_retinues_notes.py'
+      - '.github/workflows/apply-live-r2-retinues-notes.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply Live R2 fixes
+        run: python .github/build/live_r2_retinues_notes.py
+      - name: Verify XML parses and live revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          NS='http://www.battlescribe.net/schema/catalogueSchema'; C=lambda t:f'{{{NS}}}{t}'
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision')=='2'
+          assert r.get('gameSystemRevision')=='1'
+          idx=Path('index.xml').read_text(encoding='utf-8')
+          assert 'filePath="Legiones Astartes.cat"' in idx and 'dataRevision="2"' in idx
+          assert '<ns0:' not in Path('Legiones Astartes.cat').read_text(encoding='utf-8')
+          print(Path('inspection-live-r2-retinues-notes.txt').read_text(encoding='utf-8'))
+          PY
+      - name: Commit live R2
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r2-retinues-notes.txt
+          git diff --cached --quiet || git commit -m 'Live R2: functional retinues and character fixes'
+          git pull --rebase origin main
+          git push
