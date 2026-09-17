@@ -1,0 +1,3 @@
+LIVE R12 PUBLISH
+Catalogue revision bumped 11 -> 12 to force New Recruit to fetch the current Death Guard changes.
+No rules content changed in this publish step.
