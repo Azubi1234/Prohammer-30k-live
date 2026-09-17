@@ -1,0 +1,1303 @@
+da22-corswain | Corswain, Seneschal of the First Legion
+  Seneschal of the First Legion: May select a Deathwing Companion Detachment as retinue. That retinue may increase every Companion and Oathbearer WS by +1 to max WS6 for +5 points per model. Corswain and retinue count as one HQ selection.
+da22-redloss | Farith Redloss
+  Voted-Lieutenant of the Dreadwing: Always Dreadwing. May select one Dreadwing Interemptor Squad as retinue; it occupies no separate Elites choice and Redloss may join it despite Bitter Duty. They count as one HQ selection.
+da22-holguin | Holguin
+  Voted-Lieutenant of the Deathwing: Always Deathwing. May select a Deathwing Terminator Companion Detachment as personal retinue without a separate FOC slot; together count as one HQ selection.
+da22-lion | Lion El'Jonson, The First
+  Primarch Retinue: May select one Legion Honour Guard, Legion Terminator Command Squad, Deathwing Companion Detachment or Deathwing Terminator Companion Detachment as a slotless Primarch Retinue. Terminator Companions may be selected despite the Lion not wearing Terminator Armour.
+r41-unit-vi-6-fenrisian-wolf-pack | Fenrisian Wolf Pack
+  Wolf Retinue: In addition to this Fast Attack pack, eligible Space Wolves Independent Characters may select a separate retinue of exactly two Fenrisian Wolves for +24 points. Those Wolves may be taken in addition to another Retinue and may never voluntarily leave the character.
+r41-unit-xii-4-devourer-terminator-squad | DEVOURER TERMINATOR SQUAD
+  Devourers: Angron may select one Devourer Terminator Squad as his retinue.
+r41-unit-xii-6-kharn-the-bloody | KHÂRN THE BLOODY
+  Command Retinue: Khârn may select one Legion Command Squad or Rampager Squad as his retinue. The selected unit does not occupy a separate Force Organisation slot.
+r41-unit-xii-7-shabran-darr | SHABRAN DARR
+  Master of Destroyers: Shabran Darr may join Legion Destroyer Squads and Red Hand Destroyer Squads despite the normal restrictions imposed by Destroyer Cadre. Darr may select one Red Hand Destroyer Mortalis or Assault Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+r41-unit-xii-9-kargos-the-bloodspitter | KARGOS, THE BLOODSPITTER
+  Command Retinue: Kargos may select one Legion Command Squad. If Kargos has a Jump Pack, the Command Squad may purchase Jump Packs normally. The selected squad does not occupy a separate Force Organisation slot.
+r41-unit-xii-10-captain-ehrlen | CAPTAIN EHRLEN
+  Command Retinue: Ehrlen may select one Legion Command Squad as his retinue. Every model in the Command Squad may purchase a Jump Pack for +15 points per model. If Jump Packs are purchased, every model in the squad must receive one and the squad may not select a Dedicated Transport. This Command Squad does not occupy a separate Force Organisation slot.
+r41-unit-xii-11-delvarus | DELVARUS
+  Command Retinue: Delvarus may select one Legion Triarii Breacher Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+r41-unit-xii-12-xii-angron-the-red-angel | XII — ANGRON, THE RED ANGEL
+  Primarch Retinue: Angron may select one Legion Honour Guard Squad, Legion Terminator Command Squad or Devourer Terminator Squad as his Primarch Retinue. It does not occupy an additional Force Organisation selection and follows the normal Primarch Retinue rules.
+r41-unit-xiii-0-invictarus-suzerain-squad | INVICTARUS SUZERAIN SQUAD
+  Source Entry: Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points
+r41-unit-xiii-4-marius-gage-first-master | MARIUS GAGE, FIRST MASTER
+  Source Entry: Marius Gage | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+/4+
+Force Organisation:
+• HQ
+FIRST MASTER OF THE LEGION Friendly non-Vehicle Ultramarines units with at least one model within 12" of Marius Gage may use his Leadership characteristic when taking Morale or Pinning tests. MASTER OF ORGANISATION After both armies have deployed but before the first turn begins, select one Ultramarines Infantry unit which deployed normally. That unit may immediately be redeployed anywhere wholly within the Ultramarines deployment zone. All normal deployment restrictions must still be obeyed. The unit may not be placed into Reserve. Any Independent Characters already joined to the unit are redeployed with it. CALCULATED RESPONSE Marius Gage and any Ultramarines unit he has joined have Counter-Attack. COMMAND RETINUE Marius Gage may select a Legion Command Squad, Legion Terminator Command Squad or Invictarus Suzerain Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Master-crafted Power Weapon
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Independent Character
+• Master of the Legion
+• First Master of the Legion
+• Master of Organisation
+• Calculated Response
+OPTIONS
+• Marius Gage may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xiii-5-remus-ventanus | REMUS VENTANUS
+  Source Entry: Remus Ventanus | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 10 | 2+/5+
+THE SAVIOUR OF CALTH Ventanus and any Ultramarines unit he has joined have Fearless while at least one model from the unit is within 6" of an objective. PRACTICAL COMMANDER After both armies have deployed but before the first turn begins, nominate one Legion Tactical Squad in the army. That squad gains Counter-Attack for the duration of the battle. COMMAND RETINUE Ventanus may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Power weapon
+• Bolt pistol
+• Nuncio Vox
+• Frag grenades
+• Legion Standart
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Independent Character
+• The Saviour of Calth
+• Practical Commander
+OPTIONS
+• Remus Ventanus may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xiii-8-titus-prayto | TITUS PRAYTO
+  Source Entry: Titus Prayto | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+PSYCHIC POWERS Titus Prayto selects two psychic powers from the normal Psychic Power list. He follows all normal ProHammer rules for Psykers, Mastery Level 2 and Disturbance in the Warp. PSYCHIC SAVANT Once during each Ultramarines player turn, Prayto may re-roll one failed Psychic Test. The second result must be accepted. COMMAND RETINUE Prayto may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Force Weapon
+• Psychic Hood
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Independent Character
+• Psyker (Mastery Level 2\)
+• Legion Support Officer
+• Psychic Savant
+OPTIONS
+• Titus Prayto may take:
+• Krak grenades ................................... +2 points
+r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son | XIII — ROBOUTE GUILLIMAN, THE AVENGING SON
+  Source Entry: Primarch of the Ultramarines, Lord of Ultramar, the Avenging Son
+Roboute Guilliman was among the greatest commanders and statesmen of the Great Crusade, a Primarch whose genius lay not merely in winning battles, but in understanding the greater structure of war itself. Under his rule the worlds of Ultramar became a realm of extraordinary order and prosperity, while the XIII Legion grew into one of the largest and most disciplined forces of the Legiones Astartes.
+Upon the battlefield Guilliman sought neither reckless glory nor rigid adherence to a single doctrine. Every engagement was studied, every success and failure considered, and theory was continually tested against the practical realities of war. His warriors were expected to adapt as swiftly as their Primarch, changing formation and method as circumstances demanded until the enemy was confronted with precisely the form of warfare it was least prepared to resist.
+Roboute Guilliman | 7 | 6 | 6 | 6 | 6 | 6 | 5 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Roboute Guilliman
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Armour of Reason
+• Gladius Incandor
+• Hand of Dominion
+• Arbitrator
+• Frag Grenades
+Special Rules:
+• Primarch
+• Legiones Astartes (Ultramarines)
+• Master Strategist
+• Preternatural Strategy
+• Sire of Ultramar
+• Theoretical / Practical
+RESTRICTIONS
+Roboute Guilliman may only be selected for a Loyalist Ultramarines army. He otherwise follows all normal rules and restrictions for Primarchs.
+ARMOUR OF REASON A magnificent suit of war-plate fashioned according to the exacting requirements of the Primarch of the XIII Legion, the Armour of Reason combined formidable protection with the sophisticated command systems required to direct vast armies across the battlefield. The Armour of Reason counts as Primarch Armour. GLADIUS INCANDOR A superbly balanced blade wielded with the calculated precision that characterised Guilliman’s approach to war, Gladius Incandor was equally suited to the destruction of armoured warriors and monstrous foes. Gladius Incandor is a Master-crafted Power Weapon. Attacks made with it are resolved at +1 Strength and have the Shred special rule. HAND OF DOMINION A colossal powered gauntlet constructed for the strength of a Primarch, the Hand of Dominion could crush armour and tear apart even the heaviest engines of war. The Hand of Dominion is a Master-crafted Power Fist with the Armourbane special rule. ARBITRATOR Arbitrator was a master-crafted bolter fashioned to the proportions of the Primarch of the XIII Legion, capable of delivering exceptionally powerful and accurate fire. Weapon Range S AP Type Arbitrator 18" 6 3 Assault 2, Rending, Master-crafted MASTER STRATEGIST Few commanders possessed Guilliman’s ability to comprehend the flow of an entire battlefield and translate that understanding into precise orders. Unless a rule specifically states otherwise, the range of Roboute Guilliman’s special rules which affect friendly Ultramarines units is 18". PRETERNATURAL STRATEGY Guilliman’s ability to reassess a battle plan in moments allowed the XIII Legion to alter its dispositions even as the enemy committed itself to battle. After both armies have deployed but before the first turn begins, nominate one friendly Ultramarines unit. That unit may be redeployed anywhere it could legally have been deployed at the beginning of the battle. It must obey all normal deployment restrictions and may not be placed into Reserve unless it was already eligible to begin the battle in Reserve. SIRE OF ULTRAMAR The warriors of the XIII Legion fought beneath the gaze of a Primarch who demanded discipline in victory and adversity alike. Friendly Ultramarines units with at least one model within 12" of Roboute Guilliman may re-roll failed Morale tests. The second result must be accepted. THEORETICAL / PRACTICAL To Guilliman, no doctrine was valuable merely because it had succeeded before. Theory existed to be tested in battle, and practical experience existed to refine theory. At the beginning of each Ultramarines turn, choose one of the following doctrines. The chosen doctrine affects friendly Ultramarines units with at least one model within 18" of Roboute Guilliman until the beginning of the next Ultramarines turn. ADVANCE Affected units may move up to 1" further than normal during their Movement phase. FIRE Affected units may re-roll shooting To Hit rolls of 1. ASSAULT Affected units may re-roll close combat To Hit rolls of 1. PRIMARCH RETINUE Roboute Guilliman may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Invictarus Suzerain Squad A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.
+r41-unit-xiv-0-deathshroud-terminators | DEATHSHROUD TERMINATORS
+  Source Entry: Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Composition:
+• 2 Deathshroud Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Terminator Armour
+• Manreaper
+• Alchem Flamer
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Fearless
+• Silent Retinue
+OPTIONS
+• The squad may include up to five additional Deathshroud Terminators for +55 points per model.
+• The entire squad may exchange its Terminator Armour for Cataphractii Terminator Armour at no additional cost.
+If this option is selected, the squad instead has a 2+/4+ Save and follows all normal rules and restrictions for Cataphractii Terminator Armour.
+• The entire squad may take:
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r41-unit-xiv-3-calas-typhon-first-captain | CALAS TYPHON, FIRST CAPTAIN
+  Source Entry: Calas Typhon | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+LATENT PSYKER Typhon is treated as a Psyker (Mastery Level 1\) solely for the purpose of using Aura of Pestilence and suffering Perils of the Warp. He knows no other psychic powers. Typhon takes the Psychic Test for Aura of Pestilence using Leadership 7 instead of the Leadership value shown in his profile. AURA OF PESTILENCE At the beginning of either player's Assault phase, Typhon may attempt to invoke Aura of Pestilence. If the Psychic Test is passed, every enemy model within 2" of Typhon suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. If the Psychic Test is failed, every friendly model within 2" of Typhon instead suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. Typhon may fight normally during an Assault phase in which Aura of Pestilence is used. COMMAND RETINUE Typhon may select either a Deathshroud Terminator Squad or Legion Terminator Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Cataphractii Terminator Armour
+• Manreaper
+• Alchem Flamer
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Independent Character
+• Master of the Legion
+• Latent Psyker
+RESTRICTION
+Calas Typhon may only be included in a Death Guard army of 1,500 points or more.
+r41-unit-xiv-4-crysos-morturg | CRYSOS MORTURG
+  Source Entry: Crysos Morturg | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 3+/5+
+Force Organisation:
+PSYCHIC POWERS Morturg selects one psychic power from the normal Legion Librarian Psychic Power list. He follows all normal ProHammer rules for Psykers and Mastery Level 1. MASTER OF AMBUSH Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. Morturg must remain joined to that unit when it is deployed. DESTROYER OFFICER Morturg may join a Legion Destroyer Squad or Mortus Poisoner Squad despite the normal restrictions imposed by Destroyer Cadre. COMMAND RETINUE Morturg may select one Mortus Poisoner Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Power Armour
+• Refractor Field
+• Power weapon
+• Combi-Alchem Flamer
+• Bolt pistol
+• Frag grenades
+• Rad grenades
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Independent Character
+• Stubborn
+• Psyker (Mastery Level 1\)
+• Master of Ambush
+• Destroyer Officer
+Allegiance:
+• Loyalist only
+OPTIONS
+• Morturg may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xiv-5-durak-rask | DURAK RASK
+  Source Entry: Durak Rask | 5 | 5 | 4 | 4 | 3 | 4 | 3 | 9 | 2+/5+
+Force Organisation:
+ART OF DESTRUCTION Durak Rask and any Death Guard Infantry unit he has joined have the Tank Hunters special rule. COMMAND RETINUE Durak Rask may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Thunder hammer
+• Volkite Serpenta
+• Nuncio Vox
+• Phosphex Bomb
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Independent Character
+• Master of the Legion
+• Art of Destruction
+Allegiance:
+• Traitor only
+OPTIONS
+• Durak Rask may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xiv-6-ignatius-grulgor | IGNATIUS GRULGOR
+  Source Entry: Ignatius Grulgor | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 3+/5+
+Force Organisation:
+THE EATER OF LIVES The first time Grulgor is reduced to 0 Wounds, do not immediately remove him as a casualty. Roll a D6. On a 1–4, remove Grulgor normally. On a 5+, Grulgor remains in play with 1 Wound remaining and gains the following special rules for the remainder of the battle: • Daemon • Fearless • Feel No Pain (5+) This rule may only be used once per battle. COMMAND RETINUE Grulgor may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Power Armour
+• Refractor Field
+• Power weapon
+• Bolter
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Independent Character
+• Master of the Legion
+• The Eater of Lives
+Allegiance:
+• Traitor only
+OPTIONS
+• Grulgor may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xiv-7-nathaniel-garro | NATHANIEL GARRO
+  Source Entry: Nathaniel Garro | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+LIBERTAS Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. Garro receives no additional Attack for fighting with a second close-combat weapon while using Libertas. AQUILA IMPERATOR The Aquila Imperator grants Garro a 4+ Invulnerable Save. This is already included in his profile. Whenever Garro or a unit he has joined would be affected by an enemy psychic power, roll a D6. On a 5+, that psychic power is nullified and has no effect upon Garro or his unit. Only one Aquila Imperator nullification roll may be attempted against each psychic power. COMMAND RETINUE Garro may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Aquila Imperator
+• Libertas
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Independent Character
+Allegiance:
+• Loyalist only
+OPTIONS
+• Nathaniel Garro may take:
+• Krak grenades ................................... +2 points
+r41-unit-xiv-8-xiv-mortarion-the-reaper | XIV — MORTARION, THE REAPER
+  Source Entry: Primarch of the Death Guard, the Pale King, the Reaper of Men
+Mortarion was raised beneath the poisoned skies of Barbarus, a world where survival itself was a war against toxic atmosphere, monstrous overlords and the slow certainty of death. From those beginnings came a Primarch of almost inexhaustible endurance, possessed of a hatred for tyranny, witchcraft and weakness in all their forms. Where others sought brilliance of manoeuvre or the glory of the decisive charge, Mortarion believed that victory belonged to the warrior who simply refused to die.
+Under his command the XIV Legion became the Death Guard, an army fashioned in its Primarch's image. They advanced through irradiated wastelands, chemical storms and burning ruins with the same remorseless pace, grinding their enemies beneath relentless fire and brutal close assault. Mortarion himself strode at the centre of such offensives, wreathed in poisonous vapours and bearing the immense battle-scythe Silence, a spectral figure whose coming promised only death. This identity is also strongly reflected in the existing Death Guard rules, which already emphasise poison resistance and infantry advancing through hostile terrain.
+Mortarion | 7 | 6 | 6 | 7 | 6 | 5 | 4 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Mortarion
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Barbaran Plate
+• Silence
+• Lantern
+• Phosphex Bomb
+• Frag Grenades
+Special Rules:
+• Primarch
+• Legiones Astartes (Death Guard)
+• Barbaran Endurance
+• Witch-Spite
+• Toxic Miasma
+• Poison Cannot Kill Death
+BARBARAN PLATE Forged to withstand conditions which would prove lethal even to a Space Marine, Barbaran Plate incorporated extensive environmental sealing and protection against chemical, biological and radiological attack. Barbaran Plate counts as Primarch Armour. SILENCE An immense battle-scythe fashioned to the proportions of the Death Guard Primarch, Silence was a weapon whose sweeping blows could reap whole ranks of warriors and cut apart the mightiest champions of the Great Crusade. Silence is a Two-Handed Power Weapon. Attacks made with Silence are resolved at +1 Strength and have the Rampage special rule. Any unsaved Wound inflicted by Silence against a model without the Primarch special rule becomes a Massive Wound and inflicts D3 Wounds instead of one Wound. LANTERN A rare and immensely powerful Shenlongi energy weapon, Lantern was capable of punching through armour and war machines with concentrated blasts of incandescent energy. Weapon Range S AP Type Lantern 18" 8 2 Assault 1, Armourbane, Master-crafted PHOSPHEX BOMB Mortarion carried amongst his arsenal weapons filled with the nightmare substance known as phosphex, a proscribed incendiary compound infamous for pursuing living prey and rendering the ground itself lethal. Weapon Range S AP Type Phosphex Bomb 6" 5 2 Assault 1, Blast, One Use, Poisoned (3+), Lingering Death The Phosphex Bomb follows the normal rules for Phosphex Bombs and Lingering Death presented in the Legiones Astartes Army List. BARBARAN ENDURANCE Few beings in the Imperium could match Mortarion's ability to endure injury, exhaustion and environments capable of killing lesser warriors in moments. Mortarion has Feel No Pain (5+). WITCH-SPITE Mortarion possessed a deep and abiding hatred of sorcery, born during his enslavement beneath the witch-lords of Barbarus and strengthened by his distrust of those who wielded the powers of the Warp. Whenever Mortarion or a unit he has joined makes a Deny the Witch roll, a failed roll may be re-rolled. In addition, Mortarion's Adamantium Will grants a +2 bonus to Deny the Witch rolls instead of the normal +1. THE REAPER\`S ADVANCE Friendly Death Guard Infantry within 12" of Mortarion may fire Rapid Fire weapons as though they had remained stationary. In addition, they may re-roll failed Pinning tests. TOXIC MIASMA The armour and wargear of the Death Lord surrounded him with a haze of poisonous vapours and corrosive contaminants, lethal to any foe forced to fight at close quarters. Enemy non-Vehicle models in base contact with Mortarion suffer -1 Toughness. This penalty lasts only while the model remains in base contact with Mortarion. POISON CANNOT KILL DEATH The poisons which slew armies and the polluted atmosphere of Barbarus itself had shaped Mortarion into a being all but impossible to kill through toxin or contagion. Poisoned attacks made against Mortarion do not use their normal fixed To Wound value. Instead, resolve the attack using its Strength against Mortarion's Toughness normally. If a Poisoned attack has no Strength characteristic, it may only wound Mortarion on an unmodified roll of 6. PRIMARCH RETINUE Mortarion may select one Deathshroud Terminator Squad as his Primarch Retinue. Mortarion may not select a Legion Honour Guard Squad or Legion Terminator Command Squad as his Primarch Retinue. A Deathshroud Terminator Squad selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.
+r41-unit-xv-6-ahzek-ahriman | AHZEK AHRIMAN
+  Source Entry: Ahzek Ahriman | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Black Staff of Ahriman
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Thousand Sons)
+• Independent Character
+• Master of the Legion
+• Psyker (Mastery Level 3\)
+• Corvidae
+• Chief Librarian
+• Ahriman's Cabal
+RESTRICTION
+Ahriman may only be included in a Thousand Sons army of 1,500 points or more.
+OPTIONS
+• Ahriman may take:
+• Krak grenades .................................. +2 points
+CORVIDAE Ahriman always belongs to the Corvidae and may not select another Prosperine Cult. He receives both the Corvidae Cult Arcana and Cult Mastery benefits. CHIEF LIBRARIAN Ahriman knows every psychic power in the ProHammer Divination discipline. He does not randomly select or choose a limited number of Divination powers before the battle. Ahriman still follows the normal ProHammer restrictions governing how many psychic powers a Psyker may successfully invoke during a player turn. BLACK STAFF OF AHRIMAN The Black Staff is a Master-crafted Prosperine Force Weapon. Once during each player turn, Ahriman may re-roll one failed Psychic Test. The second result must be accepted. If the re-rolled Psychic Test also fails, Ahriman suffers Perils of the Warp in addition to any other normal consequences. Activating the Black Staff as a Force Weapon does not count as invoking a psychic power. AHRIMAN'S CABAL Ahriman may select one Legion Command Squad as his personal retinue. The squad does not occupy a separate Force Organisation slot. A Command Squad selected in this manner may purchase Ahriman's Cabal for +50 points. AHRIMAN'S CABAL A unit upgraded to Ahriman's Cabal: • becomes a Brotherhood of Psykers (Mastery Level 2); • is assigned to the Corvidae; • receives both the Corvidae Cult Arcana and Cult Mastery; • selects two psychic powers from the ProHammer Divination discipline. The Cabal remains a separate Psyker from Ahriman. Ahriman's Mastery Level, Leadership and psychic powers are not combined with those of the Brotherhood. Any model in Ahriman's Cabal permitted to purchase a Power Weapon may upgrade that Power Weapon to a Prosperine Force Weapon for +5 points. The Cabal follows the normal Psychic Brotherhood rules for activating Force Weapons.
+r41-unit-xv-7-phosis-t-kar | PHOSIS T'KAR
+  Source Entry: Phosis T'Kar | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 10 | 3+/4+
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Power Armour
+• Eldritch Force Field
+• Prosperine Force Weapon
+• Bolter
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Thousand Sons)
+• Independent Character
+• Master of the Legion
+• Psyker (Mastery Level 2\)
+• Raptora
+• Magister of the Raptora
+OPTIONS
+• Phosis may take:
+• Krak grenades .................................. +2 points
+RAPTORA Phosis always belongs to the Raptora and may not select another Prosperine Cult. He receives both the Raptora Cult Arcana and Cult Mastery benefits. MAGISTER OF THE RAPTORA Phosis selects both of his psychic powers from the ProHammer Telekinesis discipline. He otherwise follows all normal ProHammer rules for a Mastery Level 2 Psyker. ELDRITCH FORCE FIELD Phosis has a 4+ Invulnerable Save. Against shooting attacks, this is improved to a 3+ Invulnerable Save. While Phosis is joined to a friendly Thousand Sons Infantry unit, models in that unit receive a 5+ Invulnerable Save against both shooting and close-combat attacks. If a model already possesses an Invulnerable Save, improve it by one instead. An Invulnerable Save improved by this rule may never become better than: • 3+ against shooting attacks; • 4+ against close-combat attacks. This rule may combine with the normal Raptora Cult benefits, but the limits above may never be exceeded. COMMAND RETINUE Phosis may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+r41-unit-xv-8-magistus-amon-the-hidden | MAGISTUS AMON, THE HIDDEN
+  Source Entry: Magistus Amon | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 10 | 2+
+Force Organisation:
+• HQUnit Type:
+• Infantry (Character)
+Wargear:
+• Armour of Shades
+• Prosperine Force Weapon
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Thousand Sons)
+• Independent Character
+• Master of the Legion
+• Psyker (Mastery Level 2\)
+• Athanaeans
+• The Hidden One
+RESTRICTION
+Amon may only be included in a Thousand Sons army of 1,500 points or more.
+OPTIONS
+• Amon may take:
+• Krak grenades .................................. +2 points
+ATHANAEANS Amon always belongs to the Athanaeans and may not select another Prosperine Cult. He receives both the Athanaean Cult Arcana and Cult Mastery benefits. PSYCHIC POWERS Amon selects both of his psychic powers from the ProHammer Telepathy discipline. ARMOUR OF SHADES The Armour of Shades grants Amon a 2+ Armour Save. Amon receives a 5+ Cover Save even while in open ground. If Amon would normally receive a Cover Save from terrain or another rule, improve that Cover Save by two steps, to a maximum of 3+. THE HIDDEN ONE While Amon is joined to a friendly Thousand Sons Infantry unit, that unit receives the same protection as his Armour of Shades: • it receives a 5+ Cover Save while in open ground; • any existing Cover Save is improved by two steps, to a maximum of 3+. Amon and any Infantry unit he has joined also gain Infiltrate. This rule may not be conferred to: • models wearing any form of Terminator Armour; • Bikes; • Jetbikes; • Jump Infantry. MASTER OF THE HIDDEN ORDERS Instead of selecting a normal Legion Command Squad, Amon may select one of the following as his personal retinue: • Ammitara Occult Intercession Cabal • Legion Seeker Squad The selected unit does not occupy a separate Force Organisation slot. Amon and the selected unit count as a single HQ selection.
+r41-unit-xv-9-hathor-maat | HATHOR MAAT
+  Source Entry: Hathor Maat | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Aetheric Refractor Field
+• Prosperine Force Weapon
+• Bolt pistol
+• Narthecium
+• Reductor
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Thousand Sons)
+• Independent Character
+• Master of the Legion
+• Psyker (Mastery Level 2\)
+• Pavoni
+• Magister Templi of the Pavoni
+• Pavoni Vitalist
+OPTIONS
+• Hathor Maat may take:
+• Krak grenades .................................. +2 points
+PAVONI Hathor Maat always belongs to the Pavoni and may not select another Prosperine Cult. He receives both the Pavoni Cult Arcana and Cult Mastery benefits. MAGISTER TEMPLI OF THE PAVONI Hathor Maat selects both of his psychic powers from the ProHammer Biomancy discipline. He otherwise follows all normal ProHammer rules for a Mastery Level 2 Psyker. AETHERIC REFRACTOR FIELD Hathor Maat has a 4+ Invulnerable Save. This is already included in his profile. PAVONI VITALIST Hathor Maat has Feel No Pain (5+). While Hathor Maat is joined to a friendly Thousand Sons Infantry unit, that unit also gains Feel No Pain (5+). If a model already has Feel No Pain, improve its existing roll by one step instead, to a maximum of 4+. The unit loses this benefit immediately if Hathor leaves the unit or is slain. NARTHECIUM Hathor Maat additionally uses the normal Narthecium rules from the Legiones Astartes Army List. COMMAND RETINUE Hathor Maat may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+r41-unit-xv-10-sanakht | SANAKHT
+  Source Entry: Sanakht | 7 | 5 | 4 | 4 | 3 | 6 | 4 | 10 | 2+/5+
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Paired Prosperine Force Blades
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Thousand Sons)
+• Independent Character
+• Psyker (Mastery Level 1\)
+• Athanaeans
+• Blademaster of Prospero
+• Mindsong of Blades
+OPTIONS
+• Sanakht may take:
+• Krak grenades .................................. +2 points
+ATHANAEANS Sanakht always belongs to the Athanaeans and may not select another Prosperine Cult. He receives both the Athanaean Cult Arcana and Cult Mastery benefits. PSYCHIC POWERS Sanakht knows only Mindsong of Blades. He does not select a psychic power from the normal ProHammer Psychic Disciplines. MINDSong OF BLADES Mindsong of Blades is a Blessing invoked at the beginning of an Assault phase. If successfully invoked, until the end of that Assault phase: • models in Sanakht's unit gain +1 Initiative; • models in the unit may re-roll close-combat To Hit rolls of 1. PAIRED PROSPERINE FORCE BLADES Sanakht's blades count as a pair of Prosperine Force Weapons. The bonus Attack for fighting with two close-combat weapons is already included in his profile. Activating his Force Weapons does not count as invoking a psychic power. BLADEMASTER OF PROSPERO Sanakht may re-roll one failed To Hit roll and one failed To Wound roll during each Assault phase. A dice may never be re-rolled more than once. KHENETAI RETINUE Sanakht may select one Khenetai Occult Blade Cabal as his personal retinue. The Cabal does not occupy a separate Force Organisation slot. Sanakht and the Cabal count as a single HQ selection.
+r41-unit-xv-11-xv-magnus-the-red-the-crimson-king | XV — MAGNUS THE RED, THE CRIMSON KING
+  Source Entry: Primarch of the Thousand Sons, the Crimson King, Lord of Prospero
+Magnus the Red was the most psychically gifted of the Emperor’s sons, a towering scholar-warrior whose understanding of the immaterium exceeded that of all but the greatest minds of the Imperium. Upon Prospero he gathered philosophers, occultists and psykers into a civilisation devoted to knowledge, while the Thousand Sons themselves became masters of disciplines that other Legions regarded with suspicion and fear.
+Upon the battlefield Magnus wielded sorcery as naturally as another warrior might wield a blade. He shattered armour with raw aetheric force, twisted the paths of fate, shielded his sons behind impossible barriers and reached into the minds of his enemies. Where lesser psykers risked being overwhelmed by the turbulence of the Warp, the presence of the Crimson King seemed instead to force that turbulence into obedience.
+Magnus the Red | 7 | 7 | 7 | 7 | 7 | 6 | 4 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Magnus the Red
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Horned Raiment
+• Blade of Ahn-Nunurta
+• Arcane Litanies
+Special Rules:
+• Primarch
+• Legiones Astartes (Thousand Sons)
+• Psyker (Mastery Level 4\)
+• Lord of the Ether
+• The Crimson King
+• The Warp Bends to Magnus
+• Sorcerous Duellist
+HORNED RAIMENT The war-plate of the Crimson King was as much an artefact of sorcery as of the artificer’s craft, surrounded by kine shields, illusions and shifting aetheric wards which distorted the form of Magnus and those who fought at his side. The Horned Raiment counts as Primarch Armour. When an enemy unit makes shooting attacks against Magnus or a unit he has joined, all To Hit rolls made as part of that attack suffer a -1 modifier. To Hit rolls made with Blast weapons suffer a -2 modifier instead. These modifiers have no effect in close combat. BLADE OF AHN-NUNURTA A weapon of ancient and esoteric provenance, the Blade of Ahn-Nunurta served as both a weapon of war and a focus through which Magnus could channel his immense psychic power. The Blade of Ahn-Nunurta is a Master-crafted, Two-Handed Force Weapon. It follows all normal ProHammer rules for Force Weapons. ARCANE LITANIES Inscribed upon the armour and wargear of the Crimson King were formulae, wards and occult geometries intended to protect their bearer against the dangers inherent in drawing upon the Warp. Once per battle, when Magnus suffers a Wound as a result of Perils of the Warp, he may ignore that Wound. The Psychic Test and psychic power are otherwise resolved normally. PSYKER — MASTERY LEVEL 4 Magnus the Red is a Psyker with Mastery Level 4. Before the battle, Magnus selects five psychic powers in total. These powers may be selected from the following disciplines: Biomancy, Divination, Pyromancy, Telekinesis and Telepathy. Magnus must select powers from at least two different psychic disciplines. He may not select all five powers from a single discipline. Infernal Phoenix and Strands of Fate are always known by Magnus and count towards his five psychic powers. Magnus otherwise follows all normal ProHammer rules for Psykers unless specifically stated otherwise. Magnus counts as belonging to all five Prosperine Cults for the purposes of army selection and other friendly abilities, but gains no Cult Arcana or Cult Mastery from them. PSYCHIC SUPREMACY Magnus may never have more than two Blessings affecting himself at the same time. If Magnus successfully invokes a Blessing upon himself while already affected by two Blessings, he must immediately choose one existing Blessing affecting him to end before the new power takes effect. This restriction does not limit Blessings affecting friendly units or Maledictions affecting enemy units. Magnus may never have more than two psychic powers with ongoing effects simultaneously affecting himself and/or the opposing Primarch. LORD OF THE ETHER Magnus may invoke up to four psychic powers during each player turn, overriding the normal ProHammer maximum of two. Magnus may invoke multiple Witchfire powers during the same Shooting phase, subject to his normal limit of four psychic powers. Magnus may not successfully invoke the same psychic power more than once during the same player turn. Activating the Blade of Ahn-Nunurta as a Force Weapon does not count against this limit. THE CRIMSON KING The psychic mastery of Magnus was such that even a faltering connection to the Warp could be seized and brought under control through sheer force of will. Magnus may re-roll one failed Psychic Test during each player turn. The second result must be accepted. Magnus may attempt to Deny the Witch against any psychic power if either the Psyker invoking the power or its target is within 24" of Magnus. Resolve the Deny the Witch attempt normally using Magnus' own Mastery Level. Each psychic power may still only be the subject of one Deny the Witch attempt, as normal. THE WARP BENDS TO MAGNUS Where lesser psykers struggled as the immaterium became increasingly disturbed, Magnus imposed his will upon the Warp with a power few beings could hope to equal. Magnus ignores all Leadership penalties caused by Disturbance in the Warp. In addition, psychic powers successfully invoked by Magnus are ignored when determining the penalties caused by Disturbance in the Warp for other friendly Psykers. Psychic powers successfully invoked by other friendly Psykers still contribute towards Disturbance in the Warp normally. Magnus may also attempt to deny the witch at 18” around him. INFERNAL PHOENIX Witchfire — Beam Magnus unleashes a torrent of incandescent aetheric fire, burning through flesh and armour as it tears across the battlefield. Range 24" | Strength 8 | AP1 | Melta Resolve Infernal Phoenix using the normal rules for Beam psychic powers. STRANDS OF FATE Malediction Magnus reaches into the skeins of possibility and twists them about his victim, turning every intended action into another path towards failure. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus’ next turn, that unit must pass a Leadership Test each time it attempts to: • Move during the Movement phase; • Shoot during the Shooting phase; or • declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted. SORCEROUS DUELLIST Even when locked in single combat with one of his brother Primarchs, Magnus remained first and foremost a master of the immaterium. While Magnus is fighting a Primarch Duel, at the beginning of each Assault phase he may invoke one of the following: • a Blessing which targets only Magnus; or • a Malediction which targets only the opposing Primarch. This psychic power counts towards Magnus’ maximum allowance of four powers for that player turn. All normal Psychic Tests, Deny the Witch attempts and Perils of the Warp rules apply. PRIMARCH RETINUE Magnus the Red may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Sekhmet Terminator Cabal A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules. THE CRIMSON KING’S GUARD A Legion Honour Guard Squad or Legion Terminator Command Squad selected as Magnus’ Primarch Retinue may be upgraded to a Brotherhood of Psykers (Mastery Level 1\) for +25 points per squad. A squad upgraded in this manner is assigned to one Prosperine Cult and receives the normal Cult Arcana and Cult Mastery benefits of that Cult. The squad selects one psychic power from any of the normal psychic disciplines available to Thousand Sons Psykers and otherwise follows all normal rules for a Psychic Brotherhood.
+r41-unit-xvi-0-justaerin-terminator-squad | JUSTAERIN TERMINATOR SQUAD
+  Source Entry: Justaerin Terminator | 5 | 4 | 4 | 4 | 2 | 3 | 2 | 9 | 2+/4+
+Force Organisation:
+CHOSEN OF THE WARMASTER A Sons of Horus Praetor, Ezekyle Abaddon or Horus Lupercal may select one Justaerin Terminator Squad as a retinue. If selected as a retinue, the squad does not occupy a separate Elites choice.
+• Elites
+• 0–1
+Unit Composition:
+• 5 Justaerin Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Cataphractii Terminator Armour
+• Foeblaster Boltgun
+• Power weapon or Power fist
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Chosen of the Warmaster
+OPTIONS
+• The squad may include up to five additional Justaerin Terminators for +57 points per model.
+• Any model equipped with a Power fist may replace it with:
+• Chainfist ....................................... +5 points
+• Any model may replace his Foeblaster Boltgun with:
+• Combi-flamer .................................. +10 points
+• Combi-volkite charger ........................ +10 points
+• Combi-meltagun ............................... +15 points
+• Combi-plasma gun ............................. +15 points
+• Any model may replace both of his weapons with:
+• Pair of Lightning Claws ....................... Free
+• For every five models, up to two Justaerin may replace their Foeblaster Boltgun with:
+• Heavy Flamer .................................. +10 points
+• Reaper Autocannon ............................ +20 points
+• Multi-Melta ................................... +25 points
+• The squad may purchase:
+• Banestrike Ammunition .................... +2 points per
+eligible model
+• Teleportation Transponders ................... +15 points
+• One Justaerin may be upgraded to Falkus Kibre as described in his entry.
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r41-unit-xvi-2-chieftain-squad | CHIEFTAIN SQUAD
+  Source Entry: Chieftain | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 3+/5+
+Chieftain Prime | 5 | 4 | 4 | 4 | 2 | 4 | 3 | 10 | 3+/5+
+Force Organisation:
+• Elites
+• 0–1
+CTHONIAN RETINUE One Chieftain Squad may be selected as the retinue of a Sons of Horus Praetor or appropriate named Sons of Horus Independent Character. The squad does not occupy a separate Elites choice. The Character and Chieftain Squad count as a single HQ selection.
+Unit Composition:
+• 4 Chieftains
+• 1 Chieftain Prime
+Unit Type:
+• Infantry
+• The Chieftain Prime is a Character
+Wargear:
+• Power Armour
+• Boarding Shield
+• Bolter
+• Cthonian Culling Blade
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Stubborn
+• Cthonian Retinue
+OPTIONS
+• The squad may include up to five additional Chieftains for +40 points per model.
+• Any model may replace his Cthonian Culling Blade with:
+• Power weapon ................................... +5 points
+• Power fist .................................... +10 points
+• Lightning claw ............................... +10 points
+• Thunder hammer ............................... +15 points
+• Any model may replace his Bolter with:
+• Foeblaster Boltgun ............................. +5 points
+• Combi-flamer .................................. +10 points
+• Combi-volkite charger ........................ +10 points
+• Combi-meltagun ............................... +15 points
+• Combi-plasma gun ............................. +15 points
+• The entire squad may take:
+• Krak grenades ............................ +2 points per model
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Rhino, Dreadclaw Drop Pod or Land Raider where Transport Capacity permits.
+CHIEFTAIN PRIME
+The Chieftain Prime may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury and Sons of Horus Armoury.
+r41-unit-xvi-4-ezekyle-abaddon-first-captain | EZEKYLE ABADDON, FIRST CAPTAIN
+  Source Entry: Ezekyle Abaddon | 6 | 5 | 5 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+Force Organisation:
+CTHONIAN DREADPLATE The Cthonian Dreadplate counts as Cataphractii Terminator Armour. In addition, add +1 to the Reserve roll made for Abaddon and any unit with which he began the battle in Reserve. MASTER OF THE JUSTAERIN If Abaddon is the army's Warlord, the army may include one additional Justaerin Terminator Squad beyond the normal 0–1 limit. A Justaerin Terminator Squad containing Abaddon gains Fearless. The squad may also purchase the Furious Charge Veteran Skill for +4 points per model. COMMAND RETINUE Abaddon may select either: • a Justaerin Terminator Squad; or • a Legion Terminator Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Cthonian Dreadplate
+• Master-crafted Power fist
+• Master-crafted Power sword
+• Master-crafted Storm bolter
+• Banestrike Ammunition
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Independent Character
+• Master of the Legion
+• First Captain
+• Master of the Justaerin
+RESTRICTION
+Abaddon may only be included in an army of 1,500 points or more.
+r41-unit-xvi-5-horus-aximand-little-horus | HORUS AXIMAND, “LITTLE HORUS”
+  Source Entry: Horus Aximand | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/5+
+MOURN-IT-ALL Mourn-it-All is a Master-crafted Power Weapon. A natural To Wound roll of 6 made with Mourn-it-All inflicts a Massive Wound (D3) instead of a normal Wound. STRATEGIST Add +1 to Reserve rolls made by a Sons of Horus army containing Horus Aximand. COMMAND RETINUE Aximand may select one Legion Command Squad or Chieftain Squad as his retinue. The selected unit does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Combat Shield
+• Mourn-it-All
+• Meltagun Pistol
+• Bolter
+• Frag grenades
+• Defensive Grenades
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Independent Character
+• Master of the Legion
+• Strategist
+Allegiance:
+• Traitor only
+OPTIONS
+• Aximand may take:
+• Krak grenades ................................... +2 points
+r41-unit-xvi-6-garviel-loken | GARVIEL LOKEN
+  Source Entry: Garviel Loken | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 9 | 2+/5+
+THE LAST WOLF The first time Loken is reduced to 0 Wounds, place a marker a his final position and remove his model. This rule may not be used if the attack which removed Loken's final Wound inflicted a Massive Wound. At the beginning of the next Sons of Horus turn, roll a D6. 3+: Return Loken to play with 1 Wound remaining at the position marked, or as close as legally possible. 1–2: Loken remains a casualty. This rule may only be used once per battle. COMMAND RETINUE Loken may select: • one Legion Command Squad; or • one Legion Veteran Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Master-crafted Rending Weapon
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Independent Character
+• The Last Wolf
+Allegiance:
+• Loyalist only
+OPTIONS
+• Loken may take:
+• Krak grenades ................................... +2 points
+r41-unit-xvi-8-tybalt-marr-the-either | TYBALT MARR, “THE EITHER”
+  Source Entry: Tybalt Marr | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/5+
+THE EITHER Tybalt Marr and one Infantry unit he has joined before deployment gain the Outflank special rule. Marr must enter play with that unit. HUNTER OF THE BROKEN LEGIONS Marr and any Sons of Horus unit he has joined may re-roll To Hit rolls of 1 during the first Assault phase after entering play from Reserve. COMMAND RETINUE Marr may select one Legion Veteran Squad or Reaver Attack Squad as his retinue. The selected unit does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Master-crafted Lightning Claw
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Independent Character
+• Master of the Legion
+• The Either
+• Hunter of the Broken Legions
+Allegiance:
+• Traitor only
+OPTIONS
+• Marr may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xvi-9-vheren-ashurhaddon | VHEREN ASHURHADDON
+  Source Entry: Vheren Ashurhaddon | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+/4+
+Force Organisation:
+AXE SERPENTIS The Axe Serpentis is a Master-crafted Power Weapon. Attacks made with it are resolved at +1 Strength. FIRST REAVER Ashurhaddon may select one Reaver Attack Squad as his personal retinue. The selected Reaver Squad does not occupy a separate Force Organisation slot. MASTER OF THE TRUE SONS While Ashurhaddon is joined to a Reaver Attack Squad or Chieftain Squad, that unit may re-roll failed Morale and Pinning tests
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Axe Serpentis
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Independent Character
+• Master of the Legion
+• Furious Charge
+• First Reaver
+• Master of the True Sons
+Allegiance:
+• Traitor only
+OPTIONS
+• Ashurhaddon may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+r41-unit-xvii-6-argel-tal | ARGEL TAL
+  Source Entry: Argel Tal | 5 | 4 | 5 | 5 | 3 | 5 | 4 | 10 | 3+/4+
+Force Organisation:
+CUSTODIAN SPEAR The Custodian Spear is a Two-Handed, Master-crafted Power Weapon with an inbuilt Foeblaster Boltgun. During the first round of each close combat, attacks made with the Custodian Spear are resolved at +1 Strength and +1 Initiative. LORD OF THE GAL VORBAK Argel Tal may select one Gal Vorbak Dark Brethren Squad as his personal retinue. The selected squad does not occupy a separate Elites selection. Argel Tal and the Gal Vorbak count as a single HQ selection.
+• HQ
+Allegiance:
+• Traitor only
+Unit Type:
+• Jump Infantry (Character)
+Wargear:
+• Power Armour
+• Custodian Spear
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Word Bearers)
+• Independent Character
+• Master of the Legion
+• Daemon
+• Fearless
+• Lord of the Gal Vorbak
+OPTIONS
+• Argel Tal may take:
+• Krak grenades ................................ +2 points
+• Melta bombs ................................. +5 points
+r41-unit-xvii-7-high-chaplain-erebus | HIGH CHAPLAIN EREBUS
+  Source Entry: Erebus | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+MASTER-CRAFTED ACCURSED CROZIUS Erebus' Accursed Crozius follows the normal rules from the Word Bearers Armoury and is additionally Master-crafted. ANATHAME DAGGER During an Assault phase, Erebus may exchange one of his normal Attacks for one attack with the Anathame Dagger. Invulnerable Saves may not be taken against this attack. If the attack inflicts an unsaved Wound upon a non-Vehicle model, it inflicts a Massive Wound (D3) instead of one Wound. Against Vehicles, it has no additional effect. HIGH CHAPLAIN Erebus counts as both a Legion Chaplain Consul and a Diabolist for all Word Bearers rules, army construction requirements and Rites of War. His presence therefore fulfils The Dark Shepherds and allows eligible units to purchase Dark Channelling. BURNING LORE Erebus has Burning Lore at no additional points cost and follows the normal rules presented in the Word Bearers Armoury. COMMAND RETINUE Erebus may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Allegiance:
+• Traitor only
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Master-crafted Accursed Crozius
+• Bolt pistol
+• Anathame Dagger
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Word Bearers)
+• Independent Character
+• Master of the Legion
+• Psyker (Mastery Level 1\)
+• High Chaplain
+• Burning Lore
+OPTIONS
+• Erebus may take:
+• Krak grenades ................................ +2 points
+• Melta bombs ................................. +5 points
+r41-unit-xvii-8-kor-phaeron-the-black-cardinal | KOR PHAERON, THE BLACK CARDINAL
+  Source Entry: Kor Phaeron | 4 | 4 | 4 | 3 | 4 | 3 | 2 | 10 | 2+/4+
+TERMINUS CONSOLARIS The Terminus Consolaris counts as Cataphractii Terminator Armour. Its extensive life-support systems grant Kor Phaeron Feel No Pain (6+). These rules are already reflected in his profile and Special Rules. BURNING LORE Kor Phaeron has Burning Lore at no additional points cost and follows the normal rules presented in the Word Bearers Armoury. BLACK CARDINAL Kor Phaeron counts as both a Dark Apostle and a Diabolist for all Word Bearers rules, army construction requirements and Rites of War. His presence therefore fulfils The Dark Shepherds and allows eligible units to purchase Dark Channelling. JEALOUS COMMAND If Kor Phaeron is included in the army, he must be the army's Warlord unless Lorgar is also included. COMMAND RETINUE Kor Phaeron may select one Legion Terminator Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Allegiance:
+• Traitor only
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Terminus Consolaris
+• Pair of Lightning Claws
+• Hand Flamer
+Special Rules:
+• Legiones Astartes (Word Bearers)
+• Independent Character
+• Master of the Legion
+• Psyker (Mastery Level 1\)
+• Feel No Pain (6+)
+• Burning Lore
+• Black Cardinal
+• Jealous Command
+r41-unit-xvii-11-hol-beloth | HOL BELOTH
+  Source Entry: Hol Beloth | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+/4+
+TAINTED WEAPON Hol Beloth's Tainted Weapon follows the normal rules presented in the Word Bearers Armoury. HEXAGLYPHIC WARD The first unsaved Wound suffered by Hol Beloth during the battle is ignored. If that attack would inflict a Massive Wound, the Ward is used before rolling the D3 Wounds. After preventing one Wound, the Ward has no further effect. EXHORTATION OF BATTLE Once per battle, at the beginning of a Word Bearers Assault phase, Hol Beloth may declare an Exhortation of Battle. Until the end of that Assault phase, Word Bearers models with a Weapon Skill lower than 5 count as having Weapon Skill 5. Models which already have Weapon Skill 5 or higher are unaffected. COMMAND RETINUE Hol Beloth may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Allegiance:
+• Traitor only
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Master-crafted Power Fist
+• Tainted Weapon
+• Plasma pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Word Bearers)
+• Independent Character
+• Master of the Legion
+• Hexaglyphic Ward
+• Exhortation of Battle
+OPTIONS
+• Hol Beloth may take:
+• Krak grenades ................................ +2 points
+• Melta bombs ................................. +5 points
+r41-unit-xviii-0-firedrake-terminator-squad | FIREDRAKE TERMINATOR SQUAD
+  Source Entry: Firedrake | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Firedrake Master | 5 | 4 | 4 | 4 | 1 | 4 | 3 | 10 | 2+/5+
+Force Organisation:
+DRAGONSCALE STORM SHIELD A model equipped with a Dragonscale Storm Shield has a 4+ Invulnerable Save in close combat and against shooting attacks made with Flame or Melta weapons. Against all other shooting attacks, the shield provides a 5+ Invulnerable Save. FIREDRAKE RETINUE A Firedrake Terminator Squad may be selected as the retinue of a Salamanders Praetor wearing Terminator Armour, Artellus Numeon or another Character whose rules specifically permit it. The squad does not occupy a separate Elites selection.
+• Elites
+• 0–1
+Unit Composition:
+• 4 Firedrakes
+• 1 Firedrake Master
+Unit Type:
+• Infantry
+• The Firedrake Master is a Character
+Wargear:
+• Terminator Armour
+• Thunder hammer
+• Dragonscale Storm Shield
+Special Rules:
+• Legiones Astartes (Salamanders)
+• Stubborn
+• Implacable Advance
+• Firedrake Retinue
+OPTIONS
+• The squad may include up to five additional Firedrakes for +45 points per model.
+• Any model may upgrade his Thunder hammer to a Master-crafted Thunder hammer for +10 points.
+• For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+• Heavy Flamer ................................. +10 points
+• Multi-Melta .................................. +20 points
+The Firedrake Master may select up to 50 points of permitted Terminator weapons and wargear from the Space Marine Armoury and Salamanders Armoury.
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r41-unit-xviii-5-artellus-numeon | ARTELLUS NUMEON
+  Source Entry: Artellus Numeon | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+Force Organisation:
+• HQ
+SALAMANDERS MANTLE Numeon's Salamanders Mantle follows the normal rules presented in the Salamanders Armoury. CAPTAIN OF THE PYRE GUARD Numeon may select one Firedrake Terminator Squad as his personal retinue. One Firedrake in that unit may be upgraded to a Firedrake Master at no additional points cost. The squad does not occupy a separate Elites selection. VULKAN'S HEIR Numeon and any Salamanders unit he has joined may re-roll failed Morale tests. COMMAND RETINUE Instead of a Firedrake Terminator Squad, Numeon may select a Legion Command Squad or Legion Terminator Command Squad.
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Master-crafted Thunder hammer
+• Bolt pistol
+• Frag grenades
+• Salamanders Mantle
+Special Rules:
+• Legiones Astartes (Salamanders)
+• Independent Character
+• Master of the Legion
+• Captain of the Pyre Guard
+• Vulkan's Heir
+OPTIONS
+• Numeon may take:
+• Krak grenades ................................ +2 points
+• Melta bombs ................................. +5 points
+r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan | LORD CHAPLAIN NOMUS RHY'TAN
+  Source Entry: Nomus Rhy'tan | 6 | 4 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+MANTLE OF THE ELDER DRAKE The Mantle of the Elder Drake counts as a Salamanders Mantle. DARKSTAR FALLING Darkstar Falling is a Two-Handed, Master-crafted Power Weapon. Attacks made with it are resolved at +2 Strength and have the Concussive special rule. Against Vehicles, attacks made with Darkstar Falling have Armourbane. LORD CHAPLAIN Nomus Rhy'tan counts as a Legion Chaplain Consul for all rules, army construction requirements and Rites of War. KEEPER OF THE KEYS One Legion Dreadnought or Legion Contemptor Dreadnought may be selected as a non-compulsory HQ choice. It may not fulfil the army's compulsory HQ selection and may not be the Warlord. COMMAND RETINUE Nomus may select a Legion Command Squad, Legion Terminator Command Squad or Firedrake Terminator Squad as his retinue.
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Darkstar Falling
+• Combi-flamer
+• Bolt pistol
+• Frag grenades
+• Mantle of the Elder Drake
+Special Rules:
+• Legiones Astartes (Salamanders)
+• Independent Character
+• Master of the Legion
+• Zealot
+• Lord Chaplain
+• Keeper of the Keys
+OPTIONS
+• Nomus Rhy'tan may take:
+• Krak grenades ................................ +2 points
+• Melta bombs ................................. +5 points
+r41-unit-xviii-10-xviii-vulkan-the-forgefather | XVIII — VULKAN, THE FORGEFATHER
+  Source Entry: Primarch of the Salamanders, the Forgefather, Lord of Drakes
+Vulkan was among the mightiest and most enduring of the Emperor’s sons, a giant even by the standards of the Primarchs and a craftsman without equal among the Legiones Astartes. Raised upon the volcanic world of Nocturne, he learned that strength existed not for its own sake, but for the protection of those unable to defend themselves. This creed would shape both Vulkan and the XVIII Legion throughout the Great Crusade.
+Upon the battlefield the Forgefather advanced with the inevitability of a living fortress, clad in armour of his own making and bearing weapons wrought by his hand. Fire and melta washed harmlessly across drake-scale and ceramite, while Dawnbringer shattered armoured warriors and engines of war beneath its blows. Even death itself seemed unable to claim Vulkan permanently, for the Primarch possessed a regenerative vitality whose limits neither his brothers nor the enemies of mankind fully understood.
+Vulkan | 7 | 6 | 7 | 7 | 7 | 5 | 5 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Vulkan
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Draken Scale
+• Kesare’s Mantle
+• Dawnbringer
+• Furnace’s Heart
+• Gauntlet of the Forge
+• Frag Grenades
+Special Rules:
+• Primarch
+• Legiones Astartes (Salamanders)
+• The Forgefather
+• Lord of Drakes
+• Sire of the Salamanders
+• Perpetual
+RESTRICTIONS
+Vulkan may only be selected for a Loyalist Salamanders army. He otherwise follows all normal rules and restrictions for Primarchs.
+DRAKEN SCALE A peerless suit of artificer-wrought armour created by Vulkan’s own hand, the Draken Scale combined the finest technologies of the Imperium with the craft traditions of Nocturne. The Draken Scale counts as Primarch Armour. KESARE’S MANTLE Fashioned from the hide of one of Nocturne’s mightiest drakes, Kesare’s Mantle possessed an extraordinary resistance to heat and flame. When resolving an attack made with a Flame weapon against Vulkan, reduce the Strength of that attack by 1, to a minimum of Strength 1. DAWNBRINGER One of the greatest weapons ever forged by Vulkan, Dawnbringer was an immense warhammer whose blows could shatter fortifications, armoured vehicles and even the mightiest living foes. Dawnbringer is a Master-crafted, Two-Handed Power Weapon. Attacks made with Dawnbringer are resolved at Strength 10 and have the Armourbane and Concussive special rules. Any unsaved Wound inflicted by Dawnbringer against a model without the Primarch special rule becomes a Massive Wound and inflicts D3 Wounds instead of one Wound. FURNACE’S HEART A unique energy weapon fashioned by Vulkan, Furnace’s Heart projected a concentrated blast capable of burning through even the finest armour. Weapon Range S AP Type Furnace’s Heart 18" 6 2 Assault 1, Rending, Master-crafted GAUNTLET OF THE FORGE Built directly into Vulkan’s armour, the Gauntlet of the Forge projected torrents of superheated flame capable of reducing infantry to ash. Weapon Range S AP Type Gauntlet of the Forge Template 6 4 Assault 1, Flame THE FORGEFATHER Vulkan was perhaps the greatest smith among the Primarchs, and every weapon he carried had been fashioned or perfected according to his own exacting standards. All ranged and close-combat weapons carried by Vulkan count as Master-crafted. This benefit is already included in the profiles of weapons where relevant. LORD OF DRAKES Born beneath the burning skies of Nocturne, Vulkan could endure heat and fire which would destroy even another transhuman warrior. Vulkan may re-roll failed Armour and Invulnerable Saves made against attacks from Flame or Melta weapons. The second result must be accepted. SIRE OF THE SALAMANDERS The warriors of the XVIII Legion drew strength from the example of their Primarch, enduring the enemy’s fury with the same stubborn determination taught upon Nocturne. Friendly Salamanders units with at least one model within 12" of Vulkan may re-roll failed Morale tests. In addition, such units may re-roll Armour Save rolls of 1 made against attacks from Flame weapons. The second result must be accepted. PERPETUAL The true nature of Vulkan’s extraordinary regenerative ability was unknown even to many of his brother Primarchs. Wounds which should have brought final death could instead prove only a temporary defeat. The first time Vulkan is reduced to 0 Wounds, roll a D6 before removing him as a casualty. On a roll of 4+, Vulkan is not removed. Instead, immediately roll a D3 and restore Vulkan to that many Wounds. Vulkan remains exactly where he was and, if he was engaged in close combat, remains engaged. On a roll of 1–3, Vulkan is removed as a casualty normally. Perpetual may only be used once per battle. If Vulkan successfully uses Perpetual, he is not considered to have been slain for the purposes of Victory Points, Warlord objectives or Price of Failure. Price of Failure and any other rewards for slaying Vulkan are only awarded if Vulkan is ultimately removed as a casualty. PRIMARCH RETINUE Vulkan may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Firedrake Terminator Squad A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.
+r41-unit-xix-1-dark-fury-assault-squad | DARK FURY ASSAULT SQUAD
+  Source Entry: Dark Fury | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+
+Strike Leader | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 9 | 3+
+Force Organisation:
+• Fast Attack
+Unit Composition:
+• 4 Dark Furies
+• 1 Dark Fury Strike Leader
+Unit Type:
+• Jump Infantry
+• Dark Fury Strike Leader is a Character
+Wargear:
+• Power Armour
+• Jump Pack
+• Bolt pistol
+• Raven's Talons
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Raven Guard)
+• Swooping Killers
+OPTIONS
+• The squad may include up to five additional Dark Furies for +34 points per model.
+• The entire squad may take:
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• The Dark Fury Strike Leader may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.
+SWOOPING KILLERS During an Assault phase in which the Dark Furies charge, models in the squad may re-roll To Hit rolls of 1 until the end of that Assault phase. COMMAND SQUAD A Dark Fury Assault Squad may be selected as the retinue of a Raven Guard Praetor equipped with a Jump Pack. If selected in this manner, the Dark Fury Assault Squad does not occupy a Fast Attack choice. The Praetor and Dark Fury Squad count as a single HQ selection for Force Organisation purposes.
+r41-unit-xix-5-alvarex-maun | ALVAREX MAUN
+  Source Entry: Alvarex Maun | 5 | 5 | 4 | 4 | 3 | 4 | 3 | 9 | 2+/5+
+Alvarex Maun may be selected as an HQ choice in a Raven Guard Detachment.
+COMMAND SQUAD Alvarex Maun may be accompanied by a Legion Command Squad. Maun and the Command Squad count as a single HQ selection. TOLAEDUS Tolaedus counts as a Master-crafted Power Weapon. NIGHTFALL PATTERN STRATO-VOX The Nightfall Pattern Strato-Vox counts as a Nuncio Vox. In addition, once during each Raven Guard turn, one friendly Raven Guard unit deploying by Deep Strike with its first model within 12" of Maun may re-roll the dice rolled for scatter distance. The second result must be accepted. MASTER OF DESCENT If Alvarex Maun begins the battle in Reserve embarked aboard a Drop Pod, Dreadclaw or Flyer Transport, Maun and that Transport arrive automatically during the first Raven Guard turn. No Reserve roll is required.
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Bolt pistol
+• Tolaedus
+• Nightfall Pattern Strato-Vox
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Raven Guard)
+• Independent Character
+• Master of the Legion
+• Master of Descent
+r41-unit-xix-9-xix-corvus-corax-the-raven-lord | XIX — CORVUS CORAX, THE RAVEN-LORD
+  Source Entry: Primarch of the Raven Guard, the Raven-Lord, the Deliverer
+Corvus Corax was the liberator of Deliverance and master of the XIX Legion, a warrior whose understanding of stealth, infiltration and sudden violence stood apart even among the Primarchs. Raised among the enslaved population of Lycaeus, Corax learned that a stronger enemy need not be met upon ground of its choosing. Instead, its commanders could be isolated, its communications severed and its strength rendered meaningless before the decisive blow was struck.
+In battle the Raven-Lord seemed less a general than an apparition, descending upon vital positions before disappearing again into smoke and darkness. His Legion reflected this philosophy, favouring reconnaissance, sabotage and precisely delivered assaults over wars of attrition. The older Raven Guard material likewise centres Corax and his Legion on covert operations, infiltration and lightning strikes rather than headlong assault.
+Corvus Corax | 8 | 7 | 6 | 6 | 6 | 8 | 6 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Corvus Corax
+Unit Type:
+• Jump Infantry (Character)
+Wargear:
+• Sable Armour
+• Korvidine Pinions
+• Corvidine Talons
+• Wrath & Justice
+• Frag Grenades
+Special Rules:
+• Primarch
+• Legiones Astartes (Raven Guard)
+• The Shadowed Lord
+• Surgical Strike
+• Sire of the Raven Guard
+• Secret Deployment
+RESTRICTIONS
+Corvus Corax may only be selected for a Loyalist Raven Guard army. He otherwise follows all normal rules and restrictions for Primarchs.
+SABLE ARMOUR The black war-plate of the Raven-Lord incorporated sophisticated systems of concealment and disruption, allowing Corax to move through the battlefield with an uncanny ability to escape detection. The Sable Armour counts as Primarch Armour. KORVIDINE PINIONS A highly advanced flight system incorporated into Corax’s armour, the Korvidine Pinions allowed the Raven-Lord to cross the battlefield with a speed and freedom of movement few warriors could match. Corvus Corax is treated as Jump Infantry and follows all normal ProHammer rules for Jump Infantry. His ability to move as Jump Infantry may never be lost, disabled or destroyed as the result of damage to wargear. CORVIDINE TALONS The Corvidine Talons were a matched pair of vicious powered blades designed for the Raven-Lord’s preferred method of sudden and overwhelming close assault. The Corvidine Talons are a matched pair of Power Weapons. Attacks made with them are resolved at +1 Strength and have the Shred and Rending special rules. They count as two close combat weapons. WRATH & JUSTICE Wrath and Justice were a matched pair of archaeotech pistols carried by Corax, their destructive power complementing the speed with which the Raven-Lord closed upon his prey. Weapon Range S AP Type Wrath & Justice 12" 6 4 Assault 2, Rending, Master-crafted THE SHADOWED LORD Corax possessed an almost preternatural ability to disappear amidst darkness, smoke and the confusion of battle, striking without warning before escaping retaliation. Corvus Corax has the Stealth and Hit & Run special rules. SIRE OF THE RAVEN GUARD Under the direction of their gene-sire, the warriors of the XIX Legion exploited every shadow, ruin and fragment of cover to its fullest advantage. Friendly Raven Guard Infantry units with at least one model within 12" of Corvus Corax improve any Cover Save they receive by 1, to a maximum of 3+. SECRET DEPLOYMENT Few enemies ever knew precisely where Corax would strike until the Raven-Lord was already amongst them. Instead of deploying Corvus Corax normally, the Raven Guard player may secretly record one terrain feature which lies outside the enemy deployment zone. Corax is then held off the battlefield.At the beginning of any Raven Guard Movement phase from the second turn onwards, the controlling player may reveal the recorded terrain feature. Place Corax wholly within or in contact with that terrain feature and more than 6" from every enemy model. Corax may Move, Shoot and declare charges normally during the turn in which he is revealed. No Reserve roll is required. If it is impossible to place Corax legally within or in contact with the nominated terrain feature, he may not be revealed that turn and may attempt to deploy there during a later Raven Guard turn. If Corax has selected a Primarch Retinue, the Retinue is deployed normally and does not accompany him when using Secret Deployment. PRIMARCH RETINUE Corvus Corax may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Dark Fury Assault Squad • Raptor Squad A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules. Corax may join a Raptor Squad despite the normal restrictions of the Unstable Creation special rule. THE AVENGING SHADOW — POST-ISTVAAN VARIANT Corvus Corax may be fielded as the Avenging Shadow at no additional points cost. This represents Corax during the aftermath of the Dropsite Massacre, clad in hastily repaired armour and consumed by a bitter campaign of vengeance against the Traitor Legions. If this variant is selected, make the following changes: PATCHWORK PANOPLY The shattered armour of the Raven-Lord was repaired with whatever materials could be salvaged in the aftermath of Istvaan, sacrificing some of its former protection for survival and mobility. Corax has a 2+ Armour Save and 4+ Invulnerable Save instead of the normal protection provided by Primarch Armour. His armour still counts as Primarch Armour for all other purposes. GHOST OF ISTVAAN Hunted across the shattered wastes of Istvaan V, Corax became a spectre amongst the ruins, appearing only long enough to kill before vanishing once more. Corax replaces the Stealth special rule granted by The Shadowed Lord with Shrouded. He retains Hit & Run normally. HATER OF TRAITORS The betrayal at Istvaan transformed Corax’s hatred of oppression into a personal and implacable desire for vengeance. Corax has Hatred (Traitor Legiones Astartes).
+r41-unit-xx-4-armillus-dynat | ARMILLUS DYNAT
+  Source Entry: Armillus Dynat | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+COMMAND SQUAD Dynat may be accompanied by a Legion Command Squad, Legion Terminator Command Squad or Lernaean Terminator Squad. Dynat and the selected squad count as a single HQ selection. THE HARROWING Dynat and any unit he has joined gain Counter-Attack. In addition, models in that unit add +1 to Armour Penetration rolls made against Vehicles in close combat. WEAPON MASTERY Dynat may divide his close-combat attacks between his Power weapon and Thunder hammer in any combination he chooses. Any bonus Attacks received for charging or fighting with two close-combat weapons may also be divided between the two weapons.
+Armillus Dynat may be selected as an HQ choice in an Alpha
+Legion Detachment.
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Power weapon
+• Thunder hammer
+• Bolt pistol
+• Nuncio Vox
+• Frag grenades
+• Krak grenades
+Special Rules:
+• Legiones Astartes (Alpha Legion)
+• Independent Character
+• Master of the Legion
+• The Harrowing
+• Weapon Mastery
+r41-unit-xx-7-ingo-pech | INGO PECH
+  Source Entry: Ingo Pech | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+
+Ingo Pech may be selected as an HQ choice in an Alpha Legion Detachment.
+COMMAND SQUAD Pech may be accompanied by a Legion Command Squad, Legion Terminator Command Squad, Lernaean Terminator Squad or Legion Seeker Squad. Pech and the selected squad count as a single HQ selection. MASTER OF DECEIT An army containing Ingo Pech may use The Rewards of Treachery rule presented in The Coils of the Hydra Rite of War even if the army is not using that Rite. If the army is already using The Coils of the Hydra, Ingo Pech does not permit a second Rewards of Treachery unit.
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Power weapon
+• Bolter
+• Nuncio Vox
+• Frag grenades
+• Krak grenades
+Special Rules:
+• Legiones Astartes (Alpha Legion)
+• Independent Character
+• Master of the Legion
+• Master of Deceit
+r41-unit-xx-10-xx-alpharius-the-hydra | XX — ALPHARIUS, THE HYDRA
+  Source Entry: Primarch of the Alpha Legion, the Last Primarch, Lord of the XX Legion
+Of all the Emperor’s sons, none was surrounded by as much uncertainty as Alpharius. Even within the Alpha Legion, identity was a weapon to be concealed, exchanged and discarded as readily as any blade. Warriors adopted their Primarch’s name and appearance, false commanders led genuine assaults, and seemingly insignificant operations concealed objectives whose importance became apparent only after victory had already been achieved.
+Upon the battlefield Alpharius rarely presented the enemy with a single obvious centre of command. His plans were layered with feints, infiltrators and hidden contingencies, allowing the Primarch himself to remain unseen until the precise instant his presence would prove decisive. By the time the enemy understood which warrior truly bore the Pale Spear, the Hydra’s coils had usually closed around them.
+Alpharius | 7 | 7 | 6 | 6 | 5 | 6 | 5 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Alpharius
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Pythian Scales
+• Pale Spear
+• Hydra’s Spite
+• Frag Grenades
+Special Rules:
+• Primarch
+• Legiones Astartes (Alpha Legion)
+• Master of Lies
+• The Hydra
+• Sire of the Alpha Legion
+• I Am Alpharius
+PYTHIAN SCALES The armour of Alpharius incorporated technologies whose origins and capabilities were known only to the inner circles of the XX Legion, its shifting surface and serpentine ornamentation concealing a defence worthy of a Primarch. The Pythian Scales count as Primarch Armour. PALE SPEAR The true origins of the Pale Spear were unknown, though the weapon was believed to be of Xenos manufacture and possessed destructive properties unlike those of the conventional weapons of the Imperium. The Pale Spear is a Two-Handed Power Weapon. Attacks made with the Pale Spear are resolved at Alpharius’ normal Strength and have the Armourbane special rule. Any unsaved Wound inflicted by the Pale Spear against a model without the Primarch special rule becomes a Massive Wound and inflicts D3 Wounds instead of one Wound. HYDRA’S SPITE Hydra’s Spite was an ancient plasma weapon of exceptional manufacture, its compact form concealing firepower sufficient to destroy even heavily armoured warriors. Weapon Range S AP Type Hydra’s Spite 18" 7 2 Assault 2, Gets Hot MASTER OF LIES Few commanders could distinguish the true deployment of the XX Legion from the feints and false dispositions which surrounded it. After both armies have deployed but before the first turn begins, nominate one friendly Alpha Legion unit. That unit may be redeployed anywhere it could legally have been deployed at the beginning of the battle. It must obey all normal deployment restrictions and may not be placed into Reserve unless it was already eligible to begin the battle in Reserve. THE HYDRA Every operation of the Alpha Legion concealed objectives within objectives, the destruction of a seemingly insignificant target often revealing itself as the purpose around which the entire battle had been constructed. Before either army deploys, secretly record one enemy unit as the Alpha Legion’s Priority Target. The identity of the Priority Target need not be revealed until the first time a friendly Alpha Legion unit makes an attack against it. Once revealed, friendly units with the Legiones Astartes (Alpha Legion) special rule may re-roll To Hit rolls of 1 when attacking the Priority Target. This applies to both shooting and close combat attacks. SIRE OF THE ALPHA LEGION The warriors of the XX Legion operated according to plans whose true scope was often known only to their Primarch, but the appearance of Alpharius upon the battlefield signalled that those plans had reached their decisive stage. Friendly units with the Legiones Astartes (Alpha Legion) special rule with at least one model within 12" of Alpharius may use his Leadership characteristic when taking Morale or Pinning tests. I AM ALPHARIUS The Alpha Legion cultivated deliberate uncertainty concerning the appearance and identity of its Primarch. Any warrior might be Alpharius, and an enemy could never be certain that the commander before them was truly the master of the XX Legion until it was already too late. Alpharius is not deployed normally and does not begin the battle in Reserve. At the beginning of any Alpha Legion turn, nominate one friendly Infantry model on the battlefield with the Legiones Astartes (Alpha Legion) special rule. Remove that model from play and replace it with Alpharius, placing Alpharius as close as possible to the model’s previous position. The replaced model counts as a casualty. Alpharius enters play with his full starting Wounds and all of his normal wargear and special rules. He does not retain any weapons, wargear, Wounds or other rules possessed by the model he replaced. If the replaced model was part of a unit, Alpharius immediately joins that unit. If the replaced model was engaged in close combat, Alpharius is considered engaged in the same close combat. Alpharius may Move, Shoot and declare charges normally during the turn in which he is revealed. No Reserve roll is required. If Alpharius has not been revealed when the battle ends, he counts as having been slain for the purposes of Victory Points, Slay the Warlord and Price of Failure. PRIMARCH RETINUE Alpharius may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Lernaean Terminator Squad A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules. Because Alpharius does not begin the battle on the battlefield, his Primarch Retinue deploys normally without him. Alpharius may use I Am Alpharius to replace a model in his Primarch Retinue. If he does so, he immediately joins that unit. A Lernaean Terminator Squad selected as Alpharius’ Primarch Retinue does not count against the normal 0–1 limitation on Lernaean Terminator Squads.
+r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king | XV — MAGNUS THE RED, THE CRIMSON KING
+  Source Entry: Primarch of the Thousand Sons, the Crimson King, Lord of Prospero
+Magnus the Red was the most psychically gifted of the Emperor’s sons, a towering scholar-warrior whose understanding of the immaterium exceeded that of all but the greatest minds of the Imperium. Upon Prospero he gathered philosophers, occultists and psykers into a civilisation devoted to knowledge, while the Thousand Sons themselves became masters of disciplines that other Legions regarded with suspicion and fear.
+Upon the battlefield Magnus wielded sorcery as naturally as another warrior might wield a blade. He shattered armour with raw aetheric force, twisted the paths of fate, shielded his sons behind impossible barriers and reached into the minds of his enemies. Where lesser psykers risked being overwhelmed by the turbulence of the Warp, the presence of the Crimson King seemed instead to force that turbulence into obedience.
+Magnus the Red | 7 | 7 | 7 | 7 | 7 | 6 | 4 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Magnus the Red
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Horned Raiment
+• Blade of Ahn-Nunurta
+• Arcane Litanies
+Special Rules:
+• Primarch
+• Legiones Astartes (Thousand Sons)
+• Psyker (Mastery Level 4\)
+• Lord of the Ether
+• The Crimson King
+• The Warp Bends to Magnus
+• Sorcerous Duellist
+HORNED RAIMENT The war-plate of the Crimson King was as much an artefact of sorcery as of the artificer’s craft, surrounded by kine shields, illusions and shifting aetheric wards which distorted the form of Magnus and those who fought at his side. The Horned Raiment counts as Primarch Armour. When an enemy unit makes shooting attacks against Magnus or a unit he has joined, all To Hit rolls made as part of that attack suffer a -1 modifier. To Hit rolls made with Blast weapons suffer a -2 modifier instead. These modifiers have no effect in close combat. BLADE OF AHN-NUNURTA A weapon of ancient and esoteric provenance, the Blade of Ahn-Nunurta served as both a weapon of war and a focus through which Magnus could channel his immense psychic power. The Blade of Ahn-Nunurta is a Master-crafted, Two-Handed Force Weapon. It follows all normal ProHammer rules for Force Weapons. ARCANE LITANIES Inscribed upon the armour and wargear of the Crimson King were formulae, wards and occult geometries intended to protect their bearer against the dangers inherent in drawing upon the Warp. Once per battle, when Magnus suffers a Wound as a result of Perils of the Warp, he may ignore that Wound. The Psychic Test and psychic power are otherwise resolved normally. PSYKER — MASTERY LEVEL 4 Magnus the Red is a Psyker with Mastery Level 4. Before the battle, Magnus selects five psychic powers in total. These powers may be selected from the following disciplines: Biomancy, Divination, Pyromancy, Telekinesis and Telepathy. Magnus must select powers from at least two different psychic disciplines. He may not select all five powers from a single discipline. Infernal Phoenix and Strands of Fate are always known by Magnus and count towards his five psychic powers. Magnus otherwise follows all normal ProHammer rules for Psykers unless specifically stated otherwise. Magnus counts as belonging to all five Prosperine Cults for the purposes of army selection and other friendly abilities, but gains no Cult Arcana or Cult Mastery from them. PSYCHIC SUPREMACY Magnus may never have more than two Blessings affecting himself at the same time. If Magnus successfully invokes a Blessing upon himself while already affected by two Blessings, he must immediately choose one existing Blessing affecting him to end before the new power takes effect. This restriction does not limit Blessings affecting friendly units or Maledictions affecting enemy units. Magnus may never have more than two psychic powers with ongoing effects simultaneously affecting himself and/or the opposing Primarch. LORD OF THE ETHER Magnus may invoke up to four psychic powers during each player turn, overriding the normal ProHammer maximum of two. Magnus may invoke multiple Witchfire powers during the same Shooting phase, subject to his normal limit of four psychic powers. Magnus may not successfully invoke the same psychic power more than once during the same player turn. Activating the Blade of Ahn-Nunurta as a Force Weapon does not count against this limit. THE CRIMSON KING The psychic mastery of Magnus was such that even a faltering connection to the Warp could be seized and brought under control through sheer force of will. Magnus may re-roll one failed Psychic Test during each player turn. The second result must be accepted. Magnus may attempt to Deny the Witch against any psychic power if either the Psyker invoking the power or its target is within 24" of Magnus. Resolve the Deny the Witch attempt normally using Magnus' own Mastery Level. Each psychic power may still only be the subject of one Deny the Witch attempt, as normal. THE WARP BENDS TO MAGNUS Where lesser psykers struggled as the immaterium became increasingly disturbed, Magnus imposed his will upon the Warp with a power few beings could hope to equal. Magnus ignores all Leadership penalties caused by Disturbance in the Warp. In addition, psychic powers successfully invoked by Magnus are ignored when determining the penalties caused by Disturbance in the Warp for other friendly Psykers. Psychic powers successfully invoked by other friendly Psykers still contribute towards Disturbance in the Warp normally. Magnus may also attempt to deny the witch at 18” around him. INFERNAL PHOENIX Witchfire — Beam Magnus unleashes a torrent of incandescent aetheric fire, burning through flesh and armour as it tears across the battlefield. Range 24" | Strength 8 | AP1 | Melta Resolve Infernal Phoenix using the normal rules for Beam psychic powers. STRANDS OF FATE Malediction Magnus reaches into the skeins of possibility and twists them about his victim, turning every intended action into another path towards failure. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus’ next turn, that unit must pass a Leadership Test each time it attempts to: • Move during the Movement phase; • Shoot during the Shooting phase; or • declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted. SORCEROUS DUELLIST Even when locked in single combat with one of his brother Primarchs, Magnus remained first and foremost a master of the immaterium. While Magnus is fighting a Primarch Duel, at the beginning of each Assault phase he may invoke one of the following: • a Blessing which targets only Magnus; or • a Malediction which targets only the opposing Primarch. This psychic power counts towards Magnus’ maximum allowance of four powers for that player turn. All normal Psychic Tests, Deny the Witch attempts and Perils of the Warp rules apply. PRIMARCH RETINUE Magnus the Red may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Sekhmet Terminator Cabal A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules. THE CRIMSON KING’S GUARD A Legion Honour Guard Squad or Legion Terminator Command Squad selected as Magnus’ Primarch Retinue may be upgraded to a Brotherhood of Psykers (Mastery Level 1\) for +25 points per squad. A squad upgraded in this manner is assigned to one Prosperine Cult and receives the normal Cult Arcana and Cult Mastery benefits of that Cult. The squad selects one psychic power from any of the normal psychic disciplines available to Thousand Sons Psykers and otherwise follows all normal rules for a Psychic Brotherhood.
+r46-al-reward-6 | DOMINATOR COHORT — Rewards of Treachery
+  Source Entry: Dominator | 5 | 4 | 4 | 4 | 1 | 3 | 2 | 9 | 2+/4+
+Dominator Warden | 5 | 4 | 4 | 4 | 1 | 3 | 3 | 9 | 2+/4+
+Force Organisation:
+• Elites
+Unit Composition:
+• 4 Dominators
+• 1 Dominator Warden
+Unit Type:
+• Infantry
+• The Dominator Warden is a Character
+Wargear:
+• Cataphractii Terminator Armour
+• Combi-bolter
+• Thunder Hammer
+Special Rules:
+• Legiones Astartes (Iron Warriors)
+• Stubborn
+• Hatred (Battle-Automata)
+• Those Once Honoured
+OPTIONS
+• The squad may include up to five additional Dominators
+for +50 points per model.
+• Any model may replace its Thunder Hammer with:
+• Chainfist ........................................ Free
+• Any model may replace its Combi-bolter with:
+• Volkite charger ................................ +10 points
+• Combi-flamer ................................... +10 points
+• Combi-meltagun ................................. +15 points
+• Combi-plasma gun ............................... +15 points
+• For every five models in the squad, one Dominator may replace
+its Combi-bolter with:
+• Heavy flamer ................................... +10 points
+• Reaper autocannon .............................. +15 points
+• Multi-Melta .................................... +15 points
+• The Dominator Warden may take:
+• Grenade Harness ................................ +10 points
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+HATRED (BATTLE-AUTOMATA) The Dominator Cohort uses the normal ProHammer Hatred special rule when fighting enemy Battle-Automata. THOSE ONCE HONOURED One Dominator Cohort may be selected as Perturabo's personal retinue. If selected in this manner, the squad does not occupy an Elites choice and Perturabo and the Dominator Cohort count as a single HQ selection.
+r46-al-reward-14 | VARAGYR WOLF GUARD TERMINATORS — Rewards of Treachery
+  Source Entry: Varagyr Terminator | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/4+
+Varagyr Thegn | 5 | 4 | 4 | 4 | 2 | 4 | 3 | 9 | 2+/4+
+Force Organisation:
+GLORY SEEKERS At the beginning of each Assault phase, if the Varagyr are engaged with one or more enemy Independent Characters, nominate one such character. Any Varagyr able to direct attacks against that character must do so. Each Varagyr attacking the nominated character may re-roll one failed To Hit roll during that Assault phase. CHOSEN OF THE JARL A Space Wolves Praetor equipped with Terminator Armour may select one Varagyr Wolf Guard Terminator Pack instead of a Legion Terminator Command Squad. The Varagyr do not occupy a separate Force Organisation slot and the Praetor and Varagyr count as a single HQ selection.
+• Elites
+Unit Composition:
+• 5 Varagyr Terminators
+Unit Type:
+• Infantry
+• A Varagyr Thegn is a Character
+Wargear:
+• Cataphractii Terminator Armour
+• Combi-bolter
+• Frost Blade or Frost Axe
+Special Rules:
+• Legiones Astartes (Space Wolves)
+• Fearless
+• Glory Seekers
+• Chosen of the Jarl
+OPTIONS
+• The pack may include up to five additional Varagyr Terminators for +45 points per model.
+• Any model may replace its Combi-bolter with:
+• Foeblaster Boltgun ............................ +5 points
+• Combi-flamer ................................. +10 points
+• Combi-volkite charger ....................... +10 points
+• Combi-meltagun .............................. +15 points
+• Combi-plasma gun ............................ +15 points
+• Any model may replace its Frost Blade or Frost Axe with:
+• Power fist .................................... +5 points
+• Chainfist .................................... +10 points
+• Thunder hammer ............................... +10 points
+• For every five models in the pack, one Varagyr may replace
+his Combi-bolter with:
+• Heavy flamer ................................. +10 points
+• Reaper autocannon ............................ +15 points
+• Assault cannon ............................... +20 points
+• One Varagyr may be upgraded to:
+• Varagyr Thegn ................................ +25 points
+• The Varagyr Thegn may take:
+• Grenade Harness .............................. +10 points
+The Varagyr Thegn may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury and Space Wolves Armoury.
+DEDICATED TRANSPORT
+The pack may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r46-al-reward-34 | INVICTARUS SUZERAIN SQUAD — Rewards of Treachery
+  Source Entry: Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points
+r46-al-reward-38 | DEATHSHROUD TERMINATORS — Rewards of Treachery
+  Source Entry: Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Composition:
+• 2 Deathshroud Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Terminator Armour
+• Manreaper
+• Alchem Flamer
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Fearless
+• Silent Retinue
+OPTIONS
+• The squad may include up to five additional Deathshroud Terminators for +55 points per model.
+• The entire squad may exchange its Terminator Armour for Cataphractii Terminator Armour at no additional cost.
+If this option is selected, the squad instead has a 2+/4+ Save and follows all normal rules and restrictions for Cataphractii Terminator Armour.
+• The entire squad may take:
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r46-al-reward-46 | JUSTAERIN TERMINATOR SQUAD — Rewards of Treachery
+  Source Entry: Justaerin Terminator | 5 | 4 | 4 | 4 | 2 | 3 | 2 | 9 | 2+/4+
+Force Organisation:
+CHOSEN OF THE WARMASTER A Sons of Horus Praetor, Ezekyle Abaddon or Horus Lupercal may select one Justaerin Terminator Squad as a retinue. If selected as a retinue, the squad does not occupy a separate Elites choice.
+• Elites
+• 0–1
+Unit Composition:
+• 5 Justaerin Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Cataphractii Terminator Armour
+• Foeblaster Boltgun
+• Power weapon or Power fist
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Chosen of the Warmaster
+OPTIONS
+• The squad may include up to five additional Justaerin Terminators for +57 points per model.
+• Any model equipped with a Power fist may replace it with:
+• Chainfist ....................................... +5 points
+• Any model may replace his Foeblaster Boltgun with:
+• Combi-flamer .................................. +10 points
+• Combi-volkite charger ........................ +10 points
+• Combi-meltagun ............................... +15 points
+• Combi-plasma gun ............................. +15 points
+• Any model may replace both of his weapons with:
+• Pair of Lightning Claws ....................... Free
+• For every five models, up to two Justaerin may replace their Foeblaster Boltgun with:
+• Heavy Flamer .................................. +10 points
+• Reaper Autocannon ............................ +20 points
+• Multi-Melta ................................... +25 points
+• The squad may purchase:
+• Banestrike Ammunition .................... +2 points per
+eligible model
+• Teleportation Transponders ................... +15 points
+• One Justaerin may be upgraded to Falkus Kibre as described in his entry.
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r46-al-reward-48 | CHIEFTAIN SQUAD — Rewards of Treachery
+  Source Entry: Chieftain | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 3+/5+
+Chieftain Prime | 5 | 4 | 4 | 4 | 2 | 4 | 3 | 10 | 3+/5+
+Force Organisation:
+• Elites
+• 0–1
+CTHONIAN RETINUE One Chieftain Squad may be selected as the retinue of a Sons of Horus Praetor or appropriate named Sons of Horus Independent Character. The squad does not occupy a separate Elites choice. The Character and Chieftain Squad count as a single HQ selection.
+Unit Composition:
+• 4 Chieftains
+• 1 Chieftain Prime
+Unit Type:
+• Infantry
+• The Chieftain Prime is a Character
+Wargear:
+• Power Armour
+• Boarding Shield
+• Bolter
+• Cthonian Culling Blade
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Sons of Horus)
+• Stubborn
+• Cthonian Retinue
+OPTIONS
+• The squad may include up to five additional Chieftains for +40 points per model.
+• Any model may replace his Cthonian Culling Blade with:
+• Power weapon ................................... +5 points
+• Power fist .................................... +10 points
+• Lightning claw ............................... +10 points
+• Thunder hammer ............................... +15 points
+• Any model may replace his Bolter with:
+• Foeblaster Boltgun ............................. +5 points
+• Combi-flamer .................................. +10 points
+• Combi-volkite charger ........................ +10 points
+• Combi-meltagun ............................... +15 points
+• Combi-plasma gun ............................. +15 points
+• The entire squad may take:
+• Krak grenades ............................ +2 points per model
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Rhino, Dreadclaw Drop Pod or Land Raider where Transport Capacity permits.
+CHIEFTAIN PRIME
+The Chieftain Prime may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury and Sons of Horus Armoury.
+r46-al-reward-53 | FIREDRAKE TERMINATOR SQUAD — Rewards of Treachery
+  Source Entry: Firedrake | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Firedrake Master | 5 | 4 | 4 | 4 | 1 | 4 | 3 | 10 | 2+/5+
+Force Organisation:
+DRAGONSCALE STORM SHIELD A model equipped with a Dragonscale Storm Shield has a 4+ Invulnerable Save in close combat and against shooting attacks made with Flame or Melta weapons. Against all other shooting attacks, the shield provides a 5+ Invulnerable Save. FIREDRAKE RETINUE A Firedrake Terminator Squad may be selected as the retinue of a Salamanders Praetor wearing Terminator Armour, Artellus Numeon or another Character whose rules specifically permit it. The squad does not occupy a separate Elites selection.
+• Elites
+• 0–1
+Unit Composition:
+• 4 Firedrakes
+• 1 Firedrake Master
+Unit Type:
+• Infantry
+• The Firedrake Master is a Character
+Wargear:
+• Terminator Armour
+• Thunder hammer
+• Dragonscale Storm Shield
+Special Rules:
+• Legiones Astartes (Salamanders)
+• Stubborn
+• Implacable Advance
+• Firedrake Retinue
+OPTIONS
+• The squad may include up to five additional Firedrakes for +45 points per model.
+• Any model may upgrade his Thunder hammer to a Master-crafted Thunder hammer for +10 points.
+• For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+• Heavy Flamer ................................. +10 points
+• Multi-Melta .................................. +20 points
+The Firedrake Master may select up to 50 points of permitted Terminator weapons and wargear from the Space Marine Armoury and Salamanders Armoury.
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+r46-al-reward-59 | DARK FURY ASSAULT SQUAD — Rewards of Treachery
+  Source Entry: Dark Fury | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+
+Strike Leader | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 9 | 3+
+Force Organisation:
+• Fast Attack
+Unit Composition:
+• 4 Dark Furies
+• 1 Dark Fury Strike Leader
+Unit Type:
+• Jump Infantry
+• Dark Fury Strike Leader is a Character
+Wargear:
+• Power Armour
+• Jump Pack
+• Bolt pistol
+• Raven's Talons
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Raven Guard)
+• Swooping Killers
+OPTIONS
+• The squad may include up to five additional Dark Furies for +34 points per model.
+• The entire squad may take:
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• The Dark Fury Strike Leader may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.
+SWOOPING KILLERS During an Assault phase in which the Dark Furies charge, models in the squad may re-roll To Hit rolls of 1 until the end of that Assault phase. COMMAND SQUAD A Dark Fury Assault Squad may be selected as the retinue of a Raven Guard Praetor equipped with a Jump Pack. If selected in this manner, the Dark Fury Assault Squad does not occupy a Fast Attack choice. The Praetor and Dark Fury Squad count as a single HQ selection for Force Organisation purposes.
