@@ -1,0 +1,63 @@
+LIVE R17 — UNIVERSAL SPECIAL-RULE POPUP CLEANUP
+CAT=17 GSTref=1
+
+Standard universal-rule reminder text is now canonicalised so New Recruit merges identical rules instead of showing several near-identical lines.
+Contextual rules that genuinely change how a universal rule is gained or used are preserved.
+
+Changed rule descriptions: 73
+• Acute Senses: 1
+• Adamantium Will: 3
+• Counter-Attack: 10
+• Deep Strike: 2
+• Eternal Warrior: 2
+• Fear: 2
+• Fearless: 15
+• Fleet: 6
+• Furious Charge: 3
+• Infiltrate: 6
+• Master of the Legion: 15
+• Move Through Cover: 2
+• Scout: 4
+• Stealth: 2
+
+Examples:
+• Legion Reconnaissance Squad — Scout: Uses the normal Scout rule from ProHammer Classic. -> This unit has Scout.
+• Legion Reconnaissance Squad — Infiltrate: Uses the normal Infiltrate rule from ProHammer Classic. -> This unit has Infiltrate.
+• Legion Reconnaissance Squad — Move Through Cover: Uses the normal Move Through Cover rule from ProHammer Classic. -> This unit has Move Through Cover.
+• Legion Reconnaissance Squad — Acute Senses: Uses the normal Acute Senses rule from ProHammer Classic. -> This unit has Acute Senses.
+• Legion Destroyer Squad — Counter-Attack: The squad has Counter-Attack using the normal ProHammer rules. -> This unit has Counter-Attack.
+• Legion Contemptor Dreadnought — Fleet: Uses the normal ProHammer Fleet special rule. -> This unit has Fleet.
+• Legion Land Speeder Squadron — Deep Strike: The squadron has Deep Strike as defined in ProHammer Classic. -> This unit has Deep Strike.
+• Leviathan Siege Dreadnought — Move Through Cover: Uses the normal ProHammer Move Through Cover rule. -> This unit has Move Through Cover.
+• Sanguinary Guard Squad — Fearless: Uses the normal ProHammer Fearless special rule. -> This unit is Fearless.
+• Legion Moritat Consul — Scout: Uses the normal ProHammer Scout special rule. -> This unit has Scout.
+• Legion Moritat Consul — Counter-Attack: Uses the normal ProHammer Counter-Attack special rule. -> This unit has Counter-Attack.
+• Legion Delegatus Consul — Master of the Legion: The Delegatus has Master of the Legion and may enable one Rite of War, subject to the normal limits on that rule. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• Legion Primus Nullificator Consul — Adamantium Will: Uses the normal ProHammer Adamantium Will special rule. -> This unit has Adamantium Will.
+• Legion Vigilator Consul — Scout: Uses the normal ProHammer Scout special rule. -> This unit has Scout.
+• Legion Vigilator Consul — Stealth: Uses the normal ProHammer Stealth special rule. Cameleoline is displayed as granted wargear. -> This unit has Stealth.
+• Vorax Class Battle-Automata Maniple — Fleet: Uses the normal ProHammer Fleet special rule. -> This unit has Fleet.
+• Vorax Class Battle-Automata Maniple — Scout: Uses the normal ProHammer Scout special rule. -> This unit has Scout.
+• Legion Destroyer Squad — Counter-Attack: The squad has Counter-Attack using the normal ProHammer rules. -> This unit has Counter-Attack.
+• Legion Contemptor Dreadnought — Fleet: Uses the normal ProHammer Fleet special rule. -> This unit has Fleet.
+• Legion Destroyer Squad — Counter-Attack: The squad has Counter-Attack using the normal ProHammer rules. -> This unit has Counter-Attack.
+• LORD COMMANDER EIDOLON — Master of the Legion: This model has Master of the Legion. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• RYLANOR THE UNYIELDING — Fleet: Rylanor has Fleet. -> This unit has Fleet.
+• Fear — Fear: Uses the normal Fear special rule. -> This unit has Fear.
+• Fearless — Fearless: Uses the normal Fearless special rule. -> This unit is Fearless.
+• Fleet — Fleet: Uses the normal Fleet special rule. -> This unit has Fleet.
+• Eternal Warrior — Eternal Warrior: Uses the normal Eternal Warrior special rule. -> This unit has Eternal Warrior.
+• Adamantium Will — Adamantium Will: Uses the normal Adamantium Will special rule. -> This unit has Adamantium Will.
+• Master of the Legion — Master of the Legion: Uses the normal Master of the Legion special rule. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• ERASMUS GOLG — Master of the Legion: Erasmus Golg has Master of the Legion. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• KYR VHALEN — Master of the Legion: Kyr Vhalen has Master of the Legion. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• Terror Squad — Infiltrate: The unit uses the ProHammer Infiltrate special rule. If its mission or transport circumstances do not permit Infiltrate, deploy it normally. -> This unit has Infiltrate.
+• Atramentar Flay-Clade — Fearless: The unit uses the ProHammer Fearless special rule. -> This unit is Fearless.
+• Jago Sevatarion — Master of the Legion: This model has the Master of the Legion special rule and counts toward all normal Master of the Legion restrictions. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• Atramentar Flay-Clade — Fearless: The unit uses the ProHammer Fearless special rule. -> This unit is Fearless.
+• Kheron Ophion — Master of the Legion: This model has the Master of the Legion special rule and counts toward all normal Master of the Legion restrictions. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• Shang — Master of the Legion: This model has the Master of the Legion special rule and counts toward all normal Master of the Legion restrictions. -> A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+• Shang — Infiltrate: The unit uses the ProHammer Infiltrate special rule. If its mission or transport circumstances do not permit Infiltrate, deploy it normally. -> This unit has Infiltrate.
+• Terror Squad — Infiltrate: The unit uses the ProHammer Infiltrate special rule. If its mission or transport circumstances do not permit Infiltrate, deploy it normally. -> This unit has Infiltrate.
+• Flaymaster Mawdrym Llansahai — Fearless: The unit uses the ProHammer Fearless special rule. -> This unit is Fearless.
+• Konrad Curze, the Night Haunter — Stealth: Konrad Curze has the Stealth special rule as part of Night Haunter. -> This unit has Stealth.
