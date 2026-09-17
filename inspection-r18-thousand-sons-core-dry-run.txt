@@ -1,0 +1,38 @@
+R18 THOUSAND SONS CORE — DRY RUN ONLY
+Input CAT revision: 17 | Proposed CAT revision: 18 | GST revision remains 1
+LIVE FILES WRITTEN: NO
+
+SOURCE-LOCKED CULT / DISCIPLINE MAP:
+  Pavoni -> Biomancy
+  Raptora -> Telekinesis
+  Corvidae -> Divination
+  Athanaeans -> Telepathy
+  Pyrae -> Pyromancy
+
+CHANGES:
+  + FOC: Price of Knowledge = HQ 1-3, Elites 0-4, Fast Attack 0-2; Fellowships Fast Attack max 1
+  + Fellowships: hidden roster validator requires at least 2 Psychic Brotherhood selections
+  + veteran-unit: normal/Fellowships Brotherhood pricing gated; one Cult-linked power selector added
+  + terminator-unit: normal/Fellowships Brotherhood pricing gated; one Cult-linked power selector added
+  + Tactical: Brotherhood gated to Fellowships + maximum 20-model squad (tac-marine=19); Cult-linked power selector added
+  + Unique formations: Sekhmet, Khenetai, Ammitara, Castellax-Achea, Osiron and Numerologist all enforced 0-1
+  + Sekhmet: combined Force-weapon replacement cap = squad size; combined heavy-weapon cap = 2/5 or 4/10; one psychic power selector
+  + Khenetai: Hand Flamer/Plasma Pistol share 1-per-5 cap; Krak/Melta Bomb whole-Cabal costs scale with 5-10 models
+  + Ammitara: all Sniper replacements share squad-size cap; Meltagun/Plasma Gun share max 2; whole-Cabal costs scale; power restricted to Divination/Telepathy
+  + Numerologist: Rotor/Volkite share 1-per-5 cap; whole-Cabal Krak cost scales; fixed Psy-Synchronicity remains source-defined
+  + Osiron: 0-1; one mandatory power, second power appears and becomes mandatory only with ML2; no Prosperine Cult added
+  + AHZEK AHRIMAN: fixed Cult = Corvidae; fixed/source psychic rules retained
+  + PHOSIS T'KAR: fixed Cult = Raptora; 2 powers restricted to Telekinesis
+  + MAGISTUS AMON, THE HIDDEN: fixed Cult = Athanaeans; 2 powers restricted to Telepathy
+  + HATHOR MAAT: fixed Cult = Pavoni; 2 powers restricted to Biomancy
+  + SANAKHT: fixed Cult = Athanaeans; fixed/source psychic rules retained
+  + Ahriman and Amon: 0-1 plus minimum 1,500-point roster visibility gates
+
+INTENTIONALLY NOT RESOLVED IN THIS CORE PASS:
+  - Guard of the Crimson King: source contradiction between Sekhmet 0-1 and Sekhmet fulfilling two compulsory Troops slots is preserved, not invented around.
+  - Axis of Dissolution: maximum-size-all-Troops and vehicle/Infantry ratio need a dedicated roster-validator pass.
+  - Guard of the Crimson King: Warlord qualification, Magnus HQ relocation, free Transponders and vehicle/Legion ratio need the Rite-specific pass.
+  - Magnus: five-power/two-discipline/fixed Infernal Phoenix + Strands of Fate logic is reserved for the Primarch psychic pass.
+  - Generic Thousand Sons Praetor/Centurion Psyker selectors and Prosperine Armoury dependency cleanup are reserved for the next core pass.
+
+DRY-RUN RESULT: PASS
