@@ -1,0 +1,11 @@
+from pathlib import Path
+
+p=Path('.github/build/live_r18_thousand_sons_final_audit.py')
+s=p.read_text(encoding='utf-8')
+needle="""    cloned_transport.append(nm)\nrule(trans, 'r18-final-sekhmet-transport-rule', 'Dedicated Transport',\n     'The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.')\n"""
+replacement="""    cloned_transport.append(nm)\n\n# The generic Terminator entry only exposes the Dreadclaw directly. The catalogue\n# already contains shared Heavy Support entries used elsewhere as Dedicated\n# Transports, so add clean links to those source entries rather than borrowing\n# Rite-specific Armoured Spearhead / Steel Fist copies.\ndef add_shared_transport(target_id, eid, name, hide_at_six=False):\n    if findid(root, target_id) is None:\n        raise RuntimeError('Missing shared transport source '+target_id)\n    if any((n or '').lower().startswith(name.lower()) for n in cloned_transport):\n        return\n    el = ET.SubElement(ensure(trans, 'entryLinks'), C('entryLink'), {\n        'id': eid, 'name': name, 'hidden': 'false', 'type': 'selectionEntry',\n        'targetId': target_id, 'import': 'true'\n    })\n    add_constraint(el, eid+'-max', 'max', 1, 'parent')\n    if hide_at_six:\n        add_modifier(el, eid+'-size', 'set', 'hidden', 'true',\n                     conditions=[cond('atLeast', 6, sekmodel.get('id'), 'root-entry')])\n    cloned_transport.append(name)\n\nadd_shared_transport('hs-land-raider', 'r18-final-sekhmet-land-raider', 'Land Raider', hide_at_six=True)\nadd_shared_transport('hs-spartan', 'r18-final-sekhmet-spartan', 'Legion Spartan Assault Tank')\n\nrule(trans, 'r18-final-sekhmet-transport-rule', 'Dedicated Transport',\n     'The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits. Land Raider patterns must have sufficient capacity for the selected Cabal size.')\n"""
+if needle not in s:
+    raise RuntimeError('Expected Sekhmet transport insertion point not found')
+s=s.replace(needle,replacement,1)
+p.write_text(s,encoding='utf-8')
+print('Patched R18 final audit: Sekhmet Land Raider/Spartan use clean shared transport links; Dreadclaw remains cloned from Terminators.')
