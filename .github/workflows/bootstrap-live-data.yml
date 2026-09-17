@@ -1,0 +1,138 @@
+name: Bootstrap clean New Recruit live data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bootstrap-live-data.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch current development data
+        run: |
+          git clone --depth 1 https://github.com/Azubi1234/Prohammer-30k.git /tmp/prohammer-dev
+          cp '/tmp/prohammer-dev/Prohammer 30k.gst' './Prohammer 30k.gst'
+          cp '/tmp/prohammer-dev/Legiones Astartes.cat' './Legiones Astartes.cat'
+
+      - name: Give the live source independent data IDs
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+
+          GST = Path('Prohammer 30k.gst')
+          CAT = Path('Legiones Astartes.cat')
+          IDX = Path('index.xml')
+
+          NEW_GST_ID = 'sys-6f3a-91d2-b47c-5e08'
+          NEW_CAT_ID = 'cat-7b24-e6f1-83a9-4c50'
+          NEW_GST_NAME = 'Prohammer 30k Live'
+          NEW_GST_REV = '1'
+          NEW_CAT_REV = '1'
+
+          gst_text = GST.read_text(encoding='utf-8')
+          cat_text = CAT.read_text(encoding='utf-8')
+
+          old_gst_root = ET.fromstring(gst_text)
+          old_cat_root = ET.fromstring(cat_text)
+          old_gst_id = old_gst_root.get('id')
+          old_cat_id = old_cat_root.get('id')
+
+          if not old_gst_id or not old_cat_id:
+              raise RuntimeError('Could not read source game-system/catalogue IDs')
+          if NEW_GST_ID in gst_text or NEW_GST_ID in cat_text or NEW_CAT_ID in cat_text:
+              raise RuntimeError('Chosen live IDs already occur in source data')
+
+          def root_attr(text, tag, attr, value):
+              pattern = rf'(<{tag}\b[^>]*\b{re.escape(attr)}=")[^"]*(")'
+              out, n = re.subn(pattern, rf'\g<1>{value}\g<2>', text, count=1)
+              if n != 1:
+                  raise RuntimeError(f'Could not set {tag}.{attr}')
+              return out
+
+          # Change only root identity/version metadata. Do not reserialize the XML:
+          # keeping the source byte structure avoids introducing namespace/order changes.
+          gst_text = root_attr(gst_text, 'gameSystem', 'id', NEW_GST_ID)
+          gst_text = root_attr(gst_text, 'gameSystem', 'name', NEW_GST_NAME)
+          gst_text = root_attr(gst_text, 'gameSystem', 'revision', NEW_GST_REV)
+
+          cat_text = root_attr(cat_text, 'catalogue', 'id', NEW_CAT_ID)
+          cat_text = root_attr(cat_text, 'catalogue', 'revision', NEW_CAT_REV)
+          cat_text = root_attr(cat_text, 'catalogue', 'gameSystemId', NEW_GST_ID)
+          cat_text = root_attr(cat_text, 'catalogue', 'gameSystemRevision', NEW_GST_REV)
+
+          GST.write_text(gst_text, encoding='utf-8')
+          CAT.write_text(cat_text, encoding='utf-8')
+
+          # Fresh index: new source identity, independent of the stale old New Recruit record.
+          IDX.write_text(f'''<?xml version="1.0" encoding="utf-8"?>
+          <dataIndex xmlns="http://www.battlescribe.net/schema/dataIndexSchema" battleScribeVersion="2.03" name="{NEW_GST_NAME}">
+            <dataIndexEntries>
+              <dataIndexEntry filePath="Prohammer 30k.gst" dataType="gamesystem" dataId="{NEW_GST_ID}" dataName="{NEW_GST_NAME}" dataBattleScribeVersion="2.03" dataRevision="{NEW_GST_REV}" />
+              <dataIndexEntry filePath="Legiones Astartes.cat" dataType="catalogue" dataId="{NEW_CAT_ID}" dataName="Legiones Astartes" dataBattleScribeVersion="2.03" dataRevision="{NEW_CAT_REV}" />
+            </dataIndexEntries>
+          </dataIndex>
+          ''', encoding='utf-8')
+
+          # Parse final XML and verify identity links.
+          gst = ET.parse(GST).getroot()
+          cat = ET.parse(CAT).getroot()
+          assert gst.get('id') == NEW_GST_ID
+          assert gst.get('name') == NEW_GST_NAME
+          assert gst.get('revision') == NEW_GST_REV
+          assert cat.get('id') == NEW_CAT_ID
+          assert cat.get('revision') == NEW_CAT_REV
+          assert cat.get('gameSystemId') == NEW_GST_ID
+          assert cat.get('gameSystemRevision') == NEW_GST_REV
+          assert old_gst_id not in GST.read_text(encoding='utf-8')
+          assert old_gst_id not in CAT.read_text(encoding='utf-8')
+          assert old_cat_id not in CAT.read_text(encoding='utf-8')
+
+          # Regression check for the World Eaters character cleanup that motivated
+          # this clean live source. None may regain a raw "Source Entry" dump.
+          CNS = 'http://www.battlescribe.net/schema/catalogueSchema'
+          C = lambda t: f'{{{CNS}}}{t}'
+          character_ids = {
+              'Kharn': 'r41-unit-xii-6-kharn-the-bloody',
+              'Shabran Darr': 'r41-unit-xii-7-shabran-darr',
+              'Gahlan Surlak': 'r41-unit-xii-8-gahlan-surlak',
+              'Kargos': 'r41-unit-xii-9-kargos-the-bloodspitter',
+              'Captain Ehrlen': 'r41-unit-xii-10-captain-ehrlen',
+              'Delvarus': 'r41-unit-xii-11-delvarus',
+              'Angron': 'r41-unit-xii-12-xii-angron-the-red-angel',
+              'Daemon Angron': 'r41-unit-xii-13-angron-the-red-angel',
+          }
+          for label, uid in character_ids.items():
+              unit = next((x for x in cat.iter(C('selectionEntry')) if x.get('id') == uid), None)
+              if unit is None:
+                  raise RuntimeError(f'Missing World Eaters character: {label}')
+              bad = [r for r in unit.iter(C('rule')) if (r.get('name') or '').strip().lower().startswith('source entry')]
+              if bad:
+                  raise RuntimeError(f'Raw Source Entry dump remains on {label}')
+
+          surlak = next(x for x in cat.iter(C('selectionEntry')) if x.get('id') == character_ids['Gahlan Surlak'])
+          if surlak.get('name') != 'GAHLAN SURLAK':
+              raise RuntimeError(f'Unexpected Surlak spelling/case: {surlak.get("name")}')
+
+          print(f'Old IDs: {old_gst_id} / {old_cat_id}')
+          print(f'New IDs: {NEW_GST_ID} / {NEW_CAT_ID}')
+          print('World Eaters character cleanup regression checks passed.')
+          PY
+
+      - name: Commit clean live data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Prohammer 30k.gst' 'Legiones Astartes.cat' index.xml
+          git diff --cached --quiet || git commit -m 'Bootstrap independent Prohammer 30k Live data source'
+          git push
