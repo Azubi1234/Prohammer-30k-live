@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -89213,12 +89213,7 @@ The Detachment may not include an Allied Detachment.</description>
               <constraints>
                 <constraint id="r63-sw-slayer-power-max" type="max" value="4" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r63-sw-slayer-power-rule" name="Power Weapon" hidden="false">
-                  <description>Replaces one Grey Slayer’s Close-combat weapon.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry id="r63-sw-slayer-frost" name="Frost Blade or Frost Axe" type="upgrade" hidden="false" import="true">
               <costs>
                 <cost name="Points" typeId="pts" value="15" />
@@ -100709,12 +100704,7 @@ The Detachment may not include an Allied Detachment.</description>
               <constraints>
                 <constraint id="r64-if-templar-pw-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r64-if-templar-pw-rule" name="Power Weapon" hidden="false">
-                  <description>Replaces that model’s Rending Weapon.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r64-if-templar-transport" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -104890,12 +104880,7 @@ The Detachment may not include an Allied Detachment.</description>
                       <constraints>
                         <constraint id="r64-if-sig-templar-r64-if-templar-pw-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
-                      <rules>
-                        <rule id="r64-if-sig-templar-r64-if-templar-pw-rule" name="Power Weapon" hidden="false">
-                          <description>Replaces that model’s Rending Weapon.</description>
-                        </rule>
-                      </rules>
-                    </selectionEntry>
+                      </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r64-if-sig-templar-r64-if-templar-transport" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -112841,12 +112826,7 @@ The Detachment may not include an Allied Detachment.</description>
                       <constraints>
                         <constraint id="r64-if-dorn-templar-r64-if-templar-pw-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
-                      <rules>
-                        <rule id="r64-if-dorn-templar-r64-if-templar-pw-rule" name="Power Weapon" hidden="false">
-                          <description>Replaces that model’s Rending Weapon.</description>
-                        </rule>
-                      </rules>
-                    </selectionEntry>
+                      </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r64-if-dorn-templar-r64-if-templar-transport" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -114986,12 +114966,7 @@ The Detachment may not include an Allied Detachment.</description>
               <constraints>
                 <constraint id="r71-nl-terror-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r71-nl-terror-power-rule" name="Replacement" hidden="false">
-                  <description>Replaces one model’s Chainsword.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r71-nl-terror-volkite" name="Bolter Replacements — any model" hidden="false" collective="false" import="true">
@@ -116355,12 +116330,7 @@ The Detachment may not include an Allied Detachment.</description>
               <constraints>
                 <constraint id="r71-nl-raptor-power-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r71-nl-raptor-power-rule" name="Replacement" hidden="false">
-                  <description>Replaces one model’s Chainsword.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r71-nl-raptor-pistol" name="Bolt Pistol Replacements — up to two Night Raptors" hidden="false" collective="false" import="true">
@@ -126885,12 +126855,7 @@ The Detachment may not include an Allied Detachment.</description>
                       <constraints>
                         <constraint id="r71-nl-shang-ret-0-r71-nl-terror-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
-                      <rules>
-                        <rule id="r71-nl-shang-ret-0-r71-nl-terror-power-rule" name="Replacement" hidden="false">
-                          <description>Replaces one model’s Chainsword.</description>
-                        </rule>
-                      </rules>
-                    </selectionEntry>
+                      </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-shang-ret-0-r71-nl-terror-volkite" name="Bolter Replacements — any model" hidden="false" collective="false" import="true">
@@ -130259,12 +130224,7 @@ The Detachment may not include an Allied Detachment.</description>
                       <constraints>
                         <constraint id="r71-nl-curze-ret-2-r71-nl-raptor-power-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
-                      <rules>
-                        <rule id="r71-nl-curze-ret-2-r71-nl-raptor-power-rule" name="Replacement" hidden="false">
-                          <description>Replaces one model’s Chainsword.</description>
-                        </rule>
-                      </rules>
-                    </selectionEntry>
+                      </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-curze-ret-2-r71-nl-raptor-pistol" name="Bolt Pistol Replacements — up to two Night Raptors" hidden="false" collective="false" import="true">
@@ -130641,12 +130601,7 @@ The Detachment may not include an Allied Detachment.</description>
                       <constraints>
                         <constraint id="r71-nl-curze-ret-3-r71-nl-terror-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
-                      <rules>
-                        <rule id="r71-nl-curze-ret-3-r71-nl-terror-power-rule" name="Replacement" hidden="false">
-                          <description>Replaces one model’s Chainsword.</description>
-                        </rule>
-                      </rules>
-                    </selectionEntry>
+                      </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-curze-ret-3-r71-nl-terror-volkite" name="Bolter Replacements — any model" hidden="false" collective="false" import="true">
@@ -134019,12 +133974,7 @@ The Detachment may not include an Allied Detachment.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-ix-2-angel-s-tears-squad-opt-7-context" hidden="false">
-                  <description>The Arch-Erelim may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-ix-2-angel-s-tears-squad-opt-8-power-fist">
               <constraints>
                 <constraint id="r41-unit-ix-2-angel-s-tears-squad-opt-8-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -136699,12 +136649,7 @@ The Detachment may not include an Allied Detachment.</description>
                       <costs>
                         <cost name="Points" typeId="pts" value="10" />
                       </costs>
-                      <rules>
-                        <rule name="Option restriction" id="r74-ba-zephon-tears-r41-unit-ix-2-angel-s-tears-squad-opt-7-context" hidden="false">
-                          <description>The Arch-Erelim may replace his Chainsword with:</description>
-                        </rule>
-                      </rules>
-                    </selectionEntry>
+                      </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r74-ba-zephon-tears-r41-unit-ix-2-angel-s-tears-squad-opt-8-power-fist">
                       <constraints>
                         <constraint id="r74-ba-zephon-tears-r41-unit-ix-2-angel-s-tears-squad-opt-8-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -144726,12 +144671,7 @@ The Detachment may not include an Allied Detachment.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="7" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xii-0-rampager-squad-opt-1-context" hidden="false">
-                  <description>• Up to three Rampagers may replace their Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol">
               <constraints>
                 <constraint id="r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -145037,12 +144977,7 @@ The Detachment may not include an Allied Detachment.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-8-context" hidden="false">
-                  <description>The Red Hand Sergeant may replace his Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -145224,12 +145159,7 @@ The Detachment may not include an Allied Detachment.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xii-3-world-eaters-inductii-squad-opt-5-context" hidden="false">
-                  <description>The Inductii Sergeant may replace his Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xii-3-world-eaters-inductii-squad-opt-6-power-fist">
               <constraints>
                 <constraint id="r41-unit-xii-3-world-eaters-inductii-squad-opt-6-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -146168,12 +146098,7 @@ The Detachment may not include an Allied Detachment.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="7" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-1-context" hidden="false">
-                  <description>• Up to three Rampagers may replace their Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol">
               <constraints>
                 <constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -146270,7 +146195,7 @@ The Detachment may not include an Allied Detachment.</description>
           <characteristics><characteristic name="WS" typeId="model-ws">6</characteristic><characteristic name="BS" typeId="model-bs">5</characteristic><characteristic name="S" typeId="model-s">4</characteristic><characteristic name="T" typeId="model-t">4</characteristic><characteristic name="W" typeId="model-w">3</characteristic><characteristic name="I" typeId="model-i">5</characteristic><characteristic name="A" typeId="model-a">3</characteristic><characteristic name="Ld" typeId="model-ld">10</characteristic><characteristic name="Sv" typeId="model-sv">2+/5+</characteristic></characteristics></profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup id="r89-we-darr-wargear" name="Wargear" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r89-we-darr-wargear-0-artificer-armour" name="Artificer Armour" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-0-artificer-armour-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-0-artificer-armour-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-0-artificer-armour-rule" name="Artificer Armour" hidden="false"><description>Confers a 2+ Armour Save.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-1-refractor-field" name="Refractor Field" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-1-refractor-field-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-1-refractor-field-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-1-refractor-field-rule" name="Refractor Field" hidden="false"><description>Confers a 5+ Invulnerable Save.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-2-two-bolt-pistols" name="Two Bolt pistols" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-2-two-bolt-pistols-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-2-two-bolt-pistols-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-2-two-bolt-pistols-rule" name="Two Bolt pistols" hidden="false"><description>Darr carries two Bolt pistols.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-3-power-weapon" name="Power Weapon" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-3-power-weapon-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-3-power-weapon-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-3-power-weapon-rule" name="Power Weapon" hidden="false"><description>Uses the normal Power Weapon rules.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-4-frag-grenades" name="Frag grenades" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-4-frag-grenades-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-4-frag-grenades-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-4-frag-grenades-rule" name="Frag grenades" hidden="false"><description>Uses the normal Frag grenade rules.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-5-rad-grenades" name="Rad grenades" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-5-rad-grenades-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-5-rad-grenades-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-5-rad-grenades-rule" name="Rad grenades" hidden="false"><description>Uses the normal Rad grenade rules.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="r89-we-darr-special-rules" name="Special Rules" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters" name="Legiones Astartes (World Eaters)" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters-rule" name="Legiones Astartes (World Eaters)" hidden="false"><description>Uses the World Eaters Legion special rule.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-1-independent-character" name="Independent Character" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-1-independent-character-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-1-independent-character-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-1-independent-character-rule" name="Independent Character" hidden="false"><description>Uses the normal Independent Character rules.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-2-stubborn" name="Stubborn" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-2-stubborn-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-2-stubborn-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-2-stubborn-rule" name="Stubborn" hidden="false"><description>Uses the normal Stubborn rule.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-3-dual-pistols" name="Dual Pistols" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-3-dual-pistols-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-3-dual-pistols-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-3-dual-pistols-rule" name="Dual Pistols" hidden="false"><description>Darr is equipped with two Bolt pistols as listed in his wargear.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-4-master-of-destroyers" name="Master of Destroyers" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-4-master-of-destroyers-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-4-master-of-destroyers-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-4-master-of-destroyers-rule" name="Master of Destroyers" hidden="false"><description>Shabran Darr may join Legion Destroyer Squads and Red Hand Destroyer Squads despite the normal restrictions imposed by Destroyer Cadre. Darr may select one Red Hand Destroyer Mortalis or Assault Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-5-loyalist-only" name="Loyalist Only" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-5-loyalist-only-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-5-loyalist-only-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-5-loyalist-only-rule" name="Loyalist Only" hidden="false"><description>Shabran Darr may only be selected in a Loyalist army.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="r89-we-darr-options" name="Options" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r89-we-darr-opt-0-krak-grenades" name="Krak grenades" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="2" /></costs><constraints><constraint id="r89-we-darr-opt-0-krak-grenades-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r89-we-darr-opt-1-melta-bombs" name="Melta bombs" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="5" /></costs><constraints><constraint id="r89-we-darr-opt-1-melta-bombs-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-opt-1-melta-bombs-rule" name="Melta bombs" hidden="false"><description>Uses the normal Melta bomb rules.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="RED HAND DESTROYER MORTALIS SQUAD" hidden="false" id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad">
+        <selectionEntryGroup id="r89-we-darr-wargear" name="Wargear" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r89-we-darr-wargear-0-artificer-armour" name="Artificer Armour" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-0-artificer-armour-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-0-artificer-armour-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-0-artificer-armour-rule" name="Artificer Armour" hidden="false"><description>Confers a 2+ Armour Save.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-1-refractor-field" name="Refractor Field" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-1-refractor-field-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-1-refractor-field-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-1-refractor-field-rule" name="Refractor Field" hidden="false"><description>Confers a 5+ Invulnerable Save.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-2-two-bolt-pistols" name="Two Bolt pistols" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-2-two-bolt-pistols-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-2-two-bolt-pistols-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-2-two-bolt-pistols-rule" name="Two Bolt pistols" hidden="false"><description>Darr carries two Bolt pistols.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-3-power-weapon" name="Power Weapon" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-3-power-weapon-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-3-power-weapon-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r89-we-darr-wargear-4-frag-grenades" name="Frag grenades" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-4-frag-grenades-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-4-frag-grenades-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-4-frag-grenades-rule" name="Frag grenades" hidden="false"><description>Uses the normal Frag grenade rules.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-wargear-5-rad-grenades" name="Rad grenades" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-wargear-5-rad-grenades-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-wargear-5-rad-grenades-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-wargear-5-rad-grenades-rule" name="Rad grenades" hidden="false"><description>Uses the normal Rad grenade rules.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="r89-we-darr-special-rules" name="Special Rules" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters" name="Legiones Astartes (World Eaters)" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-0-legiones-astartes-world-eaters-rule" name="Legiones Astartes (World Eaters)" hidden="false"><description>Uses the World Eaters Legion special rule.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-1-independent-character" name="Independent Character" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-1-independent-character-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-1-independent-character-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-1-independent-character-rule" name="Independent Character" hidden="false"><description>Uses the normal Independent Character rules.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-2-stubborn" name="Stubborn" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-2-stubborn-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-2-stubborn-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-2-stubborn-rule" name="Stubborn" hidden="false"><description>Uses the normal Stubborn rule.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-3-dual-pistols" name="Dual Pistols" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-3-dual-pistols-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-3-dual-pistols-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-3-dual-pistols-rule" name="Dual Pistols" hidden="false"><description>Darr is equipped with two Bolt pistols as listed in his wargear.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-4-master-of-destroyers" name="Master of Destroyers" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-4-master-of-destroyers-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-4-master-of-destroyers-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-4-master-of-destroyers-rule" name="Master of Destroyers" hidden="false"><description>Shabran Darr may join Legion Destroyer Squads and Red Hand Destroyer Squads despite the normal restrictions imposed by Destroyer Cadre. Darr may select one Red Hand Destroyer Mortalis or Assault Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.</description></rule></rules></selectionEntry><selectionEntry id="r89-we-darr-special-rules-5-loyalist-only" name="Loyalist Only" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r89-we-darr-special-rules-5-loyalist-only-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r89-we-darr-special-rules-5-loyalist-only-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-special-rules-5-loyalist-only-rule" name="Loyalist Only" hidden="false"><description>Shabran Darr may only be selected in a Loyalist army.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="r89-we-darr-options" name="Options" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r89-we-darr-opt-0-krak-grenades" name="Krak grenades" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="2" /></costs><constraints><constraint id="r89-we-darr-opt-0-krak-grenades-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r89-we-darr-opt-1-melta-bombs" name="Melta bombs" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="5" /></costs><constraints><constraint id="r89-we-darr-opt-1-melta-bombs-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r89-we-darr-opt-1-melta-bombs-rule" name="Melta bombs" hidden="false"><description>Uses the normal Melta bomb rules.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="RED HAND DESTROYER MORTALIS SQUAD" hidden="false" id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad">
       <costs>
         <cost name="Points" typeId="pts" value="50" />
       </costs>
@@ -146419,12 +146344,7 @@ The Detachment may not include an Allied Detachment.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-8-context" hidden="false">
-                  <description>The Red Hand Sergeant may replace his Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -151104,12 +151024,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-8-context" hidden="false">
-                  <description>The Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -157874,12 +157789,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-4-context" hidden="false">
-                  <description>The Poison-master may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -158856,12 +158766,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-4-context" hidden="false">
-                  <description>The Poison-master may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -163135,12 +163040,7 @@ his Bolt pistol with:
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xv-5-numerologist-cabal-opt-0-context" hidden="false">
-                  <description>• The Numerologist may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Prosperine Force Weapon" hidden="false" id="r41-unit-xv-5-numerologist-cabal-opt-1-prosperine-force-weapon">
               <constraints>
                 <constraint id="r41-unit-xv-5-numerologist-cabal-opt-1-prosperine-force-weapon-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -170929,12 +170829,7 @@ The Chieftain Prime may select up to 50 points of permitted weapons and wargear 
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvi-2-chieftain-squad-opt-0-context" hidden="false">
-                  <description>• Any model may replace his Cthonian Culling Blade with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvi-2-chieftain-squad-opt-1-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvi-2-chieftain-squad-opt-1-power-fist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -173098,12 +172993,7 @@ The Chieftain Prime may select up to 50 points of permitted weapons and wargear 
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-1-r41-unit-xvi-2-chieftain-squad-opt-0-context" hidden="false">
-                  <description>• Any model may replace his Cthonian Culling Blade with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-1-r41-unit-xvi-2-chieftain-squad-opt-1-power-fist">
               <constraints>
                 <constraint id="live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-1-r41-unit-xvi-2-chieftain-squad-opt-1-power-fist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -179160,12 +179050,7 @@ OPTIONS
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-0-covenant-zealot-mob-opt-0-context" hidden="false">
-                  <description>• The Legion Overseer may replace his close combat weapon with one of the following:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvii-0-covenant-zealot-mob-opt-1-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvii-0-covenant-zealot-mob-opt-1-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -179342,12 +179227,7 @@ When using Last of the Serrated Sun, the squad follows the additional transport 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-context" hidden="false">
-                  <description>replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -179400,12 +179280,7 @@ When using Last of the Serrated Sun, the squad follows the additional transport 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-context" hidden="false">
-                  <description>The Dark Martyr may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -179563,12 +179438,7 @@ The Iconoclast may take:
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-2-ashen-circle-opt-1-context" hidden="false">
-                  <description>• Any model may replace his Axe-rake with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krak grenades (base unit; +2 pts/model)" hidden="false" id="r41-unit-xvii-2-ashen-circle-opt-2-krak-grenades">
               <constraints>
                 <constraint id="r41-unit-xvii-2-ashen-circle-opt-2-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -179940,12 +179810,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod or Dreadclaw Drop Pod wh
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-4-procurator-squad-opt-1-context" hidden="false">
-                  <description>• For every five models in the squad, one Procurator may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvii-4-procurator-squad-opt-2-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvii-4-procurator-squad-opt-2-power-fist-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -180040,12 +179905,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod or Dreadclaw Drop Pod wh
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-4-procurator-squad-opt-8-context" hidden="false">
-                  <description>The Procurator Prime may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvii-4-procurator-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvii-4-procurator-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -180214,12 +180074,7 @@ The squad may select a Rhino or Dreadclaw Drop Pod where Transport Capacity perm
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xvii-5-possessed-marine-squad-opt-3-context" hidden="false">
-                  <description>The Possessed Champion is a Character. The Possessed Champion may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist">
               <constraints>
                 <constraint id="r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -180489,12 +180344,7 @@ When using Last of the Serrated Sun, the squad follows the additional transport 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-context" hidden="false">
-                  <description>replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist">
               <constraints>
                 <constraint id="live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -180547,12 +180397,7 @@ When using Last of the Serrated Sun, the squad follows the additional transport 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-context" hidden="false">
-                  <description>The Dark Martyr may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist">
               <constraints>
                 <constraint id="live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -183514,12 +183359,7 @@ PYROCLAST FLAME PROJECTOR Each time a Pyroclast Flame Projector is fired, choose
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xviii-1-pyroclast-squad-opt-3-context" hidden="false">
-                  <description>The Pyroclast Warden may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist">
               <constraints>
                 <constraint id="r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -183778,12 +183618,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod, Dreadclaw Drop Pod or L
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-context" hidden="false">
-                  <description>The Infernus Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lightning claw" hidden="false" id="r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw">
               <constraints>
                 <constraint id="r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -184004,12 +183839,7 @@ The squad may select a Rhino, Drop Pod or Dreadclaw Drop Pod.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xviii-3-adherent-squad-opt-4-context" hidden="false">
-                  <description>The Adherent Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r41-unit-xviii-3-adherent-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="r41-unit-xviii-3-adherent-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -184231,12 +184061,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xviii-4-sanctifier-squad-opt-5-context" hidden="false">
-                  <description>• For every five models in the squad, one Sanctifier may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krak grenades (base unit; +2 pts/model)" hidden="false" id="r41-unit-xviii-4-sanctifier-squad-opt-6-krak-grenades">
               <constraints>
                 <constraint id="r41-unit-xviii-4-sanctifier-squad-opt-6-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -184289,12 +184114,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xviii-4-sanctifier-squad-opt-9-context" hidden="false">
-                  <description>The Sanctifier Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lightning claw" hidden="false" id="r41-unit-xviii-4-sanctifier-squad-opt-10-lightning-claw">
               <constraints>
                 <constraint id="r41-unit-xviii-4-sanctifier-squad-opt-10-lightning-claw-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -195623,12 +195443,7 @@ The army may include no more than one Fortification.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad-opt-4-context" hidden="false">
-                  <description>• The Cacophonic Champion may take:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -197675,12 +197490,7 @@ The army's Warlord must be equipped with a Power Weapon, Rending Weapon, Relic B
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r42-role-vii-2-effects-templar-host-templar-brethren-squads-r41-unit-vii-0-templar-brethren-squad-opt-0-context" hidden="false">
-                  <description>• Up to five models may replace their Rending Weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Frag grenades (base unit; +1 pts/model)" hidden="false" id="r42-role-vii-2-effects-templar-host-templar-brethren-squads-r41-unit-vii-0-templar-brethren-squad-opt-1-frag-grenades">
               <constraints>
                 <constraint id="r42-role-vii-2-effects-templar-host-templar-brethren-squads-r41-unit-vii-0-templar-brethren-squad-opt-1-frag-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -197841,12 +197651,7 @@ The Detachment may not include a Fortification.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="7" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r42-role-xii-0-effects-the-red-hand-rampager-squads-r41-unit-xii-0-rampager-squad-opt-1-context" hidden="false">
-                  <description>• Up to three Rampagers may replace their Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="r42-role-xii-0-effects-the-red-hand-rampager-squads-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol">
               <constraints>
                 <constraint id="r42-role-xii-0-effects-the-red-hand-rampager-squads-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -203005,12 +202810,7 @@ The Detachment may not include a Fortification.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-3-context" hidden="false">
-                  <description>The Pyroclast Warden may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist">
               <constraints>
                 <constraint id="r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -203297,12 +203097,7 @@ The Detachment may not include a Fortification.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-context" hidden="false">
-                  <description>The Infernus Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lightning claw" hidden="false" id="r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw">
               <constraints>
                 <constraint id="r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -205052,12 +204847,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod, Dreadclaw Drop Pod or L
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-0-r41-unit-iii-0-palatine-blade-squad-opt-1-context" hidden="false">
-                  <description>• Any model may replace its Rending Weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Combat Shield" hidden="false" id="r46-al-reward-0-r41-unit-iii-0-palatine-blade-squad-opt-2-combat-shield">
               <constraints>
                 <constraint id="r46-al-reward-0-r41-unit-iii-0-palatine-blade-squad-opt-2-combat-shield-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -205414,12 +205204,7 @@ A squad of ten models or fewer may select a Rhino, Drop Pod or Land Raider where
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-2-r41-unit-iii-2-kakophoni-squad-opt-4-context" hidden="false">
-                  <description>• The Cacophonic Champion may take:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-2-r41-unit-iii-2-kakophoni-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-2-r41-unit-iii-2-kakophoni-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -206751,12 +206536,7 @@ A pack of ten models or fewer may select a Rhino, Drop Pod, Dreadclaw Drop Pod o
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-9-r41-unit-vi-0-grey-slayer-pack-opt-4-context" hidden="false">
-                  <description>• For every five models in the pack, one Grey Slayer may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Frost Blade or Frost Axe" hidden="false" id="r46-al-reward-9-r41-unit-vi-0-grey-slayer-pack-opt-5-frost-blade-or-frost-axe">
               <constraints>
                 <constraint id="r46-al-reward-9-r41-unit-vi-0-grey-slayer-pack-opt-5-frost-blade-or-frost-axe-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -207289,12 +207069,7 @@ A Wolf Scout Squad may select a Rhino.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-11-r41-unit-vi-2-wolf-scout-squad-opt-7-context" hidden="false">
-                  <description>• Up to two Wolf Scouts may each select one of the following:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="r46-al-reward-11-r41-unit-vi-2-wolf-scout-squad-opt-8-heavy-bolter">
               <constraints>
                 <constraint id="r46-al-reward-11-r41-unit-vi-2-wolf-scout-squad-opt-8-heavy-bolter-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -208171,12 +207946,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-16-r41-unit-vii-0-templar-brethren-squad-opt-0-context" hidden="false">
-                  <description>• Up to five models may replace their Rending Weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Frag grenades (base unit; +1 pts/model)" hidden="false" id="r46-al-reward-16-r41-unit-vii-0-templar-brethren-squad-opt-1-frag-grenades">
               <constraints>
                 <constraint id="r46-al-reward-16-r41-unit-vii-0-templar-brethren-squad-opt-1-frag-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -208677,12 +208447,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-18-r41-unit-viii-0-terror-squad-opt-2-context" hidden="false">
-                  <description>• Any model may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Volkite Charger" hidden="false" id="r46-al-reward-18-r41-unit-viii-0-terror-squad-opt-3-volkite-charger">
               <constraints>
                 <constraint id="r46-al-reward-18-r41-unit-viii-0-terror-squad-opt-3-volkite-charger-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -208966,12 +208731,7 @@ The Headtaker may select up to 50 points of permitted weapons and wargear from t
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-19-r41-unit-viii-1-night-raptor-squad-opt-2-context" hidden="false">
-                  <description>• Up to five models may replace their Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Volkite Serpenta" hidden="false" id="r46-al-reward-19-r41-unit-viii-1-night-raptor-squad-opt-3-volkite-serpenta">
               <constraints>
                 <constraint id="r46-al-reward-19-r41-unit-viii-1-night-raptor-squad-opt-3-volkite-serpenta-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -209785,12 +209545,7 @@ The Arch-Erelim may select up to 50 points of permitted weaponsand wargear from 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-23-r41-unit-ix-2-angel-s-tears-squad-opt-7-context" hidden="false">
-                  <description>The Arch-Erelim may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-23-r41-unit-ix-2-angel-s-tears-squad-opt-8-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-23-r41-unit-ix-2-angel-s-tears-squad-opt-8-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -210630,12 +210385,7 @@ OPTIONS
               <costs>
                 <cost name="Points" typeId="pts" value="7" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-28-r41-unit-xii-0-rampager-squad-opt-1-context" hidden="false">
-                  <description>• Up to three Rampagers may replace their Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="r46-al-reward-28-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol">
               <constraints>
                 <constraint id="r46-al-reward-28-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -210968,12 +210718,7 @@ OPTIONS
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-30-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-8-context" hidden="false">
-                  <description>The Red Hand Sergeant may replace his Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-30-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-30-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -211166,12 +210911,7 @@ OPTIONS
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-31-r41-unit-xii-3-world-eaters-inductii-squad-opt-5-context" hidden="false">
-                  <description>The Inductii Sergeant may replace his Chainaxe with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-31-r41-unit-xii-3-world-eaters-inductii-squad-opt-6-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-31-r41-unit-xii-3-world-eaters-inductii-squad-opt-6-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -212139,12 +211879,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-37-r41-unit-xiii-3-nemesis-destroyer-squad-opt-8-context" hidden="false">
-                  <description>The Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-37-r41-unit-xiii-3-nemesis-destroyer-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-37-r41-unit-xiii-3-nemesis-destroyer-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -212587,12 +212322,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-40-r41-unit-xiv-2-mortus-poisoner-squad-opt-4-context" hidden="false">
-                  <description>The Poison-master may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-40-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-40-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -213656,12 +213386,7 @@ his Bolt pistol with:
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-45-r41-unit-xv-5-numerologist-cabal-opt-0-context" hidden="false">
-                  <description>• The Numerologist may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Prosperine Force Weapon" hidden="false" id="r46-al-reward-45-r41-unit-xv-5-numerologist-cabal-opt-1-prosperine-force-weapon">
               <constraints>
                 <constraint id="r46-al-reward-45-r41-unit-xv-5-numerologist-cabal-opt-1-prosperine-force-weapon-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -214515,12 +214240,7 @@ The Chieftain Prime may select up to 50 points of permitted weapons and wargear 
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-48-r41-unit-xvi-2-chieftain-squad-opt-0-context" hidden="false">
-                  <description>• Any model may replace his Cthonian Culling Blade with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-48-r41-unit-xvi-2-chieftain-squad-opt-1-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-48-r41-unit-xvi-2-chieftain-squad-opt-1-power-fist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -214979,12 +214699,7 @@ When using Last of the Serrated Sun, the squad follows the additional transport 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-context" hidden="false">
-                  <description>replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -215037,12 +214752,7 @@ When using Last of the Serrated Sun, the squad follows the additional transport 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-context" hidden="false">
-                  <description>The Dark Martyr may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -215227,12 +214937,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod or Dreadclaw Drop Pod wh
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-1-context" hidden="false">
-                  <description>• For every five models in the squad, one Procurator may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-2-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-2-power-fist-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -215327,12 +215032,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod or Dreadclaw Drop Pod wh
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-8-context" hidden="false">
-                  <description>The Procurator Prime may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-9-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-9-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -215510,12 +215210,7 @@ The squad may select a Rhino or Dreadclaw Drop Pod where Transport Capacity perm
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-3-context" hidden="false">
-                  <description>The Possessed Champion is a Character. The Possessed Champion may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -215817,12 +215512,7 @@ PYROCLAST FLAME PROJECTOR Each time a Pyroclast Flame Projector is fired, choose
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-3-context" hidden="false">
-                  <description>The Pyroclast Warden may replace his Close-combat weapon with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -216090,12 +215780,7 @@ A squad without Jump Packs may select a Rhino, Drop Pod, Dreadclaw Drop Pod or L
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-context" hidden="false">
-                  <description>The Infernus Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lightning claw" hidden="false" id="r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw">
               <constraints>
                 <constraint id="r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -216325,12 +216010,7 @@ The squad may select a Rhino, Drop Pod or Dreadclaw Drop Pod.</description>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-4-context" hidden="false">
-                  <description>The Adherent Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-5-power-fist">
               <constraints>
                 <constraint id="r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-5-power-fist-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -216561,12 +216241,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-5-context" hidden="false">
-                  <description>• For every five models in the squad, one Sanctifier may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krak grenades (base unit; +2 pts/model)" hidden="false" id="r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-6-krak-grenades">
               <constraints>
                 <constraint id="r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-6-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -216619,12 +216294,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
               </costs>
-              <rules>
-                <rule name="Option restriction" id="r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-9-context" hidden="false">
-                  <description>The Sanctifier Sergeant may replace his Chainsword with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lightning claw" hidden="false" id="r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-10-lightning-claw">
               <constraints>
                 <constraint id="r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-10-lightning-claw-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -228847,12 +228517,7 @@ OPTIONS
               <constraints>
                 <constraint id="r64-if-templar-troops-r64-if-templar-pw-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r64-if-templar-troops-r64-if-templar-pw-rule" name="Power Weapon" hidden="false">
-                  <description>Replaces that model’s Rending Weapon.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r64-if-templar-troops-r64-if-templar-transport" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -230992,12 +230657,7 @@ OPTIONS
               <constraints>
                 <constraint id="r71-nl-ta-raptor-r71-nl-raptor-power-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r71-nl-ta-raptor-r71-nl-raptor-power-rule" name="Replacement" hidden="false">
-                  <description>Replaces one model’s Chainsword.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r71-nl-ta-raptor-r71-nl-raptor-pistol" name="Bolt Pistol Replacements — up to two Night Raptors" hidden="false" collective="false" import="true">
@@ -231410,12 +231070,7 @@ OPTIONS
               <constraints>
                 <constraint id="r71-nl-ta-terror-r71-nl-terror-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r71-nl-ta-terror-r71-nl-terror-power-rule" name="Replacement" hidden="false">
-                  <description>Replaces one model’s Chainsword.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r71-nl-ta-terror-r71-nl-terror-volkite" name="Bolter Replacements — any model" hidden="false" collective="false" import="true">
@@ -232787,12 +232442,7 @@ OPTIONS
               <constraints>
                 <constraint id="r71-nl-hc-raptor-r71-nl-raptor-power-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <rules>
-                <rule id="r71-nl-hc-raptor-r71-nl-raptor-power-rule" name="Replacement" hidden="false">
-                  <description>Replaces one model’s Chainsword.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
+              </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="r71-nl-hc-raptor-r71-nl-raptor-pistol" name="Bolt Pistol Replacements — up to two Night Raptors" hidden="false" collective="false" import="true">
