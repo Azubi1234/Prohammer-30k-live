@@ -1,0 +1,23 @@
+name: Patch R18 Thousand Sons finish
+on:
+  push:
+    paths:
+      - '.github/build/patch_r18_thousand_sons_finish.py'
+      - '.github/workflows/patch-r18-thousand-sons-finish.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python .github/build/patch_r18_thousand_sons_finish.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .github/build/live_r18_thousand_sons_finish.py
+          git diff --cached --quiet || git commit -m "Fix R18 Thousand Sons finish builder"
+          git push
