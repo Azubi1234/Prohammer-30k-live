@@ -1,0 +1,40 @@
+name: Apply Live R18 Thousand Sons Final
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r18-thousand-sons-final.yml'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply final R18 Thousand Sons audit
+        env:
+          TS_APPLY: '0'
+          TS_FINISH_APPLY: '0'
+          TS_FINAL_APPLY: '1'
+        run: python .github/build/live_r18_thousand_sons_final_audit.py
+      - name: Verify revisions
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          import re
+          cat = ET.parse('Legiones Astartes.cat').getroot()
+          assert cat.get('revision') == '18', cat.get('revision')
+          idx = open('index.xml', encoding='utf-8').read()
+          m = re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"', idx)
+          assert m and m.group(1) == '18', m.group(1) if m else None
+          print('CAT revision 18 / index dataRevision 18 verified')
+          PY
+      - name: Commit Live R18
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-r18-thousand-sons-final-audit-dry-run.txt
+          git diff --cached --quiet || git commit -m "Live R18: complete Thousand Sons audit"
+          git push
