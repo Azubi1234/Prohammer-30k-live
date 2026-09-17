@@ -1,0 +1,42 @@
+=== r41-unit-iii-7-fabius-bile | FABIUS BILE ===
+profiles: Fabius Bile
+rules: Legiones Astartes (Emperor's Children), Independent Character, Enhanced Warriors
+groups: Options[r41-unit-iii-7-fabius-bile-options], Options[r52-ec-fab-options]
+entries: Power Armour[r52-ec-fab-fixed-0], The Chirurgeon[r52-ec-fab-fixed-1], Xyclos Needler[r52-ec-fab-fixed-2], Frag grenades[r52-ec-fab-fixed-3]
+ GROUP Options:
+   ENTRY Krak grenades r41-unit-iii-7-fabius-bile-opt-0-krak-grenades
+ GROUP Options:
+   ENTRY Krak grenades r52-ec-fab-krak
+ PROFILE Fabius Bile: WS=5, BS=4, S=4, T=4, W=3, I=4, A=2, Ld=9, Sv=3+/4+
+=== r41-unit-iii-10-fulgrim-transfigured | FULGRIM TRANSFIGURED ===
+profiles: Fulgrim Transfigured
+rules: 
+groups: 
+entries: 
+ PROFILE Fulgrim Transfigured: WS=9, BS=6, S=7, T=7, W=7, I=9, A=7, Ld=10, Sv=2+/4++
+=== r41-unit-v-6-shiban-khan | SHIBAN KHAN ===
+profiles: Shiban Khan
+rules: 
+groups: Options[r60-ws-shiban-options], Retinue (does not occupy a separate FOC slot)[r60-ws-shiban-retinue]
+entries: 
+ GROUP Options:
+   ENTRY Krak grenades r60-ws-shiban-krak
+   ENTRY Melta bombs r60-ws-shiban-melta
+   ENTRY Space Marine Bike r60-ws-shiban-bike
+   ENTRY Upgrade Bike to Jetbike r60-ws-shiban-jetbike
+ GROUP Retinue (does not occupy a separate FOC slot):
+   ENTRY Legion Command Squad r60-ws-shiban-retinue-legion-command-squad
+ PROFILE Shiban Khan: WS=6, BS=5, S=4, T=4, W=3, I=5, A=3, Ld=10, Sv=2+/5+
+=== r41-unit-v-7-hibou-khan | HIBOU KHAN ===
+profiles: Hibou Khan
+rules: 
+groups: Options[r60-ws-hibou-options], Retinue (does not occupy a separate FOC slot)[r60-ws-hibou-retinue]
+entries: 
+ GROUP Options:
+   ENTRY Krak grenades r60-ws-hibou-krak
+   ENTRY Space Marine Bike r60-ws-hibou-bike
+   ENTRY Upgrade Bike to Jetbike r60-ws-hibou-jetbike
+ GROUP Retinue (does not occupy a separate FOC slot):
+   ENTRY Legion Command Squad r60-ws-hibou-retinue-legion-command-squad
+   ENTRY Legion Veteran Squad r60-ws-hibou-retinue-legion-veteran-squad
+ PROFILE Hibou Khan: WS=6, BS=5, S=4, T=4, W=3, I=5, A=3, Ld=10, Sv=3+/4+
