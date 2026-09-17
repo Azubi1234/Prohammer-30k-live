@@ -382,8 +382,31 @@ for src in list(trans_src.iter()):
         add_modifier(cl, 'r18-final-sekhmet-dreadclaw-size', 'set', 'hidden', 'true',
                      conditions=[cond('atLeast', 6, sekmodel.get('id'), 'root-entry')])
     cloned_transport.append(nm)
+
+# The generic Terminator entry only exposes the Dreadclaw directly. The catalogue
+# already contains shared Heavy Support entries used elsewhere as Dedicated
+# Transports, so add clean links to those source entries rather than borrowing
+# Rite-specific Armoured Spearhead / Steel Fist copies.
+def add_shared_transport(target_id, eid, name, hide_at_six=False):
+    if findid(root, target_id) is None:
+        raise RuntimeError('Missing shared transport source '+target_id)
+    if any((n or '').lower().startswith(name.lower()) for n in cloned_transport):
+        return
+    el = ET.SubElement(ensure(trans, 'entryLinks'), C('entryLink'), {
+        'id': eid, 'name': name, 'hidden': 'false', 'type': 'selectionEntry',
+        'targetId': target_id, 'import': 'true'
+    })
+    add_constraint(el, eid+'-max', 'max', 1, 'parent')
+    if hide_at_six:
+        add_modifier(el, eid+'-size', 'set', 'hidden', 'true',
+                     conditions=[cond('atLeast', 6, sekmodel.get('id'), 'root-entry')])
+    cloned_transport.append(name)
+
+add_shared_transport('hs-land-raider', 'r18-final-sekhmet-land-raider', 'Land Raider', hide_at_six=True)
+add_shared_transport('hs-spartan', 'r18-final-sekhmet-spartan', 'Legion Spartan Assault Tank')
+
 rule(trans, 'r18-final-sekhmet-transport-rule', 'Dedicated Transport',
-     'The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.')
+     'The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits. Land Raider patterns must have sufficient capacity for the selected Cabal size.')
 if not any('dreadclaw' in n.lower() for n in cloned_transport) or not any('spartan' in n.lower() for n in cloned_transport) or not any(n.lower().startswith('land raider ') for n in cloned_transport):
     raise RuntimeError('Sekhmet transport cloning missed one or more required transport families: '+repr(cloned_transport))
 log.append(f'Sekhmet completed: {len(combids)} Combi-weapon choices, shared Foeblaster cap, Inceptor ML2 power/Harness gate, {len(cloned_transport)} transport choices')
