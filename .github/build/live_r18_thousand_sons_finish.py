@@ -233,9 +233,9 @@ for gid in ('r29-lib-discipline-group', 'r29-lib-power-group', 'r61-librarian-po
     hide_group_under_xv(gid)
 
 add_rule(praetor, 'r18-ts-praetor-psyker-rule', 'Sorcerers of Prospero — Praetor',
-         'In a Thousand Sons Detachment, a Legion Praetor is a Psyker (Mastery Level 2) and selects two powers from Biomancy, Divination, Pyromancy, Telekinesis or Telepathy. Activating a Force Weapon counts as the use of a psychic power, and the same power may not be used more than once in the same player turn.')
+         'In a Thousand Sons Detachment, a Legion Praetor is a Psyker (Mastery Level 2) and selects two powers from Biomancy, Divination, Pyromancy, Telekinesis or Telepathy. Activating a Force Weapon counts as the use of a psychic power, and the same power may not be used more than once in the same player turn.').set('hidden','true')
 add_rule(centurion, 'r18-ts-centurion-psyker-rule', 'Sorcerers of Prospero — Independent Character',
-         'In a Thousand Sons Detachment, a Legion Centurion and its Consul variants are Psykers (Mastery Level 1) unless another rule grants a higher Mastery Level. A Librarian Consul follows the normal Librarian upgrade rules; an Epistolary is Mastery Level 2.')
+         'In a Thousand Sons Detachment, a Legion Centurion and its Consul variants are Psykers (Mastery Level 1) unless another rule grants a higher Mastery Level. A Librarian Consul follows the normal Librarian upgrade rules; an Epistolary is Mastery Level 2.').set('hidden','true')
 log.append('Generic Praetor/Centurion psychic selectors added; normal Librarian selector duplication is suppressed for XV rosters')
 
 
@@ -302,7 +302,10 @@ termcmd_count = 0
 for u in root.iter(C('selectionEntry')):
     if u.get('type') == 'unit' and (u.get('name') or '') == 'Legion Terminator Command Squad':
         if not any(x.get('targetId') == 'r45-ts-trans-unit' for x in u.iter(C('entryLink'))):
-            add_link(u, 'r18-ts-termcmd-trans-' + re.sub(r'[^A-Za-z0-9_-]', '-', u.get('id')), 'Teleportation Transponders', 'r45-ts-trans-unit')
+            lid = 'r18-ts-termcmd-trans-' + re.sub(r'[^A-Za-z0-9_-]', '-', u.get('id'))
+            lnk = add_link(u, lid, 'Teleportation Transponders', 'r45-ts-trans-unit')
+            add_modifier(lnk, lid + '-hide-no-xv', 'set', 'hidden', 'true',
+                         conditions=[cond('lessThan', 1, 'legion-xv', 'roster')])
             termcmd_count += 1
 
 # Named XV Independent Characters gain their general Legion Armoury options.
@@ -599,7 +602,8 @@ log.append('Magnus rebuilt with fixed Infernal Phoenix/Strands, three selectable
 for gid in ('r18-ts-praetor-power1','r18-ts-praetor-power2','r18-ts-centurion-power1','r18-ts-magnus-power1','r18-ts-magnus-power2','r18-ts-magnus-power3'):
     if findid(root,gid) is None:
         raise RuntimeError('Missing generated group ' + gid)
-if findid(root,'r18-ts-magnus-retinue-sekhmet') is None:
+retcheck = next((x for x in list(ret_ses) if 'SEKHMET TERMINATOR CABAL' in (x.get('name') or '')), None)
+if retcheck is None:
     raise RuntimeError('Missing Magnus Sekhmet retinue')
 
 # Ensure dry-run never writes live files unless explicitly applied.
