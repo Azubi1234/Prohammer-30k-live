@@ -1,0 +1,17 @@
+LIVE R8 — ULTRAMARINES DEEP FIX
+CAT=8 GSTref=1
+
+• Invictarus Suzerain top-level entry set to 0-1
+• Fulmentarus Terminator Squad set to 0-1
+• Ultramarines Praetor now has Invictarus Suzerains as a functional retinue alternative
+• Remus Ventanus now has Invictarus Suzerains as allowed by Honour Guard
+• Titus Prayto now has Invictarus Suzerains as allowed by Honour Guard
+• Invictarus 0-1 mutual exclusion applied across 6 XIII copies
+• All four XIII unique squad leaders now have functional 50-point Armoury selectors
+• Fulmentarus Chainfists dynamically limited to squad size
+• Locutarus Hand Flamer/Plasma pistol choices now share one total max-2 limit
+• Nemesis Heavy Flamer/Rad Missile options now share 1-per-5 dynamic allowance
+• Fulmentarus and Nemesis Dedicated Transport selectors added from their written entries
+• Aeonid Thiel is mutually unique across Tactical/Veteran hosts and now has a mandatory Unorthodox Tactics selector
+• Guilliman requires 2000 points normally / 1500 with Primarch's Chosen
+• Ultramarines source-entry text walls replaced by discrete named rules while preserving stat profiles and functional selectors

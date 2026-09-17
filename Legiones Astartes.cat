@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -5646,7 +5646,7 @@
                   </conditions>
                 </modifier>
               <modifier id="live-r5-chainaxe-tactical-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-tactical-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-tactical-unit-normal-needs-chainsword" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="lessThan" value="1" field="selections" scope="parent" childId="load-add-chainswords" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
-            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-tactical-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry><selectionEntry id="r6-tactical-unit-aeonid-thiel" name="Replace Sergeant with Aeonid Thiel" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="80" /></costs><constraints><constraint id="r6-tactical-unit-aeonid-thiel-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r6-tactical-unit-aeonid-thiel-uniq" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r6-tactical-unit-aeonid-thiel-um-only" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><profiles>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-tactical-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry><selectionEntry id="r6-tactical-unit-aeonid-thiel" name="Replace Sergeant with Aeonid Thiel" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="80" /></costs><constraints><constraint id="r6-tactical-unit-aeonid-thiel-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r6-tactical-unit-aeonid-thiel-uniq" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r6-tactical-unit-aeonid-thiel-um-only" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r6-tactical-unit-aeonid-thiel-r8-other-thiel" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-veteran-unit-aeonid-thiel" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><profiles>
         <profile name="Aeonid Thiel" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-6-aeonid-thiel-profile-0">
           <characteristics>
             <characteristic name="WS" typeId="model-ws">5</characteristic>
@@ -5679,8 +5679,8 @@ Special Rules:
 If the squad purchases Krak grenades or Melta bombs,
 Thiel receives the same upgrade at the normal squad cost.</description>
         </rule>
-      <rule id="r6-tactical-unit-aeonid-thiel-replace" name="Sergeant Replacement" hidden="false"><description>Aeonid Thiel replaces this squad’s Sergeant for +80 points. Thiel remains part of the squad for the entire battle, is a Character but not an Independent Character, and does not occupy a separate Force Organisation slot.</description></rule></rules>
-    </selectionEntry><selectionEntry id="r6-um-combat-squads" name="Combat Squads — split 10 models into two squads of 5" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r6-um-combat-squads-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r6-um-combat-squads-um-only" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r6-um-combat-squads-lessThan" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="lessThan" value="9" field="selections" scope="parent" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier><modifier id="r6-um-combat-squads-atLeast" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="10" field="selections" scope="parent" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers><rules><rule id="r6-um-combat-squads-rule" name="Codex Astartes — Combat Squads" hidden="false"><description>A Legion Tactical Squad consisting of exactly ten models may be divided into two Combat Squads of five models each before deployment. After division, each Combat Squad is treated as a separate unit for all game purposes. If the original squad has a Dedicated Transport, assign it to one Combat Squad; only that squad may begin embarked.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
+      <rule id="r6-tactical-unit-aeonid-thiel-replace" name="Sergeant Replacement" hidden="false"><description>Aeonid Thiel replaces this squad’s Sergeant for +80 points. Thiel remains part of the squad for the entire battle, is a Character but not an Independent Character, and does not occupy a separate Force Organisation slot.</description></rule><rule id="r6-tactical-unit-aeonid-thiel-r8-fixed" name="Aeonid Thiel — Sergeant Replacement" hidden="false"><description>Aeonid Thiel replaces this squad’s Sergeant for +80 points. He remains part of the squad for the entire battle, is a Character but not an Independent Character, and may not purchase the replaced Sergeant’s personal Armoury options.</description></rule></rules>
+    <selectionEntryGroups><selectionEntryGroup id="r8-tactical-unit-thiel-tactic" name="Unorthodox Tactics — choose one" hidden="false"><constraints><constraint id="r8-tactical-unit-thiel-tactic-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r8-tactical-unit-thiel-tactic-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry id="r8-tactical-unit-thiel-tactic-0" name="Counter-Attack" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-tactical-unit-thiel-tactic-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-tactical-unit-thiel-tactic-0-rule" name="Counter-Attack" hidden="false"><description>Thiel and every model in his squad gain Counter-Attack for the duration of the battle.</description></rule></rules></selectionEntry><selectionEntry id="r8-tactical-unit-thiel-tactic-1" name="Move Through Cover" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-tactical-unit-thiel-tactic-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-tactical-unit-thiel-tactic-1-rule" name="Move Through Cover" hidden="false"><description>Thiel and every model in his squad gain Move Through Cover for the duration of the battle.</description></rule></rules></selectionEntry><selectionEntry id="r8-tactical-unit-thiel-tactic-2" name="Night Vision" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-tactical-unit-thiel-tactic-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-tactical-unit-thiel-tactic-2-rule" name="Night Vision" hidden="false"><description>Thiel and every model in his squad gain Night Vision for the duration of the battle.</description></rule></rules></selectionEntry><selectionEntry id="r8-tactical-unit-thiel-tactic-3" name="Tank Hunters" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-tactical-unit-thiel-tactic-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-tactical-unit-thiel-tactic-3-rule" name="Tank Hunters" hidden="false"><description>Thiel and every model in his squad gain Tank Hunters for the duration of the battle.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups></selectionEntry><selectionEntry id="r6-um-combat-squads" name="Combat Squads — split 10 models into two squads of 5" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r6-um-combat-squads-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r6-um-combat-squads-um-only" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r6-um-combat-squads-lessThan" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="lessThan" value="9" field="selections" scope="parent" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier><modifier id="r6-um-combat-squads-atLeast" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="10" field="selections" scope="parent" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers><rules><rule id="r6-um-combat-squads-rule" name="Codex Astartes — Combat Squads" hidden="false"><description>A Legion Tactical Squad consisting of exactly ten models may be divided into two Combat Squads of five models each before deployment. After division, each Combat Squad is treated as a separate unit for all game purposes. If the original squad has a Dedicated Transport, assign it to one Combat Squad; only that squad may begin embarked.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-tactical-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-tactical-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -11011,7 +11011,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
               <description>The Sergeant may select up to 50 points of permitted Space Marine Armoury equipment. Unit-specific options and equipment already carried are not repeated here. No item may be selected more than once unless specifically permitted. A Pair of Lightning Claws counts as two weapon choices.</description>
             </rule>
           </rules>
-        </selectionEntryGroup>
+        <modifiers><modifier id="veteran-sgt-armoury-r8-hide-thiel" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="r6-veteran-unit-aeonid-thiel" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" id="veteran-transport" hidden="false">
           <constraints>
             <constraint id="veteran-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
@@ -11993,7 +11993,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                   </conditions>
                 </modifier>
               <modifier id="live-r5-chainaxe-veteran-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-veteran-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
-            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry><selectionEntry id="r6-veteran-unit-aeonid-thiel" name="Replace Sergeant with Aeonid Thiel" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="80" /></costs><constraints><constraint id="r6-veteran-unit-aeonid-thiel-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r6-veteran-unit-aeonid-thiel-uniq" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r6-veteran-unit-aeonid-thiel-um-only" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><profiles>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry><selectionEntry id="r6-veteran-unit-aeonid-thiel" name="Replace Sergeant with Aeonid Thiel" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="80" /></costs><constraints><constraint id="r6-veteran-unit-aeonid-thiel-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r6-veteran-unit-aeonid-thiel-uniq" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r6-veteran-unit-aeonid-thiel-um-only" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r6-veteran-unit-aeonid-thiel-r8-other-thiel" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-tactical-unit-aeonid-thiel" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><profiles>
         <profile name="Aeonid Thiel" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-6-aeonid-thiel-profile-0">
           <characteristics>
             <characteristic name="WS" typeId="model-ws">5</characteristic>
@@ -12026,8 +12026,8 @@ Special Rules:
 If the squad purchases Krak grenades or Melta bombs,
 Thiel receives the same upgrade at the normal squad cost.</description>
         </rule>
-      <rule id="r6-veteran-unit-aeonid-thiel-replace" name="Sergeant Replacement" hidden="false"><description>Aeonid Thiel replaces this squad’s Sergeant for +80 points. Thiel remains part of the squad for the entire battle, is a Character but not an Independent Character, and does not occupy a separate Force Organisation slot.</description></rule></rules>
-    </selectionEntry></selectionEntries></selectionEntryGroup>
+      <rule id="r6-veteran-unit-aeonid-thiel-replace" name="Sergeant Replacement" hidden="false"><description>Aeonid Thiel replaces this squad’s Sergeant for +80 points. Thiel remains part of the squad for the entire battle, is a Character but not an Independent Character, and does not occupy a separate Force Organisation slot.</description></rule><rule id="r6-veteran-unit-aeonid-thiel-r8-fixed" name="Aeonid Thiel — Sergeant Replacement" hidden="false"><description>Aeonid Thiel replaces this squad’s Sergeant for +80 points. He remains part of the squad for the entire battle, is a Character but not an Independent Character, and may not purchase the replaced Sergeant’s personal Armoury options.</description></rule></rules>
+    <selectionEntryGroups><selectionEntryGroup id="r8-veteran-unit-thiel-tactic" name="Unorthodox Tactics — choose one" hidden="false"><constraints><constraint id="r8-veteran-unit-thiel-tactic-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r8-veteran-unit-thiel-tactic-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry id="r8-veteran-unit-thiel-tactic-0" name="Counter-Attack" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-veteran-unit-thiel-tactic-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-veteran-unit-thiel-tactic-0-rule" name="Counter-Attack" hidden="false"><description>Thiel and every model in his squad gain Counter-Attack for the duration of the battle.</description></rule></rules></selectionEntry><selectionEntry id="r8-veteran-unit-thiel-tactic-1" name="Move Through Cover" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-veteran-unit-thiel-tactic-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-veteran-unit-thiel-tactic-1-rule" name="Move Through Cover" hidden="false"><description>Thiel and every model in his squad gain Move Through Cover for the duration of the battle.</description></rule></rules></selectionEntry><selectionEntry id="r8-veteran-unit-thiel-tactic-2" name="Night Vision" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-veteran-unit-thiel-tactic-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-veteran-unit-thiel-tactic-2-rule" name="Night Vision" hidden="false"><description>Thiel and every model in his squad gain Night Vision for the duration of the battle.</description></rule></rules></selectionEntry><selectionEntry id="r8-veteran-unit-thiel-tactic-3" name="Tank Hunters" type="upgrade" hidden="false" import="true"><constraints><constraint id="r8-veteran-unit-thiel-tactic-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r8-veteran-unit-thiel-tactic-3-rule" name="Tank Hunters" hidden="false"><description>Thiel and every model in his squad gain Tank Hunters for the duration of the battle.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -33108,7 +33108,147 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                 </rule>
               </rules>
             </selectionEntry>
+          <selectionEntry type="unit" import="true" name="INVICTARUS SUZERAIN SQUAD" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      <modifier id="r8-um-praetor-suz-show" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r8-um-invictarus-mutual-r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+      <profiles>
+        <profile name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">1</characteristic>
+            <characteristic name="I" typeId="model-i">4</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Suzerain Legate" typeId="prof-model" typeName="Model" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-profile-1">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">1</characteristic>
+            <characteristic name="I" typeId="model-i">5</characteristic>
+            <characteristic name="A" typeId="model-a">3</characteristic>
+            <characteristic name="Ld" typeId="model-ld">10</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="true">
+          <description>Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points</description>
+        </rule>
+      <rule id="r8-um-praetor-suz-retinue-rule" name="Retinue" hidden="false"><description>This unit is selected as a retinue and does not occupy a separate Force Organisation slot.</description></rule><rule id="r8-r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-0" name="Legatine Axe" hidden="false"><description>A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons.</description></rule><rule id="r8-r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-1" name="Honour Guard" hidden="false"><description>One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. It does not occupy a separate Force Organisation slot; the character and Suzerains count as a single HQ selection.</description></rule><rule id="r8-r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Boarding Shield; Bolt pistol; Legatine Axe.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" defaultAmount="5">
+          <constraints>
+            <constraint id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional-min-total" type="min" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="45" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag grenades — entire squad (+1 pt/model)" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades">
+              <constraints>
+                <constraint id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Frag grenades for +1 point per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-r6scale-0" type="increment" field="pts" value="1"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Krak grenades — entire squad (+2 pts/model)" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades">
+              <constraints>
+                <constraint id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Krak grenades for +2 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-r6scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs">
+              <constraints>
+                <constraint id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Melta bombs for +5 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-r6scale-0" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Suzerain Legate" hidden="false" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate">
+              <constraints>
+                <constraint id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="20" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-context" hidden="false">
+                  <description>• One Invictarus Suzerain may be upgraded to:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    <constraints><constraint id="r8-um-praetor-suz-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    </selectionEntries>
           <rules>
             <rule name="Retinue Restriction" id="hq-praetor-ret-rule" hidden="false">
               <description>A Praetor may select one Honour Guard Squad. If equipped with any form of Terminator Armour, he may instead select a Legion Terminator Command Squad where permitted.</description>
@@ -149752,7 +149892,7 @@ The Detachment may not include an Allied Detachment.</description>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r8-um-invictarus-mutual-r41-unit-xiii-0-invictarus-suzerain-squad" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
       <profiles>
         <profile name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
           <characteristics>
@@ -149782,7 +149922,7 @@ The Detachment may not include an Allied Detachment.</description>
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="true">
           <description>Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
 Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
 Force Organisation:
@@ -149811,7 +149951,7 @@ OPTIONS
 • One Invictarus Suzerain may be upgraded to:
 • Suzerain Legate ................................. +20 points</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-0-invictarus-suzerain-squad-rule-0" name="Legatine Axe" hidden="false"><description>A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons.</description></rule><rule id="r8-r41-unit-xiii-0-invictarus-suzerain-squad-rule-1" name="Honour Guard" hidden="false"><description>One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. It does not occupy a separate Force Organisation slot; the character and Suzerains count as a single HQ selection.</description></rule><rule id="r8-r41-unit-xiii-0-invictarus-suzerain-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Boarding Shield; Bolt pistol; Legatine Axe.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiii-0-invictarus-suzerain-squad-additional" defaultAmount="5">
           <constraints>
@@ -149880,8 +150020,132 @@ OPTIONS
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
+      <selectionEntryGroup name="Suzerain Legate — Space Marine Armoury (max 50 pts)" id="r8-um-suz-arm-veteran-sgt-armoury" hidden="false">
+          <constraints>
+            <constraint id="r8-um-suz-arm-veteran-sgt-armoury-pts-max" type="max" value="50" field="pts" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="r8-um-suz-arm-veteran-sgt-hf" type="selectionEntry" targetId="gear-hand-flamer">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-hf-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="r8-um-suz-arm-veteran-sgt-lc" type="selectionEntry" targetId="gear-lightning-claw">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-lc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pair of Lightning Claws" hidden="false" id="r8-um-suz-arm-veteran-sgt-pair" type="selectionEntry" targetId="gear-pair-claws">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-pair-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="30" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Plasma Pistol" hidden="false" id="r8-um-suz-arm-veteran-sgt-pp" type="selectionEntry" targetId="gear-plasma-pistol">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-pp-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="r8-um-suz-arm-veteran-sgt-pf" type="selectionEntry" targetId="gear-power-fist">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-pf-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunder Hammer" hidden="false" id="r8-um-suz-arm-veteran-sgt-th" type="selectionEntry" targetId="gear-thunder">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-th-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="30" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Volkite Serpenta" hidden="false" id="r8-um-suz-arm-veteran-sgt-vs" type="selectionEntry" targetId="gear-volkite-serpenta">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-vs-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Bolter" hidden="false" id="r8-um-suz-arm-veteran-sgt-cb" type="selectionEntry" targetId="gear-combi-bolter">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-cb-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Grenade Launcher" hidden="false" id="r8-um-suz-arm-veteran-sgt-cg" type="selectionEntry" targetId="gear-combi-grenade">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-cg-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="r8-um-suz-arm-veteran-sgt-sb" type="selectionEntry" targetId="gear-storm-bolter">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-sb-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Auspex" hidden="false" id="r8-um-suz-arm-veteran-sgt-auspex" type="selectionEntry" targetId="gear-auspex">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-auspex-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="2" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Bionics" hidden="false" id="r8-um-suz-arm-veteran-sgt-bionics" type="selectionEntry" targetId="gear-bionics">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-bionics-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Purity Seals" hidden="false" id="r8-um-suz-arm-veteran-sgt-purity" type="selectionEntry" targetId="gear-purity">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-purity-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Teleport Homer" hidden="false" id="r8-um-suz-arm-veteran-sgt-homer" type="selectionEntry" targetId="gear-homer">
+              <constraints>
+                <constraint id="r8-um-suz-arm-veteran-sgt-homer-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            </entryLinks>
+          <rules>
+            <rule name="Sergeant Armoury Restrictions" id="r8-um-suz-arm-veteran-sgt-arm-rule" hidden="false">
+              <description>The Sergeant may select up to 50 points of permitted Space Marine Armoury equipment. Unit-specific options and equipment already carried are not repeated here. No item may be selected more than once unless specifically permitted. A Pair of Lightning Claws counts as two weapon choices.</description>
+            </rule>
+          </rules>
+        <modifiers><modifier id="r8-um-suz-arm-veteran-sgt-armoury-gate" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="parent" childId="r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup>
+        </selectionEntryGroups>
+    <constraints><constraint id="r8-um-invictarus-01" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" /></constraints></selectionEntry>
     <selectionEntry type="unit" import="true" name="FULMENTARUS TERMINATOR SQUAD" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad">
       <costs>
         <cost name="Points" typeId="pts" value="0.0" />
@@ -149925,7 +150189,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-1-fulmentarus-terminator-squad-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-1-fulmentarus-terminator-squad-source" hidden="true">
           <description>Fulmentarus Terminator | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/4+
 Fulmentarus Decurion | 4 | 4 | 4 | 4 | 1 | 5 | 3 | 9 | 2+/4+
 Force Organisation:
@@ -149956,7 +150220,7 @@ The Fulmentarus Decurion may select up to 50 points of permitted Terminator weap
 DEDICATED TRANSPORT
 A squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.</description>
         </rule>
-      </rules>
+      <rule id="r8-um-ful-dt-transport-rule" name="Dedicated Transport" hidden="false"><description>This squad may select the listed Dedicated Transport where Transport Capacity permits.</description></rule><rule id="r8-r41-unit-xiii-1-fulmentarus-terminator-squad-rule-0" name="Guided Warheads" hidden="false"><description>When firing Frag missiles from their Cyclone Missile Launchers, Fulmentarus Terminators may fire at an enemy unit they cannot see if that unit is visible to a friendly model equipped with a Nuncio Vox. The Nuncio Vox bearer may not be embarked, Falling Back, Pinned or engaged in close combat. These shots must use Frag missiles, count as Barrage and follow normal ProHammer Barrage rules. Krak missiles may not use Guided Warheads.</description></rule><rule id="r8-r41-unit-xiii-1-fulmentarus-terminator-squad-rule-1" name="Wargear" hidden="false"><description>Cataphractii Terminator Armour; Storm bolter; Power fist; Cyclone Missile Launcher.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-additional" defaultAmount="5">
           <constraints>
@@ -149971,19 +150235,6 @@ A squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank whe
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-options" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-chainfist">
-              <constraints>
-                <constraint id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-chainfist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="5" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-context" hidden="false">
-                  <description>• Any model may replace his Power fist with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fulmentarus Decurion" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-1-fulmentarus-decurion">
               <constraints>
                 <constraint id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-1-fulmentarus-decurion-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -150011,9 +150262,147 @@ A squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank whe
               </rules>
             <modifiers><modifier id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-2-grenade-harness-r6needs-decurion" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="parent" childId="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-1-fulmentarus-decurion" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
           </selectionEntries>
+        <selectionEntryGroups><selectionEntryGroup id="r8-um-ful-chainfists" name="Power Fist Replacement — up to one per model" hidden="false"><constraints><constraint id="r8-um-ful-chainfists-max" type="max" value="0" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-chainfist">
+              <constraints>
+                <constraint id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-chainfist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-context" hidden="false">
+                  <description>• Any model may replace his Power fist with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            </selectionEntries><modifiers><modifier id="r8-um-ful-chainfists-dynmax" type="increment" field="r8-um-ful-chainfists-max" value="1"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r41-unit-xiii-1-fulmentarus-terminator-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
+      <selectionEntryGroup name="Fulmentarus Decurion — Terminator Armoury (max 50 pts)" id="r8-um-ful-arm-terminator-sgt-armoury" hidden="false">
+              <constraints>
+                <constraint id="r8-um-ful-arm-terminator-sgt-armoury-pts-max" type="max" value="50" field="pts" scope="parent" shared="true" includeChildSelections="true" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Combi-Grenade Launcher" hidden="false" id="r8-um-ful-arm-terminator-sgt-cg" type="selectionEntry" targetId="gear-combi-grenade">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-cg-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Auspex" hidden="false" id="r8-um-ful-arm-terminator-sgt-auspex" type="selectionEntry" targetId="gear-auspex">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-auspex-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="2" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bionics" hidden="false" id="r8-um-ful-arm-terminator-sgt-bionics" type="selectionEntry" targetId="gear-bionics">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-bionics-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Nuncio Vox" hidden="false" id="r8-um-ful-arm-terminator-sgt-nuncio" type="selectionEntry" targetId="gear-nuncio">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-nuncio-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Purity Seals" hidden="false" id="r8-um-ful-arm-terminator-sgt-purity" type="selectionEntry" targetId="gear-purity">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-purity-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Teleport Homer" hidden="false" id="r8-um-ful-arm-terminator-sgt-homer" type="selectionEntry" targetId="gear-homer">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-homer-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Iron Halo" hidden="false" id="r8-um-ful-arm-terminator-sgt-halo">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-halo-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="25" />
+                  </costs>
+                  <rules>
+                    <rule name="Iron Halo" id="r8-um-ful-arm-terminator-sgt-halo-rule" hidden="false">
+                      <description>4+ Invulnerable Save; normally no more than one Iron Halo may be selected in an army.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master-crafted Weapon" hidden="false" id="r8-um-ful-arm-terminator-sgt-mastercraft">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-mastercraft-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="15" />
+                  </costs>
+                  <rules>
+                    <rule name="Master-crafted Weapon" id="r8-um-ful-arm-terminator-sgt-mastercraft-rule" hidden="false">
+                      <description>Apply to one specific weapon; re-roll one failed To Hit roll with that weapon per player turn. Grenades and expendable equipment may not be Master-crafted.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Signum" hidden="false" id="r8-um-ful-arm-terminator-sgt-signum">
+                  <constraints>
+                    <constraint id="r8-um-ful-arm-terminator-sgt-signum-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="15" />
+                  </costs>
+                  <rules>
+                    <rule name="Signum" id="r8-um-ful-arm-terminator-sgt-signum-rule" hidden="false">
+                      <description>Once per friendly Shooting phase, the unit may re-roll one failed shooting To Hit roll. A unit may benefit from only one Signum per Shooting phase.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+              <rules>
+                <rule name="Terminator Armoury Restrictions" id="r8-um-ful-arm-terminator-sgt-arm-rule" hidden="false">
+                  <description>Only equipment permitted for a model wearing Terminator Armour is shown. Unit-specific weapon replacements and the Grenade Harness are not duplicated here. No item may be selected more than once unless specifically permitted.</description>
+                </rule>
+              </rules>
+            <modifiers><modifier id="r8-um-ful-arm-terminator-sgt-armoury-gate" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="parent" childId="r41-unit-xiii-1-fulmentarus-terminator-squad-opt-1-fulmentarus-decurion" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup>
+          <selectionEntryGroup name="Dedicated Transport" id="r8-um-ful-dt-terminator-transport" hidden="false">
+          <constraints>
+            <constraint id="r8-um-ful-dt-terminator-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r8-um-ful-dt-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r8-um-ful-dt-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r8-um-ful-dt-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r8-um-ful-dt-terminator-transport-max">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
+        </selectionEntryGroups>
+    <constraints><constraint id="r8-um-fulmentarus-01" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" /></constraints></selectionEntry>
     <selectionEntry type="unit" import="true" name="LOCUTARUS STORM SQUAD" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad">
       <costs>
         <cost name="Points" typeId="pts" value="0.0" />
@@ -150057,7 +150446,7 @@ A squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank whe
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-2-locutarus-storm-squad-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-2-locutarus-storm-squad-source" hidden="true">
           <description>Locutarus | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+
 Locutarus Strike Leader | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 9 | 2+
 Force Organisation:
@@ -150089,7 +150478,7 @@ OPTIONS
 LOCUTARUS STRIKE LEADER
 The Strike Leader may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-2-locutarus-storm-squad-rule-0" name="Argean Power Sword" hidden="false"><description>An Argean Power Sword is a Master-crafted Power Weapon.</description></rule><rule id="r8-r41-unit-xiii-2-locutarus-storm-squad-rule-1" name="Coordinated Assault" hidden="false"><description>If the Locutarus charge an enemy unit which suffered one or more hits from another friendly Ultramarines unit during the preceding Shooting phase, the Locutarus may re-roll To Hit rolls of 1 during that Assault phase.</description></rule><rule id="r8-r41-unit-xiii-2-locutarus-storm-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Jump Pack; Bolt pistol; Argean Power Sword; Frag grenades.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-additional" defaultAmount="5">
           <constraints>
@@ -150104,32 +150493,6 @@ The Strike Leader may select up to 50 points of permitted weapons and wargear fr
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-options" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hand Flamer" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-opt-0-hand-flamer">
-              <constraints>
-                <constraint id="r41-unit-xiii-2-locutarus-storm-squad-opt-0-hand-flamer-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="5" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiii-2-locutarus-storm-squad-opt-0-context" hidden="false">
-                  <description>• Up to two Locutarus may replace their Bolt pistol with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-opt-1-plasma-pistol">
-              <constraints>
-                <constraint id="r41-unit-xiii-2-locutarus-storm-squad-opt-1-plasma-pistol-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="15" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiii-2-locutarus-storm-squad-opt-1-context" hidden="false">
-                  <description>• Up to two Locutarus may replace their Bolt pistol with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krak grenades — entire squad (+2 pts/model)" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-opt-2-krak-grenades">
               <constraints>
                 <constraint id="r41-unit-xiii-2-locutarus-storm-squad-opt-2-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -150157,8 +150520,158 @@ The Strike Leader may select up to 50 points of permitted weapons and wargear fr
                 <rule id="r41-unit-xiii-2-locutarus-storm-squad-opt-3-melta-bombs-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Melta bombs for +5 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
             <modifiers><modifier id="r41-unit-xiii-2-locutarus-storm-squad-opt-3-melta-bombs-r6scale-0" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r41-unit-xiii-2-locutarus-storm-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
           </selectionEntries>
+        <selectionEntryGroups><selectionEntryGroup id="r8-um-loc-pistols" name="Bolt Pistol Replacements — up to two models total" hidden="false"><constraints><constraint id="r8-um-loc-pistols-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="upgrade" import="true" name="Hand Flamer" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-opt-0-hand-flamer">
+              <constraints>
+                <constraint id="r41-unit-xiii-2-locutarus-storm-squad-opt-0-hand-flamer-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiii-2-locutarus-storm-squad-opt-0-context" hidden="false">
+                  <description>• Up to two Locutarus may replace their Bolt pistol with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="r41-unit-xiii-2-locutarus-storm-squad-opt-1-plasma-pistol">
+              <constraints>
+                <constraint id="r41-unit-xiii-2-locutarus-storm-squad-opt-1-plasma-pistol-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiii-2-locutarus-storm-squad-opt-1-context" hidden="false">
+                  <description>• Up to two Locutarus may replace their Bolt pistol with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            </selectionEntries></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
+      <selectionEntryGroup name="Locutarus Strike Leader — Space Marine Armoury (max 50 pts)" id="r8-um-loc-arm-veteran-sgt-armoury" hidden="false">
+          <constraints>
+            <constraint id="r8-um-loc-arm-veteran-sgt-armoury-pts-max" type="max" value="50" field="pts" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="r8-um-loc-arm-veteran-sgt-hf" type="selectionEntry" targetId="gear-hand-flamer">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-hf-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="r8-um-loc-arm-veteran-sgt-lc" type="selectionEntry" targetId="gear-lightning-claw">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-lc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pair of Lightning Claws" hidden="false" id="r8-um-loc-arm-veteran-sgt-pair" type="selectionEntry" targetId="gear-pair-claws">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-pair-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="30" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Plasma Pistol" hidden="false" id="r8-um-loc-arm-veteran-sgt-pp" type="selectionEntry" targetId="gear-plasma-pistol">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-pp-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="r8-um-loc-arm-veteran-sgt-pf" type="selectionEntry" targetId="gear-power-fist">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-pf-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunder Hammer" hidden="false" id="r8-um-loc-arm-veteran-sgt-th" type="selectionEntry" targetId="gear-thunder">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-th-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="30" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Volkite Serpenta" hidden="false" id="r8-um-loc-arm-veteran-sgt-vs" type="selectionEntry" targetId="gear-volkite-serpenta">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-vs-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Bolter" hidden="false" id="r8-um-loc-arm-veteran-sgt-cb" type="selectionEntry" targetId="gear-combi-bolter">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-cb-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Grenade Launcher" hidden="false" id="r8-um-loc-arm-veteran-sgt-cg" type="selectionEntry" targetId="gear-combi-grenade">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-cg-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="r8-um-loc-arm-veteran-sgt-sb" type="selectionEntry" targetId="gear-storm-bolter">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-sb-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Auspex" hidden="false" id="r8-um-loc-arm-veteran-sgt-auspex" type="selectionEntry" targetId="gear-auspex">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-auspex-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="2" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Bionics" hidden="false" id="r8-um-loc-arm-veteran-sgt-bionics" type="selectionEntry" targetId="gear-bionics">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-bionics-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Purity Seals" hidden="false" id="r8-um-loc-arm-veteran-sgt-purity" type="selectionEntry" targetId="gear-purity">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-purity-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Teleport Homer" hidden="false" id="r8-um-loc-arm-veteran-sgt-homer" type="selectionEntry" targetId="gear-homer">
+              <constraints>
+                <constraint id="r8-um-loc-arm-veteran-sgt-homer-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+            </entryLink>
+            </entryLinks>
+          <rules>
+            <rule name="Sergeant Armoury Restrictions" id="r8-um-loc-arm-veteran-sgt-arm-rule" hidden="false">
+              <description>The Sergeant may select up to 50 points of permitted Space Marine Armoury equipment. Unit-specific options and equipment already carried are not repeated here. No item may be selected more than once unless specifically permitted. A Pair of Lightning Claws counts as two weapon choices.</description>
+            </rule>
+          </rules>
         </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="NEMESIS DESTROYER SQUAD" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad">
       <costs>
@@ -150203,7 +150716,7 @@ The Strike Leader may select up to 50 points of permitted weapons and wargear fr
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-3-nemesis-destroyer-squad-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-3-nemesis-destroyer-squad-source" hidden="true">
           <description>Nemesis Destroyer | 4 | 4 | 4 | 4 | 1 | 4 | 1 | 9 | 3+
 Nemesis Destroyer Sergeant | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+
 Force Organisation:
@@ -150253,7 +150766,7 @@ The Sergeant may select up to 50 points of permitted weapons and wargear from th
 DEDICATED TRANSPORT
 The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where Transport Capacity permits.</description>
         </rule>
-      </rules>
+      <rule id="r8-um-nem-dt-transport-rule" name="Dedicated Transport" hidden="false"><description>This squad may select the listed Dedicated Transport where Transport Capacity permits.</description></rule><rule id="r8-r41-unit-xiii-3-nemesis-destroyer-squad-rule-0" name="Mortifier Bolter" hidden="false"><description>Mortifier Bolters are normal Bolters with the Poisoned (3+) and Pinning special rules.</description></rule><rule id="r8-r41-unit-xiii-3-nemesis-destroyer-squad-rule-1" name="Wargear" hidden="false"><description>Power Armour; Mortifier Bolter; Bolt pistol; Chainsword; Rad grenades.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-additional" defaultAmount="5">
           <constraints>
@@ -150268,32 +150781,6 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-options" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-heavy-flamer">
-              <constraints>
-                <constraint id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-heavy-flamer-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="10" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-context" hidden="false">
-                  <description>• For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="and Rad Missiles" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-and-rad-missiles">
-              <constraints>
-                <constraint id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-and-rad-missiles-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="25" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-context" hidden="false">
-                  <description>• For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Legion Vexilla" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-2-legion-vexilla">
               <constraints>
                 <constraint id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-2-legion-vexilla-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -150425,8 +150912,355 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
                 </rule>
               </rules>
             </selectionEntry>
-            </selectionEntries></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
-      </selectionEntryGroups>
+            </selectionEntries></selectionEntryGroup><selectionEntryGroup id="r8-um-nem-special" name="Special Weapon Replacement — one per five models" hidden="false"><constraints><constraint id="r8-um-nem-special-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-heavy-flamer">
+              <constraints>
+                <constraint id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-heavy-flamer-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-context" hidden="false">
+                  <description>• For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-and-rad-missiles">
+              <constraints>
+                <constraint id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-and-rad-missiles-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="25" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-context" hidden="false">
+                  <description>• For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            </selectionEntries><modifiers><modifier id="r8-um-nem-special-10" type="set" field="r8-um-nem-special-max" value="2"><conditions><condition type="atLeast" value="10" field="selections" scope="root-entry" childId="r41-unit-xiii-3-nemesis-destroyer-squad-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
+      <selectionEntryGroup name="Nemesis Destroyer Sergeant — Space Marine Armoury (max 50 pts)" id="r8-um-nem-arm-destroyer-sgt-armoury" hidden="false">
+              <constraints>
+                <constraint id="r8-um-nem-arm-destroyer-sgt-armoury-pts-max" type="max" value="50" field="pts" scope="parent" shared="true" includeChildSelections="true" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Volkite Serpenta" hidden="false" id="r8-um-nem-arm-destroyer-sgt-vs" type="selectionEntry" targetId="gear-volkite-serpenta">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-vs-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="r8-um-nem-arm-destroyer-sgt-hf" type="selectionEntry" targetId="gear-hand-flamer">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-hf-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="r8-um-nem-arm-destroyer-sgt-pp" type="selectionEntry" targetId="gear-plasma-pistol">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-pp-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pair of Lightning Claws" hidden="false" id="r8-um-nem-arm-destroyer-sgt-pair" type="selectionEntry" targetId="gear-pair-claws">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-pair-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Bolter" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cb" type="selectionEntry" targetId="gear-combi-bolter">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cb-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cf" type="selectionEntry" targetId="gear-combi-flamer">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cf-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Grenade Launcher" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cg" type="selectionEntry" targetId="gear-combi-grenade">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cg-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Meltagun" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cm" type="selectionEntry" targetId="gear-combi-melta">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cm-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Plasma Gun" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cp" type="selectionEntry" targetId="gear-combi-plasma">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cp-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Volkite Charger" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cv" type="selectionEntry" targetId="gear-combi-volkite">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cv-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="r8-um-nem-arm-destroyer-sgt-sb" type="selectionEntry" targetId="gear-storm-bolter">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-sb-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combat Shield" hidden="false" id="r8-um-nem-arm-destroyer-sgt-cshield" type="selectionEntry" targetId="gear-combat-shield">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-cshield-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Auspex" hidden="false" id="r8-um-nem-arm-destroyer-sgt-auspex" type="selectionEntry" targetId="gear-auspex">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-auspex-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="2" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bionics" hidden="false" id="r8-um-nem-arm-destroyer-sgt-bionics" type="selectionEntry" targetId="gear-bionics">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-bionics-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Purity Seals" hidden="false" id="r8-um-nem-arm-destroyer-sgt-purity" type="selectionEntry" targetId="gear-purity">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-purity-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Teleport Homer" hidden="false" id="r8-um-nem-arm-destroyer-sgt-homer" type="selectionEntry" targetId="gear-homer">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-homer-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Melta Bombs" hidden="false" id="r8-um-nem-arm-destroyer-sgt-melta" type="selectionEntry" targetId="gear-melta-bombs">
+                  <constraints>
+                    <constraint id="r8-um-nem-arm-destroyer-sgt-melta-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="5" />
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="destroyer-squad-melta" shared="true" includeChildSelections="true" />
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="r8-um-nem-arm-destroyer-sgt-melta-max">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="destroyer-squad-melta" shared="true" includeChildSelections="true" />
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                </entryLinks>
+              <rules>
+                <rule name="Sergeant Armoury Restrictions" id="r8-um-nem-arm-destroyer-sgt-arm-rule" hidden="false">
+                  <description>Unit-specific Chainsword replacements and standard equipment are not duplicated here. No item may be selected more than once unless specifically permitted. A Pair of Lightning Claws counts as two weapon choices. Artificer Armour is not present in the current Destroyer Sergeant entry and is therefore not offered.</description>
+                </rule>
+              </rules>
+            </selectionEntryGroup>
+          <selectionEntryGroup name="Dedicated Transport" id="r8-um-nem-dt-destroyer-transport" hidden="false">
+          <constraints>
+            <constraint id="r8-um-nem-dt-destroyer-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Land Raider Dedicated Transport (Armoured Spearhead)" id="r8-um-nem-dt-r37-spear-destroyer-transport" hidden="true">
+              <constraints>
+                <constraint id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-lrgrp-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+              </constraints>
+              <rules>
+                <rule name="Land Raider Dedicated Transport" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-lrrule" hidden="false">
+                  <description>Select a pattern with sufficient Transport Capacity. These entries use the profiles and standard wargear/rules of the corresponding Legion Land Raider Battle Squadron entry; use that entry for full vehicle upgrade options.</description>
+                </rule>
+              </rules>
+              <selectionEntries>
+                <selectionEntry type="model" name="Land Raider Phobos" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-phobos" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-phobos-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="250" />
+                  </costs>
+                  <profiles>
+                    <profile name="Land Raider Phobos" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                      <characteristics>
+                        <characteristic name="BS" typeId="vehicle-bs">4</characteristic>
+                        <characteristic name="Front" typeId="vehicle-front">14</characteristic>
+                        <characteristic name="Side" typeId="vehicle-side">14</characteristic>
+                        <characteristic name="Rear" typeId="vehicle-rear">14</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="model" name="Land Raider Proteus" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-proteus" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-proteus-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="200" />
+                  </costs>
+                  <profiles>
+                    <profile name="Land Raider Proteus" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                      <characteristics>
+                        <characteristic name="BS" typeId="vehicle-bs">4</characteristic>
+                        <characteristic name="Front" typeId="vehicle-front">14</characteristic>
+                        <characteristic name="Side" typeId="vehicle-side">14</characteristic>
+                        <characteristic name="Rear" typeId="vehicle-rear">14</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="model" name="Land Raider Achilles" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-achilles" hidden="false" import="true">
+                  <constraints>
+                    <constraint id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-achilles-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="pts" value="275" />
+                  </costs>
+                  <profiles>
+                    <profile name="Land Raider Achilles" id="r8-um-nem-dt-r37-spear-destroyer-transport-src-hq-praetor-ret-honour-land-land-raider-achilles-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                      <characteristics>
+                        <characteristic name="BS" typeId="vehicle-bs">4</characteristic>
+                        <characteristic name="Front" typeId="vehicle-front">14</characteristic>
+                        <characteristic name="Side" typeId="vehicle-side">14</characteristic>
+                        <characteristic name="Rear" typeId="vehicle-rear">14</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="rite-spearhead" shared="true" includeChildSelections="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Rhino" hidden="false" id="r8-um-nem-dt-destroyer-tr-rhino" type="selectionEntry" targetId="transport-rhino">
+              <constraints>
+                <constraint id="r8-um-nem-dt-destroyer-tr-rhino-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Drop Pod" hidden="false" id="r8-um-nem-dt-destroyer-tr-pod" type="selectionEntry" targetId="transport-drop-pod">
+              <constraints>
+                <constraint id="r8-um-nem-dt-destroyer-tr-pod-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r8-um-nem-dt-destroyer-tr-pod-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r8-um-nem-dt-destroyer-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r8-um-nem-dt-destroyer-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r8-um-nem-dt-destroyer-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="destroyer-jump-packs" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r8-um-nem-dt-destroyer-transport-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="destroyer-jump-packs" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" name="Land Raider Phobos (Scions of Iron)" id="r8-um-nem-dt-r83-ih-scions-6-hq-praetor-ret-honour-land-land-raider-phobos" hidden="true" import="true">
+              <costs>
+                <cost name="Points" typeId="pts" value="250" />
+              </costs>
+              <profiles>
+                <profile name="Land Raider Phobos" id="r8-um-nem-dt-r83-ih-scions-6-hq-praetor-ret-honour-land-land-raider-phobos-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                  <characteristics>
+                    <characteristic name="BS" typeId="vehicle-bs">4</characteristic>
+                    <characteristic name="Front" typeId="vehicle-front">14</characteristic>
+                    <characteristic name="Side" typeId="vehicle-side">14</characteristic>
+                    <characteristic name="Rear" typeId="vehicle-rear">14</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint id="r8-um-nem-dt-r83-ih-scions-6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <modifiers>
+                <modifier id="r8-um-nem-dt-r83-ih-scions-6-show-head" type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-x-0-the-head-of-the-gorgon" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Land Raider Proteus (Scions of Iron)" id="r8-um-nem-dt-r83-ih-scions-7-hq-praetor-ret-honour-land-land-raider-proteus" hidden="true" import="true">
+              <costs>
+                <cost name="Points" typeId="pts" value="200" />
+              </costs>
+              <profiles>
+                <profile name="Land Raider Proteus" id="r8-um-nem-dt-r83-ih-scions-7-hq-praetor-ret-honour-land-land-raider-proteus-prof" typeId="prof-vehicle" typeName="Vehicle" hidden="false">
+                  <characteristics>
+                    <characteristic name="BS" typeId="vehicle-bs">4</characteristic>
+                    <characteristic name="Front" typeId="vehicle-front">14</characteristic>
+                    <characteristic name="Side" typeId="vehicle-side">14</characteristic>
+                    <characteristic name="Rear" typeId="vehicle-rear">14</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint id="r8-um-nem-dt-r83-ih-scions-7-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <modifiers>
+                <modifier id="r8-um-nem-dt-r83-ih-scions-7-show-head" type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-x-0-the-head-of-the-gorgon" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="MARIUS GAGE, FIRST MASTER" hidden="false" id="r41-unit-xiii-4-marius-gage-first-master">
       <costs>
@@ -150461,7 +151295,7 @@ The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where 
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-4-marius-gage-first-master-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-4-marius-gage-first-master-source" hidden="true">
           <description>Marius Gage | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+/4+
 Force Organisation:
 • HQ
@@ -150486,7 +151320,7 @@ OPTIONS
 • Krak grenades ................................... +2 points
 • Melta bombs .................................... +5 points</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-4-marius-gage-first-master-rule-0" name="First Master of the Legion" hidden="false"><description>Friendly non-Vehicle Ultramarines units with at least one model within 12 inches of Marius Gage may use his Leadership for Morale or Pinning tests.</description></rule><rule id="r8-r41-unit-xiii-4-marius-gage-first-master-rule-1" name="Master of Organisation" hidden="false"><description>After both armies deploy but before the first turn, select one Ultramarines Infantry unit which deployed normally. It may immediately redeploy wholly within the Ultramarines deployment zone, obeying all normal restrictions. It may not be placed into Reserve; joined Independent Characters redeploy with it.</description></rule><rule id="r8-r41-unit-xiii-4-marius-gage-first-master-rule-2" name="Calculated Response" hidden="false"><description>Marius Gage and any Ultramarines unit he has joined have Counter-Attack.</description></rule><rule id="r8-r41-unit-xiii-4-marius-gage-first-master-rule-3" name="Wargear" hidden="false"><description>Artificer Armour; Iron Halo; Master-crafted Power Weapon; Bolt pistol; Frag grenades.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiii-4-marius-gage-first-master-options" collective="false" import="true">
           <selectionEntries>
@@ -151906,7 +152740,7 @@ OPTIONS
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r8-um-invictarus-mutual-live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
       <profiles>
         <profile name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
           <characteristics>
@@ -151936,7 +152770,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="false">
+        <rule name="Source Entry" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="true">
           <description>Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
 Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
 Force Organisation:
@@ -151965,7 +152799,7 @@ OPTIONS
 • One Invictarus Suzerain may be upgraded to:
 • Suzerain Legate ................................. +20 points</description>
         </rule>
-      </rules>
+      <rule id="r8-live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-rule-0" name="Legatine Axe" hidden="false"><description>A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons.</description></rule><rule id="r8-live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-rule-1" name="Honour Guard" hidden="false"><description>One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. It does not occupy a separate Force Organisation slot; the character and Suzerains count as a single HQ selection.</description></rule><rule id="r8-live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Boarding Shield; Bolt pistol; Legatine Axe.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad-additional" defaultAmount="5">
           <constraints>
@@ -152080,7 +152914,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-5-remus-ventanus-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-5-remus-ventanus-source" hidden="true">
           <description>Remus Ventanus | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 10 | 2+/5+
 THE SAVIOUR OF CALTH Ventanus and any Ultramarines unit he has joined have Fearless while at least one model from the unit is within 6" of an objective. PRACTICAL COMMANDER After both armies have deployed but before the first turn begins, nominate one Legion Tactical Squad in the army. That squad gains Counter-Attack for the duration of the battle. COMMAND RETINUE Ventanus may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
 Force Organisation:
@@ -152105,7 +152939,7 @@ OPTIONS
 • Krak grenades ................................... +2 points
 • Melta bombs .................................... +5 points</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-5-remus-ventanus-rule-0" name="The Saviour of Calth" hidden="false"><description>Ventanus and any Ultramarines unit he has joined have Fearless while at least one model from the unit is within 6 inches of an objective.</description></rule><rule id="r8-r41-unit-xiii-5-remus-ventanus-rule-1" name="Practical Commander" hidden="false"><description>After both armies deploy but before the first turn, nominate one Legion Tactical Squad in the army. That squad gains Counter-Attack for the duration of the battle.</description></rule><rule id="r8-r41-unit-xiii-5-remus-ventanus-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Refractor Field; Power weapon; Bolt pistol; Nuncio Vox; Frag grenades; Legion Standard.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiii-5-remus-ventanus-options" collective="false" import="true">
           <selectionEntries>
@@ -152968,7 +153802,147 @@ OPTIONS
                 </selectionEntryGroup>
               <selectionEntryGroup id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command" name="Enhanced Warriors" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-7-fabius-bile" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><rules><rule id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-rule" name="Enhanced Warriors" hidden="false"><description>This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack; in missions using Victory Points, surviving models from the squad count as casualties when calculating Victory Points.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-10-fulgrim-transfigured" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
             </selectionEntry>
-            </selectionEntries></selectionEntryGroup></selectionEntryGroups>
+            <selectionEntry type="unit" import="true" name="INVICTARUS SUZERAIN SQUAD" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      <modifier id="r8-um-invictarus-mutual-r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+      <profiles>
+        <profile name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">1</characteristic>
+            <characteristic name="I" typeId="model-i">4</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Suzerain Legate" typeId="prof-model" typeName="Model" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-profile-1">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">1</characteristic>
+            <characteristic name="I" typeId="model-i">5</characteristic>
+            <characteristic name="A" typeId="model-a">3</characteristic>
+            <characteristic name="Ld" typeId="model-ld">10</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="true">
+          <description>Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points</description>
+        </rule>
+      <rule id="r8-um-ventanus-suz-retinue-rule" name="Retinue" hidden="false"><description>This unit is selected as a retinue and does not occupy a separate Force Organisation slot.</description></rule><rule id="r8-r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-0" name="Legatine Axe" hidden="false"><description>A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons.</description></rule><rule id="r8-r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-1" name="Honour Guard" hidden="false"><description>One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. It does not occupy a separate Force Organisation slot; the character and Suzerains count as a single HQ selection.</description></rule><rule id="r8-r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Boarding Shield; Bolt pistol; Legatine Axe.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" defaultAmount="5">
+          <constraints>
+            <constraint id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional-min-total" type="min" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="45" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag grenades — entire squad (+1 pt/model)" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades">
+              <constraints>
+                <constraint id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Frag grenades for +1 point per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-r6scale-0" type="increment" field="pts" value="1"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Krak grenades — entire squad (+2 pts/model)" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades">
+              <constraints>
+                <constraint id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Krak grenades for +2 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-r6scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs">
+              <constraints>
+                <constraint id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Melta bombs for +5 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-r6scale-0" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Suzerain Legate" hidden="false" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate">
+              <constraints>
+                <constraint id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="20" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-context" hidden="false">
+                  <description>• One Invictarus Suzerain may be upgraded to:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    <constraints><constraint id="r8-um-ventanus-suz-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    </selectionEntries></selectionEntryGroup></selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="AEONID THIEL" hidden="true" id="r41-unit-xiii-6-aeonid-thiel">
       <costs>
@@ -153059,7 +154033,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-7-honoured-telemechrus-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-7-honoured-telemechrus-source" hidden="true">
           <description>Honoured Telemechrus | 6 | 5 | 7 | 13 | 12 | 10 | 4 | 4
 Force Organisation:
 • Elites
@@ -153080,7 +154054,7 @@ Special Rules:
 RESTRICTION
 Honoured Telemechrus is Loyalist only.</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-7-honoured-telemechrus-rule-0" name="Wargear" hidden="false"><description>Kheres Assault Cannon; Dreadnought Close Combat Weapon with built-in Twin-linked Bolter; Smoke Launchers; Searchlight.</description></rule><rule id="r8-r41-unit-xiii-7-honoured-telemechrus-rule-1" name="Loyalist Only" hidden="false"><description>Honoured Telemechrus may only be selected in a Loyalist Ultramarines army.</description></rule></rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="TITUS PRAYTO" hidden="false" id="r41-unit-xiii-8-titus-prayto">
       <costs>
@@ -153115,7 +154089,7 @@ Honoured Telemechrus is Loyalist only.</description>
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-8-titus-prayto-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-8-titus-prayto-source" hidden="true">
           <description>Titus Prayto | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/5+
 Force Organisation:
 PSYCHIC POWERS Titus Prayto selects two psychic powers from the normal Psychic Power list. He follows all normal ProHammer rules for Psykers, Mastery Level 2 and Disturbance in the Warp. PSYCHIC SAVANT Once during each Ultramarines player turn, Prayto may re-roll one failed Psychic Test. The second result must be accepted. COMMAND RETINUE Prayto may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
@@ -153139,7 +154113,7 @@ OPTIONS
 • Titus Prayto may take:
 • Krak grenades ................................... +2 points</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-8-titus-prayto-rule-0" name="Psychic Powers" hidden="false"><description>Titus Prayto selects two psychic powers from the normal Psychic Power list and follows the normal ProHammer rules for Psykers, Mastery Level 2 and Disturbance in the Warp.</description></rule><rule id="r8-r41-unit-xiii-8-titus-prayto-rule-1" name="Psychic Savant" hidden="false"><description>Once during each Ultramarines player turn, Prayto may re-roll one failed Psychic Test. The second result must be accepted.</description></rule><rule id="r8-r41-unit-xiii-8-titus-prayto-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Refractor Field; Force Weapon; Psychic Hood; Bolt pistol; Frag grenades.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiii-8-titus-prayto-options" collective="false" import="true">
           <selectionEntries>
@@ -153989,7 +154963,147 @@ OPTIONS
                 </selectionEntryGroup>
               <selectionEntryGroup id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command" name="Enhanced Warriors" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-7-fabius-bile" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><rules><rule id="live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-rule" name="Enhanced Warriors" hidden="false"><description>This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack; in missions using Victory Points, surviving models from the squad count as casualties when calculating Victory Points.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-10-fulgrim-transfigured" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
             </selectionEntry>
-            </selectionEntries></selectionEntryGroup><selectionEntryGroup name="Psychic Powers — select 2" id="r7-prayto-powers" hidden="false">
+            <selectionEntry type="unit" import="true" name="INVICTARUS SUZERAIN SQUAD" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      <modifier id="r8-um-invictarus-mutual-r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+      <profiles>
+        <profile name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">1</characteristic>
+            <characteristic name="I" typeId="model-i">4</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Suzerain Legate" typeId="prof-model" typeName="Model" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-profile-1">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">1</characteristic>
+            <characteristic name="I" typeId="model-i">5</characteristic>
+            <characteristic name="A" typeId="model-a">3</characteristic>
+            <characteristic name="Ld" typeId="model-ld">10</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="true">
+          <description>Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points</description>
+        </rule>
+      <rule id="r8-um-prayto-suz-retinue-rule" name="Retinue" hidden="false"><description>This unit is selected as a retinue and does not occupy a separate Force Organisation slot.</description></rule><rule id="r8-r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-0" name="Legatine Axe" hidden="false"><description>A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons.</description></rule><rule id="r8-r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-1" name="Honour Guard" hidden="false"><description>One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. It does not occupy a separate Force Organisation slot; the character and Suzerains count as a single HQ selection.</description></rule><rule id="r8-r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Boarding Shield; Bolt pistol; Legatine Axe.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" defaultAmount="5">
+          <constraints>
+            <constraint id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional-min-total" type="min" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="45" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag grenades — entire squad (+1 pt/model)" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades">
+              <constraints>
+                <constraint id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Frag grenades for +1 point per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades-r6scale-0" type="increment" field="pts" value="1"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Krak grenades — entire squad (+2 pts/model)" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades">
+              <constraints>
+                <constraint id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Krak grenades for +2 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades-r6scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs">
+              <constraints>
+                <constraint id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-r6whole" name="Whole-squad upgrade" hidden="false"><description>The entire squad takes Melta bombs for +5 points per model. New Recruit calculates the cost from the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs-r6scale-0" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Suzerain Legate" hidden="false" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate">
+              <constraints>
+                <constraint id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="20" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-context" hidden="false">
+                  <description>• One Invictarus Suzerain may be upgraded to:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    <constraints><constraint id="r8-um-prayto-suz-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    </selectionEntries></selectionEntryGroup><selectionEntryGroup name="Psychic Powers — select 2" id="r7-prayto-powers" hidden="false">
                   <constraints>
                     <constraint id="r7-prayto-powers-min" type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r7-prayto-powers-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints>
                   <selectionEntries>
@@ -154642,10 +155756,10 @@ OPTIONS
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      <modifier id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-r7-loyalist" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+      <modifier id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-r7-loyalist" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r8-guilliman-primarch-chosen-1500" type="set" field="r8-guilliman-min-points" value="1500"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="true" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-      </constraints>
+      <constraint id="r8-guilliman-min-points" type="min" value="2000" field="limit::points" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" percentValue="false" /></constraints>
       <profiles>
         <profile name="Roboute Guilliman" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-profile-0">
           <characteristics>
@@ -154662,7 +155776,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-source" hidden="true">
           <description>Primarch of the Ultramarines, Lord of Ultramar, the Avenging Son
 Roboute Guilliman was among the greatest commanders and statesmen of the Great Crusade, a Primarch whose genius lay not merely in winning battles, but in understanding the greater structure of war itself. Under his rule the worlds of Ultramar became a realm of extraordinary order and prosperity, while the XIII Legion grew into one of the largest and most disciplined forces of the Legiones Astartes.
 Upon the battlefield Guilliman sought neither reckless glory nor rigid adherence to a single doctrine. Every engagement was studied, every success and failure considered, and theory was continually tested against the practical realities of war. His warriors were expected to adapt as swiftly as their Primarch, changing formation and method as circumstances demanded until the enemy was confronted with precisely the form of warfare it was least prepared to resist.
@@ -154690,7 +155804,7 @@ RESTRICTIONS
 Roboute Guilliman may only be selected for a Loyalist Ultramarines army. He otherwise follows all normal rules and restrictions for Primarchs.
 ARMOUR OF REASON A magnificent suit of war-plate fashioned according to the exacting requirements of the Primarch of the XIII Legion, the Armour of Reason combined formidable protection with the sophisticated command systems required to direct vast armies across the battlefield. The Armour of Reason counts as Primarch Armour. GLADIUS INCANDOR A superbly balanced blade wielded with the calculated precision that characterised Guilliman’s approach to war, Gladius Incandor was equally suited to the destruction of armoured warriors and monstrous foes. Gladius Incandor is a Master-crafted Power Weapon. Attacks made with it are resolved at +1 Strength and have the Shred special rule. HAND OF DOMINION A colossal powered gauntlet constructed for the strength of a Primarch, the Hand of Dominion could crush armour and tear apart even the heaviest engines of war. The Hand of Dominion is a Master-crafted Power Fist with the Armourbane special rule. ARBITRATOR Arbitrator was a master-crafted bolter fashioned to the proportions of the Primarch of the XIII Legion, capable of delivering exceptionally powerful and accurate fire. Weapon Range S AP Type Arbitrator 18" 6 3 Assault 2, Rending, Master-crafted MASTER STRATEGIST Few commanders possessed Guilliman’s ability to comprehend the flow of an entire battlefield and translate that understanding into precise orders. Unless a rule specifically states otherwise, the range of Roboute Guilliman’s special rules which affect friendly Ultramarines units is 18". PRETERNATURAL STRATEGY Guilliman’s ability to reassess a battle plan in moments allowed the XIII Legion to alter its dispositions even as the enemy committed itself to battle. After both armies have deployed but before the first turn begins, nominate one friendly Ultramarines unit. That unit may be redeployed anywhere it could legally have been deployed at the beginning of the battle. It must obey all normal deployment restrictions and may not be placed into Reserve unless it was already eligible to begin the battle in Reserve. SIRE OF ULTRAMAR The warriors of the XIII Legion fought beneath the gaze of a Primarch who demanded discipline in victory and adversity alike. Friendly Ultramarines units with at least one model within 12" of Roboute Guilliman may re-roll failed Morale tests. The second result must be accepted. THEORETICAL / PRACTICAL To Guilliman, no doctrine was valuable merely because it had succeeded before. Theory existed to be tested in battle, and practical experience existed to refine theory. At the beginning of each Ultramarines turn, choose one of the following doctrines. The chosen doctrine affects friendly Ultramarines units with at least one model within 18" of Roboute Guilliman until the beginning of the next Ultramarines turn. ADVANCE Affected units may move up to 1" further than normal during their Movement phase. FIRE Affected units may re-roll shooting To Hit rolls of 1. ASSAULT Affected units may re-roll close combat To Hit rolls of 1. PRIMARCH RETINUE Roboute Guilliman may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Invictarus Suzerain Squad A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.</description>
         </rule>
-      </rules>
+      <rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-0" name="Armour of Reason" hidden="false"><description>The Armour of Reason counts as Primarch Armour.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-1" name="Gladius Incandor" hidden="false"><description>Gladius Incandor is a Master-crafted Power Weapon. Attacks are resolved at +1 Strength and have Shred.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-2" name="Hand of Dominion" hidden="false"><description>The Hand of Dominion is a Master-crafted Power Fist with Armourbane.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-3" name="Arbitrator" hidden="false"><description>Arbitrator: Range 18 inches, Strength 6, AP3, Assault 2, Rending, Master-crafted.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-4" name="Master Strategist" hidden="false"><description>Unless a rule specifically states otherwise, the range of Roboute Guilliman’s special rules which affect friendly Ultramarines units is 18 inches.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-5" name="Preternatural Strategy" hidden="false"><description>After both armies deploy but before the first turn, nominate one friendly Ultramarines unit. It may be redeployed anywhere it could legally have been deployed at the beginning of the battle, obeying all normal restrictions, and may not be placed into Reserve unless it was already eligible to begin there.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-6" name="Sire of Ultramar" hidden="false"><description>Friendly Ultramarines units with at least one model within 12 inches of Guilliman may re-roll failed Morale tests. The second result must be accepted.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-7" name="Theoretical / Practical" hidden="false"><description>At the beginning of each Ultramarines turn choose Advance, Fire or Assault. Until the next Ultramarines turn, friendly Ultramarines units within 18 inches gain respectively: +1 inch Movement; re-roll shooting To Hit rolls of 1; or re-roll close-combat To Hit rolls of 1.</description></rule><rule id="r8-r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son-rule-8" name="Wargear" hidden="false"><description>Armour of Reason; Gladius Incandor; Hand of Dominion; Arbitrator; Frag Grenades.</description></rule></rules>
     <selectionEntryGroups><selectionEntryGroup id="r6-guilliman-retinue" name="Primarch Retinue (does not occupy a separate FOC slot)" hidden="false"><constraints><constraint id="r6-guilliman-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Honour Guard Squad" id="r6-guilliman-ret-0-hq-praetor-ret-honour" hidden="false" import="true">
               <constraints>
                 <constraint id="r6-guilliman-ret-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints>
@@ -155957,7 +157071,7 @@ ARMOUR OF REASON A magnificent suit of war-plate fashioned according to the exac
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r8-um-invictarus-mutual-r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="or"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
       <profiles>
         <profile name="Invictarus Suzerain" typeId="prof-model" typeName="Model" hidden="false" id="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-profile-0">
           <characteristics>
@@ -155987,7 +157101,7 @@ ARMOUR OF REASON A magnificent suit of war-plate fashioned according to the exac
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="false">
+        <rule name="Source Entry" id="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-source" hidden="true">
           <description>Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
 Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
 Force Organisation:
@@ -156016,7 +157130,7 @@ OPTIONS
 • One Invictarus Suzerain may be upgraded to:
 • Suzerain Legate ................................. +20 points</description>
         </rule>
-      <rule id="r6-guilliman-ret-2-ret-rule" name="Primarch Retinue" hidden="false"><description>Selected as Roboute Guilliman’s Primarch Retinue. It occupies no additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.</description></rule></rules>
+      <rule id="r6-guilliman-ret-2-ret-rule" name="Primarch Retinue" hidden="false"><description>Selected as Roboute Guilliman’s Primarch Retinue. It occupies no additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.</description></rule><rule id="r8-r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-rule-0" name="Legatine Axe" hidden="false"><description>A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons.</description></rule><rule id="r8-r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-rule-1" name="Honour Guard" hidden="false"><description>One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. It does not occupy a separate Force Organisation slot; the character and Suzerains count as a single HQ selection.</description></rule><rule id="r8-r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-rule-2" name="Wargear" hidden="false"><description>Artificer Armour; Boarding Shield; Bolt pistol; Legatine Axe.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad-additional" defaultAmount="5">
           <constraints>
