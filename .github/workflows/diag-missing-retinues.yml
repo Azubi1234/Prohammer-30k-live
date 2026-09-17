@@ -1,0 +1,53 @@
+name: Diagnose missing retinue selectors
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diag-missing-retinues.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan missing retinue selectors
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          NS='http://www.battlescribe.net/schema/catalogueSchema'; C=lambda t:f'{{{NS}}}{t}'
+          root=ET.parse('Legiones Astartes.cat').getroot(); top=root.find(C('selectionEntries'))
+          out=[]
+          for e in top.findall(C('selectionEntry')):
+              texts=[]
+              for r in e.iter(C('rule')):
+                  d=r.find(C('description')); tx=(d.text or '') if d is not None else ''
+                  if 'retinue' in ((r.get('name') or '')+' '+tx).lower() or 'command squad' in tx.lower():
+                      texts.append(((r.get('name') or ''),tx))
+              if not texts: continue
+              own_groups=e.find(C('selectionEntryGroups'))
+              has_selector=False
+              if own_groups is not None:
+                  for g in own_groups.findall(C('selectionEntryGroup')):
+                      if 'retinue' in (g.get('name') or '').lower(): has_selector=True
+              # Primarch/generic descriptions can inherit text from cloned children; only flag named/top entries where rule text says they may select.
+              direct=' '.join(tx for _,tx in texts).lower()
+              if ('may select' not in direct and 'may be accompanied' not in direct) or has_selector:
+                  continue
+              out.append(f"{e.get('id')} | {e.get('name')}")
+              for nm,tx in texts:
+                  if 'may select' in tx.lower() or 'may be accompanied' in tx.lower():
+                      out.append(f"  {nm}: {tx}")
+          Path('inspection-missing-retinues.txt').write_text('\n'.join(out)+'\n',encoding='utf-8')
+          print('\n'.join(out))
+          PY
+      - name: Commit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-missing-retinues.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: missing retinue selectors'
+          git pull --rebase origin main
+          git push
