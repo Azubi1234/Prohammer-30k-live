@@ -314,9 +314,9 @@ for p in root.iter(C('selectionEntryGroups')):
 
 term = findid(root, 'terminator-unit')
 combi_src = next((g for g in term.iter(C('selectionEntryGroup'))
-                  if 'Combi-Bolter Replacements' in (g.get('name') or '')), None)
+                  if (g.get('name') or '') == 'Ranged Weapon Replacements'), None)
 if combi_src is None:
-    raise RuntimeError('Generic Terminator Combi-Bolter replacement group missing')
+    raise RuntimeError('Generic Terminator Ranged Weapon Replacements group missing')
 combids = []
 els = ensure(foe, 'entryLinks')
 for src in combi_src.iter(C('entryLink')):
