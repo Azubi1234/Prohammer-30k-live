@@ -41,7 +41,7 @@ def rewrite_ids(node,prefix):
     for x in node.iter():
         if x.get('id'):mp[x.get('id')]=prefix+x.get('id')
     for x in node.iter():
-        if x.get('id') in mp:x.set('id',mp[x.get('id'))
+        if x.get('id') in mp:x.set('id',mp[x.get('id')])
         for a in ('targetId','childId','field'):
             if x.get(a) in mp:x.set(a,mp[x.get(a)])
 
