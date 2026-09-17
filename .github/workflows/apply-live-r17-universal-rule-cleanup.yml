@@ -1,0 +1,37 @@
+name: Apply Live R17 universal rule cleanup
+on:
+  push:
+    paths:
+      - '.github/build/live_r17_universal_rule_cleanup.py'
+      - '.github/workflows/apply-live-r17-universal-rule-cleanup.yml'
+  workflow_dispatch:
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply R17 cleanup
+        run: python .github/build/live_r17_universal_rule_cleanup.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          assert c.get('revision')=='17', c.get('revision')
+          i=ET.parse('index.xml').getroot()
+          x=next(e for e in i.iter() if e.get('filePath')=='Legiones Astartes.cat')
+          assert x.get('dataRevision')=='17', x.get('dataRevision')
+          print('verified v17')
+          PY
+      - name: Commit Live R17
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r17-universal-rule-cleanup.txt
+          git diff --cached --quiet || git commit -m 'Live R17: clean universal special-rule popups'
+          git push
