@@ -1,0 +1,40 @@
+name: Publish Live R4
+on:
+  push:
+    paths:
+      - '.github/build/publish_live_r4.py'
+      - '.github/workflows/publish-live-r4.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Bump live catalogue revision
+        run: python .github/build/publish_live_r4.py
+      - name: Verify live revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          root = ET.parse('Legiones Astartes.cat').getroot()
+          assert root.get('revision') == '4', root.get('revision')
+          assert root.get('gameSystemRevision') == '1', root.get('gameSystemRevision')
+          idx = Path('index.xml').read_text(encoding='utf-8')
+          assert 'filePath="Legiones Astartes.cat"' in idx
+          assert 'dataRevision="4"' in idx
+          print(Path('inspection-live-r4-publish.txt').read_text(encoding='utf-8'))
+          PY
+      - name: Commit Live R4
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r4-publish.txt
+          git diff --cached --quiet || git commit -m 'Live R4: publish World Eaters fixes'
+          git pull --rebase origin main
+          git push
