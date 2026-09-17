@@ -1,0 +1,1017 @@
+CAT revision=2 GSTref=1
+WE/ANGRON entries=64
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad name=RAMPAGER SQUAD type=unit hidden=false default=None costs=[('Points', '0', 'pts')] cons=[]
+  GROUP id=r41-unit-xii-0-rampager-squad-options name=Options cons=[]
+    selectionEntry id=r41-unit-xii-0-rampager-squad-opt-0-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=None costs=[('Points', '3', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+      RULE Option restriction: • Up to three Rampagers may replace their Chainaxe with:
+    selectionEntry id=r41-unit-xii-0-rampager-squad-opt-1-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '7', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+      RULE Option restriction: • Up to three Rampagers may replace their Chainaxe with:
+    selectionEntry id=r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+      RULE Option restriction: • Up to three Rampagers may replace their Bolt pistol with:
+    selectionEntry id=r41-unit-xii-0-rampager-squad-opt-3-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-0-rampager-squad-opt-4-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-0-rampager-squad-opt-5-jump-packs name=Jump Packs type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +15 points per model and automatically scales with the squad size selected.
+  GROUP id=r49-legion-upgrades-r41-unit-xii-0-rampager-squad name=Legion Wargear & Upgrades cons=[]
+    LINK id=r45-r41-unit-xii-0-rampager-squad-we-chain name=Chainaxe target=r45-we-chainaxe hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+    LINK id=r45-r41-unit-xii-0-rampager-squad-we-chain-discount name=Chainaxe — Berserker Assault price target=r45-we-chainaxe-berserker hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+  GROUP id=r87-we-r41-unit-xii-0-rampager-squad-wargear name=Wargear cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.
+  GROUP id=r87-we-r41-unit-xii-0-rampager-squad-special-rules name=Special Rules cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+  selectionEntry id=r41-unit-xii-0-rampager-squad-r86-size name=Rampager type=model hidden=false default=5 costs=[('Points', '22', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-r86-size name=Rampager type=model hidden=false default=5 costs=[('Points', '22', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-opt-0-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=None costs=[('Points', '3', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+  RULE Option restriction: • Up to three Rampagers may replace their Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-opt-1-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '7', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+  RULE Option restriction: • Up to three Rampagers may replace their Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+  RULE Option restriction: • Up to three Rampagers may replace their Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-opt-3-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-opt-4-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-0-rampager-squad-opt-5-jump-packs name=Jump Packs type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +15 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-1-red-butcher-squad name=RED BUTCHER SQUAD type=unit hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r41-unit-xii-1-red-butcher-squad-options name=Options cons=[]
+    selectionEntry id=r41-unit-xii-1-red-butcher-squad-opt-0-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • Any Red Butcher may replace one Power weapon with:
+    selectionEntry id=r41-unit-xii-1-red-butcher-squad-opt-1-chainfist name=Chainfist type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • Any Red Butcher may replace one Power weapon with:
+    selectionEntry id=r41-unit-xii-1-red-butcher-squad-opt-2-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • Any Red Butcher may replace one Power weapon with:
+  GROUP id=r87-we-r41-unit-xii-1-red-butcher-squad-wargear name=Wargear cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-1-red-butcher-squad-wargear-cataphractii-terminator-armour name=Cataphractii Terminator Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-1-red-butcher-squad-wargear-two-power-weapons name=Two Power weapons type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+  GROUP id=r87-we-r41-unit-xii-1-red-butcher-squad-special-rules name=Special Rules cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-1-red-butcher-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r87-we-r41-unit-xii-1-red-butcher-squad-special-rules-fearless name=Fearless type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Fearless: Uses the normal Fearless special rule.
+    selectionEntry id=r87-we-r41-unit-xii-1-red-butcher-squad-special-rules-ravening-madmen name=Ravening Madmen type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Ravening Madmen: Red Butchers always hit models with a Weapon Skill on a 3+ in close combat, and enemy models likewise always hit Red Butchers on a 3+. This does not affect attacks against targets without Weapon Skill and does not override a better fixed To Hit result. Red Butchers never count as a Scoring Unit.
+  selectionEntry id=r41-unit-xii-1-red-butcher-squad-r86-size name=Red Butcher type=model hidden=false default=5 costs=[('Points', '60', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-1-red-butcher-squad-r86-size name=Red Butcher type=model hidden=false default=5 costs=[('Points', '60', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-1-red-butcher-squad-opt-0-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • Any Red Butcher may replace one Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-1-red-butcher-squad-opt-1-chainfist name=Chainfist type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • Any Red Butcher may replace one Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-1-red-butcher-squad-opt-2-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • Any Red Butcher may replace one Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad name=RED HAND DESTROYER MORTALIS SQUAD type=unit hidden=false default=None costs=[('Points', '50', 'pts')] cons=[]
+  GROUP id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-options name=Options cons=[]
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-0-volkite-serpenta name=Volkite serpenta type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[]
+      RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-1-hand-flamer name=Hand flamer type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[]
+      RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[]
+      RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-3-and-rad-missiles name=Missile launcher with Suspensor Web and Rad Missiles type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[]
+      RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-4-one-phosphex-bomb name=One Phosphex Bomb type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[]
+      RULE Option restriction: • For every five models, one Red Hand Destroyer may take:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +5 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-8-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-10-lightning-claw name=Lightning claw type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-11-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-12-artificer-armour name=Artificer Armour type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Red Hand Sergeant may take:
+  GROUP id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear name=Wargear cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-two-bolt-pistols name=Two Bolt pistols type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-rad-grenades name=Rad grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+  GROUP id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules name=Special Rules cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-counter-attack name=Counter-Attack type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Counter-Attack: Uses the normal Counter-Attack special rule.
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-dual-pistols name=Dual Pistols type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Dual Pistols: The unit is equipped with two Bolt pistols as listed in its wargear.
+    selectionEntry id=r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-destroyer-cadre name=Destroyer Cadre type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Destroyer Cadre: This unit follows the Destroyer Cadre rules and restrictions.
+  selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size name=Red Hand Destroyer type=model hidden=false default=5 costs=[('Points', '22', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size name=Red Hand Destroyer type=model hidden=false default=5 costs=[('Points', '22', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-0-volkite-serpenta name=Volkite serpenta type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[]
+  RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-1-hand-flamer name=Hand flamer type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[]
+  RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[]
+  RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-3-and-rad-missiles name=Missile launcher with Suspensor Web and Rad Missiles type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[]
+  RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-4-one-phosphex-bomb name=One Phosphex Bomb type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[]
+  RULE Option restriction: • For every five models, one Red Hand Destroyer may take:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +5 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-8-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-10-lightning-claw name=Lightning claw type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-11-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-12-artificer-armour name=Artificer Armour type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Red Hand Sergeant may take:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad name=WORLD EATERS INDUCTII SQUAD type=unit hidden=false default=None costs=[('Points', '0', 'pts')] cons=[]
+  GROUP id=r41-unit-xii-3-world-eaters-inductii-squad-options name=Options cons=[]
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-0-flamer name=Flamer type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '2', 'parent', 'selections', None)]
+      RULE Option restriction: • For every ten models, one Inductii may replace his Bolt pistol with:
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-1-meltagun name=Meltagun type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '2', 'parent', 'selections', None)]
+      RULE Option restriction: • For every ten models, one Inductii may replace his Bolt pistol with:
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-2-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-3-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-4-rending-weapon name=Rending Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Inductii Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-5-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Inductii Sergeant may replace his Chainaxe with:
+    selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-6-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: The Inductii Sergeant may replace his Chainaxe with:
+  GROUP id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-wargear name=Wargear cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-wargear-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-wargear-chainsword name=Chainsword type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+  GROUP id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-special-rules name=Special Rules cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r87-we-r41-unit-xii-3-world-eaters-inductii-squad-special-rules-nails-broken name=Nails-Broken type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Nails-Broken: If an Inductii Squad is able to declare a charge during the Assault phase, it must do so. If more than one enemy unit may legally be charged, the World Eaters player chooses the target normally.
+  selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-r86-size name=Inductii type=model hidden=false default=10 costs=[('Points', '13', 'pts')] cons=[('min', '10', 'parent', 'selections', None), ('max', '20', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-r86-size name=Inductii type=model hidden=false default=10 costs=[('Points', '13', 'pts')] cons=[('min', '10', 'parent', 'selections', None), ('max', '20', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-0-flamer name=Flamer type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '2', 'parent', 'selections', None)]
+  RULE Option restriction: • For every ten models, one Inductii may replace his Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-1-meltagun name=Meltagun type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '2', 'parent', 'selections', None)]
+  RULE Option restriction: • For every ten models, one Inductii may replace his Bolt pistol with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-2-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-3-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-4-rending-weapon name=Rending Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Inductii Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-5-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Inductii Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-3-world-eaters-inductii-squad-opt-6-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: The Inductii Sergeant may replace his Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad name=DEVOURER TERMINATOR SQUAD type=unit hidden=false default=None costs=[('Points', '0', 'pts')] cons=[]
+  GROUP id=r41-unit-xii-4-devourer-terminator-squad-options name=Options cons=[]
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-0-foeblaster-boltgun name=Foeblaster Boltgun type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Combi-bolter with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-1-combi-flamer name=Combi-flamer type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Combi-bolter with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-2-combi-volkite-charger name=Combi-volkite charger type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Combi-bolter with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-3-combi-meltagun name=Combi-meltagun type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Combi-bolter with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-4-combi-plasma-gun name=Combi-plasma gun type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Combi-bolter with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-5-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Power weapon with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-6-lightning-claw name=Lightning claw type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Power weapon with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-7-chainfist name=Chainfist type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Power weapon with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-8-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+      RULE Option restriction: • Any model may replace his Power weapon with:
+    selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-9-grenade-harness name=Grenade Harness type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • One model may take:
+  GROUP id=r87-we-r41-unit-xii-4-devourer-terminator-squad-wargear name=Wargear cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-4-devourer-terminator-squad-wargear-cataphractii-terminator-armour name=Cataphractii Terminator Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-4-devourer-terminator-squad-wargear-combi-bolter name=Combi-bolter type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-4-devourer-terminator-squad-wargear-power-weapon name=Power weapon type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+  GROUP id=r87-we-r41-unit-xii-4-devourer-terminator-squad-special-rules name=Special Rules cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-4-devourer-terminator-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r87-we-r41-unit-xii-4-devourer-terminator-squad-special-rules-stubborn name=Stubborn type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Stubborn: Uses the normal Stubborn special rule.
+    selectionEntry id=r87-we-r41-unit-xii-4-devourer-terminator-squad-special-rules-devourers name=Devourers type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Devourers: Angron may select one Devourer Terminator Squad as his retinue.
+  selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-r86-size name=Devourer type=model hidden=false default=5 costs=[('Points', '45', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-r86-size name=Devourer type=model hidden=false default=5 costs=[('Points', '45', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-0-foeblaster-boltgun name=Foeblaster Boltgun type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Combi-bolter with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-1-combi-flamer name=Combi-flamer type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Combi-bolter with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-2-combi-volkite-charger name=Combi-volkite charger type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Combi-bolter with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-3-combi-meltagun name=Combi-meltagun type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Combi-bolter with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-4-combi-plasma-gun name=Combi-plasma gun type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Combi-bolter with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-5-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-6-lightning-claw name=Lightning claw type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-7-chainfist name=Chainfist type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-8-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '10', 'parent', 'selections', None)]
+  RULE Option restriction: • Any model may replace his Power weapon with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-4-devourer-terminator-squad-opt-9-grenade-harness name=Grenade Harness type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • One model may take:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-5-triarii-breacher-squad name=TRIARII BREACHER SQUAD type=unit hidden=false default=None costs=[('Points', '20', 'pts')] cons=[]
+  GROUP id=r41-unit-xii-5-triarii-breacher-squad-options name=Options cons=[]
+    selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-0-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • All Trarii Breacher may replace their Chainaxe with:
+    selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-1-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • All Trarii Breacher may replace their Chainaxe with:
+    selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-2-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+    selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-3-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Option restriction: • The entire squad may take:
+      RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+  GROUP id=r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear name=Wargear cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-boarding-shield name=Boarding Shield type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+  GROUP id=r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules name=Special Rules cons=[]
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-counter-attack name=Counter-Attack type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Counter-Attack: Uses the normal Counter-Attack special rule.
+    selectionEntry id=r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-breachers name=Breachers type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Breachers: Uses the normal Breachers special rule.
+  selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-r86-size name=Triarii Breacher type=model hidden=false default=5 costs=[('Points', '27', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-r86-size name=Triarii Breacher type=model hidden=false default=5 costs=[('Points', '27', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-0-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • All Trarii Breacher may replace their Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-1-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • All Trarii Breacher may replace their Chainaxe with:
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-2-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-5-triarii-breacher-squad-opt-3-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-6-kharn-the-bloody name=KHÂRN THE BLOODY type=unit hidden=false default=None costs=[('Points', '180', 'pts')] cons=[('min', '1500', 'roster', 'limit::points', None), ('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-kharn-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-kharn-wargear-0-artificer-armour name=Artificer Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Artificer Armour: Confers a 2+ Armour Save.
+    selectionEntry id=r89-we-kharn-wargear-1-iron-halo name=Iron Halo type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Iron Halo: Confers a 4+ Invulnerable Save.
+    selectionEntry id=r89-we-kharn-wargear-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Plasma pistol: Uses the normal Plasma pistol profile.
+    selectionEntry id=r89-we-kharn-wargear-3-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag grenades: Uses the normal Frag grenade rules.
+  GROUP id=r89-we-kharn-weapon name=Weapon cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-kharn-weapon-0-the-cutter name=The Cutter type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE The Cutter: The Cutter is a Power Weapon which grants Khârn +1 Strength.
+    selectionEntry id=r89-we-kharn-weapon-1-gorechild name=Gorechild type=upgrade hidden=false default=None costs=[('Points', '55', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Gorechild: Gorechild is a Master-crafted Power Weapon which grants Khârn +3 Strength. At the beginning of the first round of each close combat, roll a D3. Khârn gains that many additional Attacks for that round.
+  GROUP id=r89-we-kharn-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-kharn-special-rules-0-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-kharn-special-rules-1-independent-character name=Independent Character type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Independent Character: Uses the normal Independent Character rules.
+    selectionEntry id=r89-we-kharn-special-rules-2-master-of-the-legion name=Master of the Legion type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Master of the Legion: Uses the normal Master of the Legion rule.
+    selectionEntry id=r89-we-kharn-special-rules-3-the-bloody name=The Bloody type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE The Bloody: Whenever Khârn rolls a natural 1 To Hit in close combat, that attack instead hits the nearest friendly model within 6 inches. If several friendly models are equally close, the opposing player chooses which is hit. Resolve the hit using Khârn’s current Strength and the weapon being used. The friendly model may take any saves normally permitted. Wounds caused in this manner do not count towards the close-combat result. If no friendly model is within 6 inches, the roll of 1 is a miss.
+    selectionEntry id=r89-we-kharn-special-rules-4-command-retinue name=Command Retinue type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Command Retinue: Khârn may select one Legion Command Squad or Rampager Squad as his retinue. The selected unit does not occupy a separate Force Organisation slot.
+  GROUP id=r89-we-kharn-options name=Options cons=[]
+    selectionEntry id=r89-we-kharn-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '2', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-kharn-opt-1-jump-pack name=Jump Pack type=upgrade hidden=false default=None costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Jump Pack: Changes Khârn to Jump Infantry while equipped.
+  GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue name=Retinue (does not occupy a separate FOC slot) cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command name=Legion Command Squad type=unit hidden=false default=None costs=[('Points', '90', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+      RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+      RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-weapons name=Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) cons=[('max', '10', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-0 name=Bolter target=gear-bolter hidden=false costs=[('Points', '0', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-1 name=Storm Bolter target=gear-storm-bolter hidden=false costs=[('Points', '3', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-2 name=Combi-Flamer target=gear-combi-flamer hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-3 name=Combi-Meltagun target=gear-combi-melta hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-4 name=Combi-Plasma Gun target=gear-combi-plasma hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-5 name=Combi-Volkite Charger target=gear-combi-volkite hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-6 name=Flamer target=gear-flamer hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-7 name=Meltagun target=gear-meltagun hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-8 name=Plasma Gun target=gear-plasma-gun hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-9 name=Volkite Charger target=gear-volkite-charger hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-10 name=Volkite Caliver target=gear-volkite-caliver hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-11 name=Rotor Cannon target=gear-rotor hidden=false costs=[('Points', '4', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-12 name=Hand Flamer target=gear-hand-flamer hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-13 name=Plasma Pistol target=gear-plasma-pistol hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-14 name=Rending Weapon target=gear-rending hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-15 name=Power Weapon target=gear-power-weapon hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-16 name=Lightning Claw target=gear-lightning-claw hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-17 name=Power Fist target=gear-power-fist hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-w-18 name=Thunder Hammer target=gear-thunder hidden=false costs=[('Points', '30', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-da22-alt-pp-18 name=Calibanite Plasma Pistol target=da22-plasma-pistol hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-da22-alt-pg-5 name=Calibanite Plasma Gun target=da22-plasma-gun hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-da22-alt-pr-5 name=Plasma Repeater target=da22-plasma-repeater hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-da22-alt-pb-5 name=Plasma Burner target=da22-plasma-burner hidden=false costs=[('Points', '20', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 name=Calibanite Warblade target=da22-warblade hidden=true costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-eq name=Per-model Equipment cons=[]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-shield name=Combat Shield target=gear-hq-combat-shield hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-bombs name=Melta Bombs target=gear-hq-melta-bombs hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-krak name=Krak Grenades target=gear-krak hidden=false costs=[('Points', '2', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-mob name=Squad Mobility (only if the selecting HQ has the same mobility) cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-jump name=Jump Packs (+15 pts/model) type=upgrade hidden=false default=None costs=[('Points', '75', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-bike name=Space Marine Bikes (+20 pts/model) type=upgrade hidden=false default=None costs=[('Points', '100', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-jet name=Jetbikes (+35 pts/model) type=upgrade hidden=false default=None costs=[('Points', '175', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-transport name=Dedicated Transport cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (Scions of Iron) type=upgrade hidden=true default=None costs=[('Points', '250', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (Scions of Iron) type=upgrade hidden=true default=None costs=[('Points', '200', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-rhino name=Legion Rhino Armoured Carrier target=transport-rhino hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-drop name=Legion Drop Pod target=transport-drop-pod hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-dreadclaw name=Legion Dreadclaw Drop Pod target=transport-dreadclaw hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-fabius-enhanced-live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-group name=Fabius Bile cons=[]
+        selectionEntry id=live-r2-fabius-enhanced-live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command name=Enhanced Warriors type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack; in missions using Victory Points, surviving models from the squad count as casualties when calculating Victory Points.
+      GROUP id=live-r2-fulgrim-blessing-live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-group name=Special Upgrades cons=[]
+        selectionEntry id=live-r2-fulgrim-blessing-live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command name=Blessing of Slaanesh type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-vets name=Legion Veterans type=model hidden=false default=5 costs=[] cons=[('min', '5', 'parent', 'selections', None), ('max', '5', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-apoth name=Legion Apothecary type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Apothecary Armoury: The Apothecary may select up to 50 points of permitted Space Marine Armoury weapons and wargear in addition to the Narthecium. The Reductor is optional at +5 points.
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-apoth-n name=Narthecium target=gear-hq-narthecium hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-apoth-r name=Reductor target=gear-hq-reductor hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-standard name=Legion Standard Bearer type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Standard Bearer Armoury: The Standard Bearer may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+        GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-standards name=Standard cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-vex name=Legion Vexilla target=gear-hq-vexilla hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-sac name=Sacred Standard target=gear-hq-sacred hidden=false costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-ls name=Legion Standard target=gear-hq-legion-standard hidden=false costs=[('Points', '60', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-champ name=Legion Champion type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Champion Armoury: The Legion Champion may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-champ-pw name=Power Weapon (replaces Chainsword) target=gear-power-weapon hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-champ-sh name=Combat Shield target=gear-hq-combat-shield hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw name=Calibanite Warblade target=da22-warblade hidden=true costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r69-centurion-command-bikes name=Space Marine Bikes (entire squad) type=upgrade hidden=true default=None costs=[('Points', '100', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r69-centurion-command-jetbikes name=Jetbikes (entire squad) type=upgrade hidden=true default=None costs=[('Points', '175', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r71-nl-gen-10-stealth name=Stealth Adept — whole squad type=upgrade hidden=true default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached.
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r71-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative.
+      LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-bp name=Bolt Pistol target=gear-bolt-pistol hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command-cs name=Chainsword target=gear-chainsword hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-r70-if-hammer-trans-1208 name=Teleportation Transponders — Hammerfall target=r64-if-gear-trans-unit hidden=true costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad name=RAMPAGER SQUAD type=unit hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-options name=Options cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-0-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=None costs=[('Points', '3', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+          RULE Option restriction: • Up to three Rampagers may replace their Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-1-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '7', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+          RULE Option restriction: • Up to three Rampagers may replace their Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '3', 'parent', 'selections', None)]
+          RULE Option restriction: • Up to three Rampagers may replace their Bolt pistol with:
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-3-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-4-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-opt-5-jump-packs name=Jump Packs type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +15 points per model and automatically scales with the squad size selected.
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r49-legion-upgrades-r41-unit-xii-0-rampager-squad name=Legion Wargear & Upgrades cons=[]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain name=Chainaxe target=r45-we-chainaxe hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain-discount name=Chainaxe — Berserker Assault price target=r45-we-chainaxe-berserker hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear name=Wargear cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.
+      GROUP id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules name=Special Rules cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+      selectionEntry id=live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-r86-size name=Rampager type=model hidden=false default=5 costs=[('Points', '22', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-7-shabran-darr name=SHABRAN DARR type=unit hidden=false default=None costs=[('Points', '150', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-darr-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-darr-wargear-0-artificer-armour name=Artificer Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Artificer Armour: Confers a 2+ Armour Save.
+    selectionEntry id=r89-we-darr-wargear-1-refractor-field name=Refractor Field type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Refractor Field: Confers a 5+ Invulnerable Save.
+    selectionEntry id=r89-we-darr-wargear-2-two-bolt-pistols name=Two Bolt pistols type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Two Bolt pistols: Darr carries two Bolt pistols.
+    selectionEntry id=r89-we-darr-wargear-3-power-weapon name=Power Weapon type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Power Weapon: Uses the normal Power Weapon rules.
+    selectionEntry id=r89-we-darr-wargear-4-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag grenades: Uses the normal Frag grenade rules.
+    selectionEntry id=r89-we-darr-wargear-5-rad-grenades name=Rad grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Rad grenades: Uses the normal Rad grenade rules.
+  GROUP id=r89-we-darr-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-darr-special-rules-0-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-darr-special-rules-1-independent-character name=Independent Character type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Independent Character: Uses the normal Independent Character rules.
+    selectionEntry id=r89-we-darr-special-rules-2-stubborn name=Stubborn type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Stubborn: Uses the normal Stubborn rule.
+    selectionEntry id=r89-we-darr-special-rules-3-dual-pistols name=Dual Pistols type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Dual Pistols: Darr is equipped with two Bolt pistols as listed in his wargear.
+    selectionEntry id=r89-we-darr-special-rules-4-master-of-destroyers name=Master of Destroyers type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Master of Destroyers: Shabran Darr may join Legion Destroyer Squads and Red Hand Destroyer Squads despite the normal restrictions imposed by Destroyer Cadre. Darr may select one Red Hand Destroyer Mortalis or Assault Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+    selectionEntry id=r89-we-darr-special-rules-5-loyalist-only name=Loyalist Only type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Loyalist Only: Shabran Darr may only be selected in a Loyalist army.
+  GROUP id=r89-we-darr-options name=Options cons=[]
+    selectionEntry id=r89-we-darr-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '2', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-darr-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Melta bombs: Uses the normal Melta bomb rules.
+  GROUP id=live-r2-r41-unit-xii-7-shabran-darr-retinue name=Retinue (does not occupy a separate FOC slot) cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad name=RED HAND DESTROYER MORTALIS SQUAD type=unit hidden=false default=None costs=[('Points', '50', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-options name=Options cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-0-volkite-serpenta name=Volkite serpenta type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[]
+          RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-1-hand-flamer name=Hand flamer type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[]
+          RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-2-plasma-pistol name=Plasma pistol type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[]
+          RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-3-and-rad-missiles name=Missile launcher with Suspensor Web and Rad Missiles type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[]
+          RULE Option restriction: • For every five models, one Red Hand Destroyer may replace one Bolt pistol with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-4-one-phosphex-bomb name=One Phosphex Bomb type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[]
+          RULE Option restriction: • For every five models, one Red Hand Destroyer may take:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-5-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-6-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +5 points per model and automatically scales with the squad size selected.
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-8-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-9-power-fist name=Power fist type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-10-lightning-claw name=Lightning claw type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-11-thunder-hammer name=Thunder hammer type=upgrade hidden=false default=None costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: The Red Hand Sergeant may replace his Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-opt-12-artificer-armour name=Artificer Armour type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: The Red Hand Sergeant may take:
+      GROUP id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear name=Wargear cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-two-bolt-pistols name=Two Bolt pistols type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-rad-grenades name=Rad grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules name=Special Rules cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-counter-attack name=Counter-Attack type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Counter-Attack: Uses the normal Counter-Attack special rule.
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-dual-pistols name=Dual Pistols type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Dual Pistols: The unit is equipped with two Bolt pistols as listed in its wargear.
+        selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-destroyer-cadre name=Destroyer Cadre type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Destroyer Cadre: This unit follows the Destroyer Cadre rules and restrictions.
+      selectionEntry id=live-r2-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size name=Red Hand Destroyer type=model hidden=false default=5 costs=[('Points', '22', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-8-gahlan-surlak name=GAHLAN SURLAK type=unit hidden=false default=None costs=[('Points', '125', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-surlak-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-surlak-wargear-0-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Power Armour: Confers a 3+ Armour Save.
+    selectionEntry id=r89-we-surlak-wargear-1-refractor-field name=Refractor Field type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Refractor Field: Confers a 5+ Invulnerable Save.
+    selectionEntry id=r89-we-surlak-wargear-2-narthecium name=Narthecium type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Narthecium: Uses the normal Narthecium rules.
+    selectionEntry id=r89-we-surlak-wargear-3-reductor name=Reductor type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Reductor: Uses the normal Reductor rules.
+    selectionEntry id=r89-we-surlak-wargear-4-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Bolt pistol: Uses the normal Bolt pistol profile.
+    selectionEntry id=r89-we-surlak-wargear-5-chainsword name=Chainsword type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Chainsword: Counts as a close-combat weapon.
+    selectionEntry id=r89-we-surlak-wargear-6-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag grenades: Uses the normal Frag grenade rules.
+  GROUP id=r89-we-surlak-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-surlak-special-rules-0-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-surlak-special-rules-1-independent-character name=Independent Character type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Independent Character: Uses the normal Independent Character rules.
+    selectionEntry id=r89-we-surlak-special-rules-2-apothecary name=Apothecary type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Apothecary: Uses the normal Apothecary rules.
+    selectionEntry id=r89-we-surlak-special-rules-3-architect-of-the-nails name=Architect of the Nails type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Architect of the Nails: After deployment but before the first turn begins, nominate one friendly World Eaters Infantry unit which is not wearing any form of Terminator Armour. That unit gains Furious Charge for the duration of the battle. A unit enhanced in this manner must declare a charge whenever it is legally able to do so. Only one unit may be enhanced in this manner.
+    selectionEntry id=r89-we-surlak-special-rules-4-legion-support-officer name=Legion Support Officer type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legion Support Officer: Uses the normal Legion Support Officer rule.
+  GROUP id=r89-we-surlak-options name=Options cons=[]
+    selectionEntry id=r89-we-surlak-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '2', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-9-kargos-the-bloodspitter name=KARGOS, THE BLOODSPITTER type=unit hidden=false default=None costs=[('Points', '120', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-kargos-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-kargos-wargear-0-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Power Armour: Confers a 3+ Armour Save.
+    selectionEntry id=r89-we-kargos-wargear-1-narthecium name=Narthecium type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Narthecium: Uses the normal Narthecium rules.
+    selectionEntry id=r89-we-kargos-wargear-2-reductor name=Reductor type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Reductor: Uses the normal Reductor rules.
+    selectionEntry id=r89-we-kargos-wargear-3-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe. Invulnerable Saves are unaffected.
+    selectionEntry id=r89-we-kargos-wargear-4-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Bolt pistol: Uses the normal Bolt pistol profile.
+    selectionEntry id=r89-we-kargos-wargear-5-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag grenades: Uses the normal Frag grenade rules.
+  GROUP id=r89-we-kargos-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-kargos-special-rules-0-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-kargos-special-rules-1-independent-character name=Independent Character type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Independent Character: Uses the normal Independent Character rules.
+    selectionEntry id=r89-we-kargos-special-rules-2-apothecary name=Apothecary type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Apothecary: Uses the normal Apothecary rules.
+    selectionEntry id=r89-we-kargos-special-rules-3-warrior-apothecary name=Warrior-Apothecary type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Warrior-Apothecary: Kargos may use his Narthecium even while he is in base contact with an enemy model. All other normal Narthecium restrictions continue to apply.
+    selectionEntry id=r89-we-kargos-special-rules-4-command-retinue name=Command Retinue type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Command Retinue: Kargos may select one Legion Command Squad. If Kargos has a Jump Pack, the Command Squad may purchase Jump Packs normally. The selected squad does not occupy a separate Force Organisation slot.
+  GROUP id=r89-we-kargos-options name=Options cons=[]
+    selectionEntry id=r89-we-kargos-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '2', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-kargos-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Melta bombs: Uses the normal Melta bomb rules.
+    selectionEntry id=r89-we-kargos-opt-2-jump-pack name=Jump Pack type=upgrade hidden=false default=None costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Jump Pack: Changes Kargos to Jump Infantry while equipped.
+  GROUP id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue name=Retinue (does not occupy a separate FOC slot) cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command name=Legion Command Squad type=unit hidden=false default=None costs=[('Points', '90', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+      RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+      RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+      GROUP id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-weapons name=Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) cons=[('max', '10', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-0 name=Bolter target=gear-bolter hidden=false costs=[('Points', '0', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-1 name=Storm Bolter target=gear-storm-bolter hidden=false costs=[('Points', '3', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-2 name=Combi-Flamer target=gear-combi-flamer hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-3 name=Combi-Meltagun target=gear-combi-melta hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-4 name=Combi-Plasma Gun target=gear-combi-plasma hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-5 name=Combi-Volkite Charger target=gear-combi-volkite hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-6 name=Flamer target=gear-flamer hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-7 name=Meltagun target=gear-meltagun hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-8 name=Plasma Gun target=gear-plasma-gun hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-9 name=Volkite Charger target=gear-volkite-charger hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-10 name=Volkite Caliver target=gear-volkite-caliver hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-11 name=Rotor Cannon target=gear-rotor hidden=false costs=[('Points', '4', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-12 name=Hand Flamer target=gear-hand-flamer hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-13 name=Plasma Pistol target=gear-plasma-pistol hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-14 name=Rending Weapon target=gear-rending hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-15 name=Power Weapon target=gear-power-weapon hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-16 name=Lightning Claw target=gear-lightning-claw hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-17 name=Power Fist target=gear-power-fist hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-w-18 name=Thunder Hammer target=gear-thunder hidden=false costs=[('Points', '30', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-da22-alt-pp-18 name=Calibanite Plasma Pistol target=da22-plasma-pistol hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-da22-alt-pg-5 name=Calibanite Plasma Gun target=da22-plasma-gun hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-da22-alt-pr-5 name=Plasma Repeater target=da22-plasma-repeater hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-da22-alt-pb-5 name=Plasma Burner target=da22-plasma-burner hidden=false costs=[('Points', '20', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 name=Calibanite Warblade target=da22-warblade hidden=true costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-eq name=Per-model Equipment cons=[]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-shield name=Combat Shield target=gear-hq-combat-shield hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-bombs name=Melta Bombs target=gear-hq-melta-bombs hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-krak name=Krak Grenades target=gear-krak hidden=false costs=[('Points', '2', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-mob name=Squad Mobility (only if the selecting HQ has the same mobility) cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-jump name=Jump Packs (+15 pts/model) type=upgrade hidden=false default=None costs=[('Points', '75', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-bike name=Space Marine Bikes (+20 pts/model) type=upgrade hidden=false default=None costs=[('Points', '100', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-jet name=Jetbikes (+35 pts/model) type=upgrade hidden=false default=None costs=[('Points', '175', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-transport name=Dedicated Transport cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (Scions of Iron) type=upgrade hidden=true default=None costs=[('Points', '250', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (Scions of Iron) type=upgrade hidden=true default=None costs=[('Points', '200', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-rhino name=Legion Rhino Armoured Carrier target=transport-rhino hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-drop name=Legion Drop Pod target=transport-drop-pod hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-dreadclaw name=Legion Dreadclaw Drop Pod target=transport-dreadclaw hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-fabius-enhanced-live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-group name=Fabius Bile cons=[]
+        selectionEntry id=live-r2-fabius-enhanced-live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command name=Enhanced Warriors type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack; in missions using Victory Points, surviving models from the squad count as casualties when calculating Victory Points.
+      GROUP id=live-r2-fulgrim-blessing-live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-group name=Special Upgrades cons=[]
+        selectionEntry id=live-r2-fulgrim-blessing-live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command name=Blessing of Slaanesh type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-vets name=Legion Veterans type=model hidden=false default=5 costs=[] cons=[('min', '5', 'parent', 'selections', None), ('max', '5', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-apoth name=Legion Apothecary type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Apothecary Armoury: The Apothecary may select up to 50 points of permitted Space Marine Armoury weapons and wargear in addition to the Narthecium. The Reductor is optional at +5 points.
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-apoth-n name=Narthecium target=gear-hq-narthecium hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-apoth-r name=Reductor target=gear-hq-reductor hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-standard name=Legion Standard Bearer type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Standard Bearer Armoury: The Standard Bearer may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+        GROUP id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-standards name=Standard cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-vex name=Legion Vexilla target=gear-hq-vexilla hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-sac name=Sacred Standard target=gear-hq-sacred hidden=false costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-ls name=Legion Standard target=gear-hq-legion-standard hidden=false costs=[('Points', '60', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-champ name=Legion Champion type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Champion Armoury: The Legion Champion may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-champ-pw name=Power Weapon (replaces Chainsword) target=gear-power-weapon hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-champ-sh name=Combat Shield target=gear-hq-combat-shield hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw name=Calibanite Warblade target=da22-warblade hidden=true costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r69-centurion-command-bikes name=Space Marine Bikes (entire squad) type=upgrade hidden=true default=None costs=[('Points', '100', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r69-centurion-command-jetbikes name=Jetbikes (entire squad) type=upgrade hidden=true default=None costs=[('Points', '175', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r71-nl-gen-10-stealth name=Stealth Adept — whole squad type=upgrade hidden=true default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached.
+      selectionEntry id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r71-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative.
+      LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-bp name=Bolt Pistol target=gear-bolt-pistol hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command-cs name=Chainsword target=gear-chainsword hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      LINK id=live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-r70-if-hammer-trans-1208 name=Teleportation Transponders — Hammerfall target=r64-if-gear-trans-unit hidden=true costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-10-captain-ehrlen name=CAPTAIN EHRLEN type=unit hidden=false default=None costs=[('Points', '95', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-ehrlen-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-ehrlen-wargear-0-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Power Armour: Confers a 3+ Armour Save.
+    selectionEntry id=r89-we-ehrlen-wargear-1-refractor-field name=Refractor Field type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Refractor Field: Confers a 5+ Invulnerable Save.
+    selectionEntry id=r89-we-ehrlen-wargear-2-jump-pack name=Jump Pack type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Jump Pack: Ehrlen is Jump Infantry.
+    selectionEntry id=r89-we-ehrlen-wargear-3-rending-weapon name=Rending Weapon type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Rending Weapon: Uses the project Rending Weapon rules.
+    selectionEntry id=r89-we-ehrlen-wargear-4-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Bolt pistol: Uses the normal Bolt pistol profile.
+    selectionEntry id=r89-we-ehrlen-wargear-5-bionics name=Bionics type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Bionics: Uses the normal Bionics rules.
+    selectionEntry id=r89-we-ehrlen-wargear-6-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag grenades: Uses the normal Frag grenade rules.
+  GROUP id=r89-we-ehrlen-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-ehrlen-special-rules-0-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-ehrlen-special-rules-1-independent-character name=Independent Character type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Independent Character: Uses the normal Independent Character rules.
+    selectionEntry id=r89-we-ehrlen-special-rules-2-loyalist-only name=Loyalist Only type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Loyalist Only: Captain Ehrlen may only be selected in a Loyalist army.
+    selectionEntry id=r89-we-ehrlen-special-rules-3-command-retinue name=Command Retinue type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Command Retinue: Ehrlen may select one Legion Command Squad as his retinue. Every model in the Command Squad may purchase a Jump Pack for +15 points per model. If Jump Packs are purchased, every model in the squad must receive one and the squad may not select a Dedicated Transport. This Command Squad does not occupy a separate Force Organisation slot.
+  GROUP id=r89-we-ehrlen-options name=Options cons=[]
+    selectionEntry id=r89-we-ehrlen-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '2', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-ehrlen-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Melta bombs: Uses the normal Melta bomb rules.
+  GROUP id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue name=Retinue (does not occupy a separate FOC slot) cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command name=Legion Command Squad type=unit hidden=false default=None costs=[('Points', '90', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+      RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+      RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+      GROUP id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-weapons name=Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) cons=[('max', '10', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-0 name=Bolter target=gear-bolter hidden=false costs=[('Points', '0', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-1 name=Storm Bolter target=gear-storm-bolter hidden=false costs=[('Points', '3', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-2 name=Combi-Flamer target=gear-combi-flamer hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-3 name=Combi-Meltagun target=gear-combi-melta hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-4 name=Combi-Plasma Gun target=gear-combi-plasma hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-5 name=Combi-Volkite Charger target=gear-combi-volkite hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-6 name=Flamer target=gear-flamer hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-7 name=Meltagun target=gear-meltagun hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-8 name=Plasma Gun target=gear-plasma-gun hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-9 name=Volkite Charger target=gear-volkite-charger hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-10 name=Volkite Caliver target=gear-volkite-caliver hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-11 name=Rotor Cannon target=gear-rotor hidden=false costs=[('Points', '4', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-12 name=Hand Flamer target=gear-hand-flamer hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-13 name=Plasma Pistol target=gear-plasma-pistol hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-14 name=Rending Weapon target=gear-rending hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-15 name=Power Weapon target=gear-power-weapon hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-16 name=Lightning Claw target=gear-lightning-claw hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-17 name=Power Fist target=gear-power-fist hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-w-18 name=Thunder Hammer target=gear-thunder hidden=false costs=[('Points', '30', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-da22-alt-pp-18 name=Calibanite Plasma Pistol target=da22-plasma-pistol hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-da22-alt-pg-5 name=Calibanite Plasma Gun target=da22-plasma-gun hidden=false costs=[('Points', '15', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-da22-alt-pr-5 name=Plasma Repeater target=da22-plasma-repeater hidden=false costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-da22-alt-pb-5 name=Plasma Burner target=da22-plasma-burner hidden=false costs=[('Points', '20', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 name=Calibanite Warblade target=da22-warblade hidden=true costs=[('Points', '25', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-eq name=Per-model Equipment cons=[]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-shield name=Combat Shield target=gear-hq-combat-shield hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-bombs name=Melta Bombs target=gear-hq-melta-bombs hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-krak name=Krak Grenades target=gear-krak hidden=false costs=[('Points', '2', 'pts')] cons=[('max', '5', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-mob name=Squad Mobility (only if the selecting HQ has the same mobility) cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-jump name=Jump Packs (+15 pts/model) type=upgrade hidden=false default=None costs=[('Points', '75', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-bike name=Space Marine Bikes (+20 pts/model) type=upgrade hidden=false default=None costs=[('Points', '100', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-jet name=Jetbikes (+35 pts/model) type=upgrade hidden=false default=None costs=[('Points', '175', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-transport name=Dedicated Transport cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (Scions of Iron) type=upgrade hidden=true default=None costs=[('Points', '250', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (Scions of Iron) type=upgrade hidden=true default=None costs=[('Points', '200', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-rhino name=Legion Rhino Armoured Carrier target=transport-rhino hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-drop name=Legion Drop Pod target=transport-drop-pod hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-dreadclaw name=Legion Dreadclaw Drop Pod target=transport-dreadclaw hidden=false costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-fabius-enhanced-live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-group name=Fabius Bile cons=[]
+        selectionEntry id=live-r2-fabius-enhanced-live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command name=Enhanced Warriors type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack; in missions using Victory Points, surviving models from the squad count as casualties when calculating Victory Points.
+      GROUP id=live-r2-fulgrim-blessing-live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-group name=Special Upgrades cons=[]
+        selectionEntry id=live-r2-fulgrim-blessing-live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command name=Blessing of Slaanesh type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-vets name=Legion Veterans type=model hidden=false default=5 costs=[] cons=[('min', '5', 'parent', 'selections', None), ('max', '5', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-apoth name=Legion Apothecary type=upgrade hidden=false default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Apothecary Armoury: The Apothecary may select up to 50 points of permitted Space Marine Armoury weapons and wargear in addition to the Narthecium. The Reductor is optional at +5 points.
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-apoth-n name=Narthecium target=gear-hq-narthecium hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-apoth-r name=Reductor target=gear-hq-reductor hidden=false costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-standard name=Legion Standard Bearer type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Standard Bearer Armoury: The Standard Bearer may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+        GROUP id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-standards name=Standard cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-vex name=Legion Vexilla target=gear-hq-vexilla hidden=false costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-sac name=Sacred Standard target=gear-hq-sacred hidden=false costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-ls name=Legion Standard target=gear-hq-legion-standard hidden=false costs=[('Points', '60', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-champ name=Legion Champion type=upgrade hidden=false default=None costs=[('Points', '15', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Champion Armoury: The Legion Champion may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-champ-pw name=Power Weapon (replaces Chainsword) target=gear-power-weapon hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-champ-sh name=Combat Shield target=gear-hq-combat-shield hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw name=Calibanite Warblade target=da22-warblade hidden=true costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r69-centurion-command-bikes name=Space Marine Bikes (entire squad) type=upgrade hidden=true default=None costs=[('Points', '100', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r69-centurion-command-jetbikes name=Jetbikes (entire squad) type=upgrade hidden=true default=None costs=[('Points', '175', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r71-nl-gen-10-stealth name=Stealth Adept — whole squad type=upgrade hidden=true default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached.
+      selectionEntry id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r71-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true default=None costs=[('Points', '25', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+        RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative.
+      LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-bp name=Bolt Pistol target=gear-bolt-pistol hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command-cs name=Chainsword target=gear-chainsword hidden=false costs=[] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      LINK id=live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-r70-if-hammer-trans-1208 name=Teleportation Transponders — Hammerfall target=r64-if-gear-trans-unit hidden=true costs=[] cons=[('max', '1', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-11-delvarus name=DELVARUS type=unit hidden=false default=None costs=[('Points', '120', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-delvarus-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-delvarus-wargear-0-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Power Armour: Confers a 3+ Armour Save.
+    selectionEntry id=r89-we-delvarus-wargear-1-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Caedere Weapon: A Caedere Weapon is a one-handed close-combat weapon at User +1 Strength with Rending. It does not count as a Power Weapon.
+    selectionEntry id=r89-we-delvarus-wargear-2-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Bolt pistol: Uses the normal Bolt pistol profile.
+    selectionEntry id=r89-we-delvarus-wargear-3-boarding-shield name=Boarding Shield type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Boarding Shield: Uses the normal Boarding Shield rules.
+    selectionEntry id=r89-we-delvarus-wargear-4-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag grenades: Uses the normal Frag grenade rules.
+  GROUP id=r89-we-delvarus-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-delvarus-special-rules-0-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-delvarus-special-rules-1-independent-character name=Independent Character type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Independent Character: Uses the normal Independent Character rules.
+    selectionEntry id=r89-we-delvarus-special-rules-2-gladiator-champion name=Gladiator Champion type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Gladiator Champion: Any Triarii Breacher Squad joined by Delvarus gains Stubborn and Furious Charge.
+    selectionEntry id=r89-we-delvarus-special-rules-3-command-retinue name=Command Retinue type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Command Retinue: Delvarus may select one Legion Triarii Breacher Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+  GROUP id=r89-we-delvarus-options name=Options cons=[]
+    selectionEntry id=r89-we-delvarus-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '2', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-delvarus-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Melta bombs: Uses the normal Melta bomb rules.
+  GROUP id=live-r2-r41-unit-xii-11-delvarus-retinue name=Retinue (does not occupy a separate FOC slot) cons=[('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad name=TRIARII BREACHER SQUAD type=unit hidden=false default=None costs=[('Points', '20', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad-options name=Options cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad-opt-0-caedere-weapon name=Caedere Weapon type=upgrade hidden=false default=None costs=[('Points', '5', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • All Trarii Breacher may replace their Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad-opt-1-power-weapon name=Power weapon type=upgrade hidden=false default=None costs=[('Points', '10', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • All Trarii Breacher may replace their Chainaxe with:
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad-opt-2-frag-grenades name=Frag grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +1 points per model and automatically scales with the squad size selected.
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad-opt-3-krak-grenades name=Krak grenades type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+          RULE Option restriction: • The entire squad may take:
+          RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+          RULE Per-model cost: This upgrade costs +2 points per model and automatically scales with the squad size selected.
+      GROUP id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear name=Wargear cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-power-armour name=Power Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-bolt-pistol name=Bolt pistol type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-chainaxe name=Chainaxe type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Chainaxe: An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-boarding-shield name=Boarding Shield type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-wargear-frag-grenades name=Frag grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      GROUP id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules name=Special Rules cons=[]
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-counter-attack name=Counter-Attack type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Counter-Attack: Uses the normal Counter-Attack special rule.
+        selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-breachers name=Breachers type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+          RULE Breachers: Uses the normal Breachers special rule.
+      selectionEntry id=live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad-r86-size name=Triarii Breacher type=model hidden=false default=5 costs=[('Points', '27', 'pts')] cons=[('min', '5', 'parent', 'selections', None), ('max', '10', 'parent', 'selections', None)]
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-12-xii-angron-the-red-angel name=XII — ANGRON, THE RED ANGEL type=unit hidden=false default=None costs=[('Points', '515', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-angron-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-angron-wargear-0-armour-of-mars name=Armour of Mars type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Armour of Mars: The Armour of Mars counts as Primarch Armour.
+    selectionEntry id=r89-we-angron-wargear-1-frag-grenades name=Frag Grenades type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Frag Grenades: Uses the normal Frag grenade rules.
+    selectionEntry id=r89-we-angron-spite-furnace name=Spite Furnace type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Spite Furnace: A brutal plasma weapon carried by Angron into the thickest fighting.
+  GROUP id=r89-we-angron-weapon name=Weapon cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+    selectionEntry id=r89-we-angron-weapon-0-gorefather-gorechild name=Gorefather & Gorechild type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Gorefather & Gorechild: Gorefather and Gorechild are a matched pair of Power Weapons. Attacks made with them are resolved at +1 Strength and have Shred and Armourbane. They count as two close-combat weapons.
+    selectionEntry id=r89-we-angron-weapon-1-widowmaker name=Widowmaker type=upgrade hidden=false default=None costs=[('Points', '0', 'pts')] cons=[('max', '1', 'parent', 'selections', None)]
+      RULE Widowmaker: Widowmaker is a Two-Handed Power Weapon. Attacks made with Widowmaker are resolved at Strength 10 and have Armourbane. All attacks made with Widowmaker are resolved at -2 Initiative.
+  GROUP id=r89-we-angron-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-angron-special-rules-0-primarch name=Primarch type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Primarch: Angron uses the universal Primarch rules.
+    selectionEntry id=r89-we-angron-special-rules-1-legiones-astartes-world-eaters name=Legiones Astartes (World Eaters) type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Legiones Astartes (World Eaters): Uses the World Eaters Legion special rule.
+    selectionEntry id=r89-we-angron-special-rules-2-the-red-angel name=The Red Angel type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE The Red Angel: If Angron is able to declare a charge during the Assault phase, he must do so. Angron and any unit he has joined may declare charges against enemy units up to 8 inches away instead of 6. They must charge the closest eligible enemy unit to Angron; if two or more are equally close, the World Eaters player chooses. Difficult Terrain does not reduce this charge distance, although Dangerous Terrain is resolved normally.
+    selectionEntry id=r89-we-angron-special-rules-3-butcher-s-nails name=Butcher’s Nails type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Butcher’s Nails: Angron has Furious Charge and may never voluntarily Withdraw from close combat. Whenever Angron rolls an unmodified 1 To Hit in close combat, that attack instead strikes another friendly model in Angron’s unit. The roll of 1 may not be re-rolled. Resolve the hit using Angron’s current Strength and all rules of the close-combat weapon he is using. If more than one eligible friendly model is present, the opposing player chooses which is struck. Saves are allowed normally and Wounds caused this way do not count toward the close-combat result. If Angron is not accompanied by another friendly model, the roll of 1 is a miss.
+    selectionEntry id=r89-we-angron-special-rules-4-sire-of-the-world-eaters name=Sire of the World Eaters type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Sire of the World Eaters: Friendly World Eaters units with at least one model within 12 inches of Angron add +1 to all Pursuit rolls. Such units may also re-roll failed Break Tests caused by losing close combat; the second result must be accepted.
+    selectionEntry id=r89-we-angron-special-rules-5-the-nails-demand-blood name=The Nails Demand Blood type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE The Nails Demand Blood: Each time an enemy unit is completely destroyed during an Assault phase in a close combat involving Angron, increase Angron’s Attacks characteristic by +1 for the remainder of the battle, cumulative to a maximum of +3 Attacks.
+    selectionEntry id=r89-we-angron-special-rules-6-primarch-retinue name=Primarch Retinue type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Primarch Retinue: Angron may select one Legion Honour Guard Squad, Legion Terminator Command Squad or Devourer Terminator Squad as his Primarch Retinue. It does not occupy an additional Force Organisation selection and follows the normal Primarch Retinue rules.
+
+====================================================================================================
+selectionEntry id=r41-unit-xii-13-angron-the-red-angel name=ANGRON, THE RED ANGEL type=unit hidden=true default=None costs=[('Points', '650', 'pts')] cons=[('max', '1', 'roster', 'selections', None)]
+  GROUP id=r89-we-daemon-angron-wargear name=Wargear cons=[]
+    selectionEntry id=r89-we-daemon-angron-wargear-0-blades-of-the-red-angel name=Blades of the Red Angel type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Blades of the Red Angel: The Blades count as a pair of Master-crafted Power Weapons. Angron receives the normal +1 Attack for two close-combat weapons. Against Vehicles they have Armourbane. Against Monstrous Creatures and models with Toughness 6 or greater, Angron may re-roll failed To Wound rolls.
+    selectionEntry id=r89-we-daemon-angron-wargear-1-daemonic-armour name=Daemonic Armour type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Daemonic Armour: Angron has a 2+ Armour Save and a 4+ Invulnerable Save.
+  GROUP id=r89-we-daemon-angron-special-rules name=Special Rules cons=[]
+    selectionEntry id=r89-we-daemon-angron-special-rules-0-daemon name=Daemon type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Daemon: Uses the normal Daemon rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-1-fear name=Fear type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Fear: Uses the normal Fear rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-2-fearless name=Fearless type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Fearless: Uses the normal Fearless rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-3-fleet name=Fleet type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Fleet: Uses the normal Fleet rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-4-furious-charge name=Furious Charge type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Furious Charge: Uses the normal Furious Charge rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-5-eternal-warrior name=Eternal Warrior type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Eternal Warrior: Uses the normal Eternal Warrior rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-6-adamantium-will name=Adamantium Will type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Adamantium Will: Uses the normal Adamantium Will rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-7-master-of-the-legion name=Master of the Legion type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Master of the Legion: Uses the normal Master of the Legion rule.
+    selectionEntry id=r89-we-daemon-angron-special-rules-8-daemonic-flight name=Daemonic Flight type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Daemonic Flight: Angron may move up to 12 inches during the Movement phase and may move over intervening models and terrain while doing so. Angron may never join another unit and no model may join him.
+    selectionEntry id=r89-we-daemon-angron-special-rules-9-blood-calls-to-blood name=Blood Calls to Blood type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE Blood Calls to Blood: Angron may never begin the battle on the battlefield and does not make normal Reserve rolls. Keep a cumulative total of unsaved Wounds inflicted on enemy models by friendly World Eaters models in close combat; only Wounds actually suffered count, and shooting or psychic shooting Wounds do not contribute. At the end of each World Eaters Assault phase roll to summon him: 0–9 Wounds: cannot be summoned; 10–19: 6+; 20–29: 5+; 30–39: 4+; 40–49: 3+; 50+: 2+. If successful, Angron arrives at the beginning of the controlling player’s next turn. If not previously summoned, he automatically arrives at the beginning of Turn 5.
+    selectionEntry id=r89-we-daemon-angron-special-rules-10-the-red-angel-descends name=The Red Angel Descends type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE The Red Angel Descends: When Angron arrives, deploy him using Deep Strike. He does not scatter and may declare a charge during the same turn in which he arrives. He retains all bonus Attacks and other benefits normally gained for charging.
+    selectionEntry id=r89-we-daemon-angron-special-rules-11-the-nails-sing name=The Nails Sing type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE The Nails Sing: While Angron is on the battlefield, all units gain +1 Attack during the first round of a close combat in which they charged. Units composed entirely of models in Power Armour or Artificer Armour may declare charges up to 8 inches away instead of 6. These benefits affect friend and foe alike. World Eaters must charge the nearest eligible enemy if one is within charge distance; a World Eaters unit that wins combat must Pursue an enemy that Falls Back unless physically or mission-wise impossible; if the enemy is destroyed and no Pursuit is possible, the World Eaters unit must Consolidate as directly as possible towards the nearest enemy. The Attack from The Nails Sing is cumulative with the normal charge bonus and World Eaters Blood Frenzy.
+  GROUP id=r89-we-daemon-angron-restrictions name=Restrictions cons=[]
+    selectionEntry id=r89-we-daemon-angron-restrictions-0-world-eaters-only name=World Eaters Only type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE World Eaters Only: Angron, the Red Angel may only be selected for a World Eaters army.
+    selectionEntry id=r89-we-daemon-angron-restrictions-1-one-form-of-angron name=One Form of Angron type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+      RULE One Form of Angron: An army may not include both Angron, the Red Angel and Angron in his mortal form.
+
+====================================================================================================
+selectionEntry id=r89-we-daemon-angron-restrictions-1-one-form-of-angron name=One Form of Angron type=upgrade hidden=false default=1 costs=[('Points', '0', 'pts')] cons=[('min', '1', 'parent', 'selections', None), ('max', '1', 'parent', 'selections', None)]
+  RULE One Form of Angron: An army may not include both Angron, the Red Angel and Angron in his mortal form.
