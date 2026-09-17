@@ -1,0 +1,18 @@
+LIVE R3 — World Eaters repair
+CAT=3 GSTref=1
+
+Triarii copies repaired: 3
+  + r41-unit-xii-5-triarii-breacher-squad
+  + live-r2-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad
+  + r46-al-reward-33
+
+World Eaters character/Primarch copies given functional retinue selectors: 6
+  + r41-unit-xii-6-kharn-the-bloody | KHÂRN THE BLOODY -> Legion Command Squad, RAMPAGER SQUAD
+  + r41-unit-xii-7-shabran-darr | SHABRAN DARR -> RED HAND DESTROYER MORTALIS SQUAD, Legion Assault Squad
+  + r41-unit-xii-9-kargos-the-bloodspitter | KARGOS, THE BLOODSPITTER -> Legion Command Squad
+  + r41-unit-xii-10-captain-ehrlen | CAPTAIN EHRLEN -> Legion Command Squad
+  + r41-unit-xii-11-delvarus | DELVARUS -> TRIARII BREACHER SQUAD
+  + r41-unit-xii-12-xii-angron-the-red-angel | XII — ANGRON, THE RED ANGEL -> Legion Honour Guard Squad, Legion Terminator Command Squad, DEVOURER TERMINATOR SQUAD
+
+Source-backed no-retinue character intentionally unchanged: GAHLAN SURLAK.
+Daemon Angron intentionally receives no retinue; his entry says he may never join another unit and no model may join him.
