@@ -1,0 +1,31 @@
+LIVE R16 — DEATH GUARD PLAGUE MARINE SCOPE FIX
+CAT=16 GSTref=1
+
+• Removed 204 over-broad R15 Plague Marine selector groups before rebuilding the rule with proper scope.
+• Rebuilt Sons of the Plague Father only on Death Guard-accessible Power/Artificer-armoured Infantry units and characters.
+• Recon Armour, Terminator Armour, Jump Pack, Bike and Jetbike choices dynamically hide the upgrade because the model/unit is no longer eligible under the written rule.
+• Squad costs use only the unit’s direct squad-member model selections, so retinues/transports are never accidentally counted.
+• Patched entries: 23
+•   + tactical-unit | Legion Tactical Squad | direct squad model entries=2
+•   + assault-unit | Legion Assault Squad | direct squad model entries=2
+•   + breacher-unit | Legion Breacher Siege Squad | direct squad model entries=2
+•   + recon-unit | Legion Reconnaissance Squad | direct squad model entries=2
+•   + veteran-unit | Legion Veteran Squad | direct squad model entries=2
+•   + destroyer-unit | Legion Destroyer Squad | direct squad model entries=2
+•   + fa-seeker | Legion Seeker Squad | direct squad model entries=2
+•   + hs-heavy-support-squad | Legion Heavy Support Squad | direct squad model entries=1
+•   + hq-praetor-ret-honour | Legion Honour Guard Squad | direct squad model entries=2
+•   + hq-centurion-ret-command | Legion Command Squad | direct squad model entries=1
+•   + r41-unit-xiv-2-mortus-poisoner-squad | MORTUS POISONER SQUAD | direct squad model entries=1
+•   + r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit | Legion Veteran Squad | direct squad model entries=2
+•   + r42-role-xiv-0-legion-heavy-support-squads-hs-heavy-support-squad | Legion Heavy Support Squad | direct squad model entries=1
+•   + live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad | MORTUS POISONER SQUAD | direct squad model entries=1
+•   + live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Legion Command Squad | direct squad model entries=1
+•   + live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Legion Command Squad | direct squad model entries=1
+•   + live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Legion Command Squad | direct squad model entries=1
+•   + hq-praetor | Legion Praetor | single-character +7 upgrade
+•   + hq-centurion | Legion Centurion | single-character +7 upgrade
+•   + r41-unit-xiv-4-crysos-morturg | CRYSOS MORTURG | single-character +7 upgrade
+•   + r41-unit-xiv-5-durak-rask | DURAK RASK | single-character +7 upgrade
+•   + r41-unit-xiv-6-ignatius-grulgor | IGNATIUS GRULGOR | single-character +7 upgrade
+•   + r41-unit-xiv-7-nathaniel-garro | NATHANIEL GARRO | single-character +7 upgrade
