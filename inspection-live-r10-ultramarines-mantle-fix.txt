@@ -1,0 +1,8 @@
+LIVE R10 — ULTRAMARINES MANTLE FIX
+CAT=10 GSTref=1
+
+• Mantle of Ultramar moved out of the mutually-exclusive Armour Replacement group.
+• Mantle is now a secondary Artificer Armour upgrade and is hidden unless Artificer Armour is equipped.
+
+Affected entries:
+  + hq-praetor | Legion Praetor | Artificer=hq-praetor-art | Mantle=r45-praetor-um-mantle
