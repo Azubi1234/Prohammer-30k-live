@@ -1,0 +1,78 @@
+CAT=6 GST=1
+
+ENTRY hq-consul-librarian | Legion Librarian Consul | type=upgrade hidden=false
+ GROUP r29-lib-discipline-group | Psychic Discipline(s)
+ GROUP r29-lib-power-group | Psychic Powers
+ GROUP r61-librarian-power1 | Psychic Power — select 1
+
+ENTRY hq-consul-signals | Legion Master of Signals Consul | type=upgrade hidden=false
+ GROUP hq-consul-signals-orbital | Orbital Bombardment (choose at most one)
+ GROUP hq-consul-signals-dt | Dedicated Transport
+
+ENTRY hq-consul-signals-damocles | Damocles Command Rhino | type=unit hidden=false
+ GROUP hq-consul-signals-damocles-upgrades | Legion Vehicle Armoury
+ GROUP hq-consul-signals-dam-pintle | Pintle-mounted Weapon
+
+ENTRY hq-consul-vigilator | Legion Vigilator Consul | type=upgrade hidden=false
+
+ENTRY hq-damocles | Damocles Command Rhino | type=unit hidden=false
+ GROUP hq-damocles-upgrades | Legion Vehicle Armoury
+ GROUP hq-dam-pintle | Pintle-mounted Weapon
+ GROUP da-wing-hq-damocles | Hexagrammaton Wing
+ GROUP r49-legion-upgrades-hq-damocles | Legion Wargear & Upgrades
+ALLEGIANCE? modifier id=r52-tactical-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-assault-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-breacher-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-destroyer-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-fa-seeker-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-hq-praetor-ec-armoury-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? rule id=r29-herald-banner name=Banner of Allegiance type=None
+ALLEGIANCE? selectionEntryGroup id=hq-consul-herald-banner name=Banner of Allegiance type=None
+ALLEGIANCE? selectionEntry id=hq-consul-herald-aquila name=Banner of the Aquila — Loyalist type=upgrade
+ALLEGIANCE? selectionEntry id=hq-consul-herald-eye name=Banner of the Eye — Traitor type=upgrade
+ALLEGIANCE? modifier id=r52-hq-centurion-ec-armoury-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? selectionEntryGroup id=config-allegiance name=Allegiance type=None
+ALLEGIANCE? constraint id=config-allegiance-min name=None type=min
+ALLEGIANCE? constraint id=config-allegiance-max name=None type=max
+ALLEGIANCE? selectionEntry id=allegiance-loyalist name=Loyalist type=upgrade
+ALLEGIANCE? constraint id=allegiance-loyalist-max name=None type=max
+ALLEGIANCE? rule id=allegiance-loyalist-rule name=Allegiance: Loyalist type=None
+ALLEGIANCE? selectionEntry id=allegiance-traitor name=Traitor type=upgrade
+ALLEGIANCE? constraint id=allegiance-traitor-max name=None type=max
+ALLEGIANCE? rule id=allegiance-traitor-rule name=Allegiance: Traitor type=None
+ALLEGIANCE? modifier id=r71-nl-hc-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-r41-unit-iii-0-palatine-blade-squad-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r41-unit-iii-2-kakophoni-squad-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-r41-unit-iii-2-kakophoni-squad-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? rule id=r52-ec-ka-traitor name=Traitor Only type=None
+ALLEGIANCE? modifier id=r52-r41-unit-iii-3-sun-killer-squad-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r60-ws-hibou-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r60-ws-hasik-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? rule id=r60-ws-hasik-traitor name=Traitor Only type=None
+ALLEGIANCE? modifier id=r63-sw-russ-loyalist-hide name=None type=set
+ALLEGIANCE? rule id=r63-sw-russ-traitor name=Bring Me the Traitor type=None
+ALLEGIANCE? modifier id=r71-nl-ophion-traitor name=None type=set
+ALLEGIANCE? modifier id=r71-nl-mal-ret-1-r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r71-nl-mawdrym-traitor name=None type=set
+ALLEGIANCE? modifier id=r74-ba-sang-loyalist name=None type=set
+ALLEGIANCE? selectionEntry id=r89-we-darr-special-rules-5-loyalist-only name=Loyalist Only type=upgrade
+ALLEGIANCE? constraint id=r89-we-darr-special-rules-5-loyalist-only-min name=None type=min
+ALLEGIANCE? constraint id=r89-we-darr-special-rules-5-loyalist-only-max name=None type=max
+ALLEGIANCE? rule id=r89-we-darr-special-rules-5-loyalist-only-rule name=Loyalist Only type=None
+ALLEGIANCE? modifier id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r52-assault-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? selectionEntry id=r89-we-ehrlen-special-rules-2-loyalist-only name=Loyalist Only type=upgrade
+ALLEGIANCE? constraint id=r89-we-ehrlen-special-rules-2-loyalist-only-min name=None type=min
+ALLEGIANCE? constraint id=r89-we-ehrlen-special-rules-2-loyalist-only-max name=None type=max
+ALLEGIANCE? rule id=r89-we-ehrlen-special-rules-2-loyalist-only-rule name=Loyalist Only type=None
+ALLEGIANCE? modifier id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r52-fa-seeker-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r52-fa-seeker-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-ec-sonic-hss-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-ec-third-kako-r41-unit-iii-2-kakophoni-squad-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r52-ec-third-kakophoni-troops-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? rule id=r52-ec-third-kako-r52-ec-ka-traitor name=Traitor Only type=None
+ALLEGIANCE? modifier id=r57-iw-hammer-tactical-r52-tactical-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r57-iw-hammer-breacher-r52-breacher-unit-third-shrieker-hide-allegiance-traitor name=None type=set
+ALLEGIANCE? modifier id=r74-ba-rev-vet-r52-veteran-unit-third-shrieker-hide-allegiance-traitor name=None type=set
