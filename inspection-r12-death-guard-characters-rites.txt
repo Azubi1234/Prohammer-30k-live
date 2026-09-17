@@ -1,0 +1,785 @@
+CAT revision=12 GSTref=1
+
+=== r25-rite-xiv-0-the-reaping ===
+selectionEntry Death Guard Rite of War — The Reaping type=upgrade hidden=false pts= cons=max=1 field=selections scope=parent id=r25-rite-xiv-0-the-reaping-max
+RULE r25-rite-xiv-0-the-reaping-rule | The Reaping | hidden=false | The Reaping is one of the characteristic attack formations of the XIV Legion. Heavy infantry and fire-support units advance in a relentless column, purging shattered cities and fortified battlefields through weight of fire and remorseless attrition.
+EFFECTS
+SUPERIOR FIREPOWER
+Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices.
+They may not fulfil
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+              
+
+=== r25-rite-xiv-1-creeping-death ===
+selectionEntry Death Guard Rite of War — Creeping Death type=upgrade hidden=false pts= cons=max=1 field=selections scope=parent id=r25-rite-xiv-1-creeping-death-max
+RULE r25-rite-xiv-1-creeping-death-rule | Creeping Death | hidden=false | As the Horus Heresy progressed, the Death Guard unleashed ever greater quantities of forbidden chemical and biological weapons. Entire regions were reduced to poisoned wastelands through which the warriors of the XIV Legion advanced seemingly untouched.
+EFFECTS
+MIST-CLAD
+Death Guard Infantry models in open ground receive a 5+ Cover Save against shooting attacks provided there is no enemy model wit
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+              
+
+=== r41-unit-xiv-3-calas-typhon-first-captain ===
+selectionEntry CALAS TYPHON, FIRST CAPTAIN type=unit hidden=false pts=195 cons=max=1 field=selections scope=roster id=r41-unit-xiv-3-calas-typhon-first-captain-unique; min=1500 field=limit::points scope=roster id=r11-dg-typhon-1500
+RULE r41-unit-xiv-3-calas-typhon-first-captain-source | Source Entry | hidden=true | Calas Typhon | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+LATENT PSYKER Typhon is treated as a Psyker (Mastery Level 1\) solely for the purpose of using Aura of Pestilence and suffering Perils of the Warp. He knows no other psychic powers. Typhon takes the Psychic Test for Aura of Pestilence using Leadership 7 instead of the Leadership value shown in his profile. AURA OF PESTILENCE 
+RULE r11-dg-r41-unit-xiv-3-calas-typhon-first-captain-rule-0 | Latent Psyker | hidden=false | Typhon is treated as a Psyker (Mastery Level 1) solely for Aura of Pestilence and Perils of the Warp. He knows no other psychic powers and tests for Aura of Pestilence using Leadership 7.
+RULE r11-dg-r41-unit-xiv-3-calas-typhon-first-captain-rule-1 | Aura of Pestilence | hidden=false | At the beginning of either player’s Assault phase Typhon may take a Psychic Test. If passed, enemy models within 2 inches suffer -1 Attack (minimum 1) until the end of the phase. If failed, friendly models within 2 inches suffer the penalty instead. Typhon fights normally.
+PROFILE r41-unit-xiv-3-calas-typhon-first-captain-profile-0 | Calas Typhon | Model | WS=6, BS=5, S=4, T=4, W=3, I=5, A=3, Ld=9, Sv=2+/4+
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-captain-traitor" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue | RETINUE — choose up to one (no separate FOC slot) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-max
+  selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators | DEATHSHROUD TERMINATORS | type=unit target=None hidden=false pts=0.0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-ret-max
+    RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-source | Source Entry | hidden=false | Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Com
+    PROFILE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-profile-0 | Deathshroud | Model | WS=5, BS=4, S=4, T=4, W=2, I=4, A=2, Ld=9, Sv=2+/5+
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-options | Options | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs | Melta bombs (base unit; +5 pts/model) | type=upgrade target=None hidden=false pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs-max
+        RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-opt-0-context | Option restriction | hidden=false | • The entire squad may take:
+        RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-opt-0-squadwide | Squad-wide cost note | hidden=false | The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+    selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-additional | Squad Models | type=model target=None hidden=false pts=55 cons=max=7 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-additional-max; min=2 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators-additional-min-total
+  selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-termcommand | Legion Terminator Command Squad | type=unit target=None hidden=false pts=215 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-termcommand-max
+    RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-std | Standard Wargear | hidden=false | Five Terminator Veterans, each equipped with the selected Terminator Armour pattern, a Combi-Bolter and a Power Weapon.
+    RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-la | Legiones Astartes | hidden=false | Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-ret | Retinue | hidden=false | May only be selected for an eligible HQ character equipped with Terminator, Tartaros or Cataphractii Terminator Armour. It occupies no separate Force Organisation slot; the character and squad count as one HQ selection but may deploy and operate separately.
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-armour | Terminator Armour Pattern | type=None target=None hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-armour-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-armour-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-n | Terminator Armour | type=selectionEntry target=gear-hq-terminator hidden=false pts=0 cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-n-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-n-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-t | Tartaros Terminator Armour | type=selectionEntry target=gear-hq-tartaros hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-t-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-c | Cataphractii Terminator Armour | type=selectionEntry target=gear-hq-cataphractii hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-arm-c-max
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-ranged | Combi-Bolter Replacements (per model) | type=None target=None hidden=false pts= cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-ranged-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-0 | Combi-Flamer | type=selectionEntry target=gear-combi-flamer hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-0-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-1 | Combi-Meltagun | type=selectionEntry target=gear-combi-melta hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-1-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-2 | Combi-Plasma Gun | type=selectionEntry target=gear-combi-plasma hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-2-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-3 | Combi-Volkite Charger | type=selectionEntry target=gear-combi-volkite hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-3-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-4 | Foeblaster Boltgun | type=selectionEntry target=gear-foeblaster hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-4-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-5 | Volkite Charger | type=selectionEntry target=gear-volkite-charger hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-r-5-max
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-melee | Power Weapon Replacements (per model) | type=None target=None hidden=false pts= cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-melee-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-0 | Power Fist | type=selectionEntry target=gear-power-fist hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-0-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-1 | Lightning Claw | type=selectionEntry target=gear-lightning-claw hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-1-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-2 | Chainfist | type=selectionEntry target=gear-chainfist hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-2-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-3 | Thunder Hammer | type=selectionEntry target=gear-thunder hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-m-3-max
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pair | Replace both Combi-Bolter and Power Weapon | type=None target=None hidden=false pts= cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pair-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pair-link | Pair of Lightning Claws | type=selectionEntry target=gear-pair-claws hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pair-link-max
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-heavy | Heavy Weapon (one model only) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-heavy-max
+      RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-cyclonerule | Cyclone Missile Launcher | hidden=false | A Terminator Veteran with a Cyclone Missile Launcher retains his Combi-Bolter and close-combat weapon; other heavy weapon choices replace the Combi-Bolter.
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-0 | Heavy Flamer | type=selectionEntry target=gear-heavy-flamer hidden=false pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-0-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-1 | Reaper Autocannon | type=selectionEntry target=gear-reaper-autocannon hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-1-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-2 | Plasma Blaster | type=selectionEntry target=gear-plasma-blaster hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-2-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-3 | Assault Cannon | type=selectionEntry target=gear-assault-cannon hidden=false pts=20 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-3-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-4 | Cyclone Missile Launcher | type=selectionEntry target=gear-cyclone hidden=false pts=30 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-h-4-max
+    selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-transport | Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-transport-max
+      selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-land-lrgrp | Land Raider Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-land-lrgrp-max
+        RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-land-lrrule | Land Raider Dedicated Transport | hidden=false | Select a pattern with sufficient Transport Capacity. These entries use the profiles and standard wargear/rules of the corresponding Legion Land Raider Battle Squadron entry; use that entry for full vehicle upgrade options.
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-dreadclaw | Legion Dreadclaw Drop Pod | type=selectionEntry target=transport-dreadclaw hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-dreadclaw-max
+    selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-vets | Terminator Veterans | type=model target=None hidden=false pts= cons=min=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-vets-min; max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-vets-max
+      PROFILE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-vets-prof | Terminator Veteran | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=2+
+    selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth | Terminator Apothecary | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-max
+      RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apothrule | Terminator Apothecary | hidden=false | The Narthecium and Reductor may be used while wearing any Terminator Armour pattern, overriding normal Armoury restrictions. The Apothecary may select up to 50 points of permitted Armoury equipment.
+      PROFILE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-prof | Terminator Apothecary | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=2+
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-n | Narthecium | type=selectionEntry target=gear-hq-narthecium hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-n-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-n-max
+      entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-r | Reductor | type=selectionEntry target=gear-hq-reductor hidden=false pts=5 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-apoth-r-max
+    selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standard | Terminator Standard Bearer | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standard-max
+      RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standardrule | Terminator Standard Bearer | hidden=false | The selected standard may be carried in any Terminator Armour pattern, overriding normal Armoury restrictions. The Standard Bearer may select up to 50 points of permitted Armoury equipment.
+      PROFILE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standard-prof | Terminator Standard Bearer | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=2+
+      selectionEntryGroup live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standards | Standard | type=None target=None hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standards-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-standards-max
+    selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-champ | Terminator Champion | type=upgrade target=None hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-champ-max
+      RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-champrule | Terminator Champion | hidden=false | The Champion's Power Weapon is Master-crafted at no additional cost. The Champion may select up to 50 points of permitted Space Marine Armoury equipment.
+      PROFILE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-champ-prof | Terminator Champion | Model | WS=5, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=2+
+    selectionEntry live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r73-nl-bj-11 | Beyond Judgement — Trophies of Judgement & Fear | type=upgrade target=None hidden=true pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r73-nl-bj-11-max
+      RULE live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r73-nl-bj-11-rule | Beyond Judgement | hidden=false | Under Horror Cult this unit purchases Beyond Judgement for +25 points. Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model; multiple Trophies penalties remain non-cumulative.
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-cb | Combi-Bolter | type=selectionEntry target=gear-combi-bolter hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-cb-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-cb-max
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pw | Power Weapon | type=selectionEntry target=gear-power-weapon hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pw-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-pw-max
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-gh | Grenade Harness | type=selectionEntry target=gear-hq-grenade-harness hidden=false pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-tc-gh-max
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r40-da-warblade-hq-praetor-ret-tc-pw | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r40-da-warblade-hq-praetor-ret-tc-pw-max
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r40-da-trans-hq-praetor-ret-termcommand | Teleportation Transponders | type=selectionEntry target=da22-transponders hidden=true pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r40-da-trans-hq-praetor-ret-termcommand-max
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r70-if-termcmd-trans-935 | Teleportation Transponders | type=selectionEntry target=r64-if-gear-trans-unit hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r70-if-termcmd-trans-935-max
+    entryLink live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r71-nl-term-trans-1 | Teleportation Transponders | type=selectionEntry target=r44-nl-transponder-unit hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-r71-nl-term-trans-1-max
+
+=== r41-unit-xiv-4-crysos-morturg ===
+selectionEntry CRYSOS MORTURG type=unit hidden=false pts=175 cons=max=1 field=selections scope=roster id=r41-unit-xiv-4-crysos-morturg-unique
+RULE r41-unit-xiv-4-crysos-morturg-source | Source Entry | hidden=true | Crysos Morturg | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 3+/5+
+Force Organisation:
+PSYCHIC POWERS Morturg selects one psychic power from the normal Legion Librarian Psychic Power list. He follows all normal ProHammer rules for Psykers and Mastery Level 1. MASTER OF AMBUSH Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. Morturg must remain joined to th
+RULE r11-dg-r41-unit-xiv-4-crysos-morturg-rule-0 | Psychic Powers | hidden=false | Morturg selects one psychic power from the normal Legion Librarian Psychic Power list and follows the normal ProHammer rules for Psykers and Mastery Level 1.
+RULE r11-dg-r41-unit-xiv-4-crysos-morturg-rule-1 | Master of Ambush | hidden=false | Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. He must remain joined to that unit when it deploys.
+RULE r11-dg-r41-unit-xiv-4-crysos-morturg-rule-2 | Destroyer Officer | hidden=false | Morturg may join a Legion Destroyer Squad or Mortus Poisoner Squad despite the normal restrictions imposed by Destroyer Cadre.
+PROFILE r41-unit-xiv-4-crysos-morturg-profile-0 | Crysos Morturg | Model | WS=5, BS=5, S=4, T=4, W=3, I=5, A=3, Ld=9, Sv=3+/5+
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-morturg-loyalist" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+selectionEntryGroup r41-unit-xiv-4-crysos-morturg-options | Options | type=None target=None hidden=false pts= cons=
+  selectionEntry r41-unit-xiv-4-crysos-morturg-opt-0-krak-grenades | Krak grenades | type=upgrade target=None hidden=false pts=2 cons=max=1 field=selections scope=parent id=r41-unit-xiv-4-crysos-morturg-opt-0-krak-grenades-max
+    RULE r41-unit-xiv-4-crysos-morturg-opt-0-context | Option restriction | hidden=false | • Morturg may take:
+  selectionEntry r41-unit-xiv-4-crysos-morturg-opt-1-melta-bombs | Melta bombs | type=upgrade target=None hidden=false pts=5 cons=max=1 field=selections scope=parent id=r41-unit-xiv-4-crysos-morturg-opt-1-melta-bombs-max
+    RULE r41-unit-xiv-4-crysos-morturg-opt-1-context | Option restriction | hidden=false | • Morturg may take:
+selectionEntryGroup live-r2-r41-unit-xiv-4-crysos-morturg-retinue | RETINUE — choose up to one (no separate FOC slot) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-max
+  selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad | MORTUS POISONER SQUAD | type=unit target=None hidden=false pts=50.0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-ret-max
+    RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-source | Source Entry | hidden=false | Mortus Poisoner | 4 | 4 | 4 | 4 | 1 | 4 | 1 | 9 | 3+
+Poison-master | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+
+Force Organisation:
+• Elites
+DESTROYER CADRE The Mortus Poisoners use the normal Destroyer Cadre rule from the Legiones Astartes Army List.
+Unit Composition:
+• 4 Mortus Poisoners
+• 1 Poison-master
+Unit Type:
+• Infantry
+• The Poison-master is a Character
+Wargear:
+• Power Armour
+• Alchem Flamer
+• 
+    PROFILE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-profile-0 | Mortus Poisoner | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=1, Ld=9, Sv=3+
+    PROFILE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-profile-1 | Poison-master | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+    selectionEntryGroup live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-options | Options | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb | Phosphex Bomb | type=upgrade target=None hidden=false pts=10 cons=max=2 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-0-context | Option restriction | hidden=false | • For every five models in the squad, one Mortus Poisoner may take:
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-1-krak-grenades | Krak grenades (base unit; +2 pts/model) | type=upgrade target=None hidden=false pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-1-krak-grenades-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-1-context | Option restriction | hidden=false | • The entire squad may take:
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-1-squadwide | Squad-wide cost note | hidden=false | The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-2-melta-bombs | Melta bombs (base unit; +5 pts/model) | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-2-melta-bombs-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-2-context | Option restriction | hidden=false | • The entire squad may take:
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-2-squadwide | Squad-wide cost note | hidden=false | The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-3-rending-weapon | Rending Weapon | type=upgrade target=None hidden=false pts=5 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-3-rending-weapon-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-3-context | Option restriction | hidden=false | The Poison-master may replace his Chainsword with:
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-4-power-weapon | Power weapon | type=upgrade target=None hidden=false pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-4-power-weapon-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-4-context | Option restriction | hidden=false | The Poison-master may replace his Chainsword with:
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist | Power fist | type=upgrade target=None hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-power-fist-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-5-context | Option restriction | hidden=false | The Poison-master may replace his Chainsword with:
+      selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-6-artificer-armour | Artificer Armour | type=upgrade target=None hidden=false pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-6-artificer-armour-max
+        RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-6-context | Option restriction | hidden=false | The Poison-master may take:
+    selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-additional | Squad Models | type=model target=None hidden=false pts=20 cons=max=10 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-additional-max; min=5 field=selections scope=parent id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-additional-min-total
+
+=== r41-unit-xiv-5-durak-rask ===
+selectionEntry DURAK RASK type=unit hidden=false pts=165 cons=max=1 field=selections scope=roster id=r41-unit-xiv-5-durak-rask-unique
+RULE r41-unit-xiv-5-durak-rask-source | Source Entry | hidden=true | Durak Rask | 5 | 5 | 4 | 4 | 3 | 4 | 3 | 9 | 2+/5+
+Force Organisation:
+ART OF DESTRUCTION Durak Rask and any Death Guard Infantry unit he has joined have the Tank Hunters special rule. COMMAND RETINUE Durak Rask may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armou
+RULE r11-dg-r41-unit-xiv-5-durak-rask-rule-0 | Art of Destruction | hidden=false | Durak Rask and any Death Guard Infantry unit he has joined have Tank Hunters.
+PROFILE r41-unit-xiv-5-durak-rask-profile-0 | Durak Rask | Model | WS=5, BS=5, S=4, T=4, W=3, I=4, A=3, Ld=9, Sv=2+/5+
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-rask-traitor" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+selectionEntryGroup r41-unit-xiv-5-durak-rask-options | Options | type=None target=None hidden=false pts= cons=
+  selectionEntry r41-unit-xiv-5-durak-rask-opt-0-krak-grenades | Krak grenades | type=upgrade target=None hidden=false pts=2 cons=max=1 field=selections scope=parent id=r41-unit-xiv-5-durak-rask-opt-0-krak-grenades-max
+    RULE r41-unit-xiv-5-durak-rask-opt-0-context | Option restriction | hidden=false | • Durak Rask may take:
+  selectionEntry r41-unit-xiv-5-durak-rask-opt-1-melta-bombs | Melta bombs | type=upgrade target=None hidden=false pts=5 cons=max=1 field=selections scope=parent id=r41-unit-xiv-5-durak-rask-opt-1-melta-bombs-max
+    RULE r41-unit-xiv-5-durak-rask-opt-1-context | Option restriction | hidden=false | • Durak Rask may take:
+selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue | RETINUE — choose up to one (no separate FOC slot) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-max
+  selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Legion Command Squad | type=unit target=None hidden=false pts=90 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-max
+    RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-std | Standard Wargear | hidden=false | Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+    RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-la | Legiones Astartes | hidden=false | Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-ret | Retinue | hidden=false | May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+    selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-weapons | Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) | type=None target=None hidden=false pts= cons=max=10 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-weapons-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-0 | Bolter | type=selectionEntry target=gear-bolter hidden=false pts=0 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-0-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-1 | Storm Bolter | type=selectionEntry target=gear-storm-bolter hidden=false pts=3 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-1-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-2 | Combi-Flamer | type=selectionEntry target=gear-combi-flamer hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-2-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-3 | Combi-Meltagun | type=selectionEntry target=gear-combi-melta hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-3-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-4 | Combi-Plasma Gun | type=selectionEntry target=gear-combi-plasma hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-4-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-5 | Combi-Volkite Charger | type=selectionEntry target=gear-combi-volkite hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-5-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-6 | Flamer | type=selectionEntry target=gear-flamer hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-6-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-7 | Meltagun | type=selectionEntry target=gear-meltagun hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-7-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-8 | Plasma Gun | type=selectionEntry target=gear-plasma-gun hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-8-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-9 | Volkite Charger | type=selectionEntry target=gear-volkite-charger hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-9-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-10 | Volkite Caliver | type=selectionEntry target=gear-volkite-caliver hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-10-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-11 | Rotor Cannon | type=selectionEntry target=gear-rotor hidden=false pts=4 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-11-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-12 | Hand Flamer | type=selectionEntry target=gear-hand-flamer hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-12-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-13 | Plasma Pistol | type=selectionEntry target=gear-plasma-pistol hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-13-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-14 | Rending Weapon | type=selectionEntry target=gear-rending hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-14-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-15 | Power Weapon | type=selectionEntry target=gear-power-weapon hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-15-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-16 | Lightning Claw | type=selectionEntry target=gear-lightning-claw hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-16-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-17 | Power Fist | type=selectionEntry target=gear-power-fist hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-17-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-18 | Thunder Hammer | type=selectionEntry target=gear-thunder hidden=false pts=30 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-w-18-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pp-18 | Calibanite Plasma Pistol | type=selectionEntry target=da22-plasma-pistol hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pp-18-2
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pg-5 | Calibanite Plasma Gun | type=selectionEntry target=da22-plasma-gun hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pg-5-2
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pr-5 | Plasma Repeater | type=selectionEntry target=da22-plasma-repeater hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pr-5-2
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pb-5 | Plasma Burner | type=selectionEntry target=da22-plasma-burner hidden=false pts=20 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-da22-alt-pb-5-2
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15-max
+    selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-eq | Per-model Equipment | type=None target=None hidden=false pts= cons=
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-shield | Combat Shield | type=selectionEntry target=gear-hq-combat-shield hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-shield-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bombs | Melta Bombs | type=selectionEntry target=gear-hq-melta-bombs hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bombs-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-krak | Krak Grenades | type=selectionEntry target=gear-krak hidden=false pts=2 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-krak-max
+    selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-mob | Squad Mobility (only if the selecting HQ has the same mobility) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-mob-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-mobrule | Mobility Restrictions | hidden=false | Every model must take the same mobility upgrade. It may only be selected if the character for whom the squad was selected has the corresponding Jump Pack, Bike or Jetbike. If any mobility option is selected, the squad may not take a Dedicated Transport.
+      selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-jump | Jump Packs (+15 pts/model) | type=upgrade target=None hidden=false pts=75 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-jump-max
+      selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bike | Space Marine Bikes (+20 pts/model) | type=upgrade target=None hidden=false pts=100 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bike-max
+      selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-jet | Jetbikes (+35 pts/model) | type=upgrade target=None hidden=false pts=175 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-jet-max
+    selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-transport | Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-transport-max
+      selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-land-lrgrp | Land Raider Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-land-lrgrp-max
+        RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-land-lrrule | Land Raider Dedicated Transport | hidden=false | Select a pattern with sufficient Transport Capacity. These entries use the profiles and standard wargear/rules of the corresponding Legion Land Raider Battle Squadron entry; use that entry for full vehicle upgrade options.
+      selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos | Land Raider Phobos (Scions of Iron) | type=upgrade target=None hidden=true pts=250 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r83-ih-scions-14-max
+        PROFILE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos-prof | Land Raider Phobos | Vehicle | BS=4, Front=14, Side=14, Rear=14
+      selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus | Land Raider Proteus (Scions of Iron) | type=upgrade target=None hidden=true pts=200 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r83-ih-scions-15-max
+        PROFILE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus-prof | Land Raider Proteus | Vehicle | BS=4, Front=14, Side=14, Rear=14
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-rhino | Legion Rhino Armoured Carrier | type=selectionEntry target=transport-rhino hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-rhino-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-drop | Legion Drop Pod | type=selectionEntry target=transport-drop-pod hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-drop-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-dreadclaw | Legion Dreadclaw Drop Pod | type=selectionEntry target=transport-dreadclaw hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-dreadclaw-max
+    selectionEntryGroup live-r2-fabius-enhanced-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-group | Fabius Bile | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-fabius-enhanced-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Enhanced Warriors | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-fabius-enhanced-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-max
+        RULE live-r2-fabius-enhanced-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-rule | Enhanced Warriors | hidden=false | This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack
+    selectionEntryGroup live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-group | Special Upgrades | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Blessing of Slaanesh | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-max
+        RULE live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-rule | Blessing of Slaanesh | hidden=false | Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-vets | Legion Veterans | type=model target=None hidden=false pts= cons=min=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-vets-min; max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-vets-max
+      PROFILE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-vets-prof | Legion Veteran | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth | Legion Apothecary | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-armrule | Apothecary Armoury | hidden=false | The Apothecary may select up to 50 points of permitted Space Marine Armoury weapons and wargear in addition to the Narthecium. The Reductor is optional at +5 points.
+      PROFILE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-prof | Apothecary | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-n | Narthecium | type=selectionEntry target=gear-hq-narthecium hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-n-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-n-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-r | Reductor | type=selectionEntry target=gear-hq-reductor hidden=false pts=5 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-apoth-r-max
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standard | Legion Standard Bearer | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standard-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standard-armrule | Standard Bearer Armoury | hidden=false | The Standard Bearer may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+      PROFILE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standard-prof | Standard Bearer | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      selectionEntryGroup live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standards | Standard | type=None target=None hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standards-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-standards-max
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ | Legion Champion | type=upgrade target=None hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-armrule | Champion Armoury | hidden=false | The Legion Champion may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+      PROFILE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-prof | Legion Champion | Model | WS=5, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-pw | Power Weapon (replaces Chainsword) | type=selectionEntry target=gear-power-weapon hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-pw-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-pw-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-sh | Combat Shield | type=selectionEntry target=gear-hq-combat-shield hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-sh-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-champ-sh-max
+      entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw-max
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r69-centurion-command-bikes | Space Marine Bikes (entire squad) | type=upgrade target=None hidden=true pts=100 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r69-centurion-command-bikes-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r69-centurion-command-bikes-rule | Mounted Retinue | hidden=false | Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r69-centurion-command-jetbikes | Jetbikes (entire squad) | type=upgrade target=None hidden=true pts=175 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r69-centurion-command-jetbikes-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r69-centurion-command-jetbikes-rule | Mounted Retinue | hidden=false | Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r71-nl-gen-10-stealth | Stealth Adept — whole squad | type=upgrade target=None hidden=true pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r71-nl-gen-10-stealth-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r71-nl-gen-10-stealth-rule | Stealth Adept — whole squad | hidden=false | Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached.
+    selectionEntry live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r71-nl-bj-11 | Beyond Judgement — Trophies of Judgement & Fear | type=upgrade target=None hidden=true pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r71-nl-bj-11-max
+      RULE live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r71-nl-bj-11-rule | Beyond Judgement | hidden=false | Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative.
+    entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bp | Bolt Pistol | type=selectionEntry target=gear-bolt-pistol hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bp-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-bp-max
+    entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-cs | Chainsword | type=selectionEntry target=gear-chainsword hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-cs-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-cs-max
+    entryLink live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r70-if-hammer-trans-1208 | Teleportation Transponders — Hammerfall | type=selectionEntry target=r64-if-gear-trans-unit hidden=true pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-5-durak-rask-retinue-0-r70-if-hammer-trans-1208-max
+
+=== r41-unit-xiv-6-ignatius-grulgor ===
+selectionEntry IGNATIUS GRULGOR type=unit hidden=false pts=165 cons=max=1 field=selections scope=roster id=r41-unit-xiv-6-ignatius-grulgor-unique
+RULE r41-unit-xiv-6-ignatius-grulgor-source | Source Entry | hidden=true | Ignatius Grulgor | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 3+/5+
+Force Organisation:
+THE EATER OF LIVES The first time Grulgor is reduced to 0 Wounds, do not immediately remove him as a casualty. Roll a D6. On a 1–4, remove Grulgor normally. On a 5+, Grulgor remains in play with 1 Wound remaining and gains the following special rules for the remainder of the battle: • Daemon • Fearless • Feel No Pain (5+
+RULE r11-dg-r41-unit-xiv-6-ignatius-grulgor-rule-0 | The Eater of Lives | hidden=false | The first time Grulgor is reduced to 0 Wounds, roll a D6 before removing him. On 1–4 remove him normally. On 5+ he remains with 1 Wound and gains Daemon, Fearless and Feel No Pain (5+) for the rest of the battle. This may only occur once.
+PROFILE r41-unit-xiv-6-ignatius-grulgor-profile-0 | Ignatius Grulgor | Model | WS=6, BS=5, S=4, T=4, W=3, I=5, A=3, Ld=10, Sv=3+/5+
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-grulgor-traitor" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+selectionEntryGroup r41-unit-xiv-6-ignatius-grulgor-options | Options | type=None target=None hidden=false pts= cons=
+  selectionEntry r41-unit-xiv-6-ignatius-grulgor-opt-0-krak-grenades | Krak grenades | type=upgrade target=None hidden=false pts=2 cons=max=1 field=selections scope=parent id=r41-unit-xiv-6-ignatius-grulgor-opt-0-krak-grenades-max
+    RULE r41-unit-xiv-6-ignatius-grulgor-opt-0-context | Option restriction | hidden=false | • Grulgor may take:
+  selectionEntry r41-unit-xiv-6-ignatius-grulgor-opt-1-melta-bombs | Melta bombs | type=upgrade target=None hidden=false pts=5 cons=max=1 field=selections scope=parent id=r41-unit-xiv-6-ignatius-grulgor-opt-1-melta-bombs-max
+    RULE r41-unit-xiv-6-ignatius-grulgor-opt-1-context | Option restriction | hidden=false | • Grulgor may take:
+selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue | RETINUE — choose up to one (no separate FOC slot) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-max
+  selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Legion Command Squad | type=unit target=None hidden=false pts=90 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-max
+    RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-std | Standard Wargear | hidden=false | Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+    RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-la | Legiones Astartes | hidden=false | Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-ret | Retinue | hidden=false | May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+    selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-weapons | Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) | type=None target=None hidden=false pts= cons=max=10 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-weapons-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-0 | Bolter | type=selectionEntry target=gear-bolter hidden=false pts=0 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-0-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-1 | Storm Bolter | type=selectionEntry target=gear-storm-bolter hidden=false pts=3 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-1-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-2 | Combi-Flamer | type=selectionEntry target=gear-combi-flamer hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-2-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-3 | Combi-Meltagun | type=selectionEntry target=gear-combi-melta hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-3-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-4 | Combi-Plasma Gun | type=selectionEntry target=gear-combi-plasma hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-4-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-5 | Combi-Volkite Charger | type=selectionEntry target=gear-combi-volkite hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-5-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-6 | Flamer | type=selectionEntry target=gear-flamer hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-6-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-7 | Meltagun | type=selectionEntry target=gear-meltagun hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-7-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-8 | Plasma Gun | type=selectionEntry target=gear-plasma-gun hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-8-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-9 | Volkite Charger | type=selectionEntry target=gear-volkite-charger hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-9-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-10 | Volkite Caliver | type=selectionEntry target=gear-volkite-caliver hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-10-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-11 | Rotor Cannon | type=selectionEntry target=gear-rotor hidden=false pts=4 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-11-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-12 | Hand Flamer | type=selectionEntry target=gear-hand-flamer hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-12-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-13 | Plasma Pistol | type=selectionEntry target=gear-plasma-pistol hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-13-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-14 | Rending Weapon | type=selectionEntry target=gear-rending hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-14-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-15 | Power Weapon | type=selectionEntry target=gear-power-weapon hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-15-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-16 | Lightning Claw | type=selectionEntry target=gear-lightning-claw hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-16-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-17 | Power Fist | type=selectionEntry target=gear-power-fist hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-17-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-18 | Thunder Hammer | type=selectionEntry target=gear-thunder hidden=false pts=30 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-w-18-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pp-18 | Calibanite Plasma Pistol | type=selectionEntry target=da22-plasma-pistol hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pp-18-2
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pg-5 | Calibanite Plasma Gun | type=selectionEntry target=da22-plasma-gun hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pg-5-2
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pr-5 | Plasma Repeater | type=selectionEntry target=da22-plasma-repeater hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pr-5-2
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pb-5 | Plasma Burner | type=selectionEntry target=da22-plasma-burner hidden=false pts=20 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-da22-alt-pb-5-2
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15-max
+    selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-eq | Per-model Equipment | type=None target=None hidden=false pts= cons=
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-shield | Combat Shield | type=selectionEntry target=gear-hq-combat-shield hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-shield-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bombs | Melta Bombs | type=selectionEntry target=gear-hq-melta-bombs hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bombs-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-krak | Krak Grenades | type=selectionEntry target=gear-krak hidden=false pts=2 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-krak-max
+    selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-mob | Squad Mobility (only if the selecting HQ has the same mobility) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-mob-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-mobrule | Mobility Restrictions | hidden=false | Every model must take the same mobility upgrade. It may only be selected if the character for whom the squad was selected has the corresponding Jump Pack, Bike or Jetbike. If any mobility option is selected, the squad may not take a Dedicated Transport.
+      selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-jump | Jump Packs (+15 pts/model) | type=upgrade target=None hidden=false pts=75 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-jump-max
+      selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bike | Space Marine Bikes (+20 pts/model) | type=upgrade target=None hidden=false pts=100 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bike-max
+      selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-jet | Jetbikes (+35 pts/model) | type=upgrade target=None hidden=false pts=175 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-jet-max
+    selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-transport | Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-transport-max
+      selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-land-lrgrp | Land Raider Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-land-lrgrp-max
+        RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-land-lrrule | Land Raider Dedicated Transport | hidden=false | Select a pattern with sufficient Transport Capacity. These entries use the profiles and standard wargear/rules of the corresponding Legion Land Raider Battle Squadron entry; use that entry for full vehicle upgrade options.
+      selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos | Land Raider Phobos (Scions of Iron) | type=upgrade target=None hidden=true pts=250 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r83-ih-scions-14-max
+        PROFILE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos-prof | Land Raider Phobos | Vehicle | BS=4, Front=14, Side=14, Rear=14
+      selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus | Land Raider Proteus (Scions of Iron) | type=upgrade target=None hidden=true pts=200 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r83-ih-scions-15-max
+        PROFILE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus-prof | Land Raider Proteus | Vehicle | BS=4, Front=14, Side=14, Rear=14
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-rhino | Legion Rhino Armoured Carrier | type=selectionEntry target=transport-rhino hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-rhino-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-drop | Legion Drop Pod | type=selectionEntry target=transport-drop-pod hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-drop-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-dreadclaw | Legion Dreadclaw Drop Pod | type=selectionEntry target=transport-dreadclaw hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-dreadclaw-max
+    selectionEntryGroup live-r2-fabius-enhanced-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-group | Fabius Bile | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-fabius-enhanced-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Enhanced Warriors | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-fabius-enhanced-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-max
+        RULE live-r2-fabius-enhanced-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-rule | Enhanced Warriors | hidden=false | This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack
+    selectionEntryGroup live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-group | Special Upgrades | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Blessing of Slaanesh | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-max
+        RULE live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-rule | Blessing of Slaanesh | hidden=false | Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-vets | Legion Veterans | type=model target=None hidden=false pts= cons=min=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-vets-min; max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-vets-max
+      PROFILE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-vets-prof | Legion Veteran | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth | Legion Apothecary | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-armrule | Apothecary Armoury | hidden=false | The Apothecary may select up to 50 points of permitted Space Marine Armoury weapons and wargear in addition to the Narthecium. The Reductor is optional at +5 points.
+      PROFILE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-prof | Apothecary | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-n | Narthecium | type=selectionEntry target=gear-hq-narthecium hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-n-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-n-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-r | Reductor | type=selectionEntry target=gear-hq-reductor hidden=false pts=5 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-apoth-r-max
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standard | Legion Standard Bearer | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standard-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standard-armrule | Standard Bearer Armoury | hidden=false | The Standard Bearer may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+      PROFILE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standard-prof | Standard Bearer | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      selectionEntryGroup live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standards | Standard | type=None target=None hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standards-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-standards-max
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ | Legion Champion | type=upgrade target=None hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-armrule | Champion Armoury | hidden=false | The Legion Champion may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+      PROFILE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-prof | Legion Champion | Model | WS=5, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-pw | Power Weapon (replaces Chainsword) | type=selectionEntry target=gear-power-weapon hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-pw-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-pw-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-sh | Combat Shield | type=selectionEntry target=gear-hq-combat-shield hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-sh-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-champ-sh-max
+      entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw-max
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r69-centurion-command-bikes | Space Marine Bikes (entire squad) | type=upgrade target=None hidden=true pts=100 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r69-centurion-command-bikes-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r69-centurion-command-bikes-rule | Mounted Retinue | hidden=false | Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r69-centurion-command-jetbikes | Jetbikes (entire squad) | type=upgrade target=None hidden=true pts=175 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r69-centurion-command-jetbikes-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r69-centurion-command-jetbikes-rule | Mounted Retinue | hidden=false | Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r71-nl-gen-10-stealth | Stealth Adept — whole squad | type=upgrade target=None hidden=true pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r71-nl-gen-10-stealth-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r71-nl-gen-10-stealth-rule | Stealth Adept — whole squad | hidden=false | Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached.
+    selectionEntry live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r71-nl-bj-11 | Beyond Judgement — Trophies of Judgement & Fear | type=upgrade target=None hidden=true pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r71-nl-bj-11-max
+      RULE live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r71-nl-bj-11-rule | Beyond Judgement | hidden=false | Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative.
+    entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bp | Bolt Pistol | type=selectionEntry target=gear-bolt-pistol hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bp-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-bp-max
+    entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-cs | Chainsword | type=selectionEntry target=gear-chainsword hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-cs-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-cs-max
+    entryLink live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r70-if-hammer-trans-1208 | Teleportation Transponders — Hammerfall | type=selectionEntry target=r64-if-gear-trans-unit hidden=true pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-r70-if-hammer-trans-1208-max
+
+=== r41-unit-xiv-7-nathaniel-garro ===
+selectionEntry NATHANIEL GARRO type=unit hidden=false pts=165 cons=max=1 field=selections scope=roster id=r41-unit-xiv-7-nathaniel-garro-unique
+RULE r41-unit-xiv-7-nathaniel-garro-source | Source Entry | hidden=true | Nathaniel Garro | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+LIBERTAS Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. Garro receives no additional Attack for fighting with a second close-combat weapon while using Libertas. AQUILA IMPERATOR The Aquila Imperator grants Garro a 4+ Invulnerable Save. This is already included in his profile. Whenever
+RULE r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-0 | Libertas | hidden=false | Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. He receives no additional Attack for a second close-combat weapon while using it.
+RULE r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-1 | Aquila Imperator | hidden=false | The Aquila Imperator grants Garro a 4+ Invulnerable Save. Whenever Garro or a unit he has joined would be affected by an enemy psychic power, roll a D6. On 5+ that power is nullified against Garro and his unit. Only one such roll may be made per psychic power.
+PROFILE r41-unit-xiv-7-nathaniel-garro-profile-0 | Nathaniel Garro | Model | WS=6, BS=5, S=4, T=4, W=3, I=5, A=3, Ld=9, Sv=2+/4+
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-garro-loyalist" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+selectionEntryGroup r41-unit-xiv-7-nathaniel-garro-options | Options | type=None target=None hidden=false pts= cons=
+  selectionEntry r41-unit-xiv-7-nathaniel-garro-opt-0-krak-grenades | Krak grenades | type=upgrade target=None hidden=false pts=2 cons=max=1 field=selections scope=parent id=r41-unit-xiv-7-nathaniel-garro-opt-0-krak-grenades-max
+    RULE r41-unit-xiv-7-nathaniel-garro-opt-0-context | Option restriction | hidden=false | • Nathaniel Garro may take:
+selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue | RETINUE — choose up to one (no separate FOC slot) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-max
+  selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Legion Command Squad | type=unit target=None hidden=false pts=90 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-max
+    RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-std | Standard Wargear | hidden=false | Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+    RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-la | Legiones Astartes | hidden=false | Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-ret | Retinue | hidden=false | May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+    selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-weapons | Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) | type=None target=None hidden=false pts= cons=max=10 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-weapons-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-0 | Bolter | type=selectionEntry target=gear-bolter hidden=false pts=0 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-0-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-1 | Storm Bolter | type=selectionEntry target=gear-storm-bolter hidden=false pts=3 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-1-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-2 | Combi-Flamer | type=selectionEntry target=gear-combi-flamer hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-2-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-3 | Combi-Meltagun | type=selectionEntry target=gear-combi-melta hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-3-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-4 | Combi-Plasma Gun | type=selectionEntry target=gear-combi-plasma hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-4-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-5 | Combi-Volkite Charger | type=selectionEntry target=gear-combi-volkite hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-5-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-6 | Flamer | type=selectionEntry target=gear-flamer hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-6-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-7 | Meltagun | type=selectionEntry target=gear-meltagun hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-7-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-8 | Plasma Gun | type=selectionEntry target=gear-plasma-gun hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-8-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-9 | Volkite Charger | type=selectionEntry target=gear-volkite-charger hidden=false pts=10 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-9-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-10 | Volkite Caliver | type=selectionEntry target=gear-volkite-caliver hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-10-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-11 | Rotor Cannon | type=selectionEntry target=gear-rotor hidden=false pts=4 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-11-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-12 | Hand Flamer | type=selectionEntry target=gear-hand-flamer hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-12-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-13 | Plasma Pistol | type=selectionEntry target=gear-plasma-pistol hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-13-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-14 | Rending Weapon | type=selectionEntry target=gear-rending hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-14-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-15 | Power Weapon | type=selectionEntry target=gear-power-weapon hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-15-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-16 | Lightning Claw | type=selectionEntry target=gear-lightning-claw hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-16-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-17 | Power Fist | type=selectionEntry target=gear-power-fist hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-17-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-18 | Thunder Hammer | type=selectionEntry target=gear-thunder hidden=false pts=30 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-w-18-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pp-18 | Calibanite Plasma Pistol | type=selectionEntry target=da22-plasma-pistol hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pp-18-2
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pg-5 | Calibanite Plasma Gun | type=selectionEntry target=da22-plasma-gun hidden=false pts=15 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pg-5-2
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pr-5 | Plasma Repeater | type=selectionEntry target=da22-plasma-repeater hidden=false pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pr-5-2
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pb-5 | Plasma Burner | type=selectionEntry target=da22-plasma-burner hidden=false pts=20 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-da22-alt-pb-5-2
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=25 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15-max
+    selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-eq | Per-model Equipment | type=None target=None hidden=false pts= cons=
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-shield | Combat Shield | type=selectionEntry target=gear-hq-combat-shield hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-shield-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bombs | Melta Bombs | type=selectionEntry target=gear-hq-melta-bombs hidden=false pts=5 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bombs-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-krak | Krak Grenades | type=selectionEntry target=gear-krak hidden=false pts=2 cons=max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-krak-max
+    selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-mob | Squad Mobility (only if the selecting HQ has the same mobility) | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-mob-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-mobrule | Mobility Restrictions | hidden=false | Every model must take the same mobility upgrade. It may only be selected if the character for whom the squad was selected has the corresponding Jump Pack, Bike or Jetbike. If any mobility option is selected, the squad may not take a Dedicated Transport.
+      selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-jump | Jump Packs (+15 pts/model) | type=upgrade target=None hidden=false pts=75 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-jump-max
+      selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bike | Space Marine Bikes (+20 pts/model) | type=upgrade target=None hidden=false pts=100 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bike-max
+      selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-jet | Jetbikes (+35 pts/model) | type=upgrade target=None hidden=false pts=175 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-jet-max
+    selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-transport | Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-transport-max
+      selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-land-lrgrp | Land Raider Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-land-lrgrp-max
+        RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-land-lrrule | Land Raider Dedicated Transport | hidden=false | Select a pattern with sufficient Transport Capacity. These entries use the profiles and standard wargear/rules of the corresponding Legion Land Raider Battle Squadron entry; use that entry for full vehicle upgrade options.
+      selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos | Land Raider Phobos (Scions of Iron) | type=upgrade target=None hidden=true pts=250 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r83-ih-scions-14-max
+        PROFILE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos-prof | Land Raider Phobos | Vehicle | BS=4, Front=14, Side=14, Rear=14
+      selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus | Land Raider Proteus (Scions of Iron) | type=upgrade target=None hidden=true pts=200 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r83-ih-scions-15-max
+        PROFILE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus-prof | Land Raider Proteus | Vehicle | BS=4, Front=14, Side=14, Rear=14
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-rhino | Legion Rhino Armoured Carrier | type=selectionEntry target=transport-rhino hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-rhino-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-drop | Legion Drop Pod | type=selectionEntry target=transport-drop-pod hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-drop-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-dreadclaw | Legion Dreadclaw Drop Pod | type=selectionEntry target=transport-dreadclaw hidden=false pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-dreadclaw-max
+    selectionEntryGroup live-r2-fabius-enhanced-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-group | Fabius Bile | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-fabius-enhanced-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Enhanced Warriors | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-fabius-enhanced-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-max
+        RULE live-r2-fabius-enhanced-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-rule | Enhanced Warriors | hidden=false | This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack
+    selectionEntryGroup live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-group | Special Upgrades | type=None target=None hidden=false pts= cons=
+      selectionEntry live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Blessing of Slaanesh | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-max
+        RULE live-r2-fulgrim-blessing-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-rule | Blessing of Slaanesh | hidden=false | Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-vets | Legion Veterans | type=model target=None hidden=false pts= cons=min=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-vets-min; max=5 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-vets-max
+      PROFILE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-vets-prof | Legion Veteran | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth | Legion Apothecary | type=upgrade target=None hidden=false pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-armrule | Apothecary Armoury | hidden=false | The Apothecary may select up to 50 points of permitted Space Marine Armoury weapons and wargear in addition to the Narthecium. The Reductor is optional at +5 points.
+      PROFILE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-prof | Apothecary | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-n | Narthecium | type=selectionEntry target=gear-hq-narthecium hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-n-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-n-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-r | Reductor | type=selectionEntry target=gear-hq-reductor hidden=false pts=5 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-apoth-r-max
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standard | Legion Standard Bearer | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standard-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standard-armrule | Standard Bearer Armoury | hidden=false | The Standard Bearer may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+      PROFILE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standard-prof | Standard Bearer | Model | WS=4, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      selectionEntryGroup live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standards | Standard | type=None target=None hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standards-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-standards-max
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ | Legion Champion | type=upgrade target=None hidden=false pts=15 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-armrule | Champion Armoury | hidden=false | The Legion Champion may select up to 50 points of permitted Space Marine Armoury weapons and wargear.
+      PROFILE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-prof | Legion Champion | Model | WS=5, BS=4, S=4, T=4, W=1, I=4, A=2, Ld=9, Sv=3+
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-pw | Power Weapon (replaces Chainsword) | type=selectionEntry target=gear-power-weapon hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-pw-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-pw-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-sh | Combat Shield | type=selectionEntry target=gear-hq-combat-shield hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-sh-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-champ-sh-max
+      entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw | Calibanite Warblade | type=selectionEntry target=da22-warblade hidden=true pts=10 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r40-da-warblade-hq-centurion-ret-command-champ-pw-max
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r69-centurion-command-bikes | Space Marine Bikes (entire squad) | type=upgrade target=None hidden=true pts=100 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r69-centurion-command-bikes-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r69-centurion-command-bikes-rule | Mounted Retinue | hidden=false | Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r69-centurion-command-jetbikes | Jetbikes (entire squad) | type=upgrade target=None hidden=true pts=175 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r69-centurion-command-jetbikes-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r69-centurion-command-jetbikes-rule | Mounted Retinue | hidden=false | Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r71-nl-gen-10-stealth | Stealth Adept — whole squad | type=upgrade target=None hidden=true pts=0 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r71-nl-gen-10-stealth-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r71-nl-gen-10-stealth-rule | Stealth Adept — whole squad | hidden=false | Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached.
+    selectionEntry live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r71-nl-bj-11 | Beyond Judgement — Trophies of Judgement & Fear | type=upgrade target=None hidden=true pts=25 cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r71-nl-bj-11-max
+      RULE live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r71-nl-bj-11-rule | Beyond Judgement | hidden=false | Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative.
+    entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bp | Bolt Pistol | type=selectionEntry target=gear-bolt-pistol hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bp-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-bp-max
+    entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-cs | Chainsword | type=selectionEntry target=gear-chainsword hidden=false pts= cons=min=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-cs-min; max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-cs-max
+    entryLink live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r70-if-hammer-trans-1208 | Teleportation Transponders — Hammerfall | type=selectionEntry target=r64-if-gear-trans-unit hidden=true pts= cons=max=1 field=selections scope=parent id=live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-r70-if-hammer-trans-1208-max
+
+=== r41-unit-xiv-8-xiv-mortarion-the-reaper ===
+selectionEntry XIV — MORTARION, THE REAPER type=unit hidden=false pts=500 cons=max=1 field=selections scope=roster id=r41-unit-xiv-8-xiv-mortarion-the-reaper-unique; min=2000 field=limit::points scope=roster id=r11-dg-mortarion-min-points
+RULE r41-unit-xiv-8-xiv-mortarion-the-reaper-source | Source Entry | hidden=true | Primarch of the Death Guard, the Pale King, the Reaper of Men
+Mortarion was raised beneath the poisoned skies of Barbarus, a world where survival itself was a war against toxic atmosphere, monstrous overlords and the slow certainty of death. From those beginnings came a Primarch of almost inexhaustible endurance, possessed of a hatred for tyranny, witchcraft and weakness in all their forms. Where 
+RULE r11-dg-mortarion-rule-0 | Barbaran Plate | hidden=false | Barbaran Plate counts as Primarch Armour.
+RULE r11-dg-mortarion-rule-1 | Silence | hidden=false | Silence is a Two-Handed Power Weapon. Attacks are resolved at +1 Strength and have Rampage. Any unsaved Wound inflicted against a model without the Primarch rule becomes a Massive Wound and inflicts D3 Wounds instead of one.
+RULE r11-dg-mortarion-rule-2 | Barbaran Endurance | hidden=false | Mortarion has Feel No Pain (5+).
+RULE r11-dg-mortarion-rule-3 | Witch-Spite | hidden=false | Whenever Mortarion or a unit he has joined makes a Deny the Witch roll, a failed roll may be re-rolled. Mortarion’s Adamantium Will grants +2 to Deny the Witch rather than +1.
+RULE r11-dg-mortarion-rule-4 | The Reaper’s Advance | hidden=false | Friendly Death Guard Infantry within 12 inches of Mortarion may fire Rapid Fire weapons as though stationary and may re-roll failed Pinning tests.
+RULE r11-dg-mortarion-rule-5 | Toxic Miasma | hidden=false | Enemy non-Vehicle models in base contact with Mortarion suffer -1 Toughness while they remain in base contact.
+RULE r11-dg-mortarion-rule-6 | Poison Cannot Kill Death | hidden=false | Poisoned attacks against Mortarion do not use their fixed To Wound value. Resolve them using Strength versus Toughness; a Poisoned attack with no Strength wounds only on an unmodified 6.
+RULE r11-dg-mortarion-rule-7 | Primarch Retinue | hidden=false | Mortarion may select one Deathshroud Terminator Squad as his Primarch Retinue. He may not select Legion Honour Guard or Legion Terminator Command Squad as his Primarch Retinue.
+PROFILE r41-unit-xiv-8-xiv-mortarion-the-reaper-profile-0 | Mortarion | Model | WS=7, BS=6, S=6, T=7, W=6, I=5, A=4, Ld=10, Sv=1+
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-mortarion-pc-1500" type="set" field="r11-dg-mortarion-min-points" value="1500"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="true" /></ns0:conditions></ns0:modifier><ns0:modifier id="r11-dg-mortarion-hide-daemon" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiv-9-mortarion-prince-of-decay" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+selectionEntryGroup r11-dg-mortarion-retinue | PRIMARCH RETINUE — Deathshroud only | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=r11-dg-mortarion-retinue-max
+  selectionEntry r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators | DEATHSHROUD TERMINATORS | type=unit target=None hidden=false pts=0.0 cons=max=1 field=selections scope=parent id=r11-dg-mortarion-deathshroud-max
+    RULE r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-source | Source Entry | hidden=true | Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Com
+    RULE r11-dg-mortarion-deathshroud-r11-dg-ds-silent | Silent Retinue | hidden=false | A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. It occupies no separate Force Organisation slot.
+    RULE r11-dg-mortarion-deathshroud-r11-dg-ds-wargear | Wargear | hidden=false | Terminator Armour; Manreaper; Alchem Flamer.
+    RULE r11-dg-mortarion-deathshroud-rule | Retinue | hidden=false | Selected as this character’s retinue. It occupies no separate Force Organisation slot.
+    PROFILE r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-profile-0 | Deathshroud | Model | WS=5, BS=4, S=4, T=4, W=2, I=4, A=2, Ld=9, Sv=2+/5+
+    selectionEntryGroup r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-options | Options | type=None target=None hidden=false pts= cons=
+      selectionEntry r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs | Melta bombs — entire squad (+5 pts/model) | type=upgrade target=None hidden=false pts=0 cons=max=1 field=selections scope=parent id=r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs-max
+        RULE r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-context | Option restriction | hidden=false | • The entire squad may take:
+        RULE r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-squadwide | Squad-wide cost note | hidden=false | The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+        RULE r11-dg-mortarion-deathshroud-r11-dg-ds-melta-rule | Whole-squad Melta Bombs | hidden=false | Every Deathshroud Terminator takes Melta Bombs for +5 points per model. The cost scales with the selected squad size.
+      selectionEntry r11-dg-mortarion-deathshroud-r11-dg-deathshroud-cataphractii | Exchange entire squad’s Terminator Armour for Cataphractii Terminator Armour — Free | type=upgrade target=None hidden=false pts= cons=max=1 field=selections scope=parent id=r11-dg-mortarion-deathshroud-r11-dg-deathshroud-cataphractii-max
+        RULE r11-dg-mortarion-deathshroud-r11-dg-deathshroud-cataphractii-rule | Cataphractii Armour Exchange | hidden=false | The entire squad exchanges its Terminator Armour for Cataphractii Terminator Armour at no additional cost. The squad instead has a 2+/4+ Save and follows all normal Cataphractii Terminator Armour rules and restrictions.
+    selectionEntryGroup r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-transport | Dedicated Transport | type=None target=None hidden=false pts= cons=max=1 field=selections scope=parent id=r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-transport-max
+      entryLink r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-tr-dc | Dreadclaw Drop Pod | type=selectionEntry target=transport-dreadclaw hidden=false pts= cons=max=1 field=selections scope=parent id=r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-tr-dc-max
+    selectionEntry r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional | Squad Models | type=model target=None hidden=false pts=55 cons=max=7 field=selections scope=parent id=r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-max; min=2 field=selections scope=parent id=r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-min-total
+
+=== r41-unit-xiv-9-mortarion-prince-of-decay ===
+selectionEntry MORTARION, PRINCE OF DECAY type=unit hidden=false pts=650 cons=max=1 field=selections scope=roster id=r41-unit-xiv-9-mortarion-prince-of-decay-unique
+RULE r41-unit-xiv-9-mortarion-prince-of-decay-source | Source Entry | hidden=false | Daemon Primarch of Nurgle
+Mortarion endured a transformation he had once despised above all things. His body swollen with corruption and borne upon vast ragged wings, the Death Lord became a living vessel of pestilence. Where Mortarion walks, flesh rots, armour corrodes and the air itself becomes poison. Unlike his brothers, the Daemon Primarch does not descend upon his enemies in glorious flight 
+PROFILE r41-unit-xiv-9-mortarion-prince-of-decay-profile-0 | Mortarion, Prince of Decay | Model | WS=7, BS=6, S=7, T=8, W=8, I=4, A=5, Ld=10, Sv=2+/4++
+MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:conditions>
+        </ns0:modifier>
+      <ns0:modifier id="r11-dg-daemon-mortarion-hide-mortal" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiv-8-xiv-mortarion-the-reaper" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+      
+
+=== MATCHING REUSABLE ELEMENTS ===
+-- Manreaper --
+selectionEntry r45-dg-manreaper type=upgrade target=None hidden=false pts=20
+  RULE r45-dg-manreaper-rule | Manreaper | hidden=false | Death Guard Sergeant or Character with Armoury access. Two-Handed Power Weapon. At the start of each Assault phase roll D3 and gain that many Attacks; if all attacks target one separately targetable Independent Character/model, gain only +1. No bonus for a second close-combat weapon.
+rule r45-dg-manreaper-rule type=None target=None hidden=false pts=
+entryLink r45-hq-praetor-dg-man type=selectionEntry target=r45-dg-manreaper hidden=false pts=
+entryLink r45-hq-centurion-dg-man type=selectionEntry target=r45-dg-manreaper hidden=false pts=
+-- Alchem Flamer --
+-- Combi-Alchem Flamer --
+-- Power weapon --
+selectionEntry gear-power-weapon type=upgrade target=None hidden=false pts=
+  RULE rule-power-weapon | Power Weapon | hidden=false | Ignores Armour Saves.
+rule rule-power-weapon type=None target=None hidden=false pts=
+entryLink sgt-pw type=selectionEntry target=gear-power-weapon hidden=false pts=15
+entryLink assault-sgt-melee-pw type=selectionEntry target=gear-power-weapon hidden=false pts=10
+entryLink breacher-sgt-arm-pw type=selectionEntry target=gear-power-weapon hidden=false pts=15
+entryLink recon-sgt-arm-pw type=selectionEntry target=gear-power-weapon hidden=false pts=15
+entryLink destroyer-sgt-pw type=selectionEntry target=gear-power-weapon hidden=false pts=10
+entryLink fa-seeker-sgtw-pw type=selectionEntry target=gear-power-weapon hidden=false pts=10
+entryLink fa-bike-sgtw-pw type=selectionEntry target=gear-power-weapon hidden=false pts=10
+entryLink fa-sky-sgtw-pw type=selectionEntry target=gear-power-weapon hidden=false pts=10
+entryLink hs-hss-aw-3 type=selectionEntry target=gear-power-weapon hidden=false pts=15
+entryLink hq-praetor-sw-9 type=selectionEntry target=gear-power-weapon hidden=false pts=15
+-- Thunder hammer --
+selectionEntry gear-thunder type=upgrade target=None hidden=false pts=
+  RULE rule-thunder | Thunder Hammer | hidden=false | Double Strength, Power Weapon, Unwieldy, Specialist Weapon, Concussive.
+rule rule-thunder type=None target=None hidden=false pts=
+entryLink sgt-th type=selectionEntry target=gear-thunder hidden=false pts=30
+entryLink assault-sgt-melee-th type=selectionEntry target=gear-thunder hidden=false pts=20
+entryLink breacher-sgt-arm-th type=selectionEntry target=gear-thunder hidden=false pts=30
+entryLink recon-sgt-arm-th type=selectionEntry target=gear-thunder hidden=false pts=30
+entryLink veteran-sgt-th type=selectionEntry target=gear-thunder hidden=false pts=30
+entryLink destroyer-sgt-th type=selectionEntry target=gear-thunder hidden=false pts=20
+entryLink techmarine-I-th type=selectionEntry target=gear-thunder hidden=false pts=15
+entryLink techmarine-II-th type=selectionEntry target=gear-thunder hidden=false pts=15
+entryLink techmarine-III-th type=selectionEntry target=gear-thunder hidden=false pts=15
+entryLink fa-seeker-sgt-arm-thunder type=selectionEntry target=gear-thunder hidden=false pts=30
+-- Volkite Serpenta --
+selectionEntry gear-volkite-serpenta type=upgrade target=None hidden=false pts=
+  PROFILE prof-volkite-serpenta | Volkite Serpenta | Ranged Weapon | Range=10", S=5, AP=5, Type=Pistol, Rending
+  RULE rule-rending-serpenta | Rending | hidden=false | On a natural To Wound roll of 6, the wound is automatically successful and treated as a Power Weapon attack. Against vehicles, an Armour Penetration roll of 6 adds an additional D3.
+profile prof-volkite-serpenta type=None target=None hidden=false pts=
+entryLink sgt-serpenta type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink assault-sgt-pistol-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink breacher-sgt-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink recon-sgt-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink veteran-sgt-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink destroyer-sgt-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink techmarine-I-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink techmarine-II-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink techmarine-III-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+entryLink fa-seeker-sgtw-vs type=selectionEntry target=gear-volkite-serpenta hidden=false pts=5
+-- Nuncio Vox --
+selectionEntry gear-nuncio type=upgrade target=None hidden=false pts=
+  RULE rule-nuncio | Nuncio Vox | hidden=false | A friendly unit arriving by Deep Strike does not scatter if its centre model is initially placed within 6" of the bearer. The bearer must have been on the battlefield at the beginning of the turn, must not be Pinned or Falling Back, and must not be embarked upon a Transport.
+rule rule-nuncio type=None target=None hidden=false pts=
+selectionEntry gear-hq-nuncio type=upgrade target=None hidden=false pts=
+  RULE gear-hq-nuncio-rule | Nuncio Vox | hidden=false | Assists friendly Deep Striking units as described in the Space Marine Armoury.
+rule gear-hq-nuncio-rule type=None target=None hidden=false pts=
+entryLink tac-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink assault-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink breacher-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink recon-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink veteran-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink terminator-sgt-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink techmarine-I-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+entryLink techmarine-II-nuncio type=selectionEntry target=gear-nuncio hidden=false pts=10
+-- Phosphex Bomb --
+selectionEntry gear-phosphex-bomb type=upgrade target=None hidden=false pts=
+  PROFILE gear-phosphex-bomb-prof-0 | Phosphex Bomb | Ranged Weapon | Range=6", S=5, AP=2, Type=Assault 1, Blast, One Use, Poisoned (3+), Lingering Death
+  RULE gear-phosphex-bomb-rule-0 | Lingering Death | hidden=false | After resolving the attack, leave the Blast marker in place. For the remainder of the battle, the area beneath the marker counts as Dangerous Terrain for non-vehicle models and Open-topped vehicles.
+profile gear-phosphex-bomb-prof-0 type=None target=None hidden=false pts=
+entryLink destroyer-sgt-phosphex type=selectionEntry target=gear-phosphex-bomb hidden=false pts=10
+entryLink da22-int-ph type=selectionEntry target=gear-phosphex-bomb hidden=false pts=10
+entryLink live-r2-da22-redloss-retinue-0-da22-int-ph type=selectionEntry target=gear-phosphex-bomb hidden=false pts=10
+entryLink r35-destroyer-troops-destroyer-sgt-phosphex type=selectionEntry target=gear-phosphex-bomb hidden=false pts=10
+entryLink r40-da-eskaton-destroyer-destroyer-sgt-phosphex type=selectionEntry target=gear-phosphex-bomb hidden=false pts=10
+entryLink r40-da-eskaton-interemptor-da22-int-ph type=selectionEntry target=gear-phosphex-bomb hidden=false pts=10
+selectionEntry r60-ws-dark-phosphex type=upgrade target=None hidden=false pts=10
+selectionEntry r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb type=upgrade target=None hidden=false pts=10
+  RULE r41-unit-xiv-2-mortus-poisoner-squad-opt-0-context | Option restriction | hidden=false | • For every five models in the squad, one Mortus Poisoner may take:
+selectionEntry r11-dg-mp-master-phosphex-bomb type=upgrade target=None hidden=false pts=10
+selectionEntry live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb type=upgrade target=None hidden=false pts=10
+  RULE live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad-opt-0-context | Option restriction | hidden=false | • For every five models in the squad, one Mortus Poisoner may take:
+-- Libertas --
+rule r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-0 type=None target=None hidden=false pts=
+-- Aquila Imperator --
+rule r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-1 type=None target=None hidden=false pts=
+-- Bolt pistol --
+selectionEntry gear-bolt-pistol type=upgrade target=None hidden=false pts=
+  PROFILE prof-bolt-pistol | Bolt Pistol | Ranged Weapon | Range=12", S=4, AP=5, Type=Pistol
+profile prof-bolt-pistol type=None target=None hidden=false pts=
+entryLink load-standard-p type=selectionEntry target=gear-bolt-pistol hidden=true pts=
+entryLink load-add-p type=selectionEntry target=gear-bolt-pistol hidden=true pts=
+entryLink load-ex-p type=selectionEntry target=gear-bolt-pistol hidden=true pts=
+entryLink assault-standard-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+entryLink breacher-standard-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+entryLink recon-standard-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+entryLink hq-praetor-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+entryLink hq-praetor-ret-honour-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+entryLink hq-centurion-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+entryLink hq-centurion-ret-command-bp type=selectionEntry target=gear-bolt-pistol hidden=false pts=
+-- Bolter --
+selectionEntry gear-bolter type=upgrade target=None hidden=false pts=
+  PROFILE prof-bolter | Bolter | Ranged Weapon | Range=24", S=4, AP=5, Type=Rapid Fire
+profile prof-bolter type=None target=None hidden=false pts=
+entryLink load-standard-b type=selectionEntry target=gear-bolter hidden=true pts=
+entryLink load-add-b type=selectionEntry target=gear-bolter hidden=true pts=
+entryLink breacher-standard-bolter type=selectionEntry target=gear-bolter hidden=false pts=
+entryLink recon-standard-bolter type=selectionEntry target=gear-bolter hidden=false pts=
+entryLink techmarine-I-bolter type=selectionEntry target=gear-bolter hidden=false pts=2
+entryLink techmarine-II-bolter type=selectionEntry target=gear-bolter hidden=false pts=2
+entryLink techmarine-III-bolter type=selectionEntry target=gear-bolter hidden=false pts=2
+entryLink hq-praetor-tw-0 type=selectionEntry target=gear-bolter hidden=false pts=2
+entryLink hq-praetor-ret-honour-r-0 type=selectionEntry target=gear-bolter hidden=false pts=2
+entryLink r29-vig-bolter type=selectionEntry target=gear-bolter hidden=false pts=
+-- Rad grenades --
+selectionEntry gear-rad-grenades type=upgrade target=None hidden=false pts=
+  RULE gear-rad-grenades-rule-0 | Rad Grenades | hidden=false | Rad Grenades are neither Assault nor Defensive Grenades. During any player turn in which a unit equipped with Rad Grenades charges, or is itself charged, enemy non-vehicle models engaged with that unit suffer -1 Toughness until the end of the Assault phase. This affects Instant Death and is not cumulative.
+rule gear-rad-grenades-rule-0 type=None target=None hidden=false pts=
+rule destroyer-rad type=None target=None hidden=false pts=
+entryLink techmarine-I-rad type=selectionEntry target=gear-rad-grenades hidden=false pts=10
+entryLink techmarine-II-rad type=selectionEntry target=gear-rad-grenades hidden=false pts=10
+entryLink techmarine-III-rad type=selectionEntry target=gear-rad-grenades hidden=false pts=10
+rule r35-destroyer-troops-destroyer-rad type=None target=None hidden=false pts=
+rule r40-da-eskaton-destroyer-destroyer-rad type=None target=None hidden=false pts=
+selectionEntry r74-ba-tears-rad type=upgrade target=None hidden=false pts=0
+selectionEntry r74-ba-zephon-tears-r74-ba-tears-rad type=upgrade target=None hidden=false pts=0
+selectionEntry r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-wargear-rad-grenades type=upgrade target=None hidden=false pts=0
+selectionEntry r89-we-darr-wargear-5-rad-grenades type=upgrade target=None hidden=false pts=0
+  RULE r89-we-darr-wargear-5-rad-grenades-rule | Rad grenades | hidden=false | Uses the normal Rad grenade rules.
+-- Frag grenades --
+rule tactical-frag type=None target=None hidden=false pts=
+rule assault-frag type=None target=None hidden=false pts=
+rule breacher-frag type=None target=None hidden=false pts=
+rule recon-frag type=None target=None hidden=false pts=
+rule hq-praetor-frag type=None target=None hidden=false pts=
+selectionEntry r74-ba-pra-guard-r74-ba-guard-frag type=upgrade target=None hidden=false pts=0
+rule r74-ba-pra-guard-r74-ba-azk-up-frag-grenades type=None target=None hidden=false pts=
+rule hq-centurion-frag type=None target=None hidden=false pts=
+selectionEntry r30-prae-castellax-frag type=upgrade target=None hidden=false pts=5
+  RULE r30-prae-castellax-frag-rule | Frag Grenades | hidden=false | The entire Maniple may take Frag Grenades for +5 points per model; select this once for each Castellax in the Maniple.
+rule r30-prae-castellax-frag-rule type=None target=None hidden=false pts=
+selectionEntry r30-prae-vorax-frag type=upgrade target=None hidden=false pts=5
+  RULE r30-prae-vorax-frag-rule | Frag Grenades | hidden=false | The entire Maniple may take Frag Grenades for +5 points per model; select this once for each Vorax in the Maniple.
+rule r30-prae-vorax-frag-rule type=None target=None hidden=false pts=
+-- Artificer Armour --
+selectionEntry gear-hq-artificer type=upgrade target=None hidden=false pts=
+  RULE gear-hq-artificer-rule | Artificer Armour | hidden=false | Artificer Armour grants a 2+ Armour Save and does not count as Terminator Armour.
+rule gear-hq-artificer-rule type=None target=None hidden=false pts=
+entryLink hq-praetor-art type=selectionEntry target=gear-hq-artificer hidden=false pts=20
+selectionEntry r74-ba-pra-guard-r74-ba-guard-armour type=upgrade target=None hidden=false pts=0
+rule r74-ba-pra-guard-r74-ba-azk-up-artificer-armour type=None target=None hidden=false pts=
+entryLink r29-forge-artificer type=selectionEntry target=gear-hq-artificer hidden=false pts=
+entryLink hq-centurion-art type=selectionEntry target=gear-hq-artificer hidden=false pts=20
+entryLink r40-da-storm-centurion-group-r40-da-storm-tactical-hq-centurion-art type=selectionEntry target=gear-hq-artificer hidden=false pts=20
+entryLink r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-art type=selectionEntry target=gear-hq-artificer hidden=false pts=20
+selectionEntry r52-ec-pal-fixed-0 type=upgrade target=None hidden=false pts=
+selectionEntry r52-ec-eid-fixed-0 type=upgrade target=None hidden=false pts=
+selectionEntry r52-ec-tar-fixed-0 type=upgrade target=None hidden=false pts=
+-- Power Armour --
+rule tactical-power-armour type=None target=None hidden=false pts=
+rule assault-power-armour type=None target=None hidden=false pts=
+rule r40-da-storm-tactical-tactical-power-armour type=None target=None hidden=false pts=
+rule r40-da-storm-assault-assault-power-armour type=None target=None hidden=false pts=
+rule r40-da-serpent-assault-assault-power-armour type=None target=None hidden=false pts=
+selectionEntry r52-ec-ka-fixed-0 type=upgrade target=None hidden=false pts=
+selectionEntry r52-ec-sun-fixed-0 type=upgrade target=None hidden=false pts=
+selectionEntry r52-ec-fab-fixed-0 type=upgrade target=None hidden=false pts=
+selectionEntry r57-iw-havoc-fixed-0 type=upgrade target=None hidden=false pts=
+selectionEntry r74-ba-tears-armour type=upgrade target=None hidden=false pts=0
+selectionEntry r74-ba-zephon-tears-r74-ba-tears-armour type=upgrade target=None hidden=false pts=0
+selectionEntry r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour type=upgrade target=None hidden=false pts=0
+-- Cataphractii Terminator Armour --
+selectionEntry gear-hq-cataphractii type=upgrade target=None hidden=false pts=
+  RULE gear-hq-cataphractii-rule | Cataphractii Terminator Armour | hidden=false | 2+ Armour Save, 4+ Invulnerable Save, Relentless, Bulky and Deep Strike; may not Advance, make Pursuit moves or fire Overwatch; may not embark upon Rhinos or Drop Pods.
+rule gear-hq-cataphractii-rule type=None target=None hidden=false pts=
+selectionEntry terminator-armour-cataphractii type=upgrade target=None hidden=false pts=
+  RULE terminator-armour-cataphractii-rule | Cataphractii Terminator Armour | hidden=false | 2+ Armour Save, 4+ Invulnerable Save; Relentless, Bulky, Deep Strike; may not Advance, Pursue or fire Overwatch. Models in any form of Terminator Armour may not embark upon Rhinos or Drop Pods.
+rule terminator-armour-cataphractii-rule type=None target=None hidden=false pts=
+entryLink hq-praetor-cat type=selectionEntry target=gear-hq-cataphractii hidden=false pts=25
+entryLink hq-praetor-ret-tc-arm-c type=selectionEntry target=gear-hq-cataphractii hidden=false pts=0
+entryLink hq-centurion-cat type=selectionEntry target=gear-hq-cataphractii hidden=false pts=25
+entryLink hq-centurion-ret-tc-arm-c type=selectionEntry target=gear-hq-cataphractii hidden=false pts=0
+selectionEntry da22-dwtc-cat type=upgrade target=None hidden=false pts=
+selectionEntry live-r2-da22-holguin-retinue-0-da22-dwtc-cat type=upgrade target=None hidden=false pts=
+selectionEntry r35-pride-terminator-terminator-armour-cataphractii type=upgrade target=None hidden=false pts=
+  RULE r35-pride-terminator-terminator-armour-cataphractii-rule | Cataphractii Terminator Armour | hidden=false | 2+ Armour Save, 4+ Invulnerable Save; Relentless, Bulky, Deep Strike; may not Advance, Pursue or fire Overwatch. Models in any form of Terminator Armour may not embark upon Rhinos or Drop Pods.
+rule r35-pride-terminator-terminator-armour-cataphractii-rule type=None target=None hidden=false pts=
+-- Refractor Field --
+selectionEntry gear-hq-refractor type=upgrade target=None hidden=false pts=
+  RULE gear-hq-refractor-rule | Refractor Field | hidden=false | A Refractor Field grants a 5+ Invulnerable Save. A Sergeant may only purchase a Refractor Field if his squad is purchased at its maximum starting strength. A model that already has a 5+ or better Invulnerable Save may not purchase a Refractor Field.
+rule gear-hq-refractor-rule type=None target=None hidden=false pts=
+entryLink rev24-tactical-unit-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-assault-unit-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-recon-unit-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-veteran-unit-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-destroyer-unit-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-fa-seeker-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-fa-bike-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-fa-sky-hunter-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink rev24-hs-heavy-support-squad-sgt-refractor type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+entryLink hq-centurion-wg-2 type=selectionEntry target=gear-hq-refractor hidden=false pts=15
+-- Silence --
+rule r11-dg-mortarion-rule-1 type=None target=None hidden=false pts=
+-- Lantern --
+-- Barbaran Plate --
+rule r11-dg-mortarion-rule-0 type=None target=None hidden=false pts=
