@@ -1,0 +1,206 @@
+CAT=16
+
+DIRECT DUPLICATE GROUPS=0
+
+
+=== UNIVERSAL RULE DESCRIPTION VARIANTS ===
+
+## Acute Senses
+  x1 | Uses the normal Acute Senses rule from ProHammer Classic.
+      selectionEntry recon-unit | Legion Reconnaissance Squad
+
+## Adamantium Will
+  x1 | Uses the normal Adamantium Will rule.
+      selectionEntry r89-we-daemon-angron-special-rules-6-adamantium-will | Adamantium Will
+  x1 | Uses the normal Adamantium Will special rule.
+      selectionEntry live-r2-fulgrim-transfigured-rules-5-adamantium-will | Adamantium Will
+  x1 | Uses the normal ProHammer Adamantium Will special rule.
+      selectionEntry hq-consul-null | Legion Primus Nullificator Consul
+
+## Counter-Attack
+  x4 | Uses the normal Counter-Attack special rule.
+      selectionEntry r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-counter-attack | Counter-Attack
+      selectionEntry r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-counter-attack | Counter-Attack
+      selectionEntry live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r87-we-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-special-rules-counter-attack | Counter-Attack
+      selectionEntry live-r3-we-r41-unit-xii-11-delvarus-retinue-0-r87-we-r41-unit-xii-5-triarii-breacher-squad-special-rules-counter-attack | Counter-Attack
+  x3 | The squad has Counter-Attack using the normal ProHammer rules.
+      selectionEntry destroyer-unit | Legion Destroyer Squad
+      selectionEntry r35-destroyer-troops-destroyer-unit | Legion Destroyer Squad
+      selectionEntry r40-da-eskaton-destroyer | Legion Destroyer Squad
+  x3 | Uses the normal ProHammer Counter-Attack special rule.
+      selectionEntry hq-consul-moritat | Legion Moritat Consul
+      selectionEntry r41-unit-ix-2-angel-s-tears-squad | ANGEL'S TEARS SQUAD
+      selectionEntry r74-ba-zephon-tears-r41-unit-ix-2-angel-s-tears-squad | Angel’s Tears Squad
+  x2 | Thiel and every model in his squad gain Counter-Attack for the duration of the battle.
+      selectionEntry r8-tactical-unit-thiel-tactic-0 | Counter-Attack
+      selectionEntry r8-veteran-unit-thiel-tactic-0 | Counter-Attack
+  x1 | Selected as the Alpha Legion army’s Mutable Tactic. Applies to all qualifying non-vehicle units and does not count toward their Veteran Skill limit. Normal restrictions of the selected skill apply.
+      selectionEntry r46-al-mutable-0 | Counter-Attack
+
+## Deep Strike
+  x5 | Uses the normal ProHammer Deep Strike rules except as modified below.
+      selectionEntry transport-drop-pod | Legion Drop Pod
+      selectionEntry transport-dreadclaw | Anvillus Pattern Dreadclaw Drop Pod
+      selectionEntry r32-aero-lightning | Primaris-Lightning Strike Fighter
+      selectionEntry r32-aero-xiphon | Xiphon Pattern Interceptor
+      selectionEntry r32-aero-fireraptor | Legion Fire Raptor Gunship
+  x2 | The squadron has Deep Strike as defined in ProHammer Classic.
+      selectionEntry fa-land-speeder | Legion Land Speeder Squadron
+      selectionEntry r45-dg-land-speeder | Legion Land Speeder Squadron
+  x1 | Uses the normal ProHammer Deep Strike rules together with Drop Pod Assault and Inertial Guidance System.
+      selectionEntry transport-dreadnought-pod | Legion Dreadnought Drop Pod
+
+## Eternal Warrior
+  x1 | Uses the normal Eternal Warrior rule.
+      selectionEntry r89-we-daemon-angron-special-rules-5-eternal-warrior | Eternal Warrior
+  x1 | Uses the normal Eternal Warrior special rule.
+      selectionEntry live-r2-fulgrim-transfigured-rules-4-eternal-warrior | Eternal Warrior
+
+## Fear
+  x1 | Uses the normal Fear rule.
+      selectionEntry r89-we-daemon-angron-special-rules-1-fear | Fear
+  x1 | Uses the normal Fear special rule.
+      selectionEntry live-r2-fulgrim-transfigured-rules-1-fear | Fear
+
+## Fearless
+  x8 | Uses the normal ProHammer Fearless special rule.
+      selectionEntry r74-ba-pra-guard-r41-unit-ix-5-sanguinary-guard | Sanguinary Guard Squad
+      selectionEntry r41-unit-ix-5-sanguinary-guard | SANGUINARY GUARD
+      selectionEntry r74-ba-ral-guard-r41-unit-ix-5-sanguinary-guard | Sanguinary Guard Squad
+      selectionEntry r74-ba-sang-guard-r41-unit-ix-5-sanguinary-guard | Sanguinary Guard Squad
+      selectionEntry r41-unit-x-1-gorgon-terminator-squad | GORGON TERMINATOR SQUAD
+      selectionEntry r41-unit-x-2-morlock-terminator-squad | MORLOCK TERMINATOR SQUAD
+  x4 | The unit uses the ProHammer Fearless special rule.
+      selectionEntry r41-unit-viii-3-atramentar-flay-clade | Atramentar Flay-Clade
+      selectionEntry r71-nl-sev-ret-2-r41-unit-viii-3-atramentar-flay-clade | Atramentar Flay-Clade
+      selectionEntry r41-unit-viii-8-flaymaster-mawdrym-llansahai | Flaymaster Mawdrym Llansahai
+      selectionEntry r71-nl-curze-ret-1-r41-unit-viii-3-atramentar-flay-clade | Atramentar Flay-Clade
+  x2 | This unit is Fearless.
+      selectionEntry r41-unit-iii-2-kakophoni-squad | KAKOPHONI SQUAD
+      selectionEntry r52-ec-third-kakophoni-troops | Kakophoni Squad — 3rd Company Troops
+  x2 | Uses the normal Fearless special rule.
+      selectionEntry live-r2-fulgrim-transfigured-rules-2-fearless | Fearless
+      selectionEntry r87-we-r41-unit-xii-1-red-butcher-squad-special-rules-fearless | Fearless
+  x1 | Uses the normal Fearless rule.
+      selectionEntry r89-we-daemon-angron-special-rules-2-fearless | Fearless
+
+## Fleet
+  x3 | Uses the normal ProHammer Fleet special rule.
+      selectionEntry contemptor-unit | Legion Contemptor Dreadnought
+      selectionEntry r30-prae-vorax | Vorax Class Battle-Automata Maniple
+      selectionEntry r35-fury-contemptor-contemptor-unit | Legion Contemptor Dreadnought
+  x1 | Rylanor has Fleet.
+      selectionEntry r41-unit-iii-8-rylanor-the-unyielding | RYLANOR THE UNYIELDING
+  x1 | Uses the normal Fleet rule.
+      selectionEntry r89-we-daemon-angron-special-rules-3-fleet | Fleet
+  x1 | Uses the normal Fleet special rule.
+      selectionEntry live-r2-fulgrim-transfigured-rules-3-fleet | Fleet
+
+## Furious Charge
+  x2 | Uses the normal ProHammer Furious Charge special rule.
+      selectionEntry r41-unit-ix-10-nassir-amit-the-flesh-tearer | NASSIR AMIT, THE FLESH TEARER
+      selectionEntry r41-unit-x-5-autek-mor | AUTEK MOR
+  x1 | Selected as the Alpha Legion army’s Mutable Tactic. Applies to all qualifying non-vehicle units and does not count toward their Veteran Skill limit. Normal restrictions of the selected skill apply.
+      selectionEntry r46-al-mutable-1 | Furious Charge
+  x1 | Uses the normal Furious Charge rule.
+      selectionEntry r89-we-daemon-angron-special-rules-4-furious-charge | Furious Charge
+
+## Infiltrate
+  x5 | The unit uses the ProHammer Infiltrate special rule. If its mission or transport circumstances do not permit Infiltrate, deploy it normally.
+      selectionEntry r41-unit-viii-0-terror-squad | Terror Squad
+      selectionEntry r41-unit-viii-7-shang | Shang
+      selectionEntry r71-nl-shang-ret-0-r41-unit-viii-0-terror-squad | Terror Squad
+      selectionEntry r71-nl-curze-ret-3-r41-unit-viii-0-terror-squad | Terror Squad
+      selectionEntry r71-nl-ta-terror-r41-unit-viii-0-terror-squad | Terror Squad — Terror Assault Troops
+  x1 | Selected as the Alpha Legion army’s Mutable Tactic. Applies to all qualifying non-vehicle units and does not count toward their Veteran Skill limit. Normal restrictions of the selected skill apply.
+      selectionEntry r46-al-mutable-2 | Infiltrate
+  x1 | Uses the normal Infiltrate rule from ProHammer Classic.
+      selectionEntry recon-unit | Legion Reconnaissance Squad
+
+## Master of the Legion
+  x5 | This model has Master of the Legion and counts toward all normal Master of the Legion restrictions.
+      selectionEntry r41-unit-ix-6-raldoron-the-blooded | RALDORON, THE BLOODED
+      selectionEntry r41-unit-ix-10-nassir-amit-the-flesh-tearer | NASSIR AMIT, THE FLESH TEARER
+      selectionEntry r41-unit-x-4-shadrak-meduson | SHADRAK MEDUSON
+      selectionEntry r41-unit-x-5-autek-mor | AUTEK MOR
+      selectionEntry r41-unit-x-6-gabriel-santar | GABRIEL SANTAR
+  x3 | This model has the Master of the Legion special rule and counts toward all normal Master of the Legion restrictions.
+      selectionEntry r41-unit-viii-4-jago-sevatarion | Jago Sevatarion
+      selectionEntry r41-unit-viii-5-kheron-ophion | Kheron Ophion
+      selectionEntry r41-unit-viii-7-shang | Shang
+  x2 | Uses the normal Master of the Legion rule.
+      selectionEntry r89-we-kharn-special-rules-2-master-of-the-legion | Master of the Legion
+      selectionEntry r89-we-daemon-angron-special-rules-7-master-of-the-legion | Master of the Legion
+  x1 | A Detachment containing a model with this rule may select one Rite of War for which it qualifies. An army may include no more than one model with Master of the Legion for every full 1,000 points. A model with this rule may select an eligible retinue as described by its entry.
+      selectionEntry hq-praetor | Legion Praetor
+  x1 | Erasmus Golg has Master of the Legion.
+      selectionEntry r41-unit-iv-5-erasmus-golg | ERASMUS GOLG
+  x1 | Kyr Vhalen has Master of the Legion.
+      selectionEntry r41-unit-iv-6-kyr-vhalen | KYR VHALEN
+  x1 | The Delegatus has Master of the Legion and may enable one Rite of War, subject to the normal limits on that rule.
+      selectionEntry hq-consul-delegatus | Legion Delegatus Consul
+  x1 | This model has Master of the Legion.
+      selectionEntry r41-unit-iii-4-lord-commander-eidolon | LORD COMMANDER EIDOLON
+  x1 | Uses the normal Master of the Legion special rule.
+      selectionEntry live-r2-fulgrim-transfigured-rules-6-master-of-the-legion | Master of the Legion
+
+## Melta
+  x4 | At half the weapon's maximum range or less, roll 2D6 for Armour Penetration instead of D6.
+      selectionEntry gear-meltagun | Meltagun
+      selectionEntry gear-multimelta | Multi-Melta
+      selectionEntry r81-ih-ferrus-twin-linked-meltagun | Twin-linked Meltagun
+      selectionEntry r80-ih-ferrus-tl-melta | Twin-linked Meltagun
+
+## Move Through Cover
+  x2 | Thiel and every model in his squad gain Move Through Cover for the duration of the battle.
+      selectionEntry r8-tactical-unit-thiel-tactic-1 | Move Through Cover
+      selectionEntry r8-veteran-unit-thiel-tactic-1 | Move Through Cover
+  x1 | Selected as the Alpha Legion army’s Mutable Tactic. Applies to all qualifying non-vehicle units and does not count toward their Veteran Skill limit. Normal restrictions of the selected skill apply.
+      selectionEntry r46-al-mutable-3 | Move Through Cover
+  x1 | Uses the normal Move Through Cover rule from ProHammer Classic.
+      selectionEntry recon-unit | Legion Reconnaissance Squad
+  x1 | Uses the normal ProHammer Move Through Cover rule.
+      selectionEntry hs-leviathan | Leviathan Siege Dreadnought
+
+## Night Vision
+  x2 | Thiel and every model in his squad gain Night Vision for the duration of the battle.
+      selectionEntry r8-tactical-unit-thiel-tactic-2 | Night Vision
+      selectionEntry r8-veteran-unit-thiel-tactic-2 | Night Vision
+
+## Relentless
+  x1 | CHOSEN OF VAIROSEAN: Kakophoni in a 3rd Company Elite Detachment gain Relentless. This Troops entry may fulfil compulsory Troops selections.
+      selectionEntry r52-ec-third-kakophoni-troops | Kakophoni Squad — 3rd Company Troops
+
+## Rending
+  x4 | On a natural To Wound roll of 6, the wound is automatically successful and treated as a Power Weapon attack. Against vehicles, an Armour Penetration roll of 6 adds an additional D3.
+      selectionEntry gear-volkite-charger | Volkite Charger
+      selectionEntry gear-volkite-caliver | Volkite Caliver
+      selectionEntry gear-volkite-serpenta | Volkite Serpenta
+      selectionEntry gear-rending | Rending Weapon
+
+## Scout
+  x3 | Uses the normal ProHammer Scout special rule.
+      selectionEntry hq-consul-moritat | Legion Moritat Consul
+      selectionEntry hq-consul-vigilator | Legion Vigilator Consul
+      selectionEntry r30-prae-vorax | Vorax Class Battle-Automata Maniple
+  x1 | Uses the normal Scout rule from ProHammer Classic.
+      selectionEntry recon-unit | Legion Reconnaissance Squad
+
+## Sniper
+  x1 | Uses the normal Sniper weapon rules from ProHammer Classic.
+      selectionEntry gear-sniper-rifle | Sniper Rifle
+
+## Stealth
+  x1 | Konrad Curze has the Stealth special rule as part of Night Haunter.
+      selectionEntry r41-unit-viii-9-viii-konrad-curze-the-night-haunter | Konrad Curze, the Night Haunter
+  x1 | Uses the normal ProHammer Stealth special rule. Cameleoline is displayed as granted wargear.
+      selectionEntry hq-consul-vigilator | Legion Vigilator Consul
+
+## Tank Hunters
+  x2 | Thiel and every model in his squad gain Tank Hunters for the duration of the battle.
+      selectionEntry r8-tactical-unit-thiel-tactic-3 | Tank Hunters
+      selectionEntry r8-veteran-unit-thiel-tactic-3 | Tank Hunters
+  x1 | Orth’s Vehicle has the normal ProHammer Tank Hunters special rule. If the Vehicle is destroyed, Castrmen Orth is also slain for Victory Point and mission purposes. Orth is not a separate model and may not leave his Vehicle.
+      selectionEntry r79-ih-castrmen-orth | CASTRMEN ORTH
+  x1 | Selected as the Alpha Legion army’s Mutable Tactic. Applies to all qualifying non-vehicle units and does not count toward their Veteran Skill limit. Normal restrictions of the selected skill apply.
+      selectionEntry r46-al-mutable-5 | Tank Hunters
