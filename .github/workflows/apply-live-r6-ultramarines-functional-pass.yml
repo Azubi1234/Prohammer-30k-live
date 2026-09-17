@@ -1,0 +1,41 @@
+name: Apply Live R6 Ultramarines functional pass
+on:
+  push:
+    paths:
+      - '.github/build/live_r6_ultramarines_functional_pass.py'
+      - '.github/workflows/apply-live-r6-ultramarines-functional-pass.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply R6 Ultramarines pass
+        run: python .github/build/live_r6_ultramarines_functional_pass.py
+      - name: Verify XML and revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision')=='6'
+          assert r.get('gameSystemRevision')=='1'
+          idx=Path('index.xml').read_text(encoding='utf-8')
+          assert 'filePath="Legiones Astartes.cat"' in idx and 'dataRevision="6"' in idx
+          text=Path('inspection-live-r6-ultramarines-functional-pass.txt').read_text(encoding='utf-8')
+          assert 'LIVE R6' in text
+          print(text)
+          PY
+      - name: Commit Live R6
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r6-ultramarines-functional-pass.txt
+          git diff --cached --quiet || git commit -m 'Live R6: Ultramarines functional New Recruit pass'
+          git pull --rebase origin main
+          git push
