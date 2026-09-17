@@ -1,0 +1,212 @@
+=== r41-unit-v-6-shiban-khan SHIBAN KHAN ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r60-ws-shiban-bike" name="Space Marine Bike" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r60-ws-shiban-bike-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="35" id="r60-ws-shiban-bike-pts" />
+              </ns0:costs>
+              <ns0:rules>
+                <ns0:rule id="r69-ws-shiban-bike-rule" name="Space Marine Bike" hidden="false">
+                  <ns0:description>The character becomes Bike unit type and follows the normal ProHammer Bike rules. The bike is armed with twin-linked bolters.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            
+<ns0:rule xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-shiban-bike-rule" name="Space Marine Bike" hidden="false">
+                  <ns0:description>The character becomes Bike unit type and follows the normal ProHammer Bike rules. The bike is armed with twin-linked bolters.</ns0:description>
+                </ns0:rule>
+              
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r60-ws-shiban-jetbike" name="Upgrade Bike to Jetbike" type="upgrade" hidden="true" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r60-ws-shiban-jetbike-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" id="r60-ws-shiban-jetbike-pts" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier id="r60-ws-shiban-jetbike-show" type="set" value="false" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r60-ws-shiban-bike" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+              <ns0:rules>
+                <ns0:rule id="r69-ws-shiban-jet-rule" name="Jetbike" hidden="false">
+                  <ns0:description>May only be selected if the character has purchased a Space Marine Bike. For a further +5 points the Bike is upgraded to a Jetbike; the character follows the normal ProHammer Jetbike rules.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          
+<ns0:rule xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-shiban-jet-rule" name="Jetbike" hidden="false">
+                  <ns0:description>May only be selected if the character has purchased a Space Marine Bike. For a further +5 points the Bike is upgraded to a Jetbike; the character follows the normal ProHammer Jetbike rules.</ns0:description>
+                </ns0:rule>
+              
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-shiban-command-bikes" name="Space Marine Bikes (entire squad)" type="upgrade" hidden="true" import="true">
+                  <ns0:constraints>
+                    <ns0:constraint id="r69-ws-shiban-command-bikes-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:constraints>
+                  <ns0:costs>
+                    <ns0:cost name="Points" typeId="pts" value="100" id="r69-ws-shiban-command-bikes-pts" />
+                  </ns0:costs>
+                  <ns0:modifiers>
+                    <ns0:modifier id="r69-ws-shiban-command-bikes-show" type="set" value="false" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r60-ws-shiban-bike" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                    <ns0:modifier id="r69-hide-r69-ws-shiban-command-bikes-r60-ws-shiban-retinue-legion-command-squad-hq-centurion-ret-command-jump" type="set" value="true" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r60-ws-shiban-retinue-legion-command-squad-hq-centurion-ret-command-jump" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                  </ns0:modifiers>
+                  <ns0:rules>
+                    <ns0:rule id="r69-ws-shiban-command-bikes-rule" name="Mounted Retinue" hidden="false">
+                      <ns0:description>Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.</ns0:description>
+                    </ns0:rule>
+                  </ns0:rules>
+                </ns0:selectionEntry>
+                
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" name="Space Marine Bikes (+20 pts/model)" id="r60-ws-shiban-retinue-legion-command-squad-hq-centurion-ret-command-bike" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r60-ws-shiban-retinue-legion-command-squad-hq-centurion-ret-command-bike-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:costs>
+                        <ns0:cost name="Points" typeId="pts" value="100" />
+                      </ns0:costs>
+                    </ns0:selectionEntry>
+                    
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" name="Jetbikes (+35 pts/model)" id="r60-ws-shiban-retinue-legion-command-squad-hq-centurion-ret-command-jet" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r60-ws-shiban-retinue-legion-command-squad-hq-centurion-ret-command-jet-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:costs>
+                        <ns0:cost name="Points" typeId="pts" value="175" />
+                      </ns0:costs>
+                    </ns0:selectionEntry>
+                  
+=== r41-unit-v-7-hibou-khan HIBOU KHAN ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r60-ws-hibou-bike" name="Space Marine Bike" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r60-ws-hibou-bike-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="35" id="r60-ws-hibou-bike-pts" />
+              </ns0:costs>
+              <ns0:rules>
+                <ns0:rule id="r69-ws-hibou-bike-rule" name="Space Marine Bike" hidden="false">
+                  <ns0:description>The character becomes Bike unit type and follows the normal ProHammer Bike rules. The bike is armed with twin-linked bolters.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            
+<ns0:rule xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-hibou-bike-rule" name="Space Marine Bike" hidden="false">
+                  <ns0:description>The character becomes Bike unit type and follows the normal ProHammer Bike rules. The bike is armed with twin-linked bolters.</ns0:description>
+                </ns0:rule>
+              
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r60-ws-hibou-jetbike" name="Upgrade Bike to Jetbike" type="upgrade" hidden="true" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r60-ws-hibou-jetbike-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" id="r60-ws-hibou-jetbike-pts" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier id="r60-ws-hibou-jetbike-show" type="set" value="false" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r60-ws-hibou-bike" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+              <ns0:rules>
+                <ns0:rule id="r69-ws-hibou-jet-rule" name="Jetbike" hidden="false">
+                  <ns0:description>May only be selected if the character has purchased a Space Marine Bike. For a further +5 points the Bike is upgraded to a Jetbike; the character follows the normal ProHammer Jetbike rules.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          
+<ns0:rule xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-hibou-jet-rule" name="Jetbike" hidden="false">
+                  <ns0:description>May only be selected if the character has purchased a Space Marine Bike. For a further +5 points the Bike is upgraded to a Jetbike; the character follows the normal ProHammer Jetbike rules.</ns0:description>
+                </ns0:rule>
+              
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-hibou-command-bikes" name="Space Marine Bikes (entire squad)" type="upgrade" hidden="true" import="true">
+                  <ns0:constraints>
+                    <ns0:constraint id="r69-ws-hibou-command-bikes-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:constraints>
+                  <ns0:costs>
+                    <ns0:cost name="Points" typeId="pts" value="100" id="r69-ws-hibou-command-bikes-pts" />
+                  </ns0:costs>
+                  <ns0:modifiers>
+                    <ns0:modifier id="r69-ws-hibou-command-bikes-show" type="set" value="false" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r60-ws-hibou-bike" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                    <ns0:modifier id="r69-hide-r69-ws-hibou-command-bikes-r60-ws-hibou-retinue-legion-command-squad-hq-centurion-ret-command-jump" type="set" value="true" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r60-ws-hibou-retinue-legion-command-squad-hq-centurion-ret-command-jump" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                  </ns0:modifiers>
+                  <ns0:rules>
+                    <ns0:rule id="r69-ws-hibou-command-bikes-rule" name="Mounted Retinue" hidden="false">
+                      <ns0:description>Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.</ns0:description>
+                    </ns0:rule>
+                  </ns0:rules>
+                </ns0:selectionEntry>
+                
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" name="Space Marine Bikes (+20 pts/model)" id="r60-ws-hibou-retinue-legion-command-squad-hq-centurion-ret-command-bike" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r60-ws-hibou-retinue-legion-command-squad-hq-centurion-ret-command-bike-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:costs>
+                        <ns0:cost name="Points" typeId="pts" value="100" />
+                      </ns0:costs>
+                    </ns0:selectionEntry>
+                    
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="upgrade" name="Jetbikes (+35 pts/model)" id="r60-ws-hibou-retinue-legion-command-squad-hq-centurion-ret-command-jet" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r60-ws-hibou-retinue-legion-command-squad-hq-centurion-ret-command-jet-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:costs>
+                        <ns0:cost name="Points" typeId="pts" value="175" />
+                      </ns0:costs>
+                    </ns0:selectionEntry>
+                  
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r69-ws-hibou-veteran-bikes" name="Space Marine Bikes (entire squad)" type="upgrade" hidden="true" import="true">
+                  <ns0:constraints>
+                    <ns0:constraint id="r69-ws-hibou-veteran-bikes-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:constraints>
+                  <ns0:costs>
+                    <ns0:cost name="Points" typeId="pts" value="100" id="r69-ws-hibou-veteran-bikes-pts" />
+                  </ns0:costs>
+                  <ns0:modifiers>
+                    <ns0:modifier id="r69-ws-hibou-veteran-bikes-scale" type="increment" value="20" field="pts">
+                      <ns0:repeats>
+                        <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="r60-ws-hibou-retinue-legion-veteran-squad-veteran-included" shared="true" roundUp="false" includeChildSelections="false" includeChildForces="false" />
+                      </ns0:repeats>
+                    </ns0:modifier>
+                    <ns0:modifier id="r69-ws-hibou-veteran-bikes-show" type="set" value="false" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r60-ws-hibou-bike" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                    <ns0:modifier id="r69-hide-r69-ws-hibou-veteran-bikes-r60-ws-hibou-retinue-legion-veteran-squad-veteran-jump-packs" type="set" value="true" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r60-ws-hibou-retinue-legion-veteran-squad-veteran-jump-packs" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                    <ns0:modifier id="r69-hide-r69-ws-hibou-veteran-bikes-r60-ws-hibou-retinue-legion-veteran-squad-r35-assault-jp-veteran-jump-packs" type="set" value="true" field="hidden">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r60-ws-hibou-retinue-legion-veteran-squad-r35-assault-jp-veteran-jump-packs" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                  </ns0:modifiers>
+                  <ns0:rules>
+                    <ns0:rule id="r69-ws-hibou-veteran-bikes-rule" name="Mounted Retinue" hidden="false">
+                      <ns0:description>Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.</ns0:description>
+                    </ns0:rule>
+                  </ns0:rules>
+                </ns0:selectionEntry>
+                
