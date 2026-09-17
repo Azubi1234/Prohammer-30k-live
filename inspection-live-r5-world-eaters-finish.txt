@@ -1,0 +1,37 @@
+LIVE R5 — World Eaters finish
+CAT=5 GSTref=1
+
+Tactical squad copies cleaned: 3
+  + tactical-unit: whole-squad Chainswords=load-add-chainswords; free Bolter exchange=load-exchange; free exchange hides special/heavy weapons
+  + r40-da-storm-tactical: whole-squad Chainswords=r40-da-storm-tactical-load-add-chainswords; free Bolter exchange=r40-da-storm-tactical-load-exchange; free exchange hides special/heavy weapons
+  + r57-iw-hammer-tactical: whole-squad Chainswords=r57-iw-hammer-tactical-load-add-chainswords; free Bolter exchange=r57-iw-hammer-tactical-load-exchange; free exchange hides special/heavy weapons
+
+Tactical Krak whole-squad upgrades fixed: 3
+  + tactical-unit
+  + r40-da-storm-tactical
+  + r57-iw-hammer-tactical
+
+Chainaxe squad selectors converted to whole-squad scaling: 16
+  + tactical-unit: r45-tactical-unit-we-chain -> live-r5-chainaxe-tactical-unit-normal @ +4/model
+  + assault-unit: r45-assault-unit-we-chain -> live-r5-chainaxe-assault-unit-normal @ +4/model
+  + assault-unit: r45-assault-unit-we-chain-discount -> live-r5-chainaxe-assault-unit-berserker @ +2/model
+  + breacher-unit: r45-breacher-unit-we-chain -> live-r5-chainaxe-breacher-unit-normal @ +4/model
+  + veteran-unit: r45-veteran-unit-we-chain -> live-r5-chainaxe-veteran-unit-normal @ +4/model
+  + destroyer-unit: r45-destroyer-unit-we-chain -> live-r5-chainaxe-destroyer-unit-normal @ +4/model
+  + r60-ws-hibou-retinue-legion-veteran-squad: r60-ws-hibou-retinue-legion-veteran-squad-r45-veteran-unit-we-chain -> live-r5-chainaxe-r60-ws-hibou-retinue-legion-veteran-squad-normal @ +4/model
+  + r60-ws-hasik-retinue-legion-veteran-squad: r60-ws-hasik-retinue-legion-veteran-squad-r45-veteran-unit-we-chain -> live-r5-chainaxe-r60-ws-hasik-retinue-legion-veteran-squad-normal @ +4/model
+  + r71-nl-mal-ret-1-veteran-unit: r71-nl-mal-ret-1-r45-veteran-unit-we-chain -> live-r5-chainaxe-r71-nl-mal-ret-1-veteran-unit-normal @ +4/model
+  + live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain -> live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-normal @ +4/model
+  + live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-discount -> live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-berserker @ +2/model
+  + live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-veteran-unit-we-chain -> live-r5-chainaxe-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-normal @ +4/model
+  + live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-veteran-unit-we-chain -> live-r5-chainaxe-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-normal @ +4/model
+  + r57-iw-hammer-tactical: r57-iw-hammer-tactical-r45-tactical-unit-we-chain -> live-r5-chainaxe-r57-iw-hammer-tactical-normal @ +4/model
+  + r57-iw-hammer-breacher: r57-iw-hammer-breacher-r45-breacher-unit-we-chain -> live-r5-chainaxe-r57-iw-hammer-breacher-normal @ +4/model
+  + r74-ba-rev-vet-veteran-unit: r74-ba-rev-vet-r45-veteran-unit-we-chain -> live-r5-chainaxe-r74-ba-rev-vet-veteran-unit-normal @ +4/model
+
+Redundant Rampager Chainaxe purchase selectors removed: 3
+  + r41-unit-xii-0-rampager-squad
+  + live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad
+  + r46-al-reward-28
+
+Personal character/Sergeant Armoury Chainaxe options are unchanged. Existing World Eaters retinues and R3 fixes are preserved.

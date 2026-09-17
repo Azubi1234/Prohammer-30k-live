@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -4428,28 +4428,28 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols" hidden="false" id="load-standard" defaultAmount="1">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
+                <entryLink import="true" name="Bolter" hidden="true" id="load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="load-standard-b-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="load-standard-b-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="load-standard-p-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="load-standard-p-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
               </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords (+2 pts/model)" hidden="false" id="load-add-chainswords">
+            <costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords — entire squad (+2 pts/model)" hidden="false" id="load-add-chainswords">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="false" id="load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolter" hidden="true" id="load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="true" id="load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
               <costs>
-                <cost name="Points" typeId="pts" value="2" />
+                <cost name="Points" typeId="pts" value="0" />
               </costs>
               <modifiers>
                 <modifier type="increment" value="2" field="pts">
@@ -4457,35 +4457,27 @@
                     <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="tac-marine" shared="true" roundUp="false" includeChildSelections="false" />
                   </repeats>
                 </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords (Free)" hidden="false" id="load-exchange">
+              <modifier id="load-add-chainswords-r5scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="load-add-chainswords-r5scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <rules><rule id="load-add-chainswords-r5rule" name="Whole-squad Chainswords" hidden="false"><description>The entire squad retains its Bolters and Bolt pistols and also takes Chainswords for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords — entire squad (Free)" hidden="false" id="load-exchange">
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="false" id="load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="true" id="load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
-            </selectionEntry>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="load-exchange-r5rule" name="Exchange Bolters for Chainswords" hidden="false"><description>The entire squad exchanges its Bolters for Chainswords at no additional cost. Because the squad no longer has Bolters to replace, Special Weapon and Heavy Weapon selections are unavailable while this option is selected.</description></rule></rules></selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Squad Grenades" id="tac-grenades" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Krak Grenades (+2 pts/model)" hidden="false" id="tac-krak" type="selectionEntry" targetId="gear-krak">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="tac-krak-max" includeChildSelections="false" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="2" />
-              </costs>
-              <modifiers>
+            </entryLinks>
+        <selectionEntries><selectionEntry id="tac-grenades-r5-krak-whole-squad" name="Krak Grenades — entire squad (+2 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="tac-grenades-r5-krak-whole-squad-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
                 <modifier type="increment" value="2" field="pts">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="tac-marine" shared="true" roundUp="false" includeChildSelections="false" />
                   </repeats>
                 </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
+              <modifier id="tac-grenades-r5-krak-whole-squad-scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="tac-grenades-r5-krak-whole-squad-scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="tac-grenades-r5-krak-whole-squad-rule" name="Whole-squad Krak Grenades" hidden="false"><description>The entire squad takes Krak Grenades for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup name="Heavy Weapons" id="tac-heavy-weapons" hidden="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="tac-heavy-max" includeChildSelections="true" />
@@ -4501,7 +4493,7 @@
                 <condition type="equalTo" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="false" />
               </conditions>
             </modifier>
-          </modifiers>
+          <modifier id="tac-heavy-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
           <entryLinks>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="hv-hb" type="selectionEntry" targetId="gear-heavy-bolter">
               <constraints>
@@ -4608,7 +4600,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-          </modifiers>
+          <modifier id="tac-special-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="sp-f" type="selectionEntry" targetId="gear-flamer">
               <constraints>
@@ -5523,18 +5515,6 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="r45-tactical-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-tactical-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-10" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r45-tactical-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r45-tactical-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -5659,7 +5639,14 @@
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-tactical-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-tactical-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r48-vis-10" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-tactical-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-tactical-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-tactical-unit-normal-needs-chainsword" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="lessThan" value="1" field="selections" scope="parent" childId="load-add-chainswords" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-tactical-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-tactical-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-tactical-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -6813,44 +6800,6 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="r45-assault-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-assault-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden" id="r45-assault-unit-we-chain-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier id="r48-vis-30" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="r45-assault-unit-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-assault-unit-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-31" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier id="r48-vis-32" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r45-assault-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r45-assault-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -6905,7 +6854,35 @@
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-assault-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-assault-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier type="set" value="true" field="hidden" id="r45-assault-unit-we-chain-hide-rite">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier id="r48-vis-30" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-assault-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="assault-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-assault-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="assault-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-assault-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry><selectionEntry id="live-r5-chainaxe-assault-unit-berserker" name="Chainaxes — entire squad (+2 pts/model) — Berserker Assault" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-assault-unit-berserker-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r48-vis-31" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r48-vis-32" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-assault-unit-berserker-scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="assault-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-assault-unit-berserker-scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="assault-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-assault-unit-berserker-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +2 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-assault-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-assault-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -8408,18 +8385,6 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="r49-legion-upgrades-breacher-unit" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="r45-breacher-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-breacher-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-43" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r45-breacher-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r45-breacher-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -8510,7 +8475,14 @@
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-breacher-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-breacher-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r48-vis-43" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-breacher-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="breacher-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-breacher-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="breacher-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-breacher-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-breacher-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-breacher-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -11780,18 +11752,6 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-73" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -11992,7 +11952,14 @@
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-veteran-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-veteran-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r48-vis-73" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-veteran-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-veteran-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -14773,18 +14740,6 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="r49-legion-upgrades-destroyer-unit" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="r45-destroyer-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-destroyer-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-110" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r45-destroyer-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r45-destroyer-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -14822,7 +14777,14 @@
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-destroyer-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-destroyer-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r48-vis-110" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-destroyer-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="destroyer-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-destroyer-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="destroyer-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-destroyer-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r52-destroyer-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r52-destroyer-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -60874,28 +60836,28 @@ The Detachment may not include an Allied Detachment.</description>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols" hidden="false" id="r40-da-storm-tactical-load-standard" defaultAmount="1">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="r40-da-storm-tactical-load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
+                <entryLink import="true" name="Bolter" hidden="true" id="r40-da-storm-tactical-load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="r40-da-storm-tactical-load-standard-b-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r40-da-storm-tactical-load-standard-b-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="r40-da-storm-tactical-load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="r40-da-storm-tactical-load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="r40-da-storm-tactical-load-standard-p-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r40-da-storm-tactical-load-standard-p-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
               </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords (+2 pts/model)" hidden="false" id="r40-da-storm-tactical-load-add-chainswords">
+            <costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords — entire squad (+2 pts/model)" hidden="false" id="r40-da-storm-tactical-load-add-chainswords">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="r40-da-storm-tactical-load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="r40-da-storm-tactical-load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="false" id="r40-da-storm-tactical-load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolter" hidden="true" id="r40-da-storm-tactical-load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="r40-da-storm-tactical-load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="true" id="r40-da-storm-tactical-load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
               <costs>
-                <cost name="Points" typeId="pts" value="2" />
+                <cost name="Points" typeId="pts" value="0" />
               </costs>
               <modifiers>
                 <modifier type="increment" value="2" field="pts">
@@ -60903,35 +60865,27 @@ The Detachment may not include an Allied Detachment.</description>
                     <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="r40-da-storm-tactical-tac-marine" shared="true" roundUp="false" includeChildSelections="false" />
                   </repeats>
                 </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords (Free)" hidden="false" id="r40-da-storm-tactical-load-exchange">
+              <modifier id="r40-da-storm-tactical-load-add-chainswords-r5scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r40-da-storm-tactical-tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="r40-da-storm-tactical-load-add-chainswords-r5scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r40-da-storm-tactical-tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <rules><rule id="r40-da-storm-tactical-load-add-chainswords-r5rule" name="Whole-squad Chainswords" hidden="false"><description>The entire squad retains its Bolters and Bolt pistols and also takes Chainswords for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords — entire squad (Free)" hidden="false" id="r40-da-storm-tactical-load-exchange">
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="r40-da-storm-tactical-load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="false" id="r40-da-storm-tactical-load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="r40-da-storm-tactical-load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="true" id="r40-da-storm-tactical-load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
-            </selectionEntry>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="r40-da-storm-tactical-load-exchange-r5rule" name="Exchange Bolters for Chainswords" hidden="false"><description>The entire squad exchanges its Bolters for Chainswords at no additional cost. Because the squad no longer has Bolters to replace, Special Weapon and Heavy Weapon selections are unavailable while this option is selected.</description></rule></rules></selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Squad Grenades" id="r40-da-storm-tactical-tac-grenades" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Krak Grenades (+2 pts/model)" hidden="false" id="r40-da-storm-tactical-tac-krak" type="selectionEntry" targetId="gear-krak">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r40-da-storm-tactical-tac-krak-max" includeChildSelections="false" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="2" />
-              </costs>
-              <modifiers>
+            </entryLinks>
+        <selectionEntries><selectionEntry id="r40-da-storm-tactical-tac-grenades-r5-krak-whole-squad" name="Krak Grenades — entire squad (+2 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="r40-da-storm-tactical-tac-grenades-r5-krak-whole-squad-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
                 <modifier type="increment" value="2" field="pts">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="r40-da-storm-tactical-tac-marine" shared="true" roundUp="false" includeChildSelections="false" />
                   </repeats>
                 </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
+              <modifier id="r40-da-storm-tactical-tac-grenades-r5-krak-whole-squad-scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r40-da-storm-tactical-tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="r40-da-storm-tactical-tac-grenades-r5-krak-whole-squad-scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r40-da-storm-tactical-tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="r40-da-storm-tactical-tac-grenades-r5-krak-whole-squad-rule" name="Whole-squad Krak Grenades" hidden="false"><description>The entire squad takes Krak Grenades for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup name="Heavy Weapons" id="r40-da-storm-tactical-tac-heavy-weapons" hidden="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r40-da-storm-tactical-tac-heavy-max" includeChildSelections="true" />
@@ -60947,7 +60901,7 @@ The Detachment may not include an Allied Detachment.</description>
                 <condition type="equalTo" value="19" field="selections" scope="root-entry" childId="r40-da-storm-tactical-tac-marine" shared="true" includeChildSelections="false" />
               </conditions>
             </modifier>
-          </modifiers>
+          <modifier id="r40-da-storm-tactical-tac-heavy-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="r40-da-storm-tactical-load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
           <entryLinks>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="r40-da-storm-tactical-hv-hb" type="selectionEntry" targetId="gear-heavy-bolter">
               <constraints>
@@ -61054,7 +61008,7 @@ The Detachment may not include an Allied Detachment.</description>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-          </modifiers>
+          <modifier id="r40-da-storm-tactical-tac-special-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="r40-da-storm-tactical-load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="r40-da-storm-tactical-sp-f" type="selectionEntry" targetId="gear-flamer">
               <constraints>
@@ -84557,18 +84511,6 @@ The Detachment may not include an Allied Detachment.</description>
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink id="r60-ws-hibou-retinue-legion-veteran-squad-r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-                      <constraints>
-                        <constraint id="r60-ws-hibou-retinue-legion-veteran-squad-r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </constraints>
-                      <modifiers>
-                        <modifier id="r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-73" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
                     <entryLink id="r60-ws-hibou-retinue-legion-veteran-squad-r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
                       <constraints>
                         <constraint id="r60-ws-hibou-retinue-legion-veteran-squad-r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -84769,7 +84711,14 @@ The Detachment may not include an Allied Detachment.</description>
                       </modifiers>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
+                <selectionEntries><selectionEntry id="live-r5-chainaxe-r60-ws-hibou-retinue-legion-veteran-squad-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-r60-ws-hibou-retinue-legion-veteran-squad-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                        <modifier id="r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-73" type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                          </conditions>
+                        </modifier>
+                      <modifier id="live-r5-chainaxe-r60-ws-hibou-retinue-legion-veteran-squad-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r60-ws-hibou-retinue-legion-veteran-squad-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r60-ws-hibou-retinue-legion-veteran-squad-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r60-ws-hibou-retinue-legion-veteran-squad-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+                    <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-r60-ws-hibou-retinue-legion-veteran-squad-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
                 <selectionEntryGroup id="r60-ws-hibou-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
                   <selectionEntries>
                     <selectionEntry id="r60-ws-hibou-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -87405,18 +87354,6 @@ The Detachment may not include an Allied Detachment.</description>
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink id="r60-ws-hasik-retinue-legion-veteran-squad-r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-                      <constraints>
-                        <constraint id="r60-ws-hasik-retinue-legion-veteran-squad-r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </constraints>
-                      <modifiers>
-                        <modifier id="r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-73" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
                     <entryLink id="r60-ws-hasik-retinue-legion-veteran-squad-r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
                       <constraints>
                         <constraint id="r60-ws-hasik-retinue-legion-veteran-squad-r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -87617,7 +87554,14 @@ The Detachment may not include an Allied Detachment.</description>
                       </modifiers>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
+                <selectionEntries><selectionEntry id="live-r5-chainaxe-r60-ws-hasik-retinue-legion-veteran-squad-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-r60-ws-hasik-retinue-legion-veteran-squad-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                        <modifier id="r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-73" type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                          </conditions>
+                        </modifier>
+                      <modifier id="live-r5-chainaxe-r60-ws-hasik-retinue-legion-veteran-squad-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r60-ws-hasik-retinue-legion-veteran-squad-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r60-ws-hasik-retinue-legion-veteran-squad-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r60-ws-hasik-retinue-legion-veteran-squad-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+                    <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-r60-ws-hasik-retinue-legion-veteran-squad-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
                 <selectionEntryGroup id="r60-ws-hasik-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
                   <selectionEntries>
                     <selectionEntry id="r60-ws-hasik-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -125935,18 +125879,6 @@ The Detachment may not include an Allied Detachment.</description>
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink id="r71-nl-mal-ret-1-r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </constraints>
-                      <modifiers>
-                        <modifier id="r71-nl-mal-ret-1-r48-vis-73" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
                     <entryLink id="r71-nl-mal-ret-1-r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
                       <constraints>
                         <constraint id="r71-nl-mal-ret-1-r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -126147,7 +126079,14 @@ The Detachment may not include an Allied Detachment.</description>
                       </modifiers>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
+                <selectionEntries><selectionEntry id="live-r5-chainaxe-r71-nl-mal-ret-1-veteran-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-r71-nl-mal-ret-1-veteran-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                        <modifier id="r71-nl-mal-ret-1-r48-vis-73" type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                          </conditions>
+                        </modifier>
+                      <modifier id="live-r5-chainaxe-r71-nl-mal-ret-1-veteran-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r71-nl-mal-ret-1-veteran-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+                    <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-r71-nl-mal-ret-1-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-mal-ret-1-r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
                   <selectionEntries>
                     <selectionEntry id="r71-nl-mal-ret-1-r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -144426,45 +144365,7 @@ The Detachment may not include an Allied Detachment.</description>
         </selectionEntryGroup>
         <selectionEntryGroup id="r49-legion-upgrades-r41-unit-xii-0-rampager-squad" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="r45-r41-unit-xii-0-rampager-squad-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-r41-unit-xii-0-rampager-squad-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden" id="r45-r41-unit-xii-0-rampager-squad-we-chain-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier id="r48-vis-317" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="r45-r41-unit-xii-0-rampager-squad-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
-              <constraints>
-                <constraint id="r45-r41-unit-xii-0-rampager-squad-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-318" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier id="r48-vis-319" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
+            </entryLinks>
         </selectionEntryGroup>
       <selectionEntryGroup id="r87-we-r41-unit-xii-0-rampager-squad-wargear" name="Wargear" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour" name="Power Armour" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe" name="Chainaxe" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe-rule" name="Chainaxe" hidden="false"><description>An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="r87-we-r41-unit-xii-0-rampager-squad-special-rules" name="Special Rules" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters" name="Legiones Astartes (World Eaters)" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters-rule" name="Legiones Astartes (World Eaters)" hidden="false"><description>Uses the World Eaters Legion special rule.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
       </selectionEntry>
@@ -145906,45 +145807,7 @@ The Detachment may not include an Allied Detachment.</description>
         </selectionEntryGroup>
         <selectionEntryGroup id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r49-legion-upgrades-r41-unit-xii-0-rampager-squad" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden" id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r48-vis-317" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
-              <constraints>
-                <constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r48-vis-318" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r48-vis-319" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
+            </entryLinks>
         </selectionEntryGroup>
       <selectionEntryGroup id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear" name="Wargear" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour" name="Power Armour" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-power-armour-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol" name="Bolt pistol" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-bolt-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe" name="Chainaxe" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-wargear-chainaxe-rule" name="Chainaxe" hidden="false"><description>An Armour Save better than 4+ is reduced to 4+ against wounds caused by a Chainaxe; Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules" name="Special Rules" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters" name="Legiones Astartes (World Eaters)" type="upgrade" hidden="false" import="true" defaultAmount="1"><costs><cost name="Points" typeId="pts" value="0" /></costs><constraints><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters-min" type="min" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters-max" type="max" value="1" field="selections" scope="parent" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r87-we-r41-unit-xii-0-rampager-squad-special-rules-legiones-astartes-world-eaters-rule" name="Legiones Astartes (World Eaters)" hidden="false"><description>Uses the World Eaters Legion special rule.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
       <constraints><constraint id="live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-ret-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
@@ -147049,44 +146912,6 @@ The Detachment may not include an Allied Detachment.</description>
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden" id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r48-vis-30" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
-              <constraints>
-                <constraint id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r48-vis-31" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r48-vis-32" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -147141,7 +146966,35 @@ The Detachment may not include an Allied Detachment.</description>
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier type="set" value="true" field="hidden" id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-hide-rite">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r48-vis-30" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry><selectionEntry id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-berserker" name="Chainaxes — entire squad (+2 pts/model) — Berserker Assault" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-berserker-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r48-vis-31" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r48-vis-32" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-berserker-scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-berserker-scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit-berserker-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +2 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r52-assault-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r52-assault-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -172380,18 +172233,6 @@ OPTIONS
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r48-vis-73" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -172592,7 +172433,14 @@ OPTIONS
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r48-vis-73" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -174544,18 +174392,6 @@ OPTIONS
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r48-vis-73" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -174756,7 +174592,14 @@ OPTIONS
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r48-vis-73" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -207261,45 +207104,7 @@ OPTIONS
         </selectionEntryGroup>
         <selectionEntryGroup id="r49-legion-upgrades-r46-al-reward-28" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden" id="r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier id="r48-vis-433" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
-              <constraints>
-                <constraint id="r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r48-vis-434" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier id="r48-vis-435" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
+            </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -217657,28 +217462,28 @@ OPTIONS
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols" hidden="false" id="r57-iw-hammer-tactical-load-standard" defaultAmount="1">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="r57-iw-hammer-tactical-load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
+                <entryLink import="true" name="Bolter" hidden="true" id="r57-iw-hammer-tactical-load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="r57-iw-hammer-tactical-load-standard-b-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r57-iw-hammer-tactical-load-standard-b-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="r57-iw-hammer-tactical-load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="r57-iw-hammer-tactical-load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="r57-iw-hammer-tactical-load-standard-p-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r57-iw-hammer-tactical-load-standard-p-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
               </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords (+2 pts/model)" hidden="false" id="r57-iw-hammer-tactical-load-add-chainswords">
+            <costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords — entire squad (+2 pts/model)" hidden="false" id="r57-iw-hammer-tactical-load-add-chainswords">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="r57-iw-hammer-tactical-load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="r57-iw-hammer-tactical-load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="false" id="r57-iw-hammer-tactical-load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolter" hidden="true" id="r57-iw-hammer-tactical-load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="r57-iw-hammer-tactical-load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="true" id="r57-iw-hammer-tactical-load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
               <costs>
-                <cost name="Points" typeId="pts" value="2" />
+                <cost name="Points" typeId="pts" value="0" />
               </costs>
               <modifiers>
                 <modifier type="increment" value="2" field="pts">
@@ -217686,35 +217491,27 @@ OPTIONS
                     <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="r57-iw-hammer-tactical-tac-marine" shared="true" roundUp="false" includeChildSelections="false" />
                   </repeats>
                 </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords (Free)" hidden="false" id="r57-iw-hammer-tactical-load-exchange">
+              <modifier id="r57-iw-hammer-tactical-load-add-chainswords-r5scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-tactical-tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="r57-iw-hammer-tactical-load-add-chainswords-r5scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-tactical-tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <rules><rule id="r57-iw-hammer-tactical-load-add-chainswords-r5rule" name="Whole-squad Chainswords" hidden="false"><description>The entire squad retains its Bolters and Bolt pistols and also takes Chainswords for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords — entire squad (Free)" hidden="false" id="r57-iw-hammer-tactical-load-exchange">
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="r57-iw-hammer-tactical-load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="false" id="r57-iw-hammer-tactical-load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="true" id="r57-iw-hammer-tactical-load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="true" id="r57-iw-hammer-tactical-load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
-            </selectionEntry>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="r57-iw-hammer-tactical-load-exchange-r5rule" name="Exchange Bolters for Chainswords" hidden="false"><description>The entire squad exchanges its Bolters for Chainswords at no additional cost. Because the squad no longer has Bolters to replace, Special Weapon and Heavy Weapon selections are unavailable while this option is selected.</description></rule></rules></selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Squad Grenades" id="r57-iw-hammer-tactical-tac-grenades" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Krak Grenades (+2 pts/model)" hidden="false" id="r57-iw-hammer-tactical-tac-krak" type="selectionEntry" targetId="gear-krak">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r57-iw-hammer-tactical-tac-krak-max" includeChildSelections="false" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="2" />
-              </costs>
-              <modifiers>
+            </entryLinks>
+        <selectionEntries><selectionEntry id="r57-iw-hammer-tactical-tac-grenades-r5-krak-whole-squad" name="Krak Grenades — entire squad (+2 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="r57-iw-hammer-tactical-tac-grenades-r5-krak-whole-squad-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
                 <modifier type="increment" value="2" field="pts">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="r57-iw-hammer-tactical-tac-marine" shared="true" roundUp="false" includeChildSelections="false" />
                   </repeats>
                 </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
+              <modifier id="r57-iw-hammer-tactical-tac-grenades-r5-krak-whole-squad-scale-0" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-tactical-tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="r57-iw-hammer-tactical-tac-grenades-r5-krak-whole-squad-scale-1" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-tactical-tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="r57-iw-hammer-tactical-tac-grenades-r5-krak-whole-squad-rule" name="Whole-squad Krak Grenades" hidden="false"><description>The entire squad takes Krak Grenades for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup name="Heavy Weapons" id="r57-iw-hammer-tactical-tac-heavy-weapons" hidden="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="r57-iw-hammer-tactical-tac-heavy-max" includeChildSelections="true" />
@@ -217730,7 +217527,7 @@ OPTIONS
                 <condition type="equalTo" value="19" field="selections" scope="root-entry" childId="r57-iw-hammer-tactical-tac-marine" shared="true" includeChildSelections="false" />
               </conditions>
             </modifier>
-          </modifiers>
+          <modifier id="r57-iw-hammer-tactical-tac-heavy-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="r57-iw-hammer-tactical-load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
           <entryLinks>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="r57-iw-hammer-tactical-hv-hb" type="selectionEntry" targetId="gear-heavy-bolter">
               <constraints>
@@ -217837,7 +217634,7 @@ OPTIONS
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-          </modifiers>
+          <modifier id="r57-iw-hammer-tactical-tac-special-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="parent" childId="r57-iw-hammer-tactical-load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="r57-iw-hammer-tactical-sp-f" type="selectionEntry" targetId="gear-flamer">
               <constraints>
@@ -218719,18 +218516,6 @@ OPTIONS
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="r57-iw-hammer-tactical-r45-tactical-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r57-iw-hammer-tactical-r45-tactical-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r57-iw-hammer-tactical-r48-vis-10" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r57-iw-hammer-tactical-r45-tactical-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r57-iw-hammer-tactical-r45-tactical-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -218855,7 +218640,14 @@ OPTIONS
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-r57-iw-hammer-tactical-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-r57-iw-hammer-tactical-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r57-iw-hammer-tactical-r48-vis-10" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-r57-iw-hammer-tactical-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-tactical-tac-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r57-iw-hammer-tactical-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-tactical-tac-sergeant" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r57-iw-hammer-tactical-normal-needs-chainsword" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="lessThan" value="1" field="selections" scope="parent" childId="r57-iw-hammer-tactical-load-add-chainswords" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="parent" childId="r57-iw-hammer-tactical-load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-r57-iw-hammer-tactical-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r57-iw-hammer-tactical-r52-tactical-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r57-iw-hammer-tactical-r52-tactical-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -220456,18 +220248,6 @@ OPTIONS
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="r57-iw-hammer-breacher-r45-breacher-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r57-iw-hammer-breacher-r45-breacher-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r57-iw-hammer-breacher-r48-vis-43" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r57-iw-hammer-breacher-r45-breacher-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r57-iw-hammer-breacher-r45-breacher-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -220558,7 +220338,14 @@ OPTIONS
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-r57-iw-hammer-breacher-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-r57-iw-hammer-breacher-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r57-iw-hammer-breacher-r48-vis-43" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-r57-iw-hammer-breacher-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-breacher-breacher-marine" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r57-iw-hammer-breacher-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r57-iw-hammer-breacher-breacher-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-r57-iw-hammer-breacher-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r57-iw-hammer-breacher-r52-breacher-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r57-iw-hammer-breacher-r52-breacher-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
@@ -231279,18 +231066,6 @@ OPTIONS
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="r74-ba-rev-vet-r45-veteran-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
-              <constraints>
-                <constraint id="r74-ba-rev-vet-r45-veteran-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <modifiers>
-                <modifier id="r74-ba-rev-vet-r48-vis-73" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="r74-ba-rev-vet-r45-veteran-unit-dg-alchem" name="Alchem Flamer replacement" type="selectionEntry" targetId="r45-dg-alchem-flamer" hidden="false" import="true">
               <constraints>
                 <constraint id="r74-ba-rev-vet-r45-veteran-unit-dg-alchem-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -231491,7 +231266,14 @@ OPTIONS
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+        <selectionEntries><selectionEntry id="live-r5-chainaxe-r74-ba-rev-vet-veteran-unit-normal" name="Chainaxes — entire squad (+4 pts/model)" type="upgrade" hidden="false" import="true"><constraints><constraint id="live-r5-chainaxe-r74-ba-rev-vet-veteran-unit-normal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers>
+                <modifier id="r74-ba-rev-vet-r48-vis-73" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="live-r5-chainaxe-r74-ba-rev-vet-veteran-unit-normal-scale-0" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r74-ba-rev-vet-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r5-chainaxe-r74-ba-rev-vet-veteran-unit-normal-scale-1" type="increment" field="pts" value="4"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r74-ba-rev-vet-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier></modifiers>
+            <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="live-r5-chainaxe-r74-ba-rev-vet-veteran-unit-normal-rule" name="Chainaxe" hidden="false"><description>Whole-squad shortcut: every eligible model in the squad replaces its Close Combat Weapon with a Chainaxe for +4 points per model. Armour Saves better than 4+ are reduced to 4+ against wounds caused by a Chainaxe; 4+ or worse and Invulnerable Saves are unaffected.</description></rule></rules></selectionEntry></selectionEntries></selectionEntryGroup>
         <selectionEntryGroup id="r74-ba-rev-vet-r52-veteran-unit-third-shrieker" name="3rd Company Elite — Sonic Assault" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="r74-ba-rev-vet-r52-veteran-unit-third-shrieker-model" name="Sonic Shrieker — select once per model in the unit" type="upgrade" hidden="false" import="true">
