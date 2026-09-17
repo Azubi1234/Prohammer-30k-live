@@ -1,0 +1,42 @@
+name: Apply Live R7 Ultramarines finish
+on:
+  push:
+    paths:
+      - '.github/build/live_r7_ultramarines_finish.py'
+      - '.github/workflows/apply-live-r7-ultramarines-finish.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply R7 Ultramarines finish
+        run: python .github/build/live_r7_ultramarines_finish.py
+      - name: Verify XML and revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision')=='7'
+          assert r.get('gameSystemRevision')=='1'
+          idx=Path('index.xml').read_text(encoding='utf-8')
+          assert 'filePath="Legiones Astartes.cat"' in idx and 'dataRevision="7"' in idx
+          text=Path('inspection-live-r7-ultramarines-finish.txt').read_text(encoding='utf-8')
+          assert 'Titus Prayto now has a functional Psychic Powers' in text
+          assert 'Roboute Guilliman hidden unless Allegiance: Loyalist' in text
+          print(text)
+          PY
+      - name: Commit Live R7
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r7-ultramarines-finish.txt
+          git diff --cached --quiet || git commit -m 'Live R7: finish Ultramarines functional pass'
+          git pull --rebase origin main
+          git push
