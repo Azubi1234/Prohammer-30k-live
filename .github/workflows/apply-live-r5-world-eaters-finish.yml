@@ -1,0 +1,42 @@
+name: Apply Live R5 World Eaters finish
+on:
+  push:
+    paths:
+      - '.github/build/live_r5_world_eaters_finish.py'
+      - '.github/workflows/apply-live-r5-world-eaters-finish.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply R5 World Eaters finish
+        run: python .github/build/live_r5_world_eaters_finish.py
+      - name: Verify XML and revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision')=='5'
+          assert r.get('gameSystemRevision')=='1'
+          idx=Path('index.xml').read_text(encoding='utf-8')
+          assert 'filePath="Legiones Astartes.cat"' in idx and 'dataRevision="5"' in idx
+          text=Path('inspection-live-r5-world-eaters-finish.txt').read_text(encoding='utf-8')
+          assert 'Tactical squad copies cleaned:' in text
+          assert 'Chainaxe squad selectors converted to whole-squad scaling:' in text
+          print(text)
+          PY
+      - name: Commit Live R5
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r5-world-eaters-finish.txt
+          git diff --cached --quiet || git commit -m 'Live R5: finish World Eaters squad weapon upgrades'
+          git pull --rebase origin main
+          git push
