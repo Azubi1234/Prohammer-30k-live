@@ -1,0 +1,128 @@
+=== r45-tactical-unit-we-chain ===
+<ns0:entryLink xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-tactical-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-tactical-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:modifiers>
+                <ns0:modifier id="r48-vis-10" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            
+=== r45-assault-unit-we-chain ===
+<ns0:entryLink xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-assault-unit-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-assault-unit-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden" id="r45-assault-unit-we-chain-hide-rite">
+                  <ns0:conditionGroups>
+                    <ns0:conditionGroup type="and">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:conditionGroup>
+                  </ns0:conditionGroups>
+                </ns0:modifier>
+                <ns0:modifier id="r48-vis-30" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            
+=== r45-assault-unit-we-chain-discount ===
+<ns0:entryLink xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-assault-unit-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-assault-unit-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:modifiers>
+                <ns0:modifier id="r48-vis-31" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier id="r48-vis-32" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            
+=== r45-r41-unit-xii-0-rampager-squad-we-chain ===
+<ns0:entryLink xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-r41-unit-xii-0-rampager-squad-we-chain" name="Chainaxe" type="selectionEntry" targetId="r45-we-chainaxe" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-r41-unit-xii-0-rampager-squad-we-chain-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden" id="r45-r41-unit-xii-0-rampager-squad-we-chain-hide-rite">
+                  <ns0:conditionGroups>
+                    <ns0:conditionGroup type="and">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:conditionGroup>
+                  </ns0:conditionGroups>
+                </ns0:modifier>
+                <ns0:modifier id="r48-vis-317" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            
+=== r45-r41-unit-xii-0-rampager-squad-we-chain-discount ===
+<ns0:entryLink xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-r41-unit-xii-0-rampager-squad-we-chain-discount" name="Chainaxe — Berserker Assault price" type="selectionEntry" targetId="r45-we-chainaxe-berserker" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-r41-unit-xii-0-rampager-squad-we-chain-discount-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:modifiers>
+                <ns0:modifier id="r48-vis-318" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier id="r48-vis-319" type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+          
+=== TARGET r45-we-chainaxe ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-we-chainaxe" name="Chainaxe" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="4" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r45-we-chainaxe-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r45-we-chainaxe-rule" name="Chainaxe" hidden="false">
+          <ns0:description>Replace an eligible Close Combat Weapon. User Strength, Chainaxe: Armour Saves better than 4+ are reduced to 4+; 4+ or worse and Invulnerable Saves are unaffected.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
+=== TARGET r45-we-chainaxe-berserker ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r45-we-chainaxe-berserker" name="Chainaxe — Berserker Assault price" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="2" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r45-we-chainaxe-berserker-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r45-we-chainaxe-berserker-rule" name="Chainaxe — Berserker Assault price" hidden="false">
+          <ns0:description>Berserker Assault only. Legion Assault Squad and Rampager models may purchase Chainaxes for +2 points per model instead of +4.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
