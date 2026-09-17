@@ -1,0 +1,33 @@
+name: Dry-run R18 Thousand Sons final audit
+on:
+  push:
+    paths:
+      - '.github/build/live_r18_thousand_sons_final_audit.py'
+      - '.github/build/live_r18_thousand_sons_finish.py'
+      - '.github/build/live_r18_thousand_sons_core.py'
+      - '.github/workflows/dry-run-r18-thousand-sons-final-audit.yml'
+permissions:
+  contents: write
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run final R18 Thousand Sons audit in memory only
+        env:
+          TS_APPLY: '0'
+          TS_FINISH_APPLY: '0'
+          TS_FINAL_APPLY: '0'
+        run: python .github/build/live_r18_thousand_sons_final_audit.py
+      - name: Verify live data was not changed
+        run: git diff --exit-code -- 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml
+      - name: Commit final dry-run inspection only
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r18-thousand-sons-final-audit-dry-run.txt
+          git diff --cached --quiet || git commit -m "Inspect R18 Thousand Sons final audit"
+          git push
