@@ -29,3 +29,4 @@ jobs:
           git add inspection-r18-thousand-sons-finish-dry-run.txt
           git diff --cached --quiet || git commit -m "Inspect R18 Thousand Sons finish dry-run"
           git push
+# rerun after builder patch
