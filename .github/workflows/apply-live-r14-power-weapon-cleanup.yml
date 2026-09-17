@@ -1,0 +1,34 @@
+name: Apply Live R14 Power Weapon cleanup
+on:
+  push:
+    paths:
+      - '.github/build/live_r14_power_weapon_context_cleanup.py'
+      - '.github/workflows/apply-live-r14-power-weapon-cleanup.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply cleanup
+        run: python .github/build/live_r14_power_weapon_context_cleanup.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision') == '14'
+          ET.parse('index.xml')
+          PY
+      - name: Commit Live R14
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r14-power-weapon-cleanup.txt
+          git commit -m 'Live R14: clean Power Weapon rule popups' || exit 0
+          git push
