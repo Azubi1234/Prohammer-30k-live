@@ -1,0 +1,26 @@
+name: Diagnose R16 universal rule duplicates
+on:
+  push:
+    paths:
+      - '.github/build/diag_r16_universal_rule_duplicates.py'
+      - '.github/workflows/diag-r16-universal-rule-duplicates.yml'
+  workflow_dispatch:
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Diagnose universal special rules
+        run: python .github/build/diag_r16_universal_rule_duplicates.py
+      - name: Commit diagnostic
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r16-universal-rule-duplicates.txt
+          git diff --cached --quiet || git commit -m "Diagnose R16 universal special-rule duplicates"
+          git push
