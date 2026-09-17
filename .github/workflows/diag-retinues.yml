@@ -1,0 +1,96 @@
+name: Diagnose retinues and character fixes
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diag-retinues.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build diagnostic
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          NS='http://www.battlescribe.net/schema/catalogueSchema'
+          C=lambda t:f'{{{NS}}}{t}'
+          root=ET.parse('Legiones Astartes.cat').getroot()
+          top=root.find(C('selectionEntries'))
+          lines=[]
+          lines.append(f"CAT revision={root.get('revision')} GSTref={root.get('gameSystemRevision')}")
+          lines.append('\n=== RETINUE-BEARING TOP-LEVEL UNITS ===')
+          if top is not None:
+            for e in top.findall(C('selectionEntry')):
+              hits=[]
+              for r in e.iter(C('rule')):
+                nm=(r.get('name') or '')
+                d=r.find(C('description')); tx=(d.text or '') if d is not None else ''
+                blob=(nm+' '+tx).lower()
+                if 'retinue' in blob or 'command squad' in blob:
+                  hits.append((nm,tx))
+              if hits:
+                lines.append(f"\n{e.get('id')} | {e.get('name')} | cost=" + ','.join(f"{c.get('name')}={c.get('value')}" for c in e.findall('./'+C('costs')+'/'+C('cost'))))
+                for nm,tx in hits:
+                  lines.append(f"  RULE {nm}: {tx}")
+                groups=e.find(C('selectionEntryGroups'))
+                if groups is not None:
+                  for g in groups.findall(C('selectionEntryGroup')):
+                    if 'retinue' in (g.get('name') or '').lower() or 'command' in (g.get('name') or '').lower():
+                      lines.append(f"  EXISTING GROUP {g.get('id')} | {g.get('name')}")
+                      for l in g.findall('./'+C('entryLinks')+'/'+C('entryLink')):
+                        lines.append(f"    LINK {l.get('id')} | {l.get('name')} -> {l.get('targetId')}")
+          lines.append('\n=== CANDIDATE RETINUE TARGETS ===')
+          keywords=('command squad','terminator command','honour guard','deathwing companion','atramentar','contekar','terror squad','veteran squad','deathshroud','mortus poisoner','varagyr','triarii breacher')
+          if top is not None:
+            for e in top.findall(C('selectionEntry')):
+              nm=(e.get('name') or '').lower()
+              if any(k in nm for k in keywords):
+                lines.append(f"{e.get('id')} | {e.get('name')}")
+          lines.append('\n=== FABIUS BILE ===')
+          for e in root.iter(C('selectionEntry')):
+            if 'fabius' in (e.get('name') or '').lower():
+              lines.append(f"{e.get('id')} | {e.get('name')}")
+              for r in e.iter(C('rule')):
+                d=r.find(C('description')); tx=(d.text or '') if d is not None else ''
+                lines.append(f"  RULE {r.get('name')}: {tx}")
+              for g in e.iter(C('selectionEntryGroup')):
+                lines.append(f"  GROUP {g.get('id')} | {g.get('name')}")
+          lines.append('\n=== WHITE SCARS NAMED CHARACTERS ===')
+          for e in root.iter(C('selectionEntry')):
+            blob=((e.get('id') or '')+' '+(e.get('name') or '')).lower()
+            if any(x in blob for x in ('shiban','hibou','hasik','jubal','jaghatai')):
+              lines.append(f"{e.get('id')} | {e.get('name')}")
+              for g in e.iter(C('selectionEntryGroup')):
+                lines.append(f"  GROUP {g.get('id')} | {g.get('name')}")
+                for l in g.findall('./'+C('entryLinks')+'/'+C('entryLink')):
+                  lines.append(f"    LINK {l.get('id')} | {l.get('name')} -> {l.get('targetId')}")
+          lines.append('\n=== FULGRIM / TRANSFIGURED ===')
+          for e in root.iter(C('selectionEntry')):
+            if 'fulgrim' in (e.get('name') or '').lower():
+              lines.append(f"{e.get('id')} | {e.get('name')} | type={e.get('type')}")
+              for p in e.findall('./'+C('profiles')+'/'+C('profile')):
+                vals=[]
+                for ch in p.findall('./'+C('characteristics')+'/'+C('characteristic')):
+                  vals.append(f"{ch.get('name')}={ch.text}")
+                lines.append('  PROFILE '+p.get('name','')+' :: '+' | '.join(vals))
+              for g in e.iter(C('selectionEntryGroup')):
+                lines.append(f"  GROUP {g.get('id')} | {g.get('name')}")
+              for r in e.iter(C('rule')):
+                d=r.find(C('description')); tx=(d.text or '') if d is not None else ''
+                lines.append(f"  RULE {r.get('name')}: {tx}")
+          Path('inspection-retinues.txt').write_text('\n'.join(lines),encoding='utf-8')
+          print('\n'.join(lines[-300:]))
+          PY
+      - name: Commit diagnostic
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-retinues.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: retinues and pending character fixes'
+          git pull --rebase origin main
+          git push
