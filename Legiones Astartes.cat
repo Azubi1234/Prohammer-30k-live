@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -33236,6 +33236,118 @@ OPTIONS
         </selectionEntryGroup>
       </selectionEntryGroups>
     <constraints><constraint id="r8-um-praetor-suz-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    <selectionEntry type="unit" import="true" name="DEATHSHROUD TERMINATORS" hidden="false" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      <modifier id="r11-dg-hq-praetor-deathshroud-legion" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r11-dg-hq-praetor-deathshroud-armour" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-praetor-term" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-praetor-tart" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-praetor-cat" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+      <profiles>
+        <profile name="Deathshroud" typeId="prof-model" typeName="Model" hidden="false" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">2</characteristic>
+            <characteristic name="I" typeId="model-i">4</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-source" hidden="true">
+          <description>Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Composition:
+• 2 Deathshroud Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Terminator Armour
+• Manreaper
+• Alchem Flamer
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Fearless
+• Silent Retinue
+OPTIONS
+• The squad may include up to five additional Deathshroud Terminators for +55 points per model.
+• The entire squad may exchange its Terminator Armour for Cataphractii Terminator Armour at no additional cost.
+If this option is selected, the squad instead has a 2+/4+ Save and follows all normal rules and restrictions for Cataphractii Terminator Armour.
+• The entire squad may take:
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.</description>
+        </rule>
+      <rule id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-silent" name="Silent Retinue" hidden="false"><description>A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. It occupies no separate Force Organisation slot.</description></rule><rule id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-wargear" name="Wargear" hidden="false"><description>Terminator Armour; Manreaper; Alchem Flamer.</description></rule><rule id="r11-dg-hq-praetor-deathshroud-rule" name="Retinue" hidden="false"><description>Selected as this character’s retinue. It occupies no separate Force Organisation slot.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional" defaultAmount="2">
+          <constraints>
+            <constraint id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-max" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-min-total" type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="55" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs">
+              <constraints>
+                <constraint id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule name="Squad-wide cost note" id="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-squadwide" hidden="false">
+                  <description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
+                </rule>
+              <rule id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-melta-rule" name="Whole-squad Melta Bombs" hidden="false"><description>Every Deathshroud Terminator takes Melta Bombs for +5 points per model. The cost scales with the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-melta-scale" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+          <selectionEntry id="r11-dg-hq-praetor-deathshroud-r11-dg-deathshroud-cataphractii" name="Exchange entire squad’s Terminator Armour for Cataphractii Terminator Armour — Free" type="upgrade" hidden="false" import="true"><constraints><constraint id="r11-dg-hq-praetor-deathshroud-r11-dg-deathshroud-cataphractii-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r11-dg-hq-praetor-deathshroud-r11-dg-deathshroud-cataphractii-rule" name="Cataphractii Armour Exchange" hidden="false"><description>The entire squad exchanges its Terminator Armour for Cataphractii Terminator Armour at no additional cost. The squad instead has a 2+/4+ Save and follows all normal Cataphractii Terminator Armour rules and restrictions.</description></rule></rules></selectionEntry></selectionEntries>
+        </selectionEntryGroup>
+      <selectionEntryGroup name="Dedicated Transport" id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-dt-terminator-transport" hidden="false">
+          <constraints>
+            <constraint id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-dt-terminator-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-dt-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-dt-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r11-dg-hq-praetor-deathshroud-r11-dg-ds-dt-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r11-dg-hq-praetor-deathshroud-r11-dg-ds-dt-terminator-transport-max">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        </selectionEntryGroups>
+    <constraints><constraint id="r11-dg-hq-praetor-deathshroud-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
     </selectionEntries>
           <rules>
             <rule name="Retinue Restriction" id="hq-praetor-ret-rule" hidden="false">
@@ -43293,7 +43405,119 @@ All other equipment is selected normally from the Space Marine Armoury.</descrip
                 </entryLink>
               </entryLinks>
             <modifiers><modifier id="r9-centurion-termcommand-needs-term-armour" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-centurion-term" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-centurion-tart" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-centurion-cat" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers></selectionEntry>
-          </selectionEntries>
+          <selectionEntry type="unit" import="true" name="DEATHSHROUD TERMINATORS" hidden="false" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      <modifier id="r11-dg-hq-centurion-deathshroud-legion" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r11-dg-hq-centurion-deathshroud-armour" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-centurion-term" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-centurion-tart" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="hq-centurion-cat" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+      <profiles>
+        <profile name="Deathshroud" typeId="prof-model" typeName="Model" hidden="false" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">2</characteristic>
+            <characteristic name="I" typeId="model-i">4</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-source" hidden="true">
+          <description>Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Composition:
+• 2 Deathshroud Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Terminator Armour
+• Manreaper
+• Alchem Flamer
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Fearless
+• Silent Retinue
+OPTIONS
+• The squad may include up to five additional Deathshroud Terminators for +55 points per model.
+• The entire squad may exchange its Terminator Armour for Cataphractii Terminator Armour at no additional cost.
+If this option is selected, the squad instead has a 2+/4+ Save and follows all normal rules and restrictions for Cataphractii Terminator Armour.
+• The entire squad may take:
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.</description>
+        </rule>
+      <rule id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-silent" name="Silent Retinue" hidden="false"><description>A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. It occupies no separate Force Organisation slot.</description></rule><rule id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-wargear" name="Wargear" hidden="false"><description>Terminator Armour; Manreaper; Alchem Flamer.</description></rule><rule id="r11-dg-hq-centurion-deathshroud-rule" name="Retinue" hidden="false"><description>Selected as this character’s retinue. It occupies no separate Force Organisation slot.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional" defaultAmount="2">
+          <constraints>
+            <constraint id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-max" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-min-total" type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="55" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs">
+              <constraints>
+                <constraint id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule name="Squad-wide cost note" id="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-squadwide" hidden="false">
+                  <description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
+                </rule>
+              <rule id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-melta-rule" name="Whole-squad Melta Bombs" hidden="false"><description>Every Deathshroud Terminator takes Melta Bombs for +5 points per model. The cost scales with the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-melta-scale" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+          <selectionEntry id="r11-dg-hq-centurion-deathshroud-r11-dg-deathshroud-cataphractii" name="Exchange entire squad’s Terminator Armour for Cataphractii Terminator Armour — Free" type="upgrade" hidden="false" import="true"><constraints><constraint id="r11-dg-hq-centurion-deathshroud-r11-dg-deathshroud-cataphractii-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r11-dg-hq-centurion-deathshroud-r11-dg-deathshroud-cataphractii-rule" name="Cataphractii Armour Exchange" hidden="false"><description>The entire squad exchanges its Terminator Armour for Cataphractii Terminator Armour at no additional cost. The squad instead has a 2+/4+ Save and follows all normal Cataphractii Terminator Armour rules and restrictions.</description></rule></rules></selectionEntry></selectionEntries>
+        </selectionEntryGroup>
+      <selectionEntryGroup name="Dedicated Transport" id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-dt-terminator-transport" hidden="false">
+          <constraints>
+            <constraint id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-dt-terminator-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-dt-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-dt-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r11-dg-hq-centurion-deathshroud-r11-dg-ds-dt-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r11-dg-hq-centurion-deathshroud-r11-dg-ds-dt-terminator-transport-max">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        </selectionEntryGroups>
+    <constraints><constraint id="r11-dg-hq-centurion-deathshroud-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    </selectionEntries>
           <rules>
             <rule name="Command Retinue" id="hq-centurion-ret-rule" hidden="false">
               <description>A Centurion may select one Legion Command Squad. If equipped with any form of Terminator Armour, he may instead select one Legion Terminator Command Squad. The character and squad count as a single HQ selection but may deploy and operate separately.</description>
@@ -157232,7 +157456,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-0-deathshroud-terminators-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-0-deathshroud-terminators-source" hidden="true">
           <description>Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
 SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
 Force Organisation:
@@ -157258,7 +157482,7 @@ If this option is selected, the squad instead has a 2+/4+ Save and follows all n
 DEDICATED TRANSPORT
 The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-ds-silent" name="Silent Retinue" hidden="false"><description>A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. It occupies no separate Force Organisation slot.</description></rule><rule id="r11-dg-ds-wargear" name="Wargear" hidden="false"><description>Terminator Armour; Manreaper; Alchem Flamer.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiv-0-deathshroud-terminators-additional" defaultAmount="2">
           <constraints>
@@ -157273,12 +157497,12 @@ The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank w
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-0-deathshroud-terminators-options" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Melta bombs (base unit; +5 pts/model)" hidden="false" id="r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs">
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs">
               <constraints>
                 <constraint id="r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
               </constraints>
               <costs>
-                <cost name="Points" typeId="pts" value="10" />
+                <cost name="Points" typeId="pts" value="0" />
               </costs>
               <rules>
                 <rule name="Option restriction" id="r41-unit-xiv-0-deathshroud-terminators-opt-0-context" hidden="false">
@@ -157287,11 +157511,35 @@ The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank w
                 <rule name="Squad-wide cost note" id="r41-unit-xiv-0-deathshroud-terminators-opt-0-squadwide" hidden="false">
                   <description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
                 </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
+              <rule id="r11-dg-ds-melta-rule" name="Whole-squad Melta Bombs" hidden="false"><description>Every Deathshroud Terminator takes Melta Bombs for +5 points per model. The cost scales with the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r11-dg-ds-melta-scale" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r41-unit-xiv-0-deathshroud-terminators-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+          <selectionEntry id="r11-dg-deathshroud-cataphractii" name="Exchange entire squad’s Terminator Armour for Cataphractii Terminator Armour — Free" type="upgrade" hidden="false" import="true"><constraints><constraint id="r11-dg-deathshroud-cataphractii-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r11-dg-deathshroud-cataphractii-rule" name="Cataphractii Armour Exchange" hidden="false"><description>The entire squad exchanges its Terminator Armour for Cataphractii Terminator Armour at no additional cost. The squad instead has a 2+/4+ Save and follows all normal Cataphractii Terminator Armour rules and restrictions.</description></rule></rules></selectionEntry></selectionEntries>
         </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroup name="Dedicated Transport" id="r11-dg-ds-dt-terminator-transport" hidden="false">
+          <constraints>
+            <constraint id="r11-dg-ds-dt-terminator-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r11-dg-ds-dt-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r11-dg-ds-dt-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r11-dg-ds-dt-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r11-dg-ds-dt-terminator-transport-max">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="GRAVE WARDEN TERMINATOR SQUAD" hidden="false" id="r41-unit-xiv-1-grave-warden-terminator-squad">
       <costs>
@@ -157336,7 +157584,7 @@ The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank w
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-1-grave-warden-terminator-squad-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-1-grave-warden-terminator-squad-source" hidden="true">
           <description>Grave Warden | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/4+
 Chem-master | 4 | 4 | 4 | 4 | 1 | 4 | 3 | 9 | 2+/4+
 Force Organisation:
@@ -157366,7 +157614,7 @@ OPTIONS
 DEDICATED TRANSPORT
 The squad may select a Land Raider, Dreadclaw Drop Pod orSpartan Assault Tank where Transport Capacity permits.</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-gw-shroud" name="Shrouded in Death" hidden="false"><description>A Grave Warden Terminator Squad counts as being equipped with Defensive Grenades. All normal ProHammer rules for Defensive Grenades apply.</description></rule><rule id="r11-dg-gw-wargear" name="Wargear" hidden="false"><description>Cataphractii Terminator Armour; Assault Grenade Launcher; Death Cloud Projector; Power fist.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiv-1-grave-warden-terminator-squad-additional" defaultAmount="5">
           <constraints>
@@ -157381,19 +157629,6 @@ The squad may select a Land Raider, Dreadclaw Drop Pod orSpartan Assault Tank wh
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-1-grave-warden-terminator-squad-options" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-0-chainfist">
-              <constraints>
-                <constraint id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-0-chainfist-max" field="selections" scope="parent" value="16" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="5" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-0-context" hidden="false">
-                  <description>• Any model may replace his Power fist with:</description>
-                </rule>
-              </rules>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Grenade Harness" hidden="false" id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-1-grenade-harness">
               <constraints>
                 <constraint id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-1-grenade-harness-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
@@ -157408,8 +157643,59 @@ The squad may select a Land Raider, Dreadclaw Drop Pod orSpartan Assault Tank wh
               </rules>
             </selectionEntry>
           </selectionEntries>
+        <selectionEntryGroups><selectionEntryGroup id="r11-dg-gw-chain" name="Power Fist Replacement — up to one per model" hidden="false"><constraints><constraint id="r11-dg-gw-chain-max" type="max" value="0" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-0-chainfist">
+              <constraints>
+                <constraint id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-0-chainfist-max" field="selections" scope="parent" value="16" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="5" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiv-1-grave-warden-terminator-squad-opt-0-context" hidden="false">
+                  <description>• Any model may replace his Power fist with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            </selectionEntries><modifiers><modifier id="r11-dg-gw-chain-dyn" type="increment" field="r11-dg-gw-chain-max" value="1"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r41-unit-xiv-1-grave-warden-terminator-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
+      <selectionEntryGroup name="Chem-master — Terminator Armoury (max 50 pts)" id="r11-dg-gw-chem-terminator-sgt-armoury" hidden="false">
+              <constraints>
+                <constraint id="r11-dg-gw-chem-terminator-sgt-armoury-pts-max" type="max" value="50" field="pts" scope="parent" shared="true" includeChildSelections="true" />
+              </constraints>
+              <entryLinks>
+                </entryLinks>
+              <selectionEntries>
+                </selectionEntries>
+              <rules>
+                <rule name="Terminator Armoury Restrictions" id="r11-dg-gw-chem-terminator-sgt-arm-rule" hidden="false">
+                  <description>Only equipment permitted for a model wearing Terminator Armour is shown. Unit-specific weapon replacements and the Grenade Harness are not duplicated here. No item may be selected more than once unless specifically permitted.</description>
+                </rule>
+              </rules>
+            </selectionEntryGroup>
+          <selectionEntryGroup name="Dedicated Transport" id="r11-dg-gw-dt-terminator-transport" hidden="false">
+          <constraints>
+            <constraint id="r11-dg-gw-dt-terminator-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r11-dg-gw-dt-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r11-dg-gw-dt-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r11-dg-gw-dt-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r11-dg-gw-dt-terminator-transport-max">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="MORTUS POISONER SQUAD" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad">
       <costs>
@@ -157454,7 +157740,7 @@ The squad may select a Land Raider, Dreadclaw Drop Pod orSpartan Assault Tank wh
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-2-mortus-poisoner-squad-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-2-mortus-poisoner-squad-source" hidden="true">
           <description>Mortus Poisoner | 4 | 4 | 4 | 4 | 1 | 4 | 1 | 9 | 3+
 Poison-master | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+
 Force Organisation:
@@ -157494,7 +157780,7 @@ The Poison-master may take:
 • Up to three Phosphex Bombs ...................... +10 points each
 The Poison-master may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-mp-destroyer" name="Destroyer Cadre" hidden="false"><description>The Mortus Poisoners use the normal Destroyer Cadre rule from the Legiones Astartes Army List.</description></rule><rule id="r11-dg-mp-wargear" name="Wargear" hidden="false"><description>Power Armour; Alchem Flamer; Bolt pistol; Chainsword; Frag grenades; Rad grenades.</description></rule></rules>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-additional" defaultAmount="5">
           <constraints>
@@ -157509,7 +157795,53 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-options" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Phosphex Bomb" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb">
+            <selectionEntry type="upgrade" import="true" name="Krak grenades — entire squad (+2 pts/model)" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-krak-grenades">
+              <constraints>
+                <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule name="Squad-wide cost note" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-squadwide" hidden="false">
+                  <description>The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
+                </rule>
+              <rule id="r11-dg-mp-krak-rule" name="Whole-squad upgrade" hidden="false"><description>Every model in the squad takes Krak grenades for +2 points per model. The cost scales with squad size.</description></rule></rules>
+            <modifiers><modifier id="r11-dg-mp-krak-scale" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r41-unit-xiv-2-mortus-poisoner-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-melta-bombs">
+              <constraints>
+                <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule name="Squad-wide cost note" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-squadwide" hidden="false">
+                  <description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
+                </rule>
+              <rule id="r11-dg-mp-melta-rule" name="Whole-squad upgrade" hidden="false"><description>Every model in the squad takes Melta bombs for +5 points per model. The cost scales with squad size.</description></rule></rules>
+            <modifiers><modifier id="r11-dg-mp-melta-scale" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r41-unit-xiv-2-mortus-poisoner-squad-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Artificer Armour" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-6-artificer-armour">
+              <constraints>
+                <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-6-artificer-armour-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-6-context" hidden="false">
+                  <description>The Poison-master may take:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        <selectionEntryGroups><selectionEntryGroup id="r11-dg-mp-line-phosphex" name="Mortus Poisoners — Phosphex Bombs (one per five models)" hidden="false"><constraints><constraint id="r11-dg-mp-line-phosphex-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="upgrade" import="true" name="Phosphex Bomb" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb">
               <constraints>
                 <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-0-phosphex-bomb-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
               </constraints>
@@ -157522,39 +157854,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
                 </rule>
               </rules>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Krak grenades (base unit; +2 pts/model)" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-krak-grenades">
-              <constraints>
-                <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-krak-grenades-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="10" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-context" hidden="false">
-                  <description>• The entire squad may take:</description>
-                </rule>
-                <rule name="Squad-wide cost note" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-1-squadwide" hidden="false">
-                  <description>The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Melta bombs (base unit; +5 pts/model)" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-melta-bombs">
-              <constraints>
-                <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="25" />
-              </costs>
-              <rules>
-                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-context" hidden="false">
-                  <description>• The entire squad may take:</description>
-                </rule>
-                <rule name="Squad-wide cost note" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-2-squadwide" hidden="false">
-                  <description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rending Weapon" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-3-rending-weapon">
+            </selectionEntries><modifiers><modifier id="r11-dg-mp-line-phosphex-10" type="set" field="r11-dg-mp-line-phosphex-max" value="2"><conditions><condition type="atLeast" value="10" field="selections" scope="root-entry" childId="r41-unit-xiv-2-mortus-poisoner-squad-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup><selectionEntryGroup id="r11-dg-mp-master-weapon" name="Poison-master — Chainsword Replacement" hidden="false"><constraints><constraint id="r11-dg-mp-master-weapon-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="upgrade" import="true" name="Rending Weapon" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-3-rending-weapon">
               <constraints>
                 <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-3-rending-weapon-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
               </constraints>
@@ -157593,22 +157893,20 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
                 </rule>
               </rules>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Artificer Armour" hidden="false" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-6-artificer-armour">
+            </selectionEntries></selectionEntryGroup><selectionEntryGroup id="r11-dg-mp-master-phosphex" name="Poison-master — Phosphex Bombs" hidden="false"><constraints><constraint id="r11-dg-mp-master-phosphex-max" type="max" value="3" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry id="r11-dg-mp-master-phosphex-bomb" name="Phosphex Bomb" type="upgrade" hidden="false" import="true"><constraints><constraint id="r11-dg-mp-master-phosphex-bomb-max" type="max" value="3" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="10" /></costs></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
+      <selectionEntryGroup name="Poison-master — Additional Armoury (max 50 pts)" id="r11-dg-mp-master-destroyer-sgt-armoury" hidden="false">
               <constraints>
-                <constraint id="r41-unit-xiv-2-mortus-poisoner-squad-opt-6-artificer-armour-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+                <constraint id="r11-dg-mp-master-destroyer-sgt-armoury-pts-max" type="max" value="50" field="pts" scope="parent" shared="true" includeChildSelections="true" />
               </constraints>
-              <costs>
-                <cost name="Points" typeId="pts" value="10" />
-              </costs>
+              <entryLinks>
+                </entryLinks>
               <rules>
-                <rule name="Option restriction" id="r41-unit-xiv-2-mortus-poisoner-squad-opt-6-context" hidden="false">
-                  <description>The Poison-master may take:</description>
+                <rule name="Sergeant Armoury Restrictions" id="r11-dg-mp-master-destroyer-sgt-arm-rule" hidden="false">
+                  <description>Unit-specific Chainsword replacements and standard equipment are not duplicated here. No item may be selected more than once unless specifically permitted. A Pair of Lightning Claws counts as two weapon choices. Artificer Armour is not present in the current Destroyer Sergeant entry and is therefore not offered.</description>
                 </rule>
               </rules>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="CALAS TYPHON, FIRST CAPTAIN" hidden="false" id="r41-unit-xiv-3-calas-typhon-first-captain">
       <costs>
@@ -157623,10 +157921,10 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-captain-traitor" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-3-calas-typhon-first-captain-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-      </constraints>
+      <constraint id="r11-dg-typhon-1500" type="min" value="1500" field="limit::points" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" percentValue="false" /></constraints>
       <profiles>
         <profile name="Calas Typhon" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiv-3-calas-typhon-first-captain-profile-0">
           <characteristics>
@@ -157643,7 +157941,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-3-calas-typhon-first-captain-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-3-calas-typhon-first-captain-source" hidden="true">
           <description>Calas Typhon | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
 Force Organisation:
 LATENT PSYKER Typhon is treated as a Psyker (Mastery Level 1\) solely for the purpose of using Aura of Pestilence and suffering Perils of the Warp. He knows no other psychic powers. Typhon takes the Psychic Test for Aura of Pestilence using Leadership 7 instead of the Leadership value shown in his profile. AURA OF PESTILENCE At the beginning of either player's Assault phase, Typhon may attempt to invoke Aura of Pestilence. If the Psychic Test is passed, every enemy model within 2" of Typhon suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. If the Psychic Test is failed, every friendly model within 2" of Typhon instead suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. Typhon may fight normally during an Assault phase in which Aura of Pestilence is used. COMMAND RETINUE Typhon may select either a Deathshroud Terminator Squad or Legion Terminator Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
@@ -157662,8 +157960,8 @@ Special Rules:
 RESTRICTION
 Calas Typhon may only be included in a Death Guard army of 1,500 points or more.</description>
         </rule>
-      </rules>
-    <selectionEntryGroups><selectionEntryGroup id="live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue" name="Retinue (does not occupy a separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="DEATHSHROUD TERMINATORS" hidden="false" id="live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators">
+      <rule id="r11-dg-r41-unit-xiv-3-calas-typhon-first-captain-rule-0" name="Latent Psyker" hidden="false"><description>Typhon is treated as a Psyker (Mastery Level 1) solely for Aura of Pestilence and Perils of the Warp. He knows no other psychic powers and tests for Aura of Pestilence using Leadership 7.</description></rule><rule id="r11-dg-r41-unit-xiv-3-calas-typhon-first-captain-rule-1" name="Aura of Pestilence" hidden="false"><description>At the beginning of either player’s Assault phase Typhon may take a Psychic Test. If passed, enemy models within 2 inches suffer -1 Attack (minimum 1) until the end of the phase. If failed, friendly models within 2 inches suffer the penalty instead. Typhon fights normally.</description></rule></rules>
+    <selectionEntryGroups><selectionEntryGroup id="live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="DEATHSHROUD TERMINATORS" hidden="false" id="live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators">
       <costs>
         <cost name="Points" typeId="pts" value="0.0" />
       </costs>
@@ -158317,7 +158615,7 @@ The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank w
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-morturg-loyalist" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-4-crysos-morturg-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
       </constraints>
@@ -158337,7 +158635,7 @@ The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank w
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-4-crysos-morturg-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-4-crysos-morturg-source" hidden="true">
           <description>Crysos Morturg | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 3+/5+
 Force Organisation:
 PSYCHIC POWERS Morturg selects one psychic power from the normal Legion Librarian Psychic Power list. He follows all normal ProHammer rules for Psykers and Mastery Level 1. MASTER OF AMBUSH Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. Morturg must remain joined to that unit when it is deployed. DESTROYER OFFICER Morturg may join a Legion Destroyer Squad or Mortus Poisoner Squad despite the normal restrictions imposed by Destroyer Cadre. COMMAND RETINUE Morturg may select one Mortus Poisoner Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
@@ -158366,7 +158664,7 @@ OPTIONS
 • Krak grenades ................................... +2 points
 • Melta bombs .................................... +5 points</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-r41-unit-xiv-4-crysos-morturg-rule-0" name="Psychic Powers" hidden="false"><description>Morturg selects one psychic power from the normal Legion Librarian Psychic Power list and follows the normal ProHammer rules for Psykers and Mastery Level 1.</description></rule><rule id="r11-dg-r41-unit-xiv-4-crysos-morturg-rule-1" name="Master of Ambush" hidden="false"><description>Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. He must remain joined to that unit when it deploys.</description></rule><rule id="r11-dg-r41-unit-xiv-4-crysos-morturg-rule-2" name="Destroyer Officer" hidden="false"><description>Morturg may join a Legion Destroyer Squad or Mortus Poisoner Squad despite the normal restrictions imposed by Destroyer Cadre.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-4-crysos-morturg-options" collective="false" import="true">
           <selectionEntries>
@@ -158398,7 +158696,7 @@ OPTIONS
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      <selectionEntryGroup id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue" name="Retinue (does not occupy a separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="MORTUS POISONER SQUAD" hidden="false" id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad">
+      <selectionEntryGroup id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="MORTUS POISONER SQUAD" hidden="false" id="live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad">
       <costs>
         <cost name="Points" typeId="pts" value="50.0" />
       </costs>
@@ -158614,7 +158912,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-rask-traitor" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-5-durak-rask-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
       </constraints>
@@ -158634,7 +158932,7 @@ The Poison-master may select up to 50 points of permitted weapons and wargear fr
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-5-durak-rask-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-5-durak-rask-source" hidden="true">
           <description>Durak Rask | 5 | 5 | 4 | 4 | 3 | 4 | 3 | 9 | 2+/5+
 Force Organisation:
 ART OF DESTRUCTION Durak Rask and any Death Guard Infantry unit he has joined have the Tank Hunters special rule. COMMAND RETINUE Durak Rask may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
@@ -158661,7 +158959,7 @@ OPTIONS
 • Krak grenades ................................... +2 points
 • Melta bombs .................................... +5 points</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-r41-unit-xiv-5-durak-rask-rule-0" name="Art of Destruction" hidden="false"><description>Durak Rask and any Death Guard Infantry unit he has joined have Tank Hunters.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-5-durak-rask-options" collective="false" import="true">
           <selectionEntries>
@@ -158693,7 +158991,7 @@ OPTIONS
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      <selectionEntryGroup id="live-r2-r41-unit-xiv-5-durak-rask-retinue" name="Retinue (does not occupy a separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-5-durak-rask-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Command Squad" id="live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command" hidden="false" import="true">
+      <selectionEntryGroup id="live-r2-r41-unit-xiv-5-durak-rask-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-5-durak-rask-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Command Squad" id="live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command" hidden="false" import="true">
               <constraints>
                 <constraint id="live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
@@ -159544,7 +159842,7 @@ OPTIONS
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-grulgor-traitor" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-6-ignatius-grulgor-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
       </constraints>
@@ -159564,7 +159862,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-6-ignatius-grulgor-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-6-ignatius-grulgor-source" hidden="true">
           <description>Ignatius Grulgor | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 3+/5+
 Force Organisation:
 THE EATER OF LIVES The first time Grulgor is reduced to 0 Wounds, do not immediately remove him as a casualty. Roll a D6. On a 1–4, remove Grulgor normally. On a 5+, Grulgor remains in play with 1 Wound remaining and gains the following special rules for the remainder of the battle: • Daemon • Fearless • Feel No Pain (5+) This rule may only be used once per battle. COMMAND RETINUE Grulgor may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
@@ -159590,7 +159888,7 @@ OPTIONS
 • Krak grenades ................................... +2 points
 • Melta bombs .................................... +5 points</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-r41-unit-xiv-6-ignatius-grulgor-rule-0" name="The Eater of Lives" hidden="false"><description>The first time Grulgor is reduced to 0 Wounds, roll a D6 before removing him. On 1–4 remove him normally. On 5+ he remains with 1 Wound and gains Daemon, Fearless and Feel No Pain (5+) for the rest of the battle. This may only occur once.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-6-ignatius-grulgor-options" collective="false" import="true">
           <selectionEntries>
@@ -159622,7 +159920,7 @@ OPTIONS
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      <selectionEntryGroup id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue" name="Retinue (does not occupy a separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Command Squad" id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command" hidden="false" import="true">
+      <selectionEntryGroup id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Command Squad" id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command" hidden="false" import="true">
               <constraints>
                 <constraint id="live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
@@ -160473,7 +160771,7 @@ OPTIONS
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-garro-loyalist" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-7-nathaniel-garro-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
       </constraints>
@@ -160493,7 +160791,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-7-nathaniel-garro-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-7-nathaniel-garro-source" hidden="true">
           <description>Nathaniel Garro | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
 Force Organisation:
 LIBERTAS Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. Garro receives no additional Attack for fighting with a second close-combat weapon while using Libertas. AQUILA IMPERATOR The Aquila Imperator grants Garro a 4+ Invulnerable Save. This is already included in his profile. Whenever Garro or a unit he has joined would be affected by an enemy psychic power, roll a D6. On a 5+, that psychic power is nullified and has no effect upon Garro or his unit. Only one Aquila Imperator nullification roll may be attempted against each psychic power. COMMAND RETINUE Garro may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
@@ -160515,7 +160813,7 @@ OPTIONS
 • Nathaniel Garro may take:
 • Krak grenades ................................... +2 points</description>
         </rule>
-      </rules>
+      <rule id="r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-0" name="Libertas" hidden="false"><description>Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. He receives no additional Attack for a second close-combat weapon while using it.</description></rule><rule id="r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-1" name="Aquila Imperator" hidden="false"><description>The Aquila Imperator grants Garro a 4+ Invulnerable Save. Whenever Garro or a unit he has joined would be affected by an enemy psychic power, roll a D6. On 5+ that power is nullified against Garro and his unit. Only one such roll may be made per psychic power.</description></rule></rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="r41-unit-xiv-7-nathaniel-garro-options" collective="false" import="true">
           <selectionEntries>
@@ -160534,7 +160832,7 @@ OPTIONS
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-      <selectionEntryGroup id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue" name="Retinue (does not occupy a separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Command Squad" id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command" hidden="false" import="true">
+      <selectionEntryGroup id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue" name="RETINUE — choose up to one (no separate FOC slot)" hidden="false" collective="false" import="true"><constraints><constraint id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" name="Legion Command Squad" id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command" hidden="false" import="true">
               <constraints>
                 <constraint id="live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
@@ -161380,10 +161678,10 @@ OPTIONS
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-mortarion-pc-1500" type="set" field="r11-dg-mortarion-min-points" value="1500"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="true" /></conditions></modifier><modifier id="r11-dg-mortarion-hide-daemon" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiv-9-mortarion-prince-of-decay" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-8-xiv-mortarion-the-reaper-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
-      </constraints>
+      <constraint id="r11-dg-mortarion-min-points" type="min" value="2000" field="limit::points" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" percentValue="false" /></constraints>
       <profiles>
         <profile name="Mortarion" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xiv-8-xiv-mortarion-the-reaper-profile-0">
           <characteristics>
@@ -161400,7 +161698,7 @@ OPTIONS
         </profile>
       </profiles>
       <rules>
-        <rule name="Source Entry" id="r41-unit-xiv-8-xiv-mortarion-the-reaper-source" hidden="false">
+        <rule name="Source Entry" id="r41-unit-xiv-8-xiv-mortarion-the-reaper-source" hidden="true">
           <description>Primarch of the Death Guard, the Pale King, the Reaper of Men
 Mortarion was raised beneath the poisoned skies of Barbarus, a world where survival itself was a war against toxic atmosphere, monstrous overlords and the slow certainty of death. From those beginnings came a Primarch of almost inexhaustible endurance, possessed of a hatred for tyranny, witchcraft and weakness in all their forms. Where others sought brilliance of manoeuvre or the glory of the decisive charge, Mortarion believed that victory belonged to the warrior who simply refused to die.
 Under his command the XIV Legion became the Death Guard, an army fashioned in its Primarch's image. They advanced through irradiated wastelands, chemical storms and burning ruins with the same remorseless pace, grinding their enemies beneath relentless fire and brutal close assault. Mortarion himself strode at the centre of such offensives, wreathed in poisonous vapours and bearing the immense battle-scythe Silence, a spectral figure whose coming promised only death. This identity is also strongly reflected in the existing Death Guard rules, which already emphasise poison resistance and infantry advancing through hostile terrain.
@@ -161426,8 +161724,120 @@ Special Rules:
 • Poison Cannot Kill Death
 BARBARAN PLATE Forged to withstand conditions which would prove lethal even to a Space Marine, Barbaran Plate incorporated extensive environmental sealing and protection against chemical, biological and radiological attack. Barbaran Plate counts as Primarch Armour. SILENCE An immense battle-scythe fashioned to the proportions of the Death Guard Primarch, Silence was a weapon whose sweeping blows could reap whole ranks of warriors and cut apart the mightiest champions of the Great Crusade. Silence is a Two-Handed Power Weapon. Attacks made with Silence are resolved at +1 Strength and have the Rampage special rule. Any unsaved Wound inflicted by Silence against a model without the Primarch special rule becomes a Massive Wound and inflicts D3 Wounds instead of one Wound. LANTERN A rare and immensely powerful Shenlongi energy weapon, Lantern was capable of punching through armour and war machines with concentrated blasts of incandescent energy. Weapon Range S AP Type Lantern 18" 8 2 Assault 1, Armourbane, Master-crafted PHOSPHEX BOMB Mortarion carried amongst his arsenal weapons filled with the nightmare substance known as phosphex, a proscribed incendiary compound infamous for pursuing living prey and rendering the ground itself lethal. Weapon Range S AP Type Phosphex Bomb 6" 5 2 Assault 1, Blast, One Use, Poisoned (3+), Lingering Death The Phosphex Bomb follows the normal rules for Phosphex Bombs and Lingering Death presented in the Legiones Astartes Army List. BARBARAN ENDURANCE Few beings in the Imperium could match Mortarion's ability to endure injury, exhaustion and environments capable of killing lesser warriors in moments. Mortarion has Feel No Pain (5+). WITCH-SPITE Mortarion possessed a deep and abiding hatred of sorcery, born during his enslavement beneath the witch-lords of Barbarus and strengthened by his distrust of those who wielded the powers of the Warp. Whenever Mortarion or a unit he has joined makes a Deny the Witch roll, a failed roll may be re-rolled. In addition, Mortarion's Adamantium Will grants a +2 bonus to Deny the Witch rolls instead of the normal +1. THE REAPER\`S ADVANCE Friendly Death Guard Infantry within 12" of Mortarion may fire Rapid Fire weapons as though they had remained stationary. In addition, they may re-roll failed Pinning tests. TOXIC MIASMA The armour and wargear of the Death Lord surrounded him with a haze of poisonous vapours and corrosive contaminants, lethal to any foe forced to fight at close quarters. Enemy non-Vehicle models in base contact with Mortarion suffer -1 Toughness. This penalty lasts only while the model remains in base contact with Mortarion. POISON CANNOT KILL DEATH The poisons which slew armies and the polluted atmosphere of Barbarus itself had shaped Mortarion into a being all but impossible to kill through toxin or contagion. Poisoned attacks made against Mortarion do not use their normal fixed To Wound value. Instead, resolve the attack using its Strength against Mortarion's Toughness normally. If a Poisoned attack has no Strength characteristic, it may only wound Mortarion on an unmodified roll of 6. PRIMARCH RETINUE Mortarion may select one Deathshroud Terminator Squad as his Primarch Retinue. Mortarion may not select a Legion Honour Guard Squad or Legion Terminator Command Squad as his Primarch Retinue. A Deathshroud Terminator Squad selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.</description>
         </rule>
-      </rules>
-    </selectionEntry>
+      <rule id="r11-dg-mortarion-rule-0" name="Barbaran Plate" hidden="false"><description>Barbaran Plate counts as Primarch Armour.</description></rule><rule id="r11-dg-mortarion-rule-1" name="Silence" hidden="false"><description>Silence is a Two-Handed Power Weapon. Attacks are resolved at +1 Strength and have Rampage. Any unsaved Wound inflicted against a model without the Primarch rule becomes a Massive Wound and inflicts D3 Wounds instead of one.</description></rule><rule id="r11-dg-mortarion-rule-2" name="Barbaran Endurance" hidden="false"><description>Mortarion has Feel No Pain (5+).</description></rule><rule id="r11-dg-mortarion-rule-3" name="Witch-Spite" hidden="false"><description>Whenever Mortarion or a unit he has joined makes a Deny the Witch roll, a failed roll may be re-rolled. Mortarion’s Adamantium Will grants +2 to Deny the Witch rather than +1.</description></rule><rule id="r11-dg-mortarion-rule-4" name="The Reaper’s Advance" hidden="false"><description>Friendly Death Guard Infantry within 12 inches of Mortarion may fire Rapid Fire weapons as though stationary and may re-roll failed Pinning tests.</description></rule><rule id="r11-dg-mortarion-rule-5" name="Toxic Miasma" hidden="false"><description>Enemy non-Vehicle models in base contact with Mortarion suffer -1 Toughness while they remain in base contact.</description></rule><rule id="r11-dg-mortarion-rule-6" name="Poison Cannot Kill Death" hidden="false"><description>Poisoned attacks against Mortarion do not use their fixed To Wound value. Resolve them using Strength versus Toughness; a Poisoned attack with no Strength wounds only on an unmodified 6.</description></rule><rule id="r11-dg-mortarion-rule-7" name="Primarch Retinue" hidden="false"><description>Mortarion may select one Deathshroud Terminator Squad as his Primarch Retinue. He may not select Legion Honour Guard or Legion Terminator Command Squad as his Primarch Retinue.</description></rule></rules>
+    <selectionEntryGroups><selectionEntryGroup id="r11-dg-mortarion-retinue" name="PRIMARCH RETINUE — Deathshroud only" hidden="false"><constraints><constraint id="r11-dg-mortarion-retinue-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry type="unit" import="true" name="DEATHSHROUD TERMINATORS" hidden="false" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Deathshroud" typeId="prof-model" typeName="Model" hidden="false" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">2</characteristic>
+            <characteristic name="I" typeId="model-i">4</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-source" hidden="true">
+          <description>Deathshroud | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+/5+
+SILENT RETINUE A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. The Deathshroud do not occupy a separate Force Organisation slot. The character and Deathshroud count as a single HQ selection.
+Force Organisation:
+• Elites
+Unit Composition:
+• 2 Deathshroud Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Terminator Armour
+• Manreaper
+• Alchem Flamer
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Fearless
+• Silent Retinue
+OPTIONS
+• The squad may include up to five additional Deathshroud Terminators for +55 points per model.
+• The entire squad may exchange its Terminator Armour for Cataphractii Terminator Armour at no additional cost.
+If this option is selected, the squad instead has a 2+/4+ Save and follows all normal rules and restrictions for Cataphractii Terminator Armour.
+• The entire squad may take:
+• Melta bombs .............................. +5 points per model
+DEDICATED TRANSPORT
+The squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.</description>
+        </rule>
+      <rule id="r11-dg-mortarion-deathshroud-r11-dg-ds-silent" name="Silent Retinue" hidden="false"><description>A Death Guard character who would normally be permitted to select a Legion Terminator Command Squad may instead select one Deathshroud Terminator Squad as his retinue. It occupies no separate Force Organisation slot.</description></rule><rule id="r11-dg-mortarion-deathshroud-r11-dg-ds-wargear" name="Wargear" hidden="false"><description>Terminator Armour; Manreaper; Alchem Flamer.</description></rule><rule id="r11-dg-mortarion-deathshroud-rule" name="Retinue" hidden="false"><description>Selected as this character’s retinue. It occupies no separate Force Organisation slot.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional" defaultAmount="2">
+          <constraints>
+            <constraint id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-max" field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional-min-total" type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="55" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melta bombs — entire squad (+5 pts/model)" hidden="false" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs">
+              <constraints>
+                <constraint id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-melta-bombs-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-context" hidden="false">
+                  <description>• The entire squad may take:</description>
+                </rule>
+                <rule name="Squad-wide cost note" id="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-opt-0-squadwide" hidden="false">
+                  <description>The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.</description>
+                </rule>
+              <rule id="r11-dg-mortarion-deathshroud-r11-dg-ds-melta-rule" name="Whole-squad Melta Bombs" hidden="false"><description>Every Deathshroud Terminator takes Melta Bombs for +5 points per model. The cost scales with the selected squad size.</description></rule></rules>
+            <modifiers><modifier id="r11-dg-mortarion-deathshroud-r11-dg-ds-melta-scale" type="increment" field="pts" value="5"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators-additional" repeats="1" roundUp="false" /></repeats></modifier></modifiers></selectionEntry>
+          <selectionEntry id="r11-dg-mortarion-deathshroud-r11-dg-deathshroud-cataphractii" name="Exchange entire squad’s Terminator Armour for Cataphractii Terminator Armour — Free" type="upgrade" hidden="false" import="true"><constraints><constraint id="r11-dg-mortarion-deathshroud-r11-dg-deathshroud-cataphractii-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="r11-dg-mortarion-deathshroud-r11-dg-deathshroud-cataphractii-rule" name="Cataphractii Armour Exchange" hidden="false"><description>The entire squad exchanges its Terminator Armour for Cataphractii Terminator Armour at no additional cost. The squad instead has a 2+/4+ Save and follows all normal Cataphractii Terminator Armour rules and restrictions.</description></rule></rules></selectionEntry></selectionEntries>
+        </selectionEntryGroup>
+      <selectionEntryGroup name="Dedicated Transport" id="r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-transport" hidden="false">
+          <constraints>
+            <constraint id="r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="r11-dg-mortarion-deathshroud-r11-dg-ds-dt-terminator-transport-max">
+              <conditions>
+                <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        </selectionEntryGroups>
+    <constraints><constraint id="r11-dg-mortarion-deathshroud-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    </selectionEntries></selectionEntryGroup></selectionEntryGroups></selectionEntry>
     <selectionEntry type="unit" import="true" name="MORTARION, PRINCE OF DECAY" hidden="false" id="r41-unit-xiv-9-mortarion-prince-of-decay">
       <costs>
         <cost name="Points" typeId="pts" value="650" />
@@ -161441,7 +161851,7 @@ BARBARAN PLATE Forged to withstand conditions which would prove lethal even to a
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      <modifier id="r11-dg-daemon-mortarion-hide-mortal" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xiv-8-xiv-mortarion-the-reaper" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
       <constraints>
         <constraint id="r41-unit-xiv-9-mortarion-prince-of-decay-unique" field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
       </constraints>

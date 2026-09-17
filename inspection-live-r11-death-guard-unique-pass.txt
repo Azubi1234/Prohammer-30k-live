@@ -1,0 +1,9 @@
+LIVE R11 — DEATH GUARD UNIQUE PASS
+CAT=11 GSTref=1
+
+• Deathshroud whole-squad armour/melta-bomb options and Dedicated Transports made functional
+• Grave Warden chainfist limit, Chem-master Armoury and Dedicated Transports made functional
+• Mortus Poisoner whole-squad costs, one-per-five Phosphex and Poison-master selections made functional
+• Named-character allegiance, Typhon 1500-point gate, named rules and retinue selectors audited
+• Deathshroud added as a functional Terminator-command replacement for eligible Death Guard Praetors/Centurions
+• Mortarion gains functional 2000/1500 point gate, mutual-form exclusion and Deathshroud-only Primarch Retinue
