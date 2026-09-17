@@ -1,0 +1,1919 @@
+CAT=17
+
+=== ENTRY ===
+selectionEntry r45-ts-force-weapon | Prosperine Force Weapon upgrade | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-force-weapon-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-force-weapon-rule" name="Prosperine Force Weapon upgrade" hidden="false">
+          <ns0:description>Upgrade a Power Weapon to a Force Weapon. Follows normal Force Weapon rules; a Psychic Brotherhood may attempt only one Force Weapon activation per Assault phase and only wounds caused by the nominated model become Massive Wounds/D3 Wounds.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-force-weapon-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-force-weapon-rule | Prosperine Force Weapon upgrade | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-arcane-litanies | Arcane Litanies | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-arcane-litanies-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-arcane-litanies-rule" name="Arcane Litanies" hidden="false">
+          <ns0:description>Thousand Sons Independent Character with Mastery Level 1+. Once per battle, ignore one Wound suffered from Perils of the Warp; the test and power are otherwise resolved normally.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-arcane-litanies-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-arcane-litanies-rule | Arcane Litanies | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-asphyx-ic | Asphyx Shells | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-asphyx-ic-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-asphyx-ic-rule" name="Asphyx Shells" hidden="false">
+          <ns0:description>Thousand Sons Independent Character. Bolt Pistols, Bolters, Combi-Bolters and bolter components of Combi-Weapons gain Shred. Cannot combine with Special Issue Ammunition or another ammunition upgrade.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-asphyx-ic-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-asphyx-ic-rule | Asphyx Shells | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-asphyx-unit | Asphyx Shells | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="20" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-asphyx-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-asphyx-unit-rule" name="Asphyx Shells" hidden="false">
+          <ns0:description>Thousand Sons Veteran or Terminator Squad. Bolt Pistols, Bolters, Combi-Bolters and bolter components of Combi-Weapons gain Shred. Cannot combine with Special Issue Ammunition or another ammunition upgrade.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-asphyx-unit-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-asphyx-unit-rule | Asphyx Shells | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-trans-ic | Teleportation Transponders | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-trans-ic-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-trans-ic-rule" name="Teleportation Transponders" hidden="false">
+          <ns0:description>Thousand Sons Independent Character in Terminator Armour. Gains Deep Strike even if the mission would not normally allow it.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-trans-ic-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-trans-ic-rule | Teleportation Transponders | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-trans-unit | Teleportation Transponders | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="15" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-trans-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-trans-unit-rule" name="Teleportation Transponders" hidden="false">
+          <ns0:description>Thousand Sons unit entirely in Terminator Armour. Gains Deep Strike even if the mission would not normally allow it.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-trans-unit-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-trans-unit-rule | Teleportation Transponders | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-aether-fire | Æther-fire Cannon upgrade | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="0" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-aether-fire-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-aether-fire-rule" name="Æther-fire Cannon upgrade" hidden="false">
+          <ns0:description>Any Plasma Cannon may be upgraded for free; if a unit has multiple Plasma Cannons all or none must upgrade. 36”, S7 AP2, Heavy 1, Blast, Gets Hot, Soul Blaze.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-aether-fire-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-aether-fire-rule | Æther-fire Cannon upgrade | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-brotherhood | Brotherhood of Psykers (Mastery Level 1) | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="25" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-brotherhood-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-brotherhood-rule" name="Brotherhood of Psykers (Mastery Level 1)" hidden="false">
+          <ns0:description>Veteran or Terminator Squad. The unit becomes Brotherhood of Psykers (ML1), selects one power from the discipline associated with its Prosperine Cult, and gains that Cult’s Cult Mastery benefit.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-brotherhood-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-brotherhood-rule | Brotherhood of Psykers (Mastery Level 1) | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-brotherhood-fellowship | Brotherhood of Psykers (Fellowships price) | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="15" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-brotherhood-fellowship-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-brotherhood-fellowship-rule" name="Brotherhood of Psykers (Fellowships price)" hidden="false">
+          <ns0:description>Fellowships of Prospero only. Veteran/Terminator Squads purchase Brotherhood of Psykers (ML1) for +15 instead of +25.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-brotherhood-fellowship-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-brotherhood-fellowship-rule | Brotherhood of Psykers (Fellowships price) | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-ts-tactical-brotherhood | Brotherhood of Psykers (20-model Tactical Squad) | type=upgrade hidden=false
+costs: <ns0:costs xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:cost name="Points" typeId="pts" value="25" />
+      </ns0:costs>
+      
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:constraint id="r45-ts-tactical-brotherhood-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:rule id="r45-ts-tactical-brotherhood-rule" name="Brotherhood of Psykers (20-model Tactical Squad)" hidden="false">
+          <ns0:description>Fellowships of Prospero only. A 20-model Tactical Squad may purchase Brotherhood of Psykers (ML1), choose a power from its Cult discipline and gain Cult Mastery.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    
+
+=== ENTRY ===
+constraint r45-ts-tactical-brotherhood-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-ts-tactical-brotherhood-rule | Brotherhood of Psykers (20-model Tactical Squad) | type=None hidden=false
+
+=== ENTRY ===
+selectionEntryGroup r45-cult-tactical-unit | Prosperine Cult | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:constraint id="r45-cult-tactical-unit-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <ns0:constraint id="r45-cult-tactical-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:constraints>
+          
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r48-vis-1" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:selectionEntry id="r45-cult-tactical-unit-0" name="Pavoni" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-tactical-unit-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-tactical-unit-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-tactical-unit-1" name="Raptora" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-tactical-unit-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-tactical-unit-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-tactical-unit-2" name="Corvidae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-tactical-unit-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-tactical-unit-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-tactical-unit-3" name="Athanaeans" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-tactical-unit-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-tactical-unit-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-tactical-unit-4" name="Pyrae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-tactical-unit-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-tactical-unit-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+        
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-min | None | type=min hidden=None
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-max | None | type=max hidden=None
+
+=== ENTRY ===
+selectionEntry r45-cult-tactical-unit-0 | Pavoni | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-tactical-unit-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-tactical-unit-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-0-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-tactical-unit-0-rule | Pavoni | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-tactical-unit-1 | Raptora | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-tactical-unit-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-tactical-unit-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-1-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-tactical-unit-1-rule | Raptora | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-tactical-unit-2 | Corvidae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-tactical-unit-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-tactical-unit-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-2-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-tactical-unit-2-rule | Corvidae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-tactical-unit-3 | Athanaeans | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-tactical-unit-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-tactical-unit-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-3-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-tactical-unit-3-rule | Athanaeans | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-tactical-unit-4 | Pyrae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-tactical-unit-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-tactical-unit-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-tactical-unit-4-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-tactical-unit-4-rule | Pyrae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntryGroup r45-cult-veteran-unit | Prosperine Cult | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:constraint id="r45-cult-veteran-unit-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <ns0:constraint id="r45-cult-veteran-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:constraints>
+          
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r48-vis-64" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:selectionEntry id="r45-cult-veteran-unit-0" name="Pavoni" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-veteran-unit-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-veteran-unit-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-veteran-unit-1" name="Raptora" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-veteran-unit-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-veteran-unit-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-veteran-unit-2" name="Corvidae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-veteran-unit-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-veteran-unit-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-veteran-unit-3" name="Athanaeans" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-veteran-unit-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-veteran-unit-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-veteran-unit-4" name="Pyrae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-veteran-unit-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-veteran-unit-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+        
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-min | None | type=min hidden=None
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-max | None | type=max hidden=None
+
+=== ENTRY ===
+selectionEntry r45-cult-veteran-unit-0 | Pavoni | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-veteran-unit-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-veteran-unit-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-0-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-veteran-unit-0-rule | Pavoni | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-veteran-unit-1 | Raptora | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-veteran-unit-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-veteran-unit-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-1-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-veteran-unit-1-rule | Raptora | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-veteran-unit-2 | Corvidae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-veteran-unit-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-veteran-unit-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-2-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-veteran-unit-2-rule | Corvidae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-veteran-unit-3 | Athanaeans | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-veteran-unit-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-veteran-unit-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-3-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-veteran-unit-3-rule | Athanaeans | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-veteran-unit-4 | Pyrae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-veteran-unit-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-veteran-unit-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-veteran-unit-4-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-veteran-unit-4-rule | Pyrae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntryGroup r45-cult-terminator-unit | Prosperine Cult | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:constraint id="r45-cult-terminator-unit-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <ns0:constraint id="r45-cult-terminator-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:constraints>
+          
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r48-vis-91" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:selectionEntry id="r45-cult-terminator-unit-0" name="Pavoni" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-terminator-unit-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-terminator-unit-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-terminator-unit-1" name="Raptora" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-terminator-unit-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-terminator-unit-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-terminator-unit-2" name="Corvidae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-terminator-unit-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-terminator-unit-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-terminator-unit-3" name="Athanaeans" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-terminator-unit-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-terminator-unit-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-terminator-unit-4" name="Pyrae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-terminator-unit-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-terminator-unit-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+        
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-min | None | type=min hidden=None
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-max | None | type=max hidden=None
+
+=== ENTRY ===
+selectionEntry r45-cult-terminator-unit-0 | Pavoni | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-terminator-unit-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-terminator-unit-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-0-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-terminator-unit-0-rule | Pavoni | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-terminator-unit-1 | Raptora | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-terminator-unit-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-terminator-unit-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-1-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-terminator-unit-1-rule | Raptora | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-terminator-unit-2 | Corvidae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-terminator-unit-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-terminator-unit-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-2-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-terminator-unit-2-rule | Corvidae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-terminator-unit-3 | Athanaeans | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-terminator-unit-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-terminator-unit-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-3-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-terminator-unit-3-rule | Athanaeans | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-terminator-unit-4 | Pyrae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-terminator-unit-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-terminator-unit-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-terminator-unit-4-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-terminator-unit-4-rule | Pyrae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntryGroup r45-cult-hq-praetor | Prosperine Cult | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:constraint id="r45-cult-hq-praetor-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <ns0:constraint id="r45-cult-hq-praetor-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:constraints>
+          
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r48-vis-233" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:selectionEntry id="r45-cult-hq-praetor-0" name="Pavoni" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-praetor-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-praetor-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-praetor-1" name="Raptora" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-praetor-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-praetor-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-praetor-2" name="Corvidae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-praetor-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-praetor-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-praetor-3" name="Athanaeans" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-praetor-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-praetor-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-praetor-4" name="Pyrae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-praetor-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-praetor-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+        
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-min | None | type=min hidden=None
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-max | None | type=max hidden=None
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-praetor-0 | Pavoni | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-praetor-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-praetor-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-0-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-praetor-0-rule | Pavoni | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-praetor-1 | Raptora | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-praetor-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-praetor-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-1-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-praetor-1-rule | Raptora | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-praetor-2 | Corvidae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-praetor-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-praetor-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-2-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-praetor-2-rule | Corvidae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-praetor-3 | Athanaeans | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-praetor-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-praetor-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-3-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-praetor-3-rule | Athanaeans | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-praetor-4 | Pyrae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-praetor-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-praetor-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-praetor-4-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-praetor-4-rule | Pyrae | type=None hidden=false
+
+=== ENTRY ===
+rule r29-lib-powers | Psychic Powers | type=None hidden=false
+
+=== ENTRY ===
+selectionEntryGroup r29-lib-discipline-group | Psychic Discipline(s) | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r29-lib-discipline-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                    <ns0:constraint id="r29-lib-discipline-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                  </ns0:constraints>
+                  
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:modifier type="set" value="2" field="r29-lib-discipline-max">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="hq-consul-librarian-epistolary" shared="true" includeChildSelections="true" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                  </ns0:modifiers>
+                
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Biomancy" id="r29-lib-discipline-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-discipline-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Biomancy" id="r29-lib-discipline-0-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Biomancy discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-38" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Divination" id="r29-lib-discipline-1" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-discipline-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Divination" id="r29-lib-discipline-1-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Divination discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-39" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Pyromancy" id="r29-lib-discipline-2" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-discipline-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Pyromancy" id="r29-lib-discipline-2-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Pyromancy discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-40" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Telekinesis" id="r29-lib-discipline-3" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-discipline-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Telekinesis" id="r29-lib-discipline-3-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Telekinesis discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-41" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Telepathy" id="r29-lib-discipline-4" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-discipline-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Telepathy" id="r29-lib-discipline-4-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Telepathy discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-42" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                  </ns0:selectionEntries>
+                  
+
+=== ENTRY ===
+selectionEntryGroup r29-lib-power-group | Psychic Powers | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r29-lib-power-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                    <ns0:constraint id="r29-lib-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                  </ns0:constraints>
+                  
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:modifier type="set" value="2" field="r29-lib-power-min">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="hq-consul-librarian-epistolary" shared="true" includeChildSelections="true" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                    <ns0:modifier type="set" value="2" field="r29-lib-power-max">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="hq-consul-librarian-epistolary" shared="true" includeChildSelections="true" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                  </ns0:modifiers>
+                
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Smite" id="r29-lib-power-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Smite" id="r29-lib-power-0-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">2</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 4</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Smite" id="r29-lib-power-0-rule" hidden="false">
+                          <ns0:description>Witchfire. Range 18”, S4 AP2 Assault 4.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-43" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Iron Arm" id="r29-lib-power-1" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Iron Arm" id="r29-lib-power-1-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Adds +2 Strength and +1 Toughness.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-44" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Enfeeble" id="r29-lib-power-2" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Enfeeble" id="r29-lib-power-2-rule" hidden="false">
+                          <ns0:description>Malediction — enemy unit within 24”. -1 Strength and Toughness; treats all movement as Difficult Terrain.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-45" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Life Leech" id="r29-lib-power-3" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Life Leech" id="r29-lib-power-3-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">6</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">2</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Life Leech" id="r29-lib-power-3-rule" hidden="false">
+                          <ns0:description>Witchfire. Range 18”, S6 AP2 Assault 2. If it causes at least one unsaved Wound, a model within 6” of the Psyker regains a Wound.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-46" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Warp Speed" id="r29-lib-power-4" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Warp Speed" id="r29-lib-power-4-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Adds +3 Initiative and +3 Attacks and grants Fleet.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-47" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Endurance" id="r29-lib-power-5" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-5-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Endurance" id="r29-lib-power-5-rule" hidden="false">
+                          <ns0:description>Blessing — friendly unit within 24”. The unit gains Eternal Warrior, Feel No Pain (5+) and Relentless.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-48" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Haemorrhage" id="r29-lib-power-6" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-lib-power-6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Haemorrhage" id="r29-lib-power-6-rule" hidden="false">
+                          <ns0:description>Focused Witchfire — range 18”. Resolve the ProHammer Haemorrhage Toughness-test chain effect.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-49" name="Head of the Gorgon — non-Forge-Lord Consul" hidde
+
+=== ENTRY ===
+selectionEntryGroup r29-eso-discipline-group | Psychic Discipline(s) | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r29-eso-discipline-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                    <ns0:constraint id="r29-eso-discipline-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                  </ns0:constraints>
+                  
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Sanctic Daemonology" id="r29-eso-discipline-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-discipline-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Sanctic Daemonology" id="r29-eso-discipline-0-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Sanctic Daemonology discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-121" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Malefic Daemonology" id="r29-eso-discipline-1" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-discipline-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Malefic Daemonology" id="r29-eso-discipline-1-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Malefic Daemonology discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-122" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                  </ns0:selectionEntries>
+                
+
+=== ENTRY ===
+selectionEntryGroup r29-eso-power-group | Psychic Powers | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r29-eso-power-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                    <ns0:constraint id="r29-eso-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                  </ns0:constraints>
+                  
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Banishment" id="r29-eso-power-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Banishment" id="r29-eso-power-0-rule" hidden="false">
+                          <ns0:description>Malediction — enemy Daemon unit within 24”. All models in target unit suffer -1 to their Invulnerable Saves.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-123" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Gate of Infinity" id="r29-eso-power-1" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Gate of Infinity" id="r29-eso-power-1-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Remove Psyker and joined unit and immediately redeploy using Deep Strike.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-124" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Hammerhand" id="r29-eso-power-2" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Hammerhand" id="r29-eso-power-2-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Psyker and joined unit gain +2 Strength.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-125" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Sanctuary" id="r29-eso-power-3" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Sanctuary" id="r29-eso-power-3-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Psyker and joined unit receive +1 to Invulnerable Saves, or gain a 6+ Invulnerable Save; Daemons treat all terrain within 12” as Dangerous Terrain.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-126" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Purge Soul" id="r29-eso-power-4" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Purge Soul" id="r29-eso-power-4-rule" hidden="false">
+                          <ns0:description>Focused Witchfire — range 24”. Psyker and target roll D6 + Leadership; if Psyker is equal or higher, target suffers one automatic Wound with no Armour or Cover Save.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-127" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Cleansing Flame" id="r29-eso-power-5" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-5-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Cleansing Flame" id="r29-eso-power-5-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">9”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">5</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">4</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2D6, Ignores Cover, Soul Blaze</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Cleansing Flame" id="r29-eso-power-5-rule" hidden="false">
+                          <ns0:description>Nova. Range 9”, S5 AP4 Assault 2D6, Ignores Cover, Soul Blaze.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-128" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Vortex of Doom" id="r29-eso-power-6" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-eso-power-6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Vortex of Doom" id="r29-eso-power-6-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">12”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">10</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">1</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Blast, Vortex</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Vortex of Doom" id="r29-eso-power-6-rule" hidden="false">
+                          <ns0:description>Witchfire. Range 12”, S10 AP1 Assault 1, Blast, Vortex.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-eso-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+          
+
+=== ENTRY ===
+selectionEntryGroup r29-null-discipline-group | Psychic Discipline(s) | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r29-null-discipline-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                    <ns0:constraint id="r29-null-discipline-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                  </ns0:constraints>
+                  
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Sanctic Daemonology" id="r29-null-discipline-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-discipline-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Sanctic Daemonology" id="r29-null-discipline-0-rule" hidden="false">
+                          <ns0:description>This Psyker may select powers from the Sanctic Daemonology discipline as permitted by its Consul entry and ProHammer Classic.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-160" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                  </ns0:selectionEntries>
+                
+
+=== ENTRY ===
+selectionEntryGroup r29-null-power-group | Psychic Powers | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r29-null-power-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                    <ns0:constraint id="r29-null-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+                  </ns0:constraints>
+                  
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Banishment" id="r29-null-power-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Banishment" id="r29-null-power-0-rule" hidden="false">
+                          <ns0:description>Malediction — enemy Daemon unit within 24”. All models in target unit suffer -1 to their Invulnerable Saves.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-161" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Gate of Infinity" id="r29-null-power-1" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Gate of Infinity" id="r29-null-power-1-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Remove Psyker and joined unit and immediately redeploy using Deep Strike.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-162" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Hammerhand" id="r29-null-power-2" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Hammerhand" id="r29-null-power-2-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Psyker and joined unit gain +2 Strength.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-163" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Sanctuary" id="r29-null-power-3" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Sanctuary" id="r29-null-power-3-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Psyker and joined unit receive +1 to Invulnerable Saves, or gain a 6+ Invulnerable Save; Daemons treat all terrain within 12” as Dangerous Terrain.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-164" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Purge Soul" id="r29-null-power-4" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Purge Soul" id="r29-null-power-4-rule" hidden="false">
+                          <ns0:description>Focused Witchfire — range 24”. Psyker and target roll D6 + Leadership; if Psyker is equal or higher, target suffers one automatic Wound with no Armour or Cover Save.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-165" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Cleansing Flame" id="r29-null-power-5" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-5-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Cleansing Flame" id="r29-null-power-5-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">9”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">5</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">4</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2D6, Ignores Cover, Soul Blaze</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Cleansing Flame" id="r29-null-power-5-rule" hidden="false">
+                          <ns0:description>Nova. Range 9”, S5 AP4 Assault 2D6, Ignores Cover, Soul Blaze.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r80-ih-consul-cat-166" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Vortex of Doom" id="r29-null-power-6" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r29-null-power-6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Vortex of Doom" id="r29-null-power-6-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">12”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">10</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">1</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 1, Blast, Vortex</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Vortex of Doom" id="r29-null-power-6-rule" hidden="false">
+                          <ns0:description>Witchfire. Range 12”, S10 AP1 Assault 1, Blast, Vortex.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-null-discipline-0" shared="true" includeChildSelections="true" />
+                        
+
+=== ENTRY ===
+selectionEntryGroup r45-cult-hq-centurion | Prosperine Cult | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:constraint id="r45-cult-hq-centurion-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <ns0:constraint id="r45-cult-hq-centurion-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:constraints>
+          
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r48-vis-300" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:selectionEntry id="r45-cult-hq-centurion-0" name="Pavoni" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-centurion-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-centurion-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-centurion-1" name="Raptora" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-centurion-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-centurion-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-centurion-2" name="Corvidae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-centurion-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-centurion-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-centurion-3" name="Athanaeans" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-centurion-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-centurion-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry id="r45-cult-hq-centurion-4" name="Pyrae" type="upgrade" hidden="false" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r45-cult-hq-centurion-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:rules>
+                <ns0:rule id="r45-cult-hq-centurion-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+        
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-min | None | type=min hidden=None
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-max | None | type=max hidden=None
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-centurion-0 | Pavoni | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-centurion-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-centurion-0-rule" name="Pavoni" hidden="false">
+                  <ns0:description>Fleet; Psykers/Psychic Brotherhoods also gain Crusader.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-0-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-centurion-0-rule | Pavoni | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-centurion-1 | Raptora | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-centurion-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-centurion-1-rule" name="Raptora" hidden="false">
+                  <ns0:description>6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-1-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-centurion-1-rule | Raptora | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-centurion-2 | Corvidae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-centurion-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-centurion-2-rule" name="Corvidae" hidden="false">
+                  <ns0:description>Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand &amp; Shoot.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-2-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-centurion-2-rule | Corvidae | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-centurion-3 | Athanaeans | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-centurion-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-centurion-3-rule" name="Athanaeans" hidden="false">
+                  <ns0:description>Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-3-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-centurion-3-rule | Athanaeans | type=None hidden=false
+
+=== ENTRY ===
+selectionEntry r45-cult-hq-centurion-4 | Pyrae | type=upgrade hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:constraint id="r45-cult-hq-centurion-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              
+rules: <ns0:rules xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                <ns0:rule id="r45-cult-hq-centurion-4-rule" name="Pyrae" hidden="false">
+                  <ns0:description>Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            
+
+=== ENTRY ===
+constraint r45-cult-hq-centurion-4-max | None | type=max hidden=None
+
+=== ENTRY ===
+rule r45-cult-hq-centurion-4-rule | Pyrae | type=None hidden=false
+
+=== ENTRY ===
+rule r8-r41-unit-xiii-8-titus-prayto-rule-0 | Psychic Powers | type=None hidden=false
+
+=== ENTRY ===
+selectionEntryGroup r7-prayto-powers | Psychic Powers — select 2 | type=None hidden=false
+constraints: <ns0:constraints xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:constraint id="r7-prayto-powers-min" type="min" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:constraint id="r7-prayto-powers-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:constraints>
+                  
+modifiers: <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:modifier type="set" value="2" field="r29-lib-power-min">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="hq-consul-librarian-epistolary" shared="true" includeChildSelections="true" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                    <ns0:modifier type="set" value="2" field="r29-lib-power-max">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="hq-consul-librarian-epistolary" shared="true" includeChildSelections="true" />
+                      </ns0:conditions>
+                    </ns0:modifier>
+                  </ns0:modifiers>
+                
+selectionEntries: <ns0:selectionEntries xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                    <ns0:selectionEntry type="upgrade" name="Smite" id="r7-prayto-r29-lib-power-0" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Smite" id="r7-prayto-r29-lib-power-0-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">2</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 4</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Smite" id="r7-prayto-r29-lib-power-0-rule" hidden="false">
+                          <ns0:description>Witchfire. Range 18”, S4 AP2 Assault 4.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-43" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Iron Arm" id="r7-prayto-r29-lib-power-1" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Iron Arm" id="r7-prayto-r29-lib-power-1-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Adds +2 Strength and +1 Toughness.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-44" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Enfeeble" id="r7-prayto-r29-lib-power-2" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Enfeeble" id="r7-prayto-r29-lib-power-2-rule" hidden="false">
+                          <ns0:description>Malediction — enemy unit within 24”. -1 Strength and Toughness; treats all movement as Difficult Terrain.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-45" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Life Leech" id="r7-prayto-r29-lib-power-3" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:profiles>
+                        <ns0:profile name="Life Leech" id="r7-prayto-r29-lib-power-3-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                          <ns0:characteristics>
+                            <ns0:characteristic name="Range" typeId="ranged-range">18”</ns0:characteristic>
+                            <ns0:characteristic name="S" typeId="ranged-s">6</ns0:characteristic>
+                            <ns0:characteristic name="AP" typeId="ranged-ap">2</ns0:characteristic>
+                            <ns0:characteristic name="Type" typeId="ranged-type">Assault 2</ns0:characteristic>
+                          </ns0:characteristics>
+                        </ns0:profile>
+                      </ns0:profiles>
+                      <ns0:rules>
+                        <ns0:rule name="Life Leech" id="r7-prayto-r29-lib-power-3-rule" hidden="false">
+                          <ns0:description>Witchfire. Range 18”, S6 AP2 Assault 2. If it causes at least one unsaved Wound, a model within 6” of the Psyker regains a Wound.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-46" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Warp Speed" id="r7-prayto-r29-lib-power-4" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Warp Speed" id="r7-prayto-r29-lib-power-4-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Adds +3 Initiative and +3 Attacks and grants Fleet.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-47" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Endurance" id="r7-prayto-r29-lib-power-5" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-5-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Endurance" id="r7-prayto-r29-lib-power-5-rule" hidden="false">
+                          <ns0:description>Blessing — friendly unit within 24”. The unit gains Eternal Warrior, Feel No Pain (5+) and Relentless.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-48" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Haemorrhage" id="r7-prayto-r29-lib-power-6" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Haemorrhage" id="r7-prayto-r29-lib-power-6-rule" hidden="false">
+                          <ns0:description>Focused Witchfire — range 18”. Resolve the ProHammer Haemorrhage Toughness-test chain effect.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-49" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Prescience" id="r7-prayto-r29-lib-power-7" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-7-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Prescience" id="r7-prayto-r29-lib-power-7-rule" hidden="false">
+                          <ns0:description>Blessing — friendly unit within 12”. Re-roll all failed To Hit rolls.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-50" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+                      </ns0:categoryLinks>
+                    </ns0:selectionEntry>
+                    <ns0:selectionEntry type="upgrade" name="Foreboding" id="r7-prayto-r29-lib-power-8" hidden="false" import="true">
+                      <ns0:constraints>
+                        <ns0:constraint id="r7-prayto-r29-lib-power-8-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                      </ns0:constraints>
+                      <ns0:rules>
+                        <ns0:rule name="Foreboding" id="r7-prayto-r29-lib-power-8-rule" hidden="false">
+                          <ns0:description>Blessing — targets Psyker. Psyker and joined unit gain Counter-Attack and may fire reaction fire using the full number of allowed shots.</ns0:description>
+                        </ns0:rule>
+                      </ns0:rules>
+                      <ns0:modifiers>
+                        </ns0:modifiers>
+                      <ns0:categoryLinks>
+                        <ns0:categoryLink id="r7-prayto-r80-ih-consul-cat-51" name="Head of the Gorgon — non-Forge-Lord Consul" hidden="false" targetId="r80-ih-head-nonforge-consul" primary="false" />
+ 
+
+=== ENTRY ===
+rule r11-dg-r41-unit-xiv-4-crysos-morturg-rule-0 | Psychic Powers | type=None hidden=false
+
+=== ENTRY ===
+rule r13-dg-r41-unit-xiv-4-crysos-morturg-rule-1 | Psychic Powers | type=None hidden=false
