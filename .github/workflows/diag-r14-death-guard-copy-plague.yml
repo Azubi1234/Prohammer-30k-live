@@ -1,0 +1,25 @@
+name: Diagnose R14 Death Guard copy/plague
+on:
+  push:
+    paths:
+      - '.github/build/diag_r14_death_guard_copy_plague.py'
+      - '.github/workflows/diag-r14-death-guard-copy-plague.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python .github/build/diag_r14_death_guard_copy_plague.py
+      - name: Commit diagnostic
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-r14-death-guard-copy-plague.txt
+          git commit -m 'Diagnostic: R14 Death Guard copy/plague' || exit 0
+          git push
