@@ -1,0 +1,18 @@
+R18 THOUSAND SONS FINISH — DRY RUN ONLY
+Input live CAT revision: 17 | Proposed CAT revision: 18 | GST revision remains 1
+LIVE FILES WRITTEN: NO
+
+CHANGES:
+  + Generic Praetor/Centurion psychic selectors added; normal Librarian selector duplication is suppressed for XV rosters
+  + Prosperine Armoury gated and dependency-cleaned; added TS armoury to 5 named ICs and Transponders to 28 Terminator Command copies
+  + Rites: Axis normal Troops forced to maximum size; Guard free Terminator Transponders, Praetor ML3 selector and Magnus HQ relocation implemented
+  + Magnus rebuilt with fixed Infernal Phoenix/Strands, three selectable powers from at least two disciplines, 2,000/1,500 point gate, Sekhmet retinue and Crimson King's Guard upgrades
+
+INTENTIONALLY PRESERVED / NOT INVENTED:
+  - Guard of the Crimson King still contains the written Sekhmet contradiction: the unit is 0-1, yet the Rite says Sekhmet must fill the compulsory Troops selections. No fake exception was invented.
+  - Axis and Guard vehicle-to-Infantry/Legiones ratios are retained as rule text because the current catalogue does not expose a reliable cross-force unit-type counter.
+  - Allied Detachment / Fortification prohibitions remain rule text because the present GST does not expose those force/category choices safely enough to automate.
+  - Warlord-only requirements remain explicit selector/rule text because the catalogue currently has no single trustworthy Warlord marker to validate against.
+  - Fellowships ORDER OF THE CULTS (each Brotherhood Cult must match at least one XV Independent Character Cult) is reserved for a dedicated hidden-category validator pass.
+
+DRY-RUN RESULT: PASS
