@@ -1,0 +1,3 @@
+LIVE R4 PUBLISH
+Catalogue revision bumped 3 -> 4 to force New Recruit to fetch the already-applied World Eaters weapon and retinue fixes.
+No rules content changed in this publish step.
