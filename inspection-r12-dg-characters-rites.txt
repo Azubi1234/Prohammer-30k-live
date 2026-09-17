@@ -1,0 +1,205 @@
+CAT=12 GST=1
+
+=== r25-rite-xiv-0-the-reaping | Death Guard Rite of War — The Reaping ===
+RULE r25-rite-xiv-0-the-reaping-rule | The Reaping hidden=false :: The Reaping is one of the characteristic attack formations of the XIV Legion. Heavy infantry and fire-support units advance in a relentless column, purging shattered cities and fortified battlefields through weight of fire and remorseless attrition.
+EFFECTS
+SUPERIOR FIREPOWER
+Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices.
+They may not fulfil compulsory Troops selections unless another rule specifically permits them to do so.
+IMPLACABLE
+All Death Guard Infantry units gain the Move Through Cover special rule.
+This includes models wearing any form of Terminator Armour.
+DARK ARSENAL
+Any Death Guard Character or Independent Character may pu
+
+=== r25-rite-xiv-1-creeping-death | Death Guard Rite of War — Creeping Death ===
+RULE r25-rite-xiv-1-creeping-death-rule | Creeping Death hidden=false :: As the Horus Heresy progressed, the Death Guard unleashed ever greater quantities of forbidden chemical and biological weapons. Entire regions were reduced to poisoned wastelands through which the warriors of the XIV Legion advanced seemingly untouched.
+EFFECTS
+MIST-CLAD
+Death Guard Infantry models in open ground receive a 5+ Cover Save against shooting attacks provided there is no enemy model within 12".
+This does not improve an existing Cover Save.
+BIO-PHAGE BOMBARDMENT
+After both armies have deployed, including Scouts and Infiltrators, roll a D6 for every piece of terrain representing a wood or jungle.
+On a 4+, that terrain is reduced to a fetid chemical mire for the remainder of the batt
+
+=== r41-unit-xiv-3-calas-typhon-first-captain | CALAS TYPHON, FIRST CAPTAIN ===
+RULE r41-unit-xiv-3-calas-typhon-first-captain-source | Source Entry hidden=true :: Calas Typhon | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+LATENT PSYKER Typhon is treated as a Psyker (Mastery Level 1\) solely for the purpose of using Aura of Pestilence and suffering Perils of the Warp. He knows no other psychic powers. Typhon takes the Psychic Test for Aura of Pestilence using Leadership 7 instead of the Leadership value shown in his profile. AURA OF PESTILENCE At the beginning of either player's Assault phase, Typhon may attempt to invoke Aura of Pestilence. If the Psychic Test is passed, every enemy model within 2" of Typhon suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. If the Psychic Test is failed, every friendly model with
+RULE r11-dg-r41-unit-xiv-3-calas-typhon-first-captain-rule-0 | Latent Psyker hidden=false :: Typhon is treated as a Psyker (Mastery Level 1) solely for Aura of Pestilence and Perils of the Warp. He knows no other psychic powers and tests for Aura of Pestilence using Leadership 7.
+RULE r11-dg-r41-unit-xiv-3-calas-typhon-first-captain-rule-1 | Aura of Pestilence hidden=false :: At the beginning of either player’s Assault phase Typhon may take a Psychic Test. If passed, enemy models within 2 inches suffer -1 Attack (minimum 1) until the end of the phase. If failed, friendly models within 2 inches suffer the penalty instead. Typhon fights normally.
+PROFILE r41-unit-xiv-3-calas-typhon-first-captain-profile-0 | Calas Typhon type=Model typeId=prof-model
+  WS: 6
+  BS: 5
+  S: 4
+  T: 4
+  W: 3
+  I: 5
+  A: 3
+  Ld: 9
+  Sv: 2+/4+
+GROUP live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue | RETINUE — choose up to one (no separate FOC slot) hidden=false
+  OPT live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators | DEATHSHROUD TERMINATORS type=unit target=None hidden=false
+  OPT live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-1-hq-praetor-ret-termcommand | Legion Terminator Command Squad type=unit target=None hidden=false
+
+=== r41-unit-xiv-4-crysos-morturg | CRYSOS MORTURG ===
+RULE r41-unit-xiv-4-crysos-morturg-source | Source Entry hidden=true :: Crysos Morturg | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 3+/5+
+Force Organisation:
+PSYCHIC POWERS Morturg selects one psychic power from the normal Legion Librarian Psychic Power list. He follows all normal ProHammer rules for Psykers and Mastery Level 1. MASTER OF AMBUSH Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. Morturg must remain joined to that unit when it is deployed. DESTROYER OFFICER Morturg may join a Legion Destroyer Squad or Mortus Poisoner Squad despite the normal restrictions imposed by Destroyer Cadre. COMMAND RETINUE Morturg may select one Mortus Poisoner Squad as his retinue. The selected squad does not occupy a separate For
+RULE r11-dg-r41-unit-xiv-4-crysos-morturg-rule-0 | Psychic Powers hidden=false :: Morturg selects one psychic power from the normal Legion Librarian Psychic Power list and follows the normal ProHammer rules for Psykers and Mastery Level 1.
+RULE r11-dg-r41-unit-xiv-4-crysos-morturg-rule-1 | Master of Ambush hidden=false :: Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. He must remain joined to that unit when it deploys.
+RULE r11-dg-r41-unit-xiv-4-crysos-morturg-rule-2 | Destroyer Officer hidden=false :: Morturg may join a Legion Destroyer Squad or Mortus Poisoner Squad despite the normal restrictions imposed by Destroyer Cadre.
+PROFILE r41-unit-xiv-4-crysos-morturg-profile-0 | Crysos Morturg type=Model typeId=prof-model
+  WS: 5
+  BS: 5
+  S: 4
+  T: 4
+  W: 3
+  I: 5
+  A: 3
+  Ld: 9
+  Sv: 3+/5+
+GROUP r41-unit-xiv-4-crysos-morturg-options | Options hidden=false
+  OPT r41-unit-xiv-4-crysos-morturg-opt-0-krak-grenades | Krak grenades type=upgrade target=None hidden=false
+  OPT r41-unit-xiv-4-crysos-morturg-opt-1-melta-bombs | Melta bombs type=upgrade target=None hidden=false
+GROUP live-r2-r41-unit-xiv-4-crysos-morturg-retinue | RETINUE — choose up to one (no separate FOC slot) hidden=false
+  OPT live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad | MORTUS POISONER SQUAD type=unit target=None hidden=false
+
+=== r41-unit-xiv-5-durak-rask | DURAK RASK ===
+RULE r41-unit-xiv-5-durak-rask-source | Source Entry hidden=true :: Durak Rask | 5 | 5 | 4 | 4 | 3 | 4 | 3 | 9 | 2+/5+
+Force Organisation:
+ART OF DESTRUCTION Durak Rask and any Death Guard Infantry unit he has joined have the Tank Hunters special rule. COMMAND RETINUE Durak Rask may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Thunder hammer
+• Volkite Serpenta
+• Nuncio Vox
+• Phosphex Bomb
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Death Guard)
+• Independent Character
+• Master of the Legion
+• Art of Destruction
+Allegiance:
+• Traitor only
+OPTIONS
+• Durak Rask may take:
+• Krak grenades ........
+RULE r11-dg-r41-unit-xiv-5-durak-rask-rule-0 | Art of Destruction hidden=false :: Durak Rask and any Death Guard Infantry unit he has joined have Tank Hunters.
+PROFILE r41-unit-xiv-5-durak-rask-profile-0 | Durak Rask type=Model typeId=prof-model
+  WS: 5
+  BS: 5
+  S: 4
+  T: 4
+  W: 3
+  I: 4
+  A: 3
+  Ld: 9
+  Sv: 2+/5+
+GROUP r41-unit-xiv-5-durak-rask-options | Options hidden=false
+  OPT r41-unit-xiv-5-durak-rask-opt-0-krak-grenades | Krak grenades type=upgrade target=None hidden=false
+  OPT r41-unit-xiv-5-durak-rask-opt-1-melta-bombs | Melta bombs type=upgrade target=None hidden=false
+GROUP live-r2-r41-unit-xiv-5-durak-rask-retinue | RETINUE — choose up to one (no separate FOC slot) hidden=false
+  OPT live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Legion Command Squad type=unit target=None hidden=false
+
+=== r41-unit-xiv-6-ignatius-grulgor | IGNATIUS GRULGOR ===
+RULE r41-unit-xiv-6-ignatius-grulgor-source | Source Entry hidden=true :: Ignatius Grulgor | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 3+/5+
+Force Organisation:
+THE EATER OF LIVES The first time Grulgor is reduced to 0 Wounds, do not immediately remove him as a casualty. Roll a D6. On a 1–4, remove Grulgor normally. On a 5+, Grulgor remains in play with 1 Wound remaining and gains the following special rules for the remainder of the battle: • Daemon • Fearless • Feel No Pain (5+) This rule may only be used once per battle. COMMAND RETINUE Grulgor may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Power Armour
+• Refractor Field
+• Power weapon
+• Bolter
+• 
+RULE r11-dg-r41-unit-xiv-6-ignatius-grulgor-rule-0 | The Eater of Lives hidden=false :: The first time Grulgor is reduced to 0 Wounds, roll a D6 before removing him. On 1–4 remove him normally. On 5+ he remains with 1 Wound and gains Daemon, Fearless and Feel No Pain (5+) for the rest of the battle. This may only occur once.
+PROFILE r41-unit-xiv-6-ignatius-grulgor-profile-0 | Ignatius Grulgor type=Model typeId=prof-model
+  WS: 6
+  BS: 5
+  S: 4
+  T: 4
+  W: 3
+  I: 5
+  A: 3
+  Ld: 10
+  Sv: 3+/5+
+GROUP r41-unit-xiv-6-ignatius-grulgor-options | Options hidden=false
+  OPT r41-unit-xiv-6-ignatius-grulgor-opt-0-krak-grenades | Krak grenades type=upgrade target=None hidden=false
+  OPT r41-unit-xiv-6-ignatius-grulgor-opt-1-melta-bombs | Melta bombs type=upgrade target=None hidden=false
+GROUP live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue | RETINUE — choose up to one (no separate FOC slot) hidden=false
+  OPT live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Legion Command Squad type=unit target=None hidden=false
+
+=== r41-unit-xiv-7-nathaniel-garro | NATHANIEL GARRO ===
+RULE r41-unit-xiv-7-nathaniel-garro-source | Source Entry hidden=true :: Nathaniel Garro | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+LIBERTAS Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. Garro receives no additional Attack for fighting with a second close-combat weapon while using Libertas. AQUILA IMPERATOR The Aquila Imperator grants Garro a 4+ Invulnerable Save. This is already included in his profile. Whenever Garro or a unit he has joined would be affected by an enemy psychic power, roll a D6. On a 5+, that psychic power is nullified and has no effect upon Garro or his unit. Only one Aquila Imperator nullification roll may be attempted against each psychic power. COMMAND RETINUE Garro may select one Leg
+RULE r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-0 | Libertas hidden=false :: Libertas is a Two-Handed, Master-crafted Power Weapon which grants Garro +2 Strength. He receives no additional Attack for a second close-combat weapon while using it.
+RULE r11-dg-r41-unit-xiv-7-nathaniel-garro-rule-1 | Aquila Imperator hidden=false :: The Aquila Imperator grants Garro a 4+ Invulnerable Save. Whenever Garro or a unit he has joined would be affected by an enemy psychic power, roll a D6. On 5+ that power is nullified against Garro and his unit. Only one such roll may be made per psychic power.
+PROFILE r41-unit-xiv-7-nathaniel-garro-profile-0 | Nathaniel Garro type=Model typeId=prof-model
+  WS: 6
+  BS: 5
+  S: 4
+  T: 4
+  W: 3
+  I: 5
+  A: 3
+  Ld: 9
+  Sv: 2+/4+
+GROUP r41-unit-xiv-7-nathaniel-garro-options | Options hidden=false
+  OPT r41-unit-xiv-7-nathaniel-garro-opt-0-krak-grenades | Krak grenades type=upgrade target=None hidden=false
+GROUP live-r2-r41-unit-xiv-7-nathaniel-garro-retinue | RETINUE — choose up to one (no separate FOC slot) hidden=false
+  OPT live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Legion Command Squad type=unit target=None hidden=false
+
+=== r41-unit-xiv-8-xiv-mortarion-the-reaper | XIV — MORTARION, THE REAPER ===
+RULE r41-unit-xiv-8-xiv-mortarion-the-reaper-source | Source Entry hidden=true :: Primarch of the Death Guard, the Pale King, the Reaper of Men
+Mortarion was raised beneath the poisoned skies of Barbarus, a world where survival itself was a war against toxic atmosphere, monstrous overlords and the slow certainty of death. From those beginnings came a Primarch of almost inexhaustible endurance, possessed of a hatred for tyranny, witchcraft and weakness in all their forms. Where others sought brilliance of manoeuvre or the glory of the decisive charge, Mortarion believed that victory belonged to the warrior who simply refused to die.
+Under his command the XIV Legion became the Death Guard, an army fashioned in its Primarch's image. They advanced through irradiated wasteland
+RULE r11-dg-mortarion-rule-0 | Barbaran Plate hidden=false :: Barbaran Plate counts as Primarch Armour.
+RULE r11-dg-mortarion-rule-1 | Silence hidden=false :: Silence is a Two-Handed Power Weapon. Attacks are resolved at +1 Strength and have Rampage. Any unsaved Wound inflicted against a model without the Primarch rule becomes a Massive Wound and inflicts D3 Wounds instead of one.
+RULE r11-dg-mortarion-rule-2 | Barbaran Endurance hidden=false :: Mortarion has Feel No Pain (5+).
+RULE r11-dg-mortarion-rule-3 | Witch-Spite hidden=false :: Whenever Mortarion or a unit he has joined makes a Deny the Witch roll, a failed roll may be re-rolled. Mortarion’s Adamantium Will grants +2 to Deny the Witch rather than +1.
+RULE r11-dg-mortarion-rule-4 | The Reaper’s Advance hidden=false :: Friendly Death Guard Infantry within 12 inches of Mortarion may fire Rapid Fire weapons as though stationary and may re-roll failed Pinning tests.
+RULE r11-dg-mortarion-rule-5 | Toxic Miasma hidden=false :: Enemy non-Vehicle models in base contact with Mortarion suffer -1 Toughness while they remain in base contact.
+RULE r11-dg-mortarion-rule-6 | Poison Cannot Kill Death hidden=false :: Poisoned attacks against Mortarion do not use their fixed To Wound value. Resolve them using Strength versus Toughness; a Poisoned attack with no Strength wounds only on an unmodified 6.
+RULE r11-dg-mortarion-rule-7 | Primarch Retinue hidden=false :: Mortarion may select one Deathshroud Terminator Squad as his Primarch Retinue. He may not select Legion Honour Guard or Legion Terminator Command Squad as his Primarch Retinue.
+PROFILE r41-unit-xiv-8-xiv-mortarion-the-reaper-profile-0 | Mortarion type=Model typeId=prof-model
+  WS: 7
+  BS: 6
+  S: 6
+  T: 7
+  W: 6
+  I: 5
+  A: 4
+  Ld: 10
+  Sv: 1+
+GROUP r11-dg-mortarion-retinue | PRIMARCH RETINUE — Deathshroud only hidden=false
+  OPT r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators | DEATHSHROUD TERMINATORS type=unit target=None hidden=false
+
+=== r41-unit-xiv-9-mortarion-prince-of-decay | MORTARION, PRINCE OF DECAY ===
+RULE r41-unit-xiv-9-mortarion-prince-of-decay-source | Source Entry hidden=false :: Daemon Primarch of Nurgle
+Mortarion endured a transformation he had once despised above all things. His body swollen with corruption and borne upon vast ragged wings, the Death Lord became a living vessel of pestilence. Where Mortarion walks, flesh rots, armour corrodes and the air itself becomes poison. Unlike his brothers, the Daemon Primarch does not descend upon his enemies in glorious flight or frenzied fury. He simply advances, inexorable and enduring, until everything around him begins to die.
+Mortarion, Prince of Decay | 7 | 6 | 7 | 8 | 8 | 4 | 5 | 10 | 2+/4++
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Mortarion, Prince of Decay
+Unit Type:
+• Monstrous Creature (Character
+PROFILE r41-unit-xiv-9-mortarion-prince-of-decay-profile-0 | Mortarion, Prince of Decay type=Model typeId=prof-model
+  WS: 7
+  BS: 6
+  S: 7
+  T: 8
+  W: 8
+  I: 4
+  A: 5
+  Ld: 10
+  Sv: 2+/4++
