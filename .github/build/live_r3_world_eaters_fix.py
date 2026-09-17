@@ -14,7 +14,6 @@ def ensure(p,t):
     return x
 
 def byid(i): return next((e for e in root.iter() if e.get('id')==i),None)
-def parent_map(): return {c:p for p in root.iter() for c in p}
 def slug(s): return re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 def pts(e):
     cs=e.find(C('costs'))
@@ -42,18 +41,16 @@ def rewrite_ids(node,prefix):
     for x in node.iter():
         if x.get('id'):mp[x.get('id')]=prefix+x.get('id')
     for x in node.iter():
-        if x.get('id') in mp:x.set('id',mp[x.get('id')])
+        if x.get('id') in mp:x.set('id',mp[x.get('id'))
         for a in ('targetId','childId','field'):
             if x.get(a) in mp:x.set(a,mp[x.get(a)])
 
 def clone_unit(src,prefix):
     c=deepcopy(src); rewrite_ids(c,prefix); c.set('id',prefix+src.get('id')); c.set('hidden','false')
-    # nested retinues never occupy a separate FOC slot
     cl=c.find(C('categoryLinks'))
     if cl is not None:c.remove(cl)
     mods=c.find(C('modifiers'))
     if mods is not None:c.remove(mods)
-    # strip roster-level uniqueness from the nested copy, then cap it inside the retinue group
     cs=c.find(C('constraints'))
     if cs is not None:
         for x in list(cs):
@@ -74,28 +71,22 @@ def new_opt(group,id_,name,per,model_id):
     setmax(e,1,id_+'-max'); add_scaled(e,per,model_id,name); return e
 
 def strip_legion_specific_extras(u):
-    # The generic retinue templates accumulated options from unrelated Legion passes.
-    # Remove obvious non-World-Eaters additions from the nested copy only.
     bad_prefixes=('r40-da-','da22-','r64-if-','r68-if-','r70-if-','r71-nl-','r74-ba-','r79-ih-','r83-ih-','live-r2-fabius-','live-r2-fulgrim-')
     for p in list(u.iter()):
         for x in list(p):
             xid=x.get('id') or ''
             if any(k in xid for k in bad_prefixes):p.remove(x)
 
-# ---------- TRIARII: source-correct whole-squad controls ----------
 tri_fixed=[]
 for u in list(root.iter(C('selectionEntry'))):
     if u.get('type')!='unit':continue
     if 'TRIARII BREACHER SQUAD' not in (u.get('name') or '').upper():continue
-    # Find the squad-size model in this copy.
     model=next((x for x in u.iter(C('selectionEntry')) if x.get('type')=='model' and 'triarii breacher' in (x.get('name') or '').lower()),None)
     if model is None:continue
-    # Remove the old parsed option group(s) that present squad-wide choices as single-model purchases.
     gs=ensure(u,'selectionEntryGroups')
     for g in list(gs):
         if (g.get('name') or '').strip().lower()=='options' and ('triarii-breacher-squad-options' in (g.get('id') or '')):gs.remove(g)
         if (g.get('id') or '').startswith('live-r3-triarii-'):gs.remove(g)
-    # Remove Frag grenades from fixed wargear: source lists them as an optional whole-squad purchase.
     for g in list(gs):
         if (g.get('name') or '').strip().lower()=='wargear':
             ses=g.find(C('selectionEntries'))
@@ -111,14 +102,13 @@ for u in list(root.iter(C('selectionEntry'))):
     new_opt(eq,eq.get('id')+'-krak','Krak grenades — entire squad',2,model.get('id'))
     tri_fixed.append(u.get('id'))
 
-# ---------- WORLD EATERS RETINUES: patch every actual selectable copy ----------
 TARGETS={
  'KHÂRN THE BLOODY':['hq-centurion-ret-command','r41-unit-xii-0-rampager-squad'],
  'SHABRAN DARR':['r41-unit-xii-2-red-hand-destroyer-mortalis-squad','assault-unit'],
  'KARGOS, THE BLOODSPITTER':['hq-centurion-ret-command'],
  'CAPTAIN EHRLEN':['hq-centurion-ret-command'],
  'DELVARUS':['r41-unit-xii-5-triarii-breacher-squad'],
- 'XII — ANGRON, THE RED ANGEL':['hq-praetor-ret-honour','hq-praetor-ret-tc','r41-unit-xii-4-devourer-terminator-squad'],
+ 'XII — ANGRON, THE RED ANGEL':['hq-praetor-ret-honour','hq-centurion-ret-termcommand','r41-unit-xii-4-devourer-terminator-squad'],
 }
 patched=[]
 for ch in list(root.iter(C('selectionEntry'))):
@@ -127,7 +117,6 @@ for ch in list(root.iter(C('selectionEntry'))):
     key=next((k for k in TARGETS if nm==k.upper()),None)
     if key is None:continue
     gs=ensure(ch,'selectionEntryGroups')
-    # Remove prior auto-retinue groups so there is one clean selector on every copy.
     for g in list(gs):
         gn=(g.get('name') or '').lower(); gid=g.get('id') or ''
         if 'retinue' in gn and (gid.startswith('live-r2-') or gid.startswith('live-r3-we-')):gs.remove(g)
@@ -145,12 +134,10 @@ for ch in list(root.iter(C('selectionEntry'))):
     add_rule(g,gid+'-rule','Retinue',f'{key.title()} may select one of the listed retinue units. The selected unit does not occupy a separate Force Organisation slot.')
     patched.append((ch.get('id'),key,made))
 
-# Upgrade catalogue revision and index.
 root.set('revision','3')
 ct.write(CAT,encoding='utf-8',xml_declaration=True)
 idx=IDX.read_text(encoding='utf-8')
 idx=re.sub(r'(filePath="Legiones Astartes\.cat"[^>]*dataRevision=")\d+(" )',r'\g<1>3\2',idx)
-# Handle if dataRevision is final attr before /> instead of followed by space.
 idx=re.sub(r'(filePath="Legiones Astartes\.cat"[^>]*dataRevision=")\d+("\s*/>)',r'\g<1>3\2',idx)
 IDX.write_text(idx,encoding='utf-8')
 
