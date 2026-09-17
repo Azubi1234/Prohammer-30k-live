@@ -1,0 +1,8 @@
+LIVE R13 — DEATH GUARD CHARACTERS & RITES
+CAT=13 GSTref=1
+
+• Character wargear/special rules rebuilt as discrete New Recruit rules
+• Typhon Alchem Flamer, Morturg Combi-Alchem profile and Rask Phosphex profile added
+• Mortarion rebuilt as a proper discrete entry with Silence, Lantern, Phosphex and all named rules
+• The Reaping split into functional/readable effects and conditional +10 Rad Grenade character upgrades
+• Creeping Death split into readable effects while preserving its Traitor-only selector gate
