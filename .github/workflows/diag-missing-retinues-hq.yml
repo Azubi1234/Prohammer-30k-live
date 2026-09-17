@@ -1,0 +1,51 @@
+name: Diagnose missing HQ retinue selectors
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diag-missing-retinues-hq.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan HQ and Primarch retinues
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, xml.etree.ElementTree as ET
+          NS='http://www.battlescribe.net/schema/catalogueSchema'; C=lambda t:f'{{{NS}}}{t}'
+          root=ET.parse('Legiones Astartes.cat').getroot(); top=root.find(C('selectionEntries'))
+          out=[]
+          for e in top.findall(C('selectionEntry')):
+              cats=[(x.get('name') or '').lower() for x in e.findall('./'+C('categoryLinks')+'/'+C('categoryLink'))]
+              if not any(x in cats for x in ('hq','lord of war')): continue
+              own_groups=e.find(C('selectionEntryGroups'))
+              if own_groups is not None and any('retinue' in (g.get('name') or '').lower() for g in own_groups.findall(C('selectionEntryGroup'))):
+                  continue
+              hits=[]
+              for r in e.iter(C('rule')):
+                  d=r.find(C('description')); tx=(d.text or '') if d is not None else ''
+                  low=tx.lower()
+                  if ('retinue' in low or 'command squad' in low) and ('may select' in low or 'may be accompanied' in low):
+                      # keep just sentences containing retinue / command squad wording
+                      bits=re.split(r'(?<=[.!?])\s+',tx.replace('\n',' '))
+                      sel=' '.join(b for b in bits if 'retinue' in b.lower() or 'command squad' in b.lower())
+                      hits.append(sel or tx[:700])
+              if hits:
+                  out.append(f"{e.get('id')} | {e.get('name')} | {'/'.join(cats)}")
+                  for h in hits: out.append('  '+h)
+          Path('inspection-missing-retinues-hq.txt').write_text('\n'.join(out)+'\n',encoding='utf-8')
+          print('\n'.join(out))
+          PY
+      - name: Commit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add inspection-missing-retinues-hq.txt
+          git diff --cached --quiet || git commit -m 'Diagnostic: missing HQ retinue selectors'
+          git pull --rebase origin main
+          git push
