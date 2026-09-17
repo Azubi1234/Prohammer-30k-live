@@ -1,0 +1,8 @@
+LIVE R7 — ULTRAMARINES FINISH
+CAT=7 GSTref=1
+
+• Titus Prayto now has a functional Psychic Powers — select 2 group using the normal ProHammer power list
+• Honoured Telemechrus hidden unless Allegiance: Loyalist is selected
+• Roboute Guilliman hidden unless Allegiance: Loyalist is selected
+• Vigil Opertii Mission hidden unless Allegiance: Loyalist is selected
+• Logos Lectora now hides 245 Drop Pod/Dreadclaw selections that would require Deep Strike
