@@ -9,7 +9,7 @@ if root.get('revision')!='16': raise RuntimeError(f'Expected CAT 16, got {root.g
 
 def norm(s): return re.sub(r'\s+',' ',(s or '').strip())
 
-# One canonical reminder for ordinary universal rules.  Contextual/modified versions are deliberately left alone.
+# One canonical reminder for ordinary universal rules. Contextual/modified versions are deliberately left alone.
 CANON={
  'Fearless':'This unit is Fearless.',
  'Fear':'This unit has Fear.',
@@ -32,14 +32,12 @@ def is_plain_reminder(name, desc):
     d=norm(desc); l=d.lower(); n=name.lower()
     if not d: return False
     if name=='Master of the Legion':
-        # All current Master of the Legion local descriptions only restate the shared rule; use the complete Praetor wording.
         return True
     if name not in CANON: return False
     if l==CANON[name].lower(): return False
     # Keep genuinely modified/contextual versions (Drop Pod Deep Strike, Mutable Tactics, Thiel duration, etc.).
     contextual=('except as modified','drop pod assault','mutable tactic','for the duration','thiel and','orth’s vehicle','orth\'s vehicle')
     if any(x in l for x in contextual): return False
-    # Standard reminder phrasings generated throughout the catalogue.
     if 'uses the normal' in l: return True
     if 'uses the prohammer' in l: return True
     if 'using the normal prohammer' in l: return True
@@ -73,19 +71,19 @@ for owner in root.iter():
 root.set('revision','17')
 ct.write(CAT,encoding='utf-8',xml_declaration=True)
 
-# index revision bump
 it=ET.parse(IDX); ir=it.getroot()
 for e in ir.iter():
     if e.get('filePath')=='Legiones Astartes.cat': e.set('dataRevision','17')
 it.write(IDX,encoding='utf-8',xml_declaration=True)
 
-# Verify that the exact Fearless variants from the reported popup are gone.
+# Verify the exact duplicate Fearless reminder variants reported by the user are gone, while contextual Deep Strike text is allowed to remain.
 ct2=ET.parse(CAT); rr=ct2.getroot(); bad=[]
 for r in rr.iter(C('rule')):
     n=norm(r.get('name')); d=r.find(C('description')); txt=norm(d.text if d is not None else '')
-    if n in CANON and any(x in txt.lower() for x in ('uses the normal prohammer','uses the normal fearless','uses the prohammer fearless','normal fearless special rule')):
+    low=txt.lower()
+    if n=='Fearless' and any(x in low for x in ('uses the normal prohammer fearless','uses the normal fearless','uses the prohammer fearless','normal fearless special rule')):
         bad.append((r.get('id'),n,txt))
-if bad: raise RuntimeError('Generic reminder variants remain: '+repr(bad[:10]))
+if bad: raise RuntimeError('Fearless reminder variants remain: '+repr(bad[:10]))
 
 lines=['LIVE R17 — UNIVERSAL SPECIAL-RULE POPUP CLEANUP',f'CAT=17 GSTref={root.get("gameSystemRevision")}', '',
        'Standard universal-rule reminder text is now canonicalised so New Recruit merges identical rules instead of showing several near-identical lines.',
