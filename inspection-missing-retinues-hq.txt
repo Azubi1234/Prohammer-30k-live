@@ -1,0 +1,72 @@
+da22-corswain | Corswain, Seneschal of the First Legion | hq
+  May select a Deathwing Companion Detachment as retinue. That retinue may increase every Companion and Oathbearer WS by +1 to max WS6 for +5 points per model. Corswain and retinue count as one HQ selection.
+da22-redloss | Farith Redloss | hq
+  May select one Dreadwing Interemptor Squad as retinue; it occupies no separate Elites choice and Redloss may join it despite Bitter Duty.
+da22-holguin | Holguin | hq
+  May select a Deathwing Terminator Companion Detachment as personal retinue without a separate FOC slot; together count as one HQ selection.
+r41-unit-xii-6-kharn-the-bloody | KHÂRN THE BLOODY | hq
+  Khârn may select one Legion Command Squad or Rampager Squad as his retinue.
+r41-unit-xii-7-shabran-darr | SHABRAN DARR | hq
+  Darr may select one Red Hand Destroyer Mortalis or Assault Squad as his retinue.
+r41-unit-xii-9-kargos-the-bloodspitter | KARGOS, THE BLOODSPITTER | hq
+  Kargos may select one Legion Command Squad. If Kargos has a Jump Pack, the Command Squad may purchase Jump Packs normally.
+r41-unit-xii-10-captain-ehrlen | CAPTAIN EHRLEN | hq
+  Ehrlen may select one Legion Command Squad as his retinue. Every model in the Command Squad may purchase a Jump Pack for +15 points per model. This Command Squad does not occupy a separate Force Organisation slot.
+r41-unit-xii-11-delvarus | DELVARUS | hq
+  Delvarus may select one Legion Triarii Breacher Squad as his retinue.
+r41-unit-xiii-4-marius-gage-first-master | MARIUS GAGE, FIRST MASTER | hq
+  COMMAND RETINUE Marius Gage may select a Legion Command Squad, Legion Terminator Command Squad or Invictarus Suzerain Squad as his retinue.
+r41-unit-xiii-5-remus-ventanus | REMUS VENTANUS | hq
+  COMMAND RETINUE Ventanus may select one Legion Command Squad as his retinue.
+r41-unit-xiii-8-titus-prayto | TITUS PRAYTO | hq
+  COMMAND RETINUE Prayto may select one Legion Command Squad as his retinue.
+r41-unit-xiv-3-calas-typhon-first-captain | CALAS TYPHON, FIRST CAPTAIN | hq
+  COMMAND RETINUE Typhon may select either a Deathshroud Terminator Squad or Legion Terminator Command Squad as his retinue.
+r41-unit-xiv-4-crysos-morturg | CRYSOS MORTURG | hq
+  COMMAND RETINUE Morturg may select one Mortus Poisoner Squad as his retinue.
+r41-unit-xiv-5-durak-rask | DURAK RASK | hq
+  COMMAND RETINUE Durak Rask may select one Legion Command Squad as his retinue.
+r41-unit-xiv-6-ignatius-grulgor | IGNATIUS GRULGOR | hq
+  COMMAND RETINUE Grulgor may select one Legion Command Squad as his retinue.
+r41-unit-xiv-7-nathaniel-garro | NATHANIEL GARRO | hq
+  COMMAND RETINUE Garro may select one Legion Command Squad as his retinue.
+r41-unit-xv-6-ahzek-ahriman | AHZEK AHRIMAN | hq
+  AHRIMAN'S CABAL Ahriman may select one Legion Command Squad as his personal retinue. A Command Squad selected in this manner may purchase Ahriman's Cabal for +50 points.
+r41-unit-xv-7-phosis-t-kar | PHOSIS T'KAR | hq
+  COMMAND RETINUE Phosis may select one Legion Command Squad as his retinue.
+r41-unit-xv-8-magistus-amon-the-hidden | MAGISTUS AMON, THE HIDDEN | hq
+  MASTER OF THE HIDDEN ORDERS Instead of selecting a normal Legion Command Squad, Amon may select one of the following as his personal retinue: • Ammitara Occult Intercession Cabal • Legion Seeker Squad The selected unit does not occupy a separate Force Organisation slot.
+r41-unit-xv-9-hathor-maat | HATHOR MAAT | hq
+  COMMAND RETINUE Hathor Maat may select one Legion Command Squad as his retinue.
+r41-unit-xv-10-sanakht | SANAKHT | hq
+  KHENETAI RETINUE Sanakht may select one Khenetai Occult Blade Cabal as his personal retinue.
+r41-unit-xvi-4-ezekyle-abaddon-first-captain | EZEKYLE ABADDON, FIRST CAPTAIN | hq
+  COMMAND RETINUE Abaddon may select either: • a Justaerin Terminator Squad; or • a Legion Terminator Command Squad as his retinue.
+r41-unit-xvi-5-horus-aximand-little-horus | HORUS AXIMAND, “LITTLE HORUS” | hq
+  COMMAND RETINUE Aximand may select one Legion Command Squad or Chieftain Squad as his retinue.
+r41-unit-xvi-6-garviel-loken | GARVIEL LOKEN | hq
+  COMMAND RETINUE Loken may select: • one Legion Command Squad; or • one Legion Veteran Squad as his retinue.
+r41-unit-xvi-8-tybalt-marr-the-either | TYBALT MARR, “THE EITHER” | hq
+  COMMAND RETINUE Marr may select one Legion Veteran Squad or Reaver Attack Squad as his retinue.
+r41-unit-xvi-9-vheren-ashurhaddon | VHEREN ASHURHADDON | hq
+  FIRST REAVER Ashurhaddon may select one Reaver Attack Squad as his personal retinue.
+r41-unit-xvii-6-argel-tal | ARGEL TAL | hq
+  LORD OF THE GAL VORBAK Argel Tal may select one Gal Vorbak Dark Brethren Squad as his personal retinue.
+r41-unit-xvii-7-high-chaplain-erebus | HIGH CHAPLAIN EREBUS | hq
+  COMMAND RETINUE Erebus may select one Legion Command Squad as his retinue.
+r41-unit-xvii-8-kor-phaeron-the-black-cardinal | KOR PHAERON, THE BLACK CARDINAL | hq
+  COMMAND RETINUE Kor Phaeron may select one Legion Terminator Command Squad as his retinue.
+r41-unit-xvii-11-hol-beloth | HOL BELOTH | hq
+  COMMAND RETINUE Hol Beloth may select one Legion Command Squad as his retinue.
+r41-unit-xviii-5-artellus-numeon | ARTELLUS NUMEON | hq
+  CAPTAIN OF THE PYRE GUARD Numeon may select one Firedrake Terminator Squad as his personal retinue. COMMAND RETINUE Instead of a Firedrake Terminator Squad, Numeon may select a Legion Command Squad or Legion Terminator Command Squad.
+r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan | LORD CHAPLAIN NOMUS RHY'TAN | hq
+  COMMAND RETINUE Nomus may select a Legion Command Squad, Legion Terminator Command Squad or Firedrake Terminator Squad as his retinue.
+r41-unit-xix-5-alvarex-maun | ALVAREX MAUN | hq
+  COMMAND SQUAD Alvarex Maun may be accompanied by a Legion Command Squad. Maun and the Command Squad count as a single HQ selection.
+r41-unit-xx-4-armillus-dynat | ARMILLUS DYNAT | hq
+  Armillus Dynat | 6 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+ COMMAND SQUAD Dynat may be accompanied by a Legion Command Squad, Legion Terminator Command Squad or Lernaean Terminator Squad.
+r41-unit-xx-7-ingo-pech | INGO PECH | hq
+  COMMAND SQUAD Pech may be accompanied by a Legion Command Squad, Legion Terminator Command Squad, Lernaean Terminator Squad or Legion Seeker Squad.
+r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king | XV — MAGNUS THE RED, THE CRIMSON KING | hq
+  PRIMARCH RETINUE Magnus the Red may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Sekhmet Terminator Cabal A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules. THE CRIMSON KING’S GUARD A Legion Honour Guard Squad or Legion Terminator Command Squad selected as Magnus’ Primarch Retinue may be upgraded to a Brotherhood of Psykers (Mastery Level 1\) for +25 points per squad.
