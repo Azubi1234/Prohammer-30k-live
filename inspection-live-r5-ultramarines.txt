@@ -1,0 +1,864 @@
+CAT=5 GST=1
+
+=== legion-xiii | XIII Legion — Ultramarines ===
+constraints=max=1 scope=parent child=None field=selections
+Legiones Astartes (Ultramarines): This Detachment is Ultramarines. Models with the Legiones Astartes special rule gain Legiones Astartes (Ultramarines). Legion-specific rules, units, wargear and characters are unlocked by this selection where applicable.
+Ultramarines — Legion Rules & Armoury: LEGION SPECIAL RULES
+CODEX ASTARTES
+The XIII Legion possesses an extraordinarily flexible and disciplined command structure, allowing its forces to divide and reorganise rapidly as battlefield conditions demand.
+A Legion Tactical Squad consisting of exactly ten models may be divided into two Combat Squads of five models each.
+This decision is made before deployment.
+The Sergeant, specialist weapons, heavy weapons, Legion Vexilla and Nuncio Vox may be divided between the two Combat Squads as the Ultramarines player wishes.
+After being divided, each Combat Squad counts as a separate unit for deployment, Morale, casualties, scoring and all other purposes.
+For Victory Points, each Combat Squad is worth half the original unit's total points value. Any remaining fraction is assigned to the squad containing the Sergeant.
+If the original Tactical Squad purchased a Dedicated Transport, it must be assigned to one of the Combat Squads. Only that Combat Squad may begin the battle embarked within it.
+FLEXIBLE COMMAND STRUCTURE
+The Ultramarines maintain an unusually large and highly organised officer corps capable of directing complex operations without loss of cohesion.
+An Ultramarines Detachment may include up to four HQ selections.
+The normal limitation on models with Master of the Legion still applies.
+In addition, an Ultramarines army begins the battle with one additional Strategy Point.
+This Strategy Point follows all normal ProHammer rules.
+ULTRAMARINES ARMOURY
+The armouries of the XIII Legion reflect the ordered and pragmatic nature of the Ultramarines. Rather than favouring esoteric or excessively specialised weapons, the Legion prizes equipment of proven effectiveness, refined through centuries of warfare and manufactured to exacting standards throughout the Five Hundred Worlds.
+LEGATINE AXE — 20 POINTS
+Any Ultramarines Independent Character with access to the Space Marine Armoury may purchase a Legatine Axe for +20 points.
+Weapon | Strength | Special Rules
+Legatine Axe | User +1 | Power Weapon, Two-Handed
+The Legatine Axe is a precisely balanced power weapon designed to combine the cutting force of an axe with the speed and control demanded by the warriors of Macragge.
+MANTLE OF ULTRAMAR — 20 POINTS
+An Ultramarines Praetor equipped with Artificer Armour may exchange it for a Mantle of Ultramar for +20 points.
+A Mantle of Ultramar grants a 2+ Armour Save and Feel No Pain (5+). In addition, the bearer is immune to the effects of the Blind special rule.
+This protection applies only to the bearer. A unit joined by the bearer may still be affected by Blind normally.
+BREACHER POWER WEAPONS — +5 POINTS PER MODEL
+Any model in an Ultramarines Legion Breacher Siege Squad may replace its Bolter with a Power Weapon for +5 points.
+A model which replaces its Bolter in this manner may not also select another weapon which replaces its Bolter from the squad's Specialist Weapons options.
+ULTRAMARINES RITE OF WAR:
+THE LOGOS LECTORA
+The Logos Lectora is the battlefield application of the immense body of tactical theory compiled by the XIII Legion. Through disciplined command, precise communication and carefully coordinated formations, an Ultramarines force may alter its method of war as the tactical situation demands.
+EFFECTS
+TACTICAL COMMAND
+At the beginning of each Ultramarines player turn, choose one of the following three commands: Full March, Hold Fast or Retribution Strike.
+The chosen command applies until the beginning of the next Ultramarines player turn. Only one command may be active at a time.
+FULL MARCH
+All Ultramarines non-Vehicle units may re-roll the D6 used to determine the additional distance of an Advance Move. The second result must be accepted.
+HOLD FAST
+Ultramarines non-Vehicle units which remain stationary during their Movement phase may re-roll To Hit rolls of 1 when resolving First Fire or Overwatch Fire.
+In addition, any Snap Fire attacks made by such a unit hit on a 5+ instead of the normal 6+. Ultramarines Dreadnoughts may also benefit from this command if they remained stationary.
+RETRIBUTION STRIKE
+All Ultramarines non-Vehicle units gain the Counter-Attack special rule.
+An Ultramarines Dreadnought which was not already engaged and is successfully charged instead gains +1 Attack during that Assault phase.
+LIMITATIONS
+The Detachment must take one additional compulsory HQ choice. This additional choice must be a Legion Master of Signals Consul or a Damocles Command Rhino.
+The Detachment must take one additional compulsory Troops choice.
+The Detachment may not include more Vehicles with the Tank or Flyer type than it includes Infantry units.
+Units in the Detachment may not deploy using Infiltrate or enter play using Deep Strike. Normal Reserves may still be used.
+Units which are required to enter play using Deep Strike, such as Legion Drop Pods, may not be selected.
+ULTRAMARINES RITE OF WAR:
+VIGIL OPERTII MISSION
+The Vigil Opertii are one of the less celebrated instruments of Ultramar's rule, employing veteran Legionaries and carefully selected mortal auxiliaries in counter-insurgency, reconnaissance and internal security operations throughout the Five Hundred Worlds.
+EFFECTS
+VIGIL AUXILIA
+All Infantry units in the army's allied Imperialis Militia Detachment gain the Infiltrate special rule.
+SACRED DUTY
+All Infantry units in the allied Imperialis Militia Detachment gain Implacable Advance and count as Scoring Units regardless of their normal battlefield role.
+OVERSEERS
+Ultramarines Legion Reconnaissance Squads lose the Support Squad special rule and may therefore be selected to fulfil compulsory Troops choices.
+LIMITATIONS
+This Rite of War may only be used by a Loyalist Ultramarines Detachment.
+The army must include an Allied Detachment drawn from the Imperialis Militia & Cults Army List.
+The Allied Detachment must possess both the Gene-crafted and Warrior Elite Provenances of War.
+The Allied Detachment may not include Inducted Levy Squads.
+The Ultramarines Detachment must include a Legion Vigilator Consul.
+
+=== r25-rite-xiii-0-the-logos-lectora | Ultramarines Rite of War — The Logos Lectora ===
+constraints=max=1 scope=parent child=None field=selections
+The Logos Lectora: The Logos Lectora is the battlefield application of the immense body of tactical theory compiled by the XIII Legion. Through disciplined command, precise communication and carefully coordinated formations, an Ultramarines force may alter its method of war as the tactical situation demands.
+EFFECTS
+TACTICAL COMMAND
+At the beginning of each Ultramarines player turn, choose one of the following three commands: Full March, Hold Fast or Retribution Strike.
+The chosen command applies until the beginning of the next Ultramarines player turn. Only one command may be active at a time.
+FULL MARCH
+All Ultramarines non-Vehicle units may re-roll the D6 used to determine the additional distance of an Advance Move. The second result must be accepted.
+HOLD FAST
+Ultramarines non-Vehicle units which remain stationary during their Movement phase may re-roll To Hit rolls of 1 when resolving First Fire or Overwatch Fire.
+In addition, any Snap Fire attacks made by such a unit hit on a 5+ instead of the normal 6+. Ultramarines Dreadnoughts may also benefit from this command if they remained stationary.
+RETRIBUTION STRIKE
+All Ultramarines non-Vehicle units gain the Counter-Attack special rule.
+An Ultramarines Dreadnought which was not already engaged and is successfully charged instead gains +1 Attack during that Assault phase.
+LIMITATIONS
+The Detachment must take one additional compulsory HQ choice. This additional choice must be a Legion Master of Signals Consul or a Damocles Command Rhino.
+The Detachment must take one additional compulsory Troops choice.
+The Detachment may not include more Vehicles with the Tank or Flyer type than it includes Infantry units.
+Units in the Detachment may not deploy using Infiltrate or enter play using Deep Strike. Normal Reserves may still be used.
+Units which are required to enter play using Deep Strike, such as Legion Drop Pods, may not be selected.
+
+=== r25-rite-xiii-1-vigil-opertii-mission | Ultramarines Rite of War — Vigil Opertii Mission ===
+constraints=max=1 scope=parent child=None field=selections
+Vigil Opertii Mission: The Vigil Opertii are one of the less celebrated instruments of Ultramar's rule, employing veteran Legionaries and carefully selected mortal auxiliaries in counter-insurgency, reconnaissance and internal security operations throughout the Five Hundred Worlds.
+EFFECTS
+VIGIL AUXILIA
+All Infantry units in the army's allied Imperialis Militia Detachment gain the Infiltrate special rule.
+SACRED DUTY
+All Infantry units in the allied Imperialis Militia Detachment gain Implacable Advance and count as Scoring Units regardless of their normal battlefield role.
+OVERSEERS
+Ultramarines Legion Reconnaissance Squads lose the Support Squad special rule and may therefore be selected to fulfil compulsory Troops choices.
+LIMITATIONS
+This Rite of War may only be used by a Loyalist Ultramarines Detachment.
+The army must include an Allied Detachment drawn from the Imperialis Militia & Cults Army List.
+The Allied Detachment must possess both the Gene-crafted and Warrior Elite Provenances of War.
+The Allied Detachment may not include Inducted Levy Squads.
+The Ultramarines Detachment must include a Legion Vigilator Consul.
+
+=== UNIT r41-unit-xiii-0-invictarus-suzerain-squad | INVICTARUS SUZERAIN SQUAD | pts=0.0 | constraints= ===
+RULE Source Entry: Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points
+CHILD id=r41-unit-xiii-0-invictarus-suzerain-squad-additional name=Squad Models type=model pts=45 constraints=max=10 scope=parent child=None field=selections; min=5 scope=parent child=None field=selections default=5
+GROUP id=r41-unit-xiii-0-invictarus-suzerain-squad-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-0-invictarus-suzerain-squad-opt-0-frag-grenades name=Frag grenades (base unit; +1 pts/model) type=upgrade target=None pts=5 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-0-invictarus-suzerain-squad-opt-1-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-0-invictarus-suzerain-squad-opt-2-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade target=None pts=25 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-0-invictarus-suzerain-squad-opt-3-suzerain-legate name=Suzerain Legate type=upgrade target=None pts=20 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • One Invictarus Suzerain may be upgraded to:
+
+=== UNIT r41-unit-xiii-1-fulmentarus-terminator-squad | FULMENTARUS TERMINATOR SQUAD | pts=0.0 | constraints= ===
+RULE Source Entry: Fulmentarus Terminator | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/4+
+Fulmentarus Decurion | 4 | 4 | 4 | 4 | 1 | 5 | 3 | 9 | 2+/4+
+Force Organisation:
+GUIDED WARHEADS When firing Frag missiles from their Cyclone Missile Launchers, Fulmentarus Terminators may fire at an enemy unit they cannot see if that unit is visible to a friendly model equipped with a Nuncio Vox. The Nuncio Vox bearer may not be embarked in a Vehicle, Falling Back, Pinned or engaged in close combat. Cyclone Missile Launchers firing in this manner: • Must use Frag missiles. • Count as Barrage weapons. • Follow the normal ProHammer rules for Barrage fire. Krak missiles may not use Guided Warheads.
+• Elites
+• 0–1
+Unit Composition:
+• 5 Fulmentarus Terminators
+Unit Type:
+• Infantry
+Wargear:
+• Cataphractii Terminator Armour
+• Storm bolter
+• Power fist
+• Cyclone Missile Launcher
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Guided Warheads
+OPTIONS
+• The squad may include up to five additional Fulmentarus Terminators for +65 points per model.
+• Any model may replace his Power fist with:
+• Chainfist ........................................ +5 points
+• One Fulmentarus Terminator may be upgraded to:
+• Fulmentarus Decurion ........................... +20 points
+• The Fulmentarus Decurion may take:
+• Grenade Harness ................................ +10 points
+The Fulmentarus Decurion may select up to 50 points of permitted Terminator weapons and wargear from the Space Marine Armoury.
+DEDICATED TRANSPORT
+A squad may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.
+CHILD id=r41-unit-xiii-1-fulmentarus-terminator-squad-additional name=Squad Models type=model pts=65 constraints=max=10 scope=parent child=None field=selections; min=5 scope=parent child=None field=selections default=5
+GROUP id=r41-unit-xiii-1-fulmentarus-terminator-squad-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-1-fulmentarus-terminator-squad-opt-0-chainfist name=Chainfist type=upgrade target=None pts=5 constraints=max=10 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Any model may replace his Power fist with:
+  selectionEntrie id=r41-unit-xiii-1-fulmentarus-terminator-squad-opt-1-fulmentarus-decurion name=Fulmentarus Decurion type=upgrade target=None pts=20 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • One Fulmentarus Terminator may be upgraded to:
+  selectionEntrie id=r41-unit-xiii-1-fulmentarus-terminator-squad-opt-2-grenade-harness name=Grenade Harness type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The Fulmentarus Decurion may take:
+
+=== UNIT r41-unit-xiii-2-locutarus-storm-squad | LOCUTARUS STORM SQUAD | pts=0.0 | constraints= ===
+RULE Source Entry: Locutarus | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+
+Locutarus Strike Leader | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 9 | 2+
+Force Organisation:
+ARGEAN POWER SWORD An Argean Power Sword is a Master-crafted Power Weapon. COORDINATED ASSAULT If the Locutarus charge an enemy unit which suffered one or more hits from another friendly Ultramarines unit during the preceding Shooting phase, the Locutarus may re-roll To Hit rolls of 1 during that Assault phase.
+• Fast Attack
+Unit Composition:
+• 4 Locutarus
+• 1 Locutarus Strike Leader
+Unit Type:
+• Jump Infantry
+• The Locutarus Strike Leader is a Character
+Wargear:
+• Artificer Armour
+• Jump Pack
+• Bolt pistol
+• Argean Power Sword
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Coordinated Assault
+OPTIONS
+• The squad may include up to five additional Locutarus for +35 points per model.
+• Up to two Locutarus may replace their Bolt pistol with:
+• Hand Flamer ....................................... +5 points
+• Plasma pistol .................................... +15 points
+• The entire squad may take:
+• Krak grenades ............................ +2 points per model
+• Melta bombs .............................. +5 points per model
+LOCUTARUS STRIKE LEADER
+The Strike Leader may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.
+CHILD id=r41-unit-xiii-2-locutarus-storm-squad-additional name=Squad Models type=model pts=35 constraints=max=10 scope=parent child=None field=selections; min=5 scope=parent child=None field=selections default=5
+GROUP id=r41-unit-xiii-2-locutarus-storm-squad-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-2-locutarus-storm-squad-opt-0-hand-flamer name=Hand Flamer type=upgrade target=None pts=5 constraints=max=2 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Up to two Locutarus may replace their Bolt pistol with:
+  selectionEntrie id=r41-unit-xiii-2-locutarus-storm-squad-opt-1-plasma-pistol name=Plasma pistol type=upgrade target=None pts=15 constraints=max=2 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Up to two Locutarus may replace their Bolt pistol with:
+  selectionEntrie id=r41-unit-xiii-2-locutarus-storm-squad-opt-2-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-2-locutarus-storm-squad-opt-3-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade target=None pts=25 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+=== UNIT r41-unit-xiii-3-nemesis-destroyer-squad | NEMESIS DESTROYER SQUAD | pts=25.0 | constraints= ===
+RULE Source Entry: Nemesis Destroyer | 4 | 4 | 4 | 4 | 1 | 4 | 1 | 9 | 3+
+Nemesis Destroyer Sergeant | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+
+Force Organisation:
+• Elites
+Unit Composition:
+MORTIFIER BOLTER Mortifier bolter are normal Bolters that have the Poisoned (3+) and Pinning Special Rules
+• 4 Nemesis Destroyers
+• 1 Nemesis Destroyer Sergeant
+Unit Type:
+• Infantry
+• The Nemesis Destroyer Sergeant is a Character
+Wargear:
+• Power Armour
+• Mortifier Bolter
+• Bolt pistol
+• Chainsword
+• Rad grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Counter-Attack
+• Stubborn
+• Destroyer Cadre
+OPTIONS
+• The squad may include up to five additional Nemesis Destroyers for +25 points per model.
+• For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:
+• Heavy Flamer .................................... +10 points
+• Missile Launcher with Suspensor Web
+and Rad Missiles ................................ +25 points
+• One model may carry:
+• Legion Vexilla .................................. +10 points
+• One different model may carry:
+• Nuncio Vox ...................................... +10 points
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+NEMESIS DESTROYER SERGEANT
+The Sergeant may replace his Chainsword with:
+• Rending Weapon .................................... +5 points
+• Power weapon ..................................... +10 points
+• Power fist ....................................... +15 points
+• Thunder hammer ................................... +20 points
+The Sergeant may take:
+• Artificer Armour ................................. +10 points
+• Up to three Phosphex Bombs ...................... +10 points each
+The Sergeant may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.
+DEDICATED TRANSPORT
+The squad may select a Rhino, Drop Pod, Dreadclaw Drop Pod or Land Raider where Transport Capacity permits.
+CHILD id=r41-unit-xiii-3-nemesis-destroyer-squad-additional name=Squad Models type=model pts=25 constraints=max=10 scope=parent child=None field=selections; min=5 scope=parent child=None field=selections default=5
+GROUP id=r41-unit-xiii-3-nemesis-destroyer-squad-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade target=None pts=10 constraints=max=2 scope=parent child=None field=selections default=None
+    RULE Option restriction: • For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-1-and-rad-missiles name=and Rad Missiles type=upgrade target=None pts=25 constraints=max=2 scope=parent child=None field=selections default=None
+    RULE Option restriction: • For every five models in the squad, one Nemesis Destroyer may replace his Mortifier Bolter with:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-2-legion-vexilla name=Legion Vexilla type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • One model may carry:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-3-nuncio-vox name=Nuncio Vox type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • One different model may carry:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-4-frag-grenades name=Frag grenades (base unit; +1 pts/model) type=upgrade target=None pts=5 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-5-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-6-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade target=None pts=25 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • The entire squad may take:
+    RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade target=None pts=5 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: The Sergeant may replace his Chainsword with:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-8-power-weapon name=Power weapon type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: The Sergeant may replace his Chainsword with:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-9-power-fist name=Power fist type=upgrade target=None pts=15 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: The Sergeant may replace his Chainsword with:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-10-thunder-hammer name=Thunder hammer type=upgrade target=None pts=20 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: The Sergeant may replace his Chainsword with:
+  selectionEntrie id=r41-unit-xiii-3-nemesis-destroyer-squad-opt-11-artificer-armour name=Artificer Armour type=upgrade target=None pts=10 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: The Sergeant may take:
+
+=== UNIT r41-unit-xiii-4-marius-gage-first-master | MARIUS GAGE, FIRST MASTER | pts=190 | constraints=max=1 scope=roster child=None field=selections ===
+RULE Source Entry: Marius Gage | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+/4+
+Force Organisation:
+• HQ
+FIRST MASTER OF THE LEGION Friendly non-Vehicle Ultramarines units with at least one model within 12" of Marius Gage may use his Leadership characteristic when taking Morale or Pinning tests. MASTER OF ORGANISATION After both armies have deployed but before the first turn begins, select one Ultramarines Infantry unit which deployed normally. That unit may immediately be redeployed anywhere wholly within the Ultramarines deployment zone. All normal deployment restrictions must still be obeyed. The unit may not be placed into Reserve. Any Independent Characters already joined to the unit are redeployed with it. CALCULATED RESPONSE Marius Gage and any Ultramarines unit he has joined have Counter-Attack. COMMAND RETINUE Marius Gage may select a Legion Command Squad, Legion Terminator Command Squad or Invictarus Suzerain Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Iron Halo
+• Master-crafted Power Weapon
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Independent Character
+• Master of the Legion
+• First Master of the Legion
+• Master of Organisation
+• Calculated Response
+OPTIONS
+• Marius Gage may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+GROUP id=r41-unit-xiii-4-marius-gage-first-master-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-4-marius-gage-first-master-opt-0-krak-grenades name=Krak grenades type=upgrade target=None pts=2 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Marius Gage may take:
+  selectionEntrie id=r41-unit-xiii-4-marius-gage-first-master-opt-1-melta-bombs name=Melta bombs type=upgrade target=None pts=5 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Marius Gage may take:
+GROUP id=live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue name=Retinue (does not occupy a separate FOC slot) constraints=max=1 scope=parent child=None field=selections
+  selectionEntrie id=live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command name=Legion Command Squad type=unit target=None pts=90 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+    RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+  selectionEntrie id=live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-1-hq-praetor-ret-termcommand name=Legion Terminator Command Squad type=unit target=None pts=215 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Standard Wargear: Five Terminator Veterans, each equipped with the selected Terminator Armour pattern, a Combi-Bolter and a Power Weapon.
+    RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE Retinue: May only be selected for an eligible HQ character equipped with Terminator, Tartaros or Cataphractii Terminator Armour. It occupies no separate Force Organisation slot; the character and squad count as one HQ selection but may deploy and operate separately.
+  selectionEntrie id=live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad name=INVICTARUS SUZERAIN SQUAD type=unit target=None pts=0.0 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Source Entry: Invictarus Suzerain | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+
+Suzerain Legate | 5 | 4 | 4 | 4 | 1 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+• Elites
+SUZERAIN LEGATE The Suzerain Legate is a Character and may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury. LEGATINE AXE A Legatine Axe is a Power Weapon which grants +1 Strength. A model attacking with a Legatine Axe does not receive the bonus Attack for fighting with two close-combat weapons. HONOUR GUARD One Invictarus Suzerain Squad may be selected as the retinue of an Ultramarines Praetor or named Ultramarines Independent Character who is permitted to select a Command Squad. The Suzerains do not occupy a separate Force Organisation slot. The character and Suzerains count as a single HQ selection.
+• 0–1
+Unit Composition:
+• 5 Invictarus Suzerains
+Unit Type:
+• Infantry
+Wargear:
+• Artificer Armour
+• Boarding Shield
+• Bolt pistol
+• Legatine Axe
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Stubborn
+• Honour Guard
+OPTIONS
+• The squad may include up to five additional Invictarus Suzerains for +45 points per model.
+• The entire squad may take:
+• Frag grenades ............................ +1 point per model
+• Krak grenades ........................... +2 points per model
+• Melta bombs ............................. +5 points per model
+• One Invictarus Suzerain may be upgraded to:
+• Suzerain Legate ................................. +20 points
+
+=== UNIT r41-unit-xiii-5-remus-ventanus | REMUS VENTANUS | pts=145 | constraints=max=1 scope=roster child=None field=selections ===
+RULE Source Entry: Remus Ventanus | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 10 | 2+/5+
+THE SAVIOUR OF CALTH Ventanus and any Ultramarines unit he has joined have Fearless while at least one model from the unit is within 6" of an objective. PRACTICAL COMMANDER After both armies have deployed but before the first turn begins, nominate one Legion Tactical Squad in the army. That squad gains Counter-Attack for the duration of the battle. COMMAND RETINUE Ventanus may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+Force Organisation:
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Power weapon
+• Bolt pistol
+• Nuncio Vox
+• Frag grenades
+• Legion Standart
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Independent Character
+• The Saviour of Calth
+• Practical Commander
+OPTIONS
+• Remus Ventanus may take:
+• Krak grenades ................................... +2 points
+• Melta bombs .................................... +5 points
+GROUP id=r41-unit-xiii-5-remus-ventanus-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-5-remus-ventanus-opt-0-krak-grenades name=Krak grenades type=upgrade target=None pts=2 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Remus Ventanus may take:
+  selectionEntrie id=r41-unit-xiii-5-remus-ventanus-opt-1-melta-bombs name=Melta bombs type=upgrade target=None pts=5 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Remus Ventanus may take:
+GROUP id=live-r2-r41-unit-xiii-5-remus-ventanus-retinue name=Retinue (does not occupy a separate FOC slot) constraints=max=1 scope=parent child=None field=selections
+  selectionEntrie id=live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command name=Legion Command Squad type=unit target=None pts=90 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+    RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+
+=== UNIT r41-unit-xiii-6-aeonid-thiel | AEONID THIEL | pts=80 | constraints=max=1 scope=roster child=None field=selections ===
+RULE Source Entry: Aeonid Thiel | 5 | 5 | 4 | 4 | 2 | 5 | 3 | 10 | 3+/5+
+One Legion Tactical Squad or Legion Veteran Squad may replace its Sergeant with Aeonid Thiel for +80 points. Thiel remains part of the squad for the entire battle. He is a Character but is not an Independent Character.
+UNORTHODOX TACTICS After deployment but before the first turn begins, choose one of the following special rules: • Counter-Attack • Move Through Cover • Night Vision • Tank Hunters Thiel and every model in his squad gain the selected special rule for the duration of the battle. The unit retains the selected rule even if Thiel is subsequently slain.
+Wargear:
+• Power Armour
+• Refractor Field
+• Power weapon
+• Bolt pistol
+• Purity Seals
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Unorthodox Tactics
+If the squad purchases Krak grenades or Melta bombs,
+Thiel receives the same upgrade at the normal squad cost.
+
+=== UNIT r41-unit-xiii-7-honoured-telemechrus | HONOURED TELEMECHRUS | pts=215 | constraints=max=1 scope=roster child=None field=selections ===
+RULE Source Entry: Honoured Telemechrus | 6 | 5 | 7 | 13 | 12 | 10 | 4 | 4
+Force Organisation:
+• Elites
+Unit Composition:
+• 1 Honoured Telemechrus
+Unit Type:
+• Vehicle (Walker)
+Wargear:
+• Kheres Assault Cannon
+• Dreadnought Close Combat Weapon
+with built-in Twin-linked Bolter
+• Smoke Launchers
+• Searchlight
+Special Rules:
+• Atomantic Shielding
+• Fleet
+• Hatred (Word Bearers)
+RESTRICTION
+Honoured Telemechrus is Loyalist only.
+
+=== UNIT r41-unit-xiii-8-titus-prayto | TITUS PRAYTO | pts=170 | constraints=max=1 scope=roster child=None field=selections ===
+RULE Source Entry: Titus Prayto | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/5+
+Force Organisation:
+PSYCHIC POWERS Titus Prayto selects two psychic powers from the normal Psychic Power list. He follows all normal ProHammer rules for Psykers, Mastery Level 2 and Disturbance in the Warp. PSYCHIC SAVANT Once during each Ultramarines player turn, Prayto may re-roll one failed Psychic Test. The second result must be accepted. COMMAND RETINUE Prayto may select one Legion Command Squad as his retinue. The squad does not occupy a separate Force Organisation slot.
+• HQ
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Artificer Armour
+• Refractor Field
+• Force Weapon
+• Psychic Hood
+• Bolt pistol
+• Frag grenades
+Special Rules:
+• Legiones Astartes (Ultramarines)
+• Independent Character
+• Psyker (Mastery Level 2\)
+• Legion Support Officer
+• Psychic Savant
+OPTIONS
+• Titus Prayto may take:
+• Krak grenades ................................... +2 points
+GROUP id=r41-unit-xiii-8-titus-prayto-options name=Options constraints=
+  selectionEntrie id=r41-unit-xiii-8-titus-prayto-opt-0-krak-grenades name=Krak grenades type=upgrade target=None pts=2 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Option restriction: • Titus Prayto may take:
+GROUP id=live-r2-r41-unit-xiii-8-titus-prayto-retinue name=Retinue (does not occupy a separate FOC slot) constraints=max=1 scope=parent child=None field=selections
+  selectionEntrie id=live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command name=Legion Command Squad type=unit target=None pts=90 constraints=max=1 scope=parent child=None field=selections default=None
+    RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+    RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless.
+    RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+
+=== UNIT r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son | XIII — ROBOUTE GUILLIMAN, THE AVENGING SON | pts=500 | constraints=max=1 scope=roster child=None field=selections ===
+RULE Source Entry: Primarch of the Ultramarines, Lord of Ultramar, the Avenging Son
+Roboute Guilliman was among the greatest commanders and statesmen of the Great Crusade, a Primarch whose genius lay not merely in winning battles, but in understanding the greater structure of war itself. Under his rule the worlds of Ultramar became a realm of extraordinary order and prosperity, while the XIII Legion grew into one of the largest and most disciplined forces of the Legiones Astartes.
+Upon the battlefield Guilliman sought neither reckless glory nor rigid adherence to a single doctrine. Every engagement was studied, every success and failure considered, and theory was continually tested against the practical realities of war. His warriors were expected to adapt as swiftly as their Primarch, changing formation and method as circumstances demanded until the enemy was confronted with precisely the form of warfare it was least prepared to resist.
+Roboute Guilliman | 7 | 6 | 6 | 6 | 6 | 6 | 5 | 10 | 1+
+Force Organisation:
+• Lord of War
+Unit Composition:
+• 1 Roboute Guilliman
+Unit Type:
+• Infantry (Character)
+Wargear:
+• Armour of Reason
+• Gladius Incandor
+• Hand of Dominion
+• Arbitrator
+• Frag Grenades
+Special Rules:
+• Primarch
+• Legiones Astartes (Ultramarines)
+• Master Strategist
+• Preternatural Strategy
+• Sire of Ultramar
+• Theoretical / Practical
+RESTRICTIONS
+Roboute Guilliman may only be selected for a Loyalist Ultramarines army. He otherwise follows all normal rules and restrictions for Primarchs.
+ARMOUR OF REASON A magnificent suit of war-plate fashioned according to the exacting requirements of the Primarch of the XIII Legion, the Armour of Reason combined formidable protection with the sophisticated command systems required to direct vast armies across the battlefield. The Armour of Reason counts as Primarch Armour. GLADIUS INCANDOR A superbly balanced blade wielded with the calculated precision that characterised Guilliman’s approach to war, Gladius Incandor was equally suited to the destruction of armoured warriors and monstrous foes. Gladius Incandor is a Master-crafted Power Weapon. Attacks made with it are resolved at +1 Strength and have the Shred special rule. HAND OF DOMINION A colossal powered gauntlet constructed for the strength of a Primarch, the Hand of Dominion could crush armour and tear apart even the heaviest engines of war. The Hand of Dominion is a Master-crafted Power Fist with the Armourbane special rule. ARBITRATOR Arbitrator was a master-crafted bolter fashioned to the proportions of the Primarch of the XIII Legion, capable of delivering exceptionally powerful and accurate fire. Weapon Range S AP Type Arbitrator 18" 6 3 Assault 2, Rending, Master-crafted MASTER STRATEGIST Few commanders possessed Guilliman’s ability to comprehend the flow of an entire battlefield and translate that understanding into precise orders. Unless a rule specifically states otherwise, the range of Roboute Guilliman’s special rules which affect friendly Ultramarines units is 18". PRETERNATURAL STRATEGY Guilliman’s ability to reassess a battle plan in moments allowed the XIII Legion to alter its dispositions even as the enemy committed itself to battle. After both armies have deployed but before the first turn begins, nominate one friendly Ultramarines unit. That unit may be redeployed anywhere it could legally have been deployed at the beginning of the battle. It must obey all normal deployment restrictions and may not be placed into Reserve unless it was already eligible to begin the battle in Reserve. SIRE OF ULTRAMAR The warriors of the XIII Legion fought beneath the gaze of a Primarch who demanded discipline in victory and adversity alike. Friendly Ultramarines units with at least one model within 12" of Roboute Guilliman may re-roll failed Morale tests. The second result must be accepted. THEORETICAL / PRACTICAL To Guilliman, no doctrine was valuable merely because it had succeeded before. Theory existed to be tested in battle, and practical experience existed to refine theory. At the beginning of each Ultramarines turn, choose one of the following doctrines. The chosen doctrine affects friendly Ultramarines units with at least one model within 18" of Roboute Guilliman until the beginning of the next Ultramarines turn. ADVANCE Affected units may move up to 1" further than normal during their Movement phase. FIRE Affected units may re-roll shooting To Hit rolls of 1. ASSAULT Affected units may re-roll close combat To Hit rolls of 1. PRIMARCH RETINUE Roboute Guilliman may select any one of the following as his Primarch Retinue: • Legion Honour Guard Squad • Legion Terminator Command Squad • Invictarus Suzerain Squad A retinue selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.
+
+=== UM EXTRA r45-um-legatine-axe | Legatine Axe | tag=selectionEntry pts=20 constraints=max=1 scope=parent child=None field=selections ===
+RULE Legatine Axe: Ultramarines Independent Character with Armoury access. User +1 Strength, Power Weapon, Two-Handed.
+
+=== UM EXTRA r45-um-legatine-axe-max | None | tag=constraint pts= constraints= ===
+
+=== UM EXTRA r45-um-legatine-axe-rule | Legatine Axe | tag=rule pts= constraints= ===
+
+=== UM EXTRA r45-um-mantle | Mantle of Ultramar | tag=selectionEntry pts=20 constraints=max=1 scope=parent child=None field=selections ===
+RULE Mantle of Ultramar: Ultramarines Praetor with Artificer Armour only. Exchanges it for a 2+ Armour Save, Feel No Pain (5+) and immunity to Blind for the bearer.
+
+=== UM EXTRA r45-um-mantle-max | None | tag=constraint pts= constraints= ===
+
+=== UM EXTRA r45-um-mantle-rule | Mantle of Ultramar | tag=rule pts= constraints= ===
+
+=== UM EXTRA r45-um-breacher-power-weapon | Replace Bolter with Power Weapon | tag=selectionEntry pts=5 constraints=max=20 scope=parent child=None field=selections ===
+RULE Breacher Power Weapons: Any model in an Ultramarines Breacher Siege Squad may replace its Bolter with a Power Weapon for +5 points. A model doing so may not also select another option which replaces its Bolter.
+
+=== UM EXTRA r45-um-breacher-power-weapon-max | None | tag=constraint pts= constraints= ===
+
+=== UM EXTRA r45-um-breacher-power-weapon-rule | Breacher Power Weapons | tag=rule pts= constraints= ===
+
+=== UM EXTRA r45-praetor-um-mantle | Mantle of Ultramar | tag=entryLink pts= constraints=max=1 scope=parent child=None field=selections ===
+
+=== UM EXTRA r45-praetor-um-mantle-max | None | tag=constraint pts= constraints= ===
+
+=== UM EXTRA r45-hq-praetor-um-axe | Legatine Axe | tag=entryLink pts= constraints=max=1 scope=parent child=None field=selections ===
+
+=== UM EXTRA r45-hq-praetor-um-axe-max | None | tag=constraint pts= constraints= ===
+
+=== UM EXTRA r45-hq-centurion-um-axe | Legatine Axe | tag=entryLink pts= constraints=max=1 scope=parent child=None field=selections ===
+
+=== UM EXTRA r45-hq-centurion-um-axe-max | None | tag=constraint pts= constraints= ===
+
+=== GENERIC LIB POWER GROUP constraints=min=1 scope=parent child=None field=selections; max=1 scope=parent child=None field=selections ===
+POWER id=r29-lib-power-0 name=Smite pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-1 name=Iron Arm pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-2 name=Enfeeble pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-3 name=Life Leech pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-4 name=Warp Speed pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-5 name=Endurance pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-6 name=Haemorrhage pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-0" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-7 name=Prescience pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-8 name=Foreboding pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-9 name=Forewarning pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-10 name=Perfect Timing pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-11 name=Precognition pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-12 name=Misfortune pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-13 name=Scrier’s Gaze pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-1" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-14 name=Flame Breath pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-15 name=Fiery Form pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-16 name=Molton Beam pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-17 name=Fire Shield pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-18 name=Sunburst pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-19 name=Inferno pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-20 name=Spontaneous Combustion pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-2" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-21 name=Assail pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-22 name=Crush pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-23 name=Objuration Mechanicum pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-24 name=Shockwave pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-25 name=Levitation pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-26 name=Telekine Dome pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-27 name=Psychic Maelstrom pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-3" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-28 name=Psychic Shriek pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-29 name=Dominate pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-30 name=Mental Fortitude pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-31 name=Terrify pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-32 name=Hallucination pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-33 name=Invisibility pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
+POWER id=r29-lib-power-34 name=Shrouding pts= constraints=max=1 scope=parent child=None field=selections
+  MODIFIERS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+                        <ns0:modifier type="set" value="true" field="hidden">
+                          <ns0:conditions>
+                            <ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r29-lib-discipline-4" shared="true" includeChildSelections="true" />
+                          </ns0:conditions>
+                        </ns0:modifier>
+                      </ns0:modifiers>
+                      
