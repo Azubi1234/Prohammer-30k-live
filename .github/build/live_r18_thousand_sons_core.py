@@ -77,13 +77,15 @@ def cond(typ,val,child,scope='roster',field='selections'):
             'shared':'true','includeChildSelections':'true','includeChildForces':'false'}
 
 def direct_groups(e):
-    return list(e.find(C('selectionEntryGroups')) or [])
+    c=e.find(C('selectionEntryGroups'))
+    return list(c) if c is not None else []
 
 def group_named(e,name):
     return next((g for g in direct_groups(e) if (g.get('name') or '')==name),None)
 
 def direct_entries(e):
-    return list(e.find(C('selectionEntries')) or [])
+    c=e.find(C('selectionEntries'))
+    return list(c) if c is not None else []
 
 def find_link_to(e,target):
     return next((x for x in e.iter(C('entryLink')) if x.get('targetId')==target),None)
@@ -193,7 +195,8 @@ def fix_cult(host,cult):
     if g is None: raise RuntimeError('Missing Prosperine Cult group on '+host.get('id'))
     g.set('name','Prosperine Cult — fixed')
     chosen=None
-    for x in list(g.find(C('selectionEntries')) or []):
+    ses=g.find(C('selectionEntries'))
+    for x in list(ses) if ses is not None else []:
         remove_constraints(x,lambda c:c.get('type')=='min')
         if (x.get('name') or '').lower()==cult.lower():
             x.set('hidden','false'); chosen=x
@@ -265,7 +268,8 @@ for uid in ('veteran-unit','terminator-unit'):
                  conditions=[cond('lessThan',1,'r25-rite-xv-2-the-fellowships-of-prospero','roster')])
     cultg=findid(root,'r45-cult-'+uid)
     if cultg is None: raise RuntimeError('Missing cult group on '+uid)
-    choices={x.get('name'):x.get('id') for x in list(cultg.find(C('selectionEntries')) or [])}
+    cs=cultg.find(C('selectionEntries'))
+    choices={x.get('name'):x.get('id') for x in list(cs) if cs is not None}
     cmap={d:choices[c] for d,c in cult_disc.items()}
     add_power_group(u,'r18-ts-'+uid+'-brotherhood-power',
                     'Psychic Power — selected Prosperine Cult discipline',
@@ -280,7 +284,8 @@ add_modifier(tlink,'r18-ts-tactical-brotherhood-rite','set','hidden','true',
 tm=None; tmmax=-1
 for m in direct_entries(tac):
     if m.get('type')!='model': continue
-    for c in list(m.find(C('constraints')) or []):
+    cons=m.find(C('constraints'))
+    for c in list(cons) if cons is not None else []:
         if c.get('type')=='max':
             try: v=int(float(c.get('value')))
             except: continue
@@ -289,7 +294,8 @@ if tm is None: raise RuntimeError('Could not identify Tactical scalable model')
 add_modifier(tlink,'r18-ts-tactical-brotherhood-size','set','hidden','true',
              conditions=[cond('lessThan',tmmax,tm.get('id'),'root-entry')])
 cultg=findid(root,'r45-cult-tactical-unit')
-choices={x.get('name'):x.get('id') for x in list(cultg.find(C('selectionEntries')) or [])}
+cs=cultg.find(C('selectionEntries'))
+choices={x.get('name'):x.get('id') for x in list(cs) if cs is not None}
 cmap={d:choices[c] for d,c in cult_disc.items()}
 add_power_group(tac,'r18-ts-tactical-brotherhood-power',
                 'Psychic Power — selected Prosperine Cult discipline',
@@ -357,18 +363,21 @@ log.append('Ammitara: all Sniper replacements share squad-size cap; Meltagun/Pla
 
 num=findid(root,'r41-unit-xv-5-numerologist-cabal')
 nopt=group_named(num,'Options'); nmodel=findid(root,'r41-unit-xv-5-numerologist-cabal-additional')
-rot=next((x for x in list(nopt.find(C('selectionEntries')) or []) if (x.get('name') or '')=='Rotor Cannon'),None)
-vol=next((x for x in list(nopt.find(C('selectionEntries')) or []) if (x.get('name') or '')=='Volkite Caliver'),None)
+nes=nopt.find(C('selectionEntries'))
+rot=next((x for x in list(nes) if (x.get('name') or '')=='Rotor Cannon'),None) if nes is not None else None
+vol=next((x for x in list(nes) if (x.get('name') or '')=='Volkite Caliver'),None) if nes is not None else None
 if rot is None or vol is None: raise RuntimeError('Missing Numerologist Life Ward weapon options')
 make_subgroup(nopt,[rot.get('id'),vol.get('id')],'r18-ts-numerologist-life-ward-guns','Life Ward weapons — 1 per 5 models',1,nmodel.get('id'),2)
-nk=next((x for x in list(nopt.find(C('selectionEntries')) or []) if 'Krak' in (x.get('name') or '')),None)
+nes=nopt.find(C('selectionEntries'))
+nk=next((x for x in list(nes) if 'Krak' in (x.get('name') or '')),None) if nes is not None else None
 if nk is None: raise RuntimeError('Missing Numerologist Krak grenades')
 add_scaled_option(nk,2,nmodel.get('id'),'r18-ts-numerologist-scale-','Krak grenades — entire Cabal (+2 pts/model)')
 log.append('Numerologist: Rotor/Volkite share 1-per-5 cap; whole-Cabal Krak cost scales; fixed Psy-Synchronicity remains source-defined')
 
 osi=findid(root,'r41-unit-xv-4-contemptor-osiron-dreadnought')
 oopt=group_named(osi,'Options')
-ml2=next((x for x in list(oopt.find(C('selectionEntries')) or []) if 'Mastery Level 2' in (x.get('name') or '')),None)
+oes=oopt.find(C('selectionEntries'))
+ml2=next((x for x in list(oes) if 'Mastery Level 2' in (x.get('name') or '')),None) if oes is not None else None
 if ml2 is None: raise RuntimeError('Missing Osiron ML2 upgrade')
 add_power_group(osi,'r18-ts-osiron-power1','Psychic Power — select 1',
                 allowed=['Biomancy','Divination','Pyromancy','Telekinesis','Telepathy'])
@@ -400,9 +409,8 @@ for uid,pts in [('r41-unit-xv-6-ahzek-ahriman',1500),('r41-unit-xv-8-magistus-am
 log.append('Ahriman and Amon: 0-1 plus minimum 1,500-point roster visibility gates')
 
 # 5. Dry-run validations
-for uid in ('veteran-unit','terminator-unit','tactical-unit'):
-    pg=findid(root,'r18-ts-'+uid+'-brotherhood-power')
-    if pg is None: raise RuntimeError('Missing generated Brotherhood power group '+uid)
+for gid in ('r18-ts-veteran-unit-brotherhood-power','r18-ts-terminator-unit-brotherhood-power','r18-ts-tactical-brotherhood-power'):
+    if findid(root,gid) is None: raise RuntimeError('Missing generated Brotherhood power group '+gid)
 
 if APPLY:
     root.set('revision','18')
