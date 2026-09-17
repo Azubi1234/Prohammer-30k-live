@@ -1,0 +1,25 @@
+R18 THOUSAND SONS FINAL AUDIT — DRY RUN ONLY
+Input live CAT revision: 17 | Proposed CAT revision: 18 | GST revision remains 1
+LIVE FILES WRITTEN: NO
+
+FINAL CHANGES:
+  + Fellowships Tactical Brotherhood corrected to choose from any normal Thousand Sons discipline (not Cult-locked)
+  + Fellowships Brotherhood minimum now counts 8 inherent Brotherhood root/retinue copies
+  + Prosperine Force Weapon upgrade added to 37 eligible 50-point Space Marine Armoury selectors
+  + Sekhmet completed: 4 Combi-weapon choices, shared Foeblaster cap, Inceptor ML2 power/Harness gate, 3 transport choices
+  + Khenetai Blademaster and Ammitara Fate now have functional 50-point Space Marine Armoury selectors
+  + Castellax-Achea, Osiron and Numerologist replacement families made mutually exclusive with source-correct dynamic quantities
+  + Cross-copy 0-1 limits applied across normal and retinue copies: SEKHMET TERMINATOR CABAL=4 copies, KHENETAI OCCULT BLADE CABAL=2 copies, AMMITARA OCCULT INTERCESSION CABAL=2 copies
+  + Ahriman completed: all 7 Divination powers surfaced; Cabal +50 gives fixed Corvidae ML2, two Divination powers and dynamic +5 Force-weapon upgrades
+  + Duplicate psychic-power choices blocked across generic/named multi-power Thousand Sons Psykers (322 cross-slot gates)
+  + Magnus Shard completed: repaired starred profile, mortal/Shard mutual exclusion, six unique selectable normal powers plus fixed Infernal Phoenix/Strands, and discrete battlefield rules
+  + Fellowships Brotherhood validator also counts Ahriman’s Cabal and 2 Crimson King’s Guard upgrade selections
+
+PRESERVED AS TEXT / NOT FAKED:
+  - Guard of the Crimson King: written Sekhmet 0-1 versus compulsory-Sekhmet-Troops contradiction remains unresolved rather than inventing an exception.
+  - Axis and Guard cross-unit vehicle ratios remain source rule text because the current catalogue has no reliable unit-type counter across all nested/linked units.
+  - Allied Detachment / Fortification bans remain source rule text because those force choices are not exposed safely enough in the current GST for dependable automation.
+  - Warlord-only requirements remain explicit rule/selector text because there is no single trustworthy Warlord selection marker in the current catalogue.
+  - Fellowships ORDER OF THE CULTS remains source rule text; a cross-unit hidden validator could falsely match a Brotherhood in one root entry to a Cult selected by another root entry.
+
+FINAL AUDIT RESULT: PASS
