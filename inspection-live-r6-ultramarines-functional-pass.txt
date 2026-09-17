@@ -1,0 +1,20 @@
+LIVE R6 — ULTRAMARINES FUNCTIONAL PASS
+CAT=6 GSTref=1
+
+• whole-squad r41-unit-xiii-0-invictarus-suzerain-squad: Frag grenades +1/model
+• whole-squad r41-unit-xiii-0-invictarus-suzerain-squad: Krak grenades +2/model
+• whole-squad r41-unit-xiii-0-invictarus-suzerain-squad: Melta bombs +5/model
+• whole-squad r41-unit-xiii-2-locutarus-storm-squad: Krak grenades +2/model
+• whole-squad r41-unit-xiii-2-locutarus-storm-squad: Melta bombs +5/model
+• whole-squad r41-unit-xiii-3-nemesis-destroyer-squad: Frag grenades +1/model
+• whole-squad r41-unit-xiii-3-nemesis-destroyer-squad: Krak grenades +2/model
+• whole-squad r41-unit-xiii-3-nemesis-destroyer-squad: Melta bombs +5/model
+• Fulmentarus grenade harness gated behind Decurion
+• Nemesis Sergeant weapon replacements made mutually exclusive
+• Aeonid Thiel added as functional Sergeant replacement to tactical-unit
+• Aeonid Thiel added as functional Sergeant replacement to veteran-unit
+• WARNING: Prayto or generic Librarian entry not found
+• Guilliman retinue option added: LEGION HONOUR GUARD SQUAD
+• Guilliman retinue option added: Legion Terminator Command Squad
+• Guilliman retinue option added: INVICTARUS SUZERAIN SQUAD
+• Codex Astartes Combat Squads selector added for exact 10-model Tactical Squads
