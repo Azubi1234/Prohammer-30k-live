@@ -1,6 +1,6 @@
-R18 THOUSAND SONS FINAL AUDIT — DRY RUN ONLY
+R18 THOUSAND SONS FINAL AUDIT — APPLY
 Input live CAT revision: 17 | Proposed CAT revision: 18 | GST revision remains 1
-LIVE FILES WRITTEN: NO
+LIVE FILES WRITTEN: YES
 
 FINAL CHANGES:
   + Fellowships Tactical Brotherhood corrected to choose from any normal Thousand Sons discipline (not Cult-locked)
