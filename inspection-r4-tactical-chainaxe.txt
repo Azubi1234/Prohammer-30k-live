@@ -1,0 +1,170 @@
+CAT revision=4 GSTref=1
+
+=== TACTICAL tactical-unit | Legion Tactical Squad | pts= ===
+MODEL id=tac-marine name=Legion Tactical Marine pts=15 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=tac-sergeant name=Legion Tactical Sergeant pts=15 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+GROUP id=tac-loadout name=Squad Weapons constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+  selectionEntry id=load-standard name=Bolters + Bolt Pistols type=upgrade target=None pts= constraints=
+  selectionEntry id=load-add-chainswords name=Bolters + Bolt Pistols + Chainswords (+2 pts/model) type=upgrade target=None pts=2 constraints=
+  selectionEntry id=load-exchange name=Exchange Bolters for Chainswords (Free) type=upgrade target=None pts= constraints=
+GROUP id=tac-grenades name=Squad Grenades constraints=
+  entryLink id=tac-krak name=Krak Grenades (+2 pts/model) type=selectionEntry target=gear-krak pts=2 constraints=max:1 scope=parent field=selections child=None
+GROUP id=tac-heavy-weapons name=Heavy Weapons constraints=max:1 scope=parent field=selections child=None
+  entryLink id=hv-hb name=Heavy Bolter type=selectionEntry target=gear-heavy-bolter pts=5 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=hv-ml name=Missile Launcher type=selectionEntry target=gear-missile pts=10 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=hv-ac name=Autocannon type=selectionEntry target=gear-autocannon pts=10 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=hv-mm name=Multi-Melta type=selectionEntry target=gear-multimelta pts=10 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=hv-pc name=Plasma Cannon type=selectionEntry target=gear-plasma-cannon pts=15 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=hv-lc name=Lascannon type=selectionEntry target=gear-lascannon pts=15 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=da22-alt-pc-0 name=Calibanite Plasma Cannon type=selectionEntry target=da22-plasma-cannon pts=15 constraints=max:2 scope=parent field=selections child=None
+GROUP id=tac-special-weapons name=Special Weapons constraints=max:2 scope=parent field=selections child=None
+  entryLink id=sp-f name=Flamer type=selectionEntry target=gear-flamer pts=5 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=sp-m name=Meltagun type=selectionEntry target=gear-meltagun pts=10 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=sp-p name=Plasma Gun type=selectionEntry target=gear-plasma-gun pts=15 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=sp-vc name=Volkite Charger type=selectionEntry target=gear-volkite-charger pts=10 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=sp-vcal name=Volkite Caliver type=selectionEntry target=gear-volkite-caliver pts=15 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=sp-r name=Rotor Cannon type=selectionEntry target=gear-rotor pts=4 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=da22-alt-pg-0 name=Calibanite Plasma Gun type=selectionEntry target=da22-plasma-gun pts=15 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=da22-alt-pr-0 name=Plasma Repeater type=selectionEntry target=da22-plasma-repeater pts=25 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=da22-alt-pb-0 name=Plasma Burner type=selectionEntry target=da22-plasma-burner pts=20 constraints=max:4 scope=parent field=selections child=None
+  entryLink id=r81-ih-grav-0 name=Graviton Gun type=selectionEntry target=gear-graviton-gun pts=15 constraints=max:4 scope=parent field=selections child=None
+GROUP id=tac-equipment name=Squad Equipment constraints=
+  entryLink id=tac-vexilla name=Legion Vexilla type=selectionEntry target=gear-vexilla pts=10 constraints=max:1 scope=parent field=selections child=None
+  entryLink id=tac-nuncio name=Nuncio Vox type=selectionEntry target=gear-nuncio pts=10 constraints=max:1 scope=parent field=selections child=None
+GROUP id=tac-transport name=Dedicated Transport constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r83-ih-scions-0-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (Scions of Iron) type=upgrade target=None pts=250 constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r83-ih-scions-1-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (Scions of Iron) type=upgrade target=None pts=200 constraints=max:1 scope=parent field=selections child=None
+  entryLink id=tac-rhino name=Rhino type=selectionEntry target=transport-rhino pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=tac-drop-pod name=Drop Pod type=selectionEntry target=transport-drop-pod pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=tac-dreadclaw name=Dreadclaw Drop Pod type=selectionEntry target=transport-dreadclaw pts= constraints=max:1 scope=parent field=selections child=None
+GROUP id=da-wing-tactical-unit name=Hexagrammaton Wing constraints=min:0 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+  selectionEntry id=da-wing-tactical-unit-0 name=Stormwing type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=da-wing-tactical-unit-1 name=Deathwing type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=da-wing-tactical-unit-2 name=Dreadwing type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=da-wing-tactical-unit-3 name=Ironwing type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=da-wing-tactical-unit-4 name=Firewing type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=da-wing-tactical-unit-5 name=Ravenwing type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+GROUP id=r40-da-ammo-tactical-unit name=Dark Angels Armoury — Ammunition constraints=
+  entryLink id=r40-da-ammo-tactical-unit-hv-hb name=Molecular Acid Shells (for Heavy Bolter) type=selectionEntry target=da22-acid-hb pts=7 constraints=max:2 scope=parent field=selections child=None
+  entryLink id=r40-da-ammo-tactical-unit-hv-ml name=Stasis Shells — Missile (for Missile Launcher) type=selectionEntry target=da22-stasis-missile pts=5 constraints=max:2 scope=parent field=selections child=None
+GROUP id=r40-da-steel-transport-tactical-unit name=Steel Fist — Armoured Assault Dedicated Transport constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r40-da-steel-transport-tactical-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (10 models or fewer) type=model target=None pts=250 constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r40-da-steel-transport-tactical-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (10 models or fewer) type=model target=None pts=200 constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r40-da-steel-transport-tactical-unit-hs-spartan name=Legion Spartan Assault Tank (11–20 models) type=unit target=None pts=305 constraints=
+GROUP id=r45-cult-tactical-unit name=Prosperine Cult constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+  selectionEntry id=r45-cult-tactical-unit-0 name=Pavoni type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r45-cult-tactical-unit-1 name=Raptora type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r45-cult-tactical-unit-2 name=Corvidae type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r45-cult-tactical-unit-3 name=Athanaeans type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r45-cult-tactical-unit-4 name=Pyrae type=upgrade target=None pts= constraints=max:1 scope=parent field=selections child=None
+GROUP id=r49-legion-upgrades-tactical-unit name=Legion Wargear & Upgrades constraints=
+  entryLink id=r43-tactical-unit-ec-apoth name=Sergeant upgraded to Apothecary type=selectionEntry target=r43-ec-line-apothecary pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r43-tactical-unit-ec-reductor name=Reductor type=selectionEntry target=r43-ec-reductor pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r44-tactical-unit-nl-kraken name=Kraken Light Bolts type=selectionEntry target=r44-nl-kraken-bolts pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r45-tactical-unit-we-chain name=Chainaxe type=selectionEntry target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r45-tactical-unit-dg-alchem name=Alchem Flamer replacement type=selectionEntry target=r45-dg-alchem-flamer pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r45-tactical-ts-brother name=Brotherhood of Psykers (20-model Tactical Squad) type=selectionEntry target=r45-ts-tactical-brotherhood pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r46-tactical-unit-wb-hex name=Hex-Bolts type=selectionEntry target=r46-wb-hex-bolts pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r46-tactical-unit-wb-dark name=Dark Channelling type=selectionEntry target=r46-wb-dark-channelling pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r46-tactical-unit-sal-heavyflame name=Heavy Flamer instead of Flamer type=selectionEntry target=r46-sal-heavy-flamer pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r46-tactical-unit-sal-artificer name=Artificer Armour — Salamanders access type=selectionEntry target=r46-sal-artificer-armour pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r47-tactical-unit-ih-bionics name=Bionics — unit model type=selectionEntry target=r47-ih-bionics-model pts= constraints=max:20 scope=parent field=selections child=None
+  entryLink id=r47-tactical-unit-ih-bionics-sgt name=Bionics — Veteran Sergeant type=selectionEntry target=r47-ih-bionics-veteran-sergeant pts= constraints=max:1 scope=parent field=selections child=None
+  entryLink id=r47-tactical-unit-ih-splinter name=Splinter Bolts type=selectionEntry target=r47-ih-splinter-bolts pts= constraints=max:1 scope=parent field=selections child=None
+GROUP id=r52-tactical-unit-third-shrieker name=3rd Company Elite — Sonic Assault constraints=
+  selectionEntry id=r52-tactical-unit-third-shrieker-model name=Sonic Shrieker — select once per model in the unit type=upgrade target=None pts=2 constraints=max:20 scope=parent field=selections child=None
+GROUP id=r57-tactical-unit-iw name=Iron Warriors Armoury constraints=
+  selectionEntry id=r57-tactical-unit-iw-shrapnel name=Shrapnel Bolts type=upgrade target=None pts=5 constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r57-tactical-unit-iw-servo name=Servo-Arm type=upgrade target=None pts=30 constraints=max:1 scope=parent field=selections child=None
+  selectionEntry id=r57-tactical-unit-iw-bionics name=Bionics type=upgrade target=None pts=5 constraints=max:1 scope=parent field=selections child=None
+GROUP id=live-r2-fabius-enhanced-tactical-unit-group name=Fabius Bile constraints=
+  selectionEntry id=live-r2-fabius-enhanced-tactical-unit name=Enhanced Warriors type=upgrade target=None pts=0 constraints=max:1 scope=parent field=selections child=None
+GROUP id=live-r2-fulgrim-blessing-tactical-unit-group name=Special Upgrades constraints=
+  selectionEntry id=live-r2-fulgrim-blessing-tactical-unit name=Blessing of Slaanesh type=upgrade target=None pts=25 constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT tactical-unit | Legion Tactical Squad | pts= ===
+MODEL id=tac-marine name=Legion Tactical Marine pts=15 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=tac-sergeant name=Legion Tactical Sergeant pts=15 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r45-tactical-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT assault-unit | Legion Assault Squad | pts= ===
+MODEL id=assault-marine name=Legion Assault Marine pts=18 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=assault-sergeant name=Legion Assault Sergeant pts=18 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r45-assault-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+CHAIN id=r45-assault-unit-we-chain-discount name=Chainaxe — Berserker Assault price tag=entryLink target=r45-we-chainaxe-berserker pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT breacher-unit | Legion Breacher Siege Squad | pts=50 ===
+MODEL id=breacher-marine name=Legion Breacher Marine pts=15 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=breacher-sergeant name=Legion Breacher Sergeant pts=15 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r45-breacher-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT veteran-unit | Legion Veteran Squad | pts=45 ===
+MODEL id=veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT destroyer-unit | Legion Destroyer Squad | pts=70 ===
+MODEL id=destroyer-included name=Legion Destroyers pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=destroyer-sergeant name=Legion Destroyer Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r45-destroyer-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r60-ws-hibou-retinue-legion-veteran-squad | Legion Veteran Squad | pts=45 ===
+MODEL id=r60-ws-hibou-retinue-legion-veteran-squad-veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=r60-ws-hibou-retinue-legion-veteran-squad-veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r60-ws-hibou-retinue-legion-veteran-squad-r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r60-ws-hasik-retinue-legion-veteran-squad | Legion Veteran Squad | pts=45 ===
+MODEL id=r60-ws-hasik-retinue-legion-veteran-squad-veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=r60-ws-hasik-retinue-legion-veteran-squad-veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r60-ws-hasik-retinue-legion-veteran-squad-r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r71-nl-mal-ret-1-veteran-unit | Legion Veteran Squad | pts=45 ===
+MODEL id=r71-nl-mal-ret-1-veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=r71-nl-mal-ret-1-veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r71-nl-mal-ret-1-r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r41-unit-xii-0-rampager-squad | RAMPAGER SQUAD | pts=0 ===
+MODEL id=r41-unit-xii-0-rampager-squad-r86-size name=Rampager pts=22 constraints=min:5 scope=parent field=selections child=None; max:10 scope=parent field=selections child=None
+CHAIN id=r45-r41-unit-xii-0-rampager-squad-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+CHAIN id=r45-r41-unit-xii-0-rampager-squad-we-chain-discount name=Chainaxe — Berserker Assault price tag=entryLink target=r45-we-chainaxe-berserker pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad | RAMPAGER SQUAD | pts=0 ===
+MODEL id=live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad-r86-size name=Rampager pts=22 constraints=min:5 scope=parent field=selections child=None; max:10 scope=parent field=selections child=None
+CHAIN id=live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+CHAIN id=live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r45-r41-unit-xii-0-rampager-squad-we-chain-discount name=Chainaxe — Berserker Assault price tag=entryLink target=r45-we-chainaxe-berserker pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit | Legion Assault Squad | pts= ===
+MODEL id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-marine name=Legion Assault Marine pts=18 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sergeant name=Legion Assault Sergeant pts=18 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+CHAIN id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-assault-unit-we-chain-discount name=Chainaxe — Berserker Assault price tag=entryLink target=r45-we-chainaxe-berserker pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit | Legion Veteran Squad | pts=45 ===
+MODEL id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit | Legion Veteran Squad | pts=45 ===
+MODEL id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r46-al-reward-28 | RAMPAGER SQUAD — Rewards of Treachery | pts=0 ===
+MODEL id=r46-al-reward-28-r86-size name=Rampager pts=22 constraints=min:5 scope=parent field=selections child=None; max:10 scope=parent field=selections child=None
+CHAIN id=r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+CHAIN id=r46-al-reward-28-r45-r41-unit-xii-0-rampager-squad-we-chain-discount name=Chainaxe — Berserker Assault price tag=entryLink target=r45-we-chainaxe-berserker pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r57-iw-hammer-tactical | Legion Tactical Squad — Hammer Compulsory | pts= ===
+MODEL id=r57-iw-hammer-tactical-tac-marine name=Legion Tactical Marine pts=15 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=r57-iw-hammer-tactical-tac-sergeant name=Legion Tactical Sergeant pts=15 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r57-iw-hammer-tactical-r45-tactical-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r57-iw-hammer-breacher | Legion Breacher Siege Squad — Hammer Compulsory | pts=50 ===
+MODEL id=r57-iw-hammer-breacher-breacher-marine name=Legion Breacher Marine pts=15 constraints=min:9 scope=parent field=selections child=None; max:19 scope=parent field=selections child=None
+MODEL id=r57-iw-hammer-breacher-breacher-sergeant name=Legion Breacher Sergeant pts=15 constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r57-iw-hammer-breacher-r45-breacher-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
+
+=== CHAINAXE UNIT r74-ba-rev-vet-veteran-unit | Legion Veteran Squad (Jump Packs) — Day of Revelation | pts=45 ===
+MODEL id=r74-ba-rev-vet-veteran-included name=Legion Veterans pts=20 constraints=min:4 scope=parent field=selections child=None; max:9 scope=parent field=selections child=None
+MODEL id=r74-ba-rev-vet-veteran-sergeant name=Legion Veteran Sergeant pts= constraints=min:1 scope=parent field=selections child=None; max:1 scope=parent field=selections child=None
+CHAIN id=r74-ba-rev-vet-r45-veteran-unit-we-chain name=Chainaxe tag=entryLink target=r45-we-chainaxe pts= constraints=max:1 scope=parent field=selections child=None
