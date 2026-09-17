@@ -1,0 +1,8 @@
+LIVE R9 — ULTRAMARINES COMMAND RETINUE FIX
+CAT=9 GSTref=1
+
+• Generic Praetor Terminator Command Squad now appears only with Terminator/Tartaros/Cataphractii armour
+• Generic Centurion Terminator Command Squad now appears only with Terminator/Tartaros/Cataphractii armour
+• Marius Gage Terminator Command retinue text corrected to its explicit source permission
+• Roboute Guilliman Terminator Command retinue text corrected to its explicit source permission
+• XIII named-character retinue selectors relabelled as explicit choose-one functional selections
