@@ -1,0 +1,41 @@
+name: Apply Live R8 Ultramarines deep fix
+on:
+  push:
+    paths:
+      - '.github/build/live_r8_ultramarines_deep_fix.py'
+      - '.github/workflows/apply-live-r8-ultramarines-deep-fix.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply R8 Ultramarines deep fix
+        run: python .github/build/live_r8_ultramarines_deep_fix.py
+      - name: Verify XML and revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          r=ET.parse('Legiones Astartes.cat').getroot()
+          assert r.get('revision')=='8'
+          idx=Path('index.xml').read_text(encoding='utf-8')
+          assert 'dataRevision="8"' in idx
+          text=Path('inspection-live-r8-ultramarines-deep-fix.txt').read_text(encoding='utf-8')
+          for needle in ['Invictarus Suzerain top-level entry set to 0-1','All four XIII unique squad leaders now have functional 50-point Armoury selectors','Aeonid Thiel is mutually unique','Ultramarines source-entry text walls replaced']:
+              assert needle in text, needle
+          print(text)
+          PY
+      - name: Commit Live R8
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r8-ultramarines-deep-fix.txt
+          git diff --cached --quiet || git commit -m 'Live R8: deep Ultramarines functional audit'
+          git pull --rebase origin main
+          git push
