@@ -407,7 +407,7 @@ add_shared_transport('hs-spartan', 'r18-final-sekhmet-spartan', 'Legion Spartan 
 
 rule(trans, 'r18-final-sekhmet-transport-rule', 'Dedicated Transport',
      'The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits. Land Raider patterns must have sufficient capacity for the selected Cabal size.')
-if not any('dreadclaw' in n.lower() for n in cloned_transport) or not any('spartan' in n.lower() for n in cloned_transport) or not any(n.lower().startswith('land raider ') for n in cloned_transport):
+if not any('dreadclaw' in n.lower() for n in cloned_transport) or not any('spartan' in n.lower() for n in cloned_transport) or not any(n.lower().startswith('land raider') for n in cloned_transport):
     raise RuntimeError('Sekhmet transport cloning missed one or more required transport families: '+repr(cloned_transport))
 log.append(f'Sekhmet completed: {len(combids)} Combi-weapon choices, shared Foeblaster cap, Inceptor ML2 power/Harness gate, {len(cloned_transport)} transport choices')
 
