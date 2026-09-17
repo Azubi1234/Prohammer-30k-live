@@ -1,0 +1,214 @@
+LIVE R2 — functional retinues + pending character notes
+CAT=2 GSTref=1
+
+Functional retinue selectors added: 37
+  + da22-corswain | Corswain, Seneschal of the First Legion
+  + da22-redloss | Farith Redloss
+  + da22-holguin | Holguin
+  + r41-unit-xii-6-kharn-the-bloody | KHÂRN THE BLOODY
+  + r41-unit-xii-7-shabran-darr | SHABRAN DARR
+  + r41-unit-xii-9-kargos-the-bloodspitter | KARGOS, THE BLOODSPITTER
+  + r41-unit-xii-10-captain-ehrlen | CAPTAIN EHRLEN
+  + r41-unit-xii-11-delvarus | DELVARUS
+  + r41-unit-xiii-4-marius-gage-first-master | MARIUS GAGE, FIRST MASTER
+  + r41-unit-xiii-5-remus-ventanus | REMUS VENTANUS
+  + r41-unit-xiii-8-titus-prayto | TITUS PRAYTO
+  + r41-unit-xiv-3-calas-typhon-first-captain | CALAS TYPHON, FIRST CAPTAIN
+  + r41-unit-xiv-4-crysos-morturg | CRYSOS MORTURG
+  + r41-unit-xiv-5-durak-rask | DURAK RASK
+  + r41-unit-xiv-6-ignatius-grulgor | IGNATIUS GRULGOR
+  + r41-unit-xiv-7-nathaniel-garro | NATHANIEL GARRO
+  + r41-unit-xv-6-ahzek-ahriman | AHZEK AHRIMAN
+  + r41-unit-xv-7-phosis-t-kar | PHOSIS T'KAR
+  + r41-unit-xv-8-magistus-amon-the-hidden | MAGISTUS AMON, THE HIDDEN
+  + r41-unit-xv-9-hathor-maat | HATHOR MAAT
+  + r41-unit-xv-10-sanakht | SANAKHT
+  + r41-unit-xvi-4-ezekyle-abaddon-first-captain | EZEKYLE ABADDON, FIRST CAPTAIN
+  + r41-unit-xvi-5-horus-aximand-little-horus | HORUS AXIMAND, “LITTLE HORUS”
+  + r41-unit-xvi-6-garviel-loken | GARVIEL LOKEN
+  + r41-unit-xvi-8-tybalt-marr-the-either | TYBALT MARR, “THE EITHER”
+  + r41-unit-xvi-9-vheren-ashurhaddon | VHEREN ASHURHADDON
+  + r41-unit-xvii-6-argel-tal | ARGEL TAL
+  + r41-unit-xvii-7-high-chaplain-erebus | HIGH CHAPLAIN EREBUS
+  + r41-unit-xvii-8-kor-phaeron-the-black-cardinal | KOR PHAERON, THE BLACK CARDINAL
+  + r41-unit-xvii-11-hol-beloth | HOL BELOTH
+  + r41-unit-xviii-5-artellus-numeon | ARTELLUS NUMEON
+  + r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan | LORD CHAPLAIN NOMUS RHY'TAN
+  + r41-unit-xix-5-alvarex-maun | ALVAREX MAUN
+  + r41-unit-xx-4-armillus-dynat | ARMILLUS DYNAT
+  + r41-unit-xx-7-ingo-pech | INGO PECH
+  + r41-unit-xv-11-xv-magnus-the-red-the-crimson-king | XV — MAGNUS THE RED, THE CRIMSON KING
+  + r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king | XV — MAGNUS THE RED, THE CRIMSON KING
+Functional retinue selectors already present and preserved: 3
+  = r41-unit-iii-4-lord-commander-eidolon | LORD COMMANDER EIDOLON
+  = r41-unit-iii-6-captain-lucius | CAPTAIN LUCIUS
+  = r41-unit-iii-9-fulgrim-the-phoenician | FULGRIM, THE PHOENICIAN
+Mapped character IDs not present in this catalogue: 0
+
+White Scars duplicate Command Squad mounts removed:
+  - SHIBAN KHAN: Space Marine Bikes (+20 pts/model)
+  - SHIBAN KHAN: Jetbikes (+35 pts/model)
+  - HIBOU KHAN: Space Marine Bikes (+20 pts/model)
+  - HIBOU KHAN: Jetbikes (+35 pts/model)
+
+Fabius Enhanced Warriors functional squad options added: 72
+  + tactical-unit | Legion Tactical Squad
+  + assault-unit | Legion Assault Squad
+  + recon-unit | Legion Reconnaissance Squad
+  + veteran-unit | Legion Veteran Squad
+  + destroyer-unit | Legion Destroyer Squad
+  + fa-seeker | Legion Seeker Squad
+  + hs-heavy-support-squad | Legion Heavy Support Squad
+  + hq-praetor-ret-honour | Legion Honour Guard Squad
+  + hq-centurion-ret-command | Legion Command Squad
+  + r35-pride-veteran-veteran-unit | Legion Veteran Squad
+  + r35-destroyer-troops-destroyer-unit | Legion Destroyer Squad
+  + r40-da-vow-veteran | Legion Veteran Squad
+  + r40-da-eskaton-destroyer | Legion Destroyer Squad
+  + r40-da-serpent-seeker | Legion Seeker Squad
+  + r41-unit-iii-0-palatine-blade-squad | PALATINE BLADE SQUAD
+  + r41-unit-iii-2-kakophoni-squad | KAKOPHONI SQUAD
+  + r41-unit-iii-3-sun-killer-squad | SUN KILLER SQUAD
+  + r52-ec-eid-honour | Legion Honour Guard Squad
+  + r52-ec-luc-command | Legion Command Squad
+  + r52-ec-ful-honour | Legion Honour Guard Squad
+  + r57-iw-kroeger-retinue-legion-command-squad | Legion Command Squad
+  + r57-iw-pert-retinue-legion-honour-guard-squad | Legion Honour Guard Squad
+  + r60-ws-shiban-retinue-legion-command-squad | Legion Command Squad
+  + r60-ws-hibou-retinue-legion-command-squad | Legion Command Squad
+  + r60-ws-hibou-retinue-legion-veteran-squad | Legion Veteran Squad
+  + r60-ws-hasik-retinue-legion-command-squad | Legion Command Squad
+  + r60-ws-hasik-retinue-legion-veteran-squad | Legion Veteran Squad
+  + r60-ws-jagh-retinue-legion-honour-guard-squad | Legion Honour Guard Squad
+  + r63-sw-ohthere-command-hq-centurion-ret-command | Legion Command Squad
+  + r63-sw-russ-honour-hq-praetor-ret-honour | Legion Honour Guard Squad
+  + r64-if-diaz-command-hq-centurion-ret-command | Legion Command Squad
+  + r64-if-dorn-honour-hq-praetor-ret-honour | Legion Honour Guard Squad
+  + r71-nl-sev-ret-0-hq-centurion-ret-command | Legion Command Squad
+  + r71-nl-oph-ret-0-hq-centurion-ret-command | Legion Command Squad
+  + r71-nl-mal-ret-0-hq-centurion-ret-command | Legion Command Squad
+  + r71-nl-mal-ret-1-veteran-unit | Legion Veteran Squad
+  + r74-ba-ral-cmd-hq-centurion-ret-command | Legion Command Squad
+  + r74-ba-crohne-cmd-hq-centurion-ret-command | Legion Command Squad
+  + r74-ba-amit-cmd-hq-centurion-ret-command | Legion Command Squad
+  + r74-ba-sang-honour-hq-praetor-ret-honour | Legion Honour Guard Squad
+  + r79-ih-meduson-command-hq-centurion-ret-command | Legion Command Squad
+  + r79-ih-ferrus-honour-hq-praetor-ret-honour | Legion Honour Guard Squad
+  + live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xv-6-ahzek-ahriman-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xv-7-phosis-t-kar-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker | Legion Seeker Squad
+  + live-r2-r41-unit-xv-9-hathor-maat-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | Legion Honour Guard Squad
+  + live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xvi-6-garviel-loken-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit | Legion Veteran Squad
+  + live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit | Legion Veteran Squad
+  + live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xix-5-alvarex-maun-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xx-4-armillus-dynat-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xx-7-ingo-pech-retinue-0-hq-centurion-ret-command | Legion Command Squad
+  + live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker | Legion Seeker Squad
+  + r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad | KAKOPHONI SQUAD
+  + r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit | Legion Veteran Squad
+  + r42-role-xiv-0-legion-heavy-support-squads-hs-heavy-support-squad | Legion Heavy Support Squad
+  + live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | Legion Honour Guard Squad
+
+Fulgrim Transfigured:
+  - profile verified as WS9 BS6 S7 T7 W7 I9 A7 Ld10 Sv2+/4++
+  - Wargear and Special Rules structured
+  - mortal/transfigured mutual exclusion verified/added
+  - Blessing of Slaanesh functional options added: 80
+    + tactical-unit | Legion Tactical Squad | +25
+    + assault-unit | Legion Assault Squad | +25
+    + recon-unit | Legion Reconnaissance Squad | +25
+    + veteran-unit | Legion Veteran Squad | +25
+    + destroyer-unit | Legion Destroyer Squad | +25
+    + fa-seeker | Legion Seeker Squad | +25
+    + hs-heavy-support-squad | Legion Heavy Support Squad | +25
+    + hq-praetor | Legion Praetor | +20
+    + hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+    + hq-centurion | Legion Centurion | +20
+    + hq-centurion-ret-command | Legion Command Squad | +25
+    + r35-pride-veteran-veteran-unit | Legion Veteran Squad | +25
+    + r35-destroyer-troops-destroyer-unit | Legion Destroyer Squad | +25
+    + r40-da-vow-veteran | Legion Veteran Squad | +25
+    + r40-da-eskaton-destroyer | Legion Destroyer Squad | +25
+    + r40-da-serpent-seeker | Legion Seeker Squad | +25
+    + r41-unit-iii-0-palatine-blade-squad | PALATINE BLADE SQUAD | +25
+    + r41-unit-iii-1-phoenix-terminator-squad | PHOENIX TERMINATOR SQUAD | +25
+    + r41-unit-iii-2-kakophoni-squad | KAKOPHONI SQUAD | +25
+    + r41-unit-iii-3-sun-killer-squad | SUN KILLER SQUAD | +25
+    + r41-unit-iii-4-lord-commander-eidolon | LORD COMMANDER EIDOLON | +20
+    + r52-ec-eid-honour | Legion Honour Guard Squad | +25
+    + r41-unit-iii-5-saul-tarvitz | SAUL TARVITZ | +20
+    + r41-unit-iii-6-captain-lucius | CAPTAIN LUCIUS | +20
+    + r52-ec-luc-command | Legion Command Squad | +25
+    + r41-unit-iii-7-fabius-bile | FABIUS BILE | +20
+    + r52-ec-ful-honour | Legion Honour Guard Squad | +25
+    + r52-ec-ful-phoenix-retinue | Phoenix Terminator Squad | +25
+    + r57-iw-kroeger-retinue-legion-command-squad | Legion Command Squad | +25
+    + r57-iw-pert-retinue-legion-honour-guard-squad | Legion Honour Guard Squad | +25
+    + r60-ws-shiban-retinue-legion-command-squad | Legion Command Squad | +25
+    + r60-ws-hibou-retinue-legion-command-squad | Legion Command Squad | +25
+    + r60-ws-hibou-retinue-legion-veteran-squad | Legion Veteran Squad | +25
+    + r60-ws-hasik-retinue-legion-command-squad | Legion Command Squad | +25
+    + r60-ws-hasik-retinue-legion-veteran-squad | Legion Veteran Squad | +25
+    + r60-ws-jagh-retinue-legion-honour-guard-squad | Legion Honour Guard Squad | +25
+    + r63-sw-ohthere-command-hq-centurion-ret-command | Legion Command Squad | +25
+    + r63-sw-russ-honour-hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+    + r64-if-diaz-command-hq-centurion-ret-command | Legion Command Squad | +25
+    + r64-if-dorn-honour-hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+    + r71-nl-sev-ret-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + r71-nl-oph-ret-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + r71-nl-mal-ret-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + r71-nl-mal-ret-1-veteran-unit | Legion Veteran Squad | +25
+    + r74-ba-ral-cmd-hq-centurion-ret-command | Legion Command Squad | +25
+    + r74-ba-crohne-cmd-hq-centurion-ret-command | Legion Command Squad | +25
+    + r74-ba-amit-cmd-hq-centurion-ret-command | Legion Command Squad | +25
+    + r74-ba-sang-honour-hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+    + r79-ih-meduson-command-hq-centurion-ret-command | Legion Command Squad | +25
+    + r79-ih-ferrus-honour-hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+    + live-r2-r41-unit-xii-6-kharn-the-bloody-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xii-9-kargos-the-bloodspitter-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xii-10-captain-ehrlen-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xv-6-ahzek-ahriman-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xv-7-phosis-t-kar-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker | Legion Seeker Squad | +25
+    + live-r2-r41-unit-xv-9-hathor-maat-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+    + live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xvi-6-garviel-loken-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit | Legion Veteran Squad | +25
+    + live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit | Legion Veteran Squad | +25
+    + live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xix-5-alvarex-maun-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xx-4-armillus-dynat-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xx-7-ingo-pech-retinue-0-hq-centurion-ret-command | Legion Command Squad | +25
+    + live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker | Legion Seeker Squad | +25
+    + r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad | KAKOPHONI SQUAD | +25
+    + r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit | Legion Veteran Squad | +25
+    + r42-role-xiv-0-legion-heavy-support-squads-hs-heavy-support-squad | Legion Heavy Support Squad | +25
+    + live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | Legion Honour Guard Squad | +25
+
+Veteran-retinue note intentionally not expanded beyond retinues explicitly required by named-character source entries, per user instruction.
