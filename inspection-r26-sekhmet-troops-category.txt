@@ -1,0 +1,26 @@
+CAT=26
+=== SEKHMET CATEGORY LINKS ===
+categoryLink | id=r41-unit-xv-0-sekhmet-terminator-cabal-cat | name=Elites | hidden=false | targetId=cat-elites | primary=true
+  modifier | id=r19-guard-sekhmet-hide-elite | type=set | field=hidden | value=true
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+  modifier | id=r26-guard-sekhmet-direct-unlimited | type=set | field=r18-ts-r41-unit-xv-0-sekhmet-terminator-cabal-01 | value=99
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+categoryLink | id=r18-ts-sekhmet-root-limit | name=Thousand Sons Sekhmet 0-1 | hidden=false | targetId=r18-ts-cat-sekhmet-limit | primary=false
+categoryLink | id=r18-final-bro-0 | name=Thousand Sons Psychic Brotherhood | hidden=false | targetId=r18-ts-cat-brotherhood | primary=false
+categoryLink | id=r18-final-cat-sekhmet-01-tag-0 | name=Sekhmet Cabal 0-1 | hidden=false | targetId=r18-final-cat-sekhmet-01 | primary=false
+categoryLink | id=r19-guard-sekhmet-troops | name=Troops — Guard of the Crimson King | hidden=true | targetId=cat-troops | primary=true
+  modifier | id=r19-guard-sekhmet-show-troops | type=set | field=hidden | value=false
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+=== OTHER RITE CATEGORY SWITCH EXAMPLES ===
+UNIT selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false
+  categoryLink | id=r41-unit-xv-0-sekhmet-terminator-cabal-cat | name=Elites | hidden=false | targetId=cat-elites | primary=true
+    modifier | id=r19-guard-sekhmet-hide-elite | type=set | field=hidden | value=true
+      condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+    modifier | id=r26-guard-sekhmet-direct-unlimited | type=set | field=r18-ts-r41-unit-xv-0-sekhmet-terminator-cabal-01 | value=99
+      condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+  categoryLink | id=r18-ts-sekhmet-root-limit | name=Thousand Sons Sekhmet 0-1 | hidden=false | targetId=r18-ts-cat-sekhmet-limit | primary=false
+  categoryLink | id=r18-final-bro-0 | name=Thousand Sons Psychic Brotherhood | hidden=false | targetId=r18-ts-cat-brotherhood | primary=false
+  categoryLink | id=r18-final-cat-sekhmet-01-tag-0 | name=Sekhmet Cabal 0-1 | hidden=false | targetId=r18-final-cat-sekhmet-01 | primary=false
+  categoryLink | id=r19-guard-sekhmet-troops | name=Troops — Guard of the Crimson King | hidden=true | targetId=cat-troops | primary=true
+    modifier | id=r19-guard-sekhmet-show-troops | type=set | field=hidden | value=false
+      condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
