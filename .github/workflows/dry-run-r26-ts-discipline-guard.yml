@@ -1,0 +1,26 @@
+name: Dry-run R26 TS Discipline and Guard
+on:
+  push:
+    paths:
+      - '.github/build/live_r26_ts_discipline_guard.py'
+      - '.github/workflows/dry-run-r26-ts-discipline-guard.yml'
+permissions: {contents: write}
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Dry run
+        env: {R26_APPLY: '0'}
+        run: python .github/build/live_r26_ts_discipline_guard.py
+      - name: Verify live files untouched
+        run: git diff --exit-code -- 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml
+      - name: Commit inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-live-r26-ts-discipline-guard.txt
+          git diff --cached --quiet || git commit -m "Inspect R26 TS discipline and Guard fix"
+          git push
