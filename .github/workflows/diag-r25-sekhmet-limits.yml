@@ -1,0 +1,19 @@
+name: Inspect R25 Sekhmet limits
+on:
+  push:
+    paths: ['.github/build/diag_r25_sekhmet_limits.py','.github/workflows/diag-r25-sekhmet-limits.yml']
+permissions: {contents: write}
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r25_sekhmet_limits.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r25-sekhmet-limits.txt
+          git diff --cached --quiet || git commit -m "Inspect R25 Sekhmet limits"
+          git push
