@@ -1,0 +1,19 @@
+name: Inspect R24 TS GST Rite Conditions
+on:
+  push:
+    paths: ['.github/build/diag_r24_ts_gst_rite_conditions.py','.github/workflows/diag-r24-ts-gst-rite-conditions.yml']
+permissions: {contents: write}
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r24_ts_gst_rite_conditions.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r24-ts-gst-rite-conditions.txt
+          git diff --cached --quiet || git commit -m "Inspect R24 TS GST rite conditions"
+          git push
