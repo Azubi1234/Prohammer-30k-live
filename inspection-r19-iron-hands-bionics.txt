@@ -1,0 +1,1697 @@
+CAT=19
+
+=== BIONICS MATCHES ===
+selectionEntry | id=gear-bionics | name=Bionics | type=upgrade | hidden=false
+rule | id=rule-bionics | name=Bionics | hidden=false
+selectionEntry | id=gear-hq-bionics | name=Bionics | type=upgrade | hidden=false
+rule | id=gear-hq-bionics-rule | name=Bionics | hidden=false
+selectionEntry | id=r43-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r43-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r43-iw-bionics-rule | name=Bionics | hidden=false
+selectionEntry | id=r44-ih-bionics-character | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r44-ih-bionics-character-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r44-ih-bionics-character-rule | name=Bionics | hidden=false
+selectionEntry | id=r47-ih-bionics-model | name=Bionics — unit model | type=upgrade | hidden=false
+  constraint | id=r47-ih-bionics-model-max | type=max | field=selections | value=20 | scope=parent
+rule | id=r47-ih-bionics-model-rule | name=Bionics — unit model | hidden=false
+selectionEntry | id=r47-ih-bionics-veteran-sergeant | name=Bionics — Veteran Sergeant | type=upgrade | hidden=false
+  constraint | id=r47-ih-bionics-veteran-sergeant-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r47-ih-bionics-veteran-sergeant-rule | name=Bionics — Veteran Sergeant | hidden=false
+entryLink | id=sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-tactical-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-tactical-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-20 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-tactical-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-tactical-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-21 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-tactical-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-tactical-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-tactical-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+selectionEntry | id=r57-assault-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-assault-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-assault-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=breacher-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=breacher-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-breacher-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-breacher-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-49 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-breacher-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-breacher-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-50 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-breacher-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-breacher-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-breacher-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=recon-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=recon-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-recon-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-recon-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-60 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-recon-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-recon-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-61 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-terminator-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-terminator-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-107 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-terminator-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-terminator-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-108 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-terminator-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-terminator-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-terminator-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=destroyer-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-destroyer-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-destroyer-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-112 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-destroyer-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-destroyer-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-113 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=fa-seeker-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-fa-seeker-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-fa-seeker-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-127 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-fa-seeker-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-fa-seeker-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-128 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-fa-seeker-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-fa-seeker-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-fa-seeker-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=fa-bike-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=fa-sky-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=hs-hss-ag-2-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-hs-heavy-support-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-hs-heavy-support-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-148 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-hs-heavy-support-squad-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r47-hs-heavy-support-squad-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r48-vis-149 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-hs-heavy-support-squad-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-hs-heavy-support-squad-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-hs-heavy-support-squad-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=hq-praetor-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=hq-praetor-wg-4-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r79-ih-praetor-bionics | name=Bionics | type=selectionEntry | hidden=true | targetId=r44-ih-bionics-character
+  constraint | id=r79-ih-praetor-bionics-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r79-ih-praetor-bionics-show | type=set | field=hidden | value=false
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+selectionEntry | id=r57-hq-praetor-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-hq-praetor-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-hq-praetor-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r70-if-arm-0-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-0-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=hq-centurion-wg-4-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r79-ih-centurion-bionics | name=Bionics | type=selectionEntry | hidden=true | targetId=r44-ih-bionics-character
+  constraint | id=r79-ih-centurion-bionics-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r79-ih-centurion-bionics-show | type=set | field=hidden | value=false
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-hq-centurion-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-hq-centurion-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-hq-centurion-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r35-pride-veteran-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r35-pride-veteran-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r35-pride-terminator-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r35-pride-terminator-terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r35-destroyer-troops-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r35-destroyer-troops-destroyer-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r35-sky-troops-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r35-sky-troops-fa-sky-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-storm-tactical-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-storm-tactical-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-storm-centurion-group-r40-da-storm-tactical-hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r40-da-storm-centurion-group-r40-da-storm-tactical-hq-centurion-wg-4-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-storm-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-storm-assault-assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-wg-4-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-vow-veteran-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-vow-veteran-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-vow-terminator-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-vow-terminator-terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-eskaton-destroyer-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-eskaton-destroyer-destroyer-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-arrow-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-arrow-bike-fa-bike-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-arrow-sky-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-arrow-sky-fa-sky-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-serpent-seeker-fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-serpent-seeker-fa-seeker-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r40-da-serpent-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r40-da-serpent-assault-assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r52-ec-eid-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r52-ec-eid-honour-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r52-ec-ful-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r52-ec-ful-honour-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r57-iw-pert-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r57-iw-pert-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r60-ws-hibou-retinue-legion-veteran-squad-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r60-ws-hibou-retinue-legion-veteran-squad-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r60-ws-hibou-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r60-ws-hibou-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r60-ws-hibou-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r60-ws-hibou-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r60-ws-hibou-retinue-legion-veteran-squad-r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r60-ws-hibou-retinue-legion-veteran-squad-r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r60-ws-hibou-retinue-legion-veteran-squad-r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r60-ws-hasik-retinue-legion-veteran-squad-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r60-ws-hasik-retinue-legion-veteran-squad-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r60-ws-hasik-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r60-ws-hasik-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r60-ws-hasik-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r60-ws-hasik-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r60-ws-hasik-retinue-legion-veteran-squad-r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r60-ws-hasik-retinue-legion-veteran-squad-r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r60-ws-hasik-retinue-legion-veteran-squad-r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r60-ws-jagh-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r60-ws-jagh-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-slayer-huscarl-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r63-sw-slayer-huscarl-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-stalker-huscarl-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r63-sw-stalker-huscarl-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-scout-huscarl-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r63-sw-scout-huscarl-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-jorlund-huntmaster-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r63-sw-jorlund-huntmaster-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-varagyr-thegn-arm-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r63-sw-varagyr-thegn-arm-terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-hvarl-varagyr-r63-sw-varagyr-thegn-arm-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r63-sw-hvarl-varagyr-r63-sw-varagyr-thegn-arm-terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r63-sw-russ-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r63-sw-russ-honour-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-1-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-1-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-2-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-2-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-3-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-3-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-4-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-4-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-5-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-5-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-6-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-6-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-7-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-7-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r64-if-dorn-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r64-if-dorn-honour-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-8-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-8-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-9-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-9-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-headsman-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-headtaker-arm-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-mal-ret-1-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-mal-ret-1-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-mal-ret-1-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r71-nl-mal-ret-1-r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r71-nl-mal-ret-1-r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r71-nl-mal-ret-1-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r71-nl-mal-ret-1-r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r71-nl-mal-ret-1-r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r71-nl-mal-ret-1-r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r71-nl-mal-ret-1-r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r71-nl-mal-ret-1-r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r71-nl-shang-ret-0-r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-shang-ret-0-r71-nl-headsman-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-curze-ret-2-r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-curze-ret-2-r71-nl-headtaker-arm-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-curze-ret-3-r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-curze-ret-3-r71-nl-headsman-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r74-ba-sang-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r74-ba-sang-honour-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-312 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-313 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r48-vis-315 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r79-ih-santar-morlocks-r48-vis-315 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r79-ih-ferrus-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r79-ih-ferrus-honour-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r79-ih-ferrus-morlocks-r48-vis-315 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r57-assault-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r57-assault-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r57-assault-unit-iw-bionics-rule | name=Bionics | hidden=false
+selectionEntry | id=r89-we-ehrlen-wargear-5-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r89-we-ehrlen-wargear-5-bionics-min | type=min | field=selections | value=1 | scope=parent
+  constraint | id=r89-we-ehrlen-wargear-5-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r89-we-ehrlen-wargear-5-bionics-rule | name=Bionics | hidden=false
+entryLink | id=live-r3-we-r41-unit-xii-12-xii-angron-the-red-angel-retinue-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=live-r3-we-r41-unit-xii-12-xii-angron-the-red-angel-retinue-0-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r8-um-suz-arm-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r8-um-suz-arm-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r8-um-ful-arm-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r8-um-ful-arm-terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r8-um-loc-arm-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r8-um-loc-arm-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r8-um-nem-arm-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r8-um-nem-arm-destroyer-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r6-guilliman-ret-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=r6-guilliman-ret-0-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r18-final-khenetai-blademaster-armoury-clone-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r18-final-khenetai-blademaster-armoury-clone-hs-hss-ag-2-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r18-final-ammitara-fate-armoury-clone-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r18-final-ammitara-fate-armoury-clone-hs-hss-ag-2-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r47-fa-seeker-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r47-fa-seeker-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r48-vis-127 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r47-fa-seeker-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r47-fa-seeker-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r48-vis-128 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r57-fa-seeker-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r57-fa-seeker-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r57-fa-seeker-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r47-fa-seeker-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r47-fa-seeker-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r48-vis-127 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r47-fa-seeker-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r47-fa-seeker-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r48-vis-128 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r57-fa-seeker-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r57-fa-seeker-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r57-fa-seeker-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r42-role-xiv-0-legion-heavy-support-squads-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r42-role-xiv-0-legion-heavy-support-squads-hs-hss-ag-2-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  constraint | id=live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-cawg-3-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r45-dg-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r45-dg-bike-fa-bike-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r52-ec-sonic-hss-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r52-ec-sonic-hss-hs-hss-ag-2-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r52-ec-sonic-hss-r47-hs-heavy-support-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r52-ec-sonic-hss-r47-hs-heavy-support-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r52-ec-sonic-hss-r48-vis-148 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r52-ec-sonic-hss-r47-hs-heavy-support-squad-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r52-ec-sonic-hss-r47-hs-heavy-support-squad-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r52-ec-sonic-hss-r48-vis-149 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r57-iw-golg-term-troops-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r57-iw-golg-term-troops-terminator-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r57-iw-golg-term-troops-r47-terminator-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r57-iw-golg-term-troops-r47-terminator-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r57-iw-golg-term-troops-r48-vis-107 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r57-iw-golg-term-troops-r47-terminator-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r57-iw-golg-term-troops-r47-terminator-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r57-iw-golg-term-troops-r48-vis-108 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-iw-golg-term-troops-r57-terminator-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-iw-golg-term-troops-r57-terminator-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-iw-golg-term-troops-r57-terminator-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r57-iw-hammer-tactical-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r57-iw-hammer-tactical-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r57-iw-hammer-tactical-r47-tactical-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r57-iw-hammer-tactical-r47-tactical-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r57-iw-hammer-tactical-r48-vis-20 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r57-iw-hammer-tactical-r47-tactical-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r57-iw-hammer-tactical-r47-tactical-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r57-iw-hammer-tactical-r48-vis-21 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-iw-hammer-tactical-r57-tactical-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-iw-hammer-tactical-r57-tactical-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-iw-hammer-tactical-r57-tactical-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r57-iw-hammer-breacher-breacher-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r57-iw-hammer-breacher-breacher-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r57-iw-hammer-breacher-r47-breacher-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r57-iw-hammer-breacher-r47-breacher-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r57-iw-hammer-breacher-r48-vis-49 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r57-iw-hammer-breacher-r47-breacher-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r57-iw-hammer-breacher-r47-breacher-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r57-iw-hammer-breacher-r48-vis-50 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r57-iw-hammer-breacher-r57-breacher-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r57-iw-hammer-breacher-r57-breacher-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r57-iw-hammer-breacher-r57-breacher-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r60-ws-bike-troops-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r60-ws-bike-troops-fa-bike-sgt-arm-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-10-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-10-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-11-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-11-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r70-if-arm-12-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r70-if-arm-12-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-ta-raptor-r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-ta-raptor-r71-nl-headtaker-arm-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-ta-terror-r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-ta-terror-r71-nl-headsman-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r71-nl-hc-raptor-r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r71-nl-hc-raptor-r71-nl-headtaker-arm-w-1-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r74-ba-rev-vet-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  constraint | id=r74-ba-rev-vet-veteran-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+entryLink | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r74-ba-rev-vet-r48-vis-88 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+entryLink | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  constraint | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+  modifier | id=r74-ba-rev-vet-r48-vis-89 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+selectionEntry | id=r74-ba-rev-vet-r57-veteran-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+  constraint | id=r74-ba-rev-vet-r57-veteran-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r74-ba-rev-vet-r57-veteran-unit-iw-bionics-rule | name=Bionics | hidden=false
+entryLink | id=r81-ih-bitter-role-r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  constraint | id=r81-ih-bitter-role-r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+  modifier | id=r81-ih-bitter-role-r48-vis-312 | type=set | field=hidden | value=true
+  condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+
+=== IRON HANDS / LEGION X MATCHES ===
+selectionEntry | id=legion-x | name=X Legion — Iron Hands | type=upgrade | hidden=false
+constraint | id=legion-x-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-x-named | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r25-legion-x-reference | name=Iron Hands — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xii | name=XII Legion — World Eaters | type=upgrade | hidden=false
+constraint | id=legion-xii-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xii-named | name=Legiones Astartes (World Eaters) | hidden=false
+rule | id=r25-legion-xii-reference | name=World Eaters — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xiii | name=XIII Legion — Ultramarines | type=upgrade | hidden=false
+constraint | id=legion-xiii-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xiii-named | name=Legiones Astartes (Ultramarines) | hidden=false
+rule | id=r25-legion-xiii-reference | name=Ultramarines — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xiv | name=XIV Legion — Death Guard | type=upgrade | hidden=false
+constraint | id=legion-xiv-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xiv-named | name=Legiones Astartes (Death Guard) | hidden=false
+rule | id=r25-legion-xiv-reference | name=Death Guard — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xv | name=XV Legion — Thousand Sons | type=upgrade | hidden=false
+constraint | id=legion-xv-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xv-named | name=Legiones Astartes (Thousand Sons) | hidden=false
+rule | id=r25-legion-xv-reference | name=Thousand Sons — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xvi | name=XVI Legion — Sons of Horus | type=upgrade | hidden=false
+constraint | id=legion-xvi-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xvi-named | name=Legiones Astartes (Sons of Horus) | hidden=false
+rule | id=r25-legion-xvi-reference | name=Sons Of Horus — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xvii | name=XVII Legion — Word Bearers | type=upgrade | hidden=false
+constraint | id=legion-xvii-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xvii-named | name=Legiones Astartes (Word Bearers) | hidden=false
+rule | id=r25-legion-xvii-reference | name=Word Bearers — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xviii | name=XVIII Legion — Salamanders | type=upgrade | hidden=false
+constraint | id=legion-xviii-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xviii-named | name=Legiones Astartes (Salamanders) | hidden=false
+rule | id=r25-legion-xviii-reference | name=Salamanders — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xix | name=XIX Legion — Raven Guard | type=upgrade | hidden=false
+constraint | id=legion-xix-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xix-named | name=Legiones Astartes (Raven Guard) | hidden=false
+rule | id=r25-legion-xix-reference | name=Raven Guard — Legion Rules & Armoury | hidden=false
+selectionEntry | id=legion-xx | name=XX Legion — Alpha Legion | type=upgrade | hidden=false
+constraint | id=legion-xx-max | type=max | field=selections | value=1 | scope=parent
+rule | id=legion-xx-named | name=Legiones Astartes (Alpha Legion) | hidden=false
+rule | id=r25-legion-xx-reference | name=Alpha Legion — Legion Rules & Armoury | hidden=false
+selectionEntry | id=r25-rite-x-0-the-head-of-the-gorgon | name=Iron Hands Rite of War — The Head Of The Gorgon | type=upgrade | hidden=true
+selectionEntry | id=r25-rite-x-1-company-of-bitter-iron | name=Iron Hands Rite of War — Company Of Bitter Iron | type=upgrade | hidden=true
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad | name=MEDUSAN IMMORTAL SQUAD | type=unit | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-0-medusan-immortal-squad-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-0-medusan-immortal-squad-stubborn | name=Stubborn | hidden=false
+selectionEntryGroup | id=r41-unit-x-0-medusan-immortal-squad-options | name=Options | hidden=false
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad-opt-0-flamer | name=Flamer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-0-medusan-immortal-squad-opt-0-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-0-medusan-immortal-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad-opt-1-meltagun | name=Meltagun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-0-medusan-immortal-squad-opt-1-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-0-medusan-immortal-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad-opt-2-plasma-gun | name=Plasma Gun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-0-medusan-immortal-squad-opt-2-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-0-medusan-immortal-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad-opt-3-graviton-gun | name=Graviton Gun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-0-medusan-immortal-squad-opt-3-graviton-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-0-medusan-immortal-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad-opt-4-legion-vexilla | name=Legion Vexilla | type=upgrade | hidden=false
+constraint | id=r41-unit-x-0-medusan-immortal-squad-opt-4-legion-vexilla-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-0-medusan-immortal-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-0-medusan-immortal-squad-opt-5-nuncio-vox | name=Nuncio Vox | type=upgrade | hidden=false
+constraint | id=r41-unit-x-0-medusan-immortal-squad-opt-5-nuncio-vox-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-0-medusan-immortal-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntryGroup | id=r49-legion-upgrades-r41-unit-x-0-medusan-immortal-squad | name=Legion Wargear & Upgrades | hidden=false
+entryLink | id=r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+constraint | id=r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+selectionEntry | id=r79-ih-r41-unit-x-0-medusan-immortal-squad-models | name=Squad Models | type=model | hidden=false
+modifier | id=r19-axis-max-r79-ih-r41-unit-x-0-medusan-immortal-squad-models | type=set | field=r79-ih-imm-model-min | value=20
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad | name=GORGON TERMINATOR SQUAD | type=unit | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-1-gorgon-terminator-squad-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-1-gorgon-terminator-squad-fearless | name=Fearless | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-1-gorgon-terminator-squad-gorgon-field | name=Gorgon Field | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-additional | name=Squad Models | type=model | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+selectionEntryGroup | id=r41-unit-x-1-gorgon-terminator-squad-options | name=Options | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-0-foeblaster-boltgun | name=Foeblaster Boltgun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-0-foeblaster-boltgun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-1-combi-flamer | name=Combi-flamer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-1-combi-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-2-combi-volkite-charger | name=Combi-volkite charger | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-2-combi-volkite-charger-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-3-combi-meltagun | name=Combi-meltagun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-3-combi-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-4-combi-plasma-gun | name=Combi-plasma gun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-4-combi-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-5-power-fist | name=Power fist | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-5-power-fist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-6-lightning-claw | name=Lightning claw | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-6-lightning-claw-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-7-chainfist | name=Chainfist | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-7-chainfist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-8-pair-of-lightning-claws | name=Pair of Lightning Claws | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-8-pair-of-lightning-claws-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-9-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-9-heavy-flamer-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-10-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-10-plasma-blaster-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-11-graviton-gun | name=Graviton Gun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-11-graviton-gun-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad-opt-12-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+constraint | id=r41-unit-x-1-gorgon-terminator-squad-opt-12-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-1-gorgon-terminator-squad-opt-12-context | name=Option restriction | hidden=false
+selectionEntryGroup | id=r49-legion-upgrades-r41-unit-x-1-gorgon-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+entryLink | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+constraint | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+entryLink | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-splinter | name=Splinter Bolts | type=selectionEntry | hidden=false | targetId=r47-ih-splinter-bolts
+constraint | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-splinter-max | type=max | field=selections | value=1 | scope=parent
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad | name=MORLOCK TERMINATOR SQUAD | type=unit | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-fearless | name=Fearless | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-gorgon-field | name=Gorgon Field | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-additional | name=Squad Models | type=model | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+constraint | id=r41-unit-x-2-morlock-terminator-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+selectionEntryGroup | id=r41-unit-x-2-morlock-terminator-squad-options | name=Options | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun | name=Foeblaster Boltgun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer | name=Combi-flamer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger | name=Combi-volkite charger | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun | name=Combi-meltagun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun | name=Combi-plasma gun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist | name=Power fist | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw | name=Lightning claw | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist | name=Chainfist | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer | name=Thunder hammer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon | name=Plasma Cannon | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+constraint | id=r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-2-morlock-terminator-squad-opt-12-context | name=Option restriction | hidden=false
+selectionEntryGroup | id=r49-legion-upgrades-r41-unit-x-2-morlock-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+entryLink | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+constraint | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+entryLink | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-splinter | name=Splinter Bolts | type=selectionEntry | hidden=false | targetId=r47-ih-splinter-bolts
+constraint | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-splinter-max | type=max | field=selections | value=1 | scope=parent
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord | name=VENERABLE FORGE LORD | type=unit | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-unique | type=max | field=selections | value=1 | scope=roster
+rule | id=r79-ih-rule-r41-unit-x-3-venerable-forge-lord-old-wise | name=Old & Wise | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-3-venerable-forge-lord-hard-to-kill | name=Hard to Kill | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-3-venerable-forge-lord-auto-repair-simulacra | name=Auto-Repair Simulacra | hidden=false
+selectionEntryGroup | id=r41-unit-x-3-venerable-forge-lord-options | name=Options | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-0-twin-linked-heavy-bolter | name=Twin-linked Heavy Bolter | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-0-twin-linked-heavy-bolter-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-1-multi-melta | name=Multi-Melta | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-1-multi-melta-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-2-twin-linked-autocannon | name=Twin-linked Autocannon | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-2-twin-linked-autocannon-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-3-twin-linked-missile-launcher | name=Twin-linked Missile Launcher | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-3-twin-linked-missile-launcher-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-4-plasma-cannon | name=Plasma Cannon | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-4-plasma-cannon-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-5-volkite-culverin | name=Volkite Culverin | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-5-volkite-culverin-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-6-assault-cannon | name=Assault Cannon | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-6-assault-cannon-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-7-twin-linked-lascannon | name=Twin-linked Lascannon | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-7-twin-linked-lascannon-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-8-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-8-heavy-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-9-meltagun | name=Meltagun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-9-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-10-graviton-gun | name=Graviton Gun | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-10-graviton-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-3-venerable-forge-lord-opt-11-extra-armour | name=Extra Armour | type=upgrade | hidden=false
+constraint | id=r41-unit-x-3-venerable-forge-lord-opt-11-extra-armour-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-3-venerable-forge-lord-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-4-shadrak-meduson | name=SHADRAK MEDUSON | type=unit | hidden=false
+constraint | id=r41-unit-x-4-shadrak-meduson-unique | type=max | field=selections | value=1 | scope=roster
+rule | id=r79-ih-rule-r41-unit-x-4-shadrak-meduson-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-4-shadrak-meduson-independent-character | name=Independent Character | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-4-shadrak-meduson-master-of-the-legion | name=Master of the Legion | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-4-shadrak-meduson-fury-of-the-survivors | name=Fury of the Survivors | hidden=false
+selectionEntryGroup | id=r41-unit-x-4-shadrak-meduson-options | name=Options | hidden=false
+selectionEntry | id=r41-unit-x-4-shadrak-meduson-opt-0-krak-grenades | name=Krak grenades | type=upgrade | hidden=false
+constraint | id=r41-unit-x-4-shadrak-meduson-opt-0-krak-grenades-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-4-shadrak-meduson-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-4-shadrak-meduson-opt-1-melta-bombs | name=Melta bombs | type=upgrade | hidden=false
+constraint | id=r41-unit-x-4-shadrak-meduson-opt-1-melta-bombs-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r41-unit-x-4-shadrak-meduson-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r41-unit-x-5-autek-mor | name=AUTEK MOR | type=unit | hidden=false
+constraint | id=r41-unit-x-5-autek-mor-unique | type=max | field=selections | value=1 | scope=roster
+rule | id=r79-ih-rule-r41-unit-x-5-autek-mor-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-5-autek-mor-independent-character | name=Independent Character | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-5-autek-mor-master-of-the-legion | name=Master of the Legion | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-5-autek-mor-furious-charge | name=Furious Charge | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-5-autek-mor-battlesmith | name=Battlesmith | hidden=false
+selectionEntry | id=r41-unit-x-6-gabriel-santar | name=GABRIEL SANTAR | type=unit | hidden=false
+constraint | id=r41-unit-x-6-gabriel-santar-unique | type=max | field=selections | value=1 | scope=roster
+rule | id=r79-ih-rule-r41-unit-x-6-gabriel-santar-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-6-gabriel-santar-independent-character | name=Independent Character | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-6-gabriel-santar-master-of-the-legion | name=Master of the Legion | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-6-gabriel-santar-master-of-the-morlocks | name=Master of the Morlocks | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-6-gabriel-santar-the-iron-aegis | name=The Iron Aegis | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad | name=Morlock Terminator Squad | type=unit | hidden=false
+rule | id=r79-ih-santar-morlocks-r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-santar-morlocks-r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-fearless | name=Fearless | hidden=false
+rule | id=r79-ih-santar-morlocks-r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-gorgon-field | name=Gorgon Field | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-additional | name=Squad Models | type=model | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+selectionEntryGroup | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-options | name=Options | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun | name=Foeblaster Boltgun | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer | name=Combi-flamer | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger | name=Combi-volkite charger | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun | name=Combi-meltagun | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun | name=Combi-plasma gun | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist | name=Power fist | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw | name=Lightning claw | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist | name=Chainfist | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer | name=Thunder hammer | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon | name=Plasma Cannon | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+constraint | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-12-context | name=Option restriction | hidden=false
+selectionEntryGroup | id=r79-ih-santar-morlocks-r49-legion-upgrades-r41-unit-x-2-morlock-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+entryLink | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+constraint | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+entryLink | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-splinter | name=Splinter Bolts | type=selectionEntry | hidden=false | targetId=r47-ih-splinter-bolts
+constraint | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-splinter-max | type=max | field=selections | value=1 | scope=parent
+selectionEntry | id=r41-unit-x-7-x-ferrus-manus-the-gorgon | name=X — FERRUS MANUS, THE GORGON | type=unit | hidden=false
+constraint | id=r41-unit-x-7-x-ferrus-manus-the-gorgon-unique | type=max | field=selections | value=1 | scope=roster
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-primarch | name=Primarch | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-the-gorgon | name=The Gorgon | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-master-of-the-forge | name=Master of the Forge | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-forged-for-war | name=Forged for War | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-forgebreaker | name=Forgebreaker | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-living-metal-hands | name=Living Metal Hands | hidden=false
+rule | id=r79-ih-rule-r41-unit-x-7-x-ferrus-manus-the-gorgon-medusan-carapace | name=Medusan Carapace | hidden=false
+rule | id=r81-ih-ferrus-rule-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad | name=Morlock Terminator Squad | type=unit | hidden=false
+rule | id=r79-ih-ferrus-morlocks-r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r79-ih-ferrus-morlocks-r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-fearless | name=Fearless | hidden=false
+rule | id=r79-ih-ferrus-morlocks-r79-ih-rule-r41-unit-x-2-morlock-terminator-squad-gorgon-field | name=Gorgon Field | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-additional | name=Squad Models | type=model | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+selectionEntryGroup | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-options | name=Options | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun | name=Foeblaster Boltgun | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer | name=Combi-flamer | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger | name=Combi-volkite charger | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun | name=Combi-meltagun | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun | name=Combi-plasma gun | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist | name=Power fist | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw | name=Lightning claw | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist | name=Chainfist | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer | name=Thunder hammer | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon | name=Plasma Cannon | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+constraint | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad-opt-12-context | name=Option restriction | hidden=false
+selectionEntryGroup | id=r79-ih-ferrus-morlocks-r49-legion-upgrades-r41-unit-x-2-morlock-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+entryLink | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+constraint | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+entryLink | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-splinter | name=Splinter Bolts | type=selectionEntry | hidden=false | targetId=r47-ih-splinter-bolts
+constraint | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-splinter-max | type=max | field=selections | value=1 | scope=parent
+selectionEntryGroup | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-options | name=Options | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-0-flamer | name=Flamer | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-0-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-1-meltagun | name=Meltagun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-1-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-2-plasma-gun | name=Plasma Gun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-2-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-3-graviton-gun | name=Graviton Gun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-3-graviton-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-4-legion-vexilla | name=Legion Vexilla | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-4-legion-vexilla-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-5-nuncio-vox | name=Nuncio Vox | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-5-nuncio-vox-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-6-frag-grenades | name=Frag grenades (base unit; +1 pts/model) | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-6-frag-grenades-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-6-context | name=Option restriction | hidden=false
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-6-squadwide | name=Squad-wide cost note | hidden=false
+selectionEntry | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-7-krak-grenades | name=Krak grenades (base unit; +2 pts/model) | type=upgrade | hidden=false
+constraint | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-7-krak-grenades-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-7-context | name=Option restriction | hidden=false
+rule | id=r46-al-reward-25-r41-unit-x-0-medusan-immortal-squad-opt-7-squadwide | name=Squad-wide cost note | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-additional | name=Squad Models | type=model | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+selectionEntryGroup | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-options | name=Options | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-0-foeblaster-boltgun | name=Foeblaster Boltgun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-0-foeblaster-boltgun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-1-combi-flamer | name=Combi-flamer | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-1-combi-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-2-combi-volkite-charger | name=Combi-volkite charger | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-2-combi-volkite-charger-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-3-combi-meltagun | name=Combi-meltagun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-3-combi-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-4-combi-plasma-gun | name=Combi-plasma gun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-4-combi-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-5-power-fist | name=Power fist | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-5-power-fist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-6-lightning-claw | name=Lightning claw | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-6-lightning-claw-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-7-chainfist | name=Chainfist | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-7-chainfist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-8-pair-of-lightning-claws | name=Pair of Lightning Claws | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-8-pair-of-lightning-claws-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-9-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-9-heavy-flamer-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-10-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-10-plasma-blaster-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-11-graviton-gun | name=Graviton Gun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-11-graviton-gun-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-12-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+constraint | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-12-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-26-r41-unit-x-1-gorgon-terminator-squad-opt-12-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-additional | name=Squad Models | type=model | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+selectionEntryGroup | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-options | name=Options | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun | name=Foeblaster Boltgun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-0-foeblaster-boltgun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer | name=Combi-flamer | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-1-combi-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger | name=Combi-volkite charger | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-2-combi-volkite-charger-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun | name=Combi-meltagun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-3-combi-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun | name=Combi-plasma gun | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-4-combi-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist | name=Power fist | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-5-power-fist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw | name=Lightning claw | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-6-lightning-claw-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-6-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist | name=Chainfist | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-7-chainfist-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-7-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer | name=Thunder hammer | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-8-thunder-hammer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-8-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-9-heavy-flamer-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-9-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-10-plasma-blaster-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-10-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon | name=Plasma Cannon | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-11-plasma-cannon-max | type=max | field=selections | value=2 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-11-context | name=Option restriction | hidden=false
+selectionEntry | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+constraint | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-12-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r46-al-reward-27-r41-unit-x-2-morlock-terminator-squad-opt-12-context | name=Option restriction | hidden=false
+rule | id=r81-ih-bitter-role-r79-ih-rule-r41-unit-x-0-medusan-immortal-squad-legiones-astartes-iron-hands | name=Legiones Astartes (Iron Hands) | hidden=false
+rule | id=r81-ih-bitter-role-r79-ih-rule-r41-unit-x-0-medusan-immortal-squad-stubborn | name=Stubborn | hidden=false
+selectionEntryGroup | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-options | name=Options | hidden=false
+selectionEntry | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-0-flamer | name=Flamer | type=upgrade | hidden=false
+constraint | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-0-flamer-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-0-context | name=Option restriction | hidden=false
+selectionEntry | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-1-meltagun | name=Meltagun | type=upgrade | hidden=false
+constraint | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-1-meltagun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-1-context | name=Option restriction | hidden=false
+selectionEntry | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-2-plasma-gun | name=Plasma Gun | type=upgrade | hidden=false
+constraint | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-2-plasma-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-2-context | name=Option restriction | hidden=false
+selectionEntry | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-3-graviton-gun | name=Graviton Gun | type=upgrade | hidden=false
+constraint | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-3-graviton-gun-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-3-context | name=Option restriction | hidden=false
+selectionEntry | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-4-legion-vexilla | name=Legion Vexilla | type=upgrade | hidden=false
+constraint | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-4-legion-vexilla-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-4-context | name=Option restriction | hidden=false
+selectionEntry | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-5-nuncio-vox | name=Nuncio Vox | type=upgrade | hidden=false
+constraint | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-5-nuncio-vox-max | type=max | field=selections | value=1 | scope=parent
+rule | id=r81-ih-bitter-role-r41-unit-x-0-medusan-immortal-squad-opt-5-context | name=Option restriction | hidden=false
+selectionEntryGroup | id=r81-ih-bitter-role-r49-legion-upgrades-r41-unit-x-0-medusan-immortal-squad | name=Legion Wargear & Upgrades | hidden=false
+entryLink | id=r81-ih-bitter-role-r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+constraint | id=r81-ih-bitter-role-r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+selectionEntry | id=r81-ih-bitter-role-r79-ih-r41-unit-x-0-medusan-immortal-squad-models | name=Squad Models | type=model | hidden=false
+modifier | id=r19-axis-max-r81-ih-bitter-role-r79-ih-r41-unit-x-0-medusan-immortal-squad-models | type=set | field=r81-ih-bitter-role-r79-ih-imm-model-min | value=20
+
+=== JUMP / BIKE UNIT ROOTS AND BIONICS LINKS ===
+UNIT selectionEntry | id=assault-unit | name=Legion Assault Squad | type=unit | hidden=false
+  LINK entryLink | id=assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=fa-bike | name=Legion Bike Squadron | type=unit | hidden=false
+  LINK entryLink | id=fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=fa-sky-hunter | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=false
+  LINK entryLink | id=fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r35-sky-troops-fa-sky-hunter | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=true
+  LINK entryLink | id=r35-sky-troops-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r40-da-storm-assault | name=Legion Assault Squad (Storm of War compulsory) | type=unit | hidden=true
+  LINK entryLink | id=r40-da-storm-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  LINK entryLink | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+UNIT selectionEntry | id=r40-da-arrow-bike | name=Legion Bike Squadron | type=unit | hidden=true
+  LINK entryLink | id=r40-da-arrow-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r40-da-arrow-sky | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=true
+  LINK entryLink | id=r40-da-arrow-sky-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r40-da-serpent-assault | name=Legion Assault Squad (Serpent’s Bane compulsory) | type=unit | hidden=true
+  LINK entryLink | id=r40-da-serpent-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit | name=Legion Assault Squad | type=unit | hidden=false
+  LINK entryLink | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-hunter | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=true
+  LINK entryLink | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r45-dg-bike | name=Legion Bike Squadron | type=unit | hidden=false
+  LINK entryLink | id=r45-dg-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r60-ws-bike-troops | name=Legion Bike Squadron | type=unit | hidden=true
+  LINK entryLink | id=r60-ws-bike-troops-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+UNIT selectionEntry | id=r74-ba-rev-vet-veteran-unit | name=Legion Veteran Squad (Jump Packs) — Day of Revelation | type=unit | hidden=true
+  LINK entryLink | id=r74-ba-rev-vet-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  LINK entryLink | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+    modifier | id=r74-ba-rev-vet-r48-vis-88 | type=set | field=hidden | value=true
+      condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+  LINK entryLink | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+    modifier | id=r74-ba-rev-vet-r48-vis-89 | type=set | field=hidden | value=true
+      condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+
+=== LINKS TO BIONICS TARGETS ===
+entryLink | id=sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=sgt-armoury | name=Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r47-tactical-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-tactical-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=tactical-unit | name=Legion Tactical Squad | type=unit | hidden=false
+entryLink | id=r47-tactical-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-tactical-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=tactical-unit | name=Legion Tactical Squad | type=unit | hidden=false
+entryLink | id=assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=assault-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=assault-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=breacher-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=breacher-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=breacher-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r47-breacher-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-breacher-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=breacher-unit | name=Legion Breacher Siege Squad | type=unit | hidden=false
+entryLink | id=r47-breacher-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-breacher-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=breacher-unit | name=Legion Breacher Siege Squad | type=unit | hidden=false
+entryLink | id=recon-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=recon-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=recon-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r47-recon-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-recon-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=recon-unit | name=Legion Reconnaissance Squad | type=unit | hidden=false
+entryLink | id=r47-recon-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-recon-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=recon-unit | name=Legion Reconnaissance Squad | type=unit | hidden=false
+entryLink | id=veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=terminator-sgt-armoury | name=Additional permitted Terminator Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=terminator-sergeant-options | name=Legion Terminator Sergeant | hidden=false
+entryLink | id=r47-terminator-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-terminator-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=terminator-unit | name=Legion Terminator Squad | type=unit | hidden=false
+entryLink | id=r47-terminator-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-terminator-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=terminator-unit | name=Legion Terminator Squad | type=unit | hidden=false
+entryLink | id=destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=destroyer-sgt-armoury | name=Additional permitted Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=destroyer-sgt | name=Legion Destroyer Sergeant | hidden=false
+entryLink | id=r47-destroyer-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-destroyer-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=destroyer-unit | name=Legion Destroyer Squad | type=unit | hidden=false
+entryLink | id=r47-destroyer-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-destroyer-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=destroyer-unit | name=Legion Destroyer Squad | type=unit | hidden=false
+entryLink | id=fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=fa-seeker-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=fa-seeker-sergeant | name=Legion Seeker Sergeant | hidden=false
+entryLink | id=r47-fa-seeker-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-fa-seeker | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=fa-seeker | name=Legion Seeker Squad | type=unit | hidden=false
+entryLink | id=r47-fa-seeker-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-fa-seeker | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=fa-seeker | name=Legion Seeker Squad | type=unit | hidden=false
+entryLink | id=fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=fa-bike-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=fa-bike-sergeant | name=Legion Biker Sergeant | hidden=false
+entryLink | id=fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=fa-sky-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=fa-sky-sergeant | name=Sky Hunter Sergeant | hidden=false
+entryLink | id=hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=hs-hss-armoury-wargear | name=Armoury Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=hs-hss-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r47-hs-heavy-support-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-hs-heavy-support-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hs-heavy-support-squad | name=Legion Heavy Support Squad | type=unit | hidden=false
+entryLink | id=r47-hs-heavy-support-squad-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-hs-heavy-support-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hs-heavy-support-squad | name=Legion Heavy Support Squad | type=unit | hidden=false
+entryLink | id=hq-praetor-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=hq-praetor-wargear | name=Additional Wargear (max 100 Armoury pts combined) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hq-praetor | name=Legion Praetor | type=unit | hidden=false
+entryLink | id=r79-ih-praetor-bionics | name=Bionics | type=selectionEntry | hidden=true | targetId=r44-ih-bionics-character
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=hq-praetor-wargear | name=Additional Wargear (max 100 Armoury pts combined) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hq-praetor | name=Legion Praetor | type=unit | hidden=false
+entryLink | id=hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r70-if-arm-0-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-0-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-0 | name=Huscarl Captain Armoury — up to 50 points | hidden=false
+entryLink | id=hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=hq-centurion-wargear | name=Additional Wargear (max 100 Armoury pts combined) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hq-centurion | name=Legion Centurion | type=unit | hidden=false
+entryLink | id=r79-ih-centurion-bionics | name=Bionics | type=selectionEntry | hidden=true | targetId=r44-ih-bionics-character
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=hq-centurion-wargear | name=Additional Wargear (max 100 Armoury pts combined) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=hq-centurion | name=Legion Centurion | type=unit | hidden=false
+entryLink | id=r35-pride-veteran-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r35-pride-veteran-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r35-pride-veteran-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=true
+entryLink | id=r35-pride-terminator-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r35-pride-terminator-terminator-sgt-armoury | name=Additional permitted Terminator Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r35-pride-terminator-terminator-sergeant-options | name=Legion Terminator Sergeant | hidden=false
+entryLink | id=r35-destroyer-troops-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r35-destroyer-troops-destroyer-sgt-armoury | name=Additional permitted Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r35-destroyer-troops-destroyer-sgt | name=Legion Destroyer Sergeant | hidden=false
+entryLink | id=r35-sky-troops-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r35-sky-troops-fa-sky-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r35-sky-troops-fa-sky-sergeant | name=Sky Hunter Sergeant | hidden=false
+entryLink | id=r40-da-storm-tactical-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-storm-tactical-sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-storm-tactical-sgt-armoury | name=Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r40-da-storm-centurion-group-r40-da-storm-tactical-hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-storm-centurion-group-r40-da-storm-tactical-hq-centurion-wargear | name=Additional Wargear (max 100 Armoury pts combined) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r40-da-storm-centurion-group-r40-da-storm-tactical-centurion | name=Legion Centurion | type=unit | hidden=false
+entryLink | id=r40-da-storm-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-storm-assault-assault-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-storm-assault-assault-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-wargear | name=Additional Wargear (max 100 Armoury pts combined) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r40-da-storm-centurion-group-r40-da-storm-assault-centurion | name=Legion Centurion | type=unit | hidden=false
+entryLink | id=r40-da-vow-veteran-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-vow-veteran-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r40-da-vow-veteran | name=Legion Veteran Squad | type=unit | hidden=true
+entryLink | id=r40-da-vow-terminator-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-vow-terminator-terminator-sgt-armoury | name=Additional permitted Terminator Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-vow-terminator-terminator-sergeant-options | name=Legion Terminator Sergeant | hidden=false
+entryLink | id=r40-da-eskaton-destroyer-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-eskaton-destroyer-destroyer-sgt-armoury | name=Additional permitted Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-eskaton-destroyer-destroyer-sgt | name=Legion Destroyer Sergeant | hidden=false
+entryLink | id=r40-da-arrow-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-arrow-bike-fa-bike-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-arrow-bike-fa-bike-sergeant | name=Legion Biker Sergeant | hidden=false
+entryLink | id=r40-da-arrow-sky-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-arrow-sky-fa-sky-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-arrow-sky-fa-sky-sergeant | name=Sky Hunter Sergeant | hidden=false
+entryLink | id=r40-da-serpent-seeker-fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-serpent-seeker-fa-seeker-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-serpent-seeker-fa-seeker-sergeant | name=Legion Seeker Sergeant | hidden=false
+entryLink | id=r40-da-serpent-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r40-da-serpent-assault-assault-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r40-da-serpent-assault-assault-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r52-ec-eid-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r52-ec-eid-honour-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r52-ec-eid-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r52-ec-ful-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r52-ec-ful-honour-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r52-ec-ful-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r57-iw-pert-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-pert-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-pert-retinue-legion-honour-guard-squad | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r60-ws-hibou-retinue-legion-veteran-squad-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-hibou-retinue-legion-veteran-squad-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-hibou-retinue-legion-veteran-squad | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r60-ws-hibou-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-hibou-retinue-legion-veteran-squad-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-hibou-retinue-legion-veteran-squad | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r60-ws-hibou-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-hibou-retinue-legion-veteran-squad-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-hibou-retinue-legion-veteran-squad | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r60-ws-hasik-retinue-legion-veteran-squad-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-hasik-retinue-legion-veteran-squad-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-hasik-retinue-legion-veteran-squad | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r60-ws-hasik-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-hasik-retinue-legion-veteran-squad-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-hasik-retinue-legion-veteran-squad | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r60-ws-hasik-retinue-legion-veteran-squad-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-hasik-retinue-legion-veteran-squad-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-hasik-retinue-legion-veteran-squad | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r60-ws-jagh-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-jagh-retinue-legion-honour-guard-squad-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r60-ws-jagh-retinue-legion-honour-guard-squad | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r63-sw-slayer-huscarl-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-slayer-huscarl-sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r63-sw-slayer-huscarl-sgt-armoury | name=Grey Slayer Huscarl Armoury — up to 50 points | hidden=false
+entryLink | id=r63-sw-stalker-huscarl-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-stalker-huscarl-sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r63-sw-stalker-huscarl-sgt-armoury | name=Grey Stalker Huscarl Armoury — up to 50 points | hidden=false
+entryLink | id=r63-sw-scout-huscarl-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-scout-huscarl-sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r63-sw-scout-huscarl-sgt-armoury | name=Wolf Scout Huscarl Armoury — up to 50 points | hidden=false
+entryLink | id=r63-sw-jorlund-huntmaster-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-jorlund-huntmaster-sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r63-sw-jorlund-huntmaster-sgt-armoury | name=Hunt-master Armoury — up to 50 points | hidden=false
+entryLink | id=r63-sw-varagyr-thegn-arm-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-varagyr-thegn-arm-terminator-sgt-armoury | name=Thegn Terminator Armoury — up to 50 points | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r63-sw-varagyr-thegn | name=Upgrade one Varagyr to a Thegn | type=upgrade | hidden=false
+entryLink | id=r63-sw-hvarl-varagyr-r63-sw-varagyr-thegn-arm-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-hvarl-varagyr-r63-sw-varagyr-thegn-arm-terminator-sgt-armoury | name=Thegn Terminator Armoury — up to 50 points | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r63-sw-hvarl-varagyr-r63-sw-varagyr-thegn | name=Upgrade one Varagyr to a Thegn | type=upgrade | hidden=false
+entryLink | id=r63-sw-russ-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r63-sw-russ-honour-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r63-sw-russ-honour-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r70-if-arm-1-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-1-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-1 | name=Templar Champion Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-2-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-2-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-2 | name=Warder Sergeant Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-3-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-3-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-3 | name=Huscarl Captain Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-4-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-4-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-4 | name=Templar Champion Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-5-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-5-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-5 | name=Huscarl Captain Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-6-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-6-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-6 | name=Warder Sergeant Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-7-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-7-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-7 | name=Huscarl Captain Armoury — up to 50 points | hidden=false
+entryLink | id=r64-if-dorn-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r64-if-dorn-honour-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r64-if-dorn-honour-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r70-if-arm-8-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-8-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-8 | name=Huscarl Captain Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-9-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-9-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-9 | name=Templar Champion Armoury — up to 50 points | hidden=false
+entryLink | id=r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-headsman-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-headsman | name=Headsman Armoury — up to 50 points | hidden=false
+entryLink | id=r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-headtaker-arm-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-headtaker-arm | name=Headtaker Armoury — up to 50 points | hidden=true
+entryLink | id=r71-nl-mal-ret-1-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-mal-ret-1-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r71-nl-mal-ret-1-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r71-nl-mal-ret-1-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-mal-ret-1-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r71-nl-mal-ret-1-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r71-nl-mal-ret-1-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-mal-ret-1-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r71-nl-mal-ret-1-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=r71-nl-shang-ret-0-r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-shang-ret-0-r71-nl-headsman-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-shang-ret-0-r71-nl-headsman | name=Headsman Armoury — up to 50 points | hidden=false
+entryLink | id=r71-nl-curze-ret-2-r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-curze-ret-2-r71-nl-headtaker-arm-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-curze-ret-2-r71-nl-headtaker-arm | name=Headtaker Armoury — up to 50 points | hidden=true
+entryLink | id=r71-nl-curze-ret-3-r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-curze-ret-3-r71-nl-headsman-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-curze-ret-3-r71-nl-headsman | name=Headsman Armoury — up to 50 points | hidden=false
+entryLink | id=r74-ba-sang-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r74-ba-sang-honour-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r74-ba-sang-honour-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-r41-unit-x-0-medusan-immortal-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-x-0-medusan-immortal-squad | name=MEDUSAN IMMORTAL SQUAD | type=unit | hidden=false
+entryLink | id=r47-r41-unit-x-1-gorgon-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-r41-unit-x-1-gorgon-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-x-1-gorgon-terminator-squad | name=GORGON TERMINATOR SQUAD | type=unit | hidden=false
+entryLink | id=r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r49-legion-upgrades-r41-unit-x-2-morlock-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-x-2-morlock-terminator-squad | name=MORLOCK TERMINATOR SQUAD | type=unit | hidden=false
+entryLink | id=r79-ih-santar-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r79-ih-santar-morlocks-r49-legion-upgrades-r41-unit-x-2-morlock-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r79-ih-santar-morlocks-r41-unit-x-2-morlock-terminator-squad | name=Morlock Terminator Squad | type=unit | hidden=false
+entryLink | id=r79-ih-ferrus-honour-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r79-ih-ferrus-honour-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r79-ih-ferrus-honour-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r79-ih-ferrus-morlocks-r47-r41-unit-x-2-morlock-terminator-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r79-ih-ferrus-morlocks-r49-legion-upgrades-r41-unit-x-2-morlock-terminator-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r79-ih-ferrus-morlocks-r41-unit-x-2-morlock-terminator-squad | name=Morlock Terminator Squad | type=unit | hidden=false
+entryLink | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=live-r3-we-r41-unit-xii-12-xii-angron-the-red-angel-retinue-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r3-we-r41-unit-xii-12-xii-angron-the-red-angel-retinue-0-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r3-we-r41-unit-xii-12-xii-angron-the-red-angel-retinue-0-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r8-um-suz-arm-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r8-um-suz-arm-veteran-sgt-armoury | name=Suzerain Legate — Space Marine Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false
+entryLink | id=r8-um-ful-arm-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r8-um-ful-arm-terminator-sgt-armoury | name=Fulmentarus Decurion — Terminator Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-xiii-1-fulmentarus-terminator-squad | name=FULMENTARUS TERMINATOR SQUAD | type=unit | hidden=false
+entryLink | id=r8-um-loc-arm-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r8-um-loc-arm-veteran-sgt-armoury | name=Locutarus Strike Leader — Space Marine Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-xiii-2-locutarus-storm-squad | name=LOCUTARUS STORM SQUAD | type=unit | hidden=false
+entryLink | id=r8-um-nem-arm-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r8-um-nem-arm-destroyer-sgt-armoury | name=Nemesis Destroyer Sergeant — Space Marine Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r41-unit-xiii-3-nemesis-destroyer-squad | name=NEMESIS DESTROYER SQUAD | type=unit | hidden=false
+entryLink | id=r6-guilliman-ret-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r6-guilliman-ret-0-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r6-guilliman-ret-0-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r18-final-khenetai-blademaster-armoury-clone-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r18-final-khenetai-blademaster-armoury-clone-hs-hss-armoury-wargear | name=Armoury Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r18-final-khenetai-blademaster-armoury | name=Khenetai Blademaster — Space Marine Armoury (max 50 pts) | hidden=false
+entryLink | id=r18-final-ammitara-fate-armoury-clone-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r18-final-ammitara-fate-armoury-clone-hs-hss-armoury-wargear | name=Armoury Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r18-final-ammitara-fate-armoury | name=Ammitara Fate — Space Marine Armoury (max 50 pts) | hidden=false
+entryLink | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker-sergeant | name=Legion Seeker Sergeant | hidden=false
+entryLink | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r47-fa-seeker-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r49-legion-upgrades-fa-seeker | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker | name=Legion Seeker Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r47-fa-seeker-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r49-legion-upgrades-fa-seeker | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker | name=Legion Seeker Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker-sergeant | name=Legion Seeker Sergeant | hidden=false
+entryLink | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r47-fa-seeker-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r49-legion-upgrades-fa-seeker | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker | name=Legion Seeker Squad | type=unit | hidden=false
+entryLink | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r47-fa-seeker-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r49-legion-upgrades-fa-seeker | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r41-unit-xx-7-ingo-pech-retinue-3-fa-seeker | name=Legion Seeker Squad | type=unit | hidden=false
+entryLink | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sergeant | name=Sky Hunter Sergeant | hidden=false
+entryLink | id=r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit | name=Legion Veteran Squad | type=unit | hidden=true
+entryLink | id=r42-role-xiv-0-legion-heavy-support-squads-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r42-role-xiv-0-legion-heavy-support-squads-hs-hss-armoury-wargear | name=Armoury Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r42-role-xiv-0-legion-heavy-support-squads-hs-hss-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-cawg-3 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-champ-arm | name=Legion Champion — additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+entryLink | id=r45-dg-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r45-dg-bike-fa-bike-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r45-dg-bike-fa-bike-sergeant | name=Legion Biker Sergeant | hidden=false
+entryLink | id=r52-ec-sonic-hss-hs-hss-ag-2 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r52-ec-sonic-hss-hs-hss-armoury-wargear | name=Armoury Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r52-ec-sonic-hss-hs-hss-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r52-ec-sonic-hss-r47-hs-heavy-support-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r52-ec-sonic-hss-r49-legion-upgrades-hs-heavy-support-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r52-ec-sonic-hss | name=Legion Heavy Support Squad — Sonic Weaponry | type=unit | hidden=false
+entryLink | id=r52-ec-sonic-hss-r47-hs-heavy-support-squad-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r52-ec-sonic-hss-r49-legion-upgrades-hs-heavy-support-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r52-ec-sonic-hss | name=Legion Heavy Support Squad — Sonic Weaponry | type=unit | hidden=false
+entryLink | id=r57-iw-golg-term-troops-terminator-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-golg-term-troops-terminator-sgt-armoury | name=Additional permitted Terminator Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r57-iw-golg-term-troops-terminator-sergeant-options | name=Legion Terminator Sergeant | hidden=false
+entryLink | id=r57-iw-golg-term-troops-r47-terminator-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-golg-term-troops-r49-legion-upgrades-terminator-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-golg-term-troops | name=Legion Terminator Squad — Terminator Attack | type=unit | hidden=false
+entryLink | id=r57-iw-golg-term-troops-r47-terminator-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-golg-term-troops-r49-legion-upgrades-terminator-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-golg-term-troops | name=Legion Terminator Squad — Terminator Attack | type=unit | hidden=false
+entryLink | id=r57-iw-hammer-tactical-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-hammer-tactical-sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r57-iw-hammer-tactical-sgt-armoury | name=Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r57-iw-hammer-tactical-r47-tactical-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-hammer-tactical-r49-legion-upgrades-tactical-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-hammer-tactical | name=Legion Tactical Squad — Hammer Compulsory | type=unit | hidden=true
+entryLink | id=r57-iw-hammer-tactical-r47-tactical-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-hammer-tactical-r49-legion-upgrades-tactical-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-hammer-tactical | name=Legion Tactical Squad — Hammer Compulsory | type=unit | hidden=true
+entryLink | id=r57-iw-hammer-breacher-breacher-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-hammer-breacher-breacher-sgt-armoury-wargear | name=Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r57-iw-hammer-breacher-breacher-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+entryLink | id=r57-iw-hammer-breacher-r47-breacher-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-hammer-breacher-r49-legion-upgrades-breacher-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-hammer-breacher | name=Legion Breacher Siege Squad — Hammer Compulsory | type=unit | hidden=true
+entryLink | id=r57-iw-hammer-breacher-r47-breacher-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r57-iw-hammer-breacher-r49-legion-upgrades-breacher-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r57-iw-hammer-breacher | name=Legion Breacher Siege Squad — Hammer Compulsory | type=unit | hidden=true
+entryLink | id=r60-ws-bike-troops-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r60-ws-bike-troops-fa-bike-sgt-armoury | name=Additional Sergeant Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r60-ws-bike-troops-fa-bike-sergeant | name=Legion Biker Sergeant | hidden=false
+entryLink | id=r70-if-arm-10-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-10-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-10 | name=Warder Sergeant Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-11-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-11-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-11 | name=Warder Sergeant Armoury — up to 50 points | hidden=false
+entryLink | id=r70-if-arm-12-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r70-if-arm-12-wargear | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r70-if-arm-12 | name=Templar Champion Armoury — up to 50 points | hidden=false
+entryLink | id=r71-nl-ta-raptor-r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-ta-raptor-r71-nl-headtaker-arm-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-ta-raptor-r71-nl-headtaker-arm | name=Headtaker Armoury — up to 50 points | hidden=true
+entryLink | id=r71-nl-ta-terror-r71-nl-headsman-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-ta-terror-r71-nl-headsman-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-ta-terror-r71-nl-headsman | name=Headsman Armoury — up to 50 points | hidden=false
+entryLink | id=r71-nl-hc-raptor-r71-nl-headtaker-arm-w-1 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r71-nl-hc-raptor-r71-nl-headtaker-arm-war | name=Armour & Wargear | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntryGroup | id=r71-nl-hc-raptor-r71-nl-headtaker-arm | name=Headtaker Armoury — up to 50 points | hidden=true
+entryLink | id=r74-ba-rev-vet-veteran-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r74-ba-rev-vet-veteran-sgt-armoury | name=Legion Veteran Sergeant — Additional Armoury (max 50 pts) | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r74-ba-rev-vet-veteran-unit | name=Legion Veteran Squad (Jump Packs) — Day of Revelation | type=unit | hidden=true
+entryLink | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r74-ba-rev-vet-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r74-ba-rev-vet-veteran-unit | name=Legion Veteran Squad (Jump Packs) — Day of Revelation | type=unit | hidden=true
+entryLink | id=r74-ba-rev-vet-r47-veteran-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r74-ba-rev-vet-r49-legion-upgrades-veteran-unit | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r74-ba-rev-vet-veteran-unit | name=Legion Veteran Squad (Jump Packs) — Day of Revelation | type=unit | hidden=true
+entryLink | id=r81-ih-bitter-role-r47-r41-unit-x-0-medusan-immortal-squad-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+  P1 entryLinks | 
+  P2 selectionEntryGroup | id=r81-ih-bitter-role-r49-legion-upgrades-r41-unit-x-0-medusan-immortal-squad | name=Legion Wargear & Upgrades | hidden=false
+  P3 selectionEntryGroups | 
+  P4 selectionEntry | id=r81-ih-bitter-role | name=Medusan Immortal Squad — Company of Bitter Iron Troops | type=unit | hidden=true
