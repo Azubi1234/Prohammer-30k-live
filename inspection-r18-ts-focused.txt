@@ -1,0 +1,397 @@
+CAT=18
+
+=== r61-librarian-power1 PARENT CHAIN ===
+selectionEntryGroup | id=r61-librarian-power1 | name=Psychic Power — select 1 | hidden=false
+P1 selectionEntryGroups | 
+P2 selectionEntry | id=hq-consul-librarian | name=Legion Librarian Consul | type=upgrade | hidden=false
+P3 selectionEntries | 
+P4 selectionEntryGroup | id=hq-centurion-consuls | name=Legion Consul Upgrade | hidden=false
+P5 selectionEntryGroups | 
+
+=== r61-librarian-power2 PARENT CHAIN ===
+selectionEntryGroup | id=r61-librarian-power2 | name=Additional Psychic Power — select 1 | hidden=false
+P1 selectionEntryGroups | 
+P2 selectionEntry | id=hq-consul-librarian-epistolary | name=Epistolary — Mastery Level 2 | type=upgrade | hidden=false
+P3 selectionEntries | 
+P4 selectionEntry | id=hq-consul-librarian | name=Legion Librarian Consul | type=upgrade | hidden=false
+P5 selectionEntries | 
+
+=== HQ LIBRARIAN DIRECT ===
+
+=== TS POWER GROUP PARENTS ===
+selectionEntryGroup | id=r18-ts-tactical-brotherhood-power | name=Psychic Power — selected Prosperine Cult discipline | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-veteran-unit-brotherhood-power | name=Psychic Power — selected Prosperine Cult discipline | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-terminator-unit-brotherhood-power | name=Psychic Power — selected Prosperine Cult discipline | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-praetor-power1 | name=Thousand Sons Psychic Power 1 — Mastery Level 2 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-praetor-power2 | name=Thousand Sons Psychic Power 2 — Mastery Level 2 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-praetor-power3 | name=Thousand Sons Psychic Power 3 — Guard Warlord Mastery Level 3 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r61-librarian-power2 | name=Additional Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r61-librarian-power1 | name=Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r63-sw-rp-r61-librarian-power2 | name=Additional Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r61-ws-stormseer-power2 | name=Additional Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-centurion-power1 | name=Thousand Sons Psychic Power — Mastery Level 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-centurion-power2 | name=Thousand Sons Psychic Power 2 — Epistolary Mastery Level 2 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-sekhmet-power | name=Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-sekhmet-power2 | name=Additional Psychic Power — Sekhmet Inceptor (Mastery Level 2) | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-ammitara-power | name=Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-osiron-power1 | name=Psychic Power — select 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-osiron-power2 | name=Additional Psychic Power — Mastery Level 2 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-ahriman-cabal-power1 | name=Ahriman's Cabal — Divination Power 1 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-ahriman-cabal-power2 | name=Ahriman's Cabal — Divination Power 2 | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-r41-unit-xv-7-phosis-t-kar-power1 | name=Psychic Power 1 — Telekinesis | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-r41-unit-xv-7-phosis-t-kar-power2 | name=Psychic Power 2 — Telekinesis | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-r41-unit-xv-8-magistus-amon-the-hidden-power1 | name=Psychic Power 1 — Telepathy | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-r41-unit-xv-8-magistus-amon-the-hidden-power2 | name=Psychic Power 2 — Telepathy | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-r41-unit-xv-9-hathor-maat-power1 | name=Psychic Power 1 — Biomancy | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-r41-unit-xv-9-hathor-maat-power2 | name=Psychic Power 2 — Biomancy | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-crimson-guard-power | name=Psychic Power — Crimson King's Guard | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-1-hq-praetor-ret-termcommand-crimson-guard-power | name=Psychic Power — Crimson King's Guard | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-magnus-power1 | name=Selected Psychic Power 1 — Primary Discipline | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-magnus-power2 | name=Selected Psychic Power 2 — Secondary Discipline | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-ts-magnus-power3 | name=Selected Psychic Power 3 — Any Thousand Sons Discipline | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-shard-power1 | name=Selected Psychic Power 1 — The Crimson King Unbound | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-shard-power2 | name=Selected Psychic Power 2 — The Crimson King Unbound | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-shard-power3 | name=Selected Psychic Power 3 — The Crimson King Unbound | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-shard-power4 | name=Selected Psychic Power 4 — The Crimson King Unbound | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-shard-power5 | name=Selected Psychic Power 5 — The Crimson King Unbound | hidden=false
+  P selectionEntryGroups | 
+selectionEntryGroup | id=r18-final-shard-power6 | name=Selected Psychic Power 6 — The Crimson King Unbound | hidden=false
+  P selectionEntryGroups | 
+
+=== CULT REPRESENTATIVES ===
+selectionEntry | id=r45-cult-tactical-unit-0 | name=Pavoni | type=upgrade | hidden=false
+  RULE rule | id=r45-cult-tactical-unit-0-rule | name=Pavoni | hidden=false DESC=Fleet; Psykers/Psychic Brotherhoods also gain Crusader.
+selectionEntry | id=r45-cult-veteran-unit-0 | name=Pavoni | type=upgrade | hidden=false
+  RULE rule | id=r45-cult-veteran-unit-0-rule | name=Pavoni | hidden=false DESC=Fleet; Psykers/Psychic Brotherhoods also gain Crusader.
+selectionEntry | id=r45-cult-terminator-unit-0 | name=Pavoni | type=upgrade | hidden=false
+  RULE rule | id=r45-cult-terminator-unit-0-rule | name=Pavoni | hidden=false DESC=Fleet; Psykers/Psychic Brotherhoods also gain Crusader.
+
+=== SANAKHT DIRECT RULES/GROUPS ===
+selectionEntry | id=r41-unit-xv-10-sanakht | name=SANAKHT | type=unit | hidden=false
+RULE rule | id=r41-unit-xv-10-sanakht-source | name=Source Entry | hidden=false LEN=1668 DESC=Sanakht | 7 | 5 | 4 | 4 | 3 | 6 | 4 | 10 | 2+/5+ Force Organisation: • HQ Unit Type: • Infantry (Character) Wargear: • Artificer Armour • Refractor Field • Paired Prosperine Force Blades • Frag grenades Special Rules: • Legiones Astartes (Thousand Sons) • Independent Character • Psyker (Mastery Level 1\) • Athanaeans • Blademaster of Prospero • Mindsong of Blades OPTIONS • Sanakht may take: • Krak grenades .................................. +2 points ATHANAEANS Sanakht always belongs to the Athanaeans and may not select another Prosperine Cult. He receives both the Athanaean Cult Arcana and Cult Mastery benefits. PSYCHIC POWERS Sanakht knows only Mindsong of Blades. He does not select a psychic power from the normal ProHammer Psychic Disciplines. MINDSong OF BLADES Mindsong of Blades is a Blessing invoked at the beginning of an Assault phase. If successfully invoked, until the end of that Assault phase: • models in Sanakht's unit gain +1 Initiative; • models in the unit may re-roll clo
+RULE rule | id=r41-unit-xv-10-sanakht-opt-0-context | name=Option restriction | hidden=false LEN=19 DESC=• Sanakht may take:
+RULE rule | id=r45-cult-r41-unit-xv-10-sanakht-0-rule | name=Pavoni | hidden=false LEN=55 DESC=Fleet; Psykers/Psychic Brotherhoods also gain Crusader.
+RULE rule | id=r45-cult-r41-unit-xv-10-sanakht-1-rule | name=Raptora | hidden=false LEN=168 DESC=6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.
+RULE rule | id=r45-cult-r41-unit-xv-10-sanakht-2-rule | name=Corvidae | hidden=false LEN=114 DESC=Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand & Shoot.
+RULE rule | id=r45-cult-r41-unit-xv-10-sanakht-3-rule | name=Athanaeans | hidden=false LEN=87 DESC=Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.
+RULE rule | id=r45-cult-r41-unit-xv-10-sanakht-4-rule | name=Pyrae | hidden=false LEN=92 DESC=Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal-source | name=Source Entry | hidden=false LEN=1965 DESC=Khenetai Blade | 5 | 4 | 4 | 4 | 1 | 4 | 3 | 9 | 3+ Khenetai Blademaster | 5 | 4 | 4 | 4 | 1 | 5 | 4 | 10 | 3+ PSYCHIC BROTHERHOOD When the army is selected, assign the Cabal to one Prosperine Cult. The Cabal receives both the Cult Arcana and Cult Mastery benefits of that Cult. Unlike most Thousand Sons Psychic Brotherhoods, the Khenetai do not select a psychic power from the normal ProHammer Psychic Disciplines. They know only Mindsong of Blades. MINDSong OF BLADES Mindsong of Blades is a Blessing invoked at the beginning of an Assault phase. If successfully invoked, until the end of that Assault phase: • models in the Psyker's unit gain +1 Initiative; • models in the unit may re-roll close-combat To Hit rolls of 1. PAIRED PROSPERINE FORCE BLADES The Khenetai Blades count as a pair of Prosperine Force Weapons. The bonus Attack for fighting with two close-combat weapons is already included in the models' profiles. Force Organisation: • Elites • 0–1 Unit Composition: • 5 Khenetai Blades
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal-opt-0-context | name=Option restriction | hidden=false LEN=40 DESC=• One Khenetai Blade may be upgraded to:
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal-opt-1-context | name=Option restriction | hidden=false LEN=60 DESC=• For every five models in the Cabal, one Khenetai may take:
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal-opt-2-context | name=Option restriction | hidden=false LEN=60 DESC=• For every five models in the Cabal, one Khenetai may take:
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal-opt-3-context | name=Option restriction | hidden=false LEN=28 DESC=• The entire Cabal may take:
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal-opt-4-context | name=Option restriction | hidden=false LEN=28 DESC=• The entire Cabal may take:
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-0-rule | name=Pavoni | hidden=false LEN=55 DESC=Fleet; Psykers/Psychic Brotherhoods also gain Crusader.
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-1-rule | name=Raptora | hidden=false LEN=168 DESC=6+ invulnerable save against shooting; Psychic Mastery improves this to 5+ (or improves an existing invulnerable save by 1 to max 4+) and improves cover by 1 to max 3+.
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-2-rule | name=Corvidae | hidden=false LEN=114 DESC=Re-roll To Hit rolls of 1 on First Fire; Psychic Mastery also applies to Overwatch, Return Fire and Stand & Shoot.
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-3-rule | name=Athanaeans | hidden=false LEN=87 DESC=Stubborn and re-roll failed Pinning tests; Psychic Mastery also grants Adamantium Will.
+RULE rule | id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-4-rule | name=Pyrae | hidden=false LEN=92 DESC=Hammer of Wrath; Psychic Mastery gives Soul Blaze to close-combat attacks and Flame weapons.
+GROUP selectionEntryGroup | id=r41-unit-xv-10-sanakht-options | name=Options | hidden=false
+GROUP selectionEntryGroup | id=r45-cult-r41-unit-xv-10-sanakht | name=Prosperine Cult — fixed | hidden=false
+GROUP selectionEntryGroup | id=live-r2-r41-unit-xv-10-sanakht-retinue | name=Retinue (does not occupy a separate FOC slot) | hidden=false
+GROUP selectionEntryGroup | id=r18-r41-unit-xv-10-sanakht-armoury | name=Thousand Sons Armoury | hidden=false
+
+=== XV RITES ===
+
+RITE selectionEntry | id=r25-rite-xv-0-the-axis-of-dissolution | name=Thousand Sons Rite of War — The Axis Of Dissolution | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+  CON constraint | id=r25-rite-xv-0-the-axis-of-dissolution-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xv-0-the-axis-of-dissolution-rule | name=The Axis Of Dissolution | hidden=false DESC=The Axis of Dissolution is a carefully prepared tactical configuration in which the enemy is drawn against positions selected in advance by the Legion's seers, held in place by disciplined resistance and destroyed as the pattern of battle unfolds.
+EFFECTS
+THE ALEMBIC OF ADAMANT
+Thousand Sons units automatically pass Morale and Pinning tests while they have at least one model within 6" of an Objective.
+If the mission does not use Objective markers, after deployment zones have been determined the Thousand Sons player may nominate one terrain feature outside the enemy deployment zone. The centre of that terrain feature counts as an Objective for the purposes of this rule only.
+THE CAUSTIC OF GRACE
+Thousand Sons Infantry units may enter Overwatch even if they moved during their preceding Movement phase, provided they did not Advance.
+All other ProHammer requirements for entering Overwatch apply normally.
+THE TRANSITION OF VITRIOL
+Thousand Sons models may re-roll failed To Hit and To Wound rolls when attacking an enemy unit which is Falling Back.
+Against Vehicles affected by a mission-specific retreat or withdrawal rule, re-roll failed Armour Penetration rolls instead of failed To Wound
+
+RITE selectionEntry | id=r25-rite-xv-1-the-guard-of-the-crimson-king | name=Thousand Sons Rite of War — The Guard Of The Crimson King | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+  CON constraint | id=r25-rite-xv-1-the-guard-of-the-crimson-king-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xv-1-the-guard-of-the-crimson-king-rule | name=The Guard Of The Crimson King | hidden=false DESC=When the most powerful formations of the XV Legion were committed to battle, the Sekhmet and the Legion's greatest sorcerers could be concentrated into a single overwhelming psychic spearhead.
+EFFECTS
+ASTRAL WARFARE
+The first two psychic powers successfully invoked by Thousand Sons Psykers during each player turn are ignored when determining the penalties caused by Disturbance in the Warp.
+All other ProHammer psychic rules apply normally.
+WREATHED IN LIGHTNING, THEY REND THE VEIL
+All Thousand Sons units composed entirely of models wearing Terminator Armour gain Teleportation Transponders at no additional points cost.
+Thousand Sons Independent Characters may purchase Teleportation Transponders for +10 points regardless of the armour they wear.
+Whenever a unit or Character using these Transponders arrives by Deep Strike, it gains the Fear special rule and may re-roll Invulnerable Save rolls of 1 until the beginning of the next Thousand Sons player turn.
+INITIATES OF THE SCARAB
+Sekhmet Terminator Cabals may be selected as Troops choices and must fulfil the Detachment's compulsory Troops selections.
+THE BIDDING OF THE CRIMSON KING
+Magnus the Red may fulfil a compulsory HQ selection whe
+
+RITE selectionEntry | id=r25-rite-xv-2-the-fellowships-of-prospero | name=Thousand Sons Rite of War — The Fellowships Of Prospero | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+  CON constraint | id=r25-rite-xv-2-the-fellowships-of-prospero-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xv-2-the-fellowships-of-prospero-rule | name=The Fellowships Of Prospero | hidden=false DESC=The Thousand Sons were organised into great Fellowships whose warriors trained and fought beneath circles of powerful psykers. In some formations entire battle companies acted as extensions of their sorcerous commanders, combining Legion discipline with the collective psychic gifts of Prospero.
+EFFECTS
+CIRCLES OF INITIATES
+A Legion Tactical Squad containing 20 models may purchase Brotherhood of Psykers (Mastery Level 1\) for +25 points per squad.
+A Tactical Squad upgraded in this manner selects one psychic power from the normal Psychic Disciplines available to Thousand Sons Psykers and gains the Cult Mastery benefit of its chosen Prosperine Cult.
+The unit follows all normal ProHammer rules for Brotherhood of Psykers.
+FELLOWSHIP VETERANS
+Legion Veteran Squads and Legion Terminator Squads purchase Brotherhood of Psykers for +15 points per squad instead of the normal +25 points.
+MAGISTER TEMPLI
+At the beginning of each Thousand Sons player turn, the Warlord may nominate one friendly Psychic Brotherhood within 12".
+Until the beginning of the next Thousand Sons player turn, that Brotherhood may use the Warlord's Leadership when taking Psychic Tests.
+This specifically overrides the norma
+
+RITE selectionEntry | id=r25-rite-xvi-0-the-long-march | name=Sons Of Horus Rite of War — The Long March | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xvi
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=allegiance-traitor
+  CON constraint | id=r25-rite-xvi-0-the-long-march-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xvi-0-the-long-march-rule | name=The Long March | hidden=false DESC=After Isstvan V, the Sons of Horus formed the spearhead of the Warmaster's advance upon Terra, an all-conquering host that drove relentlessly through the Imperium and swept aside world after world in its path.
+EFFECTS
+RELENTLESS MARCH
+At the beginning of each Sons of Horus player turn, determine the position of the majority of the surviving models in each Sons of Horus Infantry unit. The unit gains the appropriate special rule until the beginning of the next Sons of Horus player turn:
+• Within the Sons of Horus deployment zone — Relentless.
+• Outside either player's deployment zone — Fleet.
+• Within the enemy deployment zone — Crusader.
+If a unit is equally divided between two areas, the controlling player chooses which applicable rule it gains.
+THE WARMASTER'S PORTION
+During the first Sons of Horus player turn, all units in the Detachment may re-roll To Hit rolls of 1.
+In addition, Legion Terminator Squads may be selected as non-compulsory Troops choices.
+They may not fulfil compulsory Troops selections.
+LIMITATIONS
+This Rite of War may only be selected by a Traitor Sons of Horus Detachment.
+The Detachment may not include models with the Slow and Purposeful special rule unless the
+
+RITE selectionEntry | id=r25-rite-xvi-1-the-black-reaving | name=Sons Of Horus Rite of War — The Black Reaving | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xvi
+  CON constraint | id=r25-rite-xvi-1-the-black-reaving-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xvi-1-the-black-reaving-rule | name=The Black Reaving | hidden=false DESC=The Black Reaving embodies the Cthonian heritage of the XVI Legion. Rather than engaging the enemy in a single ordered battle line, Reaver companies and supporting formations encircle their prey, isolate individual formations and fall upon them from several directions like the gangs of ancient Cthonia.
+EFFECTS
+REAVER ONSLAUGHT
+Reaver Attack Squads may be selected as Troops choices and may fulfil compulsory Troops selections.
+At least one of the Detachment's compulsory Troops choices must be a Reaver Attack Squad.
+CTHONIAN ENCIRCLEMENT
+After both armies have been selected, nominate up to two Sons of Horus Infantry units. These units gain the Outflank special rule.
+Any Dedicated Transport purchased for one of these units also gains Outflank and enters play together with its passengers.
+An Independent Character which begins the battle attached to one of these nominated units may Outflank with it.
+When one of the two nominated units enters play, the Sons of Horus player may choose the side table edge from which that unit enters instead of rolling to determine the edge. The other nominated unit follows the normal ProHammer Outflank rules.
+LODGE CEREMONY
+Once per battle, at the beginning
+
+RITE selectionEntry | id=r25-rite-xvii-0-the-dark-brethren | name=Word Bearers Rite of War — The Dark Brethren | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xvii
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=allegiance-traitor
+  CON constraint | id=r25-rite-xvii-0-the-dark-brethren-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xvii-0-the-dark-brethren-rule | name=The Dark Brethren | hidden=false DESC=Before the corruption of the XVII Legion became manifest, the Word Bearers were renowned for their cohesion and self-sacrifice. After their fall, these same qualities were turned towards darker purposes, entire warbands offering blood and souls to the powers beyond reality in exchange for their favour.
+EFFECTS
+ARCH-TRAITORS
+All Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction.
+SIGNS AND PORTENTS
+After deployment but before the first turn begins, select one Word Bearers Troops unit and roll a D6.
+On a 1–3, all enemy units gain Preferred Enemy against the selected unit for the duration of the battle.
+On a 4–6, the selected Word Bearers unit gains Preferred Enemy against all enemy units for the duration of the battle.
+FROM BEYOND
+A Word Bearers Detachment using this Rite may include an Allied Detachment selected from Codex: Chaos Daemons. This Allied Detachment is treated as Sworn Brothers with the Word Bearers.
+This does not prevent the Word Bearers from using their normal Daemonic Covenant rules.
+HELL FOLLOWS WITH THEM
+Whenever an enemy Psyker suffers a Wound from Perils of the Warp, that Wound becomes a Mass
+
+RITE selectionEntry | id=r25-rite-xvii-1-last-of-the-serrated-sun | name=Word Bearers Rite of War — Last Of The Serrated Sun | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xvii
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=allegiance-traitor
+  CON constraint | id=r25-rite-xvii-1-last-of-the-serrated-sun-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xvii-1-last-of-the-serrated-sun-rule | name=Last Of The Serrated Sun | hidden=false DESC=The Serrated Sun were the first of Lorgar's sons to willingly walk the Path of the Primordial Truth. Their survivors retained the Chapter's mastery of orbital assault warfare, descending upon their enemies alongside the monstrous Gal Vorbak in sudden and overwhelming attacks.
+EFFECTS
+COMPANY OF MONSTERS
+Gal Vorbak Dark Brethren may be selected as Troops choices and may fulfil compulsory Troops selections.
+Every Gal Vorbak unit in the Detachment must purchase either a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport.
+DROP ELITE
+Any Word Bearers Infantry unit which may normally purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost.
+BURNING SUN
+Whenever a Legion Drop Pod or Dreadclaw Drop Pod belonging to this Detachment arrives using Deep Strike, every enemy unit with at least one model within 12" of the vehicle's final position must immediately take a Pinning test.
+A unit need only take one Pinning test for each arriving Drop Pod, regardless of how many of its models are within 12".
+LIMITATIONS
+This Rite may only be selected by a Traitor Word Bearers Detachment.
+All Infantry units in the Detachment must begin the bat
+
+RITE selectionEntry | id=r25-rite-xviii-0-the-covenant-of-fire | name=Salamanders Rite of War — The Covenant Of Fire | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xviii
+  CON constraint | id=r25-rite-xviii-0-the-covenant-of-fire-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xviii-0-the-covenant-of-fire-rule | name=The Covenant Of Fire | hidden=false DESC=The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry.
+EFFECTS
+DISCIPLES OF THE FLAME
+Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non-compulsory Troops choices.
+They may not fulfil compulsory Troops selections.
+WALK THROUGH FIRE
+Salamanders Infantry units gain the Move Through Cover special rule.
+VENERATION OF WRATH
+When a Salamanders model makes an Armour Penetration roll with a Melta weapon, one individual Armour Penetration die which rolls a natural 1 may be re-rolled. The second result must be accepted.
+This also applies to Melta Bombs.
+OBSIDIAN FORGED
+Each time a Salamanders Vehicle or Dreadnought suffers a Glancing or Penetrating Hit from an attack made with a Flame,
+Melta, Plasma or Volkite weapon, roll a D6. On a 5+, the hit is ignored. Make this roll before rolling on the Vehicle Damage table.
+This protection also applies against Glancing or Penetrating Hits caused by Melta Bombs.
+LIMITATIONS
+Units in the Detachment may not deploy using Deep Strike. Units whic
+
+RITE selectionEntry | id=r25-rite-xviii-1-the-awakening-fire | name=Salamanders Rite of War — The Awakening Fire | type=upgrade | hidden=false
+  MOD modifier | type=set | field=hidden | value=true
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xviii
+  CON constraint | id=r25-rite-xviii-1-the-awakening-fire-max | type=max | field=selections | value=1 | scope=parent
+  RULE rule | id=r25-rite-xviii-1-the-awakening-fire-rule | name=The Awakening Fire | hidden=false DESC=After Vulkan was lost upon Isstvan V, some among the XVIII Legion turned ever deeper towards the mysteries of the Promethean Cult. Their grief became a terrible certainty, and the sons of Nocturne began to appear to their enemies as creatures born from the flames themselves.
+EFFECTS
+DEVILS FROM THE DARK
+Salamanders Infantry units gain the Fear special rule.
+UNTO THE FIRES
+Never Give Up functions normally.
+During the additional complete game turn generated by Never Give Up, all Salamanders Infantry units gain the Fearless special rule.
+FURY OF THE SALAMANDER
+Salamanders Librarians in the Detachment may select Fury of the Salamander as a Pyromancy psychic power.
+Psychic Power | Range | Strength | AP | Type
+Fury of the Salamander | 18" | 5 | 1 | Witchfire — Beam, Assault 1, Elemental Horror
+ELEMENTAL HORROR
+If an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused.
+The unit suffers a Leadership penalty to this test equal to the number of unsaved Wounds caused by Fury of the Salamander.
+LIMITATIONS
+The Detachment must include a Legion Chaplain Consul.
+The Detachment may include n
+
+=== GST FORCE STANDARD CATEGORY LINKS ===
+categoryLink | id=fl-hq | name=HQ | hidden=false | targetId=cat-hq
+  constraint | id=fl-hq-min | type=min | field=selections | value=1 | scope=parent
+  constraint | id=fl-hq-max | type=max | field=selections | value=2 | scope=parent
+  MOD modifier | id=r45-um-hq-max | type=set | field=fl-hq-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xiii
+  MOD modifier | id=r45-um-logos-hq-min | type=set | field=fl-hq-min | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xiii-0-the-logos-lectora
+  MOD modifier | id=r62-sw-hq-min-reset | type=set | field=fl-hq-min | value=0
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  MOD modifier | id=r62-sw-hq-max-reset | type=set | field=fl-hq-max | value=0
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  MOD modifier | id=r62-sw-hq-min-scale | type=increment | field=fl-hq-min | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  MOD modifier | id=r62-sw-hq-max-scale | type=increment | field=fl-hq-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  MOD modifier | id=r62-sw-hq-unlimited-max | type=set | field=fl-hq-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=lessThan | field=limit::pts | value=0 | scope=roster | childId=model
+  MOD modifier | id=r71-nl-mawdrym-hq-min | type=set | field=fl-hq-min | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r41-unit-viii-8-flaymaster-mawdrym-llansahai
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=da22-rite-primarchs-chosen
+  MOD modifier | id=r18-ts-fl-hq-max | type=set | field=fl-hq-max | value=3
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+categoryLink | id=fl-troops | name=Troops | hidden=false | targetId=cat-troops
+  constraint | id=fl-troops-min | type=min | field=selections | value=2 | scope=parent
+  constraint | id=fl-troops-max | type=max | field=selections | value=6 | scope=parent
+  MOD modifier | id=r45-um-logos-troops-min | type=set | field=fl-troops-min | value=3
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xiii-0-the-logos-lectora
+  MOD modifier | id=r46-al-coils-troops-min | type=set | field=fl-troops-min | value=3
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xx-0-the-coils-of-the-hydra
+categoryLink | id=fl-elites | name=Elites | hidden=false | targetId=cat-elites
+  constraint | id=fl-elites-max | type=max | field=selections | value=3 | scope=parent
+  MOD modifier | id=r18-ts-fl-elites-max | type=set | field=fl-elites-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+categoryLink | id=fl-fast | name=Fast Attack | hidden=false | targetId=cat-fast
+  constraint | id=fl-fast-max | type=max | field=selections | value=3 | scope=parent
+  MOD modifier | id=r43-iw-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-iv
+  MOD modifier | id=r64-if-stone-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-vii-0-the-stone-gauntlet
+  MOD modifier | id=r64-if-templar-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-vii-2-templar-assault
+  MOD modifier | id=r73-nl-fl-fast | type=set | field=fl-fast-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-viii
+  MOD modifier | id=r80-ih-head-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-x-0-the-head-of-the-gorgon
+  MOD modifier | id=r81-ih-head-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-x-0-the-head-of-the-gorgon
+  MOD modifier | id=r18-ts-fl-fast-max | type=set | field=fl-fast-max | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+  MOD modifier | id=r18-ts-fellowships-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+categoryLink | id=fl-heavy | name=Heavy Support | hidden=false | targetId=cat-heavy
+  constraint | id=fl-heavy-max | type=max | field=selections | value=3 | scope=parent
+  MOD modifier | id=r43-ec-maru-heavy-max | type=set | field=fl-heavy-max | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-iii-0-the-maru-skara
+  MOD modifier | id=r43-iw-heavy-max | type=set | field=fl-heavy-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-iv
+  MOD modifier | id=r43-sw-pale-heavy-max | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-vi-0-the-pale-hunters
+  MOD modifier | id=r46-wb-dark-brethren-heavy-max | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xvii-0-the-dark-brethren
+  MOD modifier | id=r46-rg-decap-heavy-max | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xix-0-decapitation-strike
+  MOD modifier | id=r52-ec-maru-heavy-max | type=set | field=fl-heavy-max | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-iii-0-the-maru-skara
+  MOD modifier | id=r73-nl-fl-heavy | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-viii
+  MOD modifier | id=r74-ba-rev-heavy-max | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-ix-0-the-day-of-revelation
+  MOD modifier | id=r75-ba-rev-heavy-max | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-ix-0-the-day-of-revelation
+  MOD modifier | id=r86-we-berserker-heavy-max | type=set | field=fl-heavy-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xii-0-berserker-assault
+categoryLink | id=fl-low | name=Lords of War | hidden=false | targetId=cat-low
+  constraint | id=fl-low-max | type=max | field=selections | value=1 | scope=parent
+categoryLink | id=r18-ts-brotherhood-limit | name=Fellowships — Psychic Brotherhoods | hidden=true | targetId=r18-ts-cat-brotherhood
+  constraint | id=r18-ts-brotherhood-min | type=min | field=selections | value=0 | scope=parent
+  MOD modifier | id=r18-ts-brotherhood-min-fellowships | type=set | field=r18-ts-brotherhood-min | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+categoryLink | id=r18-ts-sekhmet-limit | name=Sekhmet 0-1 | hidden=true | targetId=r18-ts-cat-sekhmet-limit
+  constraint | id=r18-ts-sekhmet-limit-max | type=max | field=selections | value=1 | scope=parent
+categoryLink | id=r18-final-cat-sekhmet-01-force | name=Sekhmet Cabal 0-1 | hidden=true | targetId=r18-final-cat-sekhmet-01
+  constraint | id=r18-final-cat-sekhmet-01-max | type=max | field=selections | value=1 | scope=parent
+categoryLink | id=r18-final-cat-khenetai-01-force | name=Khenetai Cabal 0-1 | hidden=true | targetId=r18-final-cat-khenetai-01
+  constraint | id=r18-final-cat-khenetai-01-max | type=max | field=selections | value=1 | scope=parent
+categoryLink | id=r18-final-cat-ammitara-01-force | name=Ammitara Cabal 0-1 | hidden=true | targetId=r18-final-cat-ammitara-01
+  constraint | id=r18-final-cat-ammitara-01-max | type=max | field=selections | value=1 | scope=parent
+categoryLink | id=r18-final-magnus-form-force | name=Magnus form 0-1 | hidden=true | targetId=r18-final-cat-magnus-form
+  constraint | id=r18-final-magnus-form-max | type=max | field=selections | value=1 | scope=parent
