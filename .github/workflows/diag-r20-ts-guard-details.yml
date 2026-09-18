@@ -1,0 +1,19 @@
+name: Inspect R20 TS Guard Details
+on:
+  push:
+    paths: ['.github/build/diag_r20_ts_guard_details.py','.github/workflows/diag-r20-ts-guard-details.yml']
+permissions: {contents: write}
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r20_ts_guard_details.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r20-ts-guard-details.txt
+          git diff --cached --quiet || git commit -m "Inspect TS Guard details"
+          git push
