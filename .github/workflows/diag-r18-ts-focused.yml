@@ -1,0 +1,22 @@
+name: Focused R18 TS diagnostic
+on:
+  push:
+    paths:
+      - '.github/build/diag_r18_ts_focused.py'
+      - '.github/workflows/diag-r18-ts-focused.yml'
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r18_ts_focused.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r18-ts-focused.txt
+          git diff --cached --quiet || git commit -m "Inspect focused R18 TS structures"
+          git push
