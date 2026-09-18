@@ -1,0 +1,26 @@
+name: Dry-run R20 Iron Hands Mobile Bionics
+on:
+  push:
+    paths:
+      - '.github/build/live_r20_iron_hands_mobile_bionics.py'
+      - '.github/workflows/dry-run-r20-iron-hands-mobile-bionics.yml'
+permissions: {contents: write}
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Dry run
+        env: {R20_APPLY: '0'}
+        run: python .github/build/live_r20_iron_hands_mobile_bionics.py
+      - name: Verify live files unchanged
+        run: git diff --exit-code -- 'Legiones Astartes.cat' index.xml
+      - name: Commit inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-live-r20-iron-hands-mobile-bionics.txt
+          git diff --cached --quiet || git commit -m "Inspect R20 Iron Hands mobile Bionics"
+          git push
