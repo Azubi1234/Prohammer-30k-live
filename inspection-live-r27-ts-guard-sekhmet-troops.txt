@@ -1,0 +1,12 @@
+LIVE R27 — GUARD OF THE CRIMSON KING SEKHMET TROOPS FIX
+MODE=DRY RUN
+CAT 26 -> 27
+
+• Ordinary Sekhmet remains the normal Elites 0-1 entry outside the Rite.
+• Under Guard of the Crimson King, the ordinary Elites entry is hidden and a dedicated Sekhmet Troops entry is exposed.
+• The Guard entry has Troops as its only primary FOC category, so it occupies and fulfils Troops slots in New Recruit.
+• The Guard entry carries no Sekhmet 0-1 tags or direct roster 0-1 constraint.
+• The Guard entry retains the full Sekhmet unit/options/rules and Psychic Brotherhood tag.
+• Raw catalogue editing only; the full catalogue is not re-serialized.
+
+VALIDATION: PASS
