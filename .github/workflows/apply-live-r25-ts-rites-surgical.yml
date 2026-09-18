@@ -1,0 +1,36 @@
+name: Apply Live R25 Thousand Sons Rites Surgical Fix
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r25-ts-rites-surgical.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply surgical R25 fix
+        env: {R25_APPLY: '1'}
+        run: python .github/build/live_r25_ts_rites_surgical.py
+      - name: Verify published revision and XML
+        run: |
+          python - <<'PY'
+          import re, xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          gst=ET.parse('Prohammer 30k.gst').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='25', cat.get('revision')
+          assert gst.get('revision')=='1', gst.get('revision')
+          m=re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"',idx)
+          assert m and m.group(1)=='25', m.group(1) if m else None
+          print('Verified CAT=25 GST=1 index=25')
+          PY
+      - name: Commit Live R25
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r25-ts-rites-surgical.txt
+          git diff --cached --quiet || git commit -m "Live R25: surgically fix Thousand Sons rites"
+          git push
