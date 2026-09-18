@@ -1,5 +1,5 @@
 LIVE R27 — GUARD OF THE CRIMSON KING SEKHMET TROOPS FIX
-MODE=DRY RUN
+MODE=APPLY
 CAT 26 -> 27
 
 • Ordinary Sekhmet remains the normal Elites 0-1 entry outside the Rite.

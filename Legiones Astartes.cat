@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -165544,12 +165544,7 @@ Range: 12" Choose one enemy unit within range and take a Psychic Test. If succes
         <cost name="Points" typeId="pts" value="0.0" />
       </costs>
       <categoryLinks>
-        <categoryLink id="r41-unit-xv-0-sekhmet-terminator-cabal-cat" name="Elites" hidden="false" targetId="cat-elites" primary="true"><modifiers><modifier id="r19-guard-sekhmet-hide-elite" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier>
-        <modifier id="r26-guard-sekhmet-direct-unlimited" type="set" value="99" field="r18-ts-r41-unit-xv-0-sekhmet-terminator-cabal-01">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" />
-          </conditions>
-        </modifier></modifiers></categoryLink>
+        <categoryLink id="r41-unit-xv-0-sekhmet-terminator-cabal-cat" name="Elites" hidden="false" targetId="cat-elites" primary="true"><modifiers><modifier id="r19-guard-sekhmet-hide-elite" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink>
       <categoryLink id="r18-ts-sekhmet-root-limit" name="Thousand Sons Sekhmet 0-1" hidden="false" targetId="r18-ts-cat-sekhmet-limit" primary="false" /><categoryLink id="r18-final-bro-0" name="Thousand Sons Psychic Brotherhood" targetId="r18-ts-cat-brotherhood" hidden="false" primary="false" /><categoryLink id="r18-final-cat-sekhmet-01-tag-0" name="Sekhmet Cabal 0-1" targetId="r18-final-cat-sekhmet-01" hidden="false" primary="false" /><categoryLink id="r19-guard-sekhmet-troops" name="Troops — Guard of the Crimson King" targetId="cat-troops" primary="true" hidden="true"><modifiers><modifier id="r19-guard-sekhmet-show-troops" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink></categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -165557,7 +165552,12 @@ Range: 12" Choose one enemy unit within range and take a Psychic Test. If succes
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
-      </modifiers>
+      
+        <modifier id="r27-guard-hide-normal-sekhmet" type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier></modifiers>
       <profiles>
         <profile name="Sekhmet Terminator" typeId="prof-model" typeName="Model" hidden="false" id="r41-unit-xv-0-sekhmet-terminator-cabal-profile-0">
           <characteristics>
@@ -166642,6 +166642,1109 @@ The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank w
                       <modifiers><modifier id="r19-ts-sekhmet-power-telepathy-shrouding-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
                   </selectionEntries><modifiers><modifier id="r19-ts-sekhmet-dyn-pmin-0" type="set" field="r19-ts-sekhmet-power-min" value="2"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r19-ts-sekhmet-dyn-pmax-0" type="set" field="r19-ts-sekhmet-power-max" value="2"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup></selectionEntryGroups>
     <constraints><constraint id="r18-ts-r41-unit-xv-0-sekhmet-terminator-cabal-01" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry>
+    <selectionEntry type="unit" import="true" name="SEKHMET TERMINATOR CABAL" hidden="false" id="r27-guard-sekhmet-terminator-cabal">
+      <costs>
+        <cost name="Points" typeId="pts" value="0.0" />
+      </costs>
+      <categoryLinks>
+        <categoryLink id="r27-guard-sekhmet-troops-primary" name="Troops — Guard of the Crimson King" hidden="false" targetId="cat-troops" primary="true" />
+        <categoryLink id="r27-guard-sekhmet-brotherhood" name="Thousand Sons Psychic Brotherhood" hidden="false" targetId="r18-ts-cat-brotherhood" primary="false" />
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier id="r27-guard-sekhmet-hide-unless-rite" type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier></modifiers>
+      <profiles>
+        <profile name="Sekhmet Terminator" typeId="prof-model" typeName="Model" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-profile-0">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">2</characteristic>
+            <characteristic name="I" typeId="model-i">3</characteristic>
+            <characteristic name="A" typeId="model-a">2</characteristic>
+            <characteristic name="Ld" typeId="model-ld">9</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sekhmet Inceptor" typeId="prof-model" typeName="Model" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-profile-1">
+          <characteristics>
+            <characteristic name="WS" typeId="model-ws">5</characteristic>
+            <characteristic name="BS" typeId="model-bs">4</characteristic>
+            <characteristic name="S" typeId="model-s">4</characteristic>
+            <characteristic name="T" typeId="model-t">4</characteristic>
+            <characteristic name="W" typeId="model-w">2</characteristic>
+            <characteristic name="I" typeId="model-i">3</characteristic>
+            <characteristic name="A" typeId="model-a">3</characteristic>
+            <characteristic name="Ld" typeId="model-ld">10</characteristic>
+            <characteristic name="Sv" typeId="model-sv">2+/4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Source Entry" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-source" hidden="true">
+          <description>Sekhmet Terminator | 5 | 4 | 4 | 4 | 2 | 3 | 2 | 9 | 2+/4+
+Sekhmet Inceptor | 5 | 4 | 4 | 4 | 2 | 3 | 3 | 10 | 2+/4+
+SCARAB OCCULT The Sekhmet Terminator Cabal is a Psychic Brotherhood. When the army is selected, assign the Cabal to one Prosperine Cult normally. The Cabal receives both the Cult Arcana and Cult Mastery benefits of its selected Prosperine Cult. The Cabal selects one psychic power from any of the normal ProHammer Psychic Disciplines available to Thousand Sons: • Biomancy • Divination • Pyromancy • Telekinesis • Telepathy Psychic Tests are taken using Leadership 9. While the Sekhmet Inceptor remains alive, the Cabal counts as Brotherhood of Psykers (Mastery Level 2), knows one additional psychic power from the disciplines above and takes Psychic Tests using Leadership 10. If the Inceptor is slain, the Cabal immediately returns to Mastery Level 1 and loses the second psychic power. PROSPERINE FORCE WEAPONS The Cabal uses the normal Prosperine Force Weapon rules from the Thousand Sons Armoury. A Psychic Brotherhood may attempt only one Force Weapon activation during each Assault phase. Activating the Cabal's Force Weapons counts as using one psychic power.
+Force Organisation:
+• Elites
+• 0–1
+Unit Composition:
+• 5 Sekhmet Terminators
+Unit Type:
+• Infantry
+• The Sekhmet Inceptor is a Character
+Wargear:
+• Cataphractii Terminator Armour
+• Prosperine Force Weapon
+• Foeblaster Boltgun
+Special Rules:
+• Legiones Astartes (Thousand Sons)
+• Fearless
+• Brotherhood of Psykers (Mastery Level 1\)
+• Scarab Occult
+OPTIONS
+• The Cabal may include up to five additional Sekhmet Terminators for +60 points per model.
+• Any model may replace its Prosperine Force Weapon with:
+• Power fist ........................................ Free
+• Chainfist ................................... +10 points
+• Any model may replace its Foeblaster Boltgun with a Combi-weapon at the normal Space Marine Armoury cost.
+• For every five models in the Cabal, up to two Sekhmet may replace their Foeblaster Boltgun with:
+• Heavy Flamer ............................... +10 points
+• Plasma Blaster ............................. +15 points
+• Reaper Autocannon ......................... +20 points
+• One Sekhmet Terminator may be upgraded to:
+• Sekhmet Inceptor ........................... +20 points
+• The Sekhmet Inceptor may take:
+• Grenade Harness ............................ +10 points
+• The entire Cabal may take:
+• Teleportation Transponders ................. +15 points
+DEDICATED TRANSPORT
+The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits.</description>
+        </rule>
+      <rule id="r27-guard-r19-r41-unit-xv-0-sekhmet-terminator-cabal-scarab" name="Scarab Occult" hidden="false"><description>This unit is a Psychic Brotherhood. Assign it to one Prosperine Cult; it receives that Cult’s Arcana and Cult Mastery. It selects one power from the normal Thousand Sons disciplines and takes Psychic Tests on Leadership 9. While the Sekhmet Inceptor is alive, the Cabal is Mastery Level 2, knows one additional power and tests on Leadership 10; if he is slain it returns to Mastery Level 1 and loses the second power.</description></rule><rule id="r27-guard-r19-r41-unit-xv-0-sekhmet-terminator-cabal-force" name="Prosperine Force Weapons" hidden="false"><description>The Cabal uses the normal Prosperine Force Weapon rules. It may attempt only one Force Weapon activation in each Assault phase, and that activation counts as using one psychic power.</description></rule></rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squad Models" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional" defaultAmount="5">
+          <constraints>
+            <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+            <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional-min-total" type="min" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="pts" value="60" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-options" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sekhmet Inceptor" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="20" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-context" hidden="false">
+                  <description>• One Sekhmet Terminator may be upgraded to:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grenade Harness" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-6-grenade-harness">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-6-grenade-harness-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-6-context" hidden="false">
+                  <description>• The Sekhmet Inceptor may take:</description>
+                </rule>
+              </rules>
+            <modifiers><modifier id="r27-guard-r18-final-sekhmet-harness-inceptor" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Teleportation Transponders" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-7-teleportation-transponders">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-7-teleportation-transponders-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              <constraint id="r27-guard-r19-sekhmet-trans-min" type="min" value="0" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-7-context" hidden="false">
+                  <description>• The entire Cabal may take:</description>
+                </rule>
+              </rules>
+            <modifiers><modifier id="r27-guard-r18-ts-guard-sekhmet-free-trans" type="set" field="pts" value="0"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r27-guard-r19-sekhmet-trans-guard-min" type="set" field="r19-sekhmet-trans-min" value="1"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+          </selectionEntries>
+        <selectionEntryGroups><selectionEntryGroup id="r27-guard-r18-ts-sekhmet-force-replacements" name="Prosperine Force Weapon replacements — any model" hidden="false"><constraints><constraint id="r27-guard-r18-ts-sekhmet-force-replacements-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r27-guard-r18-ts-sekhmet-force-replacements-max10" type="set" field="r18-ts-sekhmet-force-replacements-max" value="10"><conditions><condition type="atLeast" value="10" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><selectionEntries><selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-0-power-fist">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-0-power-fist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-0-context" hidden="false">
+                  <description>• Any model may replace its Prosperine Force Weapon with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chainfist" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-1-chainfist">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-1-chainfist-max" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-1-context" hidden="false">
+                  <description>• Any model may replace its Prosperine Force Weapon with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            </selectionEntries></selectionEntryGroup><selectionEntryGroup id="r27-guard-r18-final-sekhmet-foeblaster" name="Foeblaster Boltgun replacements — one per model" hidden="false"><constraints><constraint id="r27-guard-r18-final-sekhmet-foeblaster-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r27-guard-r18-final-sekhmet-foeblaster-max10" type="set" field="r18-final-sekhmet-foeblaster-max" value="10"><conditions><condition type="atLeast" value="10" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><selectionEntryGroups><selectionEntryGroup id="r27-guard-r18-ts-sekhmet-heavy-replacements" name="Foeblaster replacements — up to 2 per 5 models" hidden="false"><constraints><constraint id="r27-guard-r18-ts-sekhmet-heavy-replacements-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r27-guard-r18-ts-sekhmet-heavy-replacements-max10" type="set" field="r18-ts-sekhmet-heavy-replacements-max" value="4"><conditions><condition type="atLeast" value="10" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><selectionEntries><selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-2-heavy-flamer">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-2-heavy-flamer-max" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-2-context" hidden="false">
+                  <description>• For every five models in the Cabal, up to two Sekhmet may replace their Foeblaster Boltgun with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma Blaster" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-3-plasma-blaster">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-3-plasma-blaster-max" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-3-context" hidden="false">
+                  <description>• For every five models in the Cabal, up to two Sekhmet may replace their Foeblaster Boltgun with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reaper Autocannon" hidden="false" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-4-reaper-autocannon">
+              <constraints>
+                <constraint id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-4-reaper-autocannon-max" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="20" />
+              </costs>
+              <rules>
+                <rule name="Option restriction" id="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-4-context" hidden="false">
+                  <description>• For every five models in the Cabal, up to two Sekhmet may replace their Foeblaster Boltgun with:</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            </selectionEntries></selectionEntryGroup></selectionEntryGroups><entryLinks><entryLink import="true" name="Combi-Flamer (replaces Combi-bolter)" hidden="false" id="r27-guard-r18-final-sekhmet-combi-terminator-r-cf" type="selectionEntry" targetId="gear-combi-flamer">
+              <constraints>
+                <constraint id="r27-guard-r18-final-sekhmet-combi-terminator-r-cf-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Meltagun (replaces Combi-bolter)" hidden="false" id="r27-guard-r18-final-sekhmet-combi-terminator-r-cm" type="selectionEntry" targetId="gear-combi-melta">
+              <constraints>
+                <constraint id="r27-guard-r18-final-sekhmet-combi-terminator-r-cm-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Plasma Gun (replaces Combi-bolter)" hidden="false" id="r27-guard-r18-final-sekhmet-combi-terminator-r-cp" type="selectionEntry" targetId="gear-combi-plasma">
+              <constraints>
+                <constraint id="r27-guard-r18-final-sekhmet-combi-terminator-r-cp-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Volkite Charger (replaces Combi-bolter)" hidden="false" id="r27-guard-r18-final-sekhmet-combi-terminator-r-cv" type="selectionEntry" targetId="gear-combi-volkite">
+              <constraints>
+                <constraint id="r27-guard-r18-final-sekhmet-combi-terminator-r-cv-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="10" />
+              </costs>
+            </entryLink>
+            </entryLinks></selectionEntryGroup></selectionEntryGroups></selectionEntryGroup>
+        <selectionEntryGroup id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <modifiers>
+            <modifier id="r27-guard-r48-vis-320" type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0" name="Pavoni" type="upgrade" hidden="false" import="true">
+              <constraints>
+                <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0-arcana" name="Cult Arcana — Quickblood" hidden="false"><description>This unit gains Fleet.</description></rule><rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0-mastery" name="Cult Mastery — Quickblood" hidden="false"><description>If this unit has the Psyker or Brotherhood of Psykers special rule, it also gains Crusader.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1" name="Raptora" type="upgrade" hidden="false" import="true">
+              <constraints>
+                <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1-arcana" name="Cult Arcana — Kine Shields" hidden="false"><description>Models in this unit gain a 6+ Invulnerable Save against shooting attacks. This does not improve an existing Invulnerable Save.</description></rule><rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1-mastery" name="Cult Mastery — Kine Shields" hidden="false"><description>If this unit has the Psyker or Brotherhood of Psykers special rule, models instead gain a 5+ Invulnerable Save against shooting; an existing Invulnerable Save improves by 1 against shooting to a maximum of 4+, and Cover Saves against shooting improve by 1 to a maximum of 3+. These benefits do not apply in close combat.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2" name="Corvidae" type="upgrade" hidden="false" import="true">
+              <constraints>
+                <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2-arcana" name="Cult Arcana — Precognitive Strike" hidden="false"><description>When this unit resolves a First Fire shooting attack, it may re-roll To Hit rolls of 1 with all ranged weapons fired as part of that attack.</description></rule><rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2-mastery" name="Cult Mastery — Precognitive Strike" hidden="false"><description>If this unit has the Psyker or Brotherhood of Psykers special rule, it may also re-roll To Hit rolls of 1 when making Overwatch, Return Fire and Stand &amp; Shoot attacks.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3" name="Athanaeans" type="upgrade" hidden="false" import="true">
+              <constraints>
+                <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3-arcana" name="Cult Arcana — Discipline of the Mind" hidden="false"><description>This unit gains Stubborn and may re-roll failed Pinning tests.</description></rule><rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3-mastery" name="Cult Mastery — Discipline of the Mind" hidden="false"><description>If this unit has the Psyker or Brotherhood of Psykers special rule, it additionally gains Adamantium Will.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4" name="Pyrae" type="upgrade" hidden="false" import="true">
+              <constraints>
+                <constraint id="r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4-arcana" name="Cult Arcana — Ashen Blow" hidden="false"><description>This unit gains Hammer of Wrath.</description></rule><rule id="r27-guard-r19-cult-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4-mastery" name="Cult Mastery — Ashen Blow" hidden="false"><description>If this unit has the Psyker or Brotherhood of Psykers special rule, close-combat attacks and Flame weapons used by models in the unit gain Soul Blaze.</description></rule></rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      <selectionEntryGroup id="r27-guard-r18-final-sekhmet-transport" name="Dedicated Transport" hidden="false"><constraints><constraint id="r27-guard-r18-final-sekhmet-transport-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><entryLinks><entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="r27-guard-r18-final-sekhmet-trans-terminator-tr-dc" type="selectionEntry" targetId="transport-dreadclaw">
+              <constraints>
+                <constraint id="r27-guard-r18-final-sekhmet-trans-terminator-tr-dc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+            <modifiers><modifier id="r27-guard-r18-final-sekhmet-trans-terminator-tr-dc-r7-hide-logos" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r27-guard-r18-final-sekhmet-dreadclaw-size" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="6" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink>
+          <entryLink id="r27-guard-r18-final-sekhmet-land-raider" name="Land Raider" hidden="false" type="selectionEntry" targetId="hs-land-raider" import="true"><constraints><constraint id="r27-guard-r18-final-sekhmet-land-raider-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r27-guard-r18-final-sekhmet-land-raider-size" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="6" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-additional" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink><entryLink id="r27-guard-r18-final-sekhmet-spartan" name="Legion Spartan Assault Tank" hidden="false" type="selectionEntry" targetId="hs-spartan" import="true"><constraints><constraint id="r27-guard-r18-final-sekhmet-spartan-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></entryLink></entryLinks><rules><rule id="r27-guard-r18-final-sekhmet-transport-rule" name="Dedicated Transport" hidden="false"><description>The Cabal may select a Land Raider, Dreadclaw Drop Pod or Spartan Assault Tank where Transport Capacity permits. Land Raider patterns must have sufficient capacity for the selected Cabal size.</description></rule></rules></selectionEntryGroup><selectionEntryGroup id="r27-guard-r19-ts-sekhmet-disciplines" name="Scarab Occult — Psychic Discipline(s)" hidden="false"><constraints><constraint id="r27-guard-r19-ts-sekhmet-disc-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r27-guard-r19-ts-sekhmet-disc-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry id="r27-guard-r19-ts-sekhmet-disc-biomancy" name="Biomancy" type="upgrade" hidden="false" import="true"><constraints><constraint id="r27-guard-r19-ts-sekhmet-disc-biomancy-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r27-guard-r19-ts-sekhmet-disc-divination" name="Divination" type="upgrade" hidden="false" import="true"><constraints><constraint id="r27-guard-r19-ts-sekhmet-disc-divination-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r27-guard-r19-ts-sekhmet-disc-pyromancy" name="Pyromancy" type="upgrade" hidden="false" import="true"><constraints><constraint id="r27-guard-r19-ts-sekhmet-disc-pyromancy-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r27-guard-r19-ts-sekhmet-disc-telekinesis" name="Telekinesis" type="upgrade" hidden="false" import="true"><constraints><constraint id="r27-guard-r19-ts-sekhmet-disc-telekinesis-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry><selectionEntry id="r27-guard-r19-ts-sekhmet-disc-telepathy" name="Telepathy" type="upgrade" hidden="false" import="true"><constraints><constraint id="r27-guard-r19-ts-sekhmet-disc-telepathy-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints></selectionEntry></selectionEntries><modifiers><modifier id="r27-guard-r19-ts-sekhmet-dyn-dmax-0" type="set" field="r19-ts-sekhmet-disc-max" value="2"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup><selectionEntryGroup id="r27-guard-r19-ts-sekhmet-powers" name="Scarab Occult — Psychic Powers" hidden="false"><constraints><constraint id="r27-guard-r19-ts-sekhmet-power-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /><constraint id="r27-guard-r19-ts-sekhmet-power-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><selectionEntries><selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-smite" name="Smite" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-smite-r61-librarian-power1-biomancy-smite-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-smite-r61-librarian-power1-biomancy-smite-profile" name="Smite" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">4</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">2</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 4, Witchfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-smite-r61-librarian-power1-biomancy-smite-rule" name="Smite" hidden="false">
+                          <description>Witchfire. Resolve as a normal psychic shooting attack.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-smite-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-iron-arm" name="Iron Arm" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-iron-arm-r61-librarian-power1-biomancy-iron-arm-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-iron-arm-r61-librarian-power1-biomancy-iron-arm-profile" name="Iron Arm" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-iron-arm-r61-librarian-power1-biomancy-iron-arm-rule" name="Iron Arm" hidden="false">
+                          <description>The Psyker gains +2 Strength and +1 Toughness.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-iron-arm-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-enfeeble" name="Enfeeble" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-enfeeble-r61-librarian-power1-biomancy-enfeeble-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-enfeeble-r61-librarian-power1-biomancy-enfeeble-profile" name="Enfeeble" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Malediction</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-enfeeble-r61-librarian-power1-biomancy-enfeeble-rule" name="Enfeeble" hidden="false">
+                          <description>Target enemy unit suffers -1 Strength and -1 Toughness and treats all movement as Difficult Terrain.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-enfeeble-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-life-leech" name="Life Leech" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-life-leech-r61-librarian-power1-biomancy-life-leech-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-life-leech-r61-librarian-power1-biomancy-life-leech-profile" name="Life Leech" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">6</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">2</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 2, Witchfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-life-leech-r61-librarian-power1-biomancy-life-leech-rule" name="Life Leech" hidden="false">
+                          <description>If this power causes at least one unsaved Wound, one model within 6 inches of the Psyker regains one Wound.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-life-leech-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-warp-speed" name="Warp Speed" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-warp-speed-r61-librarian-power1-biomancy-warp-speed-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-warp-speed-r61-librarian-power1-biomancy-warp-speed-profile" name="Warp Speed" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-warp-speed-r61-librarian-power1-biomancy-warp-speed-rule" name="Warp Speed" hidden="false">
+                          <description>The Psyker gains +3 Initiative, +3 Attacks and Fleet.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-warp-speed-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-endurance" name="Endurance" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-endurance-r61-librarian-power1-biomancy-endurance-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-endurance-r61-librarian-power1-biomancy-endurance-profile" name="Endurance" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-endurance-r61-librarian-power1-biomancy-endurance-rule" name="Endurance" hidden="false">
+                          <description>Target friendly unit gains Eternal Warrior, Feel No Pain (5+) and Relentless.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-endurance-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-biomancy-haemorrhage" name="Haemorrhage" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-biomancy-haemorrhage-r61-librarian-power1-biomancy-haemorrhage-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-biomancy-haemorrhage-r61-librarian-power1-biomancy-haemorrhage-profile" name="Haemorrhage" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">Special</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">Special</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Focused Witchfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-biomancy-haemorrhage-r61-librarian-power1-biomancy-haemorrhage-rule" name="Haemorrhage" hidden="false">
+                          <description>Target model must pass two Toughness tests or suffer a Wound with no Armour or Cover save. If slain, select another model within 2 inches; it takes one Toughness test or suffers a Wound. Continue until a test is passed.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-biomancy-haemorrhage-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-biomancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-prescience" name="Prescience" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-prescience-r61-librarian-power1-divination-prescience-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-prescience-r61-librarian-power1-divination-prescience-profile" name="Prescience" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">12"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-prescience-r61-librarian-power1-divination-prescience-rule" name="Prescience" hidden="false">
+                          <description>Target friendly unit may re-roll all failed To Hit rolls.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-prescience-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-foreboding" name="Foreboding" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-foreboding-r61-librarian-power1-divination-foreboding-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-foreboding-r61-librarian-power1-divination-foreboding-profile" name="Foreboding" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-foreboding-r61-librarian-power1-divination-foreboding-rule" name="Foreboding" hidden="false">
+                          <description>The Psyker and any joined unit gain Counter-Attack and may make Reaction Fire using the full number of allowed shots.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-foreboding-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-forewarning" name="Forewarning" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-forewarning-r61-librarian-power1-divination-forewarning-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-forewarning-r61-librarian-power1-divination-forewarning-profile" name="Forewarning" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">12"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-forewarning-r61-librarian-power1-divination-forewarning-rule" name="Forewarning" hidden="false">
+                          <description>Target friendly unit gains a 4+ Invulnerable Save.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-forewarning-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-perfect-timing" name="Perfect Timing" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-perfect-timing-r61-librarian-power1-divination-perfect-timing-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-perfect-timing-r61-librarian-power1-divination-perfect-timing-profile" name="Perfect Timing" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-perfect-timing-r61-librarian-power1-divination-perfect-timing-rule" name="Perfect Timing" hidden="false">
+                          <description>The Psyker and any joined unit ignore Cover when shooting an enemy unit.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-perfect-timing-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-precognition" name="Precognition" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-precognition-r61-librarian-power1-divination-precognition-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-precognition-r61-librarian-power1-divination-precognition-profile" name="Precognition" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-precognition-r61-librarian-power1-divination-precognition-rule" name="Precognition" hidden="false">
+                          <description>The Psyker re-rolls failed To Hit and To Wound rolls and failed saving throws.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-precognition-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-misfortune" name="Misfortune" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-misfortune-r61-librarian-power1-divination-misfortune-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-misfortune-r61-librarian-power1-divination-misfortune-profile" name="Misfortune" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Malediction</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-misfortune-r61-librarian-power1-divination-misfortune-rule" name="Misfortune" hidden="false">
+                          <description>All attacks against the target enemy unit count as Rending.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-misfortune-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-divination-scrier-s-gaze" name="Scrier's Gaze" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-divination-scrier-s-gaze-r61-librarian-power1-divination-scrier-s-gaze-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-divination-scrier-s-gaze-r61-librarian-power1-divination-scrier-s-gaze-profile" name="Scrier's Gaze" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-divination-scrier-s-gaze-r61-librarian-power1-divination-scrier-s-gaze-rule" name="Scrier's Gaze" hidden="false">
+                          <description>While active, one Reserve each turn may automatically pass its Reserve roll; other Reserve and Outflank rolls may be re-rolled, as may Mysterious Objective rolls.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-divination-scrier-s-gaze-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-divination" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-flame-breath" name="Flame Breath" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-flame-breath-r61-librarian-power1-pyromancy-flame-breath-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-flame-breath-r61-librarian-power1-pyromancy-flame-breath-profile" name="Flame Breath" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Template</characteristic>
+                            <characteristic name="S" typeId="ranged-s">5</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">4</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 1, Witchfire, Soul Blaze</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-flame-breath-r61-librarian-power1-pyromancy-flame-breath-rule" name="Flame Breath" hidden="false">
+                          <description>Witchfire. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-flame-breath-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-fiery-form" name="Fiery Form" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-fiery-form-r61-librarian-power1-pyromancy-fiery-form-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-fiery-form-r61-librarian-power1-pyromancy-fiery-form-profile" name="Fiery Form" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-fiery-form-r61-librarian-power1-pyromancy-fiery-form-rule" name="Fiery Form" hidden="false">
+                          <description>The Psyker gains a 4+ Invulnerable Save; all of his melee attacks cause Soul Blaze, and failed To Wound rolls caused by his other Pyromancy powers may be re-rolled.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-fiery-form-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-molton-beam" name="Molton Beam" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-molton-beam-r61-librarian-power1-pyromancy-molton-beam-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-molton-beam-r61-librarian-power1-pyromancy-molton-beam-profile" name="Molton Beam" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">12"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">8</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">1</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 1, Beam, Melta</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-molton-beam-r61-librarian-power1-pyromancy-molton-beam-rule" name="Molton Beam" hidden="false">
+                          <description>Beam. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-molton-beam-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-fire-shield" name="Fire Shield" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-fire-shield-r61-librarian-power1-pyromancy-fire-shield-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-fire-shield-r61-librarian-power1-pyromancy-fire-shield-profile" name="Fire Shield" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-fire-shield-r61-librarian-power1-pyromancy-fire-shield-rule" name="Fire Shield" hidden="false">
+                          <description>Target friendly unit gains a 4+ Cover Save and all enemy units within 6 inches treat all terrain, including open ground, as Dangerous Terrain.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-fire-shield-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-sunburst" name="Sunburst" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-sunburst-r61-librarian-power1-pyromancy-sunburst-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-sunburst-r61-librarian-power1-pyromancy-sunburst-profile" name="Sunburst" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">9"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">4</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">5</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 2D6, Nova, Ignores Cover, Soul Blaze</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-sunburst-r61-librarian-power1-pyromancy-sunburst-rule" name="Sunburst" hidden="false">
+                          <description>Nova. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-sunburst-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-inferno" name="Inferno" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-inferno-r61-librarian-power1-pyromancy-inferno-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-inferno-r61-librarian-power1-pyromancy-inferno-profile" name="Inferno" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">4</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">5</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 1, Witchfire, Large Blast, Ignores Cover, Soul Blaze</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-inferno-r61-librarian-power1-pyromancy-inferno-rule" name="Inferno" hidden="false">
+                          <description>Witchfire. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-inferno-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-pyromancy-spontaneous-combustion" name="Spontaneous Combustion" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-pyromancy-spontaneous-combustion-r61-librarian-power1-pyromancy-spontaneous-combustion-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-pyromancy-spontaneous-combustion-r61-librarian-power1-pyromancy-spontaneous-combustion-profile" name="Spontaneous Combustion" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">6</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">3</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Focused Witchfire, Soul Blaze</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-pyromancy-spontaneous-combustion-r61-librarian-power1-pyromancy-spontaneous-combustion-rule" name="Spontaneous Combustion" hidden="false">
+                          <description>Target model suffers one S6 AP3 hit with Soul Blaze. If slain, place a Blast marker over the removed model; all models hit suffer S5 AP4 hits that ignore Cover and cause Soul Blaze.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-pyromancy-spontaneous-combustion-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-pyromancy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-assail" name="Assail" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-assail-r61-librarian-power1-telekinesis-assail-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-assail-r61-librarian-power1-telekinesis-assail-profile" name="Assail" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">6</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 1, Beam, Strikedown</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-assail-r61-librarian-power1-telekinesis-assail-rule" name="Assail" hidden="false">
+                          <description>Beam. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-assail-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-crush" name="Crush" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-crush-r61-librarian-power1-telekinesis-crush-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-crush-r61-librarian-power1-telekinesis-crush-profile" name="Crush" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">2D6</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">D6</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Focused Witchfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-crush-r61-librarian-power1-telekinesis-crush-rule" name="Crush" hidden="false">
+                          <description>Roll 2D6 for the hit's Strength and a separate D6 for its AP value.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-crush-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-objuration-mechanicum" name="Objuration Mechanicum" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-objuration-mechanicum-r61-librarian-power1-telekinesis-objuration-mechanicum-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-objuration-mechanicum-r61-librarian-power1-telekinesis-objuration-mechanicum-profile" name="Objuration Mechanicum" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Malediction</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-objuration-mechanicum-r61-librarian-power1-telekinesis-objuration-mechanicum-rule" name="Objuration Mechanicum" hidden="false">
+                          <description>All ranged attacks made by the target enemy unit gain Gets Hot. Vehicles suffer an immediate Haywire hit.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-objuration-mechanicum-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-shockwave" name="Shockwave" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-shockwave-r61-librarian-power1-telekinesis-shockwave-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-shockwave-r61-librarian-power1-telekinesis-shockwave-profile" name="Shockwave" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">9"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">4</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 2D6, Nova, Pinning</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-shockwave-r61-librarian-power1-telekinesis-shockwave-rule" name="Shockwave" hidden="false">
+                          <description>Nova. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-shockwave-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-levitation" name="Levitation" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-levitation-r61-librarian-power1-telekinesis-levitation-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-levitation-r61-librarian-power1-telekinesis-levitation-profile" name="Levitation" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-levitation-r61-librarian-power1-telekinesis-levitation-rule" name="Levitation" hidden="false">
+                          <description>The Psyker and any joined unit may immediately move up to 12 inches. They cannot land on models or Impassable Terrain, cannot charge this turn and count as having moved.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-levitation-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-telekine-dome" name="Telekine Dome" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-telekine-dome-r61-librarian-power1-telekinesis-telekine-dome-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-telekine-dome-r61-librarian-power1-telekinesis-telekine-dome-profile" name="Telekine Dome" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self / 12"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-telekine-dome-r61-librarian-power1-telekinesis-telekine-dome-rule" name="Telekine Dome" hidden="false">
+                          <description>The Psyker and all friendly models within 12 inches gain a 5+ Invulnerable Save against shooting attacks.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-telekine-dome-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telekinesis-psychic-maelstrom" name="Psychic Maelstrom" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telekinesis-psychic-maelstrom-r61-librarian-power1-telekinesis-psychic-maelstrom-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telekinesis-psychic-maelstrom-r61-librarian-power1-telekinesis-psychic-maelstrom-profile" name="Psychic Maelstrom" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">12"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">10</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">1</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Assault 1, Witchfire, Barrage, Large Blast</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telekinesis-psychic-maelstrom-r61-librarian-power1-telekinesis-psychic-maelstrom-rule" name="Psychic Maelstrom" hidden="false">
+                          <description>Witchfire. Resolve using the profile shown.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telekinesis-psychic-maelstrom-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telekinesis" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-psychic-shriek" name="Psychic Shriek" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-psychic-shriek-r61-librarian-power1-telepathy-psychic-shriek-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-psychic-shriek-r61-librarian-power1-telepathy-psychic-shriek-profile" name="Psychic Shriek" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">18"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">Special</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">Special</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Witchfire</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-psychic-shriek-r61-librarian-power1-telepathy-psychic-shriek-rule" name="Psychic Shriek" hidden="false">
+                          <description>Roll 3D6 and subtract the target unit's Leadership. The unit suffers a number of Wounds equal to the result, with no Armour or Cover saves.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-psychic-shriek-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-dominate" name="Dominate" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-dominate-r61-librarian-power1-telepathy-dominate-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-dominate-r61-librarian-power1-telepathy-dominate-profile" name="Dominate" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Malediction</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-dominate-r61-librarian-power1-telepathy-dominate-rule" name="Dominate" hidden="false">
+                          <description>The target enemy unit must pass a Leadership test each time it attempts to move, Advance, shoot, charge or use a psychic power.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-dominate-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-mental-fortitude" name="Mental Fortitude" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-mental-fortitude-r61-librarian-power1-telepathy-mental-fortitude-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-mental-fortitude-r61-librarian-power1-telepathy-mental-fortitude-profile" name="Mental Fortitude" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-mental-fortitude-r61-librarian-power1-telepathy-mental-fortitude-rule" name="Mental Fortitude" hidden="false">
+                          <description>If the target friendly unit is Falling Back it immediately Regroups; it also gains Fearless.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-mental-fortitude-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-terrify" name="Terrify" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-terrify-r61-librarian-power1-telepathy-terrify-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-terrify-r61-librarian-power1-telepathy-terrify-profile" name="Terrify" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Malediction</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-terrify-r61-librarian-power1-telepathy-terrify-rule" name="Terrify" hidden="false">
+                          <description>The target enemy unit suffers -1 Leadership, treats all opposing units as causing Fear and must take a Casualty test at the end of the turn.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-terrify-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-hallucination" name="Hallucination" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-hallucination-r61-librarian-power1-telepathy-hallucination-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-hallucination-r61-librarian-power1-telepathy-hallucination-profile" name="Hallucination" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Malediction</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-hallucination-r61-librarian-power1-telepathy-hallucination-rule" name="Hallucination" hidden="false">
+                          <description>Roll D6: 1-2 the unit takes a Pinning test; 3-4 it suffers -1 WS, BS, Initiative and Attacks; 5-6 randomly select a model, which takes one hit for every other model in the unit at Strength equal to the unit's majority Strength.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-hallucination-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-invisibility" name="Invisibility" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-invisibility-r61-librarian-power1-telepathy-invisibility-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-invisibility-r61-librarian-power1-telepathy-invisibility-profile" name="Invisibility" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">24"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-invisibility-r61-librarian-power1-telepathy-invisibility-rule" name="Invisibility" hidden="false">
+                          <description>Opposing units suffer -1 To Hit with ranged and melee attacks against the target friendly unit.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-invisibility-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                    <selectionEntry id="r27-guard-r19-ts-sekhmet-power-telepathy-shrouding" name="Shrouding" type="upgrade" hidden="false" import="true">
+                      <constraints>
+                        <constraint id="r27-guard-r19-ts-sekhmet-telepathy-shrouding-r61-librarian-power1-telepathy-shrouding-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="pts" value="0" />
+                      </costs>
+                      <profiles>
+                        <profile id="r27-guard-r19-ts-sekhmet-telepathy-shrouding-r61-librarian-power1-telepathy-shrouding-profile" name="Shrouding" hidden="false" typeId="prof-ranged" typeName="Ranged Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="ranged-range">Self / 6"</characteristic>
+                            <characteristic name="S" typeId="ranged-s">—</characteristic>
+                            <characteristic name="AP" typeId="ranged-ap">—</characteristic>
+                            <characteristic name="Type" typeId="ranged-type">Blessing</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules>
+                        <rule id="r27-guard-r19-ts-sekhmet-telepathy-shrouding-r61-librarian-power1-telepathy-shrouding-rule" name="Shrouding" hidden="false">
+                          <description>All friendly models within 6 inches of the Psyker gain the Shrouded special rule.</description>
+                        </rule>
+                      </rules>
+                      <modifiers><modifier id="r27-guard-r19-ts-sekhmet-power-telepathy-shrouding-discipline" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r27-guard-r19-ts-sekhmet-disc-telepathy" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
+                  </selectionEntries><modifiers><modifier id="r27-guard-r19-ts-sekhmet-dyn-pmin-0" type="set" field="r19-ts-sekhmet-power-min" value="2"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r27-guard-r19-ts-sekhmet-dyn-pmax-0" type="set" field="r19-ts-sekhmet-power-max" value="2"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r27-guard-r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntryGroup></selectionEntryGroups>
+    <constraints></constraints></selectionEntry>
     <selectionEntry type="unit" import="true" name="KHENETAI OCCULT BLADE CABAL" hidden="false" id="r41-unit-xv-1-khenetai-occult-blade-cabal">
       <costs>
         <cost name="Points" typeId="pts" value="0.0" />
