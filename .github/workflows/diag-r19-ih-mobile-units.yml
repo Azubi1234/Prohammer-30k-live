@@ -1,0 +1,19 @@
+name: Inspect R19 Iron Hands mobile units
+on:
+  push:
+    paths: ['.github/build/diag_r19_ih_mobile_units.py','.github/workflows/diag-r19-ih-mobile-units.yml']
+permissions: {contents: write}
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r19_ih_mobile_units.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r19-ih-mobile-units.txt
+          git diff --cached --quiet || git commit -m "Inspect Iron Hands mobile unit bionics targets"
+          git push
