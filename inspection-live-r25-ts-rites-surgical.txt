@@ -1,0 +1,23 @@
+LIVE R25 — THOUSAND SONS RITES SURGICAL FIX
+MODE=DRY RUN
+Input CAT=24 | Output CAT=25 | GST remains revision 1
+
+Fellowships of Prospero:
+• Removed the obsolete scope=force Rite gates that conflicted with the working roster-scope gates.
+• Removed the impossible 20 Tactical Marines check; a full squad is correctly 19 Tactical Marines + 1 Sergeant.
+• Veteran and Terminator Brotherhood pricing now relies on one clean roster-scope switch (+25 normal / +15 Fellowship).
+• GST checks retained and validated: maximum 1 Fast Attack and minimum 2 Psychic Brotherhoods.
+
+Guard of the Crimson King:
+• Magnus alternate HQ category is now primary when the Rite exposes it.
+• Existing Sekhmet-as-Troops, free Terminator Transponders and Praetor ML3 Rite gates were retained and validated.
+
+Axis of Dissolution:
+• Existing maximum-size Troops enforcement retained and validated (53 active modifiers).
+
+General:
+• Fixed the hidden-but-mandatory Tactical Bolter/Bolt Pistol links that produced the New Recruit errors.
+• Catalogue was edited as raw XML text only; it was NOT re-serialized.
+• Raw catalogue length delta before revision write: -2482 characters.
+
+VALIDATION: PASS
