@@ -1,0 +1,41 @@
+name: Publish Live R24 Byte-Clean Restore
+on:
+  push:
+    paths:
+      - '.github/build/publish_live_r24_byte_clean_restore.py'
+      - '.github/workflows/publish-live-r24-byte-clean-restore.yml'
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Restore exact R20 bytes and bump only revision
+        run: python .github/build/publish_live_r24_byte_clean_restore.py
+      - name: Verify files differ from R20 only by revision
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          base='41c7755e59b6db0b38e2a426e0f7cb8e6189c110'
+          def show(p): return subprocess.check_output(['git','show',f'{base}:{p}'])
+          cat=Path('Legiones Astartes.cat').read_bytes()
+          idx=Path('index.xml').read_bytes()
+          gst=Path('Prohammer 30k.gst').read_bytes()
+          assert cat.replace(b'revision="24"',b'revision="20"',1)==show('Legiones Astartes.cat')
+          assert idx.replace(b'dataRevision="24"',b'dataRevision="20"',1)==show('index.xml')
+          assert gst==show('Prohammer 30k.gst')
+          print('Verified byte-clean R24 restore')
+          PY
+      - name: Commit Live R24
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r24-byte-clean-restore.txt
+          git diff --cached --quiet || git commit -m "Live R24: byte-clean restore of known-good R20"
+          git push
