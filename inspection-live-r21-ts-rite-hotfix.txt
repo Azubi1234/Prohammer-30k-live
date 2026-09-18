@@ -1,5 +1,5 @@
 LIVE R21 — THOUSAND SONS RITE HOTFIX
-MODE=DRY RUN
+MODE=APPLY
 INPUT CAT=20 | OUTPUT CAT=21 | GSTref=1
 
 • Tactical automatic loadout wargear no longer remains selected while hidden (7 child links fixed)
