@@ -63,8 +63,9 @@ cat=cat[:m.start()]+m.group(1)+body+m.group(3)+cat[m.end():]
 
 # Guard explicitly overrides the main Sekhmet roster 0-1 constraint.
 sek_id='r41-unit-xv-0-sekhmet-terminator-cabal'
-unit_start=cat.find('<selectionEntry id="'+sek_id+'"')
-if unit_start<0: raise RuntimeError('Sekhmet root entry not found')
+idpos=cat.find('id="'+sek_id+'"')
+unit_start=cat.rfind('<selectionEntry',0,idpos)
+if idpos<0 or unit_start<0: raise RuntimeError('Sekhmet root entry not found')
 first_children=cat.find('<selectionEntries>',unit_start)
 mods_start=cat.find('<modifiers>',unit_start,first_children)
 mods_end=cat.find('</modifiers>',mods_start,first_children)
