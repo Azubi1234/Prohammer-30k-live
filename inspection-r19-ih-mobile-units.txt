@@ -1,0 +1,414 @@
+CAT=19
+
+UNIT selectionEntry | id=assault-unit | name=Legion Assault Squad | type=unit | hidden=false costs=[('Points', '0'), ('Points', '18'), ('Points', '18')]
+  MODEL selectionEntry | id=assault-marine | name=Legion Assault Marine | type=model | hidden=false costs=[('Points', '18')]
+    constraint | id=assault-marine-min | type=min | field=selections | value=9 | scope=parent
+    constraint | id=assault-marine-max | type=max | field=selections | value=19 | scope=parent
+  MODEL selectionEntry | id=assault-sergeant | name=Legion Assault Sergeant | type=model | hidden=false costs=[('Points', '18'), ('Points', '20'), ('Points', '5')]
+    constraint | id=assault-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-pair-claws-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-pistol-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-melee-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-warblade-assault-sgt-melee-pw-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-shield-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-melta-bombs-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r39-phosphex-assault-sgt-unit-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-armoury-pts-max | type=max | field=pts | value=50 | scope=parent
+    constraint | id=assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r39-phosphex-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-4-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-4-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-4-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-4-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-4-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-combib-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-combif-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-combig-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-combim-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-combip-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-combiv-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-storm-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r39-phosphex-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-5-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-5-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-5-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-5-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-5-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r71-nl-gen-1-chain-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-auspex-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-purity-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=assault-sgt-homer-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r39-phosphex-assault-sgt-armoury-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-6-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-6-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-6-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-6-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-6-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r72-nl-sgt-trophy-2-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=rev24-assault-unit-sgt-refractor-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r39-phosphex-assault-sgt-armoury-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-3-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-3-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-3-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-3-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-3-talisman-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=destroyer-unit | name=Legion Destroyer Squad | type=unit | hidden=false costs=[('Points', '20'), ('Points', '0'), ('Points', '25')]
+  MODEL selectionEntry | id=destroyer-included | name=Legion Destroyers | type=model | hidden=false costs=[('Points', '20')]
+    constraint | id=destroyer-included-min | type=min | field=selections | value=4 | scope=parent
+    constraint | id=destroyer-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=destroyer-sergeant | name=Legion Destroyer Sergeant | type=model | hidden=false costs=[]
+    constraint | id=destroyer-sergeant-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=destroyer-sergeant-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  LINK entryLink | id=r47-destroyer-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model costs=[]
+  LINK entryLink | id=r47-destroyer-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant costs=[]
+  OPT selectionEntry | id=destroyer-jump-packs | name=Jump Packs (+15 pts/model) | type=upgrade | hidden=false costs=[('Points', '75')]
+
+UNIT selectionEntry | id=fa-bike | name=Legion Bike Squadron | type=unit | hidden=false costs=[('Points', '30'), ('Points', '30'), ('Points', '6')]
+  MODEL selectionEntry | id=fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30')]
+    constraint | id=fa-bike-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=fa-bike-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+    constraint | id=fa-bike-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=fa-bike-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30')]
+  OPT selectionEntry | id=fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+
+UNIT selectionEntry | id=fa-sky-hunter | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=false costs=[('Points', '80'), ('Points', '35'), ('Points', '6')]
+  MODEL selectionEntry | id=fa-sky-included | name=Legion Sky Hunters | type=model | hidden=false costs=[('Points', '35')]
+    constraint | id=fa-sky-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=fa-sky-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=fa-sky-sgt | name=Sky Hunter Sergeant | type=model | hidden=false costs=[]
+    constraint | id=fa-sky-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=fa-sky-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=fa-attack-bike | name=Legion Attack Bike Squadron | type=unit | hidden=false costs=[('Points', '40'), ('Points', '5'), ('Points', '10')]
+  MODEL selectionEntry | id=fa-attack-bike-model | name=Legion Attack Bike | type=model | hidden=false costs=[('Points', '40')]
+    constraint | id=fa-attack-bike-model-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=fa-attack-bike-model-max | type=max | field=selections | value=3 | scope=parent
+  OPT selectionEntry | id=fa-attack-bike-model | name=Legion Attack Bike | type=model | hidden=false costs=[('Points', '40')]
+
+UNIT selectionEntry | id=hs-venator | name=Sicaran Venator Tank Destroyer | type=unit | hidden=false costs=[('Points', '190'), ('Points', '20'), ('Points', '40')]
+
+UNIT selectionEntry | id=r32-low-cerberus | name=Legion Cerberus Heavy Tank Destroyer | type=unit | hidden=false costs=[('Points', '395'), ('Points', '5'), ('Points', '20')]
+
+UNIT selectionEntry | id=r32-low-falchion | name=Legion Falchion Super-heavy Tank Destroyer | type=unit | hidden=false costs=[('Points', '525'), ('Points', '5'), ('Points', '10')]
+
+UNIT selectionEntry | id=r35-destroyer-troops-destroyer-unit | name=Legion Destroyer Squad | type=unit | hidden=true costs=[('Points', '20'), ('Points', '0'), ('Points', '25')]
+  MODEL selectionEntry | id=r35-destroyer-troops-destroyer-included | name=Legion Destroyers | type=model | hidden=false costs=[('Points', '20')]
+    constraint | id=r35-destroyer-troops-destroyer-included-min | type=min | field=selections | value=4 | scope=parent
+    constraint | id=r35-destroyer-troops-destroyer-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r35-destroyer-troops-destroyer-sergeant | name=Legion Destroyer Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r35-destroyer-troops-destroyer-sergeant-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r35-destroyer-troops-destroyer-sergeant-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r35-destroyer-troops-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=r35-destroyer-troops-destroyer-jump-packs | name=Jump Packs (+15 pts/model) | type=upgrade | hidden=false costs=[('Points', '75')]
+
+UNIT selectionEntry | id=r35-sky-troops-fa-sky-hunter | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=true costs=[('Points', '80'), ('Points', '35'), ('Points', '6')]
+  MODEL selectionEntry | id=r35-sky-troops-fa-sky-included | name=Legion Sky Hunters | type=model | hidden=false costs=[('Points', '35')]
+    constraint | id=r35-sky-troops-fa-sky-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=r35-sky-troops-fa-sky-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r35-sky-troops-fa-sky-sgt | name=Sky Hunter Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r35-sky-troops-fa-sky-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r35-sky-troops-fa-sky-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r35-sky-troops-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=r40-da-storm-assault | name=Legion Assault Squad (Storm of War compulsory) | type=unit | hidden=true costs=[('Points', '18'), ('Points', '18'), ('Points', '20')]
+  MODEL selectionEntry | id=r40-da-storm-assault-assault-marine | name=Legion Assault Marine | type=model | hidden=false costs=[('Points', '18')]
+    constraint | id=r40-da-storm-assault-assault-marine-min | type=min | field=selections | value=9 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-marine-max | type=max | field=selections | value=19 | scope=parent
+  MODEL selectionEntry | id=r40-da-storm-assault-assault-sergeant | name=Legion Assault Sergeant | type=model | hidden=false costs=[('Points', '18'), ('Points', '20'), ('Points', '5')]
+    constraint | id=r40-da-storm-assault-assault-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-pair-claws-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-pistol-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-melee-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-r40-da-warblade-assault-sgt-melee-pw-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-shield-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-melta-bombs-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-r39-phosphex-assault-sgt-unit-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-armoury-pts-max | type=max | field=pts | value=50 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-r39-phosphex-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-31-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-31-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-31-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-31-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-31-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-combib-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-combif-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-combig-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-combim-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-combip-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-combiv-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-storm-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-r39-phosphex-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-32-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-32-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-32-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-32-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-32-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r71-nl-gen-14-chain-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-auspex-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-purity-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-assault-sgt-homer-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-r39-phosphex-assault-sgt-armoury-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-33-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-33-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-33-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-33-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-33-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r72-nl-sgt-trophy-10-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-rev24-assault-unit-sgt-refractor-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-storm-assault-r39-phosphex-assault-sgt-armoury-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-30-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-30-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-30-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-30-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-30-talisman-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r40-da-storm-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  LINK entryLink | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-jump | name=Jump Pack | type=selectionEntry | hidden=false | targetId=gear-hq-jump costs=[('Points', '20')]
+  LINK entryLink | id=r40-da-storm-centurion-group-r40-da-storm-assault-hq-centurion-wg-4 | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-hq-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=r40-da-storm-centurion-group-r40-da-storm-assault-r37-centurion-jetbike | name=Jetbike (Sky Hunter Phalanx) | type=upgrade | hidden=true costs=[('Points', '40')]
+
+UNIT selectionEntry | id=r40-da-eskaton-destroyer | name=Legion Destroyer Squad | type=unit | hidden=true costs=[('Points', '20.0'), ('Points', '0'), ('Points', '25')]
+  MODEL selectionEntry | id=r40-da-eskaton-destroyer-destroyer-included | name=Legion Destroyers | type=model | hidden=false costs=[('Points', '20.0')]
+    constraint | id=r40-da-eskaton-destroyer-destroyer-included-min | type=min | field=selections | value=4 | scope=parent
+    constraint | id=r40-da-eskaton-destroyer-destroyer-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r40-da-eskaton-destroyer-destroyer-sergeant | name=Legion Destroyer Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r40-da-eskaton-destroyer-destroyer-sergeant-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-eskaton-destroyer-destroyer-sergeant-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r40-da-eskaton-destroyer-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=r40-da-eskaton-destroyer-destroyer-jump-packs | name=Jump Packs (+15 pts/model) | type=upgrade | hidden=false costs=[('Points', '75')]
+
+UNIT selectionEntry | id=r40-da-arrow-bike | name=Legion Bike Squadron | type=unit | hidden=true costs=[('Points', '30.0'), ('Points', '30.0'), ('Points', '6')]
+  MODEL selectionEntry | id=r40-da-arrow-bike-fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30.0')]
+    constraint | id=r40-da-arrow-bike-fa-bike-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=r40-da-arrow-bike-fa-bike-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r40-da-arrow-bike-fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r40-da-arrow-bike-fa-bike-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-arrow-bike-fa-bike-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r40-da-arrow-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=r40-da-arrow-bike-fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30.0')]
+  OPT selectionEntry | id=r40-da-arrow-bike-fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+
+UNIT selectionEntry | id=r40-da-arrow-sky | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=true costs=[('Points', '80.0'), ('Points', '35.0'), ('Points', '6')]
+  MODEL selectionEntry | id=r40-da-arrow-sky-fa-sky-included | name=Legion Sky Hunters | type=model | hidden=false costs=[('Points', '35.0')]
+    constraint | id=r40-da-arrow-sky-fa-sky-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=r40-da-arrow-sky-fa-sky-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r40-da-arrow-sky-fa-sky-sgt | name=Sky Hunter Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r40-da-arrow-sky-fa-sky-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-arrow-sky-fa-sky-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r40-da-arrow-sky-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=r40-da-serpent-assault | name=Legion Assault Squad (Serpent’s Bane compulsory) | type=unit | hidden=true costs=[('Points', '0'), ('Points', '18'), ('Points', '18')]
+  MODEL selectionEntry | id=r40-da-serpent-assault-assault-marine | name=Legion Assault Marine | type=model | hidden=false costs=[('Points', '18')]
+    constraint | id=r40-da-serpent-assault-assault-marine-min | type=min | field=selections | value=9 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-marine-max | type=max | field=selections | value=19 | scope=parent
+  MODEL selectionEntry | id=r40-da-serpent-assault-assault-sergeant | name=Legion Assault Sergeant | type=model | hidden=false costs=[('Points', '18'), ('Points', '20'), ('Points', '5')]
+    constraint | id=r40-da-serpent-assault-assault-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-pair-claws-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-pistol-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-melee-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-r40-da-warblade-assault-sgt-melee-pw-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-shield-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-melta-bombs-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-r39-phosphex-assault-sgt-unit-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-armoury-pts-max | type=max | field=pts | value=50 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-r39-phosphex-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-41-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-41-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-41-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-41-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-41-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-combib-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-combif-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-combig-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-combim-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-combip-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-combiv-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-storm-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-r39-phosphex-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-42-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-42-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-42-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-42-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-42-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r71-nl-gen-18-chain-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-auspex-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-purity-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-assault-sgt-homer-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-r39-phosphex-assault-sgt-armoury-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-43-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-43-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-43-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-43-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-43-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r72-nl-sgt-trophy-13-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-rev24-assault-unit-sgt-refractor-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r40-da-serpent-assault-r39-phosphex-assault-sgt-armoury-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-40-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-40-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-40-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-40-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=r63-sw-arm-40-talisman-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r40-da-serpent-assault-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad | name=RED HAND DESTROYER MORTALIS SQUAD | type=unit | hidden=false costs=[('Points', '50'), ('Points', '22'), ('Points', '5')]
+  MODEL selectionEntry | id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size | name=Red Hand Destroyer | type=model | hidden=false costs=[('Points', '22')]
+    constraint | id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size-r87-min | type=min | field=selections | value=5 | scope=parent
+    constraint | id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size-r87-max | type=max | field=selections | value=10 | scope=parent
+
+UNIT selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad | name=RED HAND DESTROYER MORTALIS SQUAD | type=unit | hidden=false costs=[('Points', '50'), ('Points', '22'), ('Points', '5')]
+  MODEL selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size | name=Red Hand Destroyer | type=model | hidden=false costs=[('Points', '22')]
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size-r87-min | type=min | field=selections | value=5 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad-r86-size-r87-max | type=max | field=selections | value=10 | scope=parent
+
+UNIT selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-unit | name=Legion Assault Squad | type=unit | hidden=false costs=[('Points', '18'), ('Points', '18'), ('Points', '20')]
+  MODEL selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-marine | name=Legion Assault Marine | type=model | hidden=false costs=[('Points', '18')]
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-marine-min | type=min | field=selections | value=9 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-marine-max | type=max | field=selections | value=19 | scope=parent
+  MODEL selectionEntry | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sergeant | name=Legion Assault Sergeant | type=model | hidden=false costs=[('Points', '18'), ('Points', '20'), ('Points', '5')]
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-pair-claws-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-pistol-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-melee-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-shield-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-melta-bombs-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r39-phosphex-assault-sgt-unit-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-armoury-pts-max | type=max | field=pts | value=50 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r39-phosphex-assault-sgt-armoury-weapons-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-4-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-4-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-4-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-4-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-4-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-combib-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-combif-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-combig-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-combim-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-combip-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-combiv-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-storm-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r39-phosphex-assault-sgt-armoury-twohand-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-5-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-5-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-5-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-5-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-5-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-auspex-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-bionics-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-purity-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-homer-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r39-phosphex-assault-sgt-armoury-wargear-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-6-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-6-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-6-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-6-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-6-talisman-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r72-nl-sgt-trophy-2-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-rev24-assault-unit-sgt-refractor-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r39-phosphex-assault-sgt-armoury-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-3-frost-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-3-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-3-pelt-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-3-necklace-max | type=max | field=selections | value=1 | scope=parent
+    constraint | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r63-sw-arm-3-talisman-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-assault-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=r41-unit-xiii-3-nemesis-destroyer-squad | name=NEMESIS DESTROYER SQUAD | type=unit | hidden=false costs=[('Points', '25.0'), ('Points', '25'), ('Points', '10')]
+  MODEL selectionEntry | id=r41-unit-xiii-3-nemesis-destroyer-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '25')]
+    constraint | id=r41-unit-xiii-3-nemesis-destroyer-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r41-unit-xiii-3-nemesis-destroyer-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+  LINK entryLink | id=r8-um-nem-arm-destroyer-sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad | name=SALAMANDERS INFERNUS DESTROYER SQUAD | type=unit | hidden=false costs=[('Points', '25.0'), ('Points', '25'), ('Points', '10')]
+  MODEL selectionEntry | id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '25')]
+    constraint | id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+  OPT selectionEntry | id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs | name=Jump Packs (base unit; +15 pts/model) | type=upgrade | hidden=false costs=[('Points', '75')]
+
+UNIT selectionEntry | id=r41-unit-xix-1-dark-fury-assault-squad | name=DARK FURY ASSAULT SQUAD | type=unit | hidden=false costs=[('Points', '0.0'), ('Points', '34'), ('Points', '10')]
+  MODEL selectionEntry | id=r41-unit-xix-1-dark-fury-assault-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '34')]
+    constraint | id=r41-unit-xix-1-dark-fury-assault-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r41-unit-xix-1-dark-fury-assault-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+
+UNIT selectionEntry | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-hunter | name=Legion Sky Hunter Jetbike Squadron | type=unit | hidden=true costs=[('Points', '80'), ('Points', '35'), ('Points', '6')]
+  MODEL selectionEntry | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-included | name=Legion Sky Hunters | type=model | hidden=false costs=[('Points', '35')]
+    constraint | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt | name=Sky Hunter Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+
+UNIT selectionEntry | id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad | name=SALAMANDERS INFERNUS DESTROYER SQUAD | type=unit | hidden=true costs=[('Points', '25.0'), ('Points', '25'), ('Points', '10')]
+  MODEL selectionEntry | id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '25')]
+    constraint | id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+  OPT selectionEntry | id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs | name=Jump Packs (base unit; +15 pts/model) | type=upgrade | hidden=false costs=[('Points', '75')]
+
+UNIT selectionEntry | id=r45-dg-bike | name=Legion Bike Squadron | type=unit | hidden=false costs=[('Points', '30'), ('Points', '30'), ('Points', '6')]
+  MODEL selectionEntry | id=r45-dg-bike-fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30')]
+    constraint | id=r45-dg-bike-fa-bike-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=r45-dg-bike-fa-bike-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r45-dg-bike-fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r45-dg-bike-fa-bike-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r45-dg-bike-fa-bike-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r45-dg-bike-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=r45-dg-bike-fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30')]
+  OPT selectionEntry | id=r45-dg-bike-fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+
+UNIT selectionEntry | id=r45-dg-attack-bike | name=Legion Attack Bike Squadron | type=unit | hidden=false costs=[('Points', '40'), ('Points', '5'), ('Points', '10')]
+  MODEL selectionEntry | id=r45-dg-attack-bike-fa-attack-bike-model | name=Legion Attack Bike | type=model | hidden=false costs=[('Points', '40')]
+    constraint | id=r45-dg-attack-bike-fa-attack-bike-model-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r45-dg-attack-bike-fa-attack-bike-model-max | type=max | field=selections | value=3 | scope=parent
+  OPT selectionEntry | id=r45-dg-attack-bike-fa-attack-bike-model | name=Legion Attack Bike | type=model | hidden=false costs=[('Points', '40')]
+
+UNIT selectionEntry | id=r46-al-reward-30 | name=RED HAND DESTROYER MORTALIS SQUAD — Rewards of Treachery | type=unit | hidden=false costs=[('Points', '50'), ('Points', '22'), ('Points', '5')]
+  MODEL selectionEntry | id=r46-al-reward-30-r86-size | name=Red Hand Destroyer | type=model | hidden=false costs=[('Points', '22')]
+    constraint | id=r46-al-reward-30-r86-size-r87-min | type=min | field=selections | value=5 | scope=parent
+    constraint | id=r46-al-reward-30-r86-size-r87-max | type=max | field=selections | value=10 | scope=parent
+
+UNIT selectionEntry | id=r46-al-reward-37 | name=NEMESIS DESTROYER SQUAD — Rewards of Treachery | type=unit | hidden=false costs=[('Points', '25.0'), ('Points', '25'), ('Points', '10')]
+  MODEL selectionEntry | id=r46-al-reward-37-r41-unit-xiii-3-nemesis-destroyer-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '25')]
+    constraint | id=r46-al-reward-37-r41-unit-xiii-3-nemesis-destroyer-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r46-al-reward-37-r41-unit-xiii-3-nemesis-destroyer-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+
+UNIT selectionEntry | id=r46-al-reward-55 | name=SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery | type=unit | hidden=false costs=[('Points', '25.0'), ('Points', '25'), ('Points', '10')]
+  MODEL selectionEntry | id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '25')]
+    constraint | id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+  OPT selectionEntry | id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs | name=Jump Packs (base unit; +15 pts/model) | type=upgrade | hidden=false costs=[('Points', '75')]
+
+UNIT selectionEntry | id=r46-al-reward-59 | name=DARK FURY ASSAULT SQUAD — Rewards of Treachery | type=unit | hidden=false costs=[('Points', '0.0'), ('Points', '34'), ('Points', '10')]
+  MODEL selectionEntry | id=r46-al-reward-59-r41-unit-xix-1-dark-fury-assault-squad-additional | name=Squad Models | type=model | hidden=false costs=[('Points', '34')]
+    constraint | id=r46-al-reward-59-r41-unit-xix-1-dark-fury-assault-squad-additional-max | type=max | field=selections | value=10 | scope=parent
+    constraint | id=r46-al-reward-59-r41-unit-xix-1-dark-fury-assault-squad-additional-min-total | type=min | field=selections | value=5 | scope=parent
+
+UNIT selectionEntry | id=r60-ws-bike-troops | name=Legion Bike Squadron | type=unit | hidden=true costs=[('Points', '30'), ('Points', '30'), ('Points', '6')]
+  MODEL selectionEntry | id=r60-ws-bike-troops-fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30')]
+    constraint | id=r60-ws-bike-troops-fa-bike-included-min | type=min | field=selections | value=2 | scope=parent
+    constraint | id=r60-ws-bike-troops-fa-bike-included-max | type=max | field=selections | value=9 | scope=parent
+  MODEL selectionEntry | id=r60-ws-bike-troops-fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
+    constraint | id=r60-ws-bike-troops-fa-bike-sgt-min | type=min | field=selections | value=1 | scope=parent
+    constraint | id=r60-ws-bike-troops-fa-bike-sgt-max | type=max | field=selections | value=1 | scope=parent
+  LINK entryLink | id=r60-ws-bike-troops-fa-bike-sgt-arm-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics costs=[('Points', '10')]
+  OPT selectionEntry | id=r60-ws-bike-troops-fa-bike-included | name=Legion Bikers | type=model | hidden=false costs=[('Points', '30')]
+  OPT selectionEntry | id=r60-ws-bike-troops-fa-bike-sgt | name=Legion Biker Sergeant | type=model | hidden=false costs=[]
