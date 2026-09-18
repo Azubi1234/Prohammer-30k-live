@@ -1,0 +1,13 @@
+LIVE R20 — IRON HANDS MOBILE BIONICS + FORCED PUBLISH
+MODE=DRY RUN
+INPUT CAT=19 | OUTPUT CAT=20 | GSTref=1
+
+• Iron Hands Bionics added to Legion Assault Squads, Legion Bike Squadrons and Legion Attack Bike Squadrons.
+• Whole-squad Bionics is one selector and auto-scales with squad size.
+• Assault/Bike Sergeant costs are +5 instead of +3; Sergeant-only +5 Bionics remains available as a mutually exclusive alternative.
+• The normal +10 generic Sergeant Bionics option is hidden for Iron Hands on those mobile squads.
+• Legion Destroyer Squads already retain their Iron Hands Bionics options when Jump Packs are selected; no duplicate option added.
+• More Machine Than Man wording updated to Infantry, Jump Infantry and Bikes.
+• Revision bumps 19 -> 20 to force New Recruit to see the update after v19 remained cached.
+
+VALIDATION: PASS
