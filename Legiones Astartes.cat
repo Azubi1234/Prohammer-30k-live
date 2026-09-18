@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -2962,7 +2962,7 @@
       </constraints>
       <rules>
         <rule id="r45-ts-tactical-brotherhood-rule" name="Brotherhood of Psykers (20-model Tactical Squad)" hidden="false">
-          <description>Fellowships of Prospero only. A 20-model Tactical Squad may purchase Brotherhood of Psykers (ML1), choose a power from its Cult discipline and gain Cult Mastery.</description>
+          <description>Fellowships of Prospero only. A full 20-model Legion Tactical Squad (19 Legion Tactical Marines and 1 Legion Tactical Sergeant) may purchase Brotherhood of Psykers (Mastery Level 1) for +25 points. Choose one normal Thousand Sons psychic discipline, then select one power from that discipline. The unit retains its chosen Prosperine Cult and receives that Cult Mastery.</description>
         </rule>
       </rules>
     <categoryLinks><categoryLink id="r18-ts-brotherhood-cat-r45-ts-tactical-brotherhood" name="Thousand Sons Psychic Brotherhood" hidden="false" targetId="r18-ts-cat-brotherhood" primary="false" /></categoryLinks><modifiers><modifier id="r18-r45-ts-tactical-brotherhood-xv-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry>
@@ -4428,13 +4428,13 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols" hidden="false" id="load-standard" defaultAmount="1">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="true" id="load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
+                <entryLink import="true" name="Bolter" hidden="false" id="load-standard-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="load-standard-b-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="load-standard-b-max" includeChildSelections="false" automatic="true" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolt Pistol" hidden="true" id="load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="load-standard-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="load-standard-p-min" includeChildSelections="false" automatic="true" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="load-standard-p-max" includeChildSelections="false" automatic="true" />
@@ -4444,9 +4444,9 @@
             <costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bolters + Bolt Pistols + Chainswords — entire squad (+2 pts/model)" hidden="false" id="load-add-chainswords">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="true" id="load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
-                <entryLink import="true" name="Bolt Pistol" hidden="true" id="load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="true" id="load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolter" hidden="false" id="load-add-b" type="selectionEntry" targetId="gear-bolter" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="load-add-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="false" id="load-add-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
               <costs>
                 <cost name="Points" typeId="pts" value="0" />
@@ -4461,8 +4461,8 @@
             <rules><rule id="load-add-chainswords-r5rule" name="Whole-squad Chainswords" hidden="false"><description>The entire squad retains its Bolters and Bolt pistols and also takes Chainswords for +2 points per model. New Recruit calculates the total from the selected squad size.</description></rule></rules></selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exchange Bolters for Chainswords — entire squad (Free)" hidden="false" id="load-exchange">
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="true" id="load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
-                <entryLink import="true" name="Chainsword" hidden="true" id="load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="load-ex-p" type="selectionEntry" targetId="gear-bolt-pistol" defaultAmount="1" />
+                <entryLink import="true" name="Chainsword" hidden="false" id="load-ex-c" type="selectionEntry" targetId="gear-chainsword" defaultAmount="1" />
               </entryLinks>
             <costs><cost name="Points" typeId="pts" value="0" /></costs><rules><rule id="load-exchange-r5rule" name="Exchange Bolters for Chainswords" hidden="false"><description>The entire squad exchanges its Bolters for Chainswords at no additional cost. Because the squad no longer has Bolters to replace, Special Weapon and Heavy Weapon selections are unavailable while this option is selected.</description></rule></rules></selectionEntry>
           </selectionEntries>
@@ -5522,17 +5522,7 @@
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
-                <modifier id="r48-vis-13" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier id="r48-vis-14" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="20" field="selections" scope="parent" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              <modifier id="r18-ts-tactical-brotherhood-rite" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r18-ts-tactical-brotherhood-size" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+                <modifier id="r18-ts-tactical-brotherhood-rite" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier><modifier id="r18-ts-tactical-brotherhood-size" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
             </entryLink>
             <entryLink id="r46-tactical-unit-wb-hex" name="Hex-Bolts" type="selectionEntry" targetId="r46-wb-hex-bolts" hidden="false" import="true">
               <constraints>
@@ -12545,15 +12535,6 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                 <constraint id="r45-veteran-unit-ts-brother-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <modifiers>
-                <modifier type="set" value="true" field="hidden" id="r45-veteran-unit-ts-brother-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
                 <modifier id="r48-vis-76" type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -12571,12 +12552,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
-                <modifier id="r48-vis-78" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              <modifier id="r18-ts-veteran-unit-fellow-hide-normal" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+                <modifier id="r18-ts-veteran-unit-fellow-hide-normal" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
             </entryLink>
             <entryLink id="r46-veteran-unit-wb-hex" name="Hex-Bolts" type="selectionEntry" targetId="r46-wb-hex-bolts" hidden="false" import="true">
               <constraints>
@@ -14790,15 +14766,6 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                 <constraint id="r45-terminator-unit-ts-brother-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <modifiers>
-                <modifier type="set" value="true" field="hidden" id="r45-terminator-unit-ts-brother-hide-rite">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
                 <modifier id="r48-vis-96" type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -14816,12 +14783,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
-                <modifier id="r48-vis-98" type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              <modifier id="r18-ts-terminator-unit-fellow-hide-normal" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+                <modifier id="r18-ts-terminator-unit-fellow-hide-normal" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
             </entryLink>
             <entryLink id="r45-terminator-ts-trans" name="Teleportation Transponders" type="selectionEntry" targetId="r45-ts-trans-unit" hidden="false" import="true">
               <constraints>
@@ -175228,7 +175190,7 @@ The Blademaster may select up to 50 points of permitted weapons and wargear from
       </costs>
       <categoryLinks>
         <categoryLink id="r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-cat" name="Lords of War" hidden="false" targetId="cat-low" primary="true"><modifiers><modifier id="r18-ts-guard-magnus-hide-low" type="set" field="hidden" value="true"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink>
-      <categoryLink id="r18-ts-guard-magnus-hq" name="HQ — Guard of the Crimson King" hidden="true" targetId="cat-hq" primary="false"><modifiers><modifier id="r18-ts-guard-magnus-show-hq" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink><categoryLink id="r18-final-magnus-mortal-form" name="Magnus form 0-1" targetId="r18-final-cat-magnus-form" hidden="false" primary="false" /></categoryLinks>
+      <categoryLink id="r18-ts-guard-magnus-hq" name="HQ — Guard of the Crimson King" hidden="true" targetId="cat-hq" primary="true"><modifiers><modifier id="r18-ts-guard-magnus-show-hq" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-1-the-guard-of-the-crimson-king" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink><categoryLink id="r18-final-magnus-mortal-form" name="Magnus form 0-1" targetId="r18-final-cat-magnus-form" hidden="false" primary="false" /></categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>

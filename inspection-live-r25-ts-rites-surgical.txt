@@ -1,5 +1,5 @@
 LIVE R25 — THOUSAND SONS RITES SURGICAL FIX
-MODE=DRY RUN
+MODE=APPLY
 Input CAT=24 | Output CAT=25 | GST remains revision 1
 
 Fellowships of Prospero:
