@@ -1,5 +1,5 @@
 LIVE R26 — THOUSAND SONS DISCIPLINE + GUARD FIX
-MODE=DRY RUN
+MODE=APPLY
 CAT 25 -> 26 | GST revision remains 1
 
 • Fellowships Tactical Brotherhood now keys its Discipline/Power UI to the actual selected shared Brotherhood upgrade, so the discipline selector appears after the +25 Brotherhood upgrade is chosen.
