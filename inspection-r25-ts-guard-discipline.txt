@@ -1,0 +1,1361 @@
+CAT=25 GST=1
+
+=== tactical-unit ===
+selectionEntry | id=tactical-unit | name=Legion Tactical Squad | type=unit | hidden=false
+    categoryLink | id=tactical-cat | name=Troops | hidden=false | targetId=cat-troops | primary=true
+    categoryLink | id=r74-ba-tac-sorcat | name=Sorrows compulsory Troops | hidden=true | targetId=r74-ba-cat-sorrows-comp | primary=false
+    selectionEntry | id=tac-marine | name=Legion Tactical Marine | type=model | hidden=false
+        constraint | id=tac-marine-min | type=min | field=selections | value=9 | scope=parent
+        constraint | id=tac-marine-max | type=max | field=selections | value=19 | scope=parent
+        cost | name=Points | value=15
+        modifier | id=r18-ts-axis-max-tac-marine | type=set | field=tac-marine-min | value=19
+            condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-0-the-axis-of-dissolution
+        modifier | id=r19-axis-max-tac-marine | type=set | field=tac-marine-min | value=19
+            condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-0-the-axis-of-dissolution
+    selectionEntry | id=tac-sergeant | name=Legion Tactical Sergeant | type=model | hidden=false
+        constraint | id=tac-sgt-min | type=min | field=selections | value=1 | scope=parent
+        constraint | id=tac-sgt-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=15
+        selectionEntryGroup | id=sgt-armoury | name=Sergeant Armoury (max 50 pts) | hidden=false
+            constraint | id=sgt-armoury-pts-max | type=max | field=pts | value=50 | scope=parent
+            selectionEntryGroup | id=sgt-weapons | name=Sergeant Armoury - Weapons | hidden=false
+                constraint | id=sgt-weapons-max | type=max | field=selections | value=2 | scope=parent
+                selectionEntryGroup | id=sgt-single | name=Single-Handed Weapons | hidden=false
+                selectionEntryGroup | id=sgt-twohand | name=Two-Handed Weapons | hidden=false
+                entryLink | id=r39-phosphex-sgt-weapons | name=Phosphex Bomb (Destroyer Company) | type=selectionEntry | hidden=true | targetId=gear-phosphex-bomb
+                entryLink | id=r63-sw-arm-1-frost | name=Frost Weapon | type=selectionEntry | hidden=false | targetId=r63-sw-gear-frost
+                entryLink | id=r63-sw-arm-1-frost-exchange | name=Frost Weapon — Power Weapon exchange | type=selectionEntry | hidden=false | targetId=r63-sw-gear-frost-exchange
+                entryLink | id=r63-sw-arm-1-pelt | name=Wolf Pelt | type=selectionEntry | hidden=false | targetId=r63-sw-gear-pelt
+                entryLink | id=r63-sw-arm-1-necklace | name=Wolf Tooth Necklace | type=selectionEntry | hidden=false | targetId=r63-sw-gear-necklace
+                entryLink | id=r63-sw-arm-1-talisman | name=Wolf Tail Talisman | type=selectionEntry | hidden=false | targetId=r63-sw-gear-talisman
+            selectionEntryGroup | id=sgt-wargear | name=Sergeant Armoury - Wargear | hidden=false
+                entryLink | id=sgt-auspex | name=Auspex | type=selectionEntry | hidden=false | targetId=gear-auspex
+                entryLink | id=sgt-bionics | name=Bionics | type=selectionEntry | hidden=false | targetId=gear-bionics
+                entryLink | id=sgt-cshield | name=Combat Shield | type=selectionEntry | hidden=false | targetId=gear-combat-shield
+                entryLink | id=sgt-mbombs | name=Melta Bombs | type=selectionEntry | hidden=false | targetId=gear-melta-bombs
+                entryLink | id=sgt-purity | name=Purity Seals | type=selectionEntry | hidden=false | targetId=gear-purity
+                entryLink | id=sgt-homer | name=Teleport Homer | type=selectionEntry | hidden=false | targetId=gear-homer
+                entryLink | id=r39-phosphex-sgt-wargear | name=Phosphex Bomb (Destroyer Company) | type=selectionEntry | hidden=true | targetId=gear-phosphex-bomb
+                entryLink | id=r63-sw-arm-2-frost | name=Frost Weapon | type=selectionEntry | hidden=false | targetId=r63-sw-gear-frost
+                entryLink | id=r63-sw-arm-2-frost-exchange | name=Frost Weapon — Power Weapon exchange | type=selectionEntry | hidden=false | targetId=r63-sw-gear-frost-exchange
+                entryLink | id=r63-sw-arm-2-pelt | name=Wolf Pelt | type=selectionEntry | hidden=false | targetId=r63-sw-gear-pelt
+                entryLink | id=r63-sw-arm-2-necklace | name=Wolf Tooth Necklace | type=selectionEntry | hidden=false | targetId=r63-sw-gear-necklace
+                entryLink | id=r63-sw-arm-2-talisman | name=Wolf Tail Talisman | type=selectionEntry | hidden=false | targetId=r63-sw-gear-talisman
+                entryLink | id=r71-nl-gen-0-trophies | name=Trophies of Judgement | type=selectionEntry | hidden=false | targetId=r44-nl-trophies
+            entryLink | id=rev24-tactical-unit-sgt-refractor | name=Refractor Field | type=selectionEntry | hidden=false | targetId=gear-hq-refractor
+                constraint | id=rev24-tactical-unit-sgt-refractor-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=15
+                modifier | id=rev24-rf-max-tactical-unit | type=set | field=hidden | value=true
+            entryLink | id=r39-phosphex-sgt-armoury | name=Phosphex Bomb (Destroyer Company) | type=selectionEntry | hidden=true | targetId=gear-phosphex-bomb
+                constraint | id=r39-phosphex-sgt-armoury-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=10
+                modifier | type=set | field=hidden | value=false
+            entryLink | id=r63-sw-arm-0-frost | name=Frost Weapon | type=selectionEntry | hidden=false | targetId=r63-sw-gear-frost
+                constraint | id=r63-sw-arm-0-frost-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=r63-sw-arm-0-frost-exchange | name=Frost Weapon — Power Weapon exchange | type=selectionEntry | hidden=false | targetId=r63-sw-gear-frost-exchange
+                constraint | id=r63-sw-arm-0-frost-exchange-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=r63-sw-arm-0-pelt | name=Wolf Pelt | type=selectionEntry | hidden=false | targetId=r63-sw-gear-pelt
+                constraint | id=r63-sw-arm-0-pelt-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=r63-sw-arm-0-necklace | name=Wolf Tooth Necklace | type=selectionEntry | hidden=false | targetId=r63-sw-gear-necklace
+                constraint | id=r63-sw-arm-0-necklace-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=r63-sw-arm-0-talisman | name=Wolf Tail Talisman | type=selectionEntry | hidden=false | targetId=r63-sw-gear-talisman
+                constraint | id=r63-sw-arm-0-talisman-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=r67-if-sgt-armoury-solarite | name=Solarite Power Gauntlet | type=selectionEntry | hidden=false | targetId=r64-if-gear-solarite
+                constraint | id=r67-if-sgt-armoury-solarite-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=r67-if-sgt-armoury-solarite-ex | name=Solarite Power Gauntlet — exchange Power Fist | type=selectionEntry | hidden=true | targetId=r64-if-gear-solarite-exchange
+                constraint | id=r67-if-sgt-armoury-solarite-ex-max | type=max | field=selections | value=1 | scope=parent
+                modifier | id=r70-if-solar-ex-show-0 | type=set | field=hidden | value=false
+            entryLink | id=r18-final-ts-force-0 | name=Prosperine Force Weapon upgrade | type=selectionEntry | hidden=false | targetId=r45-ts-force-weapon
+                constraint | id=r18-final-ts-force-0-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r37-tactical-fury | name=Fury of the Legion (Legion Tactical Company) | type=upgrade | hidden=true
+        constraint | id=r37-tactical-fury-max | type=max | field=selections | value=1 | scope=parent
+        modifier | type=set | field=hidden | value=false
+            condition | type=atLeast | field=selections | value=1 | scope=force | childId=rite-tactical
+    selectionEntry | id=r71-nl-gen-0-stealth | name=Stealth Adept — whole squad | type=upgrade | hidden=true
+        cost | name=Points | value=0
+        constraint | id=r71-nl-gen-0-stealth-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r71-nl-gen-0-stealth-cost-0 | type=increment | field=pts | value=1
+        modifier | id=r71-nl-gen-0-stealth-cost-1 | type=increment | field=pts | value=1
+        modifier | id=r71-nl-gen-0-stealth-show | type=set | field=hidden | value=false
+            conditionGroup | type=and
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-viii
+    selectionEntry | id=r71-nl-bj-0 | name=Beyond Judgement — Trophies of Judgement & Fear | type=upgrade | hidden=true
+        cost | name=Points | value=25
+        constraint | id=r71-nl-bj-0-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r71-nl-bj-0-show | type=set | field=hidden | value=false
+            conditionGroup | type=and
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-viii
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-viii-1-horror-cult
+    selectionEntryGroup | id=tac-loadout | name=Squad Weapons | hidden=false
+        constraint | id=load-min | type=min | field=selections | value=1 | scope=parent
+        constraint | id=load-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=load-standard | name=Bolters + Bolt Pistols | type=upgrade | hidden=false
+            entryLink | id=load-standard-b | name=Bolter | type=selectionEntry | hidden=false | targetId=gear-bolter
+                constraint | id=load-standard-b-min | type=min | field=selections | value=1 | scope=parent
+                constraint | id=load-standard-b-max | type=max | field=selections | value=1 | scope=parent
+            entryLink | id=load-standard-p | name=Bolt Pistol | type=selectionEntry | hidden=false | targetId=gear-bolt-pistol
+                constraint | id=load-standard-p-min | type=min | field=selections | value=1 | scope=parent
+                constraint | id=load-standard-p-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+        selectionEntry | id=load-add-chainswords | name=Bolters + Bolt Pistols + Chainswords — entire squad (+2 pts/model) | type=upgrade | hidden=false
+            entryLink | id=load-add-b | name=Bolter | type=selectionEntry | hidden=false | targetId=gear-bolter
+            entryLink | id=load-add-p | name=Bolt Pistol | type=selectionEntry | hidden=false | targetId=gear-bolt-pistol
+            entryLink | id=load-add-c | name=Chainsword | type=selectionEntry | hidden=false | targetId=gear-chainsword
+            cost | name=Points | value=0
+            modifier | type=increment | field=pts | value=2
+            modifier | id=load-add-chainswords-r5scale-0 | type=increment | field=pts | value=2
+            modifier | id=load-add-chainswords-r5scale-1 | type=increment | field=pts | value=2
+        selectionEntry | id=load-exchange | name=Exchange Bolters for Chainswords — entire squad (Free) | type=upgrade | hidden=false
+            entryLink | id=load-ex-p | name=Bolt Pistol | type=selectionEntry | hidden=false | targetId=gear-bolt-pistol
+            entryLink | id=load-ex-c | name=Chainsword | type=selectionEntry | hidden=false | targetId=gear-chainsword
+            cost | name=Points | value=0
+    selectionEntryGroup | id=tac-grenades | name=Squad Grenades | hidden=false
+        selectionEntry | id=tac-grenades-r5-krak-whole-squad | name=Krak Grenades — entire squad (+2 pts/model) | type=upgrade | hidden=false
+            constraint | id=tac-grenades-r5-krak-whole-squad-max | type=max | field=selections | value=1 | scope=parent
+            modifier | type=increment | field=pts | value=2
+            modifier | id=tac-grenades-r5-krak-whole-squad-scale-0 | type=increment | field=pts | value=2
+            modifier | id=tac-grenades-r5-krak-whole-squad-scale-1 | type=increment | field=pts | value=2
+            cost | name=Points | value=0
+    selectionEntryGroup | id=tac-heavy-weapons | name=Heavy Weapons | hidden=false
+        constraint | id=tac-heavy-max | type=max | field=selections | value=1 | scope=parent
+        modifier | type=set | field=hidden | value=true
+            condition | type=atLeast | field=selections | value=1 | scope=parent | childId=load-exchange
+        modifier | type=set | field=tac-heavy-max | value=2
+            condition | type=equalTo | field=selections | value=19 | scope=root-entry | childId=tac-marine
+        modifier | id=tac-heavy-weapons-r5-hide-no-bolters | type=set | field=hidden | value=true
+            condition | type=atLeast | field=selections | value=1 | scope=parent | childId=load-exchange
+        entryLink | id=hv-hb | name=Heavy Bolter | type=selectionEntry | hidden=false | targetId=gear-heavy-bolter
+            constraint | id=hv-hb-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=5
+        entryLink | id=hv-ml | name=Missile Launcher | type=selectionEntry | hidden=false | targetId=gear-missile
+            constraint | id=hv-ml-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=10
+        entryLink | id=hv-ac | name=Autocannon | type=selectionEntry | hidden=false | targetId=gear-autocannon
+            constraint | id=hv-ac-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=10
+        entryLink | id=hv-mm | name=Multi-Melta | type=selectionEntry | hidden=false | targetId=gear-multimelta
+            constraint | id=hv-mm-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=10
+        entryLink | id=hv-pc | name=Plasma Cannon | type=selectionEntry | hidden=false | targetId=gear-plasma-cannon
+            constraint | id=hv-pc-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=15
+        entryLink | id=hv-lc | name=Lascannon | type=selectionEntry | hidden=false | targetId=gear-lascannon
+            constraint | id=hv-lc-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=15
+        entryLink | id=da22-alt-pc-0 | name=Calibanite Plasma Cannon | type=selectionEntry | hidden=false | targetId=da22-plasma-cannon
+            constraint | id=da22-alt-pc-0-2 | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=15
+            modifier | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-i
+    selectionEntryGroup | id=tac-special-weapons | name=Special Weapons | hidden=false
+        constraint | id=tac-special-max | type=max | field=selections | value=2 | scope=parent
+        modifier | type=set | field=hidden | value=true
+            condition | type=atLeast | field=selections | value=1 | scope=parent | childId=load-exchange
+        modifier | type=set | field=tac-special-max | value=1
+            condition | type=atLeast | field=selections | value=1 | scope=parent | childId=tac-heavy-weapons
+        modifier | type=set | field=tac-special-max | value=4
+            condition | type=equalTo | field=selections | value=19 | scope=root-entry | childId=tac-marine
+        modifier | type=set | field=tac-special-max | value=3
+            conditionGroup | type=and
+                condition | type=equalTo | field=selections | value=19 | scope=root-entry | childId=tac-marine
+                condition | type=equalTo | field=selections | value=1 | scope=parent | childId=tac-heavy-weapons
+        modifier | type=set | field=tac-special-max | value=2
+            conditionGroup | type=and
+                condition | type=equalTo | field=selections | value=19 | scope=root-entry | childId=tac-marine
+                condition | type=atLeast | field=selections | value=2 | scope=parent | childId=tac-heavy-weapons
+        modifier | id=tac-special-weapons-r5-hide-no-bolters | type=set | field=hidden | value=true
+            condition | type=atLeast | field=selections | value=1 | scope=parent | childId=load-exchange
+        entryLink | id=sp-f | name=Flamer | type=selectionEntry | hidden=false | targetId=gear-flamer
+            constraint | id=sp-f-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=5
+        entryLink | id=sp-m | name=Meltagun | type=selectionEntry | hidden=false | targetId=gear-meltagun
+            constraint | id=sp-m-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=10
+        entryLink | id=sp-p | name=Plasma Gun | type=selectionEntry | hidden=false | targetId=gear-plasma-gun
+            constraint | id=sp-p-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=15
+        entryLink | id=sp-vc | name=Volkite Charger | type=selectionEntry | hidden=false | targetId=gear-volkite-charger
+            constraint | id=sp-vc-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=10
+        entryLink | id=sp-vcal | name=Volkite Caliver | type=selectionEntry | hidden=false | targetId=gear-volkite-caliver
+            constraint | id=sp-vcal-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=15
+        entryLink | id=sp-r | name=Rotor Cannon | type=selectionEntry | hidden=false | targetId=gear-rotor
+            constraint | id=sp-r-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=4
+        entryLink | id=da22-alt-pg-0 | name=Calibanite Plasma Gun | type=selectionEntry | hidden=false | targetId=da22-plasma-gun
+            constraint | id=da22-alt-pg-0-2 | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=15
+            modifier | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-i
+        entryLink | id=da22-alt-pr-0 | name=Plasma Repeater | type=selectionEntry | hidden=false | targetId=da22-plasma-repeater
+            constraint | id=da22-alt-pr-0-2 | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=25
+            modifier | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-i
+        entryLink | id=da22-alt-pb-0 | name=Plasma Burner | type=selectionEntry | hidden=false | targetId=da22-plasma-burner
+            constraint | id=da22-alt-pb-0-2 | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=20
+            modifier | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-i
+        entryLink | id=r81-ih-grav-0 | name=Graviton Gun | type=selectionEntry | hidden=true | targetId=gear-graviton-gun
+            constraint | id=r81-ih-grav-0-max | type=max | field=selections | value=4 | scope=parent
+            cost | name=Points | value=15
+            modifier | id=r81-ih-grav-0-show | type=set | field=hidden | value=false
+                conditionGroup | type=and
+    selectionEntryGroup | id=tac-equipment | name=Squad Equipment | hidden=false
+        entryLink | id=tac-vexilla | name=Legion Vexilla | type=selectionEntry | hidden=false | targetId=gear-vexilla
+            constraint | id=tac-vexilla-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=10
+        entryLink | id=tac-nuncio | name=Nuncio Vox | type=selectionEntry | hidden=false | targetId=gear-nuncio
+            constraint | id=tac-nuncio-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=10
+    selectionEntryGroup | id=tac-transport | name=Dedicated Transport | hidden=true
+        selectionEntryGroup | id=r37-spear-tac-transport | name=Land Raider Dedicated Transport (Armoured Spearhead) | hidden=true
+            constraint | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-lrgrp-max | type=max | field=selections | value=1 | scope=parent
+            selectionEntry | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos | name=Land Raider Phobos | type=model | hidden=false
+                constraint | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=250
+            selectionEntry | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus | name=Land Raider Proteus | type=model | hidden=false
+                constraint | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=200
+            selectionEntry | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-achilles | name=Land Raider Achilles | type=model | hidden=false
+                constraint | id=r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-achilles-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=275
+            modifier | type=set | field=hidden | value=false
+                condition | type=atLeast | field=selections | value=1 | scope=force | childId=rite-spearhead
+        modifier | type=set | field=hidden | value=false
+            condition | type=equalTo | field=selections | value=9 | scope=root-entry | childId=tac-marine
+        constraint | id=tac-transport-max | type=max | field=selections | value=1 | scope=parent
+        entryLink | id=tac-rhino | name=Rhino | type=selectionEntry | hidden=false | targetId=transport-rhino
+            constraint | id=tac-rhino-max | type=max | field=selections | value=1 | scope=parent
+        entryLink | id=tac-drop-pod | name=Drop Pod | type=selectionEntry | hidden=false | targetId=transport-drop-pod
+            constraint | id=tac-drop-pod-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=tac-drop-pod-r7-hide-logos | type=set | field=hidden | value=true
+                condition | type=atLeast | field=selections | value=1 | scope=force | childId=r25-rite-xiii-0-the-logos-lectora
+        entryLink | id=tac-dreadclaw | name=Dreadclaw Drop Pod | type=selectionEntry | hidden=false | targetId=transport-dreadclaw
+            constraint | id=tac-dreadclaw-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=tac-dreadclaw-r7-hide-logos | type=set | field=hidden | value=true
+                condition | type=atLeast | field=selections | value=1 | scope=force | childId=r25-rite-xiii-0-the-logos-lectora
+        selectionEntry | id=r83-ih-scions-0-hq-praetor-ret-honour-land-land-raider-phobos | name=Land Raider Phobos (Scions of Iron) | type=upgrade | hidden=true
+            cost | name=Points | value=250
+            constraint | id=r83-ih-scions-0-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r83-ih-scions-0-show-head | type=set | field=hidden | value=false
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-x-0-the-head-of-the-gorgon
+        selectionEntry | id=r83-ih-scions-1-hq-praetor-ret-honour-land-land-raider-proteus | name=Land Raider Proteus (Scions of Iron) | type=upgrade | hidden=true
+            cost | name=Points | value=200
+            constraint | id=r83-ih-scions-1-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r83-ih-scions-1-show-head | type=set | field=hidden | value=false
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-x-0-the-head-of-the-gorgon
+    selectionEntryGroup | id=da-wing-tactical-unit | name=Hexagrammaton Wing | hidden=false
+        constraint | id=da-wing-tactical-unit-min | type=min | field=selections | value=0 | scope=parent
+        constraint | id=da-wing-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+        modifier | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-i
+        modifier | type=set | field=da-wing-tactical-unit-min | value=1
+            condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-i
+        selectionEntry | id=da-wing-tactical-unit-0 | name=Stormwing | type=upgrade | hidden=false
+            constraint | id=da-wing-tactical-unit-0-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=da-wing-tactical-unit-1 | name=Deathwing | type=upgrade | hidden=false
+            constraint | id=da-wing-tactical-unit-1-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=da-wing-tactical-unit-2 | name=Dreadwing | type=upgrade | hidden=false
+            constraint | id=da-wing-tactical-unit-2-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=da-wing-tactical-unit-3 | name=Ironwing | type=upgrade | hidden=false
+            constraint | id=da-wing-tactical-unit-3-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=da-wing-tactical-unit-4 | name=Firewing | type=upgrade | hidden=false
+            constraint | id=da-wing-tactical-unit-4-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=da-wing-tactical-unit-5 | name=Ravenwing | type=upgrade | hidden=false
+            constraint | id=da-wing-tactical-unit-5-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntryGroup | id=r40-da-ammo-tactical-unit | name=Dark Angels Armoury — Ammunition | hidden=false
+        entryLink | id=r40-da-ammo-tactical-unit-hv-hb | name=Molecular Acid Shells (for Heavy Bolter) | type=selectionEntry | hidden=true | targetId=da22-acid-hb
+            constraint | id=r40-da-ammo-tactical-unit-hv-hb-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=7
+            modifier | type=set | field=hidden | value=false
+                conditionGroup | type=and
+        entryLink | id=r40-da-ammo-tactical-unit-hv-ml | name=Stasis Shells — Missile (for Missile Launcher) | type=selectionEntry | hidden=true | targetId=da22-stasis-missile
+            constraint | id=r40-da-ammo-tactical-unit-hv-ml-max | type=max | field=selections | value=2 | scope=parent
+            cost | name=Points | value=5
+            modifier | type=set | field=hidden | value=false
+                conditionGroup | type=and
+    selectionEntryGroup | id=r40-da-steel-transport-tactical-unit | name=Steel Fist — Armoured Assault Dedicated Transport | hidden=true
+        constraint | id=r40-da-steel-transport-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+        modifier | type=set | field=hidden | value=false
+            conditionGroup | type=and
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-i
+                condition | type=atLeast | field=selections | value=1 | scope=force | childId=da22-rite-steel
+                condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=da-wing-tactical-unit-3
+        selectionEntry | id=r40-da-steel-transport-tactical-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos | name=Land Raider Phobos (10 models or fewer) | type=model | hidden=false
+            constraint | id=r40-da-steel-transport-tactical-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=250
+        selectionEntry | id=r40-da-steel-transport-tactical-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus | name=Land Raider Proteus (10 models or fewer) | type=model | hidden=false
+            constraint | id=r40-da-steel-transport-tactical-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=200
+        selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan | name=Legion Spartan Assault Tank (11–20 models) | type=unit | hidden=false
+            cost | name=Points | value=305
+            selectionEntryGroup | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-replace | name=Main Weapon Replacements | hidden=false
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-laser | name=Two Laser Destroyers (replace both Quad Lascannons) | type=upgrade | hidden=false
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-hf | name=Twin-linked Heavy Flamer (replaces Twin-linked Heavy Bolter) | type=selectionEntry | hidden=false | targetId=hsgear-tl-heavy-flamer
+            selectionEntryGroup | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-pintle | name=Pintle-mounted Weapon | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-pintle-max | type=max | field=selections | value=1 | scope=parent
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p0 | name=Twin-linked Bolter | type=selectionEntry | hidden=false | targetId=gear-tl-bolter
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p1 | name=Combi-Flamer | type=selectionEntry | hidden=false | targetId=gear-combi-flamer
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p2 | name=Combi-Grenade Launcher | type=selectionEntry | hidden=false | targetId=gear-combi-grenade
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p3 | name=Combi-Meltagun | type=selectionEntry | hidden=false | targetId=gear-combi-melta
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p4 | name=Combi-Plasma Gun | type=selectionEntry | hidden=false | targetId=gear-combi-plasma
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p5 | name=Combi-Volkite Charger | type=selectionEntry | hidden=false | targetId=gear-combi-volkite
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p6 | name=Heavy Bolter | type=selectionEntry | hidden=false | targetId=gear-heavy-bolter
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p7 | name=Heavy Flamer | type=selectionEntry | hidden=false | targetId=gear-heavy-flamer
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p8 | name=Multi-Melta | type=selectionEntry | hidden=false | targetId=gear-multimelta
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-p9 | name=Havoc Launcher | type=selectionEntry | hidden=false | targetId=gear-havoc
+            selectionEntryGroup | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan | name=Hexagrammaton Wing | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-min | type=min | field=selections | value=0 | scope=parent
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-max | type=max | field=selections | value=1 | scope=parent
+                modifier | type=set | field=hidden | value=true
+                modifier | type=set | field=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-min | value=1
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-0 | name=Stormwing | type=upgrade | hidden=false
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-1 | name=Deathwing | type=upgrade | hidden=false
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-2 | name=Dreadwing | type=upgrade | hidden=false
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-3 | name=Ironwing | type=upgrade | hidden=false
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-4 | name=Firewing | type=upgrade | hidden=false
+                selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-da-wing-hs-spartan-5 | name=Ravenwing | type=upgrade | hidden=false
+            selectionEntryGroup | id=r40-da-steel-transport-tactical-unit-hs-spartan-r40-da-ammo-hs-spartan | name=Dark Angels Armoury — Ammunition | hidden=false
+                entryLink | id=r40-da-steel-transport-tactical-unit-hs-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6 | name=Molecular Acid Shells (for Heavy Bolter) | type=selectionEntry | hidden=true | targetId=da22-acid-hb
+            selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-hunter-killer-missile | name=Hunter-Killer Missile | type=upgrade | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-hunter-killer-missile-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=5
+            selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-dozer-blade | name=Dozer Blade | type=upgrade | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-dozer-blade-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=5
+            selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-auxiliary-drive | name=Auxiliary Drive | type=upgrade | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-auxiliary-drive-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=10
+            selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-frag-assault-launchers | name=Frag Assault Launchers | type=upgrade | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-frag-assault-launchers-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=10
+            selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-armoured-ceramite | name=Armoured Ceramite | type=upgrade | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-armoured-ceramite-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=20
+            selectionEntry | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-flare-shield | name=Flare Shield | type=upgrade | hidden=false
+                constraint | id=r40-da-steel-transport-tactical-unit-hs-spartan-hs-spartan-flare-shield-max | type=max | field=selections | value=1 | scope=parent
+                cost | name=Points | value=45
+    selectionEntryGroup | id=r45-cult-tactical-unit | name=Prosperine Cult | hidden=false
+        constraint | id=r45-cult-tactical-unit-min | type=min | field=selections | value=1 | scope=parent
+        constraint | id=r45-cult-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r48-vis-1 | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+        selectionEntry | id=r45-cult-tactical-unit-0 | name=Pavoni | type=upgrade | hidden=false
+            constraint | id=r45-cult-tactical-unit-0-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-tactical-unit-1 | name=Raptora | type=upgrade | hidden=false
+            constraint | id=r45-cult-tactical-unit-1-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-tactical-unit-2 | name=Corvidae | type=upgrade | hidden=false
+            constraint | id=r45-cult-tactical-unit-2-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-tactical-unit-3 | name=Athanaeans | type=upgrade | hidden=false
+            constraint | id=r45-cult-tactical-unit-3-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-tactical-unit-4 | name=Pyrae | type=upgrade | hidden=false
+            constraint | id=r45-cult-tactical-unit-4-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntryGroup | id=r49-legion-upgrades-tactical-unit | name=Legion Wargear & Upgrades | hidden=false
+        entryLink | id=r43-tactical-unit-ec-apoth | name=Sergeant upgraded to Apothecary | type=selectionEntry | hidden=false | targetId=r43-ec-line-apothecary
+            constraint | id=r43-tactical-unit-ec-apoth-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-2 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-iii
+        entryLink | id=r43-tactical-unit-ec-reductor | name=Reductor | type=selectionEntry | hidden=false | targetId=r43-ec-reductor
+            constraint | id=r43-tactical-unit-ec-reductor-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-3 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-iii
+        entryLink | id=r44-tactical-unit-nl-kraken | name=Kraken Light Bolts | type=selectionEntry | hidden=false | targetId=r44-nl-kraken-bolts
+            constraint | id=r44-tactical-unit-nl-kraken-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-8 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-viii
+        entryLink | id=r45-tactical-unit-dg-alchem | name=Alchem Flamer replacement | type=selectionEntry | hidden=false | targetId=r45-dg-alchem-flamer
+            constraint | id=r45-tactical-unit-dg-alchem-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-11 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xiv
+        entryLink | id=r45-tactical-ts-brother | name=Brotherhood of Psykers (20-model Tactical Squad) | type=selectionEntry | hidden=false | targetId=r45-ts-tactical-brotherhood
+            constraint | id=r45-tactical-ts-brother-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-12 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+            modifier | id=r18-ts-tactical-brotherhood-rite | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+            modifier | id=r18-ts-tactical-brotherhood-size | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=19 | scope=root-entry | childId=tac-marine
+        entryLink | id=r46-tactical-unit-wb-hex | name=Hex-Bolts | type=selectionEntry | hidden=false | targetId=r46-wb-hex-bolts
+            constraint | id=r46-tactical-unit-wb-hex-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-15 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xvii
+        entryLink | id=r46-tactical-unit-wb-dark | name=Dark Channelling | type=selectionEntry | hidden=false | targetId=r46-wb-dark-channelling
+            constraint | id=r46-tactical-unit-wb-dark-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-16 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xvii
+            modifier | id=r48-vis-17 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r46-wb-diabolist
+        entryLink | id=r46-tactical-unit-sal-heavyflame | name=Heavy Flamer instead of Flamer | type=selectionEntry | hidden=false | targetId=r46-sal-heavy-flamer
+            constraint | id=r46-tactical-unit-sal-heavyflame-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-18 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xviii
+        entryLink | id=r46-tactical-unit-sal-artificer | name=Artificer Armour — Salamanders access | type=selectionEntry | hidden=false | targetId=r46-sal-artificer-armour
+            constraint | id=r46-tactical-unit-sal-artificer-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-19 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xviii
+        entryLink | id=r47-tactical-unit-ih-bionics | name=Bionics — unit model | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-model
+            constraint | id=r47-tactical-unit-ih-bionics-max | type=max | field=selections | value=20 | scope=parent
+            modifier | id=r48-vis-20 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+        entryLink | id=r47-tactical-unit-ih-bionics-sgt | name=Bionics — Veteran Sergeant | type=selectionEntry | hidden=false | targetId=r47-ih-bionics-veteran-sergeant
+            constraint | id=r47-tactical-unit-ih-bionics-sgt-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-21 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+        entryLink | id=r47-tactical-unit-ih-splinter | name=Splinter Bolts | type=selectionEntry | hidden=false | targetId=r47-ih-splinter-bolts
+            constraint | id=r47-tactical-unit-ih-splinter-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-22 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-x
+        selectionEntry | id=live-r5-chainaxe-tactical-unit-normal | name=Chainaxes — entire squad (+4 pts/model) | type=upgrade | hidden=false
+            constraint | id=live-r5-chainaxe-tactical-unit-normal-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r48-vis-10 | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xii
+            modifier | id=live-r5-chainaxe-tactical-unit-normal-scale-0 | type=increment | field=pts | value=4
+            modifier | id=live-r5-chainaxe-tactical-unit-normal-scale-1 | type=increment | field=pts | value=4
+            modifier | id=live-r5-chainaxe-tactical-unit-normal-needs-chainsword | type=set | field=hidden | value=true
+                conditionGroup | type=and
+            cost | name=Points | value=0
+        selectionEntry | id=r6-tactical-unit-aeonid-thiel | name=Replace Sergeant with Aeonid Thiel | type=upgrade | hidden=false
+            cost | name=Points | value=80
+            constraint | id=r6-tactical-unit-aeonid-thiel-max | type=max | field=selections | value=1 | scope=parent
+            constraint | id=r6-tactical-unit-aeonid-thiel-uniq | type=max | field=selections | value=1 | scope=roster
+            modifier | id=r6-tactical-unit-aeonid-thiel-um-only | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xiii
+            modifier | id=r6-tactical-unit-aeonid-thiel-r8-other-thiel | type=set | field=hidden | value=true
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r6-veteran-unit-aeonid-thiel
+            selectionEntryGroup | id=r8-tactical-unit-thiel-tactic | name=Unorthodox Tactics — choose one | hidden=false
+                constraint | id=r8-tactical-unit-thiel-tactic-min | type=min | field=selections | value=1 | scope=parent
+                constraint | id=r8-tactical-unit-thiel-tactic-max | type=max | field=selections | value=1 | scope=parent
+                selectionEntry | id=r8-tactical-unit-thiel-tactic-0 | name=Counter-Attack | type=upgrade | hidden=false
+                selectionEntry | id=r8-tactical-unit-thiel-tactic-1 | name=Move Through Cover | type=upgrade | hidden=false
+                selectionEntry | id=r8-tactical-unit-thiel-tactic-2 | name=Night Vision | type=upgrade | hidden=false
+                selectionEntry | id=r8-tactical-unit-thiel-tactic-3 | name=Tank Hunters | type=upgrade | hidden=false
+        selectionEntry | id=r6-um-combat-squads | name=Combat Squads — split 10 models into two squads of 5 | type=upgrade | hidden=false
+            cost | name=Points | value=0
+            constraint | id=r6-um-combat-squads-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r6-um-combat-squads-um-only | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xiii
+            modifier | id=r6-um-combat-squads-lessThan | type=set | field=hidden | value=true
+                conditionGroup | type=or
+            modifier | id=r6-um-combat-squads-atLeast | type=set | field=hidden | value=true
+                conditionGroup | type=or
+    selectionEntryGroup | id=r52-tactical-unit-third-shrieker | name=3rd Company Elite — Sonic Assault | hidden=false
+        selectionEntry | id=r52-tactical-unit-third-shrieker-model | name=Sonic Shrieker — select once per model in the unit | type=upgrade | hidden=false
+            constraint | id=r52-tactical-unit-third-shrieker-model-max | type=max | field=selections | value=20 | scope=parent
+            cost | name=Points | value=2
+        modifier | id=r52-tactical-unit-third-shrieker-hide-legion-iii | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-iii
+        modifier | id=r52-tactical-unit-third-shrieker-hide-allegiance-traitor | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=allegiance-traitor
+        modifier | id=r52-tactical-unit-third-shrieker-hide-r25-rite-iii-1-3rd-company-elite | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=force | childId=r25-rite-iii-1-3rd-company-elite
+    selectionEntryGroup | id=r57-tactical-unit-iw | name=Iron Warriors Armoury | hidden=false
+        selectionEntry | id=r57-tactical-unit-iw-shrapnel | name=Shrapnel Bolts | type=upgrade | hidden=false
+            constraint | id=r57-tactical-unit-iw-shrapnel-max | type=max | field=selections | value=1 | scope=parent
+            cost | id=r57-tactical-unit-iw-shrapnel-pts | name=Points | value=5
+        selectionEntry | id=r57-tactical-unit-iw-servo | name=Servo-Arm | type=upgrade | hidden=false
+            constraint | id=r57-tactical-unit-iw-servo-max | type=max | field=selections | value=1 | scope=parent
+            cost | id=r57-tactical-unit-iw-servo-pts | name=Points | value=30
+        selectionEntry | id=r57-tactical-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false
+            constraint | id=r57-tactical-unit-iw-bionics-max | type=max | field=selections | value=1 | scope=parent
+            cost | id=r57-tactical-unit-iw-bionics-pts | name=Points | value=5
+        modifier | id=r57-tactical-unit-iw-hide-missing-legion-iv | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-iv
+    selectionEntryGroup | id=live-r2-fabius-enhanced-tactical-unit-group | name=Fabius Bile | hidden=false
+        selectionEntry | id=live-r2-fabius-enhanced-tactical-unit | name=Enhanced Warriors | type=upgrade | hidden=false
+            constraint | id=live-r2-fabius-enhanced-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-0 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-1 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-2 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-3 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-4 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-5 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-scale-6 | type=increment | field=pts | value=3
+            modifier | id=live-r2-fabius-enhanced-tactical-unit-hide | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r41-unit-iii-7-fabius-bile
+    selectionEntryGroup | id=live-r2-fulgrim-blessing-tactical-unit-group | name=Special Upgrades | hidden=false
+        selectionEntry | id=live-r2-fulgrim-blessing-tactical-unit | name=Blessing of Slaanesh | type=upgrade | hidden=false
+            cost | name=Points | value=25
+            constraint | id=live-r2-fulgrim-blessing-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=live-r2-live-r2-fulgrim-blessing-tactical-unit-hide | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r41-unit-iii-10-fulgrim-transfigured
+    selectionEntryGroup | id=r16-dg-plague-group-tactical-unit | name=Sons of the Plague Father | hidden=false
+        selectionEntry | id=r16-dg-plague-tactical-unit | name=Upgrade to Plague Marines (+7 pts/model) | type=upgrade | hidden=false
+            constraint | id=r16-dg-plague-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r16-dg-plague-tactical-unit-mortarion | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r41-unit-xiv-9-mortarion-prince-of-decay
+            modifier | id=r16-dg-plague-tactical-unit-cost-0 | type=increment | field=pts | value=7
+            modifier | id=r16-dg-plague-tactical-unit-cost-1 | type=increment | field=pts | value=7
+            cost | name=Points | value=0
+    selectionEntryGroup | id=r19-ts-tactical-brotherhood-disciplines | name=Fellowships Psychic Brotherhood — Psychic Discipline(s) | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-disc-min | type=min | field=selections | value=0 | scope=parent
+        constraint | id=r19-ts-tactical-brotherhood-disc-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-tactical-brotherhood-disc-biomancy | name=Biomancy | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-disc-biomancy-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-tactical-brotherhood-disc-divination | name=Divination | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-disc-divination-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-tactical-brotherhood-disc-pyromancy | name=Pyromancy | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-disc-pyromancy-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-tactical-brotherhood-disc-telekinesis | name=Telekinesis | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-disc-telekinesis-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-tactical-brotherhood-disc-telepathy | name=Telepathy | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-disc-telepathy-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r19-ts-tactical-brotherhood-disc-hide-0 | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+        modifier | id=r19-ts-tactical-brotherhood-disc-min-on | type=set | field=r19-ts-tactical-brotherhood-disc-min | value=1
+            conditionGroup | type=and
+                condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+    selectionEntryGroup | id=r19-ts-tactical-brotherhood-powers | name=Fellowships Psychic Brotherhood — Psychic Powers | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-power-min | type=min | field=selections | value=0 | scope=parent
+        constraint | id=r19-ts-tactical-brotherhood-power-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-smite | name=Smite | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-smite-r61-librarian-power1-biomancy-smite-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-smite-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-iron-arm | name=Iron Arm | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-iron-arm-r61-librarian-power1-biomancy-iron-arm-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-iron-arm-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-enfeeble | name=Enfeeble | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-enfeeble-r61-librarian-power1-biomancy-enfeeble-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-enfeeble-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-life-leech | name=Life Leech | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-life-leech-r61-librarian-power1-biomancy-life-leech-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-life-leech-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-warp-speed | name=Warp Speed | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-warp-speed-r61-librarian-power1-biomancy-warp-speed-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-warp-speed-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-endurance | name=Endurance | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-endurance-r61-librarian-power1-biomancy-endurance-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-endurance-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-haemorrhage | name=Haemorrhage | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-biomancy-haemorrhage-r61-librarian-power1-biomancy-haemorrhage-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-biomancy-haemorrhage-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-prescience | name=Prescience | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-prescience-r61-librarian-power1-divination-prescience-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-prescience-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-foreboding | name=Foreboding | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-foreboding-r61-librarian-power1-divination-foreboding-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-foreboding-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-forewarning | name=Forewarning | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-forewarning-r61-librarian-power1-divination-forewarning-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-forewarning-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-perfect-timing | name=Perfect Timing | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-perfect-timing-r61-librarian-power1-divination-perfect-timing-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-perfect-timing-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-precognition | name=Precognition | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-precognition-r61-librarian-power1-divination-precognition-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-precognition-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-misfortune | name=Misfortune | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-misfortune-r61-librarian-power1-divination-misfortune-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-misfortune-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-scrier-s-gaze | name=Scrier's Gaze | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-divination-scrier-s-gaze-r61-librarian-power1-divination-scrier-s-gaze-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-divination-scrier-s-gaze-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-flame-breath | name=Flame Breath | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-flame-breath-r61-librarian-power1-pyromancy-flame-breath-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-flame-breath-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-fiery-form | name=Fiery Form | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-fiery-form-r61-librarian-power1-pyromancy-fiery-form-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-fiery-form-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-molton-beam | name=Molton Beam | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-molton-beam-r61-librarian-power1-pyromancy-molton-beam-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-molton-beam-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-fire-shield | name=Fire Shield | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-fire-shield-r61-librarian-power1-pyromancy-fire-shield-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-fire-shield-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-sunburst | name=Sunburst | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-sunburst-r61-librarian-power1-pyromancy-sunburst-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-sunburst-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-inferno | name=Inferno | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-inferno-r61-librarian-power1-pyromancy-inferno-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-inferno-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-spontaneous-combustion | name=Spontaneous Combustion | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-pyromancy-spontaneous-combustion-r61-librarian-power1-pyromancy-spontaneous-combustion-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-spontaneous-combustion-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-assail | name=Assail | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-assail-r61-librarian-power1-telekinesis-assail-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-assail-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-crush | name=Crush | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-crush-r61-librarian-power1-telekinesis-crush-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-crush-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-objuration-mechanicum | name=Objuration Mechanicum | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-objuration-mechanicum-r61-librarian-power1-telekinesis-objuration-mechanicum-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-objuration-mechanicum-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-shockwave | name=Shockwave | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-shockwave-r61-librarian-power1-telekinesis-shockwave-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-shockwave-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-levitation | name=Levitation | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-levitation-r61-librarian-power1-telekinesis-levitation-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-levitation-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-telekine-dome | name=Telekine Dome | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-telekine-dome-r61-librarian-power1-telekinesis-telekine-dome-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-telekine-dome-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-psychic-maelstrom | name=Psychic Maelstrom | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telekinesis-psychic-maelstrom-r61-librarian-power1-telekinesis-psychic-maelstrom-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-psychic-maelstrom-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-psychic-shriek | name=Psychic Shriek | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-psychic-shriek-r61-librarian-power1-telepathy-psychic-shriek-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-psychic-shriek-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-dominate | name=Dominate | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-dominate-r61-librarian-power1-telepathy-dominate-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-dominate-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-mental-fortitude | name=Mental Fortitude | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-mental-fortitude-r61-librarian-power1-telepathy-mental-fortitude-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-mental-fortitude-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-terrify | name=Terrify | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-terrify-r61-librarian-power1-telepathy-terrify-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-terrify-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-hallucination | name=Hallucination | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-hallucination-r61-librarian-power1-telepathy-hallucination-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-hallucination-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-invisibility | name=Invisibility | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-invisibility-r61-librarian-power1-telepathy-invisibility-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-invisibility-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-shrouding | name=Shrouding | type=upgrade | hidden=false
+            constraint | id=r19-ts-tactical-brotherhood-telepathy-shrouding-r61-librarian-power1-telepathy-shrouding-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-tactical-brotherhood-power-telepathy-shrouding-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+        modifier | id=r19-ts-tactical-brotherhood-pow-hide-0 | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+        modifier | id=r19-ts-tactical-brotherhood-pow-min-on | type=set | field=r19-ts-tactical-brotherhood-power-min | value=1
+            conditionGroup | type=and
+                condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+    entryLink | id=r40-da-forward-tactical-unit | name=Forward Deployment — Infiltrate | type=selectionEntry | hidden=true | targetId=r40-da-forward-deployment
+        constraint | id=r40-da-forward-tactical-unit-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | type=set | field=hidden | value=false
+            conditionGroup | type=and
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-i
+                condition | type=atLeast | field=selections | value=1 | scope=force | childId=da22-rite-serpent
+                condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=da-wing-tactical-unit-4
+    entryLink | id=r64-if-tactical-unit-hammerfall-trans | name=Teleportation Transponders | type=selectionEntry | hidden=false | targetId=r64-if-gear-trans-unit
+        constraint | id=r64-if-tactical-unit-hammerfall-trans-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r64-if-tactical-unit-hammerfall-trans-rite | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r25-rite-vii-1-hammerfall-strike-force
+
+=== r45-tactical-ts-brother ===
+entryLink | id=r45-tactical-ts-brother | name=Brotherhood of Psykers (20-model Tactical Squad) | type=selectionEntry | hidden=false | targetId=r45-ts-tactical-brotherhood
+    constraint | id=r45-tactical-ts-brother-max | type=max | field=selections | value=1 | scope=parent
+    modifier | id=r48-vis-12 | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+    modifier | id=r18-ts-tactical-brotherhood-rite | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+    modifier | id=r18-ts-tactical-brotherhood-size | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=19 | scope=root-entry | childId=tac-marine
+
+=== r19-ts-tactical-brotherhood-disciplines ===
+selectionEntryGroup | id=r19-ts-tactical-brotherhood-disciplines | name=Fellowships Psychic Brotherhood — Psychic Discipline(s) | hidden=false
+    constraint | id=r19-ts-tactical-brotherhood-disc-min | type=min | field=selections | value=0 | scope=parent
+    constraint | id=r19-ts-tactical-brotherhood-disc-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r19-ts-tactical-brotherhood-disc-biomancy | name=Biomancy | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-disc-biomancy-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r19-ts-tactical-brotherhood-disc-divination | name=Divination | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-disc-divination-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r19-ts-tactical-brotherhood-disc-pyromancy | name=Pyromancy | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-disc-pyromancy-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r19-ts-tactical-brotherhood-disc-telekinesis | name=Telekinesis | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-disc-telekinesis-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r19-ts-tactical-brotherhood-disc-telepathy | name=Telepathy | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-disc-telepathy-max | type=max | field=selections | value=1 | scope=parent
+    modifier | id=r19-ts-tactical-brotherhood-disc-hide-0 | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+    modifier | id=r19-ts-tactical-brotherhood-disc-min-on | type=set | field=r19-ts-tactical-brotherhood-disc-min | value=1
+        conditionGroup | type=and
+            condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+
+=== r19-ts-tactical-brotherhood-powers ===
+selectionEntryGroup | id=r19-ts-tactical-brotherhood-powers | name=Fellowships Psychic Brotherhood — Psychic Powers | hidden=false
+    constraint | id=r19-ts-tactical-brotherhood-power-min | type=min | field=selections | value=0 | scope=parent
+    constraint | id=r19-ts-tactical-brotherhood-power-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-smite | name=Smite | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-smite-r61-librarian-power1-biomancy-smite-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-smite-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-iron-arm | name=Iron Arm | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-iron-arm-r61-librarian-power1-biomancy-iron-arm-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-iron-arm-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-enfeeble | name=Enfeeble | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-enfeeble-r61-librarian-power1-biomancy-enfeeble-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-enfeeble-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-life-leech | name=Life Leech | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-life-leech-r61-librarian-power1-biomancy-life-leech-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-life-leech-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-warp-speed | name=Warp Speed | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-warp-speed-r61-librarian-power1-biomancy-warp-speed-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-warp-speed-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-endurance | name=Endurance | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-endurance-r61-librarian-power1-biomancy-endurance-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-endurance-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-biomancy-haemorrhage | name=Haemorrhage | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-biomancy-haemorrhage-r61-librarian-power1-biomancy-haemorrhage-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-biomancy-haemorrhage-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-biomancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-prescience | name=Prescience | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-prescience-r61-librarian-power1-divination-prescience-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-prescience-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-foreboding | name=Foreboding | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-foreboding-r61-librarian-power1-divination-foreboding-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-foreboding-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-forewarning | name=Forewarning | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-forewarning-r61-librarian-power1-divination-forewarning-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-forewarning-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-perfect-timing | name=Perfect Timing | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-perfect-timing-r61-librarian-power1-divination-perfect-timing-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-perfect-timing-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-precognition | name=Precognition | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-precognition-r61-librarian-power1-divination-precognition-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-precognition-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-misfortune | name=Misfortune | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-misfortune-r61-librarian-power1-divination-misfortune-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-misfortune-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-divination-scrier-s-gaze | name=Scrier's Gaze | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-divination-scrier-s-gaze-r61-librarian-power1-divination-scrier-s-gaze-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-divination-scrier-s-gaze-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-divination
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-flame-breath | name=Flame Breath | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-flame-breath-r61-librarian-power1-pyromancy-flame-breath-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-flame-breath-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-fiery-form | name=Fiery Form | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-fiery-form-r61-librarian-power1-pyromancy-fiery-form-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-fiery-form-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-molton-beam | name=Molton Beam | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-molton-beam-r61-librarian-power1-pyromancy-molton-beam-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-molton-beam-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-fire-shield | name=Fire Shield | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-fire-shield-r61-librarian-power1-pyromancy-fire-shield-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-fire-shield-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-sunburst | name=Sunburst | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-sunburst-r61-librarian-power1-pyromancy-sunburst-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-sunburst-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-inferno | name=Inferno | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-inferno-r61-librarian-power1-pyromancy-inferno-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-inferno-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-pyromancy-spontaneous-combustion | name=Spontaneous Combustion | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-pyromancy-spontaneous-combustion-r61-librarian-power1-pyromancy-spontaneous-combustion-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-pyromancy-spontaneous-combustion-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-pyromancy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-assail | name=Assail | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-assail-r61-librarian-power1-telekinesis-assail-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-assail-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-crush | name=Crush | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-crush-r61-librarian-power1-telekinesis-crush-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-crush-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-objuration-mechanicum | name=Objuration Mechanicum | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-objuration-mechanicum-r61-librarian-power1-telekinesis-objuration-mechanicum-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-objuration-mechanicum-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-shockwave | name=Shockwave | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-shockwave-r61-librarian-power1-telekinesis-shockwave-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-shockwave-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-levitation | name=Levitation | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-levitation-r61-librarian-power1-telekinesis-levitation-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-levitation-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-telekine-dome | name=Telekine Dome | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-telekine-dome-r61-librarian-power1-telekinesis-telekine-dome-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-telekine-dome-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telekinesis-psychic-maelstrom | name=Psychic Maelstrom | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telekinesis-psychic-maelstrom-r61-librarian-power1-telekinesis-psychic-maelstrom-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telekinesis-psychic-maelstrom-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telekinesis
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-psychic-shriek | name=Psychic Shriek | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-psychic-shriek-r61-librarian-power1-telepathy-psychic-shriek-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-psychic-shriek-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-dominate | name=Dominate | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-dominate-r61-librarian-power1-telepathy-dominate-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-dominate-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-mental-fortitude | name=Mental Fortitude | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-mental-fortitude-r61-librarian-power1-telepathy-mental-fortitude-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-mental-fortitude-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-terrify | name=Terrify | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-terrify-r61-librarian-power1-telepathy-terrify-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-terrify-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-hallucination | name=Hallucination | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-hallucination-r61-librarian-power1-telepathy-hallucination-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-hallucination-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-invisibility | name=Invisibility | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-invisibility-r61-librarian-power1-telepathy-invisibility-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-invisibility-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    selectionEntry | id=r19-ts-tactical-brotherhood-power-telepathy-shrouding | name=Shrouding | type=upgrade | hidden=false
+        constraint | id=r19-ts-tactical-brotherhood-telepathy-shrouding-r61-librarian-power1-telepathy-shrouding-max | type=max | field=selections | value=1 | scope=parent
+        cost | name=Points | value=0
+        modifier | id=r19-ts-tactical-brotherhood-power-telepathy-shrouding-discipline | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-tactical-brotherhood-disc-telepathy
+    modifier | id=r19-ts-tactical-brotherhood-pow-hide-0 | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+    modifier | id=r19-ts-tactical-brotherhood-pow-min-on | type=set | field=r19-ts-tactical-brotherhood-power-min | value=1
+        conditionGroup | type=and
+            condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r45-tactical-ts-brother
+
+=== SEKHMET ===
+selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false
+    cost | name=Points | value=0.0
+    categoryLink | id=r41-unit-xv-0-sekhmet-terminator-cabal-cat | name=Elites | hidden=false | targetId=cat-elites | primary=true
+        modifier | id=r19-guard-sekhmet-hide-elite | type=set | field=hidden | value=true
+            condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+    categoryLink | id=r18-ts-sekhmet-root-limit | name=Thousand Sons Sekhmet 0-1 | hidden=false | targetId=r18-ts-cat-sekhmet-limit | primary=false
+    categoryLink | id=r18-final-bro-0 | name=Thousand Sons Psychic Brotherhood | hidden=false | targetId=r18-ts-cat-brotherhood | primary=false
+    categoryLink | id=r18-final-cat-sekhmet-01-tag-0 | name=Sekhmet Cabal 0-1 | hidden=false | targetId=r18-final-cat-sekhmet-01 | primary=false
+    categoryLink | id=r19-guard-sekhmet-troops | name=Troops — Guard of the Crimson King | hidden=true | targetId=cat-troops | primary=true
+        modifier | id=r19-guard-sekhmet-show-troops | type=set | field=hidden | value=false
+            condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+    modifier | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+    selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-additional | name=Squad Models | type=model | hidden=false
+        constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-additional-max | type=max | field=selections | value=10 | scope=parent
+        constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-additional-min-total | type=min | field=selections | value=5 | scope=parent
+        cost | name=Points | value=60
+    selectionEntryGroup | id=r41-unit-xv-0-sekhmet-terminator-cabal-options | name=Options | hidden=false
+        selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor | name=Sekhmet Inceptor | type=upgrade | hidden=false
+            constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=20
+        selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-6-grenade-harness | name=Grenade Harness | type=upgrade | hidden=false
+            constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-6-grenade-harness-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=10
+            modifier | id=r18-final-sekhmet-harness-inceptor | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor
+        selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-7-teleportation-transponders | name=Teleportation Transponders | type=upgrade | hidden=false
+            constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-7-teleportation-transponders-max | type=max | field=selections | value=1 | scope=parent
+            constraint | id=r19-sekhmet-trans-min | type=min | field=selections | value=0 | scope=parent
+            cost | name=Points | value=15
+            modifier | id=r18-ts-guard-sekhmet-free-trans | type=set | field=pts | value=0
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+            modifier | id=r19-sekhmet-trans-guard-min | type=set | field=r19-sekhmet-trans-min | value=1
+                condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+        selectionEntryGroup | id=r18-ts-sekhmet-force-replacements | name=Prosperine Force Weapon replacements — any model | hidden=false
+            constraint | id=r18-ts-sekhmet-force-replacements-max | type=max | field=selections | value=5 | scope=parent
+            modifier | id=r18-ts-sekhmet-force-replacements-max10 | type=set | field=r18-ts-sekhmet-force-replacements-max | value=10
+                condition | type=atLeast | field=selections | value=10 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-additional
+            selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-0-power-fist | name=Power fist | type=upgrade | hidden=false
+                constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-0-power-fist-max | type=max | field=selections | value=10 | scope=parent
+                cost | name=Points | value=0
+            selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-1-chainfist | name=Chainfist | type=upgrade | hidden=false
+                constraint | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-1-chainfist-max | type=max | field=selections | value=10 | scope=parent
+                cost | name=Points | value=10
+        selectionEntryGroup | id=r18-final-sekhmet-foeblaster | name=Foeblaster Boltgun replacements — one per model | hidden=false
+            constraint | id=r18-final-sekhmet-foeblaster-max | type=max | field=selections | value=5 | scope=parent
+            modifier | id=r18-final-sekhmet-foeblaster-max10 | type=set | field=r18-final-sekhmet-foeblaster-max | value=10
+                condition | type=atLeast | field=selections | value=10 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-additional
+            selectionEntryGroup | id=r18-ts-sekhmet-heavy-replacements | name=Foeblaster replacements — up to 2 per 5 models | hidden=false
+                constraint | id=r18-ts-sekhmet-heavy-replacements-max | type=max | field=selections | value=2 | scope=parent
+                modifier | id=r18-ts-sekhmet-heavy-replacements-max10 | type=set | field=r18-ts-sekhmet-heavy-replacements-max | value=4
+                selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-2-heavy-flamer | name=Heavy Flamer | type=upgrade | hidden=false
+                selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-3-plasma-blaster | name=Plasma Blaster | type=upgrade | hidden=false
+                selectionEntry | id=r41-unit-xv-0-sekhmet-terminator-cabal-opt-4-reaper-autocannon | name=Reaper Autocannon | type=upgrade | hidden=false
+            entryLink | id=r18-final-sekhmet-combi-terminator-r-cf | name=Combi-Flamer (replaces Combi-bolter) | type=selectionEntry | hidden=false | targetId=gear-combi-flamer
+                constraint | id=r18-final-sekhmet-combi-terminator-r-cf-max | type=max | field=selections | value=10 | scope=parent
+                cost | name=Points | value=10
+            entryLink | id=r18-final-sekhmet-combi-terminator-r-cm | name=Combi-Meltagun (replaces Combi-bolter) | type=selectionEntry | hidden=false | targetId=gear-combi-melta
+                constraint | id=r18-final-sekhmet-combi-terminator-r-cm-max | type=max | field=selections | value=10 | scope=parent
+                cost | name=Points | value=15
+            entryLink | id=r18-final-sekhmet-combi-terminator-r-cp | name=Combi-Plasma Gun (replaces Combi-bolter) | type=selectionEntry | hidden=false | targetId=gear-combi-plasma
+                constraint | id=r18-final-sekhmet-combi-terminator-r-cp-max | type=max | field=selections | value=10 | scope=parent
+                cost | name=Points | value=15
+            entryLink | id=r18-final-sekhmet-combi-terminator-r-cv | name=Combi-Volkite Charger (replaces Combi-bolter) | type=selectionEntry | hidden=false | targetId=gear-combi-volkite
+                constraint | id=r18-final-sekhmet-combi-terminator-r-cv-max | type=max | field=selections | value=10 | scope=parent
+                cost | name=Points | value=10
+    selectionEntryGroup | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal | name=Prosperine Cult | hidden=false
+        constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-min | type=min | field=selections | value=1 | scope=parent
+        constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r48-vis-320 | type=set | field=hidden | value=true
+            condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+        selectionEntry | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0 | name=Pavoni | type=upgrade | hidden=false
+            constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1 | name=Raptora | type=upgrade | hidden=false
+            constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2 | name=Corvidae | type=upgrade | hidden=false
+            constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3 | name=Athanaeans | type=upgrade | hidden=false
+            constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4 | name=Pyrae | type=upgrade | hidden=false
+            constraint | id=r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntryGroup | id=r18-final-sekhmet-transport | name=Dedicated Transport | hidden=false
+        constraint | id=r18-final-sekhmet-transport-max | type=max | field=selections | value=1 | scope=parent
+        entryLink | id=r18-final-sekhmet-trans-terminator-tr-dc | name=Dreadclaw Drop Pod | type=selectionEntry | hidden=false | targetId=transport-dreadclaw
+            constraint | id=r18-final-sekhmet-trans-terminator-tr-dc-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r18-final-sekhmet-trans-terminator-tr-dc-r7-hide-logos | type=set | field=hidden | value=true
+                condition | type=atLeast | field=selections | value=1 | scope=force | childId=r25-rite-xiii-0-the-logos-lectora
+            modifier | id=r18-final-sekhmet-dreadclaw-size | type=set | field=hidden | value=true
+                condition | type=atLeast | field=selections | value=6 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-additional
+        entryLink | id=r18-final-sekhmet-land-raider | name=Land Raider | type=selectionEntry | hidden=false | targetId=hs-land-raider
+            constraint | id=r18-final-sekhmet-land-raider-max | type=max | field=selections | value=1 | scope=parent
+            modifier | id=r18-final-sekhmet-land-raider-size | type=set | field=hidden | value=true
+                condition | type=atLeast | field=selections | value=6 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-additional
+        entryLink | id=r18-final-sekhmet-spartan | name=Legion Spartan Assault Tank | type=selectionEntry | hidden=false | targetId=hs-spartan
+            constraint | id=r18-final-sekhmet-spartan-max | type=max | field=selections | value=1 | scope=parent
+    selectionEntryGroup | id=r19-ts-sekhmet-disciplines | name=Scarab Occult — Psychic Discipline(s) | hidden=false
+        constraint | id=r19-ts-sekhmet-disc-min | type=min | field=selections | value=1 | scope=parent
+        constraint | id=r19-ts-sekhmet-disc-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-sekhmet-disc-biomancy | name=Biomancy | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-disc-biomancy-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-sekhmet-disc-divination | name=Divination | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-disc-divination-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-sekhmet-disc-pyromancy | name=Pyromancy | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-disc-pyromancy-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-sekhmet-disc-telekinesis | name=Telekinesis | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-disc-telekinesis-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-sekhmet-disc-telepathy | name=Telepathy | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-disc-telepathy-max | type=max | field=selections | value=1 | scope=parent
+        modifier | id=r19-ts-sekhmet-dyn-dmax-0 | type=set | field=r19-ts-sekhmet-disc-max | value=2
+            condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor
+    selectionEntryGroup | id=r19-ts-sekhmet-powers | name=Scarab Occult — Psychic Powers | hidden=false
+        constraint | id=r19-ts-sekhmet-power-min | type=min | field=selections | value=1 | scope=parent
+        constraint | id=r19-ts-sekhmet-power-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-smite | name=Smite | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-smite-r61-librarian-power1-biomancy-smite-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-smite-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-iron-arm | name=Iron Arm | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-iron-arm-r61-librarian-power1-biomancy-iron-arm-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-iron-arm-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-enfeeble | name=Enfeeble | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-enfeeble-r61-librarian-power1-biomancy-enfeeble-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-enfeeble-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-life-leech | name=Life Leech | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-life-leech-r61-librarian-power1-biomancy-life-leech-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-life-leech-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-warp-speed | name=Warp Speed | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-warp-speed-r61-librarian-power1-biomancy-warp-speed-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-warp-speed-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-endurance | name=Endurance | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-endurance-r61-librarian-power1-biomancy-endurance-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-endurance-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-biomancy-haemorrhage | name=Haemorrhage | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-biomancy-haemorrhage-r61-librarian-power1-biomancy-haemorrhage-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-biomancy-haemorrhage-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-biomancy
+        selectionEntry | id=r19-ts-sekhmet-power-divination-prescience | name=Prescience | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-prescience-r61-librarian-power1-divination-prescience-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-prescience-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-divination-foreboding | name=Foreboding | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-foreboding-r61-librarian-power1-divination-foreboding-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-foreboding-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-divination-forewarning | name=Forewarning | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-forewarning-r61-librarian-power1-divination-forewarning-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-forewarning-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-divination-perfect-timing | name=Perfect Timing | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-perfect-timing-r61-librarian-power1-divination-perfect-timing-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-perfect-timing-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-divination-precognition | name=Precognition | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-precognition-r61-librarian-power1-divination-precognition-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-precognition-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-divination-misfortune | name=Misfortune | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-misfortune-r61-librarian-power1-divination-misfortune-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-misfortune-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-divination-scrier-s-gaze | name=Scrier's Gaze | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-divination-scrier-s-gaze-r61-librarian-power1-divination-scrier-s-gaze-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-divination-scrier-s-gaze-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-divination
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-flame-breath | name=Flame Breath | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-flame-breath-r61-librarian-power1-pyromancy-flame-breath-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-flame-breath-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-fiery-form | name=Fiery Form | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-fiery-form-r61-librarian-power1-pyromancy-fiery-form-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-fiery-form-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-molton-beam | name=Molton Beam | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-molton-beam-r61-librarian-power1-pyromancy-molton-beam-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-molton-beam-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-fire-shield | name=Fire Shield | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-fire-shield-r61-librarian-power1-pyromancy-fire-shield-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-fire-shield-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-sunburst | name=Sunburst | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-sunburst-r61-librarian-power1-pyromancy-sunburst-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-sunburst-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-inferno | name=Inferno | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-inferno-r61-librarian-power1-pyromancy-inferno-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-inferno-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-pyromancy-spontaneous-combustion | name=Spontaneous Combustion | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-pyromancy-spontaneous-combustion-r61-librarian-power1-pyromancy-spontaneous-combustion-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-pyromancy-spontaneous-combustion-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-pyromancy
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-assail | name=Assail | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-assail-r61-librarian-power1-telekinesis-assail-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-assail-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-crush | name=Crush | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-crush-r61-librarian-power1-telekinesis-crush-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-crush-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-objuration-mechanicum | name=Objuration Mechanicum | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-objuration-mechanicum-r61-librarian-power1-telekinesis-objuration-mechanicum-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-objuration-mechanicum-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-shockwave | name=Shockwave | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-shockwave-r61-librarian-power1-telekinesis-shockwave-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-shockwave-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-levitation | name=Levitation | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-levitation-r61-librarian-power1-telekinesis-levitation-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-levitation-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-telekine-dome | name=Telekine Dome | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-telekine-dome-r61-librarian-power1-telekinesis-telekine-dome-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-telekine-dome-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telekinesis-psychic-maelstrom | name=Psychic Maelstrom | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telekinesis-psychic-maelstrom-r61-librarian-power1-telekinesis-psychic-maelstrom-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telekinesis-psychic-maelstrom-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telekinesis
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-psychic-shriek | name=Psychic Shriek | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-psychic-shriek-r61-librarian-power1-telepathy-psychic-shriek-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-psychic-shriek-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-dominate | name=Dominate | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-dominate-r61-librarian-power1-telepathy-dominate-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-dominate-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-mental-fortitude | name=Mental Fortitude | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-mental-fortitude-r61-librarian-power1-telepathy-mental-fortitude-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-mental-fortitude-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-terrify | name=Terrify | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-terrify-r61-librarian-power1-telepathy-terrify-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-terrify-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-hallucination | name=Hallucination | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-hallucination-r61-librarian-power1-telepathy-hallucination-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-hallucination-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-invisibility | name=Invisibility | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-invisibility-r61-librarian-power1-telepathy-invisibility-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-invisibility-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        selectionEntry | id=r19-ts-sekhmet-power-telepathy-shrouding | name=Shrouding | type=upgrade | hidden=false
+            constraint | id=r19-ts-sekhmet-telepathy-shrouding-r61-librarian-power1-telepathy-shrouding-max | type=max | field=selections | value=1 | scope=parent
+            cost | name=Points | value=0
+            modifier | id=r19-ts-sekhmet-power-telepathy-shrouding-discipline | type=set | field=hidden | value=true
+                condition | type=lessThan | field=selections | value=1 | scope=root-entry | childId=r19-ts-sekhmet-disc-telepathy
+        modifier | id=r19-ts-sekhmet-dyn-pmin-0 | type=set | field=r19-ts-sekhmet-power-min | value=2
+            condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor
+        modifier | id=r19-ts-sekhmet-dyn-pmax-0 | type=set | field=r19-ts-sekhmet-power-max | value=2
+            condition | type=atLeast | field=selections | value=1 | scope=root-entry | childId=r41-unit-xv-0-sekhmet-terminator-cabal-opt-5-sekhmet-inceptor
+    constraint | id=r18-ts-r41-unit-xv-0-sekhmet-terminator-cabal-01 | type=max | field=selections | value=1 | scope=roster
+
+=== MAGNUS ===
+selectionEntry | id=r41-unit-xv-11-xv-magnus-the-red-the-crimson-king | name=XV — MAGNUS THE RED, THE CRIMSON KING | type=unit | hidden=false
+    cost | name=Points | value=550
+    categoryLink | id=r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-cat | name=Lords of War | hidden=false | targetId=cat-low | primary=true
+        modifier | id=r18-ts-guard-magnus-hide-low | type=set | field=hidden | value=true
+    categoryLink | id=r18-ts-guard-magnus-hq | name=HQ — Guard of the Crimson King | hidden=true | targetId=cat-hq | primary=true
+        modifier | id=r18-ts-guard-magnus-show-hq | type=set | field=hidden | value=false
+    categoryLink | id=r18-final-magnus-mortal-form | name=Magnus form 0-1 | hidden=false | targetId=r18-final-cat-magnus-form | primary=false
+    modifier | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+    modifier | id=r18-ts-magnus-min-primarchs-chosen | type=set | field=r18-ts-magnus-min-points | value=1500
+        condition | type=atLeast | field=selections | value=1 | scope=roster | childId=da22-rite-primarchs-chosen
+    constraint | id=r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-unique | type=max | field=selections | value=1 | scope=roster
+    constraint | id=r18-ts-magnus-min-points | type=min | field=limit::points | value=2000 | scope=roster
+    selectionEntryGroup | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue | name=Retinue (does not occupy a separate FOC slot) | hidden=false
+        constraint | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-max | type=max | field=selections | value=1 | scope=parent
+        selectionEntry | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour | name=Legion Honour Guard Squad | type=unit | hidden=false
+        selectionEntry | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-1-hq-praetor-ret-termcommand | name=Legion Terminator Command Squad | type=unit | hidden=false
+        selectionEntry | id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false
+    selectionEntryGroup | id=r19-ts-magnus-disciplines | name=Magnus — Selected Normal Powers — Psychic Discipline(s) | hidden=false
+        constraint | id=r19-ts-magnus-disc-min | type=min | field=selections | value=2 | scope=parent
+        constraint | id=r19-ts-magnus-disc-max | type=max | field=selections | value=3 | scope=parent
+        selectionEntry | id=r19-ts-magnus-disc-biomancy | name=Biomancy | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-disc-divination | name=Divination | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-disc-pyromancy | name=Pyromancy | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-disc-telekinesis | name=Telekinesis | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-disc-telepathy | name=Telepathy | type=upgrade | hidden=false
+    selectionEntryGroup | id=r19-ts-magnus-powers | name=Magnus — Selected Normal Powers — Psychic Powers | hidden=false
+        constraint | id=r19-ts-magnus-power-min | type=min | field=selections | value=3 | scope=parent
+        constraint | id=r19-ts-magnus-power-max | type=max | field=selections | value=3 | scope=parent
+        selectionEntry | id=r19-ts-magnus-power-biomancy-smite | name=Smite | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-biomancy-iron-arm | name=Iron Arm | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-biomancy-enfeeble | name=Enfeeble | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-biomancy-life-leech | name=Life Leech | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-biomancy-warp-speed | name=Warp Speed | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-biomancy-endurance | name=Endurance | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-biomancy-haemorrhage | name=Haemorrhage | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-prescience | name=Prescience | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-foreboding | name=Foreboding | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-forewarning | name=Forewarning | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-perfect-timing | name=Perfect Timing | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-precognition | name=Precognition | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-misfortune | name=Misfortune | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-divination-scrier-s-gaze | name=Scrier's Gaze | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-flame-breath | name=Flame Breath | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-fiery-form | name=Fiery Form | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-molton-beam | name=Molton Beam | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-fire-shield | name=Fire Shield | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-sunburst | name=Sunburst | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-inferno | name=Inferno | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-pyromancy-spontaneous-combustion | name=Spontaneous Combustion | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-assail | name=Assail | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-crush | name=Crush | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-objuration-mechanicum | name=Objuration Mechanicum | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-shockwave | name=Shockwave | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-levitation | name=Levitation | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-telekine-dome | name=Telekine Dome | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telekinesis-psychic-maelstrom | name=Psychic Maelstrom | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-psychic-shriek | name=Psychic Shriek | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-dominate | name=Dominate | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-mental-fortitude | name=Mental Fortitude | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-terrify | name=Terrify | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-hallucination | name=Hallucination | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-invisibility | name=Invisibility | type=upgrade | hidden=false
+        selectionEntry | id=r19-ts-magnus-power-telepathy-shrouding | name=Shrouding | type=upgrade | hidden=false
+
+=== PRAETOR GUARD ML3 ===
+selectionEntry | id=r18-ts-guard-praetor-ml3 | name=Mastery Level 3 — Warlord only | type=upgrade | hidden=false
+    constraint | id=r18-ts-guard-praetor-ml3-max | type=max | field=selections | value=1 | scope=parent
+    cost | name=Points | value=25
+
+=== TRANS UNIT ===
+selectionEntry | id=r45-ts-trans-unit | name=Teleportation Transponders | type=upgrade | hidden=false
+    cost | name=Points | value=15
+    constraint | id=r45-ts-trans-unit-max | type=max | field=selections | value=1 | scope=parent
+    modifier | id=r18-r45-ts-trans-unit-xv-hide | type=set | field=hidden | value=true
+        condition | type=lessThan | field=selections | value=1 | scope=roster | childId=legion-xv
+    modifier | id=r18-ts-guard-free-trans-unit | type=set | field=pts | value=0
+        condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-1-the-guard-of-the-crimson-king
+
+=== FORCE LINKS ===
+categoryLink | id=fl-hq | name=HQ | hidden=false | targetId=cat-hq
+  modifier | id=r45-um-hq-max | type=set | field=fl-hq-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xiii
+  modifier | id=r45-um-logos-hq-min | type=set | field=fl-hq-min | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xiii-0-the-logos-lectora
+  modifier | id=r62-sw-hq-min-reset | type=set | field=fl-hq-min | value=0
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  modifier | id=r62-sw-hq-max-reset | type=set | field=fl-hq-max | value=0
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  modifier | id=r62-sw-hq-min-scale | type=increment | field=fl-hq-min | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  modifier | id=r62-sw-hq-max-scale | type=increment | field=fl-hq-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=greaterThan | field=limit::pts | value=0 | scope=roster | childId=model
+  modifier | id=r62-sw-hq-unlimited-max | type=set | field=fl-hq-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-vi
+    condition | type=lessThan | field=limit::pts | value=0 | scope=roster | childId=model
+  modifier | id=r71-nl-mawdrym-hq-min | type=set | field=fl-hq-min | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r41-unit-viii-8-flaymaster-mawdrym-llansahai
+    condition | type=lessThan | field=selections | value=1 | scope=roster | childId=da22-rite-primarchs-chosen
+  modifier | id=r18-ts-fl-hq-max | type=set | field=fl-hq-max | value=3
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+  constraint | id=fl-hq-min | type=min | field=selections | value=1 | scope=parent
+  constraint | id=fl-hq-max | type=max | field=selections | value=2 | scope=parent
+categoryLink | id=fl-troops | name=Troops | hidden=false | targetId=cat-troops
+  modifier | id=r45-um-logos-troops-min | type=set | field=fl-troops-min | value=3
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xiii-0-the-logos-lectora
+  modifier | id=r46-al-coils-troops-min | type=set | field=fl-troops-min | value=3
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xx-0-the-coils-of-the-hydra
+  constraint | id=fl-troops-min | type=min | field=selections | value=2 | scope=parent
+  constraint | id=fl-troops-max | type=max | field=selections | value=6 | scope=parent
+categoryLink | id=fl-elites | name=Elites | hidden=false | targetId=cat-elites
+  modifier | id=r18-ts-fl-elites-max | type=set | field=fl-elites-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+  constraint | id=fl-elites-max | type=max | field=selections | value=3 | scope=parent
+categoryLink | id=fl-fast | name=Fast Attack | hidden=false | targetId=cat-fast
+  modifier | id=r43-iw-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-iv
+  modifier | id=r64-if-stone-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-vii-0-the-stone-gauntlet
+  modifier | id=r64-if-templar-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-vii-2-templar-assault
+  modifier | id=r73-nl-fl-fast | type=set | field=fl-fast-max | value=4
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-viii
+  modifier | id=r80-ih-head-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-x-0-the-head-of-the-gorgon
+  modifier | id=r81-ih-head-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-x-0-the-head-of-the-gorgon
+  modifier | id=r18-ts-fl-fast-max | type=set | field=fl-fast-max | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+  modifier | id=r18-ts-fellowships-fast-max | type=set | field=fl-fast-max | value=1
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+  constraint | id=fl-fast-max | type=max | field=selections | value=3 | scope=parent
+categoryLink | id=r18-ts-brotherhood-limit | name=Fellowships — Psychic Brotherhoods | hidden=true | targetId=r18-ts-cat-brotherhood
+  modifier | id=r18-ts-brotherhood-min-fellowships | type=set | field=r18-ts-brotherhood-min | value=2
+    condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+  constraint | id=r18-ts-brotherhood-min | type=min | field=selections | value=0 | scope=parent
+categoryLink | id=r18-ts-sekhmet-limit | name=Sekhmet 0-1 | hidden=true | targetId=r18-ts-cat-sekhmet-limit
+  constraint | id=r18-ts-sekhmet-limit-max | type=max | field=selections | value=1 | scope=parent
+categoryLink | id=r19-ts-rite-limit | name=Thousand Sons Rite of War 0-1 | hidden=true | targetId=r19-ts-cat-rite-limit
+  constraint | id=r19-ts-rite-limit-max | type=max | field=selections | value=1 | scope=parent
