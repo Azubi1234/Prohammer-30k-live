@@ -1,0 +1,17 @@
+LIVE R21 — THOUSAND SONS RITE HOTFIX
+MODE=DRY RUN
+INPUT CAT=20 | OUTPUT CAT=21 | GSTref=1
+
+• Tactical automatic loadout wargear no longer remains selected while hidden (7 child links fixed)
+• Fellowships Tactical Brotherhood visibility rebuilt: Rite selected + exactly full 20-model squad (19 Marines + Sergeant); removed 2 stale blockers
+• Veteran and Terminator Fellowship Brotherhood pricing now switches using roster-scope Rite checks only (+25 normally / +15 in Fellowships)
+• Guard of the Crimson King now functionally shifts Magnus to HQ, Sekhmet to Troops, gates Praetor ML3 to the Rite and makes Terminator Transponders free
+• Axis of Dissolution duplicate maximum-size modifiers cleaned (4 obsolete R18 modifiers removed; current max-size enforcement retained)
+
+Still explicit text rather than unsafe automation:
+• Fellowships: Warlord must be a Thousand Sons Psyker; every Brotherhood must share a Cult with at least one Thousand Sons IC; no Allied Detachment.
+• Guard: Warlord identity and Vehicle-to-Legiones ratio; no Allied Detachment/Fortification.
+• Axis: Vehicle-to-Infantry ratio and Fortification ban where the GST exposes no reliable force slot.
+• Guard retains the written Sekhmet 0–1 vs compulsory-Troops contradiction; no invented override.
+
+VALIDATION: PASS
