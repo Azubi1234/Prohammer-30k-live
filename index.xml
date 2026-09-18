@@ -2,6 +2,6 @@
 <ns0:dataIndex xmlns:ns0="http://www.battlescribe.net/schema/dataIndexSchema" battleScribeVersion="2.03" name="Prohammer 30k Live">
   <ns0:dataIndexEntries>
     <ns0:dataIndexEntry filePath="Prohammer 30k.gst" dataType="gamesystem" dataId="sys-6f3a-91d2-b47c-5e08" dataName="Prohammer 30k Live" dataBattleScribeVersion="2.03" dataRevision="1" />
-    <ns0:dataIndexEntry filePath="Legiones Astartes.cat" dataType="catalogue" dataId="cat-7b24-e6f1-83a9-4c50" dataName="Legiones Astartes" dataBattleScribeVersion="2.03" dataRevision="18" />
+    <ns0:dataIndexEntry filePath="Legiones Astartes.cat" dataType="catalogue" dataId="cat-7b24-e6f1-83a9-4c50" dataName="Legiones Astartes" dataBattleScribeVersion="2.03" dataRevision="19" />
   </ns0:dataIndexEntries>
 </ns0:dataIndex>
