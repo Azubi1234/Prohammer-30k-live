@@ -27,3 +27,4 @@ jobs:
           git add inspection-r19-thousand-sons-cleanup.txt
           git diff --cached --quiet || git commit -m "Inspect R19 Thousand Sons cleanup"
           git push
+# rerun after Brotherhood selector gating fix
