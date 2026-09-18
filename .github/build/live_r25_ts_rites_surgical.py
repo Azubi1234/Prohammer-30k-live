@@ -1,5 +1,5 @@
 from pathlib import Path
-import os,re,xml.etree.ElementTree as ET,difflib
+import os,re,xml.etree.ElementTree as ET
 
 CAT=Path('Legiones Astartes.cat'); GST=Path('Prohammer 30k.gst'); IDX=Path('index.xml')
 OUT=Path('inspection-live-r25-ts-rites-surgical.txt')
@@ -139,8 +139,6 @@ for eid in ('load-standard-b','load-standard-p'):
 
 # Keep the edit intentionally tiny: no namespace/global reserialization.
 orig=CAT.read_text(encoding='utf-8')
-ratio=1.0-difflib.SequenceMatcher(None,orig,cat).ratio()
-# SequenceMatcher on 18MB is expensive and not meaningful; report raw length delta instead.
 delta=len(cat)-len(orig)
 
 lines=[
