@@ -1,0 +1,13 @@
+LIVE R26 — THOUSAND SONS DISCIPLINE + GUARD FIX
+MODE=DRY RUN
+CAT 25 -> 26 | GST revision remains 1
+
+• Fellowships Tactical Brotherhood now keys its Discipline/Power UI to the actual selected shared Brotherhood upgrade, so the discipline selector appears after the +25 Brotherhood upgrade is chosen.
+• UI is explicitly two-step: Psychic Discipline (choose 1) -> Psychic Power (choose 1 from selected discipline).
+• Guard Praetor Mastery Level 3 upgrade is now hidden unless Guard of the Crimson King is selected.
+• Guard of the Crimson King now explicitly ignores Sekhmet 0-1 as requested.
+• All three Sekhmet 0-1 enforcement layers are overridden under Guard: direct roster max + both hidden force-category max constraints.
+• Existing Sekhmet -> Troops, Magnus -> HQ and free Terminator Transponder logic remains in place.
+• Raw XML text editing only; no catalogue re-serialization.
+
+VALIDATION: PASS
