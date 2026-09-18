@@ -1,5 +1,5 @@
 LIVE R20 — IRON HANDS MOBILE BIONICS + FORCED PUBLISH
-MODE=DRY RUN
+MODE=APPLY
 INPUT CAT=19 | OUTPUT CAT=20 | GSTref=1
 
 • Iron Hands Bionics added to Legion Assault Squads, Legion Bike Squadrons and Legion Attack Bike Squadrons.
