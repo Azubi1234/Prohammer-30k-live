@@ -1,0 +1,8 @@
+=== CAT r18-ts-cat-sekhmet-limit ===
+categoryEntry | id=r18-ts-cat-sekhmet-limit | name=Thousand Sons Sekhmet 0-1 | hidden=true
+=== CAT r18-final-cat-sekhmet-01 ===
+categoryEntry | id=r18-final-cat-sekhmet-01 | name=Sekhmet Cabal 0-1 | hidden=true
+LINK categoryLink | id=r18-ts-sekhmet-limit | name=Sekhmet 0-1 | hidden=true | targetId=r18-ts-cat-sekhmet-limit
+  constraint | id=r18-ts-sekhmet-limit-max | type=max | field=selections | value=1 | scope=parent
+LINK categoryLink | id=r18-final-cat-sekhmet-01-force | name=Sekhmet Cabal 0-1 | hidden=true | targetId=r18-final-cat-sekhmet-01
+  constraint | id=r18-final-cat-sekhmet-01-max | type=max | field=selections | value=1 | scope=parent
