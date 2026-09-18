@@ -1,0 +1,17 @@
+=== r18-ts-fl-hq-max ===
+modifier | id=r18-ts-fl-hq-max | type=set | field=fl-hq-max | value=3
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+=== r18-ts-fl-elites-max ===
+modifier | id=r18-ts-fl-elites-max | type=set | field=fl-elites-max | value=4
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+=== r18-ts-fl-fast-max ===
+modifier | id=r18-ts-fl-fast-max | type=set | field=fl-fast-max | value=2
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=legion-xv
+=== r18-ts-fellowships-fast-max ===
+modifier | id=r18-ts-fellowships-fast-max | type=set | field=fl-fast-max | value=1
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+=== r18-ts-brotherhood-min-fellowships ===
+modifier | id=r18-ts-brotherhood-min-fellowships | type=set | field=r18-ts-brotherhood-min | value=2
+  condition | type=atLeast | field=selections | value=1 | scope=roster | childId=r25-rite-xv-2-the-fellowships-of-prospero
+=== r19-ts-rite-limit-max ===
+constraint | id=r19-ts-rite-limit-max | type=max | field=selections | value=1 | scope=parent
