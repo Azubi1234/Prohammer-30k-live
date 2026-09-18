@@ -1,0 +1,26 @@
+name: Dry-run R25 Thousand Sons Rites Surgical Fix
+on:
+  push:
+    paths:
+      - '.github/build/live_r25_ts_rites_surgical.py'
+      - '.github/workflows/dry-run-r25-ts-rites-surgical.yml'
+permissions: {contents: write}
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Surgical dry-run
+        env: {R25_APPLY: '0'}
+        run: python .github/build/live_r25_ts_rites_surgical.py
+      - name: Verify live files untouched
+        run: git diff --exit-code -- 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml
+      - name: Commit inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-live-r25-ts-rites-surgical.txt
+          git diff --cached --quiet || git commit -m "Inspect R25 Thousand Sons rites surgical fix"
+          git push
