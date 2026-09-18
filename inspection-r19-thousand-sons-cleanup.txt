@@ -1,0 +1,36 @@
+R19 THOUSAND SONS CLEANUP — DRY RUN
+Input CAT revision: 18 | Proposed CAT revision: 19 | GST revision remains 1
+LIVE FILES WRITTEN: NO
+
+CHANGES:
+  + Psychic UI rebuilt into Librarian-style Discipline(s) -> Powers for 16 interfaces; flat multi-discipline walls removed
+  + Prosperine Cult display rebuilt on 210 unit/character Cult options: Arcana and Cult Mastery are now separate unit-facing rules
+  + XV source-wall cleanup: hid 15 imported Source Entry blocks and replaced key unit/character rules with discrete entries, including Sanakht
+  + Rites rebuilt as discrete rules; Axis maximum-size enforcement applied to 53 scalable Troops entries; Guard reclassifies Sekhmet as Troops and forces 31 free Terminator Transponder options
+  + No safe Fortification force-category link exists in the current GST; Fortification bans remain explicit Rite text
+
+PSYCHIC INTERFACES:
+  - r19-ts-praetor: 5 discipline option(s), 35 power option(s), choose 2-2 power(s)
+  - r19-ts-centurion: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-veteran-unit-brotherhood: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-terminator-unit-brotherhood: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-tactical-brotherhood: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-sekhmet: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-ammitara: 2 discipline option(s), 14 power option(s), choose 1-1 power(s)
+  - r19-ts-osiron: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-phosis: 1 discipline option(s), 7 power option(s), choose 2-2 power(s)
+  - r19-ts-amon: 1 discipline option(s), 7 power option(s), choose 2-2 power(s)
+  - r19-ts-hathor: 1 discipline option(s), 7 power option(s), choose 2-2 power(s)
+  - r19-ts-ahriman-cabal: 1 discipline option(s), 7 power option(s), choose 2-2 power(s)
+  - r19-r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-crimson-guard-power: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-1-hq-praetor-ret-termcommand-crimson-guard-power: 5 discipline option(s), 35 power option(s), choose 1-1 power(s)
+  - r19-ts-magnus: 5 discipline option(s), 35 power option(s), choose 3-3 power(s)
+  - r19-ts-shard: 5 discipline option(s), 35 power option(s), choose 6-6 power(s)
+
+RITE LIMITS INTENTIONALLY LEFT AS TEXT:
+  - Guard of the Crimson King: Sekhmet remains source 0–1 even though the Rite requires Sekhmet to fill compulsory Troops; no invented override.
+  - Axis/Guard cross-unit Vehicle ratios are not automated because nested/linked unit-type counting is not dependable.
+  - Warlord identity restrictions are not automated because the current catalogue has no single reliable Warlord marker.
+  - Allied Detachment bans and Fellowships Order of the Cults remain explicit text rather than unsafe cross-force/cross-root validation.
+
+R19 RESULT: PASS
