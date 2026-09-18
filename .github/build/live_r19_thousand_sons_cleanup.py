@@ -277,16 +277,25 @@ for uid in ('veteran-unit','terminator-unit'):
     # The interface is only required when either Brotherhood upgrade is selected.
     dg=findid(root,'r19-ts-'+uid+'-brotherhood-disciplines')
     pg=findid(root,'r19-ts-'+uid+'-brotherhood-powers')
-    # overwrite requirement behavior: XV AND (normal OR fellow)
+    # overwrite requirement behavior: XV AND (normal OR fellow).
+    # Remove the generic XV-only min-on modifier first, otherwise the hidden
+    # interface would still demand a power when no Brotherhood upgrade is taken.
+    pref='r19-ts-'+uid+'-brotherhood'
     for g in (dg,pg):
-        # min baseline zero
         for c in list(g.find(C('constraints')) or []):
             if c.get('type')=='min': c.set('value','0')
+        ms=g.find(C('modifiers'))
+        if ms is not None:
+            for m in list(ms):
+                if m.get('id') in (pref+'-disc-min-on',pref+'-pow-min-on',g.get('id')+'-min-brother'):
+                    ms.remove(m)
         add_modifier(g,g.get('id')+'-hide-no-brother','set','hidden','true',
                      groups=[('and',[cond('lessThan',1,normal.get('id'),'root-entry'),cond('lessThan',1,fellow.get('id'),'root-entry')])])
         minc=next(c for c in g.find(C('constraints')) if c.get('type')=='min')
-        add_modifier(g,g.get('id')+'-min-brother','set',minc.get('id'),1,
-                     groups=[('or',[cond('atLeast',1,normal.get('id'),'root-entry'),cond('atLeast',1,fellow.get('id'),'root-entry')])])
+        add_modifier(g,g.get('id')+'-min-normal','set',minc.get('id'),1,
+                     groups=[('and',[cond('atLeast',1,'legion-xv','roster'),cond('atLeast',1,normal.get('id'),'root-entry')])])
+        add_modifier(g,g.get('id')+'-min-fellow','set',minc.get('id'),1,
+                     groups=[('and',[cond('atLeast',1,'legion-xv','roster'),cond('atLeast',1,fellow.get('id'),'root-entry')])])
 
 # Fellowship Tactical Brotherhood: any normal XV discipline.
 tac=findid(root,'tactical-unit')
