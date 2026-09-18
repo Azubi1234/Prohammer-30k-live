@@ -1,0 +1,1 @@
+LIVE R22 — FORCED NEW RECRUIT REFRESH\nNo rules content changed from R21.\nCatalogue revision: 21 -> 22\nindex.xml dataRevision: 21 -> 22\nPurpose: force New Recruit to invalidate the previous cached catalogue/index state.\n
