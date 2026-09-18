@@ -63,23 +63,21 @@ cat=cat[:m.start()]+m.group(1)+body+m.group(3)+cat[m.end():]
 
 # Guard explicitly overrides the main Sekhmet roster 0-1 constraint.
 sek_id='r41-unit-xv-0-sekhmet-terminator-cabal'
-sek_pat=re.compile(r'(<selectionEntry\b(?=[^>]*\bid="'+re.escape(sek_id)+r'")[^>]*>)(.*?)(?=<selectionEntry id="r41-unit-xv-0-sekhmet-terminator-cabal-additional")',re.S)
-sm=sek_pat.search(cat)
-if not sm: raise RuntimeError('Sekhmet root pre-model block not found')
-pre=sm.group(2)
-if 'r26-guard-sekhmet-direct-unlimited' not in pre:
-    # Direct root modifiers container exists before model entries.
-    mods=re.search(r'<modifiers>(.*?)</modifiers>',pre,re.S)
-    if not mods: raise RuntimeError('Sekhmet direct modifiers container not found')
+unit_start=cat.find('<selectionEntry id="'+sek_id+'"')
+if unit_start<0: raise RuntimeError('Sekhmet root entry not found')
+first_children=cat.find('<selectionEntries>',unit_start)
+mods_start=cat.find('<modifiers>',unit_start,first_children)
+mods_end=cat.find('</modifiers>',mods_start,first_children)
+if mods_start<0 or mods_end<0: raise RuntimeError('Sekhmet direct modifiers container not found')
+direct_block=cat[mods_start:mods_end+len('</modifiers>')]
+if 'r26-guard-sekhmet-direct-unlimited' not in direct_block:
     extra=f'''
         <modifier id="r26-guard-sekhmet-direct-unlimited" type="set" value="99" field="r18-ts-r41-unit-xv-0-sekhmet-terminator-cabal-01">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="{GUARD}" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>'''
-    newmods=mods.group(1)+extra
-    pre=pre[:mods.start(1)]+newmods+pre[mods.end(1):]
-    cat=cat[:sm.start(2)]+pre+cat[sm.end(2):]
+    cat=cat[:mods_end]+extra+cat[mods_end:]
 
 # Update Guard rule wording: requested interpretation overrides Sekhmet's normal 0-1.
 old_note='Sekhmet Terminator Cabals are Troops choices and must fulfil the compulsory Troops selections. Note: the Sekhmet entry is also explicitly 0–1; that written source contradiction is preserved rather than silently overridden.'
