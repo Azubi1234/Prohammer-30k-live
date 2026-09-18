@@ -1,0 +1,29 @@
+name: Dry-run R19 Thousand Sons cleanup
+on:
+  push:
+    paths:
+      - '.github/build/live_r19_thousand_sons_cleanup.py'
+      - '.github/workflows/dry-run-r19-thousand-sons-cleanup.yml'
+permissions:
+  contents: write
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run R19 in memory only
+        env:
+          R19_APPLY: '0'
+        run: python .github/build/live_r19_thousand_sons_cleanup.py
+      - name: Verify live catalogue was untouched
+        run: git diff --exit-code -- 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml
+      - name: Commit dry-run inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r19-thousand-sons-cleanup.txt
+          git diff --cached --quiet || git commit -m "Inspect R19 Thousand Sons cleanup"
+          git push
