@@ -1,0 +1,36 @@
+name: Apply Live R26 TS Discipline and Guard
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r26-ts-discipline-guard.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R26
+        env: {R26_APPLY: '1'}
+        run: python .github/build/live_r26_ts_discipline_guard.py
+      - name: Verify revisions and parse
+        run: |
+          python - <<'PY'
+          import re, xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          gst=ET.parse('Prohammer 30k.gst').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='26', cat.get('revision')
+          assert gst.get('revision')=='1', gst.get('revision')
+          m=re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"',idx)
+          assert m and m.group(1)=='26', m.group(1) if m else None
+          print('Verified CAT=26 GST=1 index=26')
+          PY
+      - name: Commit Live R26
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r26-ts-discipline-guard.txt
+          git diff --cached --quiet || git commit -m "Live R26: fix TS disciplines and Guard Sekhmet override"
+          git push
