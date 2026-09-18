@@ -1,0 +1,35 @@
+name: Publish Live R22 Force Refresh
+on:
+  push:
+    paths:
+      - '.github/build/publish_live_r22_force_refresh.py'
+      - '.github/workflows/publish-live-r22-force-refresh.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Force revision bump
+        run: python .github/build/publish_live_r22_force_refresh.py
+      - name: Verify published revision
+        run: |
+          python - <<'PY'
+          import re, xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='22', cat.get('revision')
+          m=re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"',idx)
+          assert m and m.group(1)=='22', m.group(1) if m else None
+          print('Verified catalogue=22 index=22')
+          PY
+      - name: Commit Live R22
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r22-force-refresh.txt
+          git diff --cached --quiet || git commit -m "Live R22: force New Recruit refresh"
+          git push
