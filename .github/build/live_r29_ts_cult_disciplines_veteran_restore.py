@@ -90,7 +90,17 @@ CULT_TO_DISC={'Pavoni':'Biomancy','Raptora':'Telekinesis','Corvidae':'Divination
 DISC_TO_CULT={v:k for k,v in CULT_TO_DISC.items()}
 
 def parse():
-    return ET.fromstring(cat.encode('utf-8'))
+    try:
+        return ET.fromstring(cat.encode('utf-8'))
+    except ET.ParseError as ex:
+        print('PARSE ERROR',ex)
+        m=re.search(r'line (\\d+), column (\\d+)',str(ex))
+        if m:
+            ln=int(m.group(1)); lines=cat.splitlines()
+            lo=max(0,ln-4); hi=min(len(lines),ln+3)
+            for i in range(lo,hi):
+                print(f'{i+1}: {lines[i]}')
+        raise
 
 def fid(root,i):
     return next((x for x in root.iter() if x.get('id')==i),None)
