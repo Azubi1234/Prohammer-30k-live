@@ -1,0 +1,759 @@
+CAT=27
+
+=== veteran-included ===
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" type="model" import="true" name="Legion Veterans" hidden="false" id="veteran-included" defaultAmount="4">
+          <ns0:constraints>
+            <ns0:constraint id="veteran-included-min" type="min" value="4" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" />
+            <ns0:constraint id="veteran-included-max" type="max" value="9" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" />
+          </ns0:constraints>
+          <ns0:profiles>
+            <ns0:profile name="Legion Veterans (included)" id="veteran-included-prof" typeId="prof-model" typeName="Model" hidden="false">
+              <ns0:characteristics>
+                <ns0:characteristic name="WS" typeId="model-ws">5</ns0:characteristic>
+                <ns0:characteristic name="BS" typeId="model-bs">4</ns0:characteristic>
+                <ns0:characteristic name="S" typeId="model-s">4</ns0:characteristic>
+                <ns0:characteristic name="T" typeId="model-t">4</ns0:characteristic>
+                <ns0:characteristic name="W" typeId="model-w">1</ns0:characteristic>
+                <ns0:characteristic name="I" typeId="model-i">4</ns0:characteristic>
+                <ns0:characteristic name="A" typeId="model-a">2</ns0:characteristic>
+                <ns0:characteristic name="Ld" typeId="model-ld">9</ns0:characteristic>
+                <ns0:characteristic name="Sv" typeId="model-sv">3+</ns0:characteristic>
+              </ns0:characteristics>
+            </ns0:profile>
+          </ns0:profiles>
+          <ns0:costs>
+            <ns0:cost name="Points" typeId="pts" value="20" />
+          </ns0:costs>
+        </ns0:selectionEntry>
+        
+
+=== veteran-melee ===
+<ns0:selectionEntryGroup xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Close Combat Weapon Replacements" id="veteran-melee" hidden="false">
+          <ns0:constraints>
+            <ns0:constraint id="veteran-melee-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier type="increment" value="1" field="veteran-melee-max">
+              <ns0:repeats>
+                <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+          </ns0:modifiers>
+          <ns0:entryLinks>
+            <ns0:entryLink import="true" name="Chainaxe (replaces Chainsword)" hidden="false" id="veteran-melee-chainaxe" type="selectionEntry" targetId="gear-hq-chainaxe">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-melee-chainaxe-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="4" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Rending Weapon (replaces Chainsword)" hidden="false" id="veteran-melee-rending" type="selectionEntry" targetId="gear-rending">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-melee-rending-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Power Weapon (replaces Chainsword)" hidden="false" id="veteran-melee-power" type="selectionEntry" targetId="gear-power-weapon">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-melee-power-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink id="r40-da-warblade-veteran-melee-power" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r40-da-warblade-veteran-melee-power-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="20" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="false" field="hidden">
+                  <ns0:conditionGroups>
+                    <ns0:conditionGroup type="and">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
+                      </ns0:conditions>
+                    </ns0:conditionGroup>
+                  </ns0:conditionGroups>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+          </ns0:entryLinks>
+        </ns0:selectionEntryGroup>
+        
+
+=== veteran-ranged ===
+<ns0:selectionEntryGroup xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Bolter Replacements" id="veteran-ranged" hidden="false">
+          <ns0:constraints>
+            <ns0:constraint id="veteran-ranged-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </ns0:constraints>
+          <ns0:selectionEntries>
+            <ns0:selectionEntry type="upgrade" import="true" name="Sniper Rifle (Recon Company; replaces Bolter or Bolt Pistol + Chainsword)" hidden="true" id="r35-recon-veteran-sniper">
+              <ns0:constraints>
+                <ns0:constraint id="r35-recon-veteran-sniper-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+              <ns0:profiles>
+                <ns0:profile name="Sniper Rifle" id="r35-recon-sniper-profile" typeId="prof-ranged" typeName="Ranged Weapon" hidden="false">
+                  <ns0:characteristics>
+                    <ns0:characteristic name="Range" typeId="ranged-range">36"</ns0:characteristic>
+                    <ns0:characteristic name="S" typeId="ranged-s">4</ns0:characteristic>
+                    <ns0:characteristic name="AP" typeId="ranged-ap">6</ns0:characteristic>
+                    <ns0:characteristic name="Type" typeId="ranged-type">Heavy 1, Sniper</ns0:characteristic>
+                  </ns0:characteristics>
+                </ns0:profile>
+              </ns0:profiles>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="false" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="rite-recon" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+          <ns0:modifiers>
+            <ns0:modifier type="increment" value="1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-rotor" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-flamer" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-melta" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-plasma" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vc" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vcal" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+          </ns0:modifiers>
+          <ns0:entryLinks>
+            <ns0:entryLink import="true" name="Foeblaster Boltgun (replaces Bolter)" hidden="false" id="veteran-ranged-foe" type="selectionEntry" targetId="gear-foeblaster">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-ranged-foe-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="2" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Combi-Flamer (replaces Bolter)" hidden="false" id="veteran-ranged-cf" type="selectionEntry" targetId="gear-combi-flamer">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-ranged-cf-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Combi-Volkite Charger (replaces Bolter)" hidden="false" id="veteran-ranged-cv" type="selectionEntry" targetId="gear-combi-volkite">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-ranged-cv-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Combi-Meltagun (replaces Bolter)" hidden="false" id="veteran-ranged-cm" type="selectionEntry" targetId="gear-combi-melta">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-ranged-cm-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Combi-Plasma Gun (replaces Bolter)" hidden="false" id="veteran-ranged-cp" type="selectionEntry" targetId="gear-combi-plasma">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-ranged-cp-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+          </ns0:entryLinks>
+        </ns0:selectionEntryGroup>
+        
+
+=== veteran-individual ===
+<ns0:selectionEntryGroup xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Individual Wargear" id="veteran-individual" hidden="false">
+          <ns0:entryLinks>
+            <ns0:entryLink import="true" name="Combat Shield (per model)" hidden="false" id="veteran-shields" type="selectionEntry" targetId="gear-combat-shield">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-shields-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="increment" value="1" field="veteran-shields-max">
+                  <ns0:repeats>
+                    <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+                  </ns0:repeats>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Melta Bombs (per model)" hidden="false" id="veteran-bombs" type="selectionEntry" targetId="gear-melta-bombs">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-bombs-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="increment" value="1" field="veteran-bombs-max">
+                  <ns0:repeats>
+                    <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+                  </ns0:repeats>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Krak Grenades (+2 pts/model)" hidden="false" id="veteran-krak" type="selectionEntry" targetId="gear-krak">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-krak-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="increment" value="2" field="pts">
+                  <ns0:repeats>
+                    <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+                  </ns0:repeats>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+          </ns0:entryLinks>
+          <ns0:selectionEntries>
+            <ns0:selectionEntry type="upgrade" import="true" name="Jump Packs (+15 pts/model)" hidden="false" id="veteran-jump-packs">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-jump-packs-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="75" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="increment" value="15" field="pts">
+                  <ns0:repeats>
+                    <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+                  </ns0:repeats>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="0" field="veteran-jump-packs-max">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="0" field="veteran-jump-packs-max">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="0" field="veteran-jump-packs-max">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="rite-assault" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+              <ns0:rules>
+                <ns0:rule name="Jump Packs" id="veteran-jump-rule" hidden="false">
+                  <ns0:description>The entire squad becomes Jump Infantry. The squad may not select a Dedicated Transport. This option is only available if the squad has not selected a Heavy weapon.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+            <ns0:selectionEntry type="upgrade" import="true" name="Jump Packs (Legion Assault Company — +10 pts/model)" hidden="true" id="r35-assault-jp-veteran-jump-packs">
+              <ns0:constraints>
+                <ns0:constraint id="r35-assault-jp-veteran-jump-packs-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="50" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="increment" value="10" field="pts">
+                  <ns0:repeats>
+                    <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
+                  </ns0:repeats>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="0" field="veteran-jump-packs-max">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="0" field="veteran-jump-packs-max">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="0" field="veteran-jump-packs-max">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+                <ns0:modifier type="set" value="false" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="rite-assault" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+              <ns0:rules>
+                <ns0:rule name="Jump Packs" id="r35-assault-jp-veteran-jump-rule" hidden="false">
+                  <ns0:description>The entire squad becomes Jump Infantry. The squad may not select a Dedicated Transport. This option is only available if the squad has not selected a Heavy weapon.</ns0:description>
+                </ns0:rule>
+              </ns0:rules>
+            </ns0:selectionEntry>
+          </ns0:selectionEntries>
+        </ns0:selectionEntryGroup>
+        
+
+=== veteran-specialists ===
+<ns0:selectionEntryGroup xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Specialist Weapons (1 per 5 models)" id="veteran-specialists" hidden="false">
+          <ns0:constraints>
+            <ns0:constraint id="veteran-specialists-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier type="set" value="2" field="veteran-specialists-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="9" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          <ns0:entryLinks>
+            <ns0:entryLink import="true" name="Rotor Cannon (replaces Bolter)" hidden="false" id="veteran-sp-rotor" type="selectionEntry" targetId="gear-rotor">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-rotor-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="4" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Flamer (replaces Bolter)" hidden="false" id="veteran-sp-flamer" type="selectionEntry" targetId="gear-flamer">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-flamer-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Meltagun (replaces Bolter)" hidden="false" id="veteran-sp-melta" type="selectionEntry" targetId="gear-meltagun">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-melta-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Gun (replaces Bolter)" hidden="false" id="veteran-sp-plasma" type="selectionEntry" targetId="gear-plasma-gun">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-plasma-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Volkite Charger (replaces Bolter)" hidden="false" id="veteran-sp-vc" type="selectionEntry" targetId="gear-volkite-charger">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-vc-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Volkite Caliver (replaces Bolter)" hidden="false" id="veteran-sp-vcal" type="selectionEntry" targetId="gear-volkite-caliver">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-vcal-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Heavy Flamer with Suspensor Web (replaces Bolter)" hidden="false" id="veteran-sp-hf" type="selectionEntry" targetId="gear-heavy-flamer-susp">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-hf-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Heavy Bolter with Suspensor Web (replaces Bolter)" hidden="false" id="veteran-sp-hb" type="selectionEntry" targetId="gear-heavy-bolter-susp">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-hb-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Missile Launcher with Suspensor Web (replaces Bolter)" hidden="false" id="veteran-sp-ml" type="selectionEntry" targetId="gear-missile-susp">
+              <ns0:constraints>
+                <ns0:constraint id="veteran-sp-ml-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="20" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Calibanite Plasma Gun" hidden="false" id="da22-alt-pg-2" type="selectionEntry" targetId="da22-plasma-gun">
+              <ns0:constraints>
+                <ns0:constraint id="da22-alt-pg-2-2" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Repeater" hidden="false" id="da22-alt-pr-2" type="selectionEntry" targetId="da22-plasma-repeater">
+              <ns0:constraints>
+                <ns0:constraint id="da22-alt-pr-2-2" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="25" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Burner" hidden="false" id="da22-alt-pb-2" type="selectionEntry" targetId="da22-plasma-burner">
+              <ns0:constraints>
+                <ns0:constraint id="da22-alt-pb-2-2" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="20" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+          </ns0:entryLinks>
+        </ns0:selectionEntryGroup>
+        
+
+=== tac-heavy-weapons ===
+<ns0:selectionEntryGroup xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Heavy Weapons" id="tac-heavy-weapons" hidden="false">
+          <ns0:constraints>
+            <ns0:constraint type="max" value="1" field="selections" scope="parent" shared="true" id="tac-heavy-max" includeChildSelections="true" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="2" field="tac-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="equalTo" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          <ns0:modifier id="tac-heavy-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+          <ns0:entryLinks>
+            <ns0:entryLink import="true" name="Heavy Bolter" hidden="false" id="hv-hb" type="selectionEntry" targetId="gear-heavy-bolter">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="hv-hb-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Missile Launcher" hidden="false" id="hv-ml" type="selectionEntry" targetId="gear-missile">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="hv-ml-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Autocannon" hidden="false" id="hv-ac" type="selectionEntry" targetId="gear-autocannon">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="hv-ac-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Multi-Melta" hidden="false" id="hv-mm" type="selectionEntry" targetId="gear-multimelta">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="hv-mm-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Cannon" hidden="false" id="hv-pc" type="selectionEntry" targetId="gear-plasma-cannon">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="hv-pc-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Lascannon" hidden="false" id="hv-lc" type="selectionEntry" targetId="gear-lascannon">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="hv-lc-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Calibanite Plasma Cannon" hidden="false" id="da22-alt-pc-0" type="selectionEntry" targetId="da22-plasma-cannon">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="da22-alt-pc-0-2" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+          </ns0:entryLinks>
+        </ns0:selectionEntryGroup>
+        
+
+=== tac-special-weapons ===
+<ns0:selectionEntryGroup xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" name="Special Weapons" id="tac-special-weapons" hidden="false">
+          <ns0:constraints>
+            <ns0:constraint type="max" value="2" field="selections" scope="parent" shared="true" id="tac-special-max" includeChildSelections="true" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="1" field="tac-special-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="parent" childId="tac-heavy-weapons" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="4" field="tac-special-max">
+              <ns0:conditions>
+                <ns0:condition type="equalTo" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="3" field="tac-special-max">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="equalTo" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="false" />
+                    <ns0:condition type="equalTo" value="1" field="selections" scope="parent" childId="tac-heavy-weapons" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="2" field="tac-special-max">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="equalTo" value="19" field="selections" scope="root-entry" childId="tac-marine" shared="true" includeChildSelections="false" />
+                    <ns0:condition type="atLeast" value="2" field="selections" scope="parent" childId="tac-heavy-weapons" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          <ns0:modifier id="tac-special-weapons-r5-hide-no-bolters" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="parent" childId="load-exchange" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+          <ns0:entryLinks>
+            <ns0:entryLink import="true" name="Flamer" hidden="false" id="sp-f" type="selectionEntry" targetId="gear-flamer">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="sp-f-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="5" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Meltagun" hidden="false" id="sp-m" type="selectionEntry" targetId="gear-meltagun">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="sp-m-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Gun" hidden="false" id="sp-p" type="selectionEntry" targetId="gear-plasma-gun">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="sp-p-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Volkite Charger" hidden="false" id="sp-vc" type="selectionEntry" targetId="gear-volkite-charger">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="sp-vc-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="10" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Volkite Caliver" hidden="false" id="sp-vcal" type="selectionEntry" targetId="gear-volkite-caliver">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="sp-vcal-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Rotor Cannon" hidden="false" id="sp-r" type="selectionEntry" targetId="gear-rotor">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="sp-r-max" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="4" />
+              </ns0:costs>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Calibanite Plasma Gun" hidden="false" id="da22-alt-pg-0" type="selectionEntry" targetId="da22-plasma-gun">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="da22-alt-pg-0-2" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Repeater" hidden="false" id="da22-alt-pr-0" type="selectionEntry" targetId="da22-plasma-repeater">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="da22-alt-pr-0-2" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="25" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink import="true" name="Plasma Burner" hidden="false" id="da22-alt-pb-0" type="selectionEntry" targetId="da22-plasma-burner">
+              <ns0:constraints>
+                <ns0:constraint type="max" value="4" field="selections" scope="parent" shared="true" id="da22-alt-pb-0-2" includeChildSelections="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="20" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier type="set" value="true" field="hidden">
+                  <ns0:conditions>
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+            <ns0:entryLink id="r81-ih-grav-0" name="Graviton Gun" type="selectionEntry" targetId="gear-graviton-gun" hidden="true" import="true">
+              <ns0:constraints>
+                <ns0:constraint id="r81-ih-grav-0-max" type="max" value="4" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:constraints>
+              <ns0:costs>
+                <ns0:cost name="Points" typeId="pts" value="15" />
+              </ns0:costs>
+              <ns0:modifiers>
+                <ns0:modifier id="r81-ih-grav-0-show" type="set" value="false" field="hidden">
+                  <ns0:conditionGroups>
+                    <ns0:conditionGroup type="and">
+                      <ns0:conditions>
+                        <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-x" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </ns0:conditions>
+                    </ns0:conditionGroup>
+                  </ns0:conditionGroups>
+                </ns0:modifier>
+              </ns0:modifiers>
+            </ns0:entryLink>
+          </ns0:entryLinks>
+        </ns0:selectionEntryGroup>
+        
