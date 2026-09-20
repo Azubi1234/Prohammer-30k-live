@@ -20,3 +20,5 @@ jobs:
           git add inspection-live-r29-ts-cult-disciplines-veteran-restore.txt
           git diff --cached --quiet || git commit -m "Dry-run R29: TS cult disciplines and Veteran restore"
           git push
+
+# debug rerun
