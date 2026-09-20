@@ -1,0 +1,22 @@
+name: Diagnose R32 Sons of Horus Audit
+on:
+  push:
+    paths:
+      - '.github/workflows/diag-r32-sons-of-horus-audit.yml'
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Audit Sons of Horus
+        run: python .github/build/diag_r32_sons_of_horus_audit.py
+      - name: Commit inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r32-sons-of-horus-audit.txt
+          git diff --cached --quiet || git commit -m "Diag R32: Sons of Horus full audit"
+          git push
