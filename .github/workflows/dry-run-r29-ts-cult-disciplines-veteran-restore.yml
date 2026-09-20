@@ -22,3 +22,5 @@ jobs:
           git push
 
 # debug rerun
+
+# rerun after XML entity fix
