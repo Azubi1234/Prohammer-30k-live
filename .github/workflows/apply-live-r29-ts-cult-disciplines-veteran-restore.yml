@@ -1,0 +1,34 @@
+name: Apply Live R29 TS Cult Disciplines Veteran Restore
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r29-ts-cult-disciplines-veteran-restore.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R29
+        env: {R29_APPLY: '1'}
+        run: python .github/build/live_r29_ts_cult_disciplines_veteran_restore.py
+      - name: Verify revisions and parse
+        run: |
+          python - <<'PY'
+          import re, xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='29', cat.get('revision')
+          m=re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"',idx)
+          assert m and m.group(1)=='29', m.group(1) if m else None
+          print('Verified CAT=29 index=29')
+          PY
+      - name: Commit Live R29
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r29-ts-cult-disciplines-veteran-restore.txt
+          git diff --cached --quiet || git commit -m "Live R29: TS cult disciplines and Veteran restore"
+          git push
