@@ -1,0 +1,34 @@
+name: Apply Live R30 Veteran Bolter Replacements
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r30-veteran-bolter-replacements.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R30
+        env: {R30_APPLY: '1'}
+        run: python .github/build/live_r30_veteran_bolter_replacements.py
+      - name: Verify revisions and parse
+        run: |
+          python - <<'PY'
+          import re, xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='30', cat.get('revision')
+          m=re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"',idx)
+          assert m and m.group(1)=='30', m.group(1) if m else None
+          print('Verified CAT=30 index=30')
+          PY
+      - name: Commit Live R30
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r30-veteran-bolter-replacements.txt
+          git diff --cached --quiet || git commit -m "Live R30: Veteran bolter replacement UI"
+          git push
