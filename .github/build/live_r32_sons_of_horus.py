@@ -76,9 +76,9 @@ def add_profile(e,id_,name,vals):
     ps=ensure(e,'profiles')
     for x in list(ps):
         if x.get('id')==id_: ps.remove(x)
-    p=ET.SubElement(ps,C('profile'),{'id':id_,'name':name,'hidden':'false','typeId':'prof-unit','typeName':'Unit'})
+    p=ET.SubElement(ps,C('profile'),{'id':id_,'name':name,'hidden':'false','typeId':'prof-model','typeName':'Model'})
     cs=ET.SubElement(p,C('characteristics'))
-    tids=[('WS','unit-ws'),('BS','unit-bs'),('S','unit-s'),('T','unit-t'),('W','unit-w'),('I','unit-i'),('A','unit-a'),('Ld','unit-ld'),('Sv','unit-sv')]
+    tids=[('WS','model-ws'),('BS','model-bs'),('S','model-s'),('T','model-t'),('W','model-w'),('I','model-i'),('A','model-a'),('Ld','model-ld'),('Sv','model-sv')]
     for (n,tid),v in zip(tids,vals):
         c=ET.SubElement(cs,C('characteristic'),{'name':n,'typeId':tid}); c.text=str(v)
     return p
@@ -94,14 +94,9 @@ def add_ranged(e,id_,name,rng,s,ap,typ):
     return p
 
 def add_melee(e,id_,name,strength,rules):
-    ps=ensure(e,'profiles')
-    for x in list(ps):
-        if x.get('id')==id_: ps.remove(x)
-    p=ET.SubElement(ps,C('profile'),{'id':id_,'name':name,'hidden':'false','typeId':'prof-melee','typeName':'Melee Weapon'})
-    cs=ET.SubElement(p,C('characteristics'))
-    for tid,n,v in [('melee-s','Strength',strength),('melee-rules','Special Rules',rules)]:
-        q=ET.SubElement(cs,C('characteristic'),{'name':n,'typeId':tid}); q.text=v
-    return p
+    # The current Prohammer 30k game system has no Melee Weapon profile type.
+    # Keep melee weapon data as a normal rule so New Recruit displays it cleanly.
+    return add_rule(e,id_,name,f'Strength: {strength}. {rules}')
 
 def cond(parent, typ, childId, value='1', scope='roster', field='selections'):
     return ET.SubElement(parent,C('condition'),{
@@ -227,9 +222,21 @@ def replace_category(e,target,name):
         'id':e.get('id')+'-cat','name':name,'hidden':'false','targetId':target,'primary':'true'
     })
 
-def add_root_shared_clone(src,prefix,name,cat='cat-troops',catname='Troops'):
+def rename_root_id(e,newid):
+    old=e.get('id')
+    if not old or old==newid:
+        e.set('id',newid); return
+    e.set('id',newid)
+    for x in e.iter():
+        for a in ('childId','field'):
+            if x.get(a)==old:
+                x.set(a,newid)
+
+def add_root_shared_clone(src,prefix,name,cat='cat-troops',catname='Troops',root_id=None):
     box=shared_box()
     c=clone_with_ids(src,prefix)
+    if root_id:
+        rename_root_id(c,root_id)
     c.set('name',name)
     replace_category(c,cat,catname)
     box.append(c)
@@ -528,8 +535,7 @@ if longmarch is not None and term is not None:
     box=shared_box()
     for x in list(box):
         if x.get('id')=='r32-soh-long-march-terminator-troops':box.remove(x)
-    lm=add_root_shared_clone(term,'r32-soh-long-march','Legion Terminator Squad — Long March (non-compulsory Troops)')
-    lm.set('id','r32-soh-long-march-terminator-troops')
+    lm=add_root_shared_clone(term,'r32-soh-long-march','Legion Terminator Squad — Long March (non-compulsory Troops)',root_id='r32-soh-long-march-terminator-troops')
     # IDs below the root were already prefixed; root change is safe because no self-reference.
     add_hidden_unhide(lm,'r32-soh-longmarch-show',['r25-rite-xvi-0-the-long-march'])
     add_constraint(lm,'r32-soh-longmarch-noncomp','max',99,'roster')
@@ -621,16 +627,14 @@ for xid in ['r32-soh-first-company-terminators','r32-soh-first-company-justaerin
     old=findid(xid)
     if old is not None and old in list(box):box.remove(old)
 
-fct=add_root_shared_clone(term,'r32-soh-first-company-term','Legion Terminator Squad — Horus’ First Company')
-fct.set('id','r32-soh-first-company-terminators')
+fct=add_root_shared_clone(term,'r32-soh-first-company-term','Legion Terminator Squad — Horus’ First Company',root_id='r32-soh-first-company-terminators')
 add_hidden_unhide(fct,'r32-soh-first-term-show',[HORUS,ASC],[('atLeast','legion-xvi','1','roster','selections')])
 remove_constraint_type(fct,'max','roster')
 mx=add_constraint(fct,'r32-soh-first-term-max','max',2,'roster')
 add_rule(fct,'r32-soh-first-term-rule','The First Company','Troops choice granted by Horus. May fulfil a compulsory Troops selection. A maximum of two First Company Troops selections may be made in total, and at most one may be Justaerin.')
 
 just=findid('r41-unit-xvi-0-justaerin-terminator-squad')
-fcj=add_root_shared_clone(just,'r32-soh-first-company-just','Justaerin Terminator Squad — Horus’ First Company')
-fcj.set('id','r32-soh-first-company-justaerin')
+fcj=add_root_shared_clone(just,'r32-soh-first-company-just','Justaerin Terminator Squad — Horus’ First Company',root_id='r32-soh-first-company-justaerin')
 add_hidden_unhide(fcj,'r32-soh-first-just-show',[HORUS,ASC],[('atLeast','legion-xvi','1','roster','selections')])
 remove_constraint_type(fcj,'max','roster')
 add_constraint(fcj,'r32-soh-first-just-max','max',1,'roster')
@@ -671,10 +675,13 @@ def add_blessings_squad(unit,base_count,counter_id,nurgle_block_ids=None):
         ('atLeast','allegiance-traitor','1','roster','selections'),
         ('atLeast','legion-xvi','1','roster','selections')
     ])
-    counter=findid(counter_id) if counter_id else None
-    # Counter may be cloned/prefixed; prefer descendant ending in counter_id.
-    if counter is None or counter not in list(unit.iter()):
-        counter=next((x for x in unit.iter(C('selectionEntry')) if (x.get('id') or '').endswith(counter_id or '___')),None)
+    if counter_id:
+        counter=findid(counter_id)
+        # Counter may be cloned/prefixed; prefer descendant ending in counter_id.
+        if counter is None or counter not in list(unit.iter()):
+            counter=next((x for x in unit.iter(C('selectionEntry')) if (x.get('id') or '').endswith(counter_id)),None)
+    else:
+        counter=model_counter(unit)
     # base_count is number represented outside counter; for generic squads this is usually the Sergeant.
     for key,nm,per,rule in [
         ('khorne','Blessing of Khorne',5,'All models gain +1 Attack.'),
@@ -707,17 +714,26 @@ def add_blessings_ic(unit):
         ('tzeentch','Blessing of Tzeentch',25,'Gain a 5+ Invulnerable Save, or improve an existing Invulnerable Save by one step to a maximum of 4+.')]:
         u=add_upgrade(g,unit.get('id')+'-r32-blessing-'+key,nm,pts,1)
         add_rule(u,u.get('id')+'-rule',nm,rule)
+        if key=='nurgle':
+            mobility=[]
+            for x in unit.iter():
+                if x.tag not in (C('selectionEntry'),C('entryLink')): continue
+                n=(x.get('name') or '').lower()
+                if n in ('jump pack','space marine bike') or 'jetbike (sky hunter phalanx)' in n:
+                    mobility.append(x.get('id'))
+            for n,bid in enumerate(i for i in mobility if i):
+                modifier(u,u.get('id')+f'-mobility-block-{n}','set','hidden','true',[('atLeast',bid,'1','root-entry','selections')])
 
 # Generic infantry: explicit included non-counter models + known direct counters.
 squad_specs=[
- ('tactical-unit',1,'tac-marine',None),
- ('breacher-unit',1,'breacher-marine',None),
- ('recon-unit',1,'recon-marine',None),
- ('veteran-unit',1,'veteran-included',None),
- ('terminator-unit',1,'terminator-included',None),
- ('destroyer-unit',1,'destroyer-marine',None),
- ('fa-seeker',1,'seeker-marine',None),
- ('hs-heavy-support-squad',1,'heavy-support-marine',None),
+ ('tactical-unit',1,None,None),
+ ('breacher-unit',1,None,None),
+ ('recon-unit',1,None,None),
+ ('veteran-unit',1,None,None),
+ ('terminator-unit',1,None,None),
+ ('destroyer-unit',1,None,None),
+ ('fa-seeker',1,None,None),
+ ('hs-heavy-support-squad',1,None,None),
 ]
 for uid,b,cnt,blocks in squad_specs:
     u=findid(uid)
@@ -742,7 +758,23 @@ for uid in ['hq-praetor','hq-centurion',
  'r41-unit-xvi-8-tybalt-marr-the-either',
  'r41-unit-xvi-9-vheren-ashurhaddon']:
     add_blessings_ic(findid(uid))
-report.append('Blessings of the Four added with per-model / IC costs to core SoH Infantry, unique Infantry and characters')
+# Blessings must also exist on role/retinue clones created before the blessing pass.
+for role,base in [(locals().get('lm'),1),(locals().get('fct'),1)]:
+    if role is not None:
+        add_blessings_squad(role,base,None)
+for role in [locals().get('fcj')]:
+    if role is not None:
+        mc=model_counter(role)
+        add_blessings_squad(role,0,mc.get('id') if mc is not None else None)
+for hh in [h,a]:
+    rg=direct_group(hh,id_=hh.get('id')+'-r32-retinue')
+    if rg is not None:
+        for ru in list(rg.find(C('selectionEntries')) or []):
+            if 'Justaerin Terminator Squad' in (ru.get('name') or ''):
+                mc=model_counter(ru)
+                add_blessings_squad(ru,0,mc.get('id') if mc is not None else None)
+
+report.append('Blessings of the Four added with per-model / IC costs to core SoH Infantry, role copies, retinues, unique Infantry and characters')
 
 # -------------------------------------------------------------------
 # 8) Named-character cleanup and minimum-point rules in visible text.
