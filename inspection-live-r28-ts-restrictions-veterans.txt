@@ -1,0 +1,22 @@
+LIVE R28 — THOUSAND SONS RESTRICTIONS + VETERAN SCALING
+MODE=DRY RUN
+CAT 27 -> 28
+
+THOUSAND SONS
+• Replaced Sorcerers of Prospero / Prosperine Cults restriction wording with the approved version.
+• Ordinary XV Psykers are capped at one Psychic Discipline; Magnus keeps his explicit multi-discipline exception.
+• Veteran, Terminator, Sekhmet and Ammitara Brotherhood discipline choices are explicitly gated by the selected Cult.
+• Ammitara is restricted to Corvidae/Divination or Athanaeans/Telepathy.
+• Ahriman, Phosis T’Kar, Amon, Hathor Maat and Sanakht expose only their fixed Cult.
+• Osiron remains a Psyker with no Prosperine Cult; Castellax-Achea remains without Cult or Discipline access.
+• Magnus keeps 0–1 Unique. The broken min limit::points constraint is removed and replaced by roster-point visibility: 2000+ normally, 1500+ under Primarch’s Chosen.
+
+LEGION VETERAN SQUAD
+• Squad is now 1 Veteran Sergeant + 9–19 Legion Veterans = 10–20 models.
+• Bolter and close-combat replacements now scale to the actual model count instead of the old 5-model chunks.
+• Specialist weapons remain the established “1 per 5 models” system: 2 at 10 models, 3 at 15, 4 at 20.
+• Specialist weapons correctly consume Bolter-replacement capacity, including alternate specialist entries.
+• Combat Shields and Melta Bombs scale to actual model count.
+• Krak Grenades and both Jump Pack options now charge the correct per-model cost across 10–20 models.
+
+VALIDATION: PASS
