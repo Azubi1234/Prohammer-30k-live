@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -11116,11 +11116,10 @@ Thiel receives the same upgrade at the normal squad cost.</description>
         <selectionEntryGroup name="Bolter Replacements" id="veteran-ranged" hidden="false">
           <constraints>
             <constraint id="veteran-ranged-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
-          </constraints>
-          <modifiers><modifier id="r29-veteran-ranged-per-model" type="increment" value="1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-0" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-rotor" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-1" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-flamer" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-2" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-melta" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-3" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-plasma" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-4" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vc" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-5" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vcal" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-6" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-7" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-8" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-9" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="da22-alt-pg-2" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-10" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="da22-alt-pr-2" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier><modifier id="r29-veteran-ranged-specialist-11" type="increment" value="-1" field="veteran-ranged-max"><repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="da22-alt-pb-2" shared="true" roundUp="false" includeChildSelections="true" /></repeats></modifier></modifiers><selectionEntries>
+          </constraints><selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Sniper Rifle (Recon Company; replaces Bolter or Bolt Pistol + Chainsword)" hidden="true" id="r35-recon-veteran-sniper">
               <constraints>
-                <constraint id="r35-recon-veteran-sniper-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="r35-recon-veteran-sniper-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
@@ -11143,63 +11142,51 @@ Thiel receives the same upgrade at the normal squad cost.</description>
                 </modifier>
               </modifiers>
             </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="increment" value="1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="5" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" />
-              </repeats>
+          </selectionEntries><modifiers>
+            <modifier id="r30-veteran-ranged-per-model" type="increment" value="1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-rotor" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-0" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-rotor" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-flamer" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-1" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-flamer" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-melta" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-2" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-melta" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-plasma" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-3" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-plasma" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vc" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-4" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vc" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vcal" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-5" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vcal" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-6" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hf" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-7" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-hb" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
-            <modifier type="increment" value="-1" field="veteran-ranged-max">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" roundUp="false" includeChildSelections="true" />
-              </repeats>
+            <modifier id="r30-veteran-ranged-specialist-8" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-ml" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
+            </modifier>
+            <modifier id="r30-veteran-ranged-specialist-9" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="da22-alt-pg-2" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
+            </modifier>
+            <modifier id="r30-veteran-ranged-specialist-10" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="da22-alt-pr-2" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
+            </modifier>
+            <modifier id="r30-veteran-ranged-specialist-11" type="increment" value="-1" field="veteran-ranged-max">
+              <repeats><repeat value="1" repeats="1" field="selections" scope="root-entry" childId="da22-alt-pb-2" shared="true" roundUp="false" includeChildSelections="true" /></repeats>
             </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Foeblaster Boltgun (replaces Bolter)" hidden="false" id="veteran-ranged-foe" type="selectionEntry" targetId="gear-foeblaster">
               <constraints>
-                <constraint id="veteran-ranged-foe-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-ranged-foe-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="2" />
@@ -11207,7 +11194,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink import="true" name="Combi-Flamer (replaces Bolter)" hidden="false" id="veteran-ranged-cf" type="selectionEntry" targetId="gear-combi-flamer">
               <constraints>
-                <constraint id="veteran-ranged-cf-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-ranged-cf-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
@@ -11215,7 +11202,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink import="true" name="Combi-Volkite Charger (replaces Bolter)" hidden="false" id="veteran-ranged-cv" type="selectionEntry" targetId="gear-combi-volkite">
               <constraints>
-                <constraint id="veteran-ranged-cv-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-ranged-cv-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
@@ -11223,7 +11210,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink import="true" name="Combi-Meltagun (replaces Bolter)" hidden="false" id="veteran-ranged-cm" type="selectionEntry" targetId="gear-combi-melta">
               <constraints>
-                <constraint id="veteran-ranged-cm-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-ranged-cm-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
@@ -11231,7 +11218,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink import="true" name="Combi-Plasma Gun (replaces Bolter)" hidden="false" id="veteran-ranged-cp" type="selectionEntry" targetId="gear-combi-plasma">
               <constraints>
-                <constraint id="veteran-ranged-cp-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-ranged-cp-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />

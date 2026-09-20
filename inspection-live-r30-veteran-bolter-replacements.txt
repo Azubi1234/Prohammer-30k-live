@@ -1,5 +1,5 @@
 LIVE R30 — VETERAN BOLTER REPLACEMENT UI FIX
-MODE=DRY RUN
+MODE=APPLY
 CAT 29 -> 30
 
 • Bolter Replacements now use one clean direct modifier container, matching the working Close Combat Weapon replacement structure.
