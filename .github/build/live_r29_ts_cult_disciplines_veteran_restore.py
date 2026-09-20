@@ -138,28 +138,24 @@ gate_pair('r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal','r19-ts-sekhmet-disc
 gate_pair('r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal','r27-guard-r19-ts-sekhmet-disciplines','r29-guard-sekhmet-cult-disc')
 gate_pair('r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal','r19-ts-ammitara-disciplines','r29-ammitara-cult-disc')
 
-# Make the universal rule explicit.
-r=parse()
-ref=fid(r,'r25-legion-xv-reference')
-d=ref.find(C('description'))
-old=d.text or ''
-needle="Unless specifically stated otherwise in the model or unit's own entry, a Psyker may select powers from only one Psychic Discipline. A Psyker may not select powers from multiple Disciplines."
-repl=needle+" If the Psyker is assigned to a Prosperine Cult, that Psychic Discipline must correspond to its Cult: Pavoni — Biomancy; Raptora — Telekinesis; Corvidae — Divination; Athanaeans — Telepathy; Pyrae — Pyromancy. A unit or model whose own entry specifically states that it is not assigned to a Prosperine Cult follows the discipline access written in its own entry instead."
-if needle not in old:
-    raise RuntimeError('Approved one-discipline wording not found in reference rule')
-new=old.replace(needle,repl,1)
-# Fellowships text must not contradict the Cult mapping.
-new=new.replace(
-    'A Tactical Squad upgraded in this manner selects one psychic power from the normal Psychic Disciplines available to Thousand Sons Psykers and gains the Cult Mastery benefit of its chosen Prosperine Cult.',
-    'A Tactical Squad upgraded in this manner selects one psychic power from the Psychic Discipline associated with its chosen Prosperine Cult and gains the Cult Mastery benefit of that Cult.',
-    1
-)
-def patch_ref(b):
-    pat=re.compile(r'(<description>)(.*?)(</description>)',re.S)
-    out,n=pat.subn(lambda m:m.group(1)+new+m.group(3),b,count=1)
-    if n!=1: raise RuntimeError('reference description replacement failed')
-    return out
-cat=replace_block(cat,'rule','r25-legion-xv-reference',patch_ref)
+# Make the universal rule explicit without decoding/reinserting XML entities.
+def patch_reference_text(b):
+    dm=re.search(r'(<description>)(.*?)(</description>)',b,re.S)
+    if not dm: raise RuntimeError('XV reference description missing')
+    old=dm.group(2)
+    needle="Unless specifically stated otherwise in the model or unit's own entry, a Psyker may select powers from only one Psychic Discipline. A Psyker may not select powers from multiple Disciplines."
+    repl=needle+" If the Psyker is assigned to a Prosperine Cult, that Psychic Discipline must correspond to its Cult: Pavoni — Biomancy; Raptora — Telekinesis; Corvidae — Divination; Athanaeans — Telepathy; Pyrae — Pyromancy. A unit or model whose own entry specifically states that it is not assigned to a Prosperine Cult follows the discipline access written in its own entry instead."
+    if needle not in old:
+        raise RuntimeError('Approved one-discipline wording not found in reference rule')
+    new=old.replace(needle,repl,1)
+    new=new.replace(
+        'A Tactical Squad upgraded in this manner selects one psychic power from the normal Psychic Disciplines available to Thousand Sons Psykers and gains the Cult Mastery benefit of its chosen Prosperine Cult.',
+        'A Tactical Squad upgraded in this manner selects one psychic power from the Psychic Discipline associated with its chosen Prosperine Cult and gains the Cult Mastery benefit of that Cult.',
+        1
+    )
+    return b[:dm.start(2)]+new+b[dm.end(2):]
+
+cat=replace_block(cat,'rule','r25-legion-xv-reference',patch_reference_text)
 
 cat=replace_rule_desc(cat,'r18-ts-praetor-psyker-rule',
     'In a Thousand Sons Detachment, a Legion Praetor is a Psyker (Mastery Level 2). It selects its psychic powers from the single Psychic Discipline associated with its chosen Prosperine Cult: Pavoni — Biomancy; Raptora — Telekinesis; Corvidae — Divination; Athanaeans — Telepathy; Pyrae — Pyromancy, unless another rule explicitly states otherwise. Activating a Force Weapon counts as the use of a psychic power, and the same power may not be used more than once in the same player turn.')
