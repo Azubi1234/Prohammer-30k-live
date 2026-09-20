@@ -1,0 +1,22 @@
+name: Diagnose R28 Thousand Sons Cleanup Targets
+on:
+  push:
+    paths:
+      - '.github/workflows/diag-r28-ts-cleanup-targets.yml'
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Diagnose
+        run: python .github/build/diag_r28_ts_cleanup_targets.py
+      - name: Commit inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r28-ts-cleanup-targets.txt
+          git diff --cached --quiet || git commit -m "Diag R28: Thousand Sons cleanup targets"
+          git push
