@@ -1,0 +1,12 @@
+LIVE R31 — VETERAN MELEE INDIVIDUAL CAPS
+MODE=DRY RUN
+CAT 30 -> 31
+
+• Chainaxe maximum: 10.
+• Power Weapon maximum: 10.
+• Rending Weapon maximum: 10.
+• Calibanite Warblade maximum: 10.
+• The parent Close Combat Weapon Replacements pool still scales with the actual squad size, so a 5-model squad can only choose 5 total replacements and a 10-model squad can choose 10.
+• Veteran Squad remains 1 Sergeant + 4–9 Veterans (5–10 models total).
+
+VALIDATION: PASS
