@@ -1,0 +1,60 @@
+CAT=27
+
+=== VETERAN MODELS ===
+veteran-included | Legion Veterans | cost=[('Points', '20')] | cons=[('veteran-included-min', 'min', 'selections', '4', 'parent'), ('veteran-included-max', 'max', 'selections', '9', 'parent')] | mods=[]
+veteran-sergeant | Legion Veteran Sergeant | cost=[] | cons=[('veteran-sergeant-min', 'min', 'selections', '1', 'parent'), ('veteran-sergeant-max', 'max', 'selections', '1', 'parent')] | mods=[]
+
+=== VETERAN RELEVANT GROUPS RAW ===
+
+GROUP veteran-melee Close Combat Weapon Replacements cons=[('veteran-melee-max', 'max', 'selections', '5', 'parent')] mods=[(None, 'increment', 'veteran-melee-max', '1', [])]
+ entryLink veteran-melee-chainaxe | Chainaxe (replaces Chainsword) target=gear-hq-chainaxe type=selectionEntry cons=[('veteran-melee-chainaxe-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink veteran-melee-rending | Rending Weapon (replaces Chainsword) target=gear-rending type=selectionEntry cons=[('veteran-melee-rending-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink veteran-melee-power | Power Weapon (replaces Chainsword) target=gear-power-weapon type=selectionEntry cons=[('veteran-melee-power-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink r40-da-warblade-veteran-melee-power | Calibanite Warblade target=da22-warblade type=selectionEntry cons=[('r40-da-warblade-veteran-melee-power-max', 'max', 'selections', '10', 'parent')] mods=[(None, 'set', 'hidden', 'false', [('atLeast', 'selections', '1', 'roster', 'legion-i')])]
+
+GROUP veteran-ranged Bolter Replacements cons=[('veteran-ranged-max', 'max', 'selections', '5', 'parent')] mods=[(None, 'increment', 'veteran-ranged-max', '1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', []), (None, 'increment', 'veteran-ranged-max', '-1', [])]
+ selectionEntry r35-recon-veteran-sniper | Sniper Rifle (Recon Company; replaces Bolter or Bolt Pistol + Chainsword) target=None type=upgrade cons=[('r35-recon-veteran-sniper-max', 'max', 'selections', '10', 'parent')] mods=[(None, 'set', 'hidden', 'false', [('atLeast', 'selections', '1', 'force', 'rite-recon')])]
+ entryLink veteran-ranged-foe | Foeblaster Boltgun (replaces Bolter) target=gear-foeblaster type=selectionEntry cons=[('veteran-ranged-foe-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink veteran-ranged-cf | Combi-Flamer (replaces Bolter) target=gear-combi-flamer type=selectionEntry cons=[('veteran-ranged-cf-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink veteran-ranged-cv | Combi-Volkite Charger (replaces Bolter) target=gear-combi-volkite type=selectionEntry cons=[('veteran-ranged-cv-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink veteran-ranged-cm | Combi-Meltagun (replaces Bolter) target=gear-combi-melta type=selectionEntry cons=[('veteran-ranged-cm-max', 'max', 'selections', '10', 'parent')] mods=[]
+ entryLink veteran-ranged-cp | Combi-Plasma Gun (replaces Bolter) target=gear-combi-plasma type=selectionEntry cons=[('veteran-ranged-cp-max', 'max', 'selections', '10', 'parent')] mods=[]
+
+GROUP veteran-individual Individual Wargear cons=[] mods=[]
+ selectionEntry veteran-jump-packs | Jump Packs (+15 pts/model) target=None type=upgrade cons=[('veteran-jump-packs-max', 'max', 'selections', '1', 'parent')] mods=[(None, 'increment', 'pts', '15', []), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hf')]), (None, 'set', 'veteran-jump-packs-max', '0', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hf')]), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hb')]), (None, 'set', 'veteran-jump-packs-max', '0', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hb')]), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-ml')]), (None, 'set', 'veteran-jump-packs-max', '0', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-ml')]), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'force', 'rite-assault')])]
+ selectionEntry r35-assault-jp-veteran-jump-packs | Jump Packs (Legion Assault Company — +10 pts/model) target=None type=upgrade cons=[('r35-assault-jp-veteran-jump-packs-max', 'max', 'selections', '1', 'parent')] mods=[(None, 'increment', 'pts', '10', []), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hf')]), (None, 'set', 'veteran-jump-packs-max', '0', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hf')]), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hb')]), (None, 'set', 'veteran-jump-packs-max', '0', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-hb')]), (None, 'set', 'hidden', 'true', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-ml')]), (None, 'set', 'veteran-jump-packs-max', '0', [('atLeast', 'selections', '1', 'root-entry', 'veteran-sp-ml')]), (None, 'set', 'hidden', 'false', [('atLeast', 'selections', '1', 'force', 'rite-assault')])]
+ entryLink veteran-shields | Combat Shield (per model) target=gear-combat-shield type=selectionEntry cons=[('veteran-shields-max', 'max', 'selections', '5', 'parent')] mods=[(None, 'increment', 'veteran-shields-max', '1', [])]
+ entryLink veteran-bombs | Melta Bombs (per model) target=gear-melta-bombs type=selectionEntry cons=[('veteran-bombs-max', 'max', 'selections', '5', 'parent')] mods=[(None, 'increment', 'veteran-bombs-max', '1', [])]
+ entryLink veteran-krak | Krak Grenades (+2 pts/model) target=gear-krak type=selectionEntry cons=[('veteran-krak-max', 'max', 'selections', '1', 'parent')] mods=[(None, 'increment', 'pts', '2', [])]
+
+GROUP veteran-specialists Specialist Weapons (1 per 5 models) cons=[('veteran-specialists-max', 'max', 'selections', '1', 'parent')] mods=[(None, 'set', 'veteran-specialists-max', '2', [('atLeast', 'selections', '9', 'root-entry', 'veteran-included')])]
+ entryLink veteran-sp-rotor | Rotor Cannon (replaces Bolter) target=gear-rotor type=selectionEntry cons=[('veteran-sp-rotor-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-flamer | Flamer (replaces Bolter) target=gear-flamer type=selectionEntry cons=[('veteran-sp-flamer-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-melta | Meltagun (replaces Bolter) target=gear-meltagun type=selectionEntry cons=[('veteran-sp-melta-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-plasma | Plasma Gun (replaces Bolter) target=gear-plasma-gun type=selectionEntry cons=[('veteran-sp-plasma-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-vc | Volkite Charger (replaces Bolter) target=gear-volkite-charger type=selectionEntry cons=[('veteran-sp-vc-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-vcal | Volkite Caliver (replaces Bolter) target=gear-volkite-caliver type=selectionEntry cons=[('veteran-sp-vcal-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-hf | Heavy Flamer with Suspensor Web (replaces Bolter) target=gear-heavy-flamer-susp type=selectionEntry cons=[('veteran-sp-hf-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-hb | Heavy Bolter with Suspensor Web (replaces Bolter) target=gear-heavy-bolter-susp type=selectionEntry cons=[('veteran-sp-hb-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink veteran-sp-ml | Missile Launcher with Suspensor Web (replaces Bolter) target=gear-missile-susp type=selectionEntry cons=[('veteran-sp-ml-max', 'max', 'selections', '2', 'parent')] mods=[]
+ entryLink da22-alt-pg-2 | Calibanite Plasma Gun target=da22-plasma-gun type=selectionEntry cons=[('da22-alt-pg-2-2', 'max', 'selections', '2', 'parent')] mods=[(None, 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-i')])]
+ entryLink da22-alt-pr-2 | Plasma Repeater target=da22-plasma-repeater type=selectionEntry cons=[('da22-alt-pr-2-2', 'max', 'selections', '2', 'parent')] mods=[(None, 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-i')])]
+ entryLink da22-alt-pb-2 | Plasma Burner target=da22-plasma-burner type=selectionEntry cons=[('da22-alt-pb-2-2', 'max', 'selections', '2', 'parent')] mods=[(None, 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-i')])]
+
+GROUP veteran-equipment Squad Equipment cons=[] mods=[]
+ entryLink veteran-vexilla | Legion Vexilla target=gear-vexilla type=selectionEntry cons=[('veteran-vexilla-max', 'max', 'selections', '1', 'parent')] mods=[]
+ entryLink veteran-nuncio | Nuncio Vox target=gear-nuncio type=selectionEntry cons=[('veteran-nuncio-max', 'max', 'selections', '1', 'parent')] mods=[]
+
+=== MAGNUS CONSTRAINTS/MODIFIERS ===
+root cons=[('r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-unique', 'max', 'selections', '1', 'roster'), ('r18-ts-magnus-min-points', 'min', 'limit::points', '2000', 'roster')] mods=[(None, 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-xv')]), ('r18-ts-magnus-min-primarchs-chosen', 'set', 'r18-ts-magnus-min-points', '1500', [('atLeast', 'selections', '1', 'roster', 'da22-rite-primarchs-chosen')])]
+selectionEntry r41-unit-xv-11-xv-magnus-the-red-the-crimson-king XV — MAGNUS THE RED, THE CRIMSON KING cons=[('r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-unique', 'max', 'selections', '1', 'roster'), ('r18-ts-magnus-min-points', 'min', 'limit::points', '2000', 'roster')] mods=[(None, 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-xv')]), ('r18-ts-magnus-min-primarchs-chosen', 'set', 'r18-ts-magnus-min-points', '1500', [('atLeast', 'selections', '1', 'roster', 'da22-rite-primarchs-chosen')])]
+
+=== AHRIMAN / FIXED CULT PSYCHIC ===
+ENTRY r41-unit-xv-6-ahzek-ahriman AHZEK AHRIMAN cons=[('r41-unit-xv-6-ahzek-ahriman-unique', 'max', 'selections', '1', 'roster'), ('r18-ts-r41-unit-xv-6-ahzek-ahriman-01', 'max', 'selections', '1', 'roster')] mods=[(None, 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-xv')]), ('r18-ts-r41-unit-xv-6-ahzek-ahriman-hide-under', 'set', 'hidden', 'true', [('greaterThan', 'limit::pts', '0', 'roster', 'model'), ('lessThan', 'limit::pts', '1500', 'roster', 'model')])]
+ GROUP r45-cult-r41-unit-xv-6-ahzek-ahriman Prosperine Cult — fixed cons=[('r45-cult-r41-unit-xv-6-ahzek-ahriman-min', 'min', 'selections', '1', 'parent'), ('r45-cult-r41-unit-xv-6-ahzek-ahriman-max', 'max', 'selections', '1', 'parent')] mods=[('r48-vis-324', 'set', 'hidden', 'true', [('lessThan', 'selections', '1', 'roster', 'legion-xv')])]
+  CHOICE r45-cult-r41-unit-xv-6-ahzek-ahriman-0 Pavoni cons=[('r45-cult-r41-unit-xv-6-ahzek-ahriman-0-max', 'max', 'selections', '1', 'parent')] mods=[]
+  CHOICE r45-cult-r41-unit-xv-6-ahzek-ahriman-1 Raptora cons=[('r45-cult-r41-unit-xv-6-ahzek-ahriman-1-max', 'max', 'selections', '1', 'parent')] mods=[]
+  CHOICE r45-cult-r41-unit-xv-6-ahzek-ahriman-2 Corvidae cons=[('r45-cult-r41-unit-xv-6-ahzek-ahriman-2-max', 'max', 'selections', '1', 'parent'), ('r45-cult-r41-unit-xv-6-ahzek-ahriman-2-r18-fixed-min', 'min', 'selections', '1', 'parent')] mods=[]
+  CHOICE r45-cult-r41-unit-xv-6-ahzek-ahriman-3 Athanaeans cons=[('r45-cult-r41-unit-xv-6-ahzek-ahriman-3-max', 'max', 'selections', '1', 'parent')] mods=[]
+  CHOICE r45-cult-r41-unit-xv-6-ahzek-ahriman-4 Pyrae cons=[('r45-cult-r41-unit-xv-6-ahzek-ahriman-4-max', 'max', 'selections', '1', 'parent')] mods=[]
+ENTRY r18-final-ahriman-cabal-upgrade Ahriman's Cabal cons=[('r18-final-ahriman-cabal-upgrade-max', 'max', 'selections', '1', 'parent')] mods=[]
