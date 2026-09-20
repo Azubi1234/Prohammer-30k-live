@@ -1,0 +1,11 @@
+LIVE R30 — VETERAN BOLTER REPLACEMENT UI FIX
+MODE=DRY RUN
+CAT 29 -> 30
+
+• Bolter Replacements now use one clean direct modifier container, matching the working Close Combat Weapon replacement structure.
+• The pool scales to the actual Veteran Squad size: Sergeant + selected Veterans.
+• Specialist Weapons still consume one Bolter replacement slot each.
+• Foeblaster Boltgun, all Combi-Weapon choices and Recon Sniper Rifle have numeric max 10, so New Recruit shows quantity controls rather than checkbox-only choices.
+• Veteran Squad size remains 5–10 models total (1 Sergeant + 4–9 Veterans).
+
+VALIDATION: PASS
