@@ -1,0 +1,34 @@
+name: Apply Live R31 Veteran Melee Caps
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r31-veteran-melee-caps.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R31
+        env: {R31_APPLY: '1'}
+        run: python .github/build/live_r31_veteran_melee_caps.py
+      - name: Verify revisions and parse
+        run: |
+          python - <<'PY'
+          import re, xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='31', cat.get('revision')
+          m=re.search(r'filePath="Legiones Astartes\.cat"[^>]*dataRevision="(\d+)"',idx)
+          assert m and m.group(1)=='31', m.group(1) if m else None
+          print('Verified CAT=31 index=31')
+          PY
+      - name: Commit Live R31
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r31-veteran-melee-caps.txt
+          git diff --cached --quiet || git commit -m "Live R31: Veteran melee individual caps"
+          git push
