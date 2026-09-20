@@ -1,0 +1,42 @@
+LIVE R32 — SONS OF HORUS IMPLEMENTATION
+Mode=DRY RUN
+Input CAT=31 -> target CAT=32
+
+IMPLEMENTED:
+- Legion rules split into discrete New Recruit rules
+- Sergeant armoury links and Terminator-only character transponders implemented
+- Standalone Maloghurst, Kibre and Torgaddon entries hidden
+- Maloghurst embedded in 36 Command Squad Standard groups
+- Torgaddon embedded as exact Sergeant replacement in Tactical/Veteran squads
+- Unique squad shared caps, per-model costs, Kibre, Jump Packs and transport gates corrected
+- Long March Terminator non-compulsory Troops role added
+- Horus/Ascended rules, Panoply, Vengeful Spirit discount and First Company Troops implemented
+- Horus Justaerin Primarch Retinue embedded
+- Blessings of the Four added with per-model / IC costs to core SoH Infantry, unique Infantry and characters
+
+WARNINGS:
+- none
+
+VALIDATION:
+- PASS: Maloghurst standalone hidden
+- PASS: Kibre standalone hidden
+- PASS: Torgaddon standalone hidden
+- PASS: Torgaddon Tactical link
+- PASS: Torgaddon Veteran link
+- PASS: Maloghurst shared upgrade
+- PASS: Kibre shared upgrade
+- PASS: Long March Terminator Troops
+- PASS: First Company Terminators
+- PASS: First Company Justaerin
+- PASS: Horus Panoply
+- PASS: Ascended Traitor gate
+- PASS: Drop Pod discount
+- PASS: Dreadclaw discount
+- PASS: No standalone embedded character categories changed
+
+COUNTS:
+- Justaerin variants fixed: 26
+- Reaver variants fixed: 44
+- Chieftain variants fixed: 26
+- Luperci variants fixed: 5
+- Maloghurst Command Squad links: 36
