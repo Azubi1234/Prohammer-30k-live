@@ -1,0 +1,26 @@
+name: Dry-run R32 Sons of Horus
+on:
+  push:
+    paths:
+      - '.github/workflows/dry-run-r32-sons-of-horus.yml'
+permissions:
+  contents: write
+jobs:
+  dry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Compile R32 script
+        run: python -m py_compile .github/build/live_r32_sons_of_horus.py
+      - name: Dry run R32
+        run: python .github/build/live_r32_sons_of_horus.py
+      - name: Commit inspection
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-live-r32-sons-of-horus.txt
+          git diff --cached --quiet || git commit -m "Dry-run R32: Sons of Horus implementation"
+          git push
