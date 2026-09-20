@@ -1,0 +1,19 @@
+LIVE R29 — THOUSAND SONS CULT DISCIPLINES + VETERAN RESTORE
+MODE=DRY RUN
+CAT 28 -> 29
+
+THOUSAND SONS
+• Every Cult-assigned generic XV Psyker/Brotherhood now sees only the discipline matching its selected Prosperine Cult.
+• Mapping: Pavoni→Biomancy, Raptora→Telekinesis, Corvidae→Divination, Athanaeans→Telepathy, Pyrae→Pyromancy.
+• This is enforced for Praetors, Centurions/Consuls, Fellowships Tactical Brotherhoods, Veteran Brotherhoods, Terminator Brotherhoods, Sekhmet and Ammitara.
+• Named characters retain their fixed Cult/power access.
+• Osiron remains the explicit no-Cult exception and follows its own Psychic Dreadnought access.
+• Magnus remains the explicit multi-discipline exception.
+
+LEGION VETERAN SQUAD
+• Restored correct source size: 4 Legion Veterans + 1 Veteran Sergeant, with up to 5 additional Veterans (5–10 total).
+• Any-model melee, bolter replacement, Combat Shield and Melta Bomb pools now scale to the actual 5–10 models.
+• Specialist Weapons are restored to 1 per 5 total models: 1 at 5–9, 2 at 10.
+• Bolter replacement capacity is reduced by each Specialist Weapon selected so one model cannot replace the same bolter twice.
+
+VALIDATION: PASS
