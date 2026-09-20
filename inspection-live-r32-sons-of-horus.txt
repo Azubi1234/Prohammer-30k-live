@@ -12,7 +12,7 @@ IMPLEMENTED:
 - Long March Terminator non-compulsory Troops role added
 - Horus/Ascended rules, Panoply, Vengeful Spirit discount and First Company Troops implemented
 - Horus Justaerin Primarch Retinue embedded
-- Blessings of the Four added with per-model / IC costs to core SoH Infantry, unique Infantry and characters
+- Blessings of the Four added with per-model / IC costs to core SoH Infantry, role copies, retinues, unique Infantry and characters
 
 WARNINGS:
 - none
