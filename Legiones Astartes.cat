@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cat-7b24-e6f1-83a9-4c50" name="Legiones Astartes" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="1" type="catalogue">
   <comment>Revision 90: World Eaters character cleanup verified; forced full New Recruit refresh by bumping both catalogue and game-system revisions. Gahlan Surlak capitalization corrected.</comment>
   <readme>Core Legiones Astartes catalogue for Prohammer 30k. Revision 32 includes the generic Legion army list and Consuls, Dark Angels package, Legiones Astartes Lords of War, and Legiones Astartes Aeronautica Imperialis aircraft. Experimental Wargear and Units remains excluded.</readme>
   <sharedSelectionEntries>
@@ -11070,7 +11070,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
           <entryLinks>
             <entryLink import="true" name="Chainaxe (replaces Chainsword)" hidden="false" id="veteran-melee-chainaxe" type="selectionEntry" targetId="gear-hq-chainaxe">
               <constraints>
-                <constraint id="veteran-melee-chainaxe-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-melee-chainaxe-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="4" />
@@ -11078,7 +11078,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink import="true" name="Rending Weapon (replaces Chainsword)" hidden="false" id="veteran-melee-rending" type="selectionEntry" targetId="gear-rending">
               <constraints>
-                <constraint id="veteran-melee-rending-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-melee-rending-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="5" />
@@ -11086,7 +11086,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink import="true" name="Power Weapon (replaces Chainsword)" hidden="false" id="veteran-melee-power" type="selectionEntry" targetId="gear-power-weapon">
               <constraints>
-                <constraint id="veteran-melee-power-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="veteran-melee-power-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="10" />
@@ -11094,7 +11094,7 @@ Thiel receives the same upgrade at the normal squad cost.</description>
             </entryLink>
             <entryLink id="r40-da-warblade-veteran-melee-power" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
               <constraints>
-                <constraint id="r40-da-warblade-veteran-melee-power-max" type="max" value="20" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+                <constraint id="r40-da-warblade-veteran-melee-power-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
               </constraints>
               <costs>
                 <cost name="Points" typeId="pts" value="20" />
