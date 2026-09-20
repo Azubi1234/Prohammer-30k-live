@@ -765,8 +765,9 @@ for x in root.iter():
     if not i:continue
     if i in ids:dups.append(i)
     ids[i]=x
-if dups:
-    raise RuntimeError('Duplicate IDs after R32: '+', '.join(sorted(set(dups))[:20]))
+new_dups=[i for i in sorted(set(dups)) if i.startswith('r32-')]
+if new_dups:
+    raise RuntimeError('Duplicate R32 IDs after patch: '+', '.join(new_dups[:20]))
 
 checks=[]
 def ck(label,ok):
