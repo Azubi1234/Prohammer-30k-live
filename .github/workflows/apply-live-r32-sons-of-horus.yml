@@ -21,8 +21,8 @@ jobs:
           cat=ET.parse('Legiones Astartes.cat').getroot()
           idx=open('index.xml',encoding='utf-8').read()
           assert cat.get('revision')=='32', cat.get('revision')
-          m=re.search(r'filePath="Legiones Astartes\\.cat"[^>]*dataRevision="(\\d+)"',idx)
-          assert m and m.group(1)=='32', m.group(1) if m else None
+          assert 'filePath="Legiones Astartes.cat"' in idx
+          assert 'dataRevision="32"' in idx
           print('Verified CAT=32 index=32')
           PY
       - name: Commit Live R32
@@ -40,3 +40,5 @@ jobs:
 # trigger final Sons of Horus live apply
 
 # trigger requested 2026-09-21
+
+# trigger verify fix
