@@ -9,10 +9,12 @@ IMPLEMENTED:
 - Maloghurst embedded in 36 Command Squad Standard groups
 - Torgaddon embedded as exact Sergeant replacement in Tactical/Veteran squads
 - Unique squad shared caps, per-model costs, Kibre, Jump Packs and transport gates corrected
+- Hidden 18 raw Sons of Horus Source Entry blocks and 122 redundant option-context snippets
 - Long March Terminator non-compulsory Troops role added
 - Horus/Ascended rules, Panoply, Vengeful Spirit discount and First Company Troops implemented
 - Horus Justaerin Primarch Retinue embedded
 - Blessings of the Four added with per-model / IC costs to core SoH Infantry, role copies, retinues, unique Infantry and characters
+- Named Sons of Horus characters converted from Source Entry dumps into discrete rules and functional selections
 
 WARNINGS:
 - none
