@@ -525,6 +525,33 @@ for unit in soh_variants['luperci']:
 report.append('Unique squad shared caps, per-model costs, Kibre, Jump Packs and transport gates corrected')
 
 # -------------------------------------------------------------------
+# 4b) Display cleanup: hide raw imported source/context text once the
+#     functional New Recruit structure exists.
+# -------------------------------------------------------------------
+raw_source_hidden=0
+context_hidden=0
+for u in root.iter(C('selectionEntry')):
+    uid=u.get('id') or ''
+    if 'r41-unit-xvi-' not in uid:
+        continue
+    rs=u.find(C('rules'))
+    if rs is None:
+        continue
+    for r in list(rs):
+        rid=r.get('id') or ''
+        name=(r.get('name') or '').strip()
+        if name=='Source Entry' or rid.endswith('-source'):
+            if r.get('hidden')!='true':
+                r.set('hidden','true')
+                raw_source_hidden+=1
+        elif name=='Option restriction' or rid.endswith('-context'):
+            if r.get('hidden')!='true':
+                r.set('hidden','true')
+                context_hidden+=1
+
+report.append(f'Hidden {raw_source_hidden} raw Sons of Horus Source Entry blocks and {context_hidden} redundant option-context snippets')
+
+# -------------------------------------------------------------------
 # 5) Rites of War: add functional role copies.
 # -------------------------------------------------------------------
 longmarch=findid('r25-rite-xvi-0-the-long-march')
