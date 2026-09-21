@@ -804,12 +804,66 @@ for hh in [h,a]:
 report.append('Blessings of the Four added with per-model / IC costs to core SoH Infantry, role copies, retinues, unique Infantry and characters')
 
 # -------------------------------------------------------------------
-# 8) Named-character cleanup and minimum-point rules in visible text.
+# 8) Named characters — replace imported Source Entry dumps with
+#    discrete New Recruit rules, wargear and functional selections.
 # -------------------------------------------------------------------
 ab=findid('r41-unit-xvi-4-ezekyle-abaddon-first-captain')
+ax=findid('r41-unit-xvi-5-horus-aximand-little-horus')
+lo=findid('r41-unit-xvi-6-garviel-loken')
+ma=findid('r41-unit-xvi-8-tybalt-marr-the-either')
+ash=findid('r41-unit-xvi-9-vheren-ashurhaddon')
+
 if ab is not None:
+    hide_rule(ab,'r41-unit-xvi-4-ezekyle-abaddon-first-captain-source')
+    add_rule(ab,'r32-abaddon-wargear','Wargear','Cthonian Dreadplate; Master-crafted Power Fist; Master-crafted Power Sword; Master-crafted Storm Bolter; Banestrike Ammunition.')
+    add_rule(ab,'r32-abaddon-dreadplate','Cthonian Dreadplate','Counts as Cataphractii Terminator Armour. Add +1 to the Reserve roll made for Abaddon and any unit with which he began the battle in Reserve.')
+    add_rule(ab,'r32-abaddon-master-justaerin','Master of the Justaerin','A Justaerin Terminator Squad containing Abaddon gains Fearless and may purchase Furious Charge for +4 points per model. If Abaddon is the Warlord, one additional Justaerin Terminator Squad may be included beyond the normal 0–1 limit.')
     add_rule(ab,'r32-abaddon-minimum','Minimum Army Size','Abaddon may only be included in an army of 1,500 points or more. This is a minimum army-size threshold, not a 1-per-1,500-points ratio.')
-# Existing character Source Entry blocks are current and retinue clones already function from R2.
+    wg=add_group(ab,'r32-abaddon-warlord-group','Warlord',maxv=1)
+    wt=add_upgrade(wg,'r32-abaddon-is-warlord','Abaddon is the Warlord',0,1)
+    add_rule(wt,'r32-abaddon-is-warlord-rule','First Captain','Select this only if Abaddon is the army Warlord. This unlocks his additional Justaerin allowance.')
+    just0=findid('r41-unit-xvi-0-justaerin-terminator-squad')
+    if just0 is not None:
+        extra=add_root_shared_clone(just0,'r32-abaddon-extra-justaerin','Justaerin Terminator Squad — Abaddon Warlord allowance',cat='cat-elites',catname='Elites',root_id='r32-abaddon-extra-justaerin')
+        remove_constraint_type(extra,'max','roster')
+        add_constraint(extra,'r32-abaddon-extra-justaerin-max','max',1,'roster')
+        extra.set('hidden','true')
+        modifier(extra,'r32-abaddon-extra-justaerin-show','set','hidden','false',[
+            ('atLeast','r32-abaddon-is-warlord','1','roster','selections'),
+            ('atLeast','legion-xvi','1','roster','selections')
+        ])
+        add_rule(extra,'r32-abaddon-extra-justaerin-rule','Master of the Justaerin','Additional Elites Justaerin selection unlocked only when Abaddon is the Warlord. This is the one extra squad allowed beyond the normal 0–1 limit.')
+
+if ax is not None:
+    hide_rule(ax,'r41-unit-xvi-5-horus-aximand-little-horus-source')
+    add_rule(ax,'r32-aximand-wargear','Wargear','Artificer Armour; Combat Shield; Mourn-it-All; Meltagun Pistol; Bolter; Frag Grenades.')
+    add_melee(ax,'r32-aximand-mourn','Mourn-it-All','User','Master-crafted Power Weapon. A natural To Wound roll of 6 inflicts a Massive Wound (D3) instead of a normal Wound.')
+    add_rule(ax,'r32-aximand-strategist','Strategist','Add +1 to Reserve rolls made by a Sons of Horus army containing Horus Aximand.')
+    add_rule(ax,'r32-aximand-retinue','Command Retinue','May select one Legion Command Squad or Chieftain Squad as a retinue; the selected unit occupies no separate Force Organisation slot.')
+
+if lo is not None:
+    hide_rule(lo,'r41-unit-xvi-6-garviel-loken-source')
+    add_rule(lo,'r32-loken-wargear','Wargear','Artificer Armour; Refractor Field; Master-crafted Rending Weapon; Bolt Pistol; Frag Grenades.')
+    add_rule(lo,'r32-loken-last-wolf','The Last Wolf','The first time Loken is reduced to 0 Wounds, place a marker at his final position and remove him. This cannot be used if the attack inflicted a Massive Wound. At the beginning of the next Sons of Horus turn roll a D6: on 3+, return Loken with 1 Wound at the marker or as close as legally possible; on 1–2 he remains a casualty. Once per battle.')
+    add_rule(lo,'r32-loken-retinue','Command Retinue','May select one Legion Command Squad or Legion Veteran Squad as a retinue; the selected unit occupies no separate Force Organisation slot.')
+
+if ma is not None:
+    hide_rule(ma,'r41-unit-xvi-8-tybalt-marr-the-either-source')
+    add_rule(ma,'r32-marr-wargear','Wargear','Artificer Armour; Refractor Field; Master-crafted Lightning Claw; Bolt Pistol; Frag Grenades.')
+    add_rule(ma,'r32-marr-either','The Either','Tybalt Marr and one Infantry unit he has joined before deployment gain Outflank. Marr must enter play with that unit.')
+    add_rule(ma,'r32-marr-hunter','Hunter of the Broken Legions','Marr and any Sons of Horus unit he has joined may re-roll To Hit rolls of 1 during the first Assault phase after entering play from Reserve.')
+    add_rule(ma,'r32-marr-retinue','Command Retinue','May select one Legion Veteran Squad or Reaver Attack Squad as a retinue; the selected unit occupies no separate Force Organisation slot.')
+
+if ash is not None:
+    hide_rule(ash,'r41-unit-xvi-9-vheren-ashurhaddon-source')
+    add_rule(ash,'r32-ash-wargear','Wargear','Artificer Armour; Iron Halo; Axe Serpentis; Bolt Pistol; Frag Grenades.')
+    add_melee(ash,'r32-ash-axe','Axe Serpentis','+1','Master-crafted Power Weapon.')
+    add_rule(ash,'r32-ash-first-reaver','First Reaver','May select one Reaver Attack Squad as a personal retinue; the selected unit occupies no separate Force Organisation slot.')
+    add_rule(ash,'r32-ash-true-sons','Master of the True Sons','While Ashurhaddon is joined to a Reaver Attack Squad or Chieftain Squad, that unit may re-roll failed Morale and Pinning tests.')
+
+# The squad-upgrade characters already use functional shared replacement entries;
+# their hidden standalone Source Entry blocks are not used for roster building.
+report.append('Named Sons of Horus characters converted from Source Entry dumps into discrete rules and functional selections')
 
 # -------------------------------------------------------------------
 # Validation
