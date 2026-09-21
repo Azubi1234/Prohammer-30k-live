@@ -34,3 +34,5 @@ jobs:
           git push
 
 # trigger apply
+
+# trigger source-text cleanup
