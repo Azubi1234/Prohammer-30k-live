@@ -61,15 +61,15 @@ if cent_groups is None: raise RuntimeError("Centurion selectionEntryGroups missi
 cult_candidates=[x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r45-cult-hq-centurion"]
 power_candidates=[x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r19-ts-centurion-powers"]
 if not cult_candidates or not power_candidates: raise RuntimeError("Existing direct TS Centurion psychic groups missing")
-old_cult=max(cult_candidates,key=lambda g: len(g.findall(f"./{C('entryLinks')}/{C('entryLink')}")))
-old_power=max(power_candidates,key=lambda g: len(g.findall(f"./{C('entryLinks')}/{C('entryLink')}")))
+old_cult=max(cult_candidates,key=lambda g: len(list(g.iter(C("entryLink")))))
+old_power=max(power_candidates,key=lambda g: len(list(g.iter(C("entryLink")))))
 
 cult_targets={}
-for l in old_cult.findall(f"./{C('entryLinks')}/{C('entryLink')}"):
+for l in old_cult.iter(C("entryLink")):
     cult_targets[l.get("name")]=l.get("targetId")
 
 disc_power_targets=collections.defaultdict(list)
-for l in old_power.findall(f"./{C('entryLinks')}/{C('entryLink')}"):
+for l in old_power.iter(C("entryLink")):
     lid=l.get("id") or ""
     m=re.match(r"r19-ts-centurion-power-(biomancy|divination|pyromancy|telekinesis|telepathy)-",lid)
     if m:
