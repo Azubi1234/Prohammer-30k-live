@@ -1,0 +1,40 @@
+name: Apply Live R53 Known-Good Restore
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r53-known-good-restore.yml']
+permissions: {contents: write}
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Fetch known-good R48
+        run: |
+          git fetch origin 51d32130622bb8ebfa8a6ee49cbf1e7c4623be59 --depth=1
+          git show 51d32130622bb8ebfa8a6ee49cbf1e7c4623be59:'Legiones Astartes.cat' > 'Legiones Astartes.cat'
+          git show 51d32130622bb8ebfa8a6ee49cbf1e7c4623be59:'index.xml' > index.xml
+      - name: Bump restored catalogue to R53
+        run: python .github/build/live_r53_restore_known_good.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='53'
+          assert c.get('gameSystemRevision')=='11'
+          assert 'dataRevision="53"' in i
+          assert 'dataRevision="11"' in i
+          print('Verified restored R53')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r53-known-good-restore.txt
+          git diff --cached --quiet || git commit -m "Live R53: restore last confirmed-working catalogue"
+          git push
