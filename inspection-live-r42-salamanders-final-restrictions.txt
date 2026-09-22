@@ -1,0 +1,29 @@
+Live R42 — Salamanders final restriction audit
+Input CAT=41/GST=6 -> CAT=42/GST=7
+
+FIXES:
+- Firedrake 0-1 is now shared across 4 Salamanders normal/retinue copies (Alpha Legion Rewards of Treachery excluded).
+- Added a Salamanders-specific compulsory-Troops counter: 54 top-level compulsory-capable Troops tagged; 9 Support/non-compulsory Troops excluded.
+- Covenant of Fire now hides 317 Drop Pod/Dreadclaw links and 3 nested transport entries that must enter by Deep Strike.
+- Removed 104 overbroad Inferno Pistol links created by the R40 heuristic and added 43 controlled Sergeant-Armoury links.
+- Rebuilt Salamanders Artificer Armour access: removed 19 old squad-root links, added 39 Sergeant/eligible leader links, and hid 4 normal-price Sergeant options while Salamanders are selected.
+- Master-crafted Weapon price override: hid 12 normal +15 selectors for Salamanders and added 4 corresponding +10 selectors.
+- Reinforced Ceramite: removed 1 incorrect Salamanders-discount links from Land Raider/Spartan contexts; hid 17 normal-price selectors and added 0 missing +10 selectors on eligible non-exempt vehicles.
+- R41 Iron Halo 0-1, Salamanders Mantle 0-1/additive armour behavior, Vulkan Loyalist restriction, Awakening Fire Chaplain/Vulkan/type limits, and conditional Covenant Troops remained intact.
+- No Fortification or Allied Detachment structures currently exist in the standard GST, so the Rite prohibitions remain rules text rather than fake builder controls.
+
+VALIDATION:
+- PASS: CAT revision 42
+- PASS: GST revision 7
+- PASS: CAT points GST7
+- PASS: Index 42/7
+- PASS: Firedrake limit category exists
+- PASS: Compulsory Troops category exists
+- PASS: All Salamanders Firedrake copies share 0-1
+- PASS: Adherent cannot count compulsory
+- PASS: r40-sal-cov-pyro conditional
+- PASS: r40-sal-cov-infernus conditional
+- PASS: Covenant blocks linked mandatory-DS transports
+- PASS: Overbroad R40 Inferno links removed
+- PASS: Land Raiders/Spartans do not get Salamanders Ceramite discount
+- PASS: No new/worsened duplicate IDs
