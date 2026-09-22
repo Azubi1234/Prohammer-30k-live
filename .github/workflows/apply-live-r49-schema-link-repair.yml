@@ -30,3 +30,5 @@ jobs:
           git add 'Legiones Astartes.cat' index.xml inspection-live-r49-schema-entrylink-repair.txt
           git diff --cached --quiet || git commit -m "Live R49: repair schema links and restore Thousand Sons"
           git push
+
+# retry corrected Ammitara counts
