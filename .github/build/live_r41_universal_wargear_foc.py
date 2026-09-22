@@ -187,6 +187,7 @@ for e in root.iter(C("selectionEntry")):
     local_by_norm[norm_name(e.get("name"))].append(e)
 
 created_canon=0; converted=0; skipped_incompatible=0; existing_canon_used=0
+local_parent=parent_map()
 
 def pick_canonical(arr):
     # Prefer core gear-* IDs, then otherwise first.
@@ -224,7 +225,7 @@ for nm,locals_ in list(local_by_norm.items()):
         if esig not in (EMPTY_SIG,csig):
             skipped_incompatible+=1
             continue
-        pm=parent_map(); container=pm.get(e)
+        container=local_parent.get(e)
         if container is None or container.tag!=C("selectionEntries"):
             continue
         idx=list(container).index(e)
