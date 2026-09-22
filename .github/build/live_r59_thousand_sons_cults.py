@@ -246,7 +246,8 @@ def find_root_contains(fragment, xv_only=False):
     return rows
 
 def has_cult_group(e):
-    return any((g.get("name") or "")=="Prosperine Cult" for g in e.iter(C("selectionEntryGroup")))
+    # Direct unit selector only; nested retinues are separate units and may have their own Cult.
+    return any((g.get("name") or "")=="Prosperine Cult" for g in e.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}"))
 
 required_cult_units={
     "sekhemt":["sekhmet","sekhemet"], # tolerate catalogue spelling
