@@ -1,0 +1,34 @@
+Live R46 — Alpha Legion Rewards of Treachery rebuild
+Input CAT=45/GST=10 -> CAT=46/GST=11
+
+REWARDS OF TREACHERY:
+- Rebuilt all 62 Rewards entries from the current live donor units instead of the stale imported copies.
+- Every Reward is an Elites choice and shares the army-wide one-Rewards-unit limit.
+- Rewards appear only when The Coils of the Hydra is selected or Ingo Pech is present.
+- 29 donor units with a named Legiones Astartes rule were converted to Legiones Astartes (Alpha Legion), receive Martial Hubris and dynamically display the selected Mutable Tactic.
+- Donor core Legion rules are stripped unless the unit's own old source entry explicitly listed that rule/equipment; unit-specific rules/options are retained.
+- Preserved explicit donor allegiance gates on 6 Rewards where the current donor unit has a Loyalist/Traitor availability condition.
+- Added Alpha Legion Teleportation Transponders to 6 eligible all-Terminator Rewards units.
+- Current donor stat profiles/options replace the old Source Entry-era clones; no Reward contains a Source Entry dump.
+- Repaired 15 legacy catalogue links using retired Artificer Armour / Thunder Hammer / Rotor Cannon target IDs before cloning.
+
+NATIVE CLEANUP:
+- Removed 2 obsolete imported retinue group(s) left beside the new Dynat/Pech retinue selectors.
+
+VALIDATION:
+- PASS: CAT46
+- PASS: GST11
+- PASS: CAT->GST11
+- PASS: Index46/11
+- PASS: 62 Rewards rebuilt
+- PASS: No Source Entry anywhere in Rewards
+- PASS: All Rewards are Elites
+- PASS: All Rewards share one-per-army category
+- PASS: All Rewards gated to Coils or Pech
+- PASS: No donor Legiones Astartes remains on Reward roots
+- PASS: Alpha LA installed on eligible Rewards
+- PASS: All Rewards retain model profiles
+- PASS: r41-unit-xx-4-armillus-dynat legacy retinue removed
+- PASS: r41-unit-xx-7-ingo-pech legacy retinue removed
+- PASS: All Reward entry/info targets resolve
+- PASS: No new/worsened duplicate IDs
