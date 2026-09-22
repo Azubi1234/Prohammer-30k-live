@@ -1,0 +1,59 @@
+Live R61 — Thousand Sons Psychic Brotherhood access
+Input CAT60/GST14 -> CAT61/GST14
+
+BEHAVIOUR:
+- Rebuilt the psychic interface on 5 live Brotherhood-capable unit root(s).
+- Brotherhood of Psykers remains Mastery Level 1 and therefore selects exactly one psychic power.
+- The unit still selects exactly one Prosperine Cult.
+- Only the discipline correlated to that Cult is selectable:
+  Pavoni -> Biomancy
+  Raptora -> Telekinesis
+  Corvidae -> Divination
+  Athanaeans -> Telepathy
+  Pyrae -> Pyromancy
+- After selecting that Cult-locked discipline, exactly one power from that discipline is required.
+- Discipline/power controls are hidden when the Brotherhood upgrade is not taken and hidden outside a Thousand Sons roster.
+- Existing canonical ProHammer discipline/power entries are reused; no duplicate psychic-power definitions were created.
+
+PATCHED ROOTS:
+- Legion Terminator Squad — Long March (non-compulsory Troops) (r32-soh-long-march-terminator-troops) — Brotherhood selectors ['r32-soh-long-march-r45-terminator-unit-ts-brother', 'r32-soh-long-march-r45-terminator-unit-ts-brother-fellow']; power pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Terminator Squad — Horus’ First Company (r32-soh-first-company-terminators) — Brotherhood selectors ['r32-soh-first-company-term-r45-terminator-unit-ts-brother', 'r32-soh-first-company-term-r45-terminator-unit-ts-brother-fellow']; power pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Veteran Squad (veteran-unit) — Brotherhood selectors ['r45-veteran-unit-ts-brother', 'r45-veteran-unit-ts-brother-fellow']; power pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Terminator Squad (terminator-unit) — Brotherhood selectors ['r45-terminator-unit-ts-brother', 'r45-terminator-unit-ts-brother-fellow']; power pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Veteran Squad (r35-pride-veteran-veteran-unit) — Brotherhood selectors ['r58-pride-sync-b4aa31fd6d9f9355', 'r58-pride-sync-3f28498f7d170529']; power pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+
+VALIDATION:
+- PASS: CAT61
+- PASS: GST dependency remains 14
+- PASS: Index61
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) discipline group visible-default
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) power group visible-default
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) groups require XV
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) groups gated by Brotherhood
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) has five Cult-correlated disciplines
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) has all five power pools
+- PASS: Legion Terminator Squad — Horus’ First Company discipline group visible-default
+- PASS: Legion Terminator Squad — Horus’ First Company power group visible-default
+- PASS: Legion Terminator Squad — Horus’ First Company groups require XV
+- PASS: Legion Terminator Squad — Horus’ First Company groups gated by Brotherhood
+- PASS: Legion Terminator Squad — Horus’ First Company has five Cult-correlated disciplines
+- PASS: Legion Terminator Squad — Horus’ First Company has all five power pools
+- PASS: Legion Veteran Squad discipline group visible-default
+- PASS: Legion Veteran Squad power group visible-default
+- PASS: Legion Veteran Squad groups require XV
+- PASS: Legion Veteran Squad groups gated by Brotherhood
+- PASS: Legion Veteran Squad has five Cult-correlated disciplines
+- PASS: Legion Veteran Squad has all five power pools
+- PASS: Legion Terminator Squad discipline group visible-default
+- PASS: Legion Terminator Squad power group visible-default
+- PASS: Legion Terminator Squad groups require XV
+- PASS: Legion Terminator Squad groups gated by Brotherhood
+- PASS: Legion Terminator Squad has five Cult-correlated disciplines
+- PASS: Legion Terminator Squad has all five power pools
+- PASS: Legion Veteran Squad discipline group visible-default
+- PASS: Legion Veteran Squad power group visible-default
+- PASS: Legion Veteran Squad groups require XV
+- PASS: Legion Veteran Squad groups gated by Brotherhood
+- PASS: Legion Veteran Squad has five Cult-correlated disciplines
+- PASS: Legion Veteran Squad has all five power pools
+- PASS: No new/worsened duplicate IDs
