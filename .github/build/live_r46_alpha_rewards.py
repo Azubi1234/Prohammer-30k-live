@@ -302,6 +302,7 @@ for e in rewards:
 print("UNRESOLVED_REWARD_TARGETS", repr(bad[:300]))
 ck("All Reward entry/info targets resolve",not bad)
 new=collections.Counter(x.get("id") for x in rr.iter() if x.get("id"));worse={k:v for k,v in new.items() if v>max(1,baseline.get(k,0))}
+print("WORSE_IDS", repr(worse))
 ck("No new/worsened duplicate IDs",not worse)
 
 lines=[
