@@ -1,0 +1,30 @@
+name: Apply Live R67 TS Veteran Power Selection
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r67-ts-veteran-powers.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R67
+        run: python .github/build/live_r67_ts_veteran_powers.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot();i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='67' and c.get('gameSystemRevision')=='15'
+          assert 'dataRevision="67"' in i
+          print('Verified R67')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r67-ts-veteran-power-selection.txt
+          git diff --cached --quiet || git commit -m "Live R67: fix TS Veteran power selection"
+          git push
