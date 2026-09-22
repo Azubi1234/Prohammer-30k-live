@@ -1,0 +1,27 @@
+Live R67 — Thousand Sons Veteran psychic-power selection fix
+Input CAT=66/GST=15 -> CAT=67/GST remains 15
+
+FIX:
+- Targeted the main Legion Veteran Squad directly.
+- Confirmed all 35 canonical powers remain present: 7 each for Biomancy, Telekinesis, Divination, Telepathy and Pyromancy.
+- Replaced the fragile MAX=0 + conditional MAX=1 system with a stable power-group MAX=1.
+- Base MIN remains 0; buying Brotherhood of Psykers makes one Cult-correlated power mandatory.
+- Brotherhood detection accepts both the Veteran EntryLink IDs and their shared target IDs, covering New Recruit link-resolution behaviour.
+- Every power remains locked to the selected Prosperine Cult's correlated discipline.
+- Every power is hidden unless a Brotherhood of Psykers upgrade is selected.
+- Removed 6 obsolete/stale Veteran power min/max modifiers.
+- Veteran melee scaling and the R66 Centurion fix are untouched.
+
+VALIDATION:
+- PASS: CAT67
+- PASS: GST dependency remains15
+- PASS: Index67
+- PASS: Veteran power base MIN0
+- PASS: Veteran power base MAX1
+- PASS: Veteran power no longer MAX0
+- PASS: Brotherhood local IDs wired
+- PASS: Brotherhood shared targets wired
+- PASS: All 35 powers retained
+- PASS: All powers still Cult-locked
+- PASS: All powers Brotherhood-gated
+- PASS: No new/worsened duplicate IDs
