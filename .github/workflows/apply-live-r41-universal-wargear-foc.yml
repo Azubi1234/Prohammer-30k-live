@@ -1,4 +1,5 @@
 name: Apply Live R41 Universal Wargear and FOC Visibility
+# retry with optimized universalisation
 on:
   push:
     paths:
