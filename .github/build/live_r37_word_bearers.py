@@ -640,7 +640,7 @@ add_rule(zar,"r37-wb-zar-psy","Psyker (Mastery Level 2)","Zardu Layak selects tw
 # Malefic powers from ProHammer v2.4
 mg=group(zar,"r37-wb-zar-malefic","Malefic Daemonology — select 2 powers",2,2)
 mal=[
- ("Summoning","Conjuration — Range 12\\". Summon 8 Bloodletters, 9 Pink Horrors, 7 Plaguebearers, 6 Daemonettes, 4 Flesh Hounds, 3 Flamers, 4 Nurglings or 6 Seekers.",None),
+ ("Summoning",'Conjuration — Range 12". Summon 8 Bloodletters, 9 Pink Horrors, 7 Plaguebearers, 6 Daemonettes, 4 Flesh Hounds, 3 Flamers, 4 Nurglings or 6 Seekers.',None),
  ("Cursed Earth",'Blessing — targets Psyker. All Daemon models within 12" gain +1 to Invulnerable Saves; Deep Striking Daemons do not scatter if the centre model is placed within 12".',None),
  ("Dark Flame","Template, S4 AP5, Assault 1, Soul Blaze, Torrent.",("Template","4","5","Assault 1, Soul Blaze, Torrent")),
  ("Possession",'Conjuration — Range 6". Summon one Bloodthirster, Lord of Change, Great Unclean One or Keeper of Secrets. If successful, the invoking Psyker is removed as a casualty. Only usable by Mastery Level 2+.',None),
