@@ -1,4 +1,5 @@
 name: Apply Live R56 Thousand Sons Psychic Gates
+# retry with baseline unresolved-link validation
 on:
   push:
     paths: ['.github/workflows/apply-live-r56-ts-psychic-gates.yml']
