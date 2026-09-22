@@ -1,0 +1,47 @@
+Live R57 — Thousand Sons Centurion psychic UI rebuild
+Input CAT56/GST14 -> CAT57/GST14
+
+WHY:
+- The Cult, discipline and power data existed, but the Centurion UI depended on three linked visibility layers and New Recruit was still rendering none of them.
+
+FIX:
+- Removed the old fragile groups: r45-cult-hq-centurion, r19-ts-centurion-disciplines, r19-ts-centurion-powers.
+- Added one positive-gated Thousand Sons Centurion package that appears when XV Legion is selected.
+- Exactly one Prosperine Cult is chosen.
+- The chosen Cult directly contains its corresponding psychic discipline's powers; no second linked Discipline selector is required.
+- Pavoni -> Biomancy; Raptora -> Telekinesis; Corvidae -> Divination; Athanaeans -> Telepathy; Pyrae -> Pyromancy.
+- Normal Centurion: exactly 1 power. Librarian Epistolary: exactly 2 powers.
+- Cult Arcana/Cult Mastery and psychic powers still reference the existing canonical shared rules/selections; no duplicate rule definitions were created.
+
+VALIDATION:
+- PASS: CAT revision 57
+- PASS: GST dependency stays 14
+- PASS: index CAT57
+- PASS: new Centurion psychic package exists
+- PASS: package defaults hidden
+- PASS: package positively shows for XV
+- PASS: exactly five Cult choices
+- PASS: Pavoni has canonical Cult refs
+- PASS: Biomancy powers present
+- PASS: Biomancy base 1 power
+- PASS: Biomancy Epistolary to 2
+- PASS: Raptora has canonical Cult refs
+- PASS: Telekinesis powers present
+- PASS: Telekinesis base 1 power
+- PASS: Telekinesis Epistolary to 2
+- PASS: Corvidae has canonical Cult refs
+- PASS: Divination powers present
+- PASS: Divination base 1 power
+- PASS: Divination Epistolary to 2
+- PASS: Athanaeans has canonical Cult refs
+- PASS: Telepathy powers present
+- PASS: Telepathy base 1 power
+- PASS: Telepathy Epistolary to 2
+- PASS: Pyrae has canonical Cult refs
+- PASS: Pyromancy powers present
+- PASS: Pyromancy base 1 power
+- PASS: Pyromancy Epistolary to 2
+- PASS: r45-cult-hq-centurion removed
+- PASS: r19-ts-centurion-disciplines removed
+- PASS: r19-ts-centurion-powers removed
+- PASS: no new/worsened duplicate IDs
