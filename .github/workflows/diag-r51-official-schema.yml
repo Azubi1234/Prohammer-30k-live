@@ -1,4 +1,4 @@
-name: Diagnose R51 Official Schema
+name: Diagnose Current Official Schema
 on:
   push:
     paths: ['.github/workflows/diag-r51-official-schema.yml']
@@ -13,3 +13,5 @@ jobs:
       - run: pip install lxml
       - run: curl -L 'https://raw.githubusercontent.com/BSData/schemas/e8e59c70c8a5c9c74e5142a9c8e83aca6e38ddc9/src/xml/schema/v2_03/Catalogue.xsd' -o Catalogue.xsd
       - run: python .github/build/diag_r51_official_schema.py
+
+# rerun on current R52
