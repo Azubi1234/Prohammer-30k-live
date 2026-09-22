@@ -30,3 +30,5 @@ jobs:
           git add 'Legiones Astartes.cat' index.xml inspection-live-r61-ts-brotherhood-psychic.txt
           git diff --cached --quiet || git commit -m "Live R61: fix Thousand Sons Psychic Brotherhood access"
           git push
+
+# retry after cloned power target mapping
