@@ -32,3 +32,5 @@ jobs:
 # retry after legacy gear target repair
 
 # retry after report syntax fix
+
+# retry duplicate diagnostic
