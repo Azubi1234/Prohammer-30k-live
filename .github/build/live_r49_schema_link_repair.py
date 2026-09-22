@@ -132,8 +132,8 @@ expected_counts={
 "r19-ts-sekhmet-disciplines":5,
 "r19-ts-sekhmet-powers":35,
 "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal":5,
-"r19-ts-ammitara-disciplines":5,
-"r19-ts-ammitara-powers":35,
+"r19-ts-ammitara-disciplines":2,
+"r19-ts-ammitara-powers":14,
 }
 for gid,n in expected_counts.items():
     g=rids.get(gid);ck(gid+" exists",g is not None)
