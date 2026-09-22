@@ -1,0 +1,32 @@
+name: Apply Live R59 Thousand Sons Cults
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r59-thousand-sons-cults.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R59
+        run: python .github/build/live_r59_thousand_sons_cults.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='59'
+          assert c.get('gameSystemRevision')=='14'
+          assert 'dataRevision="59"' in i
+          print('Verified R59')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r59-thousand-sons-cults.txt
+          git diff --cached --quiet || git commit -m "Live R59: rebuild Thousand Sons Cult system"
+          git push
