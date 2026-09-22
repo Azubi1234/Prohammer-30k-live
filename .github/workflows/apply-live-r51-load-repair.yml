@@ -31,3 +31,5 @@ jobs:
           git add 'Legiones Astartes.cat' index.xml inspection-live-r51-load-repair.txt
           git diff --cached --quiet || git commit -m "Live R51: repair catalogue load references"
           git push
+
+# retry validated R51 after transient commit_refs failure
