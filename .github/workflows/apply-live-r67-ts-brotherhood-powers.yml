@@ -1,4 +1,5 @@
 name: Apply Live R67 TS Brotherhood Power Selection
+# retry handling local and linked power options
 on:
   push:
     paths: ['.github/workflows/apply-live-r67-ts-brotherhood-powers.yml']
