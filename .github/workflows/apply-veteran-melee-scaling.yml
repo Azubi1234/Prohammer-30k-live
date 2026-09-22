@@ -17,3 +17,5 @@ jobs:
           git add 'Legiones Astartes.cat' index.xml inspection-live-veteran-melee-scaling.txt
           git diff --cached --quiet || git commit -m "Fix Veteran melee weapon scaling"
           git push
+
+# retry after Live R59 Thousand Sons landed
