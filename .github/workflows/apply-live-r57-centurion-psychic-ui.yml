@@ -1,5 +1,5 @@
 name: Apply Live R57 Centurion Psychic UI
-# retry direct Centurion group lookup
+# retry duplicate Centurion group cleanup
 on:
   push:
     paths: ['.github/workflows/apply-live-r57-centurion-psychic-ui.yml']
