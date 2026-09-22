@@ -1,4 +1,5 @@
 name: Apply Live R68 TS Psychic Veteran Melee
+# retry after validation typo fix
 on:
   push:
     paths: ['.github/workflows/apply-live-r68-ts-psychic-veteran-melee.yml']
