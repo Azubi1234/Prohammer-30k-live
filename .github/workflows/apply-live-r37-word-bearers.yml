@@ -1,0 +1,37 @@
+name: Apply Live R37 Word Bearers
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r37-word-bearers.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R37 Word Bearers
+        run: python .github/build/live_r37_word_bearers.py
+      - name: Verify XML
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          g=ET.parse('Prohammer 30k.gst').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='37'
+          assert c.get('gameSystemRevision')=='3'
+          assert g.get('revision')=='3'
+          assert 'dataRevision="37"' in i
+          assert 'dataRevision="3"' in i
+          assert 'ns0:' not in i
+          print('Verified R37 XML and revisions')
+          PY
+      - name: Commit Live R37
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r37-word-bearers.txt
+          git diff --cached --quiet || git commit -m "Live R37: Word Bearers implementation"
+          git push
