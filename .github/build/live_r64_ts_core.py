@@ -173,14 +173,21 @@ cult_info={}
 for ce in old_cult.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
     cult_info[ce.get("name")]=[copy.deepcopy(x) for x in ce.findall(f"./{C('infoLinks')}/{C('infoLink')}")]
 
+# The Centurion package is the current known-good canonical power pool. Reuse
+# those shared targets rather than depending on the legacy Praetor flat group.
 power_by_disc=collections.defaultdict(list)
-for x in old_power.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
-    xid=(x.get("id") or "").lower()
-    m=re.search(r"power-(biomancy|divination|pyromancy|telekinesis|telepathy)-",xid)
-    if m and x.get("targetId"):
-        power_by_disc[m.group(1)].append((x.get("name"),x.get("targetId")))
+for ce in cent_choices:
+    key=None
+    nm=(ce.get("name") or "").lower()
+    for d in ["biomancy","divination","pyromancy","telekinesis","telepathy"]:
+        if d in nm:key=d;break
+    if key is None:continue
+    pg=ce.find(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}")
+    if pg is None:continue
+    for x in pg.findall(f"./{C('entryLinks')}/{C('entryLink')}"):
+        if x.get("targetId"):power_by_disc[key].append((x.get("name"),x.get("targetId")))
 for d in ["biomancy","divination","pyromancy","telekinesis","telepathy"]:
-    if len(power_by_disc[d])<5:raise RuntimeError("Praetor canonical power pool incomplete: "+d)
+    if len(power_by_disc[d])!=7:raise RuntimeError(f"Praetor canonical power pool incomplete: {d} -> {len(power_by_disc[d])}")
 
 sgs=cont(pra,"selectionEntryGroups",before=("costs","modifiers"))
 for gid in ["r45-cult-hq-praetor","r19-ts-praetor-disciplines","r19-ts-praetor-powers"]:
