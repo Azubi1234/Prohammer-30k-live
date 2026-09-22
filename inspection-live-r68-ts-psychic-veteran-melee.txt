@@ -1,0 +1,80 @@
+Live R68 — Thousand Sons psychic UI + Veteran melee definitive repair
+Input CAT=67/GST=15 -> CAT=68/GST remains15
+
+VETERAN MELEE:
+- Replaced the unreliable MAX5 + conditional SET6/7/8/9/10 system.
+- Close Combat Weapon Replacements now use a proven dynamic counter: base MAX1 for the Sergeant plus +1 for every selected Legion Veteran.
+- Result: 5-model squad = max5 melee replacements; 10-model squad = max10.
+
+THOUSAND SONS VETERANS:
+- Removed the single 35-power sibling pool and all Cult-lock/no-Brotherhood visibility complexity.
+- Each Prosperine Cult now physically owns its correlated seven-power list:
+  Pavoni -> Biomancy; Raptora -> Telekinesis; Corvidae -> Divination; Athanaeans -> Telepathy; Pyrae -> Pyromancy.
+- The chosen Cult's Psychic Brotherhood Power group appears only after Brotherhood of Psykers is selected and then requires exactly one power.
+- Because powers are nested inside the Cult, a power from the wrong Cult cannot appear or be selected.
+
+THOUSAND SONS CENTURION:
+- Deleted the R66 cloned psychic packages that retained legacy hidden Librarian logic.
+- Rebuilt a clean direct Cult selector from scratch for normal Thousand Sons Centurions.
+- Rebuilt a second clean package physically inside the Shattered-Legions Thousand Sons assignment.
+- Each Cult directly contains its seven correlated powers; normal TS Centurion selects one.
+- Librarian Epistolary increases the correlated power selection to two within the SAME Cult.
+- Psyker (Mastery Level 1) is attached directly to normal TS Centurion / Shattered TS assignment in the appropriate context.
+
+VALIDATION:
+- PASS: CAT68
+- PASS: GST dependency remains15
+- PASS: Index68
+- PASS: Veteran melee base MAX1
+- PASS: Veteran melee dynamically increments per Veteran
+- PASS: Veteran old threshold SET modifiers removed
+- PASS: Veteran five Cults
+- PASS: Veteran Pavoni nested power group
+- PASS: Veteran Pavoni seven powers
+- PASS: Veteran Pavoni Brotherhood gated
+- PASS: Veteran Raptora nested power group
+- PASS: Veteran Raptora seven powers
+- PASS: Veteran Raptora Brotherhood gated
+- PASS: Veteran Corvidae nested power group
+- PASS: Veteran Corvidae seven powers
+- PASS: Veteran Corvidae Brotherhood gated
+- PASS: Veteran Athanaeans nested power group
+- PASS: Veteran Athanaeans seven powers
+- PASS: Veteran Athanaeans Brotherhood gated
+- PASS: Veteran Pyrae nested power group
+- PASS: Veteran Pyrae seven powers
+- PASS: Veteran Pyrae Brotherhood gated
+- PASS: Old Veteran 35-power sibling group removed
+- PASS: Normal Centurion clean package exists
+- PASS: Normal Centurion package keyed to XV
+- PASS: Normal Centurion five Cults
+- PASS: Centurion Pavoni power group
+- PASS: Centurion Pavoni seven powers
+- PASS: Centurion Pavoni min1
+- PASS: Centurion Pavoni max1
+- PASS: Centurion Pavoni Epistolary scales to2
+- PASS: Centurion Raptora power group
+- PASS: Centurion Raptora seven powers
+- PASS: Centurion Raptora min1
+- PASS: Centurion Raptora max1
+- PASS: Centurion Raptora Epistolary scales to2
+- PASS: Centurion Corvidae power group
+- PASS: Centurion Corvidae seven powers
+- PASS: Centurion Corvidae min1
+- PASS: Centurion Corvidae max1
+- PASS: Centurion Corvidae Epistolary scales to2
+- PASS: Centurion Athanaeans power group
+- PASS: Centurion Athanaeans seven powers
+- PASS: Centurion Athanaeans min1
+- PASS: Centurion Athanaeans max1
+- PASS: Centurion Athanaeans Epistolary scales to2
+- PASS: Centurion Pyrae power group
+- PASS: Centurion Pyrae seven powers
+- PASS: Centurion Pyrae min1
+- PASS: Centurion Pyrae max1
+- PASS: Centurion Pyrae Epistolary scales to2
+- PASS: Shattered TS Centurion package exists
+- PASS: Shattered TS Centurion package visible
+- PASS: Normal ML1 link exists
+- PASS: Shattered ML1 link exists
+- PASS: No new/worsened duplicate IDs
