@@ -1,0 +1,13 @@
+name: Diagnose Current Catalogue Load
+on:
+  push:
+    paths: ['.github/workflows/diag-current-load.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_current_load.py
