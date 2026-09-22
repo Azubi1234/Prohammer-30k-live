@@ -1,0 +1,13 @@
+name: Diagnose Veteran Melee Scaling
+on:
+  push:
+    paths: ['.github/workflows/diag-veteran-melee-scaling.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_veteran_melee_scaling.py
