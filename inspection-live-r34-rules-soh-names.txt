@@ -1,0 +1,121 @@
+Live R34 — ProHammer rule text, Sons of Horus rules and display names
+Input CAT=33 -> target CAT=34
+
+CHANGES:
+- Replaced 66 generic standalone rule-reference descriptions with actual ProHammer rule text.
+- Expanded 1537 short custom rules that grant/reference a ProHammer universal rule.
+- Restored source-listed Sons of Horus special rules to Justaerin, Reavers, Chieftains, Luperci, named characters and both Horus profiles.
+- Patched 6 selectable Maloghurst/Kibre/Torgaddon character instances with their source rules.
+- Normalised 94 character/Primarch display names from all-caps presentation.
+- Removed Legion numeral prefixes from 0 additional Primarch display entries/clones.
+- Bumped catalogue/index to revision 34.
+
+VALIDATION:
+- PASS: Catalogue revision 34
+- PASS: Index revision 34
+- PASS: Index remains canonical
+- PASS: Known ProHammer reference placeholders removed
+- PASS: r41-unit-xvi-0-justaerin-terminator-squad source special rules
+- PASS: r41-unit-xvi-1-reaver-attack-squad source special rules
+- PASS: r41-unit-xvi-2-chieftain-squad source special rules
+- PASS: r41-unit-xvi-3-luperci-pack source special rules
+- PASS: r41-unit-xvi-9-vheren-ashurhaddon source special rules
+- PASS: r41-unit-xvi-12-xvi-horus-lupercal-the-warmaster source special rules
+- PASS: r41-unit-xvi-13-xvi-horus-ascended-the-warmaster source special rules
+- PASS: Primarch Legion numerals removed
+
+NAME CHANGES:
+- LORD COMMANDER EIDOLON -> Lord Commander Eidolon
+- SAUL TARVITZ -> Saul Tarvitz
+- CAPTAIN LUCIUS -> Captain Lucius
+- FABIUS BILE -> Fabius Bile
+- RYLANOR THE UNYIELDING -> Rylanor the Unyielding
+- FULGRIM, THE PHOENICIAN -> Fulgrim, the Phoenician
+- FULGRIM TRANSFIGURED -> Fulgrim Transfigured
+- NÂRIK DREYGUR -> Nârik Dreygur
+- ERASMUS GOLG -> Erasmus Golg
+- KYR VHALEN -> Kyr Vhalen
+- FORRIX, FIRST CAPTAIN OF THE IRON WARRIORS -> Forrix, First Captain of the Iron Warriors
+- KROEGER, THE BLOODY-HANDED -> Kroeger, the Bloody-Handed
+- IV — PERTURABO, THE LORD OF IRON -> Perturabo, the Lord of Iron
+- QIN XA, MASTER OF THE KESHIG -> Qin Xa, Master of the Keshig
+- TARGUTAI YESUGEI -> Targutai Yesugei
+- SHIBAN KHAN -> Shiban Khan
+- HIBOU KHAN -> Hibou Khan
+- HASIK NOYAN-KHAN -> Hasik Noyan-Khan
+- V — JAGHATAI KHAN, THE WARHAWK -> Jaghatai Khan, the Warhawk
+- RALDORON, THE BLOODED -> Raldoron, the Blooded
+- RALDORON, THE BLOODED -> Raldoron, the Blooded
+- DOMINION ZEPHON -> Dominion Zephon
+- ASTER CROHNE -> Aster Crohne
+- NASSIR AMIT, THE FLESH TEARER -> Nassir Amit, the Flesh Tearer
+- NASSIR AMIT, THE FLESH TEARER -> Nassir Amit, the Flesh Tearer
+- IX — SANGUINIUS, THE GREAT ANGEL -> Sanguinius, the Great Angel
+- IX — SANGUINIUS, THE GREAT ANGEL -> Sanguinius, the Great Angel
+- SHADRAK MEDUSON -> Shadrak Meduson
+- AUTEK MOR -> Autek Mor
+- GABRIEL SANTAR -> Gabriel Santar
+- X — FERRUS MANUS, THE GORGON -> Ferrus Manus, the Gorgon
+- X — FERRUS MANUS, THE GORGON -> Ferrus Manus, the Gorgon
+- KHÂRN THE BLOODY -> Khârn the Bloody
+- SHABRAN DARR -> Shabran Darr
+- GAHLAN SURLAK -> Gahlan Surlak
+- KARGOS, THE BLOODSPITTER -> Kargos, the Bloodspitter
+- CAPTAIN EHRLEN -> Captain Ehrlen
+- DELVARUS -> Delvarus
+- XII — ANGRON, THE RED ANGEL -> Angron, the Red Angel
+- ANGRON, THE RED ANGEL -> Angron, the Red Angel
+- MARIUS GAGE, FIRST MASTER -> Marius Gage, First Master
+- REMUS VENTANUS -> Remus Ventanus
+- TITUS PRAYTO -> Titus Prayto
+- XIII — ROBOUTE GUILLIMAN, THE AVENGING SON -> Roboute Guilliman, the Avenging Son
+- CALAS TYPHON, FIRST CAPTAIN -> Calas Typhon, First Captain
+- CRYSOS MORTURG -> Crysos Morturg
+- DURAK RASK -> Durak Rask
+- IGNATIUS GRULGOR -> Ignatius Grulgor
+- NATHANIEL GARRO -> Nathaniel Garro
+- XIV — MORTARION, THE REAPER -> Mortarion, the Reaper
+- MORTARION, PRINCE OF DECAY -> Mortarion, Prince of Decay
+- AHZEK AHRIMAN -> Ahzek Ahriman
+- PHOSIS T'KAR -> Phosis T'Kar
+- MAGISTUS AMON, THE HIDDEN -> Magistus Amon, the Hidden
+- HATHOR MAAT -> Hathor Maat
+- SANAKHT -> Sanakht
+- XV — MAGNUS THE RED, THE CRIMSON KING -> Magnus the Red, the Crimson King
+- MAGNUS, SHARD OF THE CRIMSON KING -> Magnus, Shard of the Crimson King
+- EZEKYLE ABADDON, FIRST CAPTAIN -> Ezekyle Abaddon, First Captain
+- HORUS AXIMAND, “LITTLE HORUS” -> Horus Aximand, “Little Horus”
+- GARVIEL LOKEN -> Garviel Loken
+- MALOGHURST THE TWISTED -> Maloghurst the Twisted
+- TYBALT MARR, “THE EITHER” -> Tybalt Marr, “the Either”
+- VHEREN ASHURHADDON -> Vheren Ashurhaddon
+- FALKUS KIBRE -> Falkus Kibre
+- TARIK TORGADDON -> Tarik Torgaddon
+- XVI — HORUS LUPERCAL, THE WARMASTER -> Horus Lupercal, the Warmaster
+- XVI — HORUS ASCENDED, THE WARMASTER -> Horus Ascended, the Warmaster
+- ARGEL TAL -> Argel Tal
+- HIGH CHAPLAIN EREBUS -> High Chaplain Erebus
+- KOR PHAERON, THE BLACK CARDINAL -> Kor Phaeron, the Black Cardinal
+- ZARDU LAYAK -> Zardu Layak
+- HOL BELOTH -> Hol Beloth
+- XVII — LORGAR AURELIAN, THE URIZEN -> Lorgar Aurelian, the Urizen
+- ARTELLUS NUMEON -> Artellus Numeon
+- LORD CHAPLAIN NOMUS RHY'TAN -> Lord Chaplain Nomus Rhy'tan
+- XIAPHAS JURR, PROPHET OF FIRE -> Xiaphas Jurr, Prophet of Fire
+- FORGEFATHER T'KELL -> Forgefather T'Kell
+- XVIII — VULKAN, THE FORGEFATHER -> Vulkan, the Forgefather
+- KAEDES NEX -> Kaedes Nex
+- ALVAREX MAUN -> Alvarex Maun
+- AGAPITO NEV -> Agapito Nev
+- BRANNE NEV -> Branne Nev
+- NYKONA SHARROWKYN -> Nykona Sharrowkyn
+- XIX — CORVUS CORAX, THE RAVEN-LORD -> Corvus Corax, the Raven-Lord
+- ARMILLUS DYNAT -> Armillus Dynat
+- EXODUS -> Exodus
+- AUTILON SKORR -> Autilon Skorr
+- INGO PECH -> Ingo Pech
+- MATHIAS HERZOG -> Mathias Herzog
+- SHEED RANKO -> Sheed Ranko
+- XX — ALPHARIUS, THE HYDRA -> Alpharius, the Hydra
+- XV — MAGNUS THE RED, THE CRIMSON KING -> Magnus the Red, the Crimson King
+- CASTRMEN ORTH -> Castrmen Orth
