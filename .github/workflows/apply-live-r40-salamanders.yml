@@ -1,0 +1,32 @@
+name: Apply Live R40 Salamanders
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r40-salamanders.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R40 Salamanders
+        run: python .github/build/live_r40_salamanders.py
+      - name: Verify XML
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot(); g=ET.parse('Prohammer 30k.gst').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='40' and c.get('gameSystemRevision')=='5' and g.get('revision')=='5'
+          assert 'dataRevision="40"' in i and 'dataRevision="5"' in i
+          print('Verified R40')
+          PY
+      - name: Commit Live R40
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r40-salamanders.txt
+          git diff --cached --quiet || git commit -m "Live R40: Salamanders implementation"
+          git push
