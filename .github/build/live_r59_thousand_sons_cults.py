@@ -239,8 +239,11 @@ for vr,models,melee in veteran_roots:
 # 4) Sanity checks for source-specific Cult eligibility.
 #    These are audit-only: do not invent Cult access where source says none.
 # ----------------------------------------------------------------------
-def find_root_contains(fragment):
-    return [e for e in root.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}") if fragment in (e.get("name") or "").lower()]
+def find_root_contains(fragment, xv_only=False):
+    rows=[e for e in root.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}") if fragment in (e.get("name") or "").lower()]
+    if xv_only:
+        rows=[e for e in rows if (e.get("id") or "").startswith("r41-unit-xv-")]
+    return rows
 
 def has_cult_group(e):
     return any((g.get("name") or "")=="Prosperine Cult" for g in e.iter(C("selectionEntryGroup")))
@@ -254,14 +257,14 @@ required_cult_units={
 cult_presence={}
 for label,frags in required_cult_units.items():
     matches=[]
-    for f in frags: matches += find_root_contains(f)
+    for f in frags: matches += find_root_contains(f, True)
     # unique by id
     uniq={e.get("id"):e for e in matches}.values()
     cult_presence[label]=[(e.get("id"),has_cult_group(e)) for e in uniq]
 
 no_cult_units={}
 for label,frag in [("castellax","castellax-achea"),("osiron","osiron")]:
-    matches=find_root_contains(frag)
+    matches=find_root_contains(frag, True)
     no_cult_units[label]=[(e.get("id"),has_cult_group(e)) for e in matches]
 
 # ----------------------------------------------------------------------
@@ -349,7 +352,7 @@ for label,rows in no_cult_units.items():
 
 # Named fixed-cult characters should not gain a generic Cult selector.
 for fragment in ["ahzek ahriman","phosis t'kar","magistus amon","hathor maat","sanakht"]:
-    matches=find_root_contains(fragment)
+    matches=find_root_contains(fragment, True)
     ck(fragment+" found",bool(matches))
     ck(fragment+" no generic Cult selector",all(not has_cult_group(e) for e in matches))
 
