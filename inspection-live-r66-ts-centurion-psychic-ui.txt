@@ -1,0 +1,48 @@
+Live R66 — Thousand Sons Centurion psychic UI repair
+Input CAT=65/GST=15 -> CAT=66/GST remains 15
+
+FIX:
+- Removed the old Centurion psychic package whose visibility depended on both roster Legion and a sibling Shattered-Legion assignment.
+- Normal Thousand Sons Centurions now use a direct Cult + Psychic Powers package with one simple XV-Legion visibility condition.
+- Shattered Legions Centurions assigned to Thousand Sons now receive the entire Cult + Psychic Powers package INSIDE the selected Thousand Sons assignment itself.
+- Shattered Thousand Sons assignment also directly carries Psyker (Mastery Level 1), so it no longer depends on a sibling visibility calculation.
+- Five Cult packages retained: Pavoni/Biomancy, Raptora/Telekinesis, Corvidae/Divination, Athanaeans/Telepathy, Pyrae/Pyromancy.
+- Each Cult retains its actual correlated power list; normal Centurion selects one power, Librarian Epistolary scaling remains inside the copied package.
+- No Veteran/melee logic changed in R66.
+
+VALIDATION:
+- PASS: CAT66
+- PASS: GST dependency remains15
+- PASS: Index66
+- PASS: Old package root removed
+- PASS: Normal package exists
+- PASS: Shattered package exists
+- PASS: Normal package keyed only to XV Legion
+- PASS: Shattered package nested inside TS assignment
+- PASS: Shattered package is not hidden
+- PASS: Shattered package has no visibility modifier
+- PASS: normal five Cults
+- PASS: normal Pavoni — Biomancy has power group
+- PASS: normal Pavoni — Biomancy power choices
+- PASS: normal Raptora — Telekinesis has power group
+- PASS: normal Raptora — Telekinesis power choices
+- PASS: normal Corvidae — Divination has power group
+- PASS: normal Corvidae — Divination power choices
+- PASS: normal Athanaeans — Telepathy has power group
+- PASS: normal Athanaeans — Telepathy power choices
+- PASS: normal Pyrae — Pyromancy has power group
+- PASS: normal Pyrae — Pyromancy power choices
+- PASS: shattered five Cults
+- PASS: shattered Pavoni — Biomancy has power group
+- PASS: shattered Pavoni — Biomancy power choices
+- PASS: shattered Raptora — Telekinesis has power group
+- PASS: shattered Raptora — Telekinesis power choices
+- PASS: shattered Corvidae — Divination has power group
+- PASS: shattered Corvidae — Divination power choices
+- PASS: shattered Athanaeans — Telepathy has power group
+- PASS: shattered Athanaeans — Telepathy power choices
+- PASS: shattered Pyrae — Pyromancy has power group
+- PASS: shattered Pyrae — Pyromancy power choices
+- PASS: Normal Centurion ML1 link present
+- PASS: Shattered TS assignment ML1 link present
+- PASS: No new/worsened duplicate IDs
