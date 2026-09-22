@@ -56,9 +56,11 @@ cent=ids.get("hq-centurion")
 if cent is None: raise RuntimeError("Legion Centurion missing")
 
 # Capture the current canonical Cult targets and power targets before removing the fragile groups.
-old_cult=ids.get("r45-cult-hq-centurion")
-old_power=ids.get("r19-ts-centurion-powers")
-if old_cult is None or old_power is None: raise RuntimeError("Existing TS Centurion psychic groups missing")
+cent_groups=cent.find(C("selectionEntryGroups"))
+if cent_groups is None: raise RuntimeError("Centurion selectionEntryGroups missing")
+old_cult=next((x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r45-cult-hq-centurion"),None)
+old_power=next((x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r19-ts-centurion-powers"),None)
+if old_cult is None or old_power is None: raise RuntimeError("Existing direct TS Centurion psychic groups missing")
 
 cult_targets={}
 for l in old_cult.findall(f"./{C('entryLinks')}/{C('entryLink')}"):
@@ -77,8 +79,7 @@ for d in ["biomancy","divination","pyromancy","telekinesis","telepathy"]:
     if not disc_power_targets[d]: raise RuntimeError("No powers captured for "+d)
 
 # Remove the old three-layer UI entirely.
-sgs=cent.find(C("selectionEntryGroups"))
-if sgs is None: raise RuntimeError("Centurion selectionEntryGroups missing")
+sgs=cent_groups
 removed=[]
 for gid in ["r45-cult-hq-centurion","r19-ts-centurion-disciplines","r19-ts-centurion-powers"]:
     g=next((x for x in sgs.findall(C("selectionEntryGroup")) if x.get("id")==gid),None)
