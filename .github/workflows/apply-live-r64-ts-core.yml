@@ -29,3 +29,5 @@ jobs:
           git add 'Legiones Astartes.cat' index.xml inspection-live-r64-ts-core-psychic-veterans.txt
           git diff --cached --quiet || git commit -m "Live R64: repair TS psychic UI and Veteran scaling"
           git push
+
+# retry after canonical Praetor power-pool fix
