@@ -1,0 +1,58 @@
+Live R45 — Alpha Legion native implementation
+Input CAT=44/GST=9 -> CAT=45/GST=10
+
+MUTABLE TACTICS:
+- Rebuilt as a mandatory one-of-six selector on the XX Legion selection.
+- Counter-Attack, Furious Charge, Infiltrate, Move Through Cover, Siege Specialists and Tank Hunters each reference their actual rule effect.
+- Native Alpha Legion units dynamically display the selected Mutable Tactic.
+- Legion Saboteur has a separate mandatory extra-tactic selector and automatically hides the army-wide tactic so it cannot be duplicated.
+
+NATIVE UNITS:
+- Rebuilt Legion Operatives, Headhunter Kill Team, Lernaean Terminator Squad and Effrit Disruption Cadre with real rules/options instead of Source Entry blocks.
+- Operative Cell is a real 1-of-3 selector; the separate slotless 0-2 Operative entry is rebuilt from the clean unit.
+- Headhunters have proper 0-1 tracking (lifted by Headhunter Leviathal), combined max-two special weapons and model-scaled Power Daggers.
+- Lernaeans have model-scaled weapon choices, 0-1 tracking, Terminator transports and Sheed Ranko as a +62 replacement rather than an HQ.
+- Effrit special weapons scale one per five models.
+
+CHARACTERS:
+- Rebuilt Dynat, Exodus, Skorr, Pech, Herzog, Sheed Ranko and Alpharius.
+- Skorr is Traitor-only and counts toward the Coils Consul limit.
+- Dynat/Pech received selectable no-slot retinues; Herzog received a no-slot Headhunter Kill Team.
+- Alpharius has clean rules, weapon profiles and selectable Primarch retinues; his Lernaean retinue ignores the normal Lernaean 0-1 as written.
+
+RITES:
+- Coils now mechanically requires three compulsory-capable Troops and limits non-Vigilator Consuls to one. Rewards are gated to Coils or Ingo Pech.
+- Headhunter Leviathal has a dedicated Troops Headhunter entry and mechanically requires two compulsory Headhunter selections.
+- Battlefield/deployment-only effects remain rule text.
+
+REWARDS:
+- Existing 62-unit Rewards of Treachery pool is now correctly visibility-gated. Its donor-clone content is audited/rebuilt in the next pass rather than silently trusted.
+
+VALIDATION:
+- PASS: CAT45
+- PASS: GST10
+- PASS: CAT->GST10
+- PASS: Index45/10
+- PASS: Mutable Tactics exactly six choices
+- PASS: Mutable Tactics mandatory one
+- PASS: XX entry 0 no Source Entry
+- PASS: XX entry 1 no Source Entry
+- PASS: XX entry 2 no Source Entry
+- PASS: XX entry 3 no Source Entry
+- PASS: XX entry 4 no Source Entry
+- PASS: XX entry 5 no Source Entry
+- PASS: XX entry 6 no Source Entry
+- PASS: XX entry 7 no Source Entry
+- PASS: XX entry 8 no Source Entry
+- PASS: XX entry 9 no Source Entry
+- PASS: XX entry 10 no Source Entry
+- PASS: Sheed not standalone
+- PASS: Sheed replacement exists
+- PASS: Saboteur exists and roster 0-1
+- PASS: Saboteur has six extra tactics
+- PASS: Headhunter Troops copy exists
+- PASS: Coils categories exist
+- PASS: Rewards pool gated
+- PASS: Alpharius readable name
+- PASS: All R45 links resolve
+- PASS: No new/worsened duplicate IDs
