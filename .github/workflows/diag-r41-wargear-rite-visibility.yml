@@ -1,0 +1,19 @@
+name: Diagnose R41 Wargear and Rite Visibility
+on:
+  push:
+    paths: ['.github/workflows/diag-r41-wargear-rite-visibility.yml']
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r41_wargear_rite_visibility.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r41-wargear-rite-visibility.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R41: wargear and Rite visibility"
+          git push
