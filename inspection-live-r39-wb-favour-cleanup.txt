@@ -1,0 +1,23 @@
+Live R39 — Word Bearers Favour of the Pantheon display cleanup
+Input CAT=38 -> CAT=39; GST remains revision 4
+
+CHANGES:
+- Removed 5 obsolete shared Favour of the Pantheon Wargear entries.
+- Removed 10 links to those obsolete Wargear entries.
+- Retained the dedicated Favour of the Pantheon selector under Word Bearers Praetors and Centurions.
+- No rules, points or eligibility of the dedicated Favour selector were changed.
+
+REMOVED SHARED ENTRIES:
+- r47-wb-favour-aura: Daemonic Aura
+- r47-wb-favour-mutation: Daemonic Mutation
+- r47-wb-favour-strength: Daemonic Strength
+- r47-wb-favour-wings: Daemonic Wings
+- r47-wb-favour-visage: Daemonic Visage
+
+VALIDATION:
+- PASS: Catalogue revision 39
+- PASS: Obsolete shared Favour entries removed
+- PASS: No links target obsolete Favour entries
+- PASS: Praetor dedicated Favour group retained
+- PASS: Centurion dedicated Favour group retained
+- PASS: Index advertises CAT 39
