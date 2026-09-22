@@ -1,0 +1,38 @@
+Live R65 — Veteran melee threshold fix
+Input CAT64/GST15 -> CAT65/GST15
+
+FIX:
+- Replaced repeat-based melee scaling on 10 live Veteran roots with explicit New Recruit-safe thresholds.
+- 5 total models -> max 5 melee weapon replacements.
+- 6 total models -> max 6.
+- 7 total models -> max 7.
+- 8 total models -> max 8.
+- 9 total models -> max 9.
+- 10 total models -> max 10.
+- The Veteran Sergeant is included in the allowance.
+- Individual melee weapon links are capped high enough not to override the squad-level limit.
+- Removed the R64 repeat arithmetic that New Recruit was failing to recalculate after squad-size changes.
+
+PATCHED ROOTS:
+- veteran-unit: Legion Veteran Squad (veteran-melee; models=veteran-included; removed 1 old cap modifier(s))
+- r35-pride-veteran-veteran-unit: Legion Veteran Squad (r58-pride-sync-8323902818381c5c; models=r58-pride-sync-c6f1040061e0ab49; removed 0 old cap modifier(s))
+- r40-da-vow-veteran: Legion Veteran Squad (r40-da-vow-veteran-veteran-melee; models=r40-da-vow-veteran-veteran-included; removed 1 old cap modifier(s))
+- r60-ws-hibou-retinue-legion-veteran-squad: Legion Veteran Squad (r60-ws-hibou-retinue-legion-veteran-squad-veteran-melee; models=r60-ws-hibou-retinue-legion-veteran-squad-veteran-included; removed 1 old cap modifier(s))
+- r60-ws-hasik-retinue-legion-veteran-squad: Legion Veteran Squad (r60-ws-hasik-retinue-legion-veteran-squad-veteran-melee; models=r60-ws-hasik-retinue-legion-veteran-squad-veteran-included; removed 1 old cap modifier(s))
+- r71-nl-mal-ret-1-veteran-unit: Legion Veteran Squad (r71-nl-mal-ret-1-veteran-melee; models=r71-nl-mal-ret-1-veteran-included; removed 1 old cap modifier(s))
+- live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit: Legion Veteran Squad (live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-melee; models=live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-included; removed 1 old cap modifier(s))
+- live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit: Legion Veteran Squad (live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-melee; models=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-included; removed 1 old cap modifier(s))
+- r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit: Legion Veteran Squad (r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-melee; models=r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-included; removed 1 old cap modifier(s))
+- r74-ba-rev-vet-veteran-unit: Legion Veteran Squad (Jump Packs) — Day of Revelation (r74-ba-rev-vet-veteran-melee; models=r74-ba-rev-vet-veteran-included; removed 1 old cap modifier(s))
+
+VALIDATION:
+- PASS: CAT65
+- PASS: GST dependency remains 15
+- PASS: Index65
+- PASS: Main Veteran melee base cap 5
+- PASS: 6-model threshold present
+- PASS: 10-model threshold present
+- PASS: R64 repeat scaler removed
+- PASS: No repeat arithmetic remains
+- PASS: All live Veteran roots patched
+- PASS: No new/worsened duplicate IDs
