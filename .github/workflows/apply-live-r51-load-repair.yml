@@ -1,0 +1,33 @@
+name: Apply Live R51 Catalogue Load Repair
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r51-load-repair.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R51
+        run: python .github/build/live_r51_load_repair.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='51'
+          assert c.get('gameSystemRevision')=='11'
+          assert 'dataRevision="51"' in i
+          assert 'ns0:' not in i
+          print('Verified R51')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r51-load-repair.txt
+          git diff --cached --quiet || git commit -m "Live R51: repair catalogue load references"
+          git push
