@@ -1,0 +1,19 @@
+name: Diagnose R44 Raven Guard Post Audit
+on:
+  push:
+    paths: ['.github/workflows/diag-r44-raven-guard-postaudit.yml']
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r44_raven_guard_postaudit.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r44-raven-guard-postaudit.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R44: Raven Guard post audit"
+          git push
