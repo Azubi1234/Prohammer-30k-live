@@ -1,0 +1,514 @@
+CAT=35 GST=1
+
+MASTER OF SIGNALS MATCHES:
+catalogue | id=cat-7b24-e6f1-83a9-4c50 | name=Legiones Astartes | cats= | anc=
+selectionEntries | id=None | name= | cats= | anc=Legiones Astartes
+selectionEntry | id=hq-centurion | name=Legion Centurion | cats=[('HQ', 'cat-hq', 'true')] | anc=Legiones Astartes
+selectionEntryGroups | id=None | name= | cats= | anc=Legion Centurion > Legiones Astartes
+selectionEntryGroup | id=hq-centurion-consuls | name=Legion Consul Upgrade | cats= | anc=Legion Centurion > Legiones Astartes
+selectionEntries | id=None | name= | cats= | anc=Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+selectionEntry | id=hq-consul-signals | name=Legion Master of Signals Consul | cats=[('Head of the Gorgon — non-Forge-Lord Consul', 'r80-ih-head-nonforge-consul', 'false'), ('Head of the Gorgon — non-Forge Consul', 'r81-ih-nonforge-consul', 'false')] | anc=Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+rules | id=None | name= | cats= | anc=Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+rule | id=hq-consul-signals-rule | name=Legion Master of Signals Consul | cats= | anc=Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+description | id=None | name= | cats= | anc=Legion Master of Signals Consul > Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion
+rule | id=hq-consul-signals-matrix-rule | name=Targeting Matrix | cats= | anc=Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+description | id=None | name= | cats= | anc=Targeting Matrix > Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion
+rule | id=r29-signals-cognis-rule | name=Cognis Signum | cats= | anc=Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+description | id=None | name= | cats= | anc=Cognis Signum > Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion
+selectionEntryGroups | id=None | name= | cats= | anc=Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+selectionEntryGroup | id=hq-consul-signals-dt | name=Dedicated Transport | cats= | anc=Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+selectionEntries | id=None | name= | cats= | anc=Dedicated Transport > Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion
+selectionEntry | id=hq-consul-signals-damocles | name=Damocles Command Rhino | cats=[('Head of the Gorgon — non-Forge-Lord Consul', 'r80-ih-head-nonforge-consul', 'false')] | anc=Dedicated Transport > Legion Master of Signals Consul > Legion Consul Upgrade > Legion Centurion
+rules | id=None | name= | cats= | anc=Damocles Command Rhino > Dedicated Transport > Legion Master of Signals Consul > Legion Consul Upgrade
+rule | id=hq-consul-signals-damocles-command | name=Command Vehicle | cats= | anc=Damocles Command Rhino > Dedicated Transport > Legion Master of Signals Consul > Legion Consul Upgrade
+description | id=None | name= | cats= | anc=Command Vehicle > Damocles Command Rhino > Dedicated Transport > Legion Master of Signals Consul
+selectionEntry | id=hq-damocles | name=Damocles Command Rhino | cats=[('HQ', 'cat-hq', 'true')] | anc=Legiones Astartes
+rules | id=None | name= | cats= | anc=Damocles Command Rhino > Legiones Astartes
+rule | id=hq-damocles-command | name=Command Vehicle | cats= | anc=Damocles Command Rhino > Legiones Astartes
+description | id=None | name= | cats= | anc=Command Vehicle > Damocles Command Rhino > Legiones Astartes
+selectionEntry | id=config-army | name=Army Configuration | cats=[('Configuration', 'cat-config', 'true')] | anc=Legiones Astartes
+selectionEntryGroups | id=None | name= | cats= | anc=Army Configuration > Legiones Astartes
+selectionEntryGroup | id=config-legion | name=Legion | cats= | anc=Army Configuration > Legiones Astartes
+selectionEntries | id=None | name= | cats= | anc=Legion > Army Configuration > Legiones Astartes
+selectionEntry | id=legion-xiii | name=XIII Legion — Ultramarines | cats=[] | anc=Legion > Army Configuration > Legiones Astartes
+rules | id=None | name= | cats= | anc=XIII Legion — Ultramarines > Legion > Army Configuration > Legiones Astartes
+rule | id=r25-legion-xiii-reference | name=Ultramarines — Legion Rules & Armoury | cats= | anc=XIII Legion — Ultramarines > Legion > Army Configuration > Legiones Astartes
+description | id=None | name= | cats= | anc=Ultramarines — Legion Rules & Armoury > XIII Legion — Ultramarines > Legion > Army Configuration
+selectionEntry | id=legion-xvi | name=XVI Legion — Sons of Horus | cats=[] | anc=Legion > Army Configuration > Legiones Astartes
+rules | id=None | name= | cats= | anc=XVI Legion — Sons of Horus > Legion > Army Configuration > Legiones Astartes
+rule | id=r25-legion-xvi-reference | name=Sons Of Horus — Legion Rules & Armoury | cats= | anc=XVI Legion — Sons of Horus > Legion > Army Configuration > Legiones Astartes
+description | id=None | name= | cats= | anc=Sons Of Horus — Legion Rules & Armoury > XVI Legion — Sons of Horus > Legion > Army Configuration
+selectionEntryGroup | id=config-rites | name=Rite of War (optional) | cats= | anc=Army Configuration > Legiones Astartes
+selectionEntries | id=None | name= | cats= | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+selectionEntry | id=r25-rite-xiii-0-the-logos-lectora | name=Ultramarines Rite of War — The Logos Lectora | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+rules | id=None | name= | cats= | anc=Ultramarines Rite of War — The Logos Lectora > Rite of War (optional) > Army Configuration > Legiones Astartes
+rule | id=r25-rite-xiii-0-the-logos-lectora-rule | name=The Logos Lectora | cats= | anc=Ultramarines Rite of War — The Logos Lectora > Rite of War (optional) > Army Configuration > Legiones Astartes
+description | id=None | name= | cats= | anc=The Logos Lectora > Ultramarines Rite of War — The Logos Lectora > Rite of War (optional) > Army Configuration
+selectionEntry | id=r25-rite-xvi-1-the-black-reaving | name=Sons Of Horus Rite of War — The Black Reaving | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+rules | id=None | name= | cats= | anc=Sons Of Horus Rite of War — The Black Reaving > Rite of War (optional) > Army Configuration > Legiones Astartes
+rule | id=r25-rite-xvi-1-the-black-reaving-rule | name=The Black Reaving | cats= | anc=Sons Of Horus Rite of War — The Black Reaving > Rite of War (optional) > Army Configuration > Legiones Astartes
+description | id=None | name= | cats= | anc=The Black Reaving > Sons Of Horus Rite of War — The Black Reaving > Rite of War (optional) > Army Configuration
+selectionEntry | id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+rules | id=None | name= | cats= | anc=REAVER ATTACK SQUAD > Legiones Astartes
+rule | id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-rite-note | name=Rite of War Interaction | cats= | anc=REAVER ATTACK SQUAD > Legiones Astartes
+description | id=None | name= | cats= | anc=Rite of War Interaction > REAVER ATTACK SQUAD > Legiones Astartes
+
+BLACK REAVING / LONG MARCH RELATED ROOTS:
+id=r32-soh-long-march-terminator-troops | name=Legion Terminator Squad — Long March (non-compulsory Troops) | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r32-soh-long-march-terminator-included | name=Legion Terminators | type=model | hidden=false | cats=[] | anc=Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-sergeant | name=Legion Terminator Sergeant | type=model | hidden=false | cats=[] | anc=Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r37-orbital-teleport-terminator-unit | name=Teleport Assault (Orbital Assault) | type=upgrade | hidden=true | cats=[] | anc=Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r71-nl-bj-5 | name=Beyond Judgement — Trophies of Judgement & Fear | type=upgrade | hidden=true | cats=[] | anc=Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-armour-normal | name=Terminator Armour | type=upgrade | hidden=false | cats=[] | anc=Terminator Armour Pattern (entire squad) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-armour-tartaros | name=Tartaros Terminator Armour | type=upgrade | hidden=false | cats=[] | anc=Terminator Armour Pattern (entire squad) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-armour-cataphractii | name=Cataphractii Terminator Armour | type=upgrade | hidden=false | cats=[] | anc=Terminator Armour Pattern (entire squad) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-sgt-halo | name=Iron Halo | type=upgrade | hidden=false | cats=[] | anc=Additional permitted Terminator Armoury (max 50 pts) > Legion Terminator Sergeant > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-sgt-mastercraft | name=Master-crafted Weapon | type=upgrade | hidden=false | cats=[] | anc=Additional permitted Terminator Armoury (max 50 pts) > Legion Terminator Sergeant > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-sgt-signum | name=Signum | type=upgrade | hidden=false | cats=[] | anc=Additional permitted Terminator Armoury (max 50 pts) > Legion Terminator Sergeant > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-da-wing-terminator-unit-0 | name=Stormwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-da-wing-terminator-unit-1 | name=Deathwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-da-wing-terminator-unit-2 | name=Dreadwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-da-wing-terminator-unit-3 | name=Ironwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-da-wing-terminator-unit-4 | name=Firewing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-da-wing-terminator-unit-5 | name=Ravenwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos | name=Land Raider Phobos (10 models or fewer) | type=model | hidden=false | cats=[] | anc=Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus | name=Land Raider Proteus (10 models or fewer) | type=model | hidden=false | cats=[] | anc=Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan | name=Legion Spartan Assault Tank (11–20 models) | type=unit | hidden=false | cats=[] | anc=Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-laser | name=Two Laser Destroyers (replace both Quad Lascannons) | type=upgrade | hidden=false | cats=[] | anc=Main Weapon Replacements > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-da-wing-hs-spartan-0 | name=Stormwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-da-wing-hs-spartan-1 | name=Deathwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-da-wing-hs-spartan-2 | name=Dreadwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-da-wing-hs-spartan-3 | name=Ironwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-da-wing-hs-spartan-4 | name=Firewing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-da-wing-hs-spartan-5 | name=Ravenwing | type=upgrade | hidden=false | cats=[] | anc=Hexagrammaton Wing > Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops)
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-hunter-killer-missile | name=Hunter-Killer Missile | type=upgrade | hidden=false | cats=[] | anc=Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-dozer-blade | name=Dozer Blade | type=upgrade | hidden=false | cats=[] | anc=Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-auxiliary-drive | name=Auxiliary Drive | type=upgrade | hidden=false | cats=[] | anc=Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-frag-assault-launchers | name=Frag Assault Launchers | type=upgrade | hidden=false | cats=[] | anc=Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-armoured-ceramite | name=Armoured Ceramite | type=upgrade | hidden=false | cats=[] | anc=Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r40-da-steel-transport-terminator-unit-hs-spartan-hs-spartan-flare-shield | name=Flare Shield | type=upgrade | hidden=false | cats=[] | anc=Legion Spartan Assault Tank (11–20 models) > Steel Fist — Armoured Assault Dedicated Transport > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r45-cult-terminator-unit-0 | name=Pavoni | type=upgrade | hidden=false | cats=[] | anc=Prosperine Cult > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r45-cult-terminator-unit-1 | name=Raptora | type=upgrade | hidden=false | cats=[] | anc=Prosperine Cult > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r45-cult-terminator-unit-2 | name=Corvidae | type=upgrade | hidden=false | cats=[] | anc=Prosperine Cult > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r45-cult-terminator-unit-3 | name=Athanaeans | type=upgrade | hidden=false | cats=[] | anc=Prosperine Cult > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r45-cult-terminator-unit-4 | name=Pyrae | type=upgrade | hidden=false | cats=[] | anc=Prosperine Cult > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r57-terminator-unit-iw-shrapnel | name=Shrapnel Bolts | type=upgrade | hidden=false | cats=[] | anc=Iron Warriors Armoury > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r57-terminator-unit-iw-servo | name=Servo-Arm | type=upgrade | hidden=false | cats=[] | anc=Iron Warriors Armoury > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r57-terminator-unit-iw-bionics | name=Bionics | type=upgrade | hidden=false | cats=[] | anc=Iron Warriors Armoury > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-biomancy | name=Biomancy | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Discipline(s) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-divination | name=Divination | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Discipline(s) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-pyromancy | name=Pyromancy | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Discipline(s) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telekinesis | name=Telekinesis | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Discipline(s) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telepathy | name=Telepathy | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Discipline(s) > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-smite | name=Smite | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-iron-arm | name=Iron Arm | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-enfeeble | name=Enfeeble | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-life-leech | name=Life Leech | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-warp-speed | name=Warp Speed | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-endurance | name=Endurance | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-biomancy-haemorrhage | name=Haemorrhage | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-prescience | name=Prescience | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-foreboding | name=Foreboding | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-forewarning | name=Forewarning | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-perfect-timing | name=Perfect Timing | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-precognition | name=Precognition | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-misfortune | name=Misfortune | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-divination-scrier-s-gaze | name=Scrier's Gaze | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-flame-breath | name=Flame Breath | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-fiery-form | name=Fiery Form | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-molton-beam | name=Molton Beam | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-fire-shield | name=Fire Shield | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-sunburst | name=Sunburst | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-inferno | name=Inferno | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-pyromancy-spontaneous-combustion | name=Spontaneous Combustion | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-assail | name=Assail | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-crush | name=Crush | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-objuration-mechanicum | name=Objuration Mechanicum | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-shockwave | name=Shockwave | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-levitation | name=Levitation | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-telekine-dome | name=Telekine Dome | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telekinesis-psychic-maelstrom | name=Psychic Maelstrom | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-psychic-shriek | name=Psychic Shriek | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-dominate | name=Dominate | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-mental-fortitude | name=Mental Fortitude | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-terrify | name=Terrify | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-hallucination | name=Hallucination | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-invisibility | name=Invisibility | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-r19-ts-terminator-unit-brotherhood-power-telepathy-shrouding | name=Shrouding | type=upgrade | hidden=false | cats=[] | anc=Psychic Brotherhood — Psychic Powers > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-troops-r32-blessing-khorne | name=Blessing of Khorne | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-troops-r32-blessing-slaanesh | name=Blessing of Slaanesh | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-troops-r32-blessing-nurgle | name=Blessing of Nurgle | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r32-soh-long-march-terminator-troops-r32-blessing-tzeentch | name=Blessing of Tzeentch | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > Legion Terminator Squad — Long March (non-compulsory Troops) > Legiones Astartes
+id=r25-rite-xvi-0-the-long-march | name=Sons Of Horus Rite of War — The Long March | type=upgrade | hidden=false | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+id=r25-rite-xvi-1-the-black-reaving | name=Sons Of Horus Rite of War — The Black Reaving | type=upgrade | hidden=false | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+id=r25-rite-xvii-0-the-dark-brethren | name=Word Bearers Rite of War — The Dark Brethren | type=upgrade | hidden=false | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+id=r25-rite-xvii-1-last-of-the-serrated-sun | name=Word Bearers Rite of War — Last Of The Serrated Sun | type=upgrade | hidden=false | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+id=r25-rite-xviii-0-the-covenant-of-fire | name=Salamanders Rite of War — The Covenant Of Fire | type=upgrade | hidden=false | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+id=r25-rite-xviii-1-the-awakening-fire | name=Salamanders Rite of War — The Awakening Fire | type=upgrade | hidden=false | cats=[] | anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+id=r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-1-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Tybalt Marr, “the Either” > Legiones Astartes
+id=live-r2-r41-unit-xvi-9-vheren-ashurhaddon-retinue-0-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Vheren Ashurhaddon > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-additional | name=Squad Models | type=model | hidden=false | cats=[] | anc=REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-6-terminator-honours | name=Terminator Honours | type=upgrade | hidden=false | cats=[] | anc=Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-7-krak-grenades | name=Krak grenades — entire squad | type=upgrade | hidden=false | cats=[] | anc=Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-8-melta-bombs | name=Melta bombs — entire squad | type=upgrade | hidden=false | cats=[] | anc=Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-r32-jump-packs | name=Jump Packs — entire squad | type=upgrade | hidden=false | cats=[] | anc=Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-0-flamer | name=Flamer | type=upgrade | hidden=false | cats=[] | anc=Ranged Replacements — up to 2 > Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-1-meltagun | name=Meltagun | type=upgrade | hidden=false | cats=[] | anc=Ranged Replacements — up to 2 > Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-2-plasma-gun | name=Plasma Gun | type=upgrade | hidden=false | cats=[] | anc=Ranged Replacements — up to 2 > Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-3-plasma-pistol | name=Plasma Pistol | type=upgrade | hidden=false | cats=[] | anc=Ranged Replacements — up to 2 > Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-4-replace-his-chainaxe-with-a-power-fist | name=Replace his Chainaxe with a Power fist | type=upgrade | hidden=false | cats=[] | anc=Melee Replacements — 1 per 5 models > Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-opt-5-a-pair-of-lightning-claws | name=a pair of Lightning Claws | type=upgrade | hidden=false | cats=[] | anc=Melee Replacements — 1 per 5 models > Options > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-r32-blessing-khorne | name=Blessing of Khorne | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-r32-blessing-slaanesh | name=Blessing of Slaanesh | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-r32-blessing-nurgle | name=Blessing of Nurgle | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-r32-blessing-tzeentch | name=Blessing of Tzeentch | type=upgrade | hidden=false | cats=[] | anc=Blessings of the Four > REAVER ATTACK SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad | name=PYROCLAST SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-additional | name=Squad Models | type=model | hidden=false | cats=[] | anc=PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-0-krak-grenades | name=Krak grenades (base unit; +2 pts/model) | type=upgrade | hidden=false | cats=[] | anc=Options > PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-1-melta-bombs | name=Melta bombs (base unit; +5 pts/model) | type=upgrade | hidden=false | cats=[] | anc=Options > PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-2-rending-weapon | name=Rending Weapon | type=upgrade | hidden=false | cats=[] | anc=Options > PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-3-power-weapon | name=Power weapon | type=upgrade | hidden=false | cats=[] | anc=Options > PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist | name=Power fist | type=upgrade | hidden=false | cats=[] | anc=Options > PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-5-thunder-hammer | name=Thunder hammer | type=upgrade | hidden=false | cats=[] | anc=Options > PYROCLAST SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad | name=SALAMANDERS INFERNUS DESTROYER SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional | name=Squad Models | type=model | hidden=false | cats=[] | anc=SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-0-krak-grenades | name=Krak grenades (base unit; +2 pts/model) | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-1-melta-bombs | name=Melta bombs (base unit; +5 pts/model) | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs | name=Jump Packs (base unit; +15 pts/model) | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-3-heavy-flamer-with-suspensor-we | name=Heavy Flamer with Suspensor Web | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-4-multi-melta-with-suspensor-web | name=Multi-Melta with Suspensor Web | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-5-volkite-serpenta | name=Volkite Serpenta | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-6-plasma-pistol | name=Plasma Pistol | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-7-rending-weapon | name=Rending Weapon | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-power-weapon | name=Power weapon | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw | name=Lightning claw | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-10-power-fist | name=Power fist | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-11-thunder-hammer | name=Thunder hammer | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-12-inferno-pistol | name=Inferno Pistol | type=upgrade | hidden=false | cats=[] | anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD > Legiones Astartes
+id=r46-al-reward-47 | name=REAVER ATTACK SQUAD — Rewards of Treachery | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true'), ('Rewards of Treachery Limit', 'cat-alpha-reward', None)] | anc=Legiones Astartes
+
+ALL-CAPS SELECTION ENTRIES:
+id=r8-um-praetor-suz-r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Legion Praetor > Legiones Astartes
+id=r11-dg-hq-praetor-deathshroud-r41-unit-xiv-0-deathshroud-terminators | name=DEATHSHROUD TERMINATORS | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Legion Praetor > Legiones Astartes
+id=r11-dg-hq-centurion-deathshroud-r41-unit-xiv-0-deathshroud-terminators | name=DEATHSHROUD TERMINATORS | type=unit | hidden=false | cats=[] | anc=Command Retinue (does not occupy a separate FOC slot) > Legion Centurion > Legiones Astartes
+id=r41-unit-iii-0-palatine-blade-squad | name=PALATINE BLADE SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-iii-1-phoenix-terminator-squad | name=PHOENIX TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-iii-2-kakophoni-squad | name=KAKOPHONI SQUAD | type=unit | hidden=false | cats=[('Heavy Support', 'cat-heavy', 'true')] | anc=Legiones Astartes
+id=r41-unit-iii-3-sun-killer-squad | name=SUN KILLER SQUAD | type=unit | hidden=false | cats=[('Heavy Support', 'cat-heavy', 'true')] | anc=Legiones Astartes
+id=r41-unit-iv-0-tyrant-siege-terminator-squad | name=TYRANT SIEGE TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Heavy Support', 'cat-heavy', 'true')] | anc=Legiones Astartes
+id=r41-unit-iv-1-iron-havoc-squad | name=IRON HAVOC SQUAD | type=unit | hidden=false | cats=[('Heavy Support', 'cat-heavy', 'true')] | anc=Legiones Astartes
+id=r41-unit-iv-2-dominator-cohort | name=DOMINATOR COHORT | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-iv-3-iron-circle-domitar-ferrum-maniple | name=IRON CIRCLE DOMITAR-FERRUM MANIPLE | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-v-0-golden-keshig-squadron | name=GOLDEN KESHIG SQUADRON | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-v-1-ebon-keshig | name=EBON KESHIG | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-v-2-dark-sons-of-death | name=DARK SONS OF DEATH | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-v-3-falcons-claws | name=FALCON’S CLAWS | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-ix-0-dawnbreaker-cohort | name=DAWNBREAKER COHORT | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-ix-1-crimson-paladin-squad | name=CRIMSON PALADIN SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-ix-2-angel-s-tears-squad | name=ANGEL'S TEARS SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-ix-3-ofanim-court | name=OFANIM COURT | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-ix-4-grav-chariot-squadron | name=GRAV CHARIOT SQUADRON | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-ix-5-sanguinary-guard | name=SANGUINARY GUARD | type=unit | hidden=true | cats=[('Retinue', 'cat-retinue', 'true')] | anc=Legiones Astartes
+id=r74-ba-zephon-model | name=DOMINION ZEPHON | type=model | hidden=false | cats=[] | anc=Dominion Zephon > Legiones Astartes
+id=r74-ba-crohne-model | name=ASTER CROHNE | type=model | hidden=false | cats=[] | anc=Aster Crohne > Legiones Astartes
+id=r41-unit-ix-9-azkaellon | name=AZKAELLON | type=unit | hidden=true | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r74-ba-azk-model | name=AZKAELLON | type=model | hidden=false | cats=[] | anc=AZKAELLON > Legiones Astartes
+id=r41-unit-x-0-medusan-immortal-squad | name=MEDUSAN IMMORTAL SQUAD | type=unit | hidden=false | cats=[('Troops', 'cat-troops', 'true'), ('Company of Bitter Iron — compulsory Medusan Immortal', 'r80-ih-bitter-comp', 'false')] | anc=Legiones Astartes
+id=r41-unit-x-1-gorgon-terminator-squad | name=GORGON TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-x-2-morlock-terminator-squad | name=MORLOCK TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-x-3-venerable-forge-lord | name=VENERABLE FORGE LORD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r79-ih-forge-model | name=VENERABLE FORGE LORD | type=model | hidden=false | cats=[] | anc=VENERABLE FORGE LORD > Legiones Astartes
+id=r79-ih-meduson-model | name=SHADRAK MEDUSON | type=model | hidden=false | cats=[] | anc=Shadrak Meduson > Legiones Astartes
+id=r79-ih-autek-model | name=AUTEK MOR | type=model | hidden=false | cats=[] | anc=Autek Mor > Legiones Astartes
+id=r79-ih-santar-model | name=GABRIEL SANTAR | type=model | hidden=false | cats=[] | anc=Gabriel Santar > Legiones Astartes
+id=r41-unit-xii-0-rampager-squad | name=RAMPAGER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xii-1-red-butcher-squad | name=RED BUTCHER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xii-2-red-hand-destroyer-mortalis-squad | name=RED HAND DESTROYER MORTALIS SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xii-3-world-eaters-inductii-squad | name=WORLD EATERS INDUCTII SQUAD | type=unit | hidden=false | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r41-unit-xii-4-devourer-terminator-squad | name=DEVOURER TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xii-5-triarii-breacher-squad | name=TRIARII BREACHER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r41-unit-xii-0-rampager-squad | name=RAMPAGER SQUAD | type=unit | hidden=false | cats=[] | anc=RETINUE — choose up to one (no separate FOC slot) > Khârn the Bloody > Legiones Astartes
+id=live-r3-we-r41-unit-xii-7-shabran-darr-retinue-0-r41-unit-xii-2-red-hand-destroyer-mortalis-squad | name=RED HAND DESTROYER MORTALIS SQUAD | type=unit | hidden=false | cats=[] | anc=RETINUE — choose up to one (no separate FOC slot) > Shabran Darr > Legiones Astartes
+id=live-r3-we-r41-unit-xii-11-delvarus-retinue-0-r41-unit-xii-5-triarii-breacher-squad | name=TRIARII BREACHER SQUAD | type=unit | hidden=false | cats=[] | anc=RETINUE — choose up to one (no separate FOC slot) > Delvarus > Legiones Astartes
+id=live-r3-we-r41-unit-xii-12-xii-angron-the-red-angel-retinue-2-r41-unit-xii-4-devourer-terminator-squad | name=DEVOURER TERMINATOR SQUAD | type=unit | hidden=false | cats=[] | anc=RETINUE — choose up to one (no separate FOC slot) > Angron, the Red Angel > Legiones Astartes
+id=r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xiii-1-fulmentarus-terminator-squad | name=FULMENTARUS TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xiii-2-locutarus-storm-squad | name=LOCUTARUS STORM SQUAD | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-xiii-3-nemesis-destroyer-squad | name=NEMESIS DESTROYER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-2-r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue — choose up to one (no separate FOC slot) > Marius Gage, First Master > Legiones Astartes
+id=r8-um-ventanus-suz-r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue — choose up to one (no separate FOC slot) > Remus Ventanus > Legiones Astartes
+id=r41-unit-xiii-6-aeonid-thiel | name=AEONID THIEL | type=unit | hidden=true | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xiii-7-honoured-telemechrus | name=HONOURED TELEMECHRUS | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r8-um-prayto-suz-r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue — choose up to one (no separate FOC slot) > Titus Prayto > Legiones Astartes
+id=r6-guilliman-ret-2-r41-unit-xiii-0-invictarus-suzerain-squad | name=INVICTARUS SUZERAIN SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Primarch Retinue — choose up to one (no additional FOC slot) > Roboute Guilliman, the Avenging Son > Legiones Astartes
+id=r41-unit-xiv-0-deathshroud-terminators | name=DEATHSHROUD TERMINATORS | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xiv-1-grave-warden-terminator-squad | name=GRAVE WARDEN TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Heavy Support', 'cat-heavy', 'true')] | anc=Legiones Astartes
+id=r41-unit-xiv-2-mortus-poisoner-squad | name=MORTUS POISONER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xiv-3-calas-typhon-first-captain-retinue-0-r41-unit-xiv-0-deathshroud-terminators | name=DEATHSHROUD TERMINATORS | type=unit | hidden=false | cats=[] | anc=RETINUE — choose up to one (no separate FOC slot) > Calas Typhon, First Captain > Legiones Astartes
+id=live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad | name=MORTUS POISONER SQUAD | type=unit | hidden=false | cats=[] | anc=RETINUE — choose up to one (no separate FOC slot) > Crysos Morturg > Legiones Astartes
+id=r11-dg-mortarion-deathshroud-r41-unit-xiv-0-deathshroud-terminators | name=DEATHSHROUD TERMINATORS | type=unit | hidden=false | cats=[] | anc=PRIMARCH RETINUE — Deathshroud only > Mortarion, the Reaper > Legiones Astartes
+id=r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true'), ('Thousand Sons Sekhmet 0-1', 'r18-ts-cat-sekhmet-limit', 'false'), ('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Sekhmet Cabal 0-1', 'r18-final-cat-sekhmet-01', 'false'), ('Troops — Guard of the Crimson King', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r27-guard-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false | cats=[('Troops — Guard of the Crimson King', 'cat-troops', 'true'), ('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false')] | anc=Legiones Astartes
+id=r41-unit-xv-1-khenetai-occult-blade-cabal | name=KHENETAI OCCULT BLADE CABAL | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true'), ('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Khenetai Cabal 0-1', 'r18-final-cat-khenetai-01', 'false')] | anc=Legiones Astartes
+id=r41-unit-xv-2-ammitara-occult-intercession-cabal | name=AMMITARA OCCULT INTERCESSION CABAL | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true'), ('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Ammitara Cabal 0-1', 'r18-final-cat-ammitara-01', 'false')] | anc=Legiones Astartes
+id=r41-unit-xv-3-castellax-achea-maniple | name=CASTELLAX-ACHEA MANIPLE | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xv-4-contemptor-osiron-dreadnought | name=CONTEMPTOR-OSIRON DREADNOUGHT | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xv-5-numerologist-cabal | name=NUMEROLOGIST CABAL | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r41-unit-xv-2-ammitara-occult-intercession-cabal | name=AMMITARA OCCULT INTERCESSION CABAL | type=unit | hidden=false | cats=[('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Ammitara Cabal 0-1', 'r18-final-cat-ammitara-01', 'false')] | anc=Retinue (does not occupy a separate FOC slot) > Magistus Amon, the Hidden > Legiones Astartes
+id=live-r2-r41-unit-xv-10-sanakht-retinue-0-r41-unit-xv-1-khenetai-occult-blade-cabal | name=KHENETAI OCCULT BLADE CABAL | type=unit | hidden=false | cats=[('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Khenetai Cabal 0-1', 'r18-final-cat-khenetai-01', 'false')] | anc=Retinue (does not occupy a separate FOC slot) > Sanakht > Legiones Astartes
+id=live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false | cats=[('Thousand Sons Sekhmet 0-1', 'r18-ts-cat-sekhmet-limit', 'false'), ('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Sekhmet Cabal 0-1', 'r18-final-cat-sekhmet-01', 'false'), ('Troops — Guard of the Crimson King', 'cat-troops', 'true')] | anc=Retinue (does not occupy a separate FOC slot) > Magnus the Red, the Crimson King > Legiones Astartes
+id=r41-unit-xvi-0-justaerin-terminator-squad | name=JUSTAERIN TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvi-2-chieftain-squad | name=CHIEFTAIN SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvi-3-luperci-pack | name=LUPERCI PACK | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xvi-4-ezekyle-abaddon-first-captain-retinue-0-r41-unit-xvi-0-justaerin-terminator-squad | name=JUSTAERIN TERMINATOR SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Ezekyle Abaddon, First Captain > Legiones Astartes
+id=live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-1-r41-unit-xvi-2-chieftain-squad | name=CHIEFTAIN SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Horus Aximand, “Little Horus” > Legiones Astartes
+id=live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-1-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Tybalt Marr, “the Either” > Legiones Astartes
+id=live-r2-r41-unit-xvi-9-vheren-ashurhaddon-retinue-0-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Vheren Ashurhaddon > Legiones Astartes
+id=r41-unit-xvii-0-covenant-zealot-mob | name=COVENANT ZEALOT MOB | type=unit | hidden=false | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvii-1-gal-vorbak-dark-brethren | name=GAL VORBAK DARK BRETHREN | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvii-2-ashen-circle | name=ASHEN CIRCLE | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvii-3-mhara-gal-tainted-dreadnought | name=MHARA GAL TAINTED DREADNOUGHT | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvii-4-procurator-squad | name=PROCURATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xvii-5-possessed-marine-squad | name=POSSESSED MARINE SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren | name=GAL VORBAK DARK BRETHREN | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+id=r41-unit-xvii-10-anakatis-kul-blade-slaves | name=ANAKATIS KUL BLADE-SLAVES | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xviii-0-firedrake-terminator-squad | name=FIREDRAKE TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xviii-1-pyroclast-squad | name=PYROCLAST SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad | name=SALAMANDERS INFERNUS DESTROYER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xviii-3-adherent-squad | name=ADHERENT SQUAD | type=unit | hidden=false | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r41-unit-xviii-4-sanctifier-squad | name=SANCTIFIER SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad | name=FIREDRAKE TERMINATOR SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad | name=FIREDRAKE TERMINATOR SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+id=r41-unit-xviii-8-cassian-dracos | name=CASSIAN DRACOS | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xix-0-mor-deythan-squad | name=MOR DEYTHAN SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xix-1-dark-fury-assault-squad | name=DARK FURY ASSAULT SQUAD | type=unit | hidden=false | cats=[('Fast Attack', 'cat-fast', 'true')] | anc=Legiones Astartes
+id=r41-unit-xix-2-deliverer-terminator-squad | name=DELIVERER TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xix-3-raptor-squad | name=RAPTOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xx-0-legion-operatives | name=LEGION OPERATIVES | type=unit | hidden=false | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r41-unit-xx-1-headhunter-kill-team | name=HEADHUNTER KILL TEAM | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xx-2-lernaean-terminator-squad | name=LERNAEAN TERMINATOR SQUAD | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=r41-unit-xx-3-effrit-disruption-cadre | name=EFFRIT DISRUPTION CADRE | type=unit | hidden=false | cats=[('Elites', 'cat-elites', 'true')] | anc=Legiones Astartes
+id=live-r2-r41-unit-xx-4-armillus-dynat-retinue-2-r41-unit-xx-2-lernaean-terminator-squad | name=LERNAEAN TERMINATOR SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Armillus Dynat > Legiones Astartes
+id=live-r2-r41-unit-xx-7-ingo-pech-retinue-2-r41-unit-xx-2-lernaean-terminator-squad | name=LERNAEAN TERMINATOR SQUAD | type=unit | hidden=false | cats=[] | anc=Retinue (does not occupy a separate FOC slot) > Ingo Pech > Legiones Astartes
+id=r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad | name=KAKOPHONI SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-vii-0-effects-warders-of-the-phalanx-phalanx-warder-squads-r41-unit-vii-1-phalanx-warder-squad | name=PHALANX WARDER SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-vii-1-effects-landing-force-phalanx-warder-squads-r41-unit-vii-1-phalanx-warder-squad | name=PHALANX WARDER SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-vii-2-effects-templar-host-templar-brethren-squads-r41-unit-vii-0-templar-brethren-squad | name=TEMPLAR BRETHREN SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xii-0-effects-the-red-hand-rampager-squads-r41-unit-xii-0-rampager-squad | name=RAMPAGER SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xv-1-initiates-of-the-scarab-sekhmet-terminator-cabals-r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true'), ('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Sekhmet Cabal 0-1', 'r18-final-cat-sekhmet-01', 'false'), ('Troops — Guard of the Crimson King', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r41-unit-xv-0-sekhmet-terminator-cabal | name=SEKHMET TERMINATOR CABAL | type=unit | hidden=false | cats=[('Thousand Sons Psychic Brotherhood', 'r18-ts-cat-brotherhood', 'false'), ('Sekhmet Cabal 0-1', 'r18-final-cat-sekhmet-01', 'false'), ('Troops — Guard of the Crimson King', 'cat-troops', 'true')] | anc=Retinue (does not occupy a separate FOC slot) > Magnus the Red, the Crimson King > Legiones Astartes
+id=r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad | name=REAVER ATTACK SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad | name=PYROCLAST SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad | name=SALAMANDERS INFERNUS DESTROYER SQUAD | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r42-role-xx-1-effects-headhunter-elite-headhunter-kill-teams-r41-unit-xx-1-headhunter-kill-team | name=HEADHUNTER KILL TEAM | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+id=r60-ws-sagyar-ebon-troops | name=EBON KESHIG | type=unit | hidden=true | cats=[('Troops', 'cat-troops', 'true')] | anc=Legiones Astartes
+
+GST FORCE/CATEGORY LINKS:
+FORCE force-standard Standard Age of Darkness Detachment
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-config" name="Configuration" hidden="false" targetId="cat-config">
+          <ns0:constraints>
+            <ns0:constraint id="fl-config-min" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <ns0:constraint id="fl-config-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-hq" name="HQ" hidden="false" targetId="cat-hq">
+          <ns0:constraints>
+            <ns0:constraint id="fl-hq-min" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <ns0:constraint id="fl-hq-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r45-um-hq-max" type="set" value="4" field="fl-hq-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r45-um-logos-hq-min" type="set" value="2" field="fl-hq-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-min-reset" type="set" value="0" field="fl-hq-min">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-max-reset" type="set" value="0" field="fl-hq-max">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-min-scale" type="increment" value="1" field="fl-hq-min">
+              <ns0:repeats>
+                <ns0:repeat field="limit::pts" scope="roster" value="750" shared="true" childId="model" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="true" />
+              </ns0:repeats>
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-max-scale" type="increment" value="1" field="fl-hq-max">
+              <ns0:repeats>
+                <ns0:repeat field="limit::pts" scope="roster" value="750" shared="true" childId="model" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="true" />
+              </ns0:repeats>
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-unlimited-max" type="set" value="4" field="fl-hq-max">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="lessThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r71-nl-mawdrym-hq-min" type="set" value="2" field="fl-hq-min">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-viii-8-flaymaster-mawdrym-llansahai" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          <ns0:modifier id="r18-ts-fl-hq-max" type="set" field="fl-hq-max" value="3"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-troops" name="Troops" hidden="false" targetId="cat-troops">
+          <ns0:constraints>
+            <ns0:constraint id="fl-troops-min" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <ns0:constraint id="fl-troops-max" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r45-um-logos-troops-min" type="set" value="3" field="fl-troops-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r46-al-coils-troops-min" type="set" value="3" field="fl-troops-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xx-0-the-coils-of-the-hydra" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-fast" name="Fast Attack" hidden="false" targetId="cat-fast">
+          <ns0:constraints>
+            <ns0:constraint id="fl-fast-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r43-iw-fast-max" type="set" value="1" field="fl-fast-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r64-if-stone-fast-max" type="set" value="1" field="fl-fast-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-vii-0-the-stone-gauntlet" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r64-if-templar-fast-max" type="set" value="1" field="fl-fast-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-vii-2-templar-assault" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r73-nl-fl-fast" type="set" value="4" field="fl-fast-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r80-ih-head-fast-max" type="set" value="1" field="fl-fast-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-x-0-the-head-of-the-gorgon" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r81-ih-head-fast-max" type="set" value="1" field="fl-fast-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-x-0-the-head-of-the-gorgon" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          <ns0:modifier id="r18-ts-fl-fast-max" type="set" field="fl-fast-max" value="2"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r18-ts-fellowships-fast-max" type="set" field="fl-fast-max" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xv-2-the-fellowships-of-prospero" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-heavy" name="Heavy Support" hidden="false" targetId="cat-heavy">
+          <ns0:constraints>
+            <ns0:constraint id="fl-heavy-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r43-ec-maru-heavy-max" type="set" value="2" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-iii-0-the-maru-skara" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r43-iw-heavy-max" type="set" value="4" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r43-sw-pale-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-vi-0-the-pale-hunters" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r46-wb-dark-brethren-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xvii-0-the-dark-brethren" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r46-rg-decap-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xix-0-decapitation-strike" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r52-ec-maru-heavy-max" type="set" value="2" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-iii-0-the-maru-skara" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r73-nl-fl-heavy" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r74-ba-rev-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-ix-0-the-day-of-revelation" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r75-ba-rev-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-ix-0-the-day-of-revelation" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          <ns0:modifier id="r86-we-berserker-heavy-max" type="set" value="1" field="fl-heavy-max"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-auxiliary" name="Auxiliary" targetId="cat-auxiliary" hidden="false" />
+        
