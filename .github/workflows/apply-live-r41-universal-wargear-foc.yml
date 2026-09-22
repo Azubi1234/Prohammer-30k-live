@@ -1,5 +1,5 @@
 name: Apply Live R41 Universal Wargear and FOC Visibility
-# retry with Iron Halo army limit and hardened universalisation
+# retry to inspect duplicate IDs
 on:
   push:
     paths:
