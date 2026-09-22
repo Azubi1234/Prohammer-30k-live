@@ -1,0 +1,1128 @@
+CAT=36 GST=2
+
+==== ENTRY ====
+ID=r46-wb-diabolist NAME=Diabolist Consul TYPE=upgrade HIDDEN=false CATS=[('Head of the Gorgon — non-Forge-Lord Consul', 'r80-ih-head-nonforge-consul', 'false'), ('Head of the Gorgon — non-Forge Consul', 'r81-ih-nonforge-consul', 'false')] ANC=Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+  RULE Diabolist: Gains Daemon and Preferred Enemy (Loyalists). May not select a Bike, Jetbike, Terminator Armour, Power Fist or Thunder Hammer. Enables eligible units to purchase Dark Channelling. May purchase an Accursed Crozius and then counts as a Dark Apostle. |  | Daemon: Model gains a 5+ Invulnerable Save and causes Fear. | Preferred Enemy: The unit can re-roll fai
+
+==== ENTRY ====
+ID=legion-xvii NAME=XVII Legion — Word Bearers TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion > Army Configuration > Legiones Astartes
+  RULE Legiones Astartes (Word Bearers): This Detachment is Word Bearers. Models with the Legiones Astartes special rule gain Legiones Astartes (Word Bearers). Legion-specific rules, units, wargear and characters are unlocked by this selection where applicable.
+  RULE Word Bearers — Legion Rules & Armoury: LEGION SPECIAL RULES | FANATICAL DEVOTION | The Word Bearers are driven by a religious fervour which allows them to endure hardship and terror through sheer certainty of purpose. | Non-Daemon units with the Legiones Astartes (Word Bearers) special rule may re-roll failed Morale and Pinning tests. | THE DARK SHEPHERDS | The Word Bearers do not march to war wi
+
+==== ENTRY ====
+ID=r25-rite-xvii-0-the-dark-brethren NAME=Word Bearers Rite of War — The Dark Brethren TYPE=upgrade HIDDEN=false CATS=[] ANC=Rite of War (optional) > Army Configuration > Legiones Astartes
+  RULE The Dark Brethren: Before the corruption of the XVII Legion became manifest, the Word Bearers were renowned for their cohesion and self-sacrifice. After their fall, these same qualities were turned towards darker purposes, entire warbands offering blood and souls to the powers beyond reality in exchange for their favour. | EFFECTS | ARCH-TRAITORS | All Word Bearers Indepen
+
+==== ENTRY ====
+ID=r25-rite-xvii-1-last-of-the-serrated-sun NAME=Word Bearers Rite of War — Last Of The Serrated Sun TYPE=upgrade HIDDEN=false CATS=[] ANC=Rite of War (optional) > Army Configuration > Legiones Astartes
+  RULE Last Of The Serrated Sun: The Serrated Sun were the first of Lorgar's sons to willingly walk the Path of the Primordial Truth. Their survivors retained the Chapter's mastery of orbital assault warfare, descending upon their enemies alongside the monstrous Gal Vorbak in sudden and overwhelming attacks. | EFFECTS | COMPANY OF MONSTERS | Gal Vorbak Dark Brethren may be selected as T
+
+==== ENTRY ====
+ID=r25-rite-xviii-0-the-covenant-of-fire NAME=Salamanders Rite of War — The Covenant Of Fire TYPE=upgrade HIDDEN=false CATS=[] ANC=Rite of War (optional) > Army Configuration > Legiones Astartes
+  RULE The Covenant Of Fire: The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry. | EFFECTS | DISCIPLES OF THE FLAME | Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non
+
+==== ENTRY ====
+ID=r25-rite-xviii-1-the-awakening-fire NAME=Salamanders Rite of War — The Awakening Fire TYPE=upgrade HIDDEN=false CATS=[] ANC=Rite of War (optional) > Army Configuration > Legiones Astartes
+  RULE The Awakening Fire: After Vulkan was lost upon Isstvan V, some among the XVIII Legion turned ever deeper towards the mysteries of the Promethean Cult. Their grief became a terrible certainty, and the sons of Nocturne began to appear to their enemies as creatures born from the flames themselves. | EFFECTS | DEVILS FROM THE DARK | Salamanders Infantry units gain the Fear spec
+
+==== ENTRY ====
+ID=r41-unit-xvii-0-covenant-zealot-mob NAME=Covenant Zealot Mob TYPE=unit HIDDEN=false CATS=[('Troops', 'cat-troops', 'true'), ('Long March — compulsory Troops', 'r36-soh-long-compulsory-troops', None)] ANC=Legiones Astartes
+  RULE Source Entry: Covenant Zealot | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 6+ | Legion Overseer | 4 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 3+/5+ | SPECIAL RULES DRIVEN TO SLAUGHTER While the Legion Overseer is alive, the Covenant Zealot Mob is Fearless and ignores all Leadership penalties. If the unit is able to declare a charge against an enemy unit during the Assault Phase, it must d
+  GROUP r41-unit-xvii-0-covenant-zealot-mob-options Options hidden=false
+    OPT r41-unit-xvii-0-covenant-zealot-mob-opt-0-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-0-covenant-zealot-mob-opt-1-power-fist Power fist hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-0-covenant-zealot-mob-opt-0-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Covenant Zealot Mob > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-0-covenant-zealot-mob-opt-1-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Covenant Zealot Mob > Legiones Astartes
+  RULE Option restriction: • The Legion Overseer may replace his close combat weapon with one of the following:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren NAME=Gal Vorbak Dark Brethren TYPE=unit HIDDEN=false CATS=[('Elites', 'cat-elites', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Dark Brethren | 5 | 4 | 5 | 5 | 2 | 5 | 2 | 9 | 3+/5+ | Dark Martyr | 5 | 4 | 5 | 5 | 3 | 5 | 3 | 10 | 3+/5+ | RENDING The Rending special rule applies only to the Gal Vorbak's close-combat attacks. | Force Organisation: | • Elites | Allegiance: | • Traitor only | Unit Composition: | • 4 Dark Brethren | • 1 Dark Martyr | Unit Type: | • Infantry | • The Dark Martyr is a Ch
+  GROUP r41-unit-xvii-1-gal-vorbak-dark-brethren-options Options hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-0-flamer Flamer hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-1-meltagun Meltagun hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-2-plasma-gun Plasma Gun hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist Power fist hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-5-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-6-melta-bombs Melta bombs (base unit; +5 pts/model) hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist Power fist hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-9-lightning-claw Lightning claw hidden=false
+    OPT r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-10-artificer-armour Artificer Armour hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Gal Vorbak Dark Brethren > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-0-flamer NAME=Flamer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-1-meltagun NAME=Meltagun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-2-plasma-gun NAME=Plasma Gun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-5-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-6-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-9-lightning-claw NAME=Lightning claw TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-10-artificer-armour NAME=Artificer Armour TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle NAME=Ashen Circle TYPE=unit HIDDEN=false CATS=[('Fast Attack', 'cat-fast', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Incendiary | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | Iconoclast | 5 | 4 | 4 | 4 | 1 | 4 | 3 | 10 | 3+ | Force Organisation: | AXE-RAKE An Axe-rake is a close-combat weapon. Attacks made with an Axe-rake are resolved at +1 Strength. If an enemy unit Retreats from a close combat involving one or more models armed with Axe-rakes, reduce its Retreat distance by
+  GROUP r41-unit-xvii-2-ashen-circle-options Options hidden=false
+    OPT r41-unit-xvii-2-ashen-circle-opt-0-rending-weapon Rending Weapon hidden=false
+    OPT r41-unit-xvii-2-ashen-circle-opt-1-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-2-ashen-circle-opt-2-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT r41-unit-xvii-2-ashen-circle-opt-3-melta-bombs Melta bombs (base unit; +5 pts/model) hidden=false
+    OPT r41-unit-xvii-2-ashen-circle-opt-4-plasma-pistol Plasma Pistol hidden=false
+    OPT r41-unit-xvii-2-ashen-circle-opt-5-artificer-armour Artificer Armour hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Ashen Circle > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-opt-0-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Ashen Circle > Legiones Astartes
+  RULE Option restriction: • Any model may replace his Axe-rake with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-opt-1-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Ashen Circle > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-opt-2-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Ashen Circle > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-opt-3-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Ashen Circle > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-opt-4-plasma-pistol NAME=Plasma Pistol TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Ashen Circle > Legiones Astartes
+  RULE Option restriction: The Iconoclast may replace his Hand Flamer with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-2-ashen-circle-opt-5-artificer-armour NAME=Artificer Armour TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Ashen Circle > Legiones Astartes
+  RULE Option restriction: The Iconoclast may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought NAME=Mhara Gal Tainted Dreadnought TYPE=unit HIDDEN=false CATS=[('Elites', 'cat-elites', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Mhara Gal | 6 | 3 | 7 | 13 | 12 | 11 | 5 | 3 | Force Organisation: | DAEMONIC ENGINE Each time the Mhara Gal suffers a Glancing or Penetrating Hit, roll a D6 before rolling on the Vehicle Damage table. On a 5+, the hit is ignored. SHROUD OF DARK FIRE When resolving a shooting attack against the Mhara Gal made with a Flame, Melta, Plasma or Volkite weap
+  GROUP r41-unit-xvii-3-mhara-gal-tainted-dreadnought-options Options hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-0-multi-melta Multi-Melta hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-1-twin-linked-autocannon Twin-linked Autocannon hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-2-twin-linked-lascannon Twin-linked Lascannon hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-3-with-built-in-twin-linked-bolter with built-in Twin-linked Bolter hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-4-heavy-flamer Heavy Flamer hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-5-meltagun Meltagun hidden=false
+    OPT r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-6-plasma-blaster Plasma Blaster hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-0-multi-melta NAME=Multi-Melta TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: The Mhara Gal may replace its Plasma Cannon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-1-twin-linked-autocannon NAME=Twin-linked Autocannon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: The Mhara Gal may replace its Plasma Cannon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-2-twin-linked-lascannon NAME=Twin-linked Lascannon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: The Mhara Gal may replace its Plasma Cannon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-3-with-built-in-twin-linked-bolter NAME=with built-in Twin-linked Bolter TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: The Mhara Gal may replace its Plasma Cannon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-4-heavy-flamer NAME=Heavy Flamer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: Any built-in Twin-linked Bolter may be replaced with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-5-meltagun NAME=Meltagun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: Any built-in Twin-linked Bolter may be replaced with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-3-mhara-gal-tainted-dreadnought-opt-6-plasma-blaster NAME=Plasma Blaster TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Mhara Gal Tainted Dreadnought > Legiones Astartes
+  RULE Option restriction: Any built-in Twin-linked Bolter may be replaced with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad NAME=Procurator Squad TYPE=unit HIDDEN=false CATS=[('Elites', 'cat-elites', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Procurator | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | Procurator Prime | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 10 | 2+ | Force Organisation: | • Elites | FLESH HARVESTERS When a Procurator Squad uses Ritual of Consecration, the Daemon unit nominated by that rule receives +1 to its next Reserve roll in addition to the normal re-roll. This modifier is not cumulative. | Alle
+  GROUP r41-unit-xvii-4-procurator-squad-options Options hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-0-rending-weapon Rending Weapon hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-1-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-2-power-fist Power fist hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-3-hand-flamer Hand Flamer hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-4-plasma-pistol Plasma Pistol hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-5-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-6-melta-bombs Melta bombs (base unit; +5 pts/model) hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-7-jump-packs Jump Packs (base unit; +15 pts/model) hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-8-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-4-procurator-squad-opt-9-power-fist Power fist hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Procurator Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-0-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-1-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-2-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-3-hand-flamer NAME=Hand Flamer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Bolt pistol with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-4-plasma-pistol NAME=Plasma Pistol TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Bolt pistol with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-5-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-6-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-7-jump-packs NAME=Jump Packs (base unit; +15 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-8-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-4-procurator-squad-opt-9-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Procurator Squad > Legiones Astartes
+  RULE Option restriction: The Procurator Prime may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad NAME=Possessed Marine Squad TYPE=unit HIDDEN=false CATS=[('Elites', 'cat-elites', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Possessed Marine | 4 | 4 | 5 | 4 | 1 | 4 | 2 | 10 | 3+/5+ | Possessed Champion | 4 | 4 | 5 | 4 | 1 | 4 | 3 | 10 | 3+/5+ | Force Organisation: | DAEMONKIN After deployment but before the first turn begins, roll a D6 for each Possessed Marine Squad. The entire squad gains the corresponding special rule for the duration of the battle: 1 — Scout 2 — Furious 
+  GROUP r41-unit-xvii-5-possessed-marine-squad-options Options hidden=false
+    OPT r41-unit-xvii-5-possessed-marine-squad-opt-0-frag-grenades Frag grenades (base unit; +1 pts/model) hidden=false
+    OPT r41-unit-xvii-5-possessed-marine-squad-opt-1-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT r41-unit-xvii-5-possessed-marine-squad-opt-2-rending-weapon Rending Weapon hidden=false
+    OPT r41-unit-xvii-5-possessed-marine-squad-opt-3-power-weapon Power weapon hidden=false
+    OPT r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist Power fist hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Possessed Marine Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad-opt-0-frag-grenades NAME=Frag grenades (base unit; +1 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Possessed Marine Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad-opt-1-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Possessed Marine Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad-opt-2-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Possessed Marine Squad > Legiones Astartes
+  RULE Option restriction: The Possessed Champion is a Character. The Possessed Champion may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad-opt-3-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Possessed Marine Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Possessed Marine Squad > Legiones Astartes
+  RULE Option restriction: The Possessed Champion is a Character. The Possessed Champion may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r41-unit-xvii-6-argel-tal NAME=Argel Tal TYPE=unit HIDDEN=false CATS=[('HQ', 'cat-hq', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Argel Tal | 5 | 4 | 5 | 5 | 3 | 5 | 4 | 10 | 3+/4+ | Force Organisation: | CUSTODIAN SPEAR The Custodian Spear is a Two-Handed, Master-crafted Power Weapon with an inbuilt Foeblaster Boltgun. During the first round of each close combat, attacks made with the Custodian Spear are resolved at +1 Strength and +1 Initiative. LORD OF THE GAL VORBAK Argel Tal
+  GROUP r41-unit-xvii-6-argel-tal-options Options hidden=false
+    OPT r41-unit-xvii-6-argel-tal-opt-0-krak-grenades Krak grenades hidden=false
+    OPT r41-unit-xvii-6-argel-tal-opt-1-melta-bombs Melta bombs hidden=false
+  GROUP live-r2-r41-unit-xvii-6-argel-tal-retinue Retinue (does not occupy a separate FOC slot) hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren Gal Vorbak Dark Brethren hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-6-argel-tal-opt-0-krak-grenades NAME=Krak grenades TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Argel Tal > Legiones Astartes
+  RULE Option restriction: • Argel Tal may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-6-argel-tal-opt-1-melta-bombs NAME=Melta bombs TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Argel Tal > Legiones Astartes
+  RULE Option restriction: • Argel Tal may take:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren NAME=Gal Vorbak Dark Brethren TYPE=unit HIDDEN=false CATS=[] ANC=Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Source Entry: Dark Brethren | 5 | 4 | 5 | 5 | 2 | 5 | 2 | 9 | 3+/5+ | Dark Martyr | 5 | 4 | 5 | 5 | 3 | 5 | 3 | 10 | 3+/5+ | RENDING The Rending special rule applies only to the Gal Vorbak's close-combat attacks. | Force Organisation: | • Elites | Allegiance: | • Traitor only | Unit Composition: | • 4 Dark Brethren | • 1 Dark Martyr | Unit Type: | • Infantry | • The Dark Martyr is a Ch
+  GROUP live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-options Options hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-0-flamer Flamer hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-1-meltagun Meltagun hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-2-plasma-gun Plasma Gun hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-power-weapon Power weapon hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist Power fist hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-5-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-6-melta-bombs Melta bombs (base unit; +5 pts/model) hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-power-weapon Power weapon hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist Power fist hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-9-lightning-claw Lightning claw hidden=false
+    OPT live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-10-artificer-armour Artificer Armour hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-0-flamer NAME=Flamer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-1-meltagun NAME=Meltagun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-2-plasma-gun NAME=Plasma Gun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-5-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-6-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-9-lightning-claw NAME=Lightning claw TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-6-argel-tal-retinue-0-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-10-artificer-armour NAME=Artificer Armour TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Gal Vorbak Dark Brethren > Retinue (does not occupy a separate FOC slot) > Argel Tal > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-7-high-chaplain-erebus NAME=High Chaplain Erebus TYPE=unit HIDDEN=false CATS=[('HQ', 'cat-hq', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Erebus | 5 | 5 | 4 | 4 | 3 | 5 | 3 | 10 | 2+/4+ | MASTER-CRAFTED ACCURSED CROZIUS Erebus' Accursed Crozius follows the normal rules from the Word Bearers Armoury and is additionally Master-crafted. ANATHAME DAGGER During an Assault phase, Erebus may exchange one of his normal Attacks for one attack with the Anathame Dagger. Invulnerable Saves may not
+  GROUP r41-unit-xvii-7-high-chaplain-erebus-options Options hidden=false
+    OPT r41-unit-xvii-7-high-chaplain-erebus-opt-0-krak-grenades Krak grenades hidden=false
+    OPT r41-unit-xvii-7-high-chaplain-erebus-opt-1-melta-bombs Melta bombs hidden=false
+  GROUP live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue Retinue (does not occupy a separate FOC slot) hidden=false
+    OPT live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command Legion Command Squad hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-7-high-chaplain-erebus-opt-0-krak-grenades NAME=Krak grenades TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > High Chaplain Erebus > Legiones Astartes
+  RULE Option restriction: • Erebus may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-7-high-chaplain-erebus-opt-1-melta-bombs NAME=Melta bombs TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > High Chaplain Erebus > Legiones Astartes
+  RULE Option restriction: • Erebus may take:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command NAME=Legion Command Squad TYPE=unit HIDDEN=false CATS=[] ANC=Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close comb
+  RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-weapons Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-0 Bolter -> gear-bolter hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-1 Storm Bolter -> gear-storm-bolter hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-2 Combi-Flamer -> gear-combi-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-3 Combi-Meltagun -> gear-combi-melta hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-4 Combi-Plasma Gun -> gear-combi-plasma hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-5 Combi-Volkite Charger -> gear-combi-volkite hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-6 Flamer -> gear-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-7 Meltagun -> gear-meltagun hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-8 Plasma Gun -> gear-plasma-gun hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-9 Volkite Charger -> gear-volkite-charger hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-10 Volkite Caliver -> gear-volkite-caliver hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-11 Rotor Cannon -> gear-rotor hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-12 Hand Flamer -> gear-hand-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-13 Plasma Pistol -> gear-plasma-pistol hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-14 Rending Weapon -> gear-rending hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-15 Power Weapon -> gear-power-weapon hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-16 Lightning Claw -> gear-lightning-claw hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-17 Power Fist -> gear-power-fist hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-w-18 Thunder Hammer -> gear-thunder hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-da22-alt-pp-18 Calibanite Plasma Pistol -> da22-plasma-pistol hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-da22-alt-pg-5 Calibanite Plasma Gun -> da22-plasma-gun hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-da22-alt-pr-5 Plasma Repeater -> da22-plasma-repeater hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-da22-alt-pb-5 Plasma Burner -> da22-plasma-burner hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 Calibanite Warblade -> da22-warblade hidden=true
+  GROUP live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-eq Per-model Equipment hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-shield Combat Shield -> gear-hq-combat-shield hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-bombs Melta Bombs -> gear-hq-melta-bombs hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-krak Krak Grenades -> gear-krak hidden=false
+  GROUP live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-mob Squad Mobility (only if the selecting HQ has the same mobility) hidden=false
+    OPT live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-jump Jump Packs (+15 pts/model) hidden=false
+    OPT live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-bike Space Marine Bikes (+20 pts/model) hidden=false
+    OPT live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-jet Jetbikes (+35 pts/model) hidden=false
+  GROUP live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-transport Dedicated Transport hidden=false
+    OPT live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos Land Raider Phobos (Scions of Iron) hidden=true
+    OPT live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus Land Raider Proteus (Scions of Iron) hidden=true
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-rhino Legion Rhino Armoured Carrier -> transport-rhino hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-drop Legion Drop Pod -> transport-drop-pod hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-dreadclaw Legion Dreadclaw Drop Pod -> transport-dreadclaw hidden=false
+  GROUP live-r2-fabius-enhanced-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-group Fabius Bile hidden=false
+    OPT live-r2-fabius-enhanced-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command Enhanced Warriors hidden=false
+  GROUP live-r2-fulgrim-blessing-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-group Special Upgrades hidden=false
+    OPT live-r2-fulgrim-blessing-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command Blessing of Slaanesh hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-vets NAME=Legion Veterans TYPE=model HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-apoth NAME=Legion Apothecary TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE LINK:Apothecary Armoury: r36-exact-apothecary-armoury-6175282
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-standard NAME=Legion Standard Bearer TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE LINK:Standard Bearer Armoury: r36-exact-standard-bearer-armoury-7b03aca
+  GROUP live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-standards Standard hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-vex Legion Vexilla -> gear-hq-vexilla hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-sac Sacred Standard -> gear-hq-sacred hidden=false
+    LINK live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-ls Legion Standard -> gear-hq-legion-standard hidden=false
+    LINK r32-soh-maloghurst-link-29 Maloghurst the Twisted -> r32-soh-maloghurst-replacement hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-champ NAME=Legion Champion TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE LINK:Champion Armoury: r36-exact-champion-armoury-c8775ab
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r69-centurion-command-bikes NAME=Space Marine Bikes (entire squad) TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r69-centurion-command-jetbikes NAME=Jetbikes (entire squad) TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r71-nl-gen-10-stealth NAME=Stealth Adept — whole squad TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached. |  | Stealth: Adds +1 to the value of Cover Saves conferred by terrain, to a maximum of 2+. If in the open, receive
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r71-nl-bj-11 NAME=Beyond Judgement — Trophies of Judgement & Fear TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee en
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-jump NAME=Jump Packs (+15 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-bike NAME=Space Marine Bikes (+20 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-jet NAME=Jetbikes (+35 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-land-land-raider-phobos NAME=Land Raider Phobos TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-land-land-raider-proteus NAME=Land Raider Proteus TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-land-land-raider-achilles NAME=Land Raider Achilles TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos NAME=Land Raider Phobos (Scions of Iron) TYPE=upgrade HIDDEN=true CATS=[] ANC=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus NAME=Land Raider Proteus (Scions of Iron) TYPE=upgrade HIDDEN=true CATS=[] ANC=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-fabius-enhanced-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command NAME=Enhanced Warriors TYPE=upgrade HIDDEN=false CATS=[] ANC=Fabius Bile > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every mo
+
+==== ENTRY ====
+ID=live-r2-fulgrim-blessing-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command NAME=Blessing of Slaanesh TYPE=upgrade HIDDEN=false CATS=[] ANC=Special Upgrades > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > High Chaplain Erebus > Legiones Astartes
+  RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+
+==== ENTRY ====
+ID=r41-unit-xvii-8-kor-phaeron-the-black-cardinal NAME=Kor Phaeron, the Black Cardinal TYPE=unit HIDDEN=false CATS=[('HQ', 'cat-hq', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Kor Phaeron | 4 | 4 | 4 | 3 | 4 | 3 | 2 | 10 | 2+/4+ | TERMINUS CONSOLARIS The Terminus Consolaris counts as Cataphractii Terminator Armour. Its extensive life-support systems grant Kor Phaeron Feel No Pain (6+). These rules are already reflected in his profile and Special Rules. BURNING LORE Kor Phaeron has Burning Lore at no additional points cost 
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue Retinue (does not occupy a separate FOC slot) hidden=false
+    OPT live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-termcommand Legion Terminator Command Squad hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-termcommand NAME=Legion Terminator Command Squad TYPE=unit HIDDEN=false CATS=[] ANC=Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal > Legiones Astartes
+  RULE Standard Wargear: Five Terminator Veterans, each equipped with the selected Terminator Armour pattern, a Combi-Bolter and a Power Weapon.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close comb
+  RULE Retinue: May only be selected for an eligible HQ character equipped with Terminator, Tartaros or Cataphractii Terminator Armour. It occupies no separate Force Organisation slot; the character and squad count as one HQ selection but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-armour Terminator Armour Pattern hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-arm-n Terminator Armour -> gear-hq-terminator hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-arm-t Tartaros Terminator Armour -> gear-hq-tartaros hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-arm-c Cataphractii Terminator Armour -> gear-hq-cataphractii hidden=false
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-ranged Combi-Bolter Replacements (per model) hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-r-0 Combi-Flamer -> gear-combi-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-r-1 Combi-Meltagun -> gear-combi-melta hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-r-2 Combi-Plasma Gun -> gear-combi-plasma hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-r-3 Combi-Volkite Charger -> gear-combi-volkite hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-r-4 Foeblaster Boltgun -> gear-foeblaster hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-r-5 Volkite Charger -> gear-volkite-charger hidden=false
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-melee Power Weapon Replacements (per model) hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-m-0 Power Fist -> gear-power-fist hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-m-1 Lightning Claw -> gear-lightning-claw hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-m-2 Chainfist -> gear-chainfist hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-m-3 Thunder Hammer -> gear-thunder hidden=false
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-pair Replace both Combi-Bolter and Power Weapon hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-pair-link Pair of Lightning Claws -> gear-pair-claws hidden=false
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-heavy Heavy Weapon (one model only) hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-h-0 Heavy Flamer -> gear-heavy-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-h-1 Reaper Autocannon -> gear-reaper-autocannon hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-h-2 Plasma Blaster -> gear-plasma-blaster hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-h-3 Assault Cannon -> gear-assault-cannon hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-h-4 Cyclone Missile Launcher -> gear-cyclone hidden=false
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-transport Dedicated Transport hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-dreadclaw Legion Dreadclaw Drop Pod -> transport-dreadclaw hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-vets NAME=Terminator Veterans TYPE=model HIDDEN=false CATS=[] ANC=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-apoth NAME=Terminator Apothecary TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal > Legiones Astartes
+  RULE LINK:Terminator Apothecary: r36-exact-terminator-apothecary-4682517
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-standard NAME=Terminator Standard Bearer TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal > Legiones Astartes
+  RULE LINK:Terminator Standard Bearer: r36-exact-terminator-standard-bearer-7642801
+  GROUP live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-standards Standard hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-vex Legion Vexilla -> gear-hq-vexilla hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-sac Sacred Standard -> gear-hq-sacred hidden=false
+    LINK live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-ls Legion Standard -> gear-hq-legion-standard hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-champ NAME=Terminator Champion TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal > Legiones Astartes
+  RULE LINK:Terminator Champion: r36-exact-terminator-champion-3460859
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-r73-nl-bj-11 NAME=Beyond Judgement — Trophies of Judgement & Fear TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal > Legiones Astartes
+  RULE Beyond Judgement: Under Horror Cult this unit purchases Beyond Judgement for +25 points. Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model; multiple Trophies penalties remain non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their c
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-land-land-raider-phobos NAME=Land Raider Phobos TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-land-land-raider-proteus NAME=Land Raider Proteus TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-8-kor-phaeron-the-black-cardinal-retinue-0-hq-praetor-ret-tc-land-land-raider-achilles NAME=Land Raider Achilles TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Kor Phaeron, the Black Cardinal
+
+==== ENTRY ====
+ID=r41-unit-xvii-9-zardu-layak NAME=Zardu Layak TYPE=unit HIDDEN=false CATS=[('HQ', 'cat-hq', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Zardu Layak | 5 | 5 | 4 | 5 | 2 | 5 | 2 | 10 | 2+/5+ | PSYCHIC POWERS Zardu Layak selects two powers from Malefic Daemonology and follows all normal ProHammer rules for a Mastery Level 2 Psyker. CRIMSON APOSTLE Zardu Layak counts as both a Dark Apostle and a Diabolist for all Word Bearers rules, army construction requirements and Rites of War. DARK C
+  GROUP r41-unit-xvii-9-zardu-layak-options Options hidden=false
+    OPT r41-unit-xvii-9-zardu-layak-opt-0-krak-grenades Krak grenades hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-9-zardu-layak-opt-0-krak-grenades NAME=Krak grenades TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Zardu Layak > Legiones Astartes
+  RULE Option restriction: • Zardu Layak may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-10-anakatis-kul-blade-slaves NAME=Anakatis Kul Blade-Slaves TYPE=unit HIDDEN=false CATS=[('Elites', 'cat-elites', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Anakatis Kul | 5 | 4 | 6 | 5 | 3 | 5 | 3 | 8 | 3+/5+ | Unit Composition: | MINDLESS KILLERS The Anakatis Kul may only be selected as part of Zardu Layak's unit. While Zardu Layak is alive, they must remain part of his unit. If Zardu Layak is slain, the surviving Blade-Slaves must declare a charge against the nearest eligible enemy unit during each Assa
+
+==== ENTRY ====
+ID=r41-unit-xvii-11-hol-beloth NAME=Hol Beloth TYPE=unit HIDDEN=false CATS=[('HQ', 'cat-hq', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Hol Beloth | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+/4+ | TAINTED WEAPON Hol Beloth's Tainted Weapon follows the normal rules presented in the Word Bearers Armoury. HEXAGLYPHIC WARD The first unsaved Wound suffered by Hol Beloth during the battle is ignored. If that attack would inflict a Massive Wound, the Ward is used before rolling the D3 Wounds. Afte
+  GROUP r41-unit-xvii-11-hol-beloth-options Options hidden=false
+    OPT r41-unit-xvii-11-hol-beloth-opt-0-krak-grenades Krak grenades hidden=false
+    OPT r41-unit-xvii-11-hol-beloth-opt-1-melta-bombs Melta bombs hidden=false
+  GROUP live-r2-r41-unit-xvii-11-hol-beloth-retinue Retinue (does not occupy a separate FOC slot) hidden=false
+    OPT live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command Legion Command Squad hidden=false
+
+==== ENTRY ====
+ID=r41-unit-xvii-11-hol-beloth-opt-0-krak-grenades NAME=Krak grenades TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Hol Beloth > Legiones Astartes
+  RULE Option restriction: • Hol Beloth may take:
+
+==== ENTRY ====
+ID=r41-unit-xvii-11-hol-beloth-opt-1-melta-bombs NAME=Melta bombs TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Hol Beloth > Legiones Astartes
+  RULE Option restriction: • Hol Beloth may take:
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command NAME=Legion Command Squad TYPE=unit HIDDEN=false CATS=[] ANC=Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close comb
+  RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-weapons Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword) hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-0 Bolter -> gear-bolter hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-1 Storm Bolter -> gear-storm-bolter hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-2 Combi-Flamer -> gear-combi-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-3 Combi-Meltagun -> gear-combi-melta hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-4 Combi-Plasma Gun -> gear-combi-plasma hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-5 Combi-Volkite Charger -> gear-combi-volkite hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-6 Flamer -> gear-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-7 Meltagun -> gear-meltagun hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-8 Plasma Gun -> gear-plasma-gun hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-9 Volkite Charger -> gear-volkite-charger hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-10 Volkite Caliver -> gear-volkite-caliver hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-11 Rotor Cannon -> gear-rotor hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-12 Hand Flamer -> gear-hand-flamer hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-13 Plasma Pistol -> gear-plasma-pistol hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-14 Rending Weapon -> gear-rending hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-15 Power Weapon -> gear-power-weapon hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-16 Lightning Claw -> gear-lightning-claw hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-17 Power Fist -> gear-power-fist hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-w-18 Thunder Hammer -> gear-thunder hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-da22-alt-pp-18 Calibanite Plasma Pistol -> da22-plasma-pistol hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-da22-alt-pg-5 Calibanite Plasma Gun -> da22-plasma-gun hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-da22-alt-pr-5 Plasma Repeater -> da22-plasma-repeater hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-da22-alt-pb-5 Plasma Burner -> da22-plasma-burner hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r40-da-warblade-hq-centurion-ret-command-w-15 Calibanite Warblade -> da22-warblade hidden=true
+  GROUP live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-eq Per-model Equipment hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-shield Combat Shield -> gear-hq-combat-shield hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-bombs Melta Bombs -> gear-hq-melta-bombs hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-krak Krak Grenades -> gear-krak hidden=false
+  GROUP live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-mob Squad Mobility (only if the selecting HQ has the same mobility) hidden=false
+    OPT live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-jump Jump Packs (+15 pts/model) hidden=false
+    OPT live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-bike Space Marine Bikes (+20 pts/model) hidden=false
+    OPT live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-jet Jetbikes (+35 pts/model) hidden=false
+  GROUP live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-transport Dedicated Transport hidden=false
+    OPT live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos Land Raider Phobos (Scions of Iron) hidden=true
+    OPT live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus Land Raider Proteus (Scions of Iron) hidden=true
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-rhino Legion Rhino Armoured Carrier -> transport-rhino hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-drop Legion Drop Pod -> transport-drop-pod hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-dreadclaw Legion Dreadclaw Drop Pod -> transport-dreadclaw hidden=false
+  GROUP live-r2-fabius-enhanced-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-group Fabius Bile hidden=false
+    OPT live-r2-fabius-enhanced-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command Enhanced Warriors hidden=false
+  GROUP live-r2-fulgrim-blessing-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-group Special Upgrades hidden=false
+    OPT live-r2-fulgrim-blessing-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command Blessing of Slaanesh hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-vets NAME=Legion Veterans TYPE=model HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-apoth NAME=Legion Apothecary TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE LINK:Apothecary Armoury: r36-exact-apothecary-armoury-6175282
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-standard NAME=Legion Standard Bearer TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE LINK:Standard Bearer Armoury: r36-exact-standard-bearer-armoury-7b03aca
+  GROUP live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-standards Standard hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-vex Legion Vexilla -> gear-hq-vexilla hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-sac Sacred Standard -> gear-hq-sacred hidden=false
+    LINK live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-ls Legion Standard -> gear-hq-legion-standard hidden=false
+    LINK r32-soh-maloghurst-link-30 Maloghurst the Twisted -> r32-soh-maloghurst-replacement hidden=false
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-champ NAME=Legion Champion TYPE=upgrade HIDDEN=false CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE LINK:Champion Armoury: r36-exact-champion-armoury-c8775ab
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r69-centurion-command-bikes NAME=Space Marine Bikes (entire squad) TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r69-centurion-command-jetbikes NAME=Jetbikes (entire squad) TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r71-nl-gen-10-stealth NAME=Stealth Adept — whole squad TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached. |  | Stealth: Adds +1 to the value of Cover Saves conferred by terrain, to a maximum of 2+. If in the open, receive
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r71-nl-bj-11 NAME=Beyond Judgement — Trophies of Judgement & Fear TYPE=upgrade HIDDEN=true CATS=[] ANC=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee en
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-jump NAME=Jump Packs (+15 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-bike NAME=Space Marine Bikes (+20 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-jet NAME=Jetbikes (+35 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-land-land-raider-phobos NAME=Land Raider Phobos TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-land-land-raider-proteus NAME=Land Raider Proteus TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-land-land-raider-achilles NAME=Land Raider Achilles TYPE=model HIDDEN=false CATS=[] ANC=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos NAME=Land Raider Phobos (Scions of Iron) TYPE=upgrade HIDDEN=true CATS=[] ANC=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus NAME=Land Raider Proteus (Scions of Iron) TYPE=upgrade HIDDEN=true CATS=[] ANC=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+
+==== ENTRY ====
+ID=live-r2-fabius-enhanced-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command NAME=Enhanced Warriors TYPE=upgrade HIDDEN=false CATS=[] ANC=Fabius Bile > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every mo
+
+==== ENTRY ====
+ID=live-r2-fulgrim-blessing-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command NAME=Blessing of Slaanesh TYPE=upgrade HIDDEN=false CATS=[] ANC=Special Upgrades > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Hol Beloth > Legiones Astartes
+  RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+
+==== ENTRY ====
+ID=r41-unit-xvii-12-xvii-lorgar-aurelian-the-urizen NAME=Lorgar Aurelian, the Urizen TYPE=unit HIDDEN=false CATS=[('Lords of War', 'cat-low', 'true')] ANC=Legiones Astartes
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad NAME=Pyroclast Squad TYPE=unit HIDDEN=true CATS=[('Troops', 'cat-troops', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Pyroclast | 4 | 4 | 4 | 4 | 1 | 4 | 1 | 9 | 2+ | Pyroclast Warden | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 10 | 2+ | Force Organisation: | • Elites | Unit Composition: | • 4 Pyroclasts | • 1 Pyroclast Warden | Unit Type: | • Infantry | • The Pyroclast Warden is a Character | Wargear: | • Artificer Armour | • Pyroclast Flame Projector | • Bolt pistol | • Close-combat weapon | • Frag grenad
+  RULE Rite of War Interaction: The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry. | EFFECTS | DISCIPLES OF THE FLAME | Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non
+  RULE Builder compatibility: Removed 1 obsolete armoury link(s) inherited from the generic source entry while creating this Rite-specific battlefield-role copy.
+  GROUP r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-options Options hidden=false
+    OPT r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-0-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-1-melta-bombs Melta bombs (base unit; +5 pts/model) hidden=false
+    OPT r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-2-rending-weapon Rending Weapon hidden=false
+    OPT r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-3-power-weapon Power weapon hidden=false
+    OPT r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist Power fist hidden=false
+    OPT r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-5-thunder-hammer Thunder hammer hidden=false
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Pyroclast Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-0-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-1-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-2-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-3-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Pyroclast Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-5-thunder-hammer NAME=Thunder hammer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad NAME=Salamanders Infernus Destroyer Squad TYPE=unit HIDDEN=true CATS=[('Troops', 'cat-troops', 'true')] ANC=Legiones Astartes
+  RULE Source Entry: Infernus Destroyer | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | Infernus Sergeant | 4 | 4 | 4 | 4 | 1 | 4 | 3 | 9 | 3+ | Force Organisation | DUAL PISTOLS The unit uses the normal Dual Pistols rule from the Legiones Astartes Army List. DESTROYER CADRE An Infernus Destroyer Squad may only be joined by a Legion Moritat or another Character specifically stated to
+  RULE Rite of War Interaction: The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry. | EFFECTS | DISCIPLES OF THE FLAME | Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non
+  RULE Builder compatibility: Removed 1 obsolete armoury link(s) inherited from the generic source entry while creating this Rite-specific battlefield-role copy.
+  GROUP r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-options Options hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-0-krak-grenades Krak grenades (base unit; +2 pts/model) hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-1-melta-bombs Melta bombs (base unit; +5 pts/model) hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs Jump Packs (base unit; +15 pts/model) hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-3-heavy-flamer-with-suspensor-we Heavy Flamer with Suspensor Web hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-4-multi-melta-with-suspensor-web Multi-Melta with Suspensor Web hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-5-volkite-serpenta Volkite Serpenta hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-6-plasma-pistol Plasma Pistol hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-7-rending-weapon Rending Weapon hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-power-weapon Power weapon hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw Lightning claw hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-10-power-fist Power fist hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-11-thunder-hammer Thunder hammer hidden=false
+    OPT r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-12-inferno-pistol Inferno Pistol hidden=false
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=Salamanders Infernus Destroyer Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-0-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-1-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs NAME=Jump Packs (base unit; +15 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-3-heavy-flamer-with-suspensor-we NAME=Heavy Flamer with Suspensor Web TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-4-multi-melta-with-suspensor-web NAME=Multi-Melta with Suspensor Web TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-5-volkite-serpenta NAME=Volkite Serpenta TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-6-plasma-pistol NAME=Plasma Pistol TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-7-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw NAME=Lightning claw TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-10-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-11-thunder-hammer NAME=Thunder hammer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-12-inferno-pistol NAME=Inferno Pistol TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace either Hand Flamer with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-0-flamer NAME=Flamer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-1-meltagun NAME=Meltagun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-2-plasma-gun NAME=Plasma Gun TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Dark Brethren may replace his Bolter with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-3-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-4-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-5-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-6-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-7-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-8-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-9-lightning-claw NAME=Lightning claw TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r46-al-reward-50-r41-unit-xvii-1-gal-vorbak-dark-brethren-opt-10-artificer-armour NAME=Artificer Armour TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > GAL VORBAK DARK BRETHREN — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Dark Martyr may take:
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-0-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-1-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-2-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-3-hand-flamer NAME=Hand Flamer TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Bolt pistol with:
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-4-plasma-pistol NAME=Plasma Pistol TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Procurator may replace his Bolt pistol with:
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-5-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-6-melta-bombs NAME=Melta bombs (base unit; +5 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-7-jump-packs NAME=Jump Packs (base unit; +15 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-8-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-51-r41-unit-xvii-4-procurator-squad-opt-9-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > PROCURATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Procurator Prime may replace his Chainsword with:
+
+==== ENTRY ====
+ID=r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-additional NAME=Squad Models TYPE=model HIDDEN=false CATS=[] ANC=POSSESSED MARINE SQUAD — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-0-frag-grenades NAME=Frag grenades (base unit; +1 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > POSSESSED MARINE SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +1 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-1-krak-grenades NAME=Krak grenades (base unit; +2 pts/model) TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > POSSESSED MARINE SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+==== ENTRY ====
+ID=r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-2-rending-weapon NAME=Rending Weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > POSSESSED MARINE SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Possessed Champion is a Character. The Possessed Champion may replace his Close-combat weapon with:
+
+==== ENTRY ====
+ID=r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-3-power-weapon NAME=Power weapon TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > POSSESSED MARINE SQUAD — Rewards of Treachery > Legiones Astartes
+
+==== ENTRY ====
+ID=r46-al-reward-52-r41-unit-xvii-5-possessed-marine-squad-opt-4-power-fist NAME=Power fist TYPE=upgrade HIDDEN=false CATS=[] ANC=Options > POSSESSED MARINE SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Possessed Champion is a Character. The Possessed Champion may replace his Close-combat weapon with:
+
+
+==== CONSUL / CHAPLAIN / DIABOLIST SEARCH ====
+ID=r46-wb-accursed-crozius NAME=Accursed Crozius TYPE=upgrade HIDDEN=false CATS=[] ANC=Legiones Astartes
+  RULE Accursed Crozius: Word Bearers Praetor or Centurion. User Strength, Power Weapon. Grants a 4+ Invulnerable Save and counts as a Personal Icon/Summoning Point. The bearer counts as a Dark Apostle for The Dark Shepherds.
+
+ID=r46-wb-burning-lore NAME=Burning Lore TYPE=upgrade HIDDEN=false CATS=[] ANC=Legiones Astartes
+  RULE Burning Lore: Word Bearers Praetor, Centurion, Chaplain or Diabolist that is not already a Psyker. Becomes Psyker (Mastery Level 1) and selects one power from Biomancy or Telepathy.
+
+ID=r46-wb-dark-channelling NAME=Dark Channelling TYPE=upgrade HIDDEN=false CATS=[] ANC=Legiones Astartes
+  RULE Dark Channelling: Requires at least one Diabolist in the Detachment. Before the first turn roll D6: 1–3 Zealot; 4–5 +1 Strength; 6 Daemon (and the unit ceases to be Scoring; in VP missions it also counts as destroyed at battle end). Effects apply only to the upgraded squad.
+
+ID=hq-consul-chaplain NAME=Legion Chaplain Consul TYPE=upgrade HIDDEN=false CATS=[('Head of the Gorgon — non-Forge-Lord Consul', 'r80-ih-head-nonforge-consul', 'false'), ('Head of the Gorgon — non-Forge Consul', 'r81-ih-nonforge-consul', 'false')] ANC=Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+  RULE Legion Chaplain Consul: This Centurion is upgraded to Legion Chaplain Consul. Granted wargear and special rules are shown separately below.
+  RULE Honour of the Legion: The Chaplain and any unit he has joined have the Fearless special rule. |  | Fearless: Automatically passes all Morale and Pinning tests. May not Take Cover! or choose to voluntarily fail a break test.
+  RULE Liturgies of Battle: In a player turn in which the Chaplain and a unit he has joined successfully charge, the Chaplain and all models in that unit may re-roll failed To Hit rolls in close combat for that Assault phase.
+
+ID=r46-wb-diabolist NAME=Diabolist Consul TYPE=upgrade HIDDEN=false CATS=[('Head of the Gorgon — non-Forge-Lord Consul', 'r80-ih-head-nonforge-consul', 'false'), ('Head of the Gorgon — non-Forge Consul', 'r81-ih-nonforge-consul', 'false')] ANC=Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+  RULE Diabolist: Gains Daemon and Preferred Enemy (Loyalists). May not select a Bike, Jetbike, Terminator Armour, Power Fist or Thunder Hammer. Enables eligible units to purchase Dark Channelling. May purchase an Accursed Crozius and then counts as a Dark Apostle. |  | Daemon: Model gains a 5+ Invulnerable Save and causes Fear. | Preferred Enemy: The unit can re-roll fai
+
+
+==== FORCE LINKS ====
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-hq" name="HQ" hidden="false" targetId="cat-hq">
+          <ns0:constraints>
+            <ns0:constraint id="fl-hq-min" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <ns0:constraint id="fl-hq-max" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r45-um-hq-max" type="set" value="4" field="fl-hq-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r45-um-logos-hq-min" type="set" value="2" field="fl-hq-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-min-reset" type="set" value="0" field="fl-hq-min">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-max-reset" type="set" value="0" field="fl-hq-max">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-min-scale" type="increment" value="1" field="fl-hq-min">
+              <ns0:repeats>
+                <ns0:repeat field="limit::pts" scope="roster" value="750" shared="true" childId="model" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="true" />
+              </ns0:repeats>
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-max-scale" type="increment" value="1" field="fl-hq-max">
+              <ns0:repeats>
+                <ns0:repeat field="limit::pts" scope="roster" value="750" shared="true" childId="model" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="true" />
+              </ns0:repeats>
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="greaterThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r62-sw-hq-unlimited-max" type="set" value="4" field="fl-hq-max">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="lessThan" value="0" field="limit::pts" scope="roster" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+            <ns0:modifier id="r71-nl-mawdrym-hq-min" type="set" value="2" field="fl-hq-min">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-viii-8-flaymaster-mawdrym-llansahai" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          <ns0:modifier id="r18-ts-fl-hq-max" type="set" field="fl-hq-max" value="3"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-troops" name="Troops" hidden="false" targetId="cat-troops">
+          <ns0:constraints>
+            <ns0:constraint id="fl-troops-min" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <ns0:constraint id="fl-troops-max" field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r45-um-logos-troops-min" type="set" value="3" field="fl-troops-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xiii-0-the-logos-lectora" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r46-al-coils-troops-min" type="set" value="3" field="fl-troops-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xx-0-the-coils-of-the-hydra" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="fl-heavy" name="Heavy Support" hidden="false" targetId="cat-heavy">
+          <ns0:constraints>
+            <ns0:constraint id="fl-heavy-max" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </ns0:constraints>
+          <ns0:modifiers>
+            <ns0:modifier id="r43-ec-maru-heavy-max" type="set" value="2" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-iii-0-the-maru-skara" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r43-iw-heavy-max" type="set" value="4" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r43-sw-pale-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-vi-0-the-pale-hunters" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r46-wb-dark-brethren-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xvii-0-the-dark-brethren" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r46-rg-decap-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xix-0-decapitation-strike" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r52-ec-maru-heavy-max" type="set" value="2" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-iii-0-the-maru-skara" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r73-nl-fl-heavy" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r74-ba-rev-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-ix-0-the-day-of-revelation" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r75-ba-rev-heavy-max" type="set" value="1" field="fl-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-ix-0-the-day-of-revelation" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          <ns0:modifier id="r86-we-berserker-heavy-max" type="set" value="1" field="fl-heavy-max"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-xii-0-berserker-assault" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+        </ns0:categoryLink>
+        
+<ns0:categoryLink xmlns:ns0="http://www.battlescribe.net/schema/gameSystemSchema" id="r47-fl-wb-favour" name="Word Bearers Favour Limit" targetId="r47-cat-wb-favour" hidden="true">
+          <ns0:constraints>
+            <ns0:constraint id="r47-wb-favour-roster-max" field="selections" scope="roster" value="1" type="max" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </ns0:constraints>
+        </ns0:categoryLink>
+        
