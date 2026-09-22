@@ -1,5 +1,5 @@
 name: Apply Live R41 Universal Wargear and FOC Visibility
-# retry to inspect duplicate IDs
+# retry with baseline duplicate-ID validation
 on:
   push:
     paths:
