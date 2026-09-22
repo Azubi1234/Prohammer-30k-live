@@ -1,0 +1,19 @@
+Live R54 — New Recruit hard cache-bust
+Input: restored known-good CAT53 / GST11
+Output: CAT54 / GST12
+
+CONTENT:
+- No army-list, profile, option, rule, wargear, cost or restriction content changed.
+- Catalogue remains the exact known-good R48 content restored by R53.
+- Only catalogue/game-system/index revision metadata changed.
+
+PURPOSE:
+- Force New Recruit to refresh both the catalogue and its parent game system rather than reusing the cached GST11/CAT53 pair.
+
+VALIDATION:
+- PASS: CAT revision 54
+- PASS: CAT points to GST 12
+- PASS: GST revision 12
+- PASS: index advertises CAT54
+- PASS: index advertises GST12
+- PASS: canonical index namespace
