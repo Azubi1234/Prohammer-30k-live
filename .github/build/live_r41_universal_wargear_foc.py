@@ -390,6 +390,8 @@ if ros is not None:
 # Global IDs unique.
 allids=[e.get("id") for e in rr.iter() if e.get("id")]
 dups=[x for x,c in collections.Counter(allids).items() if c>1]
+if dups:
+    print("DUPLICATE IDS:", dups[:200])
 ck("All XML IDs unique",not dups)
 
 # Universalisation did real work.
