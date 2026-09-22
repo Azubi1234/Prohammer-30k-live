@@ -1,0 +1,46 @@
+Live R37 — Word Bearers implementation
+Input CAT=36/GST=2 -> CAT=37/GST=3
+
+SOURCE BASIS:
+- Forces of the Legions, XVII Word Bearers section (pp.190–204 of the uploaded PDF).
+- Legiones Astartes Army List for generic Legion units, transports, wargear and Rites framework.
+- ProHammer Classic v2.4 for psychic disciplines and standard rules.
+- Daemons of the Ruinstorm Google Doc for the normal Ruinstorm Allied Detachment used by The Dark Brethren's From Beyond override.
+
+IMPLEMENTED:
+- Rebuilt the Word Bearers Legion selector as rule links rather than a giant Source Entry dump.
+- Dark Shepherds is mechanically enforced: a Word Bearers force requires a Chaplain/Dark Apostle-equivalent.
+- Added canonical shared Word Bearers rules and reused the R36 shared-rule structure.
+- Reworked Accursed Crozius, Tainted Weapon, Burning Lore, Hex-Bolts, Icon of Chaos Undivided, Diabolist and Dark Channelling.
+- Burning Lore now contains actual selectable Biomancy/Telepathy powers.
+- Added Favour of the Pantheon to non-named Praetor/Centurion characters with a roster-wide max of one.
+- Rebuilt/fixed Covenant Zealots, Gal Vorbak, Ashen Circle, Mhara Gal, Procurators and Possessed: correct costs, squad-size scaling, weapon caps, whole-squad costs, 0-2 Possessed cap, champion/leader options and transports.
+- Gal Vorbak copies/retinues receive the same corrected implementation; Serrated Sun transport requirement is enforced.
+- Argel Tal, Erebus, Kor Phaeron, Zardu Layak, Hol Beloth and Lorgar now carry their actual rules/wargear instead of sparse source shells.
+- Anakatis Kul removed as a standalone Elites choice and nested under Zardu Layak for +100 points.
+- Zardu has a full selectable Malefic Daemonology power pool from ProHammer v2.4.
+- Lorgar Transfigured implemented at +75 points with three selectable Divination/Telekinesis powers and Primarch retinues.
+- The Dark Brethren mechanically requires a Diabolist and caps Heavy Support at one.
+- Last of the Serrated Sun creates compulsory-capable Gal Vorbak Troops and adds Drop Pod access to Rhino-capable Infantry transport groups.
+- Added Drop Pod Rite access to 9 additional Rhino-capable Dedicated Transport groups.
+- Added a Word Bearers Daemonic Covenant configuration record. The actual Ruinstorm units remain sourced from the separate Daemons of the Ruinstorm army list rather than duplicated into the Legion catalogue.
+
+VALIDATION:
+- PASS: CAT revision 37
+- PASS: GST revision 3
+- PASS: CAT points to GST 3
+- PASS: Index CAT 37
+- PASS: Index GST 3
+- PASS: No ns0 prefixes
+- PASS: Possessed 0-2 enforced
+- PASS: Anakatis standalone hidden
+- PASS: Zardu has Anakatis nested
+- PASS: Lorgar Transfigured exists
+- PASS: Lorgar retinue exists
+- PASS: Serrated Sun Gal Vorbak Troops exists
+- PASS: Reign of Fire Ashen Troops exists
+- PASS: Dark Shepherd category exists
+- PASS: Dark Brethren Diabolist category exists
+- PASS: Favour roster limit category exists
+- PASS: No XVII Source Entry dumps
+- PASS: XVII display names normal capitalization
