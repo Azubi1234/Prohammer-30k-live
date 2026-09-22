@@ -1,0 +1,19 @@
+name: Diagnose R64 TS Targeted
+on:
+  push:
+    paths: ['.github/workflows/diag-r64-ts-targeted.yml']
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r64_ts_targeted.py > inspection-r64-ts-targeted.txt
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r64-ts-targeted.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R64: TS targeted selectors"
+          git push
