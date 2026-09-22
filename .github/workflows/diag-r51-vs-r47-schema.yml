@@ -1,0 +1,17 @@
+name: Diagnose R51 vs R47 Schema Delta
+on:
+  push:
+    paths: ['.github/workflows/diag-r51-vs-r47-schema.yml']
+permissions: {contents: read}
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: pip install lxml
+      - run: curl -L 'https://raw.githubusercontent.com/BSData/schemas/e8e59c70c8a5c9c74e5142a9c8e83aca6e38ddc9/src/xml/schema/v2_03/Catalogue.xsd' -o Catalogue.xsd
+      - run: git show f660ddc59b32e4902b7ab911db49c018d7be5281:'Legiones Astartes.cat' > r47.cat
+      - run: python .github/build/diag_r51_vs_r47_schema.py
