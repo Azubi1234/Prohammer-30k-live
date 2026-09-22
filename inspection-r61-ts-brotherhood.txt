@@ -1,0 +1,362 @@
+\n== veteran-unit == True
+selectionEntry Legion Veteran Squad hidden false default None cons []
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" />
+ SEL veteran-included Legion Veterans hidden false default 4 cons [('veteran-included-min', 'min', '4', 'parent', 'selections'), ('veteran-included-max', 'max', '9', 'parent', 'selections')] mods 
+ SEL veteran-sergeant Legion Veteran Sergeant hidden false default 1 cons [('veteran-sergeant-min', 'min', '1', 'parent', 'selections'), ('veteran-sergeant-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r71-nl-gen-4-stealth Stealth Adept — whole squad hidden true default None cons [('r71-nl-gen-4-stealth-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r71-nl-gen-4-stealth-cost-0" type="increment" value="1" field="pts">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" includeChildForces="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r71-nl-gen-4-stealth-cost-1" type="increment" value="1" field="pts">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sergeant" shared="true" roundUp="false" includeChildSelections="false" includeChildForces="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r71-nl-gen-4-stealth-show" type="set" value="false" field="hidden">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ SEL r71-nl-bj-4 Beyond Judgement — Trophies of Judgement & Fear hidden true default None cons [('r71-nl-bj-4-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r71-nl-bj-4-show" type="set" value="false" field="hidden">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-viii-1-horror-cult" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          </ns0:modifiers>
+        
+ LINK r64-if-veteran-unit-hammerfall-trans Teleportation Transponders -> r64-if-gear-trans-unit hidden false cons [('r64-if-veteran-unit-hammerfall-trans-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r64-if-veteran-unit-hammerfall-trans-rite" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="r25-rite-vii-1-hammerfall-strike-force" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+        
+ GROUP veteran-tactics Veteran Tactic (choose one) hidden false cons [('veteran-tactics-min', 'min', '1', 'parent', 'selections'), ('veteran-tactics-max', 'max', '1', 'parent', 'selections')] mods 
+ GROUP veteran-melee Close Combat Weapon Replacements hidden false cons [('veteran-melee-max', 'max', '5', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="veteran-melee-r59-total-6" type="set" field="veteran-melee-max" value="6"><ns0:conditions><ns0:condition type="atLeast" value="5" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="veteran-melee-r59-total-7" type="set" field="veteran-melee-max" value="7"><ns0:conditions><ns0:condition type="atLeast" value="6" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="veteran-melee-r59-total-8" type="set" field="veteran-melee-max" value="8"><ns0:conditions><ns0:condition type="atLeast" value="7" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="veteran-melee-r59-total-9" type="set" field="veteran-melee-max" value="9"><ns0:conditions><ns0:condition type="atLeast" value="8" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="veteran-melee-r59-total-10" type="set" field="veteran-melee-max" value="10"><ns0:conditions><ns0:condition type="atLeast" value="9" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r59-veteran-melee-total-6" type="set" field="veteran-melee-max" value="6"><ns0:conditions><ns0:condition type="atLeast" value="5" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r59-veteran-melee-total-7" type="set" field="veteran-melee-max" value="7"><ns0:conditions><ns0:condition type="atLeast" value="6" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r59-veteran-melee-total-8" type="set" field="veteran-melee-max" value="8"><ns0:conditions><ns0:condition type="atLeast" value="7" field="selections" scope="
+ GROUP veteran-ranged Bolter Replacements hidden false cons [('veteran-ranged-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r30-veteran-ranged-per-model" type="increment" value="1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-included" shared="true" roundUp="false" includeChildSelections="false" /></ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r30-veteran-ranged-specialist-0" type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-rotor" shared="true" roundUp="false" includeChildSelections="true" /></ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r30-veteran-ranged-specialist-1" type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-flamer" shared="true" roundUp="false" includeChildSelections="true" /></ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r30-veteran-ranged-specialist-2" type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-melta" shared="true" roundUp="false" includeChildSelections="true" /></ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r30-veteran-ranged-specialist-3" type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-plasma" shared="true" roundUp="false" includeChildSelections="true" /></ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r30-veteran-ranged-specialist-4" type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vc" shared="true" roundUp="false" includeChildSelections="true" /></ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier id="r30-veteran-ranged-specialist-5" type="increment" value="-1" field="veteran-ranged-max">
+              <ns0:repeats><ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="veteran-sp-vcal" shared="true" roundUp="false" includeChildSelections="true" /></ns0:repeats>
+    
+ GROUP veteran-individual Individual Wargear hidden false cons [] mods 
+ GROUP veteran-specialists Specialist Weapons (1 per 5 models) hidden false cons [('veteran-specialists-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r29-veteran-specialists-ten-models" type="set" value="2" field="veteran-specialists-max">
+              <ns0:conditions><ns0:condition type="atLeast" value="9" field="selections" scope="root-entry" childId="veteran-included" shared="true" includeChildSelections="false" includeChildForces="false" /></ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP veteran-equipment Squad Equipment hidden false cons [] mods 
+ GROUP veteran-sgt-armoury Legion Veteran Sergeant — Additional Armoury (max 50 pts) hidden false cons [('veteran-sgt-armoury-pts-max', 'max', '50', 'parent', 'pts')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="veteran-sgt-armoury-r8-hide-thiel" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="parent" childId="r6-veteran-unit-aeonid-thiel" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+ GROUP veteran-transport Dedicated Transport hidden false cons [('veteran-transport-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-jump-packs" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="0" field="veteran-transport-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="veteran-jump-packs" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r35-assault-jp-veteran-jump-packs" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="0" field="veteran-transport-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r35-assault-jp-veteran-jump-packs" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP da-wing-veteran-unit Hexagrammaton Wing hidden false cons [('da-wing-veteran-unit-min', 'min', '0', 'parent', 'selections'), ('da-wing-veteran-unit-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="1" field="da-wing-veteran-unit-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP r40-da-ammo-veteran-unit Dark Angels Armoury — Ammunition hidden false cons [] mods 
+ GROUP r40-da-steel-transport-veteran-unit Steel Fist — Armoured Assault Dedicated Transport hidden true cons [('r40-da-steel-transport-veteran-unit-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="false" field="hidden">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="da22-rite-steel" shared="true" includeChildSelections="true" />
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="da-wing-veteran-unit-3" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP r45-cult-veteran-unit Prosperine Cult hidden false cons [('r45-cult-veteran-unit-min', 'min', '1', 'parent', 'selections'), ('r45-cult-veteran-unit-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r45-cult-veteran-unit-r59-hide-not-xv" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+          
+ GROUP r49-legion-upgrades-veteran-unit Legion Wargear & Upgrades hidden false cons [] mods 
+ GROUP r52-veteran-unit-third-shrieker 3rd Company Elite — Sonic Assault hidden false cons [] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r52-veteran-unit-third-shrieker-hide-legion-iii" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iii" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r52-veteran-unit-third-shrieker-hide-allegiance-traitor" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier id="r52-veteran-unit-third-shrieker-hide-r25-rite-iii-1-3rd-company-elite" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-iii-1-3rd-company-elite" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+        
+ GROUP r57-veteran-unit-iw Iron Warriors Armoury hidden false cons [] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r57-veteran-unit-iw-hide-missing-legion-iv" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP live-r2-fabius-enhanced-veteran-unit-group Fabius Bile hidden false cons [] mods 
+ GROUP live-r2-fulgrim-blessing-veteran-unit-group Special Upgrades hidden false cons [] mods 
+ GROUP r16-dg-plague-group-veteran-unit Sons of the Plague Father hidden false cons [] mods 
+ GROUP r19-ts-veteran-unit-brotherhood-disciplines Psychic Brotherhood — Psychic Discipline(s) hidden false cons [('r19-ts-veteran-unit-brotherhood-disc-min', 'min', '0', 'parent', 'selections'), ('r19-ts-veteran-unit-brotherhood-disc-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disc-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-min-normal" type="set" field="r19-ts-veteran-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-min-fellow" type="set" field="r19-ts-veteran-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-r56-linkcompat-a0a79f6e24" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition typ
+ GROUP r19-ts-veteran-unit-brotherhood-powers Psychic Brotherhood — Psychic Powers hidden false cons [('r19-ts-veteran-unit-brotherhood-power-min', 'min', '0', 'parent', 'selections'), ('r19-ts-veteran-unit-brotherhood-power-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-veteran-unit-brotherhood-pow-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-min-normal" type="set" field="r19-ts-veteran-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-min-fellow" type="set" field="r19-ts-veteran-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-r56-linkcompat-87703c56cd" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="
+ GROUP veteran-unit-r32-blessings Blessings of the Four hidden true cons [('veteran-unit-r32-blessings-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="veteran-unit-r32-blessings-show" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xvi-13-xvi-horus-ascended-the-warmaster" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+ GROUP r45-al-vet-bane-group Alpha Legion — Banestrike Ammunition hidden true cons [('r45-al-vet-bane-group-min', 'min', '0', 'parent', 'selections'), ('r45-al-vet-bane-group-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r45-al-vet-bane-show" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xx" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+\n== terminator-unit == True
+selectionEntry Legion Terminator Squad hidden false default None cons []
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+        <ns0:modifier type="set" value="true" field="hidden">
+          <ns0:conditions>
+            <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="rite-recon" shared="true" includeChildSelections="true" />
+          </ns0:conditions>
+        </ns0:modifier>
+      </ns0:modifiers>
+      
+ SEL terminator-included Legion Terminators hidden false default 4 cons [('terminator-included-min', 'min', '4', 'parent', 'selections'), ('terminator-included-max', 'max', '9', 'parent', 'selections')] mods 
+ SEL terminator-sergeant Legion Terminator Sergeant hidden false default 1 cons [('terminator-sergeant-min', 'min', '1', 'parent', 'selections'), ('terminator-sergeant-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r71-nl-bj-5 Beyond Judgement — Trophies of Judgement & Fear hidden true default None cons [('r71-nl-bj-5-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r71-nl-bj-5-show" type="set" value="false" field="hidden">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r25-rite-viii-1-horror-cult" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          </ns0:modifiers>
+        
+ LINK r40-da-term-transponders Teleportation Transponders -> da22-transponders hidden true cons [('r40-da-term-transponders-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="false" field="hidden">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          </ns0:modifiers>
+        
+ LINK r64-if-terminator-unit-trans Teleportation Transponders -> r64-if-gear-trans-unit hidden false cons [('r64-if-terminator-unit-trans-max', 'max', '1', 'parent', 'selections')] mods 
+ GROUP terminator-armour-pattern Terminator Armour Pattern (entire squad) hidden false cons [('terminator-armour-pattern-min', 'min', '1', 'parent', 'selections'), ('terminator-armour-pattern-max', 'max', '1', 'parent', 'selections')] mods 
+ GROUP terminator-ranged Ranged Weapon Replacements hidden false cons [('terminator-ranged-max', 'max', '5', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="increment" value="1" field="terminator-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="terminator-included" shared="true" roundUp="false" includeChildSelections="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="terminator-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminator-pair-claws" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="terminator-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminator-h-hf" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="terminator-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminator-h-ra" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="terminator-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminator-h-pb" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="terminator-ranged-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminator-h-ac" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP terminator-melee Close Combat Weapon Replacements hidden false cons [('terminator-melee-max', 'max', '5', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="increment" value="1" field="terminator-melee-max">
+              <ns0:repeats>
+                <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="terminator-included" shared="true" roundUp="false" includeChildSelections="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+            <ns0:modifier type="increment" value="-1" field="terminator-melee-max">
+              <ns0:repeats>
+                <ns0:repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminator-pair-claws" shared="true" roundUp="false" includeChildSelections="true" />
+              </ns0:repeats>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP terminator-pairs Paired Lightning Claws hidden false cons [('terminator-pairs-max', 'max', '5', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="increment" value="1" field="terminator-pairs-max">
+              <ns0:repeats>
+                <ns0:repeat value="5" repeats="1" field="selections" scope="root-entry" childId="terminator-included" shared="true" roundUp="false" includeChildSelections="false" />
+              </ns0:repeats>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP terminator-heavy Heavy Weapons (1 per 5 models) hidden false cons [('terminator-heavy-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="2" field="terminator-heavy-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="9" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP terminator-sergeant-options Legion Terminator Sergeant hidden false cons [] mods 
+ GROUP terminator-transport Dedicated Transport hidden false cons [('terminator-transport-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="0" field="terminator-transport-max">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="5" field="selections" scope="root-entry" childId="terminator-included" shared="true" includeChildSelections="true" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+        
+ GROUP da-wing-terminator-unit Hexagrammaton Wing hidden false cons [('da-wing-terminator-unit-min', 'min', '0', 'parent', 'selections'), ('da-wing-terminator-unit-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+            <ns0:modifier type="set" value="1" field="da-wing-terminator-unit-min">
+              <ns0:conditions>
+                <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP r40-da-steel-transport-terminator-unit Steel Fist — Armoured Assault Dedicated Transport hidden true cons [('r40-da-steel-transport-terminator-unit-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier type="set" value="false" field="hidden">
+              <ns0:conditionGroups>
+                <ns0:conditionGroup type="and">
+                  <ns0:conditions>
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="force" childId="da22-rite-steel" shared="true" includeChildSelections="true" />
+                    <ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="da-wing-terminator-unit-3" shared="true" includeChildSelections="true" />
+                  </ns0:conditions>
+                </ns0:conditionGroup>
+              </ns0:conditionGroups>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP r45-cult-terminator-unit Prosperine Cult hidden false cons [('r45-cult-terminator-unit-min', 'min', '1', 'parent', 'selections'), ('r45-cult-terminator-unit-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r45-cult-terminator-unit-r59-hide-not-xv" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+          
+ GROUP r49-legion-upgrades-terminator-unit Legion Wargear & Upgrades hidden false cons [] mods 
+ GROUP r57-terminator-unit-iw Iron Warriors Armoury hidden false cons [] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r57-terminator-unit-iw-hide-missing-legion-iv" type="set" value="true" field="hidden">
+              <ns0:conditions>
+                <ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </ns0:conditions>
+            </ns0:modifier>
+          </ns0:modifiers>
+          
+ GROUP r19-ts-terminator-unit-brotherhood-disciplines Psychic Brotherhood — Psychic Discipline(s) hidden false cons [('r19-ts-terminator-unit-brotherhood-disc-min', 'min', '0', 'parent', 'selections'), ('r19-ts-terminator-unit-brotherhood-disc-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disc-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-min-normal" type="set" field="r19-ts-terminator-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-min-fellow" type="set" field="r19-ts-terminator-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-r56-linkcompat-74fbe32254" type="set" field="hidden" value="false"><
+ GROUP r19-ts-terminator-unit-brotherhood-powers Psychic Brotherhood — Psychic Powers hidden false cons [('r19-ts-terminator-unit-brotherhood-power-min', 'min', '0', 'parent', 'selections'), ('r19-ts-terminator-unit-brotherhood-power-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-terminator-unit-brotherhood-pow-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-min-normal" type="set" field="r19-ts-terminator-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-min-fellow" type="set" field="r19-ts-terminator-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-r56-linkcompat-db99c92cee" type="set" field="hidden" value="false"><ns0:conditions><ns0
+ GROUP terminator-unit-r32-blessings Blessings of the Four hidden true cons [('terminator-unit-r32-blessings-max', 'max', '1', 'parent', 'selections')] mods <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="terminator-unit-r32-blessings-show" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-xvi-13-xvi-horus-ascended-the-warmaster" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+ GROUP r45-al-term-gear Alpha Legion Wargear hidden false cons [] mods 
+\n== r45-ts-veteran-brotherhood == False
+\n== r45-ts-terminator-brotherhood == False
+\n== r19-ts-veteran-unit-brotherhood-disciplines == True
+selectionEntryGroup Psychic Brotherhood — Psychic Discipline(s) hidden false default None cons [('r19-ts-veteran-unit-brotherhood-disc-min', 'min', '0', 'parent', 'selections'), ('r19-ts-veteran-unit-brotherhood-disc-max', 'max', '1', 'parent', 'selections')]
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disc-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-min-normal" type="set" field="r19-ts-veteran-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-min-fellow" type="set" field="r19-ts-veteran-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-r56-linkcompat-a0a79f6e24" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-r56-linkcompat-2e48c1f1c4" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-r56-linkcompat-a3beb1a795" type="set" field="r19-ts-veteran-unit-brotherhood-disc-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-disciplines-r56-linkcompat-04c9592f85" type="set" field="r19-ts-veteran-unit-brotherhood-disc-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+\n== r19-ts-veteran-unit-brotherhood-powers == True
+selectionEntryGroup Psychic Brotherhood — Psychic Powers hidden false default None cons [('r19-ts-veteran-unit-brotherhood-power-min', 'min', '0', 'parent', 'selections'), ('r19-ts-veteran-unit-brotherhood-power-max', 'max', '1', 'parent', 'selections')]
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-veteran-unit-brotherhood-pow-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-min-normal" type="set" field="r19-ts-veteran-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-min-fellow" type="set" field="r19-ts-veteran-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-veteran-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-r56-linkcompat-87703c56cd" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-r56-linkcompat-9caa9de27f" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-r56-linkcompat-1ade595741" type="set" field="r19-ts-veteran-unit-brotherhood-power-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-veteran-unit-brotherhood-powers-r56-linkcompat-38dda7fe39" type="set" field="r19-ts-veteran-unit-brotherhood-power-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+\n== r19-ts-terminator-unit-brotherhood-disciplines == True
+selectionEntryGroup Psychic Brotherhood — Psychic Discipline(s) hidden false default None cons [('r19-ts-terminator-unit-brotherhood-disc-min', 'min', '0', 'parent', 'selections'), ('r19-ts-terminator-unit-brotherhood-disc-max', 'max', '1', 'parent', 'selections')]
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disc-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-min-normal" type="set" field="r19-ts-terminator-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-min-fellow" type="set" field="r19-ts-terminator-unit-brotherhood-disc-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-r56-linkcompat-74fbe32254" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-r56-linkcompat-39cfc0005e" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-r56-linkcompat-aa5d9be1a8" type="set" field="r19-ts-terminator-unit-brotherhood-disc-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-disciplines-r56-linkcompat-f99ad8adaf" type="set" field="r19-ts-terminator-unit-brotherhood-disc-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+\n== r19-ts-terminator-unit-brotherhood-powers == True
+selectionEntryGroup Psychic Brotherhood — Psychic Powers hidden false default None cons [('r19-ts-terminator-unit-brotherhood-power-min', 'min', '0', 'parent', 'selections'), ('r19-ts-terminator-unit-brotherhood-power-max', 'max', '1', 'parent', 'selections')]
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"><ns0:modifier id="r19-ts-terminator-unit-brotherhood-pow-hide-0" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-hide-no-brother" type="set" field="hidden" value="true"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-min-normal" type="set" field="r19-ts-terminator-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-min-fellow" type="set" field="r19-ts-terminator-unit-brotherhood-power-min" value="1"><ns0:conditionGroups><ns0:conditionGroup type="and"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-terminator-unit-ts-brother-fellow" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:conditionGroup></ns0:conditionGroups></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-r56-linkcompat-db99c92cee" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-r56-linkcompat-0bb0bbee1c" type="set" field="hidden" value="false"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-r56-linkcompat-ff4491b461" type="set" field="r19-ts-terminator-unit-brotherhood-power-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier><ns0:modifier id="r19-ts-terminator-unit-brotherhood-powers-r56-linkcompat-78b7c708fb" type="set" field="r19-ts-terminator-unit-brotherhood-power-min" value="1"><ns0:conditions><ns0:condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r45-ts-brotherhood-fellowship" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+\n== r45-cult-veteran-unit == True
+selectionEntryGroup Prosperine Cult hidden false default None cons [('r45-cult-veteran-unit-min', 'min', '1', 'parent', 'selections'), ('r45-cult-veteran-unit-max', 'max', '1', 'parent', 'selections')]
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r45-cult-veteran-unit-r59-hide-not-xv" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+          
+ SEL r45-cult-veteran-unit-r59-0 Pavoni hidden false default None cons [('r45-cult-veteran-unit-r59-0-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-veteran-unit-r59-1 Raptora hidden false default None cons [('r45-cult-veteran-unit-r59-1-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-veteran-unit-r59-2 Corvidae hidden false default None cons [('r45-cult-veteran-unit-r59-2-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-veteran-unit-r59-3 Athanaeans hidden false default None cons [('r45-cult-veteran-unit-r59-3-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-veteran-unit-r59-4 Pyrae hidden false default None cons [('r45-cult-veteran-unit-r59-4-max', 'max', '1', 'parent', 'selections')] mods 
+\n== r45-cult-terminator-unit == True
+selectionEntryGroup Prosperine Cult hidden false default None cons [('r45-cult-terminator-unit-min', 'min', '1', 'parent', 'selections'), ('r45-cult-terminator-unit-max', 'max', '1', 'parent', 'selections')]
+MODS <ns0:modifiers xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema">
+            <ns0:modifier id="r45-cult-terminator-unit-r59-hide-not-xv" type="set" field="hidden" value="true"><ns0:conditions><ns0:condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" /></ns0:conditions></ns0:modifier></ns0:modifiers>
+          
+ SEL r45-cult-terminator-unit-r59-0 Pavoni hidden false default None cons [('r45-cult-terminator-unit-r59-0-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-terminator-unit-r59-1 Raptora hidden false default None cons [('r45-cult-terminator-unit-r59-1-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-terminator-unit-r59-2 Corvidae hidden false default None cons [('r45-cult-terminator-unit-r59-2-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-terminator-unit-r59-3 Athanaeans hidden false default None cons [('r45-cult-terminator-unit-r59-3-max', 'max', '1', 'parent', 'selections')] mods 
+ SEL r45-cult-terminator-unit-r59-4 Pyrae hidden false default None cons [('r45-cult-terminator-unit-r59-4-max', 'max', '1', 'parent', 'selections')] mods 
