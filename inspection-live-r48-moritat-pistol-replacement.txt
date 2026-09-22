@@ -1,0 +1,28 @@
+Live R48 — Moritat pistol replacement fix
+Input CAT=47/GST=11 -> CAT=48/GST remains 11
+
+FIX:
+- Moritat Pistol Pair remains a mandatory one-of-one selector.
+- Removed 1 child-level minimum constraint from Two Bolt Pistols, so the default pair can actually be replaced.
+- Two Bolt Pistols remain the default selection when no replacement is chosen.
+- Two Fulcrum Hand Cannons remain Raven Guard-only at +20 points and now function as a true replacement rather than an additional second pair.
+- Hand Flamers, Plasma Pistols and Calibanite Plasma Pistols remain mutually exclusive alternatives in the same group.
+- Blood Angels Two Inferno Pistols moved into the same replacement group: yes.
+- Removed 0 additional child-level minimum constraint(s) from replacement choices.
+
+VALIDATION:
+- PASS: CAT48
+- PASS: GST dependency remains 11
+- PASS: Index48
+- PASS: Pistol Pair min1
+- PASS: Pistol Pair max1
+- PASS: Bolt Pistols are default
+- PASS: Bolt Pistols no child min
+- PASS: Fulcrum pair is inside one-of group
+- PASS: Hand Flamers are inside one-of group
+- PASS: Plasma Pistols are inside one-of group
+- PASS: Calibanite Pistols are inside one-of group
+- PASS: Inferno Pistols are inside one-of group
+- PASS: Fulcrum pair still costs 20
+- PASS: Fulcrum pair still Raven Guard gated
+- PASS: No new/worsened duplicate IDs
