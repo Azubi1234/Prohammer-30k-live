@@ -1,0 +1,16 @@
+name: Diagnose R51 Structural Delta
+on:
+  push:
+    paths: ['.github/workflows/diag-r51-structural-delta.yml']
+permissions: {contents: read}
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: pip install lxml
+      - run: git show f660ddc59b32e4902b7ab911db49c018d7be5281:'Legiones Astartes.cat' > r47.cat
+      - run: python .github/build/diag_r51_structural_delta.py
