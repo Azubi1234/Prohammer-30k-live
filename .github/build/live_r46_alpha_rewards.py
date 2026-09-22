@@ -282,6 +282,7 @@ for e in rewards:
     for x in list(e.iter(C("entryLink")))+list(e.iter(C("infoLink"))):
         t=x.get("targetId")
         if t and t not in rids and t not in gids:bad.append((e.get("id"),x.get("id"),t))
+print("UNRESOLVED_REWARD_TARGETS", repr(bad[:300]))
 ck("All Reward entry/info targets resolve",not bad)
 new=collections.Counter(x.get("id") for x in rr.iter() if x.get("id"));worse={k:v for k,v in new.items() if v>max(1,baseline.get(k,0))}
 ck("No new/worsened duplicate IDs",not worse)
