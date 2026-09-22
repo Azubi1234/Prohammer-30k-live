@@ -1,0 +1,101 @@
+Live R63 — Thousand Sons direct Cult power access
+Input CAT62/GST15 -> CAT63/GST15
+
+BEHAVIOUR:
+- Patched 5 live Brotherhood-capable unit roots.
+- Brotherhood of Psykers remains Mastery Level 1.
+- Prosperine Cult remains a mandatory one-of-five selection.
+- Removed the redundant player-facing Discipline choice from Brotherhood units.
+- Selecting a Cult now directly exposes only the powers from its correlated discipline:
+  Athanaeans -> Telepathy
+  Corvidae -> Divination
+  Pavoni -> Biomancy
+  Pyrae -> Pyromancy
+  Raptora -> Telekinesis
+- After Brotherhood is purchased, exactly one Cult-correlated psychic power is required.
+- The power group stays hidden when Brotherhood of Psykers is not purchased.
+- Canonical shared ProHammer psychic power entries are reused; no duplicate powers were created.
+- Shattered Legions R62 architecture is untouched.
+
+PATCHED ROOTS:
+- Legion Terminator Squad — Long March (non-compulsory Troops) (r32-soh-long-march-terminator-troops) — selectors ['r32-soh-long-march-r45-terminator-unit-ts-brother', 'r32-soh-long-march-r45-terminator-unit-ts-brother-fellow']; pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Terminator Squad — Horus’ First Company (r32-soh-first-company-terminators) — selectors ['r32-soh-first-company-term-r45-terminator-unit-ts-brother', 'r32-soh-first-company-term-r45-terminator-unit-ts-brother-fellow']; pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Veteran Squad (veteran-unit) — selectors ['r45-veteran-unit-ts-brother', 'r45-veteran-unit-ts-brother-fellow']; pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Terminator Squad (terminator-unit) — selectors ['r45-terminator-unit-ts-brother', 'r45-terminator-unit-ts-brother-fellow']; pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+- Legion Veteran Squad (r35-pride-veteran-veteran-unit) — selectors ['r58-pride-sync-b4aa31fd6d9f9355', 'r58-pride-sync-3f28498f7d170529']; pools {'biomancy': 7, 'divination': 7, 'pyromancy': 7, 'telekinesis': 7, 'telepathy': 7}
+
+VALIDATION:
+- PASS: CAT63
+- PASS: GST dependency remains 15
+- PASS: Index63
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) power group exists
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) power group max1
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) power group Brotherhood gated
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) redundant discipline hidden
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Pavoni has powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Pavoni directly gates its powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Raptora has powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Raptora directly gates its powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Corvidae has powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Corvidae directly gates its powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Athanaeans has powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Athanaeans directly gates its powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Pyrae has powers
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Pyrae directly gates its powers
+- PASS: Legion Terminator Squad — Horus’ First Company power group exists
+- PASS: Legion Terminator Squad — Horus’ First Company power group max1
+- PASS: Legion Terminator Squad — Horus’ First Company power group Brotherhood gated
+- PASS: Legion Terminator Squad — Horus’ First Company redundant discipline hidden
+- PASS: Legion Terminator Squad — Horus’ First Company Pavoni has powers
+- PASS: Legion Terminator Squad — Horus’ First Company Pavoni directly gates its powers
+- PASS: Legion Terminator Squad — Horus’ First Company Raptora has powers
+- PASS: Legion Terminator Squad — Horus’ First Company Raptora directly gates its powers
+- PASS: Legion Terminator Squad — Horus’ First Company Corvidae has powers
+- PASS: Legion Terminator Squad — Horus’ First Company Corvidae directly gates its powers
+- PASS: Legion Terminator Squad — Horus’ First Company Athanaeans has powers
+- PASS: Legion Terminator Squad — Horus’ First Company Athanaeans directly gates its powers
+- PASS: Legion Terminator Squad — Horus’ First Company Pyrae has powers
+- PASS: Legion Terminator Squad — Horus’ First Company Pyrae directly gates its powers
+- PASS: Legion Veteran Squad power group exists
+- PASS: Legion Veteran Squad power group max1
+- PASS: Legion Veteran Squad power group Brotherhood gated
+- PASS: Legion Veteran Squad redundant discipline hidden
+- PASS: Legion Veteran Squad Pavoni has powers
+- PASS: Legion Veteran Squad Pavoni directly gates its powers
+- PASS: Legion Veteran Squad Raptora has powers
+- PASS: Legion Veteran Squad Raptora directly gates its powers
+- PASS: Legion Veteran Squad Corvidae has powers
+- PASS: Legion Veteran Squad Corvidae directly gates its powers
+- PASS: Legion Veteran Squad Athanaeans has powers
+- PASS: Legion Veteran Squad Athanaeans directly gates its powers
+- PASS: Legion Veteran Squad Pyrae has powers
+- PASS: Legion Veteran Squad Pyrae directly gates its powers
+- PASS: Legion Terminator Squad power group exists
+- PASS: Legion Terminator Squad power group max1
+- PASS: Legion Terminator Squad power group Brotherhood gated
+- PASS: Legion Terminator Squad redundant discipline hidden
+- PASS: Legion Terminator Squad Pavoni has powers
+- PASS: Legion Terminator Squad Pavoni directly gates its powers
+- PASS: Legion Terminator Squad Raptora has powers
+- PASS: Legion Terminator Squad Raptora directly gates its powers
+- PASS: Legion Terminator Squad Corvidae has powers
+- PASS: Legion Terminator Squad Corvidae directly gates its powers
+- PASS: Legion Terminator Squad Athanaeans has powers
+- PASS: Legion Terminator Squad Athanaeans directly gates its powers
+- PASS: Legion Terminator Squad Pyrae has powers
+- PASS: Legion Terminator Squad Pyrae directly gates its powers
+- PASS: Legion Veteran Squad power group exists
+- PASS: Legion Veteran Squad power group max1
+- PASS: Legion Veteran Squad power group Brotherhood gated
+- PASS: Legion Veteran Squad redundant discipline hidden
+- PASS: Legion Veteran Squad Pavoni has powers
+- PASS: Legion Veteran Squad Pavoni directly gates its powers
+- PASS: Legion Veteran Squad Raptora has powers
+- PASS: Legion Veteran Squad Raptora directly gates its powers
+- PASS: Legion Veteran Squad Corvidae has powers
+- PASS: Legion Veteran Squad Corvidae directly gates its powers
+- PASS: Legion Veteran Squad Athanaeans has powers
+- PASS: Legion Veteran Squad Athanaeans directly gates its powers
+- PASS: Legion Veteran Squad Pyrae has powers
+- PASS: Legion Veteran Squad Pyrae directly gates its powers
+- PASS: No new/worsened duplicate IDs
