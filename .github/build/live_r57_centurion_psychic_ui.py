@@ -58,9 +58,11 @@ if cent is None: raise RuntimeError("Legion Centurion missing")
 # Capture the current canonical Cult targets and power targets before removing the fragile groups.
 cent_groups=cent.find(C("selectionEntryGroups"))
 if cent_groups is None: raise RuntimeError("Centurion selectionEntryGroups missing")
-old_cult=next((x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r45-cult-hq-centurion"),None)
-old_power=next((x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r19-ts-centurion-powers"),None)
-if old_cult is None or old_power is None: raise RuntimeError("Existing direct TS Centurion psychic groups missing")
+cult_candidates=[x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r45-cult-hq-centurion"]
+power_candidates=[x for x in cent_groups.findall(C("selectionEntryGroup")) if x.get("id")=="r19-ts-centurion-powers"]
+if not cult_candidates or not power_candidates: raise RuntimeError("Existing direct TS Centurion psychic groups missing")
+old_cult=max(cult_candidates,key=lambda g: len(g.findall(f"./{C('entryLinks')}/{C('entryLink')}")))
+old_power=max(power_candidates,key=lambda g: len(g.findall(f"./{C('entryLinks')}/{C('entryLink')}")))
 
 cult_targets={}
 for l in old_cult.findall(f"./{C('entryLinks')}/{C('entryLink')}"):
@@ -82,8 +84,8 @@ for d in ["biomancy","divination","pyromancy","telekinesis","telepathy"]:
 sgs=cent_groups
 removed=[]
 for gid in ["r45-cult-hq-centurion","r19-ts-centurion-disciplines","r19-ts-centurion-powers"]:
-    g=next((x for x in sgs.findall(C("selectionEntryGroup")) if x.get("id")==gid),None)
-    if g is not None:
+    matches=[x for x in list(sgs.findall(C("selectionEntryGroup"))) if x.get("id")==gid]
+    for g in matches:
         sgs.remove(g); removed.append(gid)
 
 # New single robust package.
