@@ -120,9 +120,11 @@ for e,pg in roots:
 
     # Power options: keep the existing Cult lock, but add one clean "no Brotherhood"
     # hide condition using all recognized Brotherhood IDs.
-    power_links=pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
-    if len(power_links)<5:raise RuntimeError(f"{e.get('id')} has too few power links: {len(power_links)}")
-    for pidx,opt in enumerate(power_links):
+    power_options=[]
+    power_options += pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
+    power_options += pg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
+    if len(power_options)<5:raise RuntimeError(f"{e.get('id')} has too few power options: {len(power_options)}")
+    for pidx,opt in enumerate(power_options):
         # Remove any earlier R67 modifier if working-copy rerun.
         oms=opt.find(C("modifiers"))
         if oms is not None:
@@ -134,7 +136,7 @@ for e,pg in roots:
 
     pg.set("name","Psychic Brotherhood — Cult-correlated Psychic Power (choose 1)")
     pg.set("hidden","false")
-    patched.append((e.get("id"),e.get("name"),pg.get("id"),brother_links,brother_targets,len(power_links)))
+    patched.append((e.get("id"),e.get("name"),pg.get("id"),brother_links,brother_targets,len(power_options)))
 
 # Revision/index.
 root.set("revision","67")
@@ -163,7 +165,9 @@ for eid,name,pgid,links,targets,count in patched:
     ck(name+" base min zero",any(x.get("type")=="min" and x.get("value")=="0" for x in cs))
     xml=ET.tostring(pg,encoding="unicode")
     ck(name+" Brotherhood min evidence",all(x in xml for x in links+targets))
-    opts=pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
+    opts=[]
+    opts += pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
+    opts += pg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
     ck(name+" powers retained",len(opts)==count and count>=35)
     ck(name+" every power gated by Brotherhood",all("-r67-hide-no-brotherhood" in ET.tostring(x,encoding="unicode") for x in opts))
     ck(name+" Cult locks retained",all("r63-cult-lock" in ET.tostring(x,encoding="unicode") for x in opts))
@@ -175,7 +179,8 @@ vpg=next(g for g in v.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntry
 ck("Main Veteran power group present",vpg is not None)
 vmx=next(x for x in vpg.findall(f"./{C('constraints')}/{C('constraint')}") if x.get("type")=="max")
 ck("Main Veteran no longer max0",vmx.get("value")=="1")
-ck("Main Veteran has 35 powers",len(vpg.findall(f"./{C('entryLinks')}/{C('entryLink')}"))==35)
+vopts=vpg.findall(f"./{C('entryLinks')}/{C('entryLink')}")+vpg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
+ck("Main Veteran has 35 powers",len(vopts)==35)
 
 new=collections.Counter(x.get("id") for x in rr.iter() if x.get("id"))
 worse={k:v for k,v in new.items() if v>max(1,baseline.get(k,0))}
