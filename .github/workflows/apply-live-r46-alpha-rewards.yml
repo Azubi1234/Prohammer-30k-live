@@ -27,7 +27,7 @@ jobs:
           git diff --cached --quiet || git commit -m "Live R46: rebuild Alpha Legion Rewards of Treachery"
           git push
 
-# retry unresolved-reference diagnostic
+# retry after inherited modifier-ID fix
 
 # retry after legacy gear target repair
 
