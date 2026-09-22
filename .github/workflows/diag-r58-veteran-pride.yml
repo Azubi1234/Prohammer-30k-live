@@ -1,0 +1,13 @@
+name: Diagnose R58 Veteran Pride
+on:
+  push:
+    paths: ['.github/workflows/diag-r58-veteran-pride.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r58_veteran_pride.py
