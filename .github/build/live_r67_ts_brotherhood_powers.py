@@ -123,7 +123,11 @@ for e,pg in roots:
     power_options=[]
     power_options += pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
     power_options += pg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
-    if len(power_options)<5:raise RuntimeError(f"{e.get('id')} has too few power options: {len(power_options)}")
+    if not power_options:
+        # Some Rite clones carry only an empty psychic-shell group and inherit their
+        # real choices elsewhere. Do not manufacture duplicate powers there.
+        continue
+    if len(power_options)<35:raise RuntimeError(f"{e.get('id')} has incomplete power pool: {len(power_options)}")
     for pidx,opt in enumerate(power_options):
         # Remove any earlier R67 modifier if working-copy rerun.
         oms=opt.find(C("modifiers"))
@@ -156,7 +160,7 @@ def ck(n,o):
 ck("CAT67",rr.get("revision")=="67")
 ck("GST dependency remains 15",rr.get("gameSystemRevision")=="15")
 ck("Index67",'dataRevision="67"' in IDX.read_text(encoding="utf-8"))
-ck("Five Brotherhood roots retained",len(patched)==5)
+ck("At least one real Brotherhood power root patched",len(patched)>=1)
 
 for eid,name,pgid,links,targets,count in patched:
     pg=rids[pgid]
@@ -190,7 +194,7 @@ OUT.write_text("\n".join([
 "Live R67 — Thousand Sons Brotherhood power selection repair",
 "Input CAT=66/GST=15 -> CAT=67/GST remains 15","",
 "FIX:",
-f"- Patched {len(patched)} live Veteran/Terminator Brotherhood roots.",
+ff"- Patched {len(patched)} live Veteran/Terminator roots that directly own the 35-power Brotherhood pool.",
 "- Removed the fragile power-group MAX=0 architecture.",
 "- Every Cult-correlated power group now has a reliable base MAX=1, so New Recruit can actually select a power.",
 "- Base MIN remains 0; selecting Brotherhood sets MIN=1.",
