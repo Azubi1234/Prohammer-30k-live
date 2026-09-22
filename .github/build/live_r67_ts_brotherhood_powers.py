@@ -67,13 +67,17 @@ def root_owner(g):
     while p is not None and p.tag!=C("selectionEntry"):p=pm.get(p)
     return p
 
-# Every current Brotherhood-capable root has one direct Cult Power group.
+# Find the populated Cult Power group on each Brotherhood-capable root.
+# Several legacy/Rite copies contain an empty shell plus the actual populated group;
+# always choose the matching group with the largest direct power pool.
 roots=[]
 for e in root.iter(C("selectionEntry")):
     pgs=[g for g in e.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}")
          if (g.get("name") or "").startswith("Psychic Brotherhood — Cult Power")]
-    if pgs:
-        roots.append((e,pgs[0]))
+    if not pgs:continue
+    def direct_power_count(g):
+        return len(g.findall(f"./{C('entryLinks')}/{C('entryLink')}")) + len(g.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"))
+    roots.append((e,max(pgs,key=direct_power_count)))
 
 if not roots:raise RuntimeError("No Brotherhood Cult Power roots found")
 
