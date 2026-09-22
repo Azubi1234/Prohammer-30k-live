@@ -1,0 +1,28 @@
+name: Apply Live R44 Raven Guard Final
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r44-raven-guard-final.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/live_r44_raven_guard_final.py
+      - run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot();g=ET.parse('Prohammer 30k.gst').getroot();i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='44' and c.get('gameSystemRevision')=='9'
+          assert g.get('revision')=='9'
+          assert 'dataRevision="44"' in i and 'dataRevision="9"' in i
+          print('Verified R44')
+          PY
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r44-raven-guard-final.txt
+          git diff --cached --quiet || git commit -m "Live R44: finalize Raven Guard restrictions"
+          git push
