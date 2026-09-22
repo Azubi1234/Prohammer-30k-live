@@ -1,0 +1,48 @@
+Live R56 — Thousand Sons linked psychic gate compatibility
+Input CAT55/GST13 -> CAT56/GST14
+
+WHY:
+- The TS psychic system was present in the XML, but many Cult/discipline/Brotherhood visibility conditions still referenced local entryLink IDs after those choices were universalised into shared selections.
+- New Recruit can resolve linked selections by their shared target identity, which can leave the old local-ID visibility gates hiding every discipline/power.
+
+FIX:
+- Found 698 TS psychic/Cult/Brotherhood condition references to linked selections.
+- Added 682 canonical-target visibility overrides so Cult-linked disciplines/powers actually appear.
+- Added 16 canonical-target mirrors for mandatory min/max/state modifiers.
+- No psychic rule, Cult, discipline or power was duplicated; all selectors still reference the existing canonical shared entries.
+- Praetor, Centurion/Consul, Veteran Brotherhood and Terminator Brotherhood selectors were explicitly verified present.
+- Bumped CAT and GST together again to force a fresh New Recruit pair.
+
+EXAMPLES:
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disciplines / Psychic Brotherhood — Psychic Discipline(s): r32-soh-long-march-r45-terminator-unit-ts-brother -> r45-ts-brotherhood (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disciplines / Psychic Brotherhood — Psychic Discipline(s): r32-soh-long-march-r45-terminator-unit-ts-brother-fellow -> r45-ts-brotherhood-fellowship (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disciplines / Psychic Brotherhood — Psychic Discipline(s): r32-soh-long-march-r45-terminator-unit-ts-brother -> r45-ts-brotherhood (r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-min)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disciplines / Psychic Brotherhood — Psychic Discipline(s): r32-soh-long-march-r45-terminator-unit-ts-brother-fellow -> r45-ts-brotherhood-fellowship (r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-min)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-biomancy / Biomancy: r32-soh-long-march-r45-cult-terminator-unit-0 -> r41-universal-gear-b478f13351e219 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-biomancy / Biomancy: r32-soh-long-march-r45-cult-terminator-unit-0 -> r41-universal-gear-b478f13351e219 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-biomancy / Biomancy: r32-soh-long-march-r45-cult-terminator-unit-0 -> r41-universal-gear-b478f13351e219 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-divination / Divination: r32-soh-long-march-r45-cult-terminator-unit-2 -> r41-universal-gear-89023418208357 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-divination / Divination: r32-soh-long-march-r45-cult-terminator-unit-2 -> r41-universal-gear-89023418208357 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-divination / Divination: r32-soh-long-march-r45-cult-terminator-unit-2 -> r41-universal-gear-89023418208357 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-pyromancy / Pyromancy: r32-soh-long-march-r45-cult-terminator-unit-4 -> r41-universal-gear-79bc55e0fd1aa0 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-pyromancy / Pyromancy: r32-soh-long-march-r45-cult-terminator-unit-4 -> r41-universal-gear-79bc55e0fd1aa0 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-pyromancy / Pyromancy: r32-soh-long-march-r45-cult-terminator-unit-4 -> r41-universal-gear-79bc55e0fd1aa0 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telekinesis / Telekinesis: r32-soh-long-march-r45-cult-terminator-unit-1 -> r41-universal-gear-672318630ac401 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telekinesis / Telekinesis: r32-soh-long-march-r45-cult-terminator-unit-1 -> r41-universal-gear-672318630ac401 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telekinesis / Telekinesis: r32-soh-long-march-r45-cult-terminator-unit-1 -> r41-universal-gear-672318630ac401 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telepathy / Telepathy: r32-soh-long-march-r45-cult-terminator-unit-3 -> r41-universal-gear-1cf60d95bdb439 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telepathy / Telepathy: r32-soh-long-march-r45-cult-terminator-unit-3 -> r41-universal-gear-1cf60d95bdb439 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-disc-telepathy / Telepathy: r32-soh-long-march-r45-cult-terminator-unit-3 -> r41-universal-gear-1cf60d95bdb439 (show)
+- r32-soh-long-march-r19-ts-terminator-unit-brotherhood-powers / Psychic Brotherhood — Psychic Powers: r32-soh-long-march-r45-terminator-unit-ts-brother -> r45-ts-brotherhood (show)
+
+VALIDATION:
+- PASS: CAT revision 56
+- PASS: CAT points GST14
+- PASS: GST revision 14
+- PASS: index CAT56/GST14
+- PASS: TS linked psychic references found
+- PASS: TS hidden compatibility gates added
+- PASS: TS non-hidden compatibility gates added
+- PASS: canonical catalogue namespace
+- PASS: no new/worsened duplicate IDs
+- PASS: no new/worsened unresolved catalogue targets
