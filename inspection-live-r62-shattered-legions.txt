@@ -1,0 +1,53 @@
+Live R62 — Shattered Legions Theme
+Input CAT61/GST14 -> CAT62/GST15
+
+CONFIGURATION:
+- Added Shattered Legions Theme as an alternative to selecting one normal Legion.
+- Exactly 2–3 of the 18 playable Legions must be selected as Constituent Legions.
+- Exactly one selected constituent Legion must be nominated as the Warlord's Legion.
+- The existing single Loyalist/Traitor Allegiance selection remains authoritative.
+- Legion-specific Rites are not unlocked merely by selecting a constituent Legion; generic Rites remain available.
+- If Alpha Legion is selected, the Theme exposes one shared Alpha Legion Mutable Tactic selector rather than one per unit.
+
+UNIT ASSIGNMENT:
+- Added 200 Shattered 'Assigned Legion' selectors to generic top-level units/models.
+- In Shattered mode each such unit must select exactly one Legion, and only selected constituent Legions are shown.
+- The assignment choice reuses canonical shared Legion rule references where available.
+- Existing Legion-specific options/wargear visibility was localised to the unit's Assigned Legion instead of becoming roster-wide.
+- Created 2466 local-assignment modifier clones and protected 980 old negative Legion gates from firing in Shattered mode.
+
+LEGION-SPECIFIC UNITS:
+- Patched 180 fixed-Legion unit/copy entries so a selected constituent Legion can unlock its own entries without selecting the normal one-Legion config.
+- Added 89 same-Legion HQ requirements to non-HQ Legion-specific entries.
+- Created 100 shared conditional 0–1 categories with 149 linked unit/copy instances.
+- Primarchs are explicitly hidden in Shattered Legions.
+- Rewards of Treachery copies are not treated as the original Legion's special-unit entry.
+
+DEDICATED TRANSPORTS:
+- No separate Legion selection is added to nested Dedicated Transports; their Legion is inherited from the purchasing unit, and local Legion option gates can read the parent root assignment.
+
+KNOWN BUILDER BOUNDARY:
+- The Warlord's Legion choice is mechanically restricted to a selected constituent Legion. The battlefield consequence of the Warlord being slain remains rules text because New Recruit cannot know in-game casualty state.
+- A later Blackshields implementation will explicitly hide Blackshield choices while Shattered Legions is selected.
+
+VALIDATION:
+- PASS: CAT62
+- PASS: GST15
+- PASS: CAT points GST15
+- PASS: Index62/15
+- PASS: Shattered theme exists
+- PASS: 18 constituent choices
+- PASS: 18 Warlord Legion choices
+- PASS: Constituent min2/max3
+- PASS: Warlord Legion min1/max1
+- PASS: Generic assignment groups added
+- PASS: hq-praetor assignment selector
+- PASS: hq-centurion assignment selector
+- PASS: tactical-unit assignment selector
+- PASS: veteran-unit assignment selector
+- PASS: terminator-unit assignment selector
+- PASS: Primarchs detected
+- PASS: All Primarchs blocked
+- PASS: Special 0-1 categories created
+- PASS: Same-Legion HQ requirements added
+- PASS: No new/worsened duplicate IDs
