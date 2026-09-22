@@ -1,0 +1,30 @@
+Live R51 — catalogue load repair
+Input CAT=50/GST=11 -> CAT=51/GST remains 11
+
+REPAIRS:
+- Repointed 6 stale live Imperial Fists Teleportation Transponder links from r44-if-transponder-unit to r64-if-gear-trans-unit.
+- Corrected Dark Angels Storm of War Tactical Squad default loadout to its cloned Bolters + Bolt Pistols child ID.
+- Corrected Iron Warriors Hammer compulsory Tactical Squad default loadout to its cloned Bolters + Bolt Pistols child ID.
+- Corrected Ahriman's Cabal Power Weapon repeat to the current Command Squad Power Weapon link.
+- Repaired 4 low-risk stale selection conditions: {'gear-hq-pair-claws': 2, 'r37-praetor-jetbike-rule': 1, 'r37-centurion-jetbike-rule': 1}.
+- Preserved the R50 Moritat one-of pistol-pair/default/Fulcrum structure.
+
+VALIDATION:
+- PASS: CAT51
+- PASS: GST dependency remains 11
+- PASS: Index51
+- PASS: No unresolved entryLink targets
+- PASS: No unresolved infoLink targets
+- PASS: No unresolved categoryLink targets
+- PASS: All defaultSelectionEntryId values resolve
+- PASS: All selection-repeat targets resolve
+- PASS: selectionEntries contains only correct child type
+- PASS: entryLinks contains only correct child type
+- PASS: selectionEntryGroups contains only correct child type
+- PASS: infoLinks contains only correct child type
+- PASS: Moritat Pistol Pair exists
+- PASS: Moritat default remains Two Bolt Pistols
+- PASS: Bolt Pistols remain replaceable
+- PASS: Fulcrum pair remains present
+- PASS: Fulcrum pair remains +20
+- PASS: No new/worsened duplicate IDs
