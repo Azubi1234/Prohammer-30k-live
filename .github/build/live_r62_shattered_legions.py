@@ -227,7 +227,7 @@ def append_cond(container,c):
 def clone_modifier_for_assignment(m,root_id):
     hits=condition_containers_with_legion(m)
     if not hits:return None
-    cp=copy.deepcopy(m); cp.set("id",(m.get("id") or "mod")+"-r62-shat-"+h(root_id+(m.get("id") or "")))
+    cp=copy.deepcopy(m); cp.set("id",(m.get("id") or "mod")+"-r62-shat-"+h(root_id+(m.get("id") or "")+str(generic_mod_clones)))
     for c in cp.iter(T(cp,"condition")):
         leg=c.get("childId")
         if leg in legion_ids:
@@ -298,7 +298,7 @@ for e,lid in fixed_entries:
         hits=condition_containers_with_legion(m)
         own=[(c,p) for c,p in hits if c.get("childId")==lid]
         if not own:continue
-        cp=copy.deepcopy(m);cp.set("id",(m.get("id") or "mod")+"-r62-fixed-"+h((e.get("id") or "")+(m.get("id") or "")))
+        cp=copy.deepcopy(m);cp.set("id",(m.get("id") or "mod")+"-r62-fixed-"+h((e.get("id") or "")+(m.get("id") or "")+str(fixed_mod_clones)))
         for c in cp.iter(T(cp,"condition")):
             if c.get("childId")==lid:
                 c.set("childId",const);c.set("scope","roster")
