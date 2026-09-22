@@ -1,0 +1,20 @@
+Live R52 — New Recruit loader structure repair
+Input CAT=51/GST=11 -> CAT=52/GST remains 11
+
+REPAIR:
+- Maloghurst direct children: ['constraints', 'entryLinks', 'infoLinks', 'costs', 'profiles', 'rules'] -> ['constraints', 'profiles', 'rules', 'infoLinks', 'entryLinks', 'costs']
+- Tarik Torgaddon direct children: ['constraints', 'entryLinks', 'infoLinks', 'costs', 'profiles', 'rules'] -> ['constraints', 'profiles', 'rules', 'infoLinks', 'entryLinks', 'costs']
+- These were the only two official-schema error types/counts newly introduced after known-working R47.
+- Reordered them to the official BattleScribe 2.03 SelectionEntry sequence without changing their rules, profiles, costs, or options.
+- R49/R50/R51 content, including Shattered Legions work and the Moritat pistol selector, is otherwise untouched.
+
+VALIDATION:
+- PASS: CAT52
+- PASS: GST dependency remains 11
+- PASS: Index52
+- PASS: r32-soh-maloghurst-replacement direct children schema ordered
+- PASS: r32-soh-torgaddon-upgrade direct children schema ordered
+- PASS: No unresolved entryLink targets
+- PASS: No unresolved infoLink targets
+- PASS: No unresolved categoryLink targets
+- PASS: No new/worsened duplicate IDs
