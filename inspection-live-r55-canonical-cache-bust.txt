@@ -1,0 +1,25 @@
+Live R55 — canonical New Recruit cache-bust
+Input: CAT54/GST12 metadata-only cache bust
+Output: CAT55/GST13
+
+CONTENT:
+- No army-list/rule/wargear/profile/points/restriction content changed.
+- Still based on the last user-confirmed working R48 catalogue restored by R53.
+
+FIX:
+- Rewrote CAT, GST and index with canonical default BattleScribe namespaces.
+- Removed ns0 namespace prefixes introduced by the R54 metadata writer.
+- Bumped both CAT and GST again so New Recruit must see a fresh pair.
+
+VALIDATION:
+- PASS: CAT revision 55
+- PASS: CAT points GST13
+- PASS: GST revision 13
+- PASS: index advertises CAT55
+- PASS: index advertises GST13
+- PASS: CAT canonical default namespace
+- PASS: GST canonical default namespace
+- PASS: index canonical default namespace
+- PASS: no ns0 in CAT
+- PASS: no ns0 in GST
+- PASS: no ns0 in index
