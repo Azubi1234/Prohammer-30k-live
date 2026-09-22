@@ -1,0 +1,505 @@
+Live R59 — Thousand Sons Cult / psychic UI rebuild
+Input CAT58/GST14 -> CAT59/GST14
+
+WHY:
+- The Prosperine Cult system existed in XML, but most Cult options were entryLinks to shared selection entries. New Recruit rendered the parent group while failing to expose the linked Cult choices.
+- The R57 Centurion package used hidden=true plus a positive show modifier, which was still not reliably rendering in New Recruit.
+- Veteran melee replacement scaling relied on repeat-based modifier math; New Recruit was still capping the visible choice at five in a 10-model squad.
+
+CULT REBUILD:
+- Rebuilt 38 existing Prosperine Cult groups into local 1-of-5 choices (190 local Cult selections).
+- The local choices keep their existing option IDs wherever possible, so all Cult->discipline restrictions continue to work.
+- Cult choices reference the existing canonical Cult rules; no duplicate Cult rule definitions were created.
+- Every Cult group is now visible by default and hidden only when XV Legion is absent.
+- No new Cult access was invented: Castellax-Achea and Osiron remain without Cults; fixed-Cult named characters remain fixed.
+
+CENTURION:
+- Removed 1 fragile hidden/show modifier(s) from the R57 Centurion package.
+- Thousand Sons Centurion Cult & Psychic Powers is now visible-default and hidden only outside XV.
+- Exactly one Cult remains mandatory; its corresponding psychic power list remains directly nested under the Cult choice.
+- Normal Centurion remains ML1 / one power; Librarian Epistolary remains two powers.
+
+VETERANS:
+- Rebuilt close-combat replacement scaling on 9 Veteran entries/copies.
+- 5-model Veteran squad: max 5 melee replacements.
+- 10-model Veteran squad: max 10 melee replacements.
+- Updated 44 individual melee options to allow up to 10, with the aggregate squad-size cap enforced by the parent group.
+- Removed 8 repeat-based melee max modifier(s).
+- Pride of the Legion Veteran copy receives the same scaling as the base Veteran Squad.
+
+VALIDATION:
+- PASS: CAT revision 59
+- PASS: GST dependency remains 14
+- PASS: Index CAT59
+- PASS: Cult group count preserved
+- PASS: r32-soh-long-march-r45-cult-terminator-unit has five local Cults
+- PASS: r32-soh-long-march-r45-cult-terminator-unit has no linked Cult selections
+- PASS: r32-soh-long-march-r45-cult-terminator-unit visible-default
+- PASS: r32-soh-long-march-r45-cult-terminator-unit hides outside XV
+- PASS: r32-soh-long-march-r45-cult-terminator-unit-r59-0 has Cult rule refs
+- PASS: r32-soh-long-march-r45-cult-terminator-unit-r59-1 has Cult rule refs
+- PASS: r32-soh-long-march-r45-cult-terminator-unit-r59-2 has Cult rule refs
+- PASS: r32-soh-long-march-r45-cult-terminator-unit-r59-3 has Cult rule refs
+- PASS: r32-soh-long-march-r45-cult-terminator-unit-r59-4 has Cult rule refs
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit has five local Cults
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit has no linked Cult selections
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit visible-default
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit hides outside XV
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit-r59-0 has Cult rule refs
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit-r59-1 has Cult rule refs
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit-r59-2 has Cult rule refs
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit-r59-3 has Cult rule refs
+- PASS: r32-soh-first-company-term-r45-cult-terminator-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-tactical-unit has five local Cults
+- PASS: r45-cult-tactical-unit has no linked Cult selections
+- PASS: r45-cult-tactical-unit visible-default
+- PASS: r45-cult-tactical-unit hides outside XV
+- PASS: r45-cult-tactical-unit-r59-0 has Cult rule refs
+- PASS: r45-cult-tactical-unit-r59-1 has Cult rule refs
+- PASS: r45-cult-tactical-unit-r59-2 has Cult rule refs
+- PASS: r45-cult-tactical-unit-r59-3 has Cult rule refs
+- PASS: r45-cult-tactical-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-assault-unit has five local Cults
+- PASS: r45-cult-assault-unit has no linked Cult selections
+- PASS: r45-cult-assault-unit visible-default
+- PASS: r45-cult-assault-unit hides outside XV
+- PASS: r45-cult-assault-unit-r59-0 has Cult rule refs
+- PASS: r45-cult-assault-unit-r59-1 has Cult rule refs
+- PASS: r45-cult-assault-unit-r59-2 has Cult rule refs
+- PASS: r45-cult-assault-unit-r59-3 has Cult rule refs
+- PASS: r45-cult-assault-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-breacher-unit has five local Cults
+- PASS: r45-cult-breacher-unit has no linked Cult selections
+- PASS: r45-cult-breacher-unit visible-default
+- PASS: r45-cult-breacher-unit hides outside XV
+- PASS: r45-cult-breacher-unit-r59-0 has Cult rule refs
+- PASS: r45-cult-breacher-unit-r59-1 has Cult rule refs
+- PASS: r45-cult-breacher-unit-r59-2 has Cult rule refs
+- PASS: r45-cult-breacher-unit-r59-3 has Cult rule refs
+- PASS: r45-cult-breacher-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-recon-unit has five local Cults
+- PASS: r45-cult-recon-unit has no linked Cult selections
+- PASS: r45-cult-recon-unit visible-default
+- PASS: r45-cult-recon-unit hides outside XV
+- PASS: r45-cult-recon-unit-r59-0 has Cult rule refs
+- PASS: r45-cult-recon-unit-r59-1 has Cult rule refs
+- PASS: r45-cult-recon-unit-r59-2 has Cult rule refs
+- PASS: r45-cult-recon-unit-r59-3 has Cult rule refs
+- PASS: r45-cult-recon-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-veteran-unit has five local Cults
+- PASS: r45-cult-veteran-unit has no linked Cult selections
+- PASS: r45-cult-veteran-unit visible-default
+- PASS: r45-cult-veteran-unit hides outside XV
+- PASS: r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-terminator-unit has five local Cults
+- PASS: r45-cult-terminator-unit has no linked Cult selections
+- PASS: r45-cult-terminator-unit visible-default
+- PASS: r45-cult-terminator-unit hides outside XV
+- PASS: r45-cult-terminator-unit-r59-0 has Cult rule refs
+- PASS: r45-cult-terminator-unit-r59-1 has Cult rule refs
+- PASS: r45-cult-terminator-unit-r59-2 has Cult rule refs
+- PASS: r45-cult-terminator-unit-r59-3 has Cult rule refs
+- PASS: r45-cult-terminator-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-fa-seeker has five local Cults
+- PASS: r45-cult-fa-seeker has no linked Cult selections
+- PASS: r45-cult-fa-seeker visible-default
+- PASS: r45-cult-fa-seeker hides outside XV
+- PASS: r45-cult-fa-seeker-r59-0 has Cult rule refs
+- PASS: r45-cult-fa-seeker-r59-1 has Cult rule refs
+- PASS: r45-cult-fa-seeker-r59-2 has Cult rule refs
+- PASS: r45-cult-fa-seeker-r59-3 has Cult rule refs
+- PASS: r45-cult-fa-seeker-r59-4 has Cult rule refs
+- PASS: r45-cult-hs-heavy-support-squad has five local Cults
+- PASS: r45-cult-hs-heavy-support-squad has no linked Cult selections
+- PASS: r45-cult-hs-heavy-support-squad visible-default
+- PASS: r45-cult-hs-heavy-support-squad hides outside XV
+- PASS: r45-cult-hs-heavy-support-squad-r59-0 has Cult rule refs
+- PASS: r45-cult-hs-heavy-support-squad-r59-1 has Cult rule refs
+- PASS: r45-cult-hs-heavy-support-squad-r59-2 has Cult rule refs
+- PASS: r45-cult-hs-heavy-support-squad-r59-3 has Cult rule refs
+- PASS: r45-cult-hs-heavy-support-squad-r59-4 has Cult rule refs
+- PASS: r45-cult-hq-praetor has five local Cults
+- PASS: r45-cult-hq-praetor has no linked Cult selections
+- PASS: r45-cult-hq-praetor visible-default
+- PASS: r45-cult-hq-praetor hides outside XV
+- PASS: r45-cult-hq-praetor-r59-0 has Cult rule refs
+- PASS: r45-cult-hq-praetor-r59-1 has Cult rule refs
+- PASS: r45-cult-hq-praetor-r59-2 has Cult rule refs
+- PASS: r45-cult-hq-praetor-r59-3 has Cult rule refs
+- PASS: r45-cult-hq-praetor-r59-4 has Cult rule refs
+- PASS: r58-pride-sync-296d4d0686aa8aef has five local Cults
+- PASS: r58-pride-sync-296d4d0686aa8aef has no linked Cult selections
+- PASS: r58-pride-sync-296d4d0686aa8aef visible-default
+- PASS: r58-pride-sync-296d4d0686aa8aef hides outside XV
+- PASS: r58-pride-sync-296d4d0686aa8aef-r59-0 has Cult rule refs
+- PASS: r58-pride-sync-296d4d0686aa8aef-r59-1 has Cult rule refs
+- PASS: r58-pride-sync-296d4d0686aa8aef-r59-2 has Cult rule refs
+- PASS: r58-pride-sync-296d4d0686aa8aef-r59-3 has Cult rule refs
+- PASS: r58-pride-sync-296d4d0686aa8aef-r59-4 has Cult rule refs
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit has five local Cults
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit has no linked Cult selections
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit visible-default
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit hides outside XV
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit has five local Cults
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit has no linked Cult selections
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit visible-default
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit hides outside XV
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit has five local Cults
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit has no linked Cult selections
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit visible-default
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit hides outside XV
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: r71-nl-mal-ret-1-r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit has five local Cults
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit has no linked Cult selections
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit visible-default
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit hides outside XV
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit-r59-0 has Cult rule refs
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit-r59-1 has Cult rule refs
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit-r59-2 has Cult rule refs
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit-r59-3 has Cult rule refs
+- PASS: live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r45-cult-assault-unit-r59-4 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has five local Cults
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has no linked Cult selections
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal visible-default
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal hides outside XV
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-0 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-1 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-2 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-3 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-4 has Cult rule refs
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has five local Cults
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has no linked Cult selections
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal visible-default
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal hides outside XV
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-0 has Cult rule refs
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-1 has Cult rule refs
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-2 has Cult rule refs
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-3 has Cult rule refs
+- PASS: r27-guard-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-4 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal has five local Cults
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal has no linked Cult selections
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal visible-default
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal hides outside XV
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-0 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-1 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-2 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-3 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-4 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has five local Cults
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has no linked Cult selections
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal visible-default
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal hides outside XV
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-0 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-1 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-2 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-3 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-4 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal has five local Cults
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal has no linked Cult selections
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal visible-default
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal hides outside XV
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal-r59-0 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal-r59-1 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal-r59-2 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal-r59-3 has Cult rule refs
+- PASS: r45-cult-r41-unit-xv-5-numerologist-cabal-r59-4 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has five local Cults
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has no linked Cult selections
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal visible-default
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal hides outside XV
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-0 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-1 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-2 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-3 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-0-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-4 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker has five local Cults
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker has no linked Cult selections
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker visible-default
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker hides outside XV
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker-r59-0 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker-r59-1 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker-r59-2 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker-r59-3 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r45-cult-fa-seeker-r59-4 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal has five local Cults
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal has no linked Cult selections
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal visible-default
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal hides outside XV
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-0 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-1 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-2 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-3 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-10-sanakht-retinue-0-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-4 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has five local Cults
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has no linked Cult selections
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal visible-default
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal hides outside XV
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-0 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-1 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-2 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-3 has Cult rule refs
+- PASS: live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-4 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit has five local Cults
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit has no linked Cult selections
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit visible-default
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit hides outside XV
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit has five local Cults
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit has no linked Cult selections
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit visible-default
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit hides outside XV
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker has five local Cults
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker has no linked Cult selections
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker visible-default
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker hides outside XV
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker-r59-0 has Cult rule refs
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker-r59-1 has Cult rule refs
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker-r59-2 has Cult rule refs
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker-r59-3 has Cult rule refs
+- PASS: r45-pech-ret-3-r45-cult-fa-seeker-r59-4 has Cult rule refs
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has five local Cults
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has no linked Cult selections
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal visible-default
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal hides outside XV
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-0 has Cult rule refs
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-1 has Cult rule refs
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-2 has Cult rule refs
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-3 has Cult rule refs
+- PASS: live-r2-r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-2-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-4 has Cult rule refs
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has five local Cults
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has no linked Cult selections
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal visible-default
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal hides outside XV
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-0 has Cult rule refs
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-1 has Cult rule refs
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-2 has Cult rule refs
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-3 has Cult rule refs
+- PASS: r46-al-reward-41-donor-r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-r59-4 has Cult rule refs
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal has five local Cults
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal has no linked Cult selections
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal visible-default
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal hides outside XV
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-0 has Cult rule refs
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-1 has Cult rule refs
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-2 has Cult rule refs
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-3 has Cult rule refs
+- PASS: r46-al-reward-42-donor-r45-cult-r41-unit-xv-1-khenetai-occult-blade-cabal-r59-4 has Cult rule refs
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has five local Cults
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has no linked Cult selections
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal visible-default
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal hides outside XV
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-0 has Cult rule refs
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-1 has Cult rule refs
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-2 has Cult rule refs
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-3 has Cult rule refs
+- PASS: r46-al-reward-43-donor-r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-r59-4 has Cult rule refs
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal has five local Cults
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal has no linked Cult selections
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal visible-default
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal hides outside XV
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal-r59-0 has Cult rule refs
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal-r59-1 has Cult rule refs
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal-r59-2 has Cult rule refs
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal-r59-3 has Cult rule refs
+- PASS: r46-al-reward-45-donor-r45-cult-r41-unit-xv-5-numerologist-cabal-r59-4 has Cult rule refs
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad has five local Cults
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad has no linked Cult selections
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad visible-default
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad hides outside XV
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad-r59-0 has Cult rule refs
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad-r59-1 has Cult rule refs
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad-r59-2 has Cult rule refs
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad-r59-3 has Cult rule refs
+- PASS: r52-ec-sonic-hss-r45-cult-hs-heavy-support-squad-r59-4 has Cult rule refs
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit has five local Cults
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit has no linked Cult selections
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit visible-default
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit hides outside XV
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit-r59-0 has Cult rule refs
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit-r59-1 has Cult rule refs
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit-r59-2 has Cult rule refs
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit-r59-3 has Cult rule refs
+- PASS: r57-iw-golg-term-troops-r45-cult-terminator-unit-r59-4 has Cult rule refs
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit has five local Cults
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit has no linked Cult selections
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit visible-default
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit hides outside XV
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit-r59-0 has Cult rule refs
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit-r59-1 has Cult rule refs
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit-r59-2 has Cult rule refs
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit-r59-3 has Cult rule refs
+- PASS: r57-iw-hammer-tactical-r45-cult-tactical-unit-r59-4 has Cult rule refs
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit has five local Cults
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit has no linked Cult selections
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit visible-default
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit hides outside XV
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit-r59-0 has Cult rule refs
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit-r59-1 has Cult rule refs
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit-r59-2 has Cult rule refs
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit-r59-3 has Cult rule refs
+- PASS: r57-iw-hammer-breacher-r45-cult-breacher-unit-r59-4 has Cult rule refs
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit has five local Cults
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit has no linked Cult selections
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit visible-default
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit hides outside XV
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit-r59-0 has Cult rule refs
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit-r59-1 has Cult rule refs
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit-r59-2 has Cult rule refs
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit-r59-3 has Cult rule refs
+- PASS: r74-ba-rev-vet-r45-cult-veteran-unit-r59-4 has Cult rule refs
+- PASS: Centurion TS package visible-default
+- PASS: Centurion TS package hides outside XV
+- PASS: Centurion has five Cult choices
+- PASS: Centurion biomancy power list nonempty
+- PASS: Centurion telekinesis power list nonempty
+- PASS: Centurion divination power list nonempty
+- PASS: Centurion telepathy power list nonempty
+- PASS: Centurion pyromancy power list nonempty
+- PASS: r45-cult-hq-praetor exists
+- PASS: r19-ts-praetor-disciplines exists
+- PASS: r19-ts-praetor-powers exists
+- PASS: r45-cult-veteran-unit exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines exists
+- PASS: r19-ts-veteran-unit-brotherhood-powers exists
+- PASS: r45-cult-terminator-unit exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines exists
+- PASS: r19-ts-terminator-unit-brotherhood-powers exists
+- PASS: veteran-unit Veteran model selector exists
+- PASS: veteran-unit melee group exists
+- PASS: veteran-unit melee base max5
+- PASS: veteran-unit melee scales to 10
+- PASS: veteran-unit no repeat max math
+- PASS: veteran-melee-chainaxe individual max10
+- PASS: veteran-melee-rending individual max10
+- PASS: veteran-melee-power individual max10
+- PASS: r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-veteran-melee individual max10
+- PASS: r35-pride-veteran-veteran-unit Veteran model selector exists
+- PASS: r35-pride-veteran-veteran-unit melee group exists
+- PASS: r35-pride-veteran-veteran-unit melee base max5
+- PASS: r35-pride-veteran-veteran-unit melee scales to 10
+- PASS: r35-pride-veteran-veteran-unit no repeat max math
+- PASS: r58-pride-sync-161246f1c2501bac individual max10
+- PASS: r58-pride-sync-cc29a393fc4607a0 individual max10
+- PASS: r58-pride-sync-84241d7ea797d739 individual max10
+- PASS: r58-pride-sync-858c7a56d2ca3aa1 individual max10
+- PASS: r58-pride-sync-4d6e5d9284950cab individual max10
+- PASS: r40-da-vow-veteran Veteran model selector exists
+- PASS: r40-da-vow-veteran melee group exists
+- PASS: r40-da-vow-veteran melee base max5
+- PASS: r40-da-vow-veteran melee scales to 10
+- PASS: r40-da-vow-veteran no repeat max math
+- PASS: r40-da-vow-veteran-veteran-melee-chainaxe individual max10
+- PASS: r40-da-vow-veteran-veteran-melee-rending individual max10
+- PASS: r40-da-vow-veteran-veteran-melee-power individual max10
+- PASS: r40-da-vow-veteran-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-r40-da-vow-veteran-veteran-melee individual max10
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad Veteran model selector exists
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad melee group exists
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad melee base max5
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad melee scales to 10
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad no repeat max math
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-veteran-melee-chainaxe individual max10
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-veteran-melee-rending individual max10
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-veteran-melee-power individual max10
+- PASS: r60-ws-hibou-retinue-legion-veteran-squad-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-r60-ws-hibou-retinue-legion-veteran-squad-veteran-melee individual max10
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad Veteran model selector exists
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad melee group exists
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad melee base max5
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad melee scales to 10
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad no repeat max math
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-veteran-melee-chainaxe individual max10
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-veteran-melee-rending individual max10
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-veteran-melee-power individual max10
+- PASS: r60-ws-hasik-retinue-legion-veteran-squad-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-r60-ws-hasik-retinue-legion-veteran-squad-veteran-melee individual max10
+- PASS: r71-nl-mal-ret-1-veteran-unit Veteran model selector exists
+- PASS: r71-nl-mal-ret-1-veteran-unit melee group exists
+- PASS: r71-nl-mal-ret-1-veteran-unit melee base max5
+- PASS: r71-nl-mal-ret-1-veteran-unit melee scales to 10
+- PASS: r71-nl-mal-ret-1-veteran-unit no repeat max math
+- PASS: r71-nl-mal-ret-1-veteran-melee-chainaxe individual max10
+- PASS: r71-nl-mal-ret-1-veteran-melee-rending individual max10
+- PASS: r71-nl-mal-ret-1-veteran-melee-power individual max10
+- PASS: r71-nl-mal-ret-1-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee individual max10
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit Veteran model selector exists
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit melee group exists
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit melee base max5
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit melee scales to 10
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit no repeat max math
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-melee-chainaxe individual max10
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-melee-rending individual max10
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-melee-power individual max10
+- PASS: live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-melee individual max10
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit Veteran model selector exists
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit melee group exists
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit melee base max5
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit melee scales to 10
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit no repeat max math
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-melee-chainaxe individual max10
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-melee-rending individual max10
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-melee-power individual max10
+- PASS: live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted-it-xvi-8-tybalt-marr-the-either-retinue-0-veteran-melee individual max10
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit Veteran model selector exists
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit melee group exists
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit melee base max5
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit melee scales to 10
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit no repeat max math
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-melee-rending individual max10
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-melee-power individual max10
+- PASS: r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-r40-da-warblade-veteran-melee-power individual max10
+- PASS: r38-wb-tainted--superior-firepower-legion-veteran-squads-veteran-melee individual max10
+- PASS: sekhemt unit found
+- PASS: sekhemt has Cult
+- PASS: khenetai unit found
+- PASS: khenetai has Cult
+- PASS: ammitara unit found
+- PASS: ammitara has Cult
+- PASS: numerologist unit found
+- PASS: numerologist has Cult
+- PASS: castellax unit found
+- PASS: castellax has no Cult
+- PASS: osiron unit found
+- PASS: osiron has no Cult
+- PASS: ahzek ahriman found
+- PASS: ahzek ahriman no generic Cult selector
+- PASS: phosis t'kar found
+- PASS: phosis t'kar no generic Cult selector
+- PASS: magistus amon found
+- PASS: magistus amon no generic Cult selector
+- PASS: hathor maat found
+- PASS: hathor maat no generic Cult selector
+- PASS: sanakht found
+- PASS: sanakht no generic Cult selector
+- PASS: No new/worsened duplicate IDs
