@@ -31,4 +31,4 @@ jobs:
           git diff --cached --quiet || git commit -m "Live R49: repair schema links and restore Thousand Sons"
           git push
 
-# retry corrected Ammitara counts
+# retry corrected Ammitara counts — run 2
