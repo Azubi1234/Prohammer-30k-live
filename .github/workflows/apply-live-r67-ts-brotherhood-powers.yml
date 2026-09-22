@@ -1,5 +1,5 @@
 name: Apply Live R67 TS Brotherhood Power Selection
-# retry after report typo fix
+# retry populated Brotherhood power group
 on:
   push:
     paths: ['.github/workflows/apply-live-r67-ts-brotherhood-powers.yml']
