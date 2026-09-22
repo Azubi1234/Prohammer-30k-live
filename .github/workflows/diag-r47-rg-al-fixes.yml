@@ -1,0 +1,13 @@
+name: Diagnose R47 RG AL Fixes
+on:
+  push:
+    paths: ['.github/workflows/diag-r47-rg-al-fixes.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r47_rg_al_fixes.py
