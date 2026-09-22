@@ -1,0 +1,91 @@
+==== r46-sal-mantle / Salamanders Mantle ====
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r46-sal-mantle" name="Salamanders Mantle" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="35" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r46-sal-mantle-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+        <ns0:constraint id="r46-sal-mantle-rmax" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r46-sal-mantle-rule" name="Salamanders Mantle" hidden="false">
+          <ns0:description>0–1 Salamanders Independent Character. An unsaved Wound that becomes a Massive Wound solely because attack Strength is at least double Toughness instead inflicts one Wound. Does not protect against other explicit Massive-Wound rules.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
+==== r46-sal-mastercrafted / Master-crafted Weapon — Salamanders price ====
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r46-sal-mastercrafted" name="Master-crafted Weapon — Salamanders price" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r46-sal-mastercrafted-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r46-sal-mastercrafted-rule" name="Master-crafted Weapon — Salamanders price" hidden="false">
+          <ns0:description>Salamanders price for the normal Master-crafted Weapon upgrade. All normal restrictions continue to apply.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
+==== r46-sal-artificer-armour / Artificer Armour — Salamanders access ====
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r46-sal-artificer-armour" name="Artificer Armour — Salamanders access" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="15" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r46-sal-artificer-armour-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r46-sal-artificer-armour-rule" name="Artificer Armour — Salamanders access" hidden="false">
+          <ns0:description>Salamanders non-Independent Character with Space Marine Armoury access may purchase Artificer Armour for +15 even if the unit entry normally would not allow it; if the unit entry offers a lower price, use that price instead.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
+==== r46-sal-inferno-pistol / Inferno Pistol ====
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r46-sal-inferno-pistol" name="Inferno Pistol" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="15" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r46-sal-inferno-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r46-sal-inferno-pistol-rule" name="Inferno Pistol" hidden="false">
+          <ns0:description>Salamanders Independent Character or squad Sergeant. 6”, S8 AP1, Pistol, Melta.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
+==== r46-sal-heavy-flamer / Heavy Flamer instead of Flamer ====
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r46-sal-heavy-flamer" name="Heavy Flamer instead of Flamer" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r46-sal-heavy-flamer-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r46-sal-heavy-flamer-rule" name="Heavy Flamer instead of Flamer" hidden="false">
+          <ns0:description>Where a Salamanders Tactical or Veteran Squad may purchase a Flamer, it may instead purchase a Heavy Flamer for +10. Salamanders Flame weapon profiles receive their Legion Strength increase as stated in Promethean Cult/Fire-based Warfare.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
+==== r46-sal-ceramite / Armoured Ceramite — Salamanders price ====
+<ns0:selectionEntry xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema" id="r46-sal-ceramite" name="Armoured Ceramite — Salamanders price" type="upgrade" hidden="false" import="true">
+      <ns0:costs>
+        <ns0:cost name="Points" typeId="pts" value="10" />
+      </ns0:costs>
+      <ns0:constraints>
+        <ns0:constraint id="r46-sal-ceramite-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
+      </ns0:constraints>
+      <ns0:rules>
+        <ns0:rule id="r46-sal-ceramite-rule" name="Armoured Ceramite — Salamanders price" hidden="false">
+          <ns0:description>Salamanders Vehicle or Dreadnought which may normally purchase Armoured Ceramite may purchase it for +10. Land Raiders and Spartans use their normal listed price.</ns0:description>
+        </ns0:rule>
+      </ns0:rules>
+    </ns0:selectionEntry>
+    
