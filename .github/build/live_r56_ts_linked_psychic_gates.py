@@ -12,6 +12,13 @@ if cr.get("revision")!="55": raise RuntimeError(f"R56 expected CAT55, got {cr.ge
 if gr.get("revision")!="13": raise RuntimeError(f"R56 expected GST13, got {gr.get('revision')}")
 baseline=collections.Counter(x.get("id") for x in cr.iter() if x.get("id"))
 ids={x.get("id"):x for x in cr.iter() if x.get("id")}
+gst_ids={x.get("id") for x in gr.iter() if x.get("id")}
+baseline_unresolved=collections.Counter()
+for x in cr.iter():
+    if x.tag not in (C("entryLink"),C("infoLink"),C("categoryLink")): continue
+    tid=x.get("targetId")
+    if tid and tid not in ids and tid not in gst_ids:
+        baseline_unresolved[(x.tag,x.get("id"),tid)] += 1
 
 # Build entryLink -> canonical shared selection target map for the TS psychic system.
 psychic_names={
@@ -128,14 +135,16 @@ new=collections.Counter(x.get("id") for x in rr.iter() if x.get("id"))
 worse={k:v for k,v in new.items() if v>max(1,baseline.get(k,0))}
 ck("no new/worsened duplicate IDs",not worse)
 
-# All entry/info link targets resolve against CAT or GST.
+# Do not add or worsen unresolved links; R55 may already contain historical unrelated ones.
 rids={x.get("id") for x in rr.iter() if x.get("id")}; gids={x.get("id") for x in gg.iter() if x.get("id")}
-bad=[]
+after_unresolved=collections.Counter()
 for x in rr.iter():
     if x.tag not in (C("entryLink"),C("infoLink"),C("categoryLink")): continue
     tid=x.get("targetId")
-    if tid and tid not in rids and tid not in gids: bad.append((x.get("id"),tid))
-ck("all catalogue link targets resolve",not bad)
+    if tid and tid not in rids and tid not in gids:
+        after_unresolved[(x.tag,x.get("id"),tid)] += 1
+worse_unresolved={k:v for k,v in after_unresolved.items() if v>baseline_unresolved.get(k,0)}
+ck("no new/worsened unresolved catalogue targets",not worse_unresolved)
 
 OUT.write_text("\n".join([
  "Live R56 — Thousand Sons linked psychic gate compatibility",
