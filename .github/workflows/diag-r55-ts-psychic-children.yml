@@ -1,0 +1,13 @@
+name: Diagnose R55 TS Psychic Children
+on:
+  push:
+    paths: ['.github/workflows/diag-r55-ts-psychic-children.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r55_ts_psychic_children.py
