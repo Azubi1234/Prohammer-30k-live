@@ -1,0 +1,655 @@
+CAT=39
+
+ENTRY id=r46-sal-mantle name=Salamanders Mantle type=upgrade hidden=false cats=[] anc=Legiones Astartes
+  RULE Salamanders Mantle: 0–1 Salamanders Independent Character. An unsaved Wound that becomes a Massive Wound solely because attack Strength is at least double Toughness instead inflicts one Wound. Does not protect against other explicit Massive-Wound rules.
+
+ENTRY id=r46-sal-mastercrafted name=Master-crafted Weapon — Salamanders price type=upgrade hidden=false cats=[] anc=Legiones Astartes
+  RULE Master-crafted Weapon — Salamanders price: Salamanders price for the normal Master-crafted Weapon upgrade. All normal restrictions continue to apply.
+
+ENTRY id=r46-sal-artificer-armour name=Artificer Armour — Salamanders access type=upgrade hidden=false cats=[] anc=Legiones Astartes
+  RULE Artificer Armour — Salamanders access: Salamanders non-Independent Character with Space Marine Armoury access may purchase Artificer Armour for +15 even if the unit entry normally would not allow it; if the unit entry offers a lower price, use that price instead.
+
+ENTRY id=r46-sal-ceramite name=Armoured Ceramite — Salamanders price type=upgrade hidden=false cats=[] anc=Legiones Astartes
+  RULE Armoured Ceramite — Salamanders price: Salamanders Vehicle or Dreadnought which may normally purchase Armoured Ceramite may purchase it for +10. Land Raiders and Spartans use their normal listed price.
+
+ENTRY id=legion-xviii name=XVIII Legion — Salamanders type=upgrade hidden=false cats=[] anc=Legion > Army Configuration > Legiones Astartes
+  RULE Legiones Astartes (Salamanders): This Detachment is Salamanders. Models with the Legiones Astartes special rule gain Legiones Astartes (Salamanders). Legion-specific rules, units, wargear and characters are unlocked by this selection where applicable.
+  RULE Salamanders — Legion Rules & Armoury: LEGION SPECIAL RULES | PROMETHEAN CULT | The Salamanders possess an unrivalled mastery of flame, melta weaponry and the weapons of the forge. | Salamanders models may re-roll To Hit rolls of 1 when attacking with: | • Thunder Hammers | • Melta Bombs | • Meltaguns | • Multi-Meltas | • other weapons with the Melta special rule | In addition, Salamanders models may re-roll To Wound rolls of 1 when firing Flame weapons
+
+ENTRY id=r25-rite-xviii-0-the-covenant-of-fire name=Salamanders Rite of War — The Covenant Of Fire type=upgrade hidden=false cats=[] anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+  RULE The Covenant Of Fire: The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry. | EFFECTS | DISCIPLES OF THE FLAME | Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non-compulsory Troops choices. | They may not fulfil co
+
+ENTRY id=r25-rite-xviii-1-the-awakening-fire name=Salamanders Rite of War — The Awakening Fire type=upgrade hidden=false cats=[] anc=Rite of War (optional) > Army Configuration > Legiones Astartes
+  RULE The Awakening Fire: After Vulkan was lost upon Isstvan V, some among the XVIII Legion turned ever deeper towards the mysteries of the Promethean Cult. Their grief became a terrible certainty, and the sons of Nocturne began to appear to their enemies as creatures born from the flames themselves. | EFFECTS | DEVILS FROM THE DARK | Salamanders Infantry units gain the Fear special rule. | UNTO THE FIRES | Never Give Up functions n
+
+ENTRY id=r41-unit-xviii-0-firedrake-terminator-squad name=Firedrake Terminator Squad type=unit hidden=false cats=[('Elites', 'cat-elites', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-0-firedrake-terminator-squad-options Options
+
+ENTRY id=r41-unit-xviii-0-firedrake-terminator-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Firedrake Terminator Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-0-firedrake-terminator-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade hidden=false cats=[] anc=Options > Firedrake Terminator Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=r41-unit-xviii-0-firedrake-terminator-squad-opt-1-multi-melta name=Multi-Melta type=upgrade hidden=false cats=[] anc=Options > Firedrake Terminator Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad name=Pyroclast Squad type=unit hidden=false cats=[('Elites', 'cat-elites', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-1-pyroclast-squad-options Options
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Pyroclast Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-opt-0-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-opt-1-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-opt-2-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-opt-3-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r41-unit-xviii-1-pyroclast-squad-opt-5-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad name=Salamanders Infernus Destroyer Squad type=unit hidden=false cats=[('Elites', 'cat-elites', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-2-salamanders-infernus-destroyer-squad-options Options
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Salamanders Infernus Destroyer Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-0-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-1-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs name=Jump Packs (base unit; +15 pts/model) type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-3-heavy-flamer-with-suspensor-web name=Heavy Flamer with Suspensor Web type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-4-multi-melta-with-suspensor-web name=Multi-Melta with Suspensor Web type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-5-volkite-serpenta name=Volkite Serpenta type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-6-plasma-pistol name=Plasma Pistol type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw name=Lightning claw type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-10-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-11-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-12-inferno-pistol name=Inferno Pistol type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace either Hand Flamer with:
+
+ENTRY id=r41-unit-xviii-3-adherent-squad name=Adherent Squad type=unit hidden=false cats=[('Troops', 'cat-troops', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-3-adherent-squad-options Options
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Adherent Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Adherent may replace his Combi-flamer with:
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-1-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-2-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-3-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: The Adherent Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-4-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-5-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: The Adherent Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-6-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: The Adherent Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-3-adherent-squad-opt-7-artificer-armour name=Artificer Armour type=upgrade hidden=false cats=[] anc=Options > Adherent Squad > Legiones Astartes
+  RULE Option restriction: The Sergeant may take:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad name=Sanctifier Squad type=unit hidden=false cats=[('Elites', 'cat-elites', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-4-sanctifier-squad-options Options
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Sanctifier Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-0-second-bolt-pistol name=Second Bolt pistol type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-1-rotor-cannon name=Rotor Cannon type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-2-two-hand-flamers name=Two Hand Flamers type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter and Bolt pistol with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-3-two-volkite-serpentae name=Two Volkite Serpentae type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter and Bolt pistol with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-4-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Sanctifier may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-5-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-6-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-7-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-8-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-9-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-10-lightning-claw name=Lightning claw type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-11-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-12-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r41-unit-xviii-4-sanctifier-squad-opt-13-artificer-armour name=Artificer Armour type=upgrade hidden=false cats=[] anc=Options > Sanctifier Squad > Legiones Astartes
+  RULE Option restriction: The Sergeant may take:
+
+ENTRY id=r41-unit-xviii-5-artellus-numeon name=Artellus Numeon type=unit hidden=false cats=[('HQ', 'cat-hq', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-5-artellus-numeon-options Options
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue Retinue (does not occupy a separate FOC slot)
+
+ENTRY id=r41-unit-xviii-5-artellus-numeon-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false cats=[] anc=Options > Artellus Numeon > Legiones Astartes
+  RULE Option restriction: • Numeon may take:
+
+ENTRY id=r41-unit-xviii-5-artellus-numeon-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false cats=[] anc=Options > Artellus Numeon > Legiones Astartes
+  RULE Option restriction: • Numeon may take:
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad name=Firedrake Terminator Squad type=unit hidden=false cats=[] anc=Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-options Options
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Firedrake Terminator Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade hidden=false cats=[] anc=Options > Firedrake Terminator Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-opt-1-multi-melta name=Multi-Melta type=upgrade hidden=false cats=[] anc=Options > Firedrake Terminator Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command name=Legion Command Squad type=unit hidden=false cats=[] anc=Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close combat, and does not suffer extra wounds from being ca
+  RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-weapons Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword)
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-eq Per-model Equipment
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-mob Squad Mobility (only if the selecting HQ has the same mobility)
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-transport Dedicated Transport
+  GROUP live-r2-fabius-enhanced-live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-group Fabius Bile
+  GROUP live-r2-fulgrim-blessing-live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-group Special Upgrades
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-vets name=Legion Veterans type=model hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-apoth name=Legion Apothecary type=upgrade hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE LINK:Apothecary Armoury: r36-exact-apothecary-armoury-6175282
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-standard name=Legion Standard Bearer type=upgrade hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE LINK:Standard Bearer Armoury: r36-exact-standard-bearer-armoury-7b03aca
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-standards Standard
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-champ name=Legion Champion type=upgrade hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE LINK:Champion Armoury: r36-exact-champion-armoury-c8775ab
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-r69-centurion-command-bikes name=Space Marine Bikes (entire squad) type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-r69-centurion-command-jetbikes name=Jetbikes (entire squad) type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-r71-nl-gen-10-stealth name=Stealth Adept — whole squad type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached. |  | Stealth: Adds +1 to the value of Cover Saves conferred by terrain, to a maximum of 2+. If in the open, receives a 6+ Cover Save. Does not stack with Shrouded.
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-r71-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee engagement.
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-jump name=Jump Packs (+15 pts/model) type=upgrade hidden=false cats=[] anc=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-bike name=Space Marine Bikes (+20 pts/model) type=upgrade hidden=false cats=[] anc=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-jet name=Jetbikes (+35 pts/model) type=upgrade hidden=false cats=[] anc=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-land-land-raider-phobos name=Land Raider Phobos type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-land-land-raider-proteus name=Land Raider Proteus type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-land-land-raider-achilles name=Land Raider Achilles type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (Scions of Iron) type=upgrade hidden=true cats=[] anc=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (Scions of Iron) type=upgrade hidden=true cats=[] anc=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-fabius-enhanced-live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command name=Enhanced Warriors type=upgrade hidden=false cats=[] anc=Fabius Bile > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack
+
+ENTRY id=live-r2-fulgrim-blessing-live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command name=Blessing of Slaanesh type=upgrade hidden=false cats=[] anc=Special Upgrades > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-termcommand name=Legion Terminator Command Squad type=unit hidden=false cats=[] anc=Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Standard Wargear: Five Terminator Veterans, each equipped with the selected Terminator Armour pattern, a Combi-Bolter and a Power Weapon.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close combat, and does not suffer extra wounds from being ca
+  RULE Retinue: May only be selected for an eligible HQ character equipped with Terminator, Tartaros or Cataphractii Terminator Armour. It occupies no separate Force Organisation slot; the character and squad count as one HQ selection but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-armour Terminator Armour Pattern
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-ranged Combi-Bolter Replacements (per model)
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-melee Power Weapon Replacements (per model)
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-pair Replace both Combi-Bolter and Power Weapon
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-heavy Heavy Weapon (one model only)
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-transport Dedicated Transport
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-vets name=Terminator Veterans type=model hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-apoth name=Terminator Apothecary type=upgrade hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE LINK:Terminator Apothecary: r36-exact-terminator-apothecary-4682517
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-standard name=Terminator Standard Bearer type=upgrade hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE LINK:Terminator Standard Bearer: r36-exact-terminator-standard-bearer-7642801
+  GROUP live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-standards Standard
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-champ name=Terminator Champion type=upgrade hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE LINK:Terminator Champion: r36-exact-terminator-champion-3460859
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-r73-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon > Legiones Astartes
+  RULE Beyond Judgement: Under Horror Cult this unit purchases Beyond Judgement for +25 points. Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model; multiple Trophies penalties remain non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those unit
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-land-land-raider-phobos name=Land Raider Phobos type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-land-land-raider-proteus name=Land Raider Proteus type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon
+
+ENTRY id=live-r2-r41-unit-xviii-5-artellus-numeon-retinue-2-hq-praetor-ret-tc-land-land-raider-achilles name=Land Raider Achilles type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Artellus Numeon
+
+ENTRY id=r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan name=Lord Chaplain Nomus Rhy'tan type=unit hidden=false cats=[('HQ', 'cat-hq', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-options Options
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue Retinue (does not occupy a separate FOC slot)
+
+ENTRY id=r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false cats=[] anc=Options > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Option restriction: • Nomus Rhy'tan may take:
+
+ENTRY id=r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false cats=[] anc=Options > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Option restriction: • Nomus Rhy'tan may take:
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad name=Firedrake Terminator Squad type=unit hidden=false cats=[] anc=Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-options Options
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Firedrake Terminator Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade hidden=false cats=[] anc=Options > Firedrake Terminator Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-opt-1-multi-melta name=Multi-Melta type=upgrade hidden=false cats=[] anc=Options > Firedrake Terminator Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command name=Legion Command Squad type=unit hidden=false cats=[] anc=Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Standard Wargear: Five Legion Veterans, each equipped with Power Armour, Bolt Pistol, Chainsword and Frag Grenades.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close combat, and does not suffer extra wounds from being ca
+  RULE Retinue: May only be selected for an eligible HQ character. It occupies no separate Force Organisation slot; character and Command Squad count as one HQ choice but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-weapons Weapon Replacements (each model may replace Bolt Pistol and/or Chainsword)
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-eq Per-model Equipment
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-mob Squad Mobility (only if the selecting HQ has the same mobility)
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-transport Dedicated Transport
+  GROUP live-r2-fabius-enhanced-live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-group Fabius Bile
+  GROUP live-r2-fulgrim-blessing-live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-group Special Upgrades
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-vets name=Legion Veterans type=model hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-apoth name=Legion Apothecary type=upgrade hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE LINK:Apothecary Armoury: r36-exact-apothecary-armoury-6175282
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-standard name=Legion Standard Bearer type=upgrade hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE LINK:Standard Bearer Armoury: r36-exact-standard-bearer-armoury-7b03aca
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-standards Standard
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-champ name=Legion Champion type=upgrade hidden=false cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE LINK:Champion Armoury: r36-exact-champion-armoury-c8775ab
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-r69-centurion-command-bikes name=Space Marine Bikes (entire squad) type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Space Marine Bikes for +20 points per model. A mounted retinue may not select a Dedicated Transport.
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-r69-centurion-command-jetbikes name=Jetbikes (entire squad) type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Mounted Retinue: Available when the selecting character is mounted as stated in its entry. Every model in this retinue takes the same Jetbikes for +35 points per model. A mounted retinue may not select a Dedicated Transport.
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-r71-nl-gen-10-stealth name=Stealth Adept — whole squad type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Stealth Adept — whole squad: Every model in the unit gains Stealth. Models in Terminator Armour, Bikes, Jetbikes, Dreadnoughts and Vehicles are not eligible. An attached Independent Character must also possess Stealth Adept or the unit may not benefit while attached. |  | Stealth: Adds +1 to the value of Cover Saves conferred by terrain, to a maximum of 2+. If in the open, receives a 6+ Cover Save. Does not stack with Shrouded.
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-r71-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true cats=[] anc=Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Beyond Judgement: Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model. Trophies penalties are non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee engagement.
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-jump name=Jump Packs (+15 pts/model) type=upgrade hidden=false cats=[] anc=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-bike name=Space Marine Bikes (+20 pts/model) type=upgrade hidden=false cats=[] anc=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-jet name=Jetbikes (+35 pts/model) type=upgrade hidden=false cats=[] anc=Squad Mobility (only if the selecting HQ has the same mobility) > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-land-land-raider-phobos name=Land Raider Phobos type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-land-land-raider-proteus name=Land Raider Proteus type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-land-land-raider-achilles name=Land Raider Achilles type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-r83-ih-scions-14-hq-praetor-ret-honour-land-land-raider-phobos name=Land Raider Phobos (Scions of Iron) type=upgrade hidden=true cats=[] anc=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-r83-ih-scions-15-hq-praetor-ret-honour-land-land-raider-proteus name=Land Raider Proteus (Scions of Iron) type=upgrade hidden=true cats=[] anc=Dedicated Transport > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-fabius-enhanced-live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command name=Enhanced Warriors type=upgrade hidden=false cats=[] anc=Fabius Bile > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Enhanced Warriors: This squad has been enhanced by Fabius Bile for +3 points per model. After deployment but before the first turn, roll a D6 for this squad: 1 — Berserk Rage: make an Armour Save for every model; remove each failure, and survivors gain +1 Strength. 2–5 — Stable Mutation: every model gains +1 Strength and +1 Initiative. 6 — Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack
+
+ENTRY id=live-r2-fulgrim-blessing-live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command name=Blessing of Slaanesh type=upgrade hidden=false cats=[] anc=Special Upgrades > Legion Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Blessing of Slaanesh: Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-termcommand name=Legion Terminator Command Squad type=unit hidden=false cats=[] anc=Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Standard Wargear: Five Terminator Veterans, each equipped with the selected Terminator Armour pattern, a Combi-Bolter and a Power Weapon.
+  RULE Legiones Astartes: Every model has Legiones Astartes and And They Shall Know No Fear as presented in ProHammer Classic, and is not Fearless. |  | And They Shall Know No Fear: Automatically passes Regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, the unit automatically regroups and is re-engaged in close combat, and does not suffer extra wounds from being ca
+  RULE Retinue: May only be selected for an eligible HQ character equipped with Terminator, Tartaros or Cataphractii Terminator Armour. It occupies no separate Force Organisation slot; the character and squad count as one HQ selection but may deploy and operate separately.
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-armour Terminator Armour Pattern
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-ranged Combi-Bolter Replacements (per model)
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-melee Power Weapon Replacements (per model)
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-pair Replace both Combi-Bolter and Power Weapon
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-heavy Heavy Weapon (one model only)
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-transport Dedicated Transport
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-vets name=Terminator Veterans type=model hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-apoth name=Terminator Apothecary type=upgrade hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE LINK:Terminator Apothecary: r36-exact-terminator-apothecary-4682517
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-standard name=Terminator Standard Bearer type=upgrade hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE LINK:Terminator Standard Bearer: r36-exact-terminator-standard-bearer-7642801
+  GROUP live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-standards Standard
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-champ name=Terminator Champion type=upgrade hidden=false cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE LINK:Terminator Champion: r36-exact-terminator-champion-3460859
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-r73-nl-bj-11 name=Beyond Judgement — Trophies of Judgement & Fear type=upgrade hidden=true cats=[] anc=Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan > Legiones Astartes
+  RULE Beyond Judgement: Under Horror Cult this unit purchases Beyond Judgement for +25 points. Every model is treated as equipped with Trophies of Judgement and the unit gains Fear. Measure the 8-inch Leadership penalty from any model; multiple Trophies penalties remain non-cumulative. |  | Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those unit
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-land-land-raider-phobos name=Land Raider Phobos type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-land-land-raider-proteus name=Land Raider Proteus type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan
+
+ENTRY id=live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-2-hq-praetor-ret-tc-land-land-raider-achilles name=Land Raider Achilles type=model hidden=false cats=[] anc=Land Raider Dedicated Transport > Dedicated Transport > Legion Terminator Command Squad > Retinue (does not occupy a separate FOC slot) > Lord Chaplain Nomus Rhy'tan
+
+ENTRY id=r41-unit-xviii-7-xiaphas-jurr-prophet-of-fire name=Xiaphas Jurr, Prophet of Fire type=unit hidden=false cats=[('HQ', 'cat-hq', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-7-xiaphas-jurr-prophet-of-fire-options Options
+
+ENTRY id=r41-unit-xviii-7-xiaphas-jurr-prophet-of-fire-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false cats=[] anc=Options > Xiaphas Jurr, Prophet of Fire > Legiones Astartes
+  RULE Option restriction: • Xiaphas Jurr may take:
+
+ENTRY id=r41-unit-xviii-7-xiaphas-jurr-prophet-of-fire-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false cats=[] anc=Options > Xiaphas Jurr, Prophet of Fire > Legiones Astartes
+  RULE Option restriction: • Xiaphas Jurr may take:
+
+ENTRY id=r41-unit-xviii-8-cassian-dracos name=Cassian Dracos type=unit hidden=false cats=[('Elites', 'cat-elites', 'true')] anc=Legiones Astartes
+
+ENTRY id=r41-unit-xviii-9-forgefather-t-kell name=Forgefather T'Kell type=unit hidden=false cats=[('HQ', 'cat-hq', 'true')] anc=Legiones Astartes
+  GROUP r41-unit-xviii-9-forgefather-t-kell-options Options
+
+ENTRY id=r41-unit-xviii-9-forgefather-t-kell-opt-0-krak-grenades name=Krak grenades type=upgrade hidden=false cats=[] anc=Options > Forgefather T'Kell > Legiones Astartes
+  RULE Option restriction: • T'Kell may take:
+
+ENTRY id=r41-unit-xviii-9-forgefather-t-kell-opt-1-melta-bombs name=Melta bombs type=upgrade hidden=false cats=[] anc=Options > Forgefather T'Kell > Legiones Astartes
+  RULE Option restriction: • T'Kell may take:
+
+ENTRY id=r41-unit-xviii-10-xviii-vulkan-the-forgefather name=Vulkan, the Forgefather type=unit hidden=false cats=[('Lords of War', 'cat-low', 'true')] anc=Legiones Astartes
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad name=Pyroclast Squad type=unit hidden=true cats=[('Troops', 'cat-troops', 'true')] anc=Legiones Astartes
+  RULE Rite of War Interaction: The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry. | EFFECTS | DISCIPLES OF THE FLAME | Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non-compulsory Troops choices. | They may not fulfil co
+  RULE Builder compatibility: Removed 1 obsolete armoury link(s) inherited from the generic source entry while creating this Rite-specific battlefield-role copy.
+  GROUP r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-options Options
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Pyroclast Squad > Legiones Astartes
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-0-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-1-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-2-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-3-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r42-role-xviii-0-effects-disciples-of-the-flame-pyroclast-squads-r41-unit-xviii-1-pyroclast-squad-opt-5-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > Pyroclast Squad > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad name=Salamanders Infernus Destroyer Squad type=unit hidden=true cats=[('Troops', 'cat-troops', 'true')] anc=Legiones Astartes
+  RULE Rite of War Interaction: The Covenant of Fire represents the characteristic method of war taught by Vulkan: an inexorable advance through the enemy's strongest resistance, protected by master-crafted armour and supported by overwhelming flame and melta weaponry. | EFFECTS | DISCIPLES OF THE FLAME | Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non-compulsory Troops choices. | They may not fulfil co
+  RULE Builder compatibility: Removed 1 obsolete armoury link(s) inherited from the generic source entry while creating this Rite-specific battlefield-role copy.
+  GROUP r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-options Options
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional name=Squad Models type=model hidden=false cats=[] anc=Salamanders Infernus Destroyer Squad > Legiones Astartes
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-0-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-1-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs name=Jump Packs (base unit; +15 pts/model) type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-3-heavy-flamer-with-suspensor-we name=Heavy Flamer with Suspensor Web type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-4-multi-melta-with-suspensor-web name=Multi-Melta with Suspensor Web type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-5-volkite-serpenta name=Volkite Serpenta type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-6-plasma-pistol name=Plasma Pistol type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw name=Lightning claw type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-10-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-11-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r42-role-xviii-0-salamanders-infernus-destroyer-squads-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-12-inferno-pistol name=Inferno Pistol type=upgrade hidden=false cats=[] anc=Options > Salamanders Infernus Destroyer Squad > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace either Hand Flamer with:
+
+ENTRY id=r46-al-reward-53 name=FIREDRAKE TERMINATOR SQUAD — Rewards of Treachery type=unit hidden=false cats=[('Elites', 'cat-elites', 'true'), ('Rewards of Treachery Limit', 'cat-alpha-reward', None)] anc=Legiones Astartes
+  RULE Source Entry: Firedrake | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 2+/5+ | Firedrake Master | 5 | 4 | 4 | 4 | 1 | 4 | 3 | 10 | 2+/5+ | Force Organisation: | DRAGONSCALE STORM SHIELD A model equipped with a Dragonscale Storm Shield has a 4+ Invulnerable Save in close combat and against shooting attacks made with Flame or Melta weapons. Against all other shooting attacks, the shield provides a 5+ Invulnerable Save. FIREDRAKE RE
+  RULE LINK:The Rewards of Treachery: r36-exact-the-rewards-of-treachery-f8167f5
+  GROUP r46-al-reward-53-r41-unit-xviii-0-firedrake-terminator-squad-options Options
+
+ENTRY id=r46-al-reward-53-r41-unit-xviii-0-firedrake-terminator-squad-additional name=Squad Models type=model hidden=false cats=[] anc=FIREDRAKE TERMINATOR SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-53-r41-unit-xviii-0-firedrake-terminator-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade hidden=false cats=[] anc=Options > FIREDRAKE TERMINATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=r46-al-reward-53-r41-unit-xviii-0-firedrake-terminator-squad-opt-1-multi-melta name=Multi-Melta type=upgrade hidden=false cats=[] anc=Options > FIREDRAKE TERMINATOR SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, up to two Firedrakes may replace their Dragonscale Storm Shield with:
+
+ENTRY id=r46-al-reward-54 name=PYROCLAST SQUAD — Rewards of Treachery type=unit hidden=false cats=[('Elites', 'cat-elites', 'true'), ('Rewards of Treachery Limit', 'cat-alpha-reward', None)] anc=Legiones Astartes
+  RULE Source Entry: Pyroclast | 4 | 4 | 4 | 4 | 1 | 4 | 1 | 9 | 2+ | Pyroclast Warden | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 10 | 2+ | Force Organisation: | • Elites | Unit Composition: | • 4 Pyroclasts | • 1 Pyroclast Warden | Unit Type: | • Infantry | • The Pyroclast Warden is a Character | Wargear: | • Artificer Armour | • Pyroclast Flame Projector | • Bolt pistol | • Close-combat weapon | • Frag grenades | Special Rules: | • Legiones Astartes (Salamanders
+  RULE LINK:The Rewards of Treachery: r36-exact-the-rewards-of-treachery-f8167f5
+  GROUP r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-options Options
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-additional name=Squad Models type=model hidden=false cats=[] anc=PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-0-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-1-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-2-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-3-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-4-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r46-al-reward-54-r41-unit-xviii-1-pyroclast-squad-opt-5-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > PYROCLAST SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Pyroclast Warden may replace his Close-combat weapon with:
+
+ENTRY id=r46-al-reward-55 name=SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery type=unit hidden=false cats=[('Elites', 'cat-elites', 'true'), ('Rewards of Treachery Limit', 'cat-alpha-reward', None)] anc=Legiones Astartes
+  RULE Source Entry: Infernus Destroyer | 4 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | Infernus Sergeant | 4 | 4 | 4 | 4 | 1 | 4 | 3 | 9 | 3+ | Force Organisation | DUAL PISTOLS The unit uses the normal Dual Pistols rule from the Legiones Astartes Army List. DESTROYER CADRE An Infernus Destroyer Squad may only be joined by a Legion Moritat or another Character specifically stated to be permitted to join Destroyer units. | • Elites | Un
+  RULE LINK:The Rewards of Treachery: r36-exact-the-rewards-of-treachery-f8167f5
+  GROUP r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-options Options
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-additional name=Squad Models type=model hidden=false cats=[] anc=SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-0-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-1-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-2-jump-packs name=Jump Packs (base unit; +15 pts/model) type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +15 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-3-heavy-flamer-with-suspensor-web name=Heavy Flamer with Suspensor Web type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-4-multi-melta-with-suspensor-web name=Multi-Melta with Suspensor Web type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Infernus Destroyer may replace one Hand Flamer with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-5-volkite-serpenta name=Volkite Serpenta type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-6-plasma-pistol name=Plasma Pistol type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • Any model may replace either Hand Flamer with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-7-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-8-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-9-lightning-claw name=Lightning claw type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-10-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-11-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-55-r41-unit-xviii-2-salamanders-infernus-destroyer-squad-opt-12-inferno-pistol name=Inferno Pistol type=upgrade hidden=false cats=[] anc=Options > SALAMANDERS INFERNUS DESTROYER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Infernus Sergeant may replace either Hand Flamer with:
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-additional name=Squad Models type=model hidden=false cats=[] anc=ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-0-heavy-flamer name=Heavy Flamer type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Adherent may replace his Combi-flamer with:
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-1-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-2-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-3-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Adherent Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-4-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-5-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Adherent Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-6-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Adherent Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-56-r41-unit-xviii-3-adherent-squad-opt-7-artificer-armour name=Artificer Armour type=upgrade hidden=false cats=[] anc=Options > ADHERENT SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Sergeant may take:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-additional name=Squad Models type=model hidden=false cats=[] anc=SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-0-second-bolt-pistol name=Second Bolt pistol type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-1-rotor-cannon name=Rotor Cannon type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-2-two-hand-flamers name=Two Hand Flamers type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter and Bolt pistol with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-3-two-volkite-serpentae name=Two Volkite Serpentae type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • Any Sanctifier may replace his Bolter and Bolt pistol with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-4-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • For every five models in the squad, one Sanctifier may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-5-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-6-krak-grenades name=Krak grenades (base unit; +2 pts/model) type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +2 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-7-melta-bombs name=Melta bombs (base unit; +5 pts/model) type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: • The entire squad may take:
+  RULE Squad-wide cost note: The source prices this option at +5 points per model. The displayed selection charges the parsed base unit only; apply the same per-model surcharge for any additional models selected.
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-8-rending-weapon name=Rending Weapon type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-9-power-weapon name=Power weapon type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-10-lightning-claw name=Lightning claw type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-11-power-fist name=Power fist type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-12-thunder-hammer name=Thunder hammer type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Sanctifier Sergeant may replace his Chainsword with:
+
+ENTRY id=r46-al-reward-57-r41-unit-xviii-4-sanctifier-squad-opt-13-artificer-armour name=Artificer Armour type=upgrade hidden=false cats=[] anc=Options > SANCTIFIER SQUAD — Rewards of Treachery > Legiones Astartes
+  RULE Option restriction: The Sergeant may take:
