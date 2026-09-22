@@ -114,6 +114,23 @@ def reward_visibility(e,loyalty):
     modifier(e,e.get("id")+"-show-pech","set","hidden","false",base)
 
 ids={x.get("id"):x for x in cr.iter() if x.get("id")}
+
+# Repair three legacy universal-gear target IDs still used by a few donor entries.
+# These are catalogue-wide stale links, so fix the source entries before Rewards cloning.
+LEGACY_TARGET_MAP={
+    "gear-artificer-armour":"gear-hq-artificer",
+    "gear-thunder-hammer":"gear-thunder",
+    "gear-rotor-cannon":"gear-rotor",
+}
+legacy_target_repairs=0
+for link in cr.iter(C("entryLink")):
+    old=link.get("targetId")
+    if old in LEGACY_TARGET_MAP:
+        new=LEGACY_TARGET_MAP[old]
+        if new not in ids:raise RuntimeError(f"Replacement target {new} missing for {old}")
+        link.set("targetId",new);legacy_target_repairs+=1
+ids={x.get("id"):x for x in cr.iter() if x.get("id")}
+
 shared_rules=cr.find(C("sharedRules"))
 def shared_rule(name):
     x=next((z for z in shared_rules.findall(C("rule")) if (z.get("name") or "").casefold()==name.casefold()),None)
@@ -298,7 +315,7 @@ f"- {la_units} donor units with a named Legiones Astartes rule were converted to
 "- Donor core Legion rules are stripped unless the unit's own old source entry explicitly listed that rule/equipment; unit-specific rules/options are retained.",
 f"- Preserved explicit donor allegiance gates on {loyalty_kept} Rewards where the current donor unit has a Loyalist/Traitor availability condition.",
 f"- Added Alpha Legion Teleportation Transponders to {term_units} eligible all-Terminator Rewards units.",
-"- Current donor stat profiles/options replace the old Source Entry-era clones; no Reward contains a Source Entry dump.","",
+"- Current donor stat profiles/options replace the old Source Entry-era clones; no Reward contains a Source Entry dump.",\nf"- Repaired {legacy_target_repairs} legacy catalogue links using retired Artificer Armour / Thunder Hammer / Rotor Cannon target IDs before cloning.","",
 "NATIVE CLEANUP:",
 f"- Removed {legacy_ret_removed} obsolete imported retinue group(s) left beside the new Dynat/Pech retinue selectors.","",
 "VALIDATION:"
