@@ -1,0 +1,13 @@
+name: Diagnose R57 Centurion Psychic UI
+on:
+  push:
+    paths: ['.github/workflows/diag-r57-centurion-psychic-ui.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r57_centurion_psychic_ui.py
