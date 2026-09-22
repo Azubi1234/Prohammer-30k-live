@@ -1,5 +1,5 @@
 name: Apply Live R41 Universal Wargear and FOC Visibility
-# retry with optimized universalisation
+# retry with Iron Halo army limit and hardened universalisation
 on:
   push:
     paths:
@@ -20,9 +20,12 @@ jobs:
           import xml.etree.ElementTree as ET
           c=ET.parse('Legiones Astartes.cat').getroot()
           i=open('index.xml',encoding='utf-8').read()
+          g=ET.parse('Prohammer 30k.gst').getroot()
           assert c.get('revision')=='41'
-          assert c.get('gameSystemRevision')=='5'
+          assert c.get('gameSystemRevision')=='6'
+          assert g.get('revision')=='6'
           assert 'dataRevision="41"' in i
+          assert 'dataRevision="6"' in i
           assert 'ns0:' not in i
           print('Verified R41')
           PY
@@ -30,6 +33,6 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add 'Legiones Astartes.cat' index.xml inspection-live-r41-universal-wargear-rite-visibility.txt
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r41-universal-wargear-rite-visibility.txt
           git diff --cached --quiet || git commit -m "Live R41: universal wargear and conditional FOC cleanup"
           git push
