@@ -1,0 +1,17 @@
+Veteran melee scaling fix: CAT 59 -> 60
+- Removed old repeat-based scaler: 0
+- Close Combat Weapon Replacements now cap at total squad size:
+  5 models -> 5 replacements
+  6 models -> 6 replacements
+  7 models -> 7 replacements
+  8 models -> 8 replacements
+  9 models -> 9 replacements
+  10 models -> 10 replacements
+- Veteran Sergeant is correctly included in the allowance.
+
+VALIDATION:
+- PASS: revision bumped
+- PASS: base 5-man cap
+- PASS: old repeat scaler removed
+- PASS: 6-man threshold
+- PASS: 10-man threshold
