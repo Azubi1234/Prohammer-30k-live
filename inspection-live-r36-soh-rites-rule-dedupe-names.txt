@@ -1,0 +1,144 @@
+Live R36 — Sons of Horus Rites, shared-rule de-duplication, unit-name cleanup
+Input CAT=35/GST=1 -> CAT=36/GST=2
+
+SONS OF HORUS RITES:
+- The Long March split into functional/readable rule components; Traitor gating retained.
+- Long March Terminator Troops copy retained as non-compulsory and a hidden requirement now forces two other compulsory-capable Troops.
+- The Black Reaving Reaver Troops copy is gated to the Rite and counts toward a hidden compulsory-Reaver requirement.
+- Black Reaving now mechanically requires a Legion Master of Signals Consul.
+- Black Reaving now mechanically requires Fast Attack selections >= Heavy Support selections.
+- Battlefield-only effects (Relentless March zones, Cthonian Encirclement deployment, Lodge Ceremony, Cut Them Apart) remain rule text because they depend on in-game state.
+
+RULE DE-DUPLICATION:
+- Converted 570 local standard-rule blocks into references to canonical shared rules.
+- Created/reused 166 additional shared rules for exact duplicate static definitions and converted 2253 local copies.
+- Standard ProHammer rules, Deep Strike, Independent Character, Master of the Legion, Primarch, Armoured Ceramite, Armoured Cockpit, Auxiliary Drive, Flare Shield and Implacable Advance now use shared rule definitions.
+- Conditions/costs remain on their selectors; the named rule itself is referenced once rather than redefined repeatedly.
+
+DISPLAY NAMES:
+- Normalised 108 all-caps unit entries/copies to normal display capitalization.
+- Tagged 54 Troops entries as eligible Long March compulsory Troops.
+
+VALIDATION:
+- PASS: CAT revision 36
+- PASS: CAT points at GST revision 2
+- PASS: GST revision 2
+- PASS: Index CAT 36
+- PASS: Index GST 2
+- PASS: No ns0 prefixes
+- PASS: Canonical standard rules exist only as shared rules
+- PASS: No all-caps unit display names
+- PASS: Black Reaving Master of Signals force requirement
+- PASS: Black Reaving compulsory Reaver force requirement
+- PASS: Long March compulsory Troops force requirement
+- PASS: Black Reaving Fast>=Heavy modifier
+
+UNIT NAME CHANGES:
+- INVICTARUS SUZERAIN SQUAD -> Invictarus Suzerain Squad
+- DEATHSHROUD TERMINATORS -> Deathshroud Terminators
+- DEATHSHROUD TERMINATORS -> Deathshroud Terminators
+- PALATINE BLADE SQUAD -> Palatine Blade Squad
+- PHOENIX TERMINATOR SQUAD -> Phoenix Terminator Squad
+- KAKOPHONI SQUAD -> Kakophoni Squad
+- SUN KILLER SQUAD -> Sun Killer Squad
+- TYRANT SIEGE TERMINATOR SQUAD -> Tyrant Siege Terminator Squad
+- IRON HAVOC SQUAD -> Iron Havoc Squad
+- DOMINATOR COHORT -> Dominator Cohort
+- IRON CIRCLE DOMITAR-FERRUM MANIPLE -> Iron Circle Domitar-Ferrum Maniple
+- GOLDEN KESHIG SQUADRON -> Golden Keshig Squadron
+- EBON KESHIG -> Ebon Keshig
+- DARK SONS OF DEATH -> Dark Sons of Death
+- FALCON’S CLAWS -> Falcon’s Claws
+- DAWNBREAKER COHORT -> Dawnbreaker Cohort
+- CRIMSON PALADIN SQUAD -> Crimson Paladin Squad
+- ANGEL'S TEARS SQUAD -> Angel's Tears Squad
+- OFANIM COURT -> Ofanim Court
+- GRAV CHARIOT SQUADRON -> Grav Chariot Squadron
+- SANGUINARY GUARD -> Sanguinary Guard
+- AZKAELLON -> Azkaellon
+- MEDUSAN IMMORTAL SQUAD -> Medusan Immortal Squad
+- GORGON TERMINATOR SQUAD -> Gorgon Terminator Squad
+- MORLOCK TERMINATOR SQUAD -> Morlock Terminator Squad
+- VENERABLE FORGE LORD -> Venerable Forge Lord
+- RAMPAGER SQUAD -> Rampager Squad
+- RED BUTCHER SQUAD -> Red Butcher Squad
+- RED HAND DESTROYER MORTALIS SQUAD -> Red Hand Destroyer Mortalis Squad
+- WORLD EATERS INDUCTII SQUAD -> World Eaters Inductii Squad
+- DEVOURER TERMINATOR SQUAD -> Devourer Terminator Squad
+- TRIARII BREACHER SQUAD -> Triarii Breacher Squad
+- RAMPAGER SQUAD -> Rampager Squad
+- RED HAND DESTROYER MORTALIS SQUAD -> Red Hand Destroyer Mortalis Squad
+- TRIARII BREACHER SQUAD -> Triarii Breacher Squad
+- DEVOURER TERMINATOR SQUAD -> Devourer Terminator Squad
+- INVICTARUS SUZERAIN SQUAD -> Invictarus Suzerain Squad
+- FULMENTARUS TERMINATOR SQUAD -> Fulmentarus Terminator Squad
+- LOCUTARUS STORM SQUAD -> Locutarus Storm Squad
+- NEMESIS DESTROYER SQUAD -> Nemesis Destroyer Squad
+- INVICTARUS SUZERAIN SQUAD -> Invictarus Suzerain Squad
+- INVICTARUS SUZERAIN SQUAD -> Invictarus Suzerain Squad
+- AEONID THIEL -> Aeonid Thiel
+- HONOURED TELEMECHRUS -> Honoured Telemechrus
+- INVICTARUS SUZERAIN SQUAD -> Invictarus Suzerain Squad
+- INVICTARUS SUZERAIN SQUAD -> Invictarus Suzerain Squad
+- DEATHSHROUD TERMINATORS -> Deathshroud Terminators
+- GRAVE WARDEN TERMINATOR SQUAD -> Grave Warden Terminator Squad
+- MORTUS POISONER SQUAD -> Mortus Poisoner Squad
+- DEATHSHROUD TERMINATORS -> Deathshroud Terminators
+- MORTUS POISONER SQUAD -> Mortus Poisoner Squad
+- DEATHSHROUD TERMINATORS -> Deathshroud Terminators
+- SEKHMET TERMINATOR CABAL -> Sekhmet Terminator Cabal
+- SEKHMET TERMINATOR CABAL -> Sekhmet Terminator Cabal
+- KHENETAI OCCULT BLADE CABAL -> Khenetai Occult Blade Cabal
+- AMMITARA OCCULT INTERCESSION CABAL -> Ammitara Occult Intercession Cabal
+- CASTELLAX-ACHEA MANIPLE -> Castellax-Achea Maniple
+- CONTEMPTOR-OSIRON DREADNOUGHT -> Contemptor-Osiron Dreadnought
+- NUMEROLOGIST CABAL -> Numerologist Cabal
+- AMMITARA OCCULT INTERCESSION CABAL -> Ammitara Occult Intercession Cabal
+- KHENETAI OCCULT BLADE CABAL -> Khenetai Occult Blade Cabal
+- SEKHMET TERMINATOR CABAL -> Sekhmet Terminator Cabal
+- JUSTAERIN TERMINATOR SQUAD -> Justaerin Terminator Squad
+- REAVER ATTACK SQUAD -> Reaver Attack Squad
+- CHIEFTAIN SQUAD -> Chieftain Squad
+- LUPERCI PACK -> Luperci Pack
+- JUSTAERIN TERMINATOR SQUAD -> Justaerin Terminator Squad
+- CHIEFTAIN SQUAD -> Chieftain Squad
+- REAVER ATTACK SQUAD -> Reaver Attack Squad
+- REAVER ATTACK SQUAD -> Reaver Attack Squad
+- COVENANT ZEALOT MOB -> Covenant Zealot Mob
+- GAL VORBAK DARK BRETHREN -> Gal Vorbak Dark Brethren
+- ASHEN CIRCLE -> Ashen Circle
+- MHARA GAL TAINTED DREADNOUGHT -> Mhara Gal Tainted Dreadnought
+- PROCURATOR SQUAD -> Procurator Squad
+- POSSESSED MARINE SQUAD -> Possessed Marine Squad
+- GAL VORBAK DARK BRETHREN -> Gal Vorbak Dark Brethren
+- ANAKATIS KUL BLADE-SLAVES -> Anakatis Kul Blade-Slaves
+- FIREDRAKE TERMINATOR SQUAD -> Firedrake Terminator Squad
+- PYROCLAST SQUAD -> Pyroclast Squad
+- SALAMANDERS INFERNUS DESTROYER SQUAD -> Salamanders Infernus Destroyer Squad
+- ADHERENT SQUAD -> Adherent Squad
+- SANCTIFIER SQUAD -> Sanctifier Squad
+- FIREDRAKE TERMINATOR SQUAD -> Firedrake Terminator Squad
+- FIREDRAKE TERMINATOR SQUAD -> Firedrake Terminator Squad
+- CASSIAN DRACOS -> Cassian Dracos
+- MOR DEYTHAN SQUAD -> Mor Deythan Squad
+- DARK FURY ASSAULT SQUAD -> Dark Fury Assault Squad
+- DELIVERER TERMINATOR SQUAD -> Deliverer Terminator Squad
+- RAPTOR SQUAD -> Raptor Squad
+- LEGION OPERATIVES -> Legion Operatives
+- HEADHUNTER KILL TEAM -> Headhunter Kill Team
+- LERNAEAN TERMINATOR SQUAD -> Lernaean Terminator Squad
+- EFFRIT DISRUPTION CADRE -> Effrit Disruption Cadre
+- LERNAEAN TERMINATOR SQUAD -> Lernaean Terminator Squad
+- LERNAEAN TERMINATOR SQUAD -> Lernaean Terminator Squad
+- KAKOPHONI SQUAD -> Kakophoni Squad
+- PHALANX WARDER SQUAD -> Phalanx Warder Squad
+- PHALANX WARDER SQUAD -> Phalanx Warder Squad
+- TEMPLAR BRETHREN SQUAD -> Templar Brethren Squad
+- RAMPAGER SQUAD -> Rampager Squad
+- SEKHMET TERMINATOR CABAL -> Sekhmet Terminator Cabal
+- SEKHMET TERMINATOR CABAL -> Sekhmet Terminator Cabal
+- REAVER ATTACK SQUAD -> Reaver Attack Squad
+- PYROCLAST SQUAD -> Pyroclast Squad
+- SALAMANDERS INFERNUS DESTROYER SQUAD -> Salamanders Infernus Destroyer Squad
+- HEADHUNTER KILL TEAM -> Headhunter Kill Team
+- EBON KESHIG -> Ebon Keshig
