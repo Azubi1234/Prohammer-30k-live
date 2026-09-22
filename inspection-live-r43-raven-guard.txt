@@ -1,0 +1,63 @@
+Live R43 — Raven Guard implementation
+Input CAT=42/GST=7 -> CAT=43/GST=8
+
+LEGION:
+- Rebuilt Surgical Strike, Rapid Reaction, Shadow Masters and Limited Vehicles as clean shared rules.
+- Limited Vehicles is mechanically enforced: Raven Guard Heavy Support selections may never exceed Fast Attack selections.
+- Raven Guard compulsory-capable Troops counter tags 55 legal Troops; Recon Squads count despite their normal Support Squad rule.
+- Applied the Shadow Masters 2-point Sniper Rifle discount to 2 Recon Sniper selectors and added 2-point IC Sniper access.
+
+ARMOURY:
+- Raven's Talons, Fulcrum Hand Cannon, Infravisor, Shroud Bombs, Cameleoline and Teleportation Transponders now use canonical shared rule/profile references.
+- Added 68 controlled Sergeant-armoury links for Fulcrum Hand Cannon/Infravisor instead of exposing them to ordinary models.
+- Raven's Talons on Veteran models scale with real squad size; Character Talons require a pair of Lightning Claws; IC Transponders require Terminator armour.
+
+UNITS:
+- Rebuilt Mor Deythan, Dark Furies, Deliverers and Raptors with real rules, dynamic squad-wide costs, model-scaled replacement limits and leader Armoury access.
+- Deliverers are roster-wide 0-1; Raptors are Loyalist-only and roster-wide 0-1.
+- Dark Furies use the 0-1 limit explicitly referenced by Agapito Nev; Agapito raises it to 0-2.
+- Deliverer transport capacity hides Land Raiders/Dreadclaws above five Terminator models.
+
+CHARACTERS:
+- Kaedes Nex is no longer a standalone HQ: he is a Destroyer Sergeant replacement.
+- Agapito Nev is no longer a standalone HQ: he is a Dark Fury Strike Leader replacement.
+- Nykona Sharrowkyn is no longer a standalone HQ: he replaces a Recon or Seeker Sergeant, with one shared roster-wide limit.
+- Alvarex Maun and Branne Nev remain genuine HQ choices with their rules restored.
+- Branne can take one no-slot Raptor Squad, still sharing the normal Raptor 0-1.
+- Corvus Corax is Loyalist-only, has functional Primarch retinue choices and the selectable Avenging Shadow variant.
+- The source lists Dangerous Weaponry for Kaedes Nex without defining a Raven Guard effect; R43 preserves the name and explicitly does not invent a rule.
+
+RITES:
+- Decapitation Strike: max one Heavy Support, max one Consul Centurion, Heavy Support Squads require Drop Pod/Dreadclaw, plus source battlefield effects.
+- Liberation Force: Loyalist-only and hides 80 entries whose own rules explicitly include Immobile or Slow and Purposeful. Militia/Fortification restrictions remain text where those external structures are unavailable.
+
+VALIDATION:
+- PASS: CAT43
+- PASS: GST8
+- PASS: CAT points GST8
+- PASS: Index43/8
+- PASS: r41-unit-xix-0-mor-deythan-squad no Source Entry
+- PASS: r41-unit-xix-1-dark-fury-assault-squad no Source Entry
+- PASS: r41-unit-xix-2-deliverer-terminator-squad no Source Entry
+- PASS: r41-unit-xix-3-raptor-squad no Source Entry
+- PASS: r41-unit-xix-4-kaedes-nex no Source Entry
+- PASS: r41-unit-xix-5-alvarex-maun no Source Entry
+- PASS: r41-unit-xix-6-agapito-nev no Source Entry
+- PASS: r41-unit-xix-7-branne-nev no Source Entry
+- PASS: r41-unit-xix-8-nykona-sharrowkyn no Source Entry
+- PASS: r41-unit-xix-9-xix-corvus-corax-the-raven-lord no Source Entry
+- PASS: r41-unit-xix-4-kaedes-nex not standalone
+- PASS: r41-unit-xix-6-agapito-nev not standalone
+- PASS: r41-unit-xix-8-nykona-sharrowkyn not standalone
+- PASS: Kaedes nested in Destroyers
+- PASS: Agapito nested in Dark Furies
+- PASS: Sharrowkyn Recon/Seeker replacements
+- PASS: Corax no numeral name
+- PASS: Raptor loyalist gated
+- PASS: Liberation loyalist gated
+- PASS: Decap HSS transport group exists
+- PASS: Heavy<=Fast category exists
+- PASS: Dark Fury/Deliverer/Raptor limits exist
+- PASS: Recon sniper discounted
+- PASS: Sergeant armoury RG gear propagated
+- PASS: No new/worsened duplicate IDs
