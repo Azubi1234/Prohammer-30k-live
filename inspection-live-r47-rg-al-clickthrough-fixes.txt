@@ -1,0 +1,30 @@
+Live R47 — Raven Guard / Alpha Legion click-through fixes
+Input CAT=46/GST=11 -> CAT=47/GST remains 11
+
+RAVEN GUARD:
+- Added Two Fulcrum Hand Cannons as a Raven Guard-only Moritat Pistol Pair option for +20 points, replacing both Bolt Pistols.
+- Corax's Raptor retinue now shows Krak Grenades at +10 points for the five-model minimum and Melta Bombs at +25, then scales +2/+5 for each model above five.
+
+ALPHA LEGION:
+- Moved Sheed Ranko out of the nested replacement subgroup and made him a direct +62-point upgrade inside Alpharius' Lernaean retinue.
+- Rebuilt Alpharius' Lernaean Dedicated Transport selector as a flat optional 0-1 choice so no Land Raider subgroup can be auto-selected.
+- Removed the normal Lernaean 0-1 category from Alpharius' retinue, as his Primarch Retinue rule explicitly exempts it.
+
+VALIDATION:
+- PASS: CAT47
+- PASS: GST dependency still 11
+- PASS: Index47
+- PASS: Fulcrum pair exists
+- PASS: Fulcrum pair costs 20
+- PASS: Fulcrum pair Raven Guard gated
+- PASS: r43-corax-ret-3-r43-rap-krak visible base price
+- PASS: r43-corax-ret-3-r43-rap-krak scales after five
+- PASS: r43-corax-ret-3-r43-rap-melta visible base price
+- PASS: r43-corax-ret-3-r43-rap-melta scales after five
+- PASS: Sheed direct in Alpharius Lernaeans
+- PASS: No nested Sheed group
+- PASS: Flat optional Alpharius transport group
+- PASS: No nested Land Raider subgroup
+- PASS: No transport defaults
+- PASS: Alpharius retinue ignores normal Lernaean 0-1
+- PASS: No new/worsened duplicate IDs
