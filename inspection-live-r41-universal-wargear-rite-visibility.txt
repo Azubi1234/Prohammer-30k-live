@@ -1,0 +1,62 @@
+Live R41 — universal wargear + conditional FOC cleanup
+Input CAT=40/GST=5 -> CAT=41/GST=6
+
+RITE / CHARACTER FOC VISIBILITY:
+- Gal Vorbak Serrated Sun Troops are hidden by default and appear only with Word Bearers + Traitor + Last of the Serrated Sun.
+- Ashen Circle Reign of Fire Troops are hidden by default and appear only with Word Bearers + Traitor + Zardu Layak selected as Warlord.
+- Pyroclast and Salamanders Infernus Destroyer Troops are hidden by default and appear only with Salamanders + Covenant of Fire.
+- Removed copied/base visibility modifiers that were accidentally revealing these alternate FOC entries without their enabler.
+
+SALAMANDERS MANTLE:
+- The Mantle is now a separate Additional Wargear selector for generic Praetors and Centurions.
+- It is completely independent of Power Armour, Artificer Armour and all Terminator Armour choices.
+- Removed 2 older generic Mantle link(s) before creating the dedicated selector.
+- Existing army-wide 0–1 handling, including Numeon and Nomus counting as the Mantle, remains intact.
+
+UNIVERSAL WARGEAR:
+- Converted 2899 compatible local leaf wargear definitions into links to universal shared wargear entries.
+- Created 145 new universal shared wargear definitions where repeated local items had one compatible definition.
+- Reused existing shared wargear canonicals across 71 duplicate-name groups.
+- Left 1267 context-specific entries local because their actual rule/profile payload differed from the canonical item.
+- Context-specific shared price/access wrappers with their own cost were deliberately retained so no discounts or Legion-specific prices were altered.
+- Costs, quantity limits, visibility conditions and replacement restrictions remain local to each selector/link; only the actual wargear definition is universal.
+- This is now the standing architecture: one actual wargear definition, many contextual links when prices or eligibility differ.
+- R40 already contained 22 historical duplicate XML ID values from older clone passes; R41 does not add or worsen any of them.
+
+IRON HALO:
+- Iron Halo is now mechanically max 1 across the entire army.
+- The Praetor's included Iron Halo counts immediately, so selecting a Praetor prevents any other model from taking another Iron Halo.
+- Detected and tagged 13 additional top-level Characters with built-in Iron Halos.
+- Purchased Iron Halos use the same army-wide counter.
+- Rosarius is explicitly outside this limit, matching the army-list rule.
+
+VALIDATION:
+- PASS: CAT revision 41
+- PASS: Index revision 41
+- PASS: CAT points to GST 6
+- PASS: GST revision 6
+- PASS: Index GST revision 6
+- PASS: r37-wb-serrated-gv-troops default hidden
+- PASS: r37-wb-serrated-gv-troops has one exact visibility modifier
+- PASS: r37-wb-serrated-gv-troops exact prerequisite set
+- PASS: r37-wb-zardu-ashen-troops default hidden
+- PASS: r37-wb-zardu-ashen-troops has one exact visibility modifier
+- PASS: r37-wb-zardu-ashen-troops exact prerequisite set
+- PASS: r40-sal-cov-pyro default hidden
+- PASS: r40-sal-cov-pyro has one exact visibility modifier
+- PASS: r40-sal-cov-pyro exact prerequisite set
+- PASS: r40-sal-cov-infernus default hidden
+- PASS: r40-sal-cov-infernus has one exact visibility modifier
+- PASS: r40-sal-cov-infernus exact prerequisite set
+- PASS: r41-sal-mantle-hq-praetor exists
+- PASS: r41-sal-mantle-hq-praetor contains Mantle link
+- PASS: r41-sal-mantle-hq-centurion exists
+- PASS: r41-sal-mantle-hq-centurion contains Mantle link
+- PASS: Mantle is not an armour replacement
+- PASS: Iron Halo hidden category exists
+- PASS: Iron Halo force max exists
+- PASS: Canonical Iron Halo counts
+- PASS: Praetor built-in Iron Halo counts
+- PASS: Rosarius does not count as Iron Halo
+- PASS: R41 introduces no new/worsened duplicate IDs
+- PASS: Universal wargear conversion performed
