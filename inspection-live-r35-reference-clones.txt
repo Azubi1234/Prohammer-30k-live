@@ -1,0 +1,14 @@
+Live R35 — rule-reference completeness and Sons of Horus clone audit
+Input CAT=34 -> target CAT=35
+
+CHANGES:
+- Expanded 88 remaining same-name ProHammer rule rows so availability/context rows also contain the actual rule effect.
+- Audited and patched Sons of Horus copies outside Rewards of Treachery: {'Justaerin': 6, 'Reaver': 4, 'Chieftain': 2, 'Luperci': 1}.
+- Normalised 122 additional Sons of Horus character-name clones.
+- Bumped catalogue/index to revision 35.
+
+VALIDATION:
+- PASS: CAT revision 35
+- PASS: Index revision 35
+- PASS: Canonical index
+- PASS: All ProHammer-named rule rows include their effect
