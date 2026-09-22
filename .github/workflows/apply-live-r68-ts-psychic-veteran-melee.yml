@@ -1,0 +1,32 @@
+name: Apply Live R68 TS Psychic Veteran Melee
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r68-ts-psychic-veteran-melee.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R68
+        run: python .github/build/live_r68_ts_psychic_veteran_melee.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='68'
+          assert c.get('gameSystemRevision')=='15'
+          assert 'dataRevision="68"' in i
+          print('Verified R68')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r68-ts-psychic-veteran-melee.txt
+          git diff --cached --quiet || git commit -m "Live R68: rebuild TS psychic UI and Veteran melee scaling"
+          git push
