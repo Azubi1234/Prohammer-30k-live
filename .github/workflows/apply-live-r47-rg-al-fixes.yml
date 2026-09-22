@@ -1,0 +1,27 @@
+name: Apply Live R47 RG AL Clickthrough Fixes
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r47-rg-al-fixes.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/live_r47_rg_al_clickthrough_fixes.py
+      - run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot();i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='47' and c.get('gameSystemRevision')=='11'
+          assert 'dataRevision="47"' in i
+          print('Verified R47')
+          PY
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r47-rg-al-clickthrough-fixes.txt
+          git diff --cached --quiet || git commit -m "Live R47: fix RG Moritat and Primarch retinues"
+          git push
