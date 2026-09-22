@@ -1,0 +1,32 @@
+name: Apply Live R49 Schema Link Repair
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r49-schema-link-repair.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R49
+        run: python .github/build/live_r49_schema_link_repair.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='49'
+          assert c.get('gameSystemRevision')=='11'
+          assert 'dataRevision="49"' in i
+          print('Verified R49')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r49-schema-entrylink-repair.txt
+          git diff --cached --quiet || git commit -m "Live R49: repair schema links and restore Thousand Sons"
+          git push
