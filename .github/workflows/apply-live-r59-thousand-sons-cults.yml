@@ -1,5 +1,5 @@
 name: Apply Live R59 Thousand Sons Cults
-# retry after scoped Veteran validation fix
+# retry after XV-root Cult validation fix
 on:
   push:
     paths: ['.github/workflows/apply-live-r59-thousand-sons-cults.yml']
