@@ -1,4 +1,5 @@
 name: Apply Live R40 Salamanders
+# retry after Inferno Pistol fix
 on:
   push:
     paths:
