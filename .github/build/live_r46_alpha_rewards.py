@@ -131,6 +131,15 @@ for link in cr.iter(C("entryLink")):
         link.set("targetId",new);legacy_target_repairs+=1
 ids={x.get("id"):x for x in cr.iter() if x.get("id")}
 
+# Repair duplicate modifier IDs left by the early Thousand Sons whole-squad scaler.
+# Modifier IDs are not referenced by other nodes, so suffixing the second occurrence is lossless.
+ts_duplicate_modifier_repairs=0
+for dupid in ["r18-ts-khenetai-scale--pts","r18-ts-ammitara-scale--pts"]:
+    matches=[x for x in cr.iter() if x.get("id")==dupid]
+    for j,x in enumerate(matches[1:],start=2):
+        x.set("id",dupid+f"-{j}");ts_duplicate_modifier_repairs+=1
+ids={x.get("id"):x for x in cr.iter() if x.get("id")}
+
 shared_rules=cr.find(C("sharedRules"))
 def shared_rule(name):
     x=next((z for z in shared_rules.findall(C("rule")) if (z.get("name") or "").casefold()==name.casefold()),None)
@@ -334,7 +343,7 @@ f"- {la_units} donor units with a named Legiones Astartes rule were converted to
 f"- Preserved explicit donor allegiance gates on {loyalty_kept} Rewards where the current donor unit has a Loyalist/Traitor availability condition.",
 f"- Added Alpha Legion Teleportation Transponders to {term_units} eligible all-Terminator Rewards units.",
 "- Current donor stat profiles/options replace the old Source Entry-era clones; no Reward contains a Source Entry dump.",
-f"- Repaired {legacy_target_repairs} legacy catalogue links using retired Artificer Armour / Thunder Hammer / Rotor Cannon target IDs before cloning.","",
+f"- Repaired {legacy_target_repairs} legacy catalogue links using retired Artificer Armour / Thunder Hammer / Rotor Cannon target IDs before cloning.",\nf"- Repaired {ts_duplicate_modifier_repairs} duplicate Thousand Sons squad-cost modifier IDs before cloning.","",
 "NATIVE CLEANUP:",
 f"- Removed {legacy_ret_removed} obsolete imported retinue group(s) left beside the new Dynat/Pech retinue selectors.","",
 "VALIDATION:"
