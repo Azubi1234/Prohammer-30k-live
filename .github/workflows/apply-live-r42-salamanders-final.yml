@@ -1,0 +1,33 @@
+name: Apply Live R42 Salamanders Final Restrictions
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r42-salamanders-final.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R42
+        run: python .github/build/live_r42_salamanders_final.py
+      - name: Verify
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot();g=ET.parse('Prohammer 30k.gst').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='42' and c.get('gameSystemRevision')=='7'
+          assert g.get('revision')=='7'
+          assert 'dataRevision="42"' in i and 'dataRevision="7"' in i
+          print('Verified R42')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r42-salamanders-final-restrictions.txt
+          git diff --cached --quiet || git commit -m "Live R42: finalize Salamanders restrictions"
+          git push
