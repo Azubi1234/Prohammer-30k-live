@@ -1,0 +1,19 @@
+name: Diagnose R64 TS Full Audit
+on:
+  push:
+    paths: ['.github/workflows/diag-r64-ts-full-audit.yml']
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r64_ts_full_audit.py > inspection-r64-ts-full-audit.txt
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r64-ts-full-audit.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R64: Thousand Sons full audit"
+          git push
