@@ -1,0 +1,19 @@
+name: Diagnose R61 TS Brotherhood
+on:
+  push:
+    paths: ['.github/workflows/diag-r61-ts-brotherhood.yml']
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r61_ts_brotherhood.py > inspection-r61-ts-brotherhood.txt
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r61-ts-brotherhood.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R61: TS Brotherhood psychic access"
+          git push
