@@ -1,0 +1,51 @@
+name: Apply Live R52 Loader Structure Repair
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r52-loader-repair.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R52
+        run: python .github/build/live_r52_loader_structure_repair.py
+      - name: Official schema delta gate vs known-working R47
+        run: |
+          pip install lxml
+          curl -L 'https://raw.githubusercontent.com/BSData/schemas/e8e59c70c8a5c9c74e5142a9c8e83aca6e38ddc9/src/xml/schema/v2_03/Catalogue.xsd' -o Catalogue.xsd
+          git show f660ddc59b32e4902b7ab911db49c018d7be5281:'Legiones Astartes.cat' > r47.cat
+          python - <<'PY'
+          from lxml import etree
+          import collections,re
+          schema=etree.XMLSchema(etree.parse('Catalogue.xsd'))
+          def errs(path):
+              doc=etree.parse(path);schema.validate(doc)
+              return collections.Counter((e.type_name,e.message) for e in schema.error_log)
+          a=errs('r47.cat');b=errs('Legiones Astartes.cat')
+          worse={k:v-a.get(k,0) for k,v in b.items() if v>a.get(k,0)}
+          print('R47 schema errors:',sum(a.values()),'R52 schema errors:',sum(b.values()))
+          print('New/increased vs R47:',worse)
+          assert not worse, worse
+          PY
+      - name: Verify revision
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='52'
+          assert c.get('gameSystemRevision')=='11'
+          assert 'dataRevision="52"' in i
+          print('Verified R52')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r52-loader-structure-repair.txt
+          git diff --cached --quiet || git commit -m "Live R52: repair New Recruit loader structure"
+          git push
