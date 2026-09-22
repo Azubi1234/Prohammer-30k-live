@@ -330,7 +330,8 @@ for oldvr,oldmodels,oldmelee in veteran_roots:
     ck(vr.get("id")+" melee base max5",maxc.get("value")=="5")
     mt=ET.tostring(melee,encoding="unicode")
     ck(vr.get("id")+" melee scales to 10",f'field="{maxc.get("id")}" value="10"' in mt and models.get("id") in mt)
-    ck(vr.get("id")+" no repeat max math","<ns0:repeats" not in mt and "<repeats" not in mt)
+    max_writers=[m for m in melee.findall(f"./{C('modifiers')}/{C('modifier')}") if m.get("field")==maxc.get("id")]
+    ck(vr.get("id")+" no repeat max math",all(m.find(C("repeats")) is None for m in max_writers))
     for cc_tag in ("entryLinks","selectionEntries"):
         cc=melee.find(C(cc_tag))
         if cc is None: continue
