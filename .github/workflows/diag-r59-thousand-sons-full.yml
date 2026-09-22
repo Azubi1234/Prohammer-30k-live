@@ -1,0 +1,13 @@
+name: Diagnose R59 Thousand Sons Full
+on:
+  push:
+    paths: ['.github/workflows/diag-r59-thousand-sons-full.yml']
+permissions: {contents: read}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r59_thousand_sons_full.py
