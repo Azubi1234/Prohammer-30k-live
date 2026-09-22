@@ -1,0 +1,75 @@
+Live R64 — Thousand Sons core psychic + Veteran scaling repair
+Input CAT63/GST15 -> CAT64/GST15
+
+GENERIC THOUSAND SONS CHARACTERS:
+- Legion Centurion/Consuls now display an explicit conditional Psyker (Mastery Level 1) rule.
+- The existing Centurion Cult -> correlated-power package was hardened and kept: one Cult, one power; Librarian Epistolary two powers.
+- Legion Praetor now displays an explicit conditional Psyker (Mastery Level 2) rule.
+- Replaced the broken old Praetor Cult -> Discipline -> Power chain (which referenced obsolete pre-R59 Cult IDs) with one direct package.
+- Praetor chooses one Cult and exactly two powers from its correlated Discipline.
+- Guard of the Crimson King Mastery Level 3 upgrade raises the same Cult-correlated power allowance to three.
+- Both character packages work for a normal XV Legion roster and for a Shattered Legions character assigned to the XV Legion.
+
+VETERANS:
+- Replaced legacy fixed/set melee caps on 10 live Veteran roots with a real model-count formula: 1 Sergeant + selected Legion Veterans.
+- Main Veteran squad therefore allows 5 melee replacements at 5 models and 10 at 10 models; individual weapon links no longer impose the lower cap.
+
+PSYCHIC BROTHERHOODS:
+- Hardened 5 Brotherhood-capable Veteran/Terminator roots.
+- Cult Power groups are no longer visibility-dependent on New Recruit recalculating a hidden group.
+- The group stays visible beside the Cult selector but has max 0 until Brotherhood of Psykers is selected; Brotherhood then sets min/max to exactly 1.
+- Existing R63 Cult gating remains: Pavoni->Biomancy, Raptora->Telekinesis, Corvidae->Divination, Athanaeans->Telepathy, Pyrae->Pyromancy.
+
+VALIDATION:
+- PASS: CAT64
+- PASS: GST dependency remains 15
+- PASS: Index64
+- PASS: Centurion ML1 shared rule exists
+- PASS: Praetor ML2 shared rule exists
+- PASS: Centurion conditional ML1 link exists
+- PASS: Praetor conditional ML2 link exists
+- PASS: Centurion package five Cults
+- PASS: Centurion Pavoni — Biomancy has powers
+- PASS: Centurion Raptora — Telekinesis has powers
+- PASS: Centurion Corvidae — Divination has powers
+- PASS: Centurion Athanaeans — Telepathy has powers
+- PASS: Centurion Pyrae — Pyromancy has powers
+- PASS: Praetor package five Cults
+- PASS: Praetor Pavoni — Biomancy has 7 powers
+- PASS: Praetor Pavoni — Biomancy base ML2 knows two
+- PASS: Praetor Pavoni — Biomancy ML3 supported
+- PASS: Praetor Raptora — Telekinesis has 7 powers
+- PASS: Praetor Raptora — Telekinesis base ML2 knows two
+- PASS: Praetor Raptora — Telekinesis ML3 supported
+- PASS: Praetor Corvidae — Divination has 7 powers
+- PASS: Praetor Corvidae — Divination base ML2 knows two
+- PASS: Praetor Corvidae — Divination ML3 supported
+- PASS: Praetor Athanaeans — Telepathy has 7 powers
+- PASS: Praetor Athanaeans — Telepathy base ML2 knows two
+- PASS: Praetor Athanaeans — Telepathy ML3 supported
+- PASS: Praetor Pyrae — Pyromancy has 7 powers
+- PASS: Praetor Pyrae — Pyromancy base ML2 knows two
+- PASS: Praetor Pyrae — Pyromancy ML3 supported
+- PASS: r45-cult-hq-praetor removed
+- PASS: r19-ts-praetor-disciplines removed
+- PASS: r19-ts-praetor-powers removed
+- PASS: Veteran melee base cap is Sergeant
+- PASS: Veteran melee scales from selected Veterans
+- PASS: Veteran melee patched across copies
+- PASS: Brotherhood power roots retained
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) power group visible
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) power group locked without Brotherhood
+- PASS: Legion Terminator Squad — Long March (non-compulsory Troops) Brotherhood unlock wired
+- PASS: Legion Terminator Squad — Horus’ First Company power group visible
+- PASS: Legion Terminator Squad — Horus’ First Company power group locked without Brotherhood
+- PASS: Legion Terminator Squad — Horus’ First Company Brotherhood unlock wired
+- PASS: Legion Veteran Squad power group visible
+- PASS: Legion Veteran Squad power group locked without Brotherhood
+- PASS: Legion Veteran Squad Brotherhood unlock wired
+- PASS: Legion Terminator Squad power group visible
+- PASS: Legion Terminator Squad power group locked without Brotherhood
+- PASS: Legion Terminator Squad Brotherhood unlock wired
+- PASS: Legion Veteran Squad power group visible
+- PASS: Legion Veteran Squad power group locked without Brotherhood
+- PASS: Legion Veteran Squad Brotherhood unlock wired
+- PASS: No new/worsened duplicate IDs
