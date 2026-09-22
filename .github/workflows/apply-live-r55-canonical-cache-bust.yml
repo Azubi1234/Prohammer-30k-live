@@ -1,0 +1,38 @@
+name: Apply Live R55 Canonical Cache Bust
+on:
+  push:
+    paths: ['.github/workflows/apply-live-r55-canonical-cache-bust.yml']
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R55
+        run: python .github/build/live_r55_canonical_cache_bust.py
+      - name: Verify canonical files
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          g=ET.parse('Prohammer 30k.gst').getroot()
+          cat=open('Legiones Astartes.cat',encoding='utf-8').read()
+          gst=open('Prohammer 30k.gst',encoding='utf-8').read()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='55' and c.get('gameSystemRevision')=='13'
+          assert g.get('revision')=='13'
+          assert 'dataRevision="55"' in idx and 'dataRevision="13"' in idx
+          assert 'ns0:' not in cat and 'ns0:' not in gst and 'ns0:' not in idx
+          assert '<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema"' in cat[:500]
+          assert '<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema"' in gst[:500]
+          print('Verified R55 canonical cache-bust')
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r55-canonical-cache-bust.txt
+          git diff --cached --quiet || git commit -m "Live R55: canonical cache-bust New Recruit"
+          git push
