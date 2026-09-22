@@ -1,4 +1,5 @@
 name: Apply Live R37 Word Bearers
+# retry after script fix
 on:
   push:
     paths:
