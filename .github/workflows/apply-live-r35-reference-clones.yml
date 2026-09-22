@@ -1,0 +1,30 @@
+name: Apply Live R35 Reference and Clone Completeness
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r35-reference-clones.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/live_r35_reference_clones.py
+      - run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          c=ET.parse('Legiones Astartes.cat').getroot()
+          i=open('index.xml',encoding='utf-8').read()
+          assert c.get('revision')=='35'
+          assert 'dataRevision="35"' in i
+          assert 'ns0:' not in i
+          print('Verified R35')
+          PY
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r35-reference-clones.txt
+          git diff --cached --quiet || git commit -m "Live R35: rule references and Sons of Horus clone completeness"
+          git push
