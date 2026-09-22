@@ -194,7 +194,7 @@ OUT.write_text("\n".join([
 "Live R67 — Thousand Sons Brotherhood power selection repair",
 "Input CAT=66/GST=15 -> CAT=67/GST remains 15","",
 "FIX:",
-ff"- Patched {len(patched)} live Veteran/Terminator roots that directly own the 35-power Brotherhood pool.",
+f"- Patched {len(patched)} live Veteran/Terminator roots that directly own the 35-power Brotherhood pool.",
 "- Removed the fragile power-group MAX=0 architecture.",
 "- Every Cult-correlated power group now has a reliable base MAX=1, so New Recruit can actually select a power.",
 "- Base MIN remains 0; selecting Brotherhood sets MIN=1.",
