@@ -1,0 +1,39 @@
+name: Apply Live R33 Baseline Cleanup
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-live-r33-baseline-cleanup.yml'
+permissions: {contents: write}
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - name: Apply R33 baseline cleanup
+        run: python .github/build/live_r33_baseline_cleanup.py
+      - name: Verify revisions and canonical index
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          cat=ET.parse('Legiones Astartes.cat').getroot()
+          gst=ET.parse('Prohammer 30k.gst').getroot()
+          idx=open('index.xml',encoding='utf-8').read()
+          assert cat.get('revision')=='33', cat.get('revision')
+          assert gst.get('revision')=='1', gst.get('revision')
+          assert 'filePath="Legiones Astartes.cat"' in idx
+          assert 'dataRevision="33"' in idx
+          assert 'filePath="Prohammer 30k.gst"' in idx
+          assert 'dataRevision="1"' in idx
+          assert 'ns0:' not in idx
+          assert 'xmlns:ns0' not in idx
+          print('Verified CAT=33 GST=1 index=33 canonical namespace')
+          PY
+      - name: Commit Live R33
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add 'Legiones Astartes.cat' index.xml inspection-live-r33-baseline-cleanup.txt
+          git diff --cached --quiet || git commit -m "Live R33: baseline cleanup"
+          git push
