@@ -1,14 +1,16 @@
 from pathlib import Path
 import copy, collections, hashlib, re, xml.etree.ElementTree as ET
 
-CAT=Path("Legiones Astartes.cat"); IDX=Path("index.xml")
+CAT=Path("Legiones Astartes.cat"); GST=Path("Prohammer 30k.gst"); IDX=Path("index.xml")
 OUT=Path("inspection-live-r41-universal-wargear-rite-visibility.txt")
-CNS="http://www.battlescribe.net/schema/catalogueSchema"; INS="http://www.battlescribe.net/schema/dataIndexSchema"
+CNS="http://www.battlescribe.net/schema/catalogueSchema"; GNS="http://www.battlescribe.net/schema/gameSystemSchema"; INS="http://www.battlescribe.net/schema/dataIndexSchema"
 ET.register_namespace("",CNS)
-C=lambda t:f"{{{CNS}}}{t}"; I=lambda t:f"{{{INS}}}{t}"
+C=lambda t:f"{{{CNS}}}{t}"; G=lambda t:f"{{{GNS}}}{t}"; I=lambda t:f"{{{INS}}}{t}"
 
 tree=ET.parse(CAT); root=tree.getroot()
+gtree=ET.parse(GST); groot=gtree.getroot()
 if root.get("revision")!="40": raise RuntimeError(f"R41 expected CAT40, got {root.get('revision')}")
+if groot.get("revision")!="5": raise RuntimeError(f"R41 expected GST5, got {groot.get('revision')}")
 
 def qns(e): return e.tag.split("}")[0].strip("{")
 def cont(p,tag,before=("constraints","categoryLinks","entryLinks","infoLinks","profiles","rules","selectionEntries","selectionEntryGroups","costs","modifiers")):
@@ -48,6 +50,14 @@ def elink(p,id_,name,target,maxv=1,hidden=False):
     e.attrib.update({"id":id_,"name":name,"targetId":target,"type":"selectionEntry","import":"true","hidden":"true" if hidden else "false"})
     if maxv is not None:cons(e,id_+"-max","max",maxv)
     return e
+def catlink(p,id_,name,target,primary=False):
+    ns=qns(p); cs=cont(p,"categoryLinks"); q=f"{{{ns}}}categoryLink"
+    e=next((z for z in cs.findall(q) if z.get("id")==id_),None)
+    if e is None:e=ET.SubElement(cs,q)
+    e.attrib.update({"id":id_,"name":name,"targetId":target,"hidden":"false"})
+    if primary:e.set("primary","true")
+    return e
+
 def parent_map(): return {c:p for p in root.iter() for c in p}
 
 # ------------------------------------------------------------------
@@ -195,7 +205,12 @@ def pick_canonical(arr):
 
 for nm,locals_ in list(local_by_norm.items()):
     existing=shared_by_norm.get(nm,[])
-    canonical=pick_canonical(existing) if existing else None
+    zero_cost_existing=[]
+    for x in existing:
+        vals=[float(z.get("value","0") or 0) for z in x.findall(f"./{C('costs')}/{C('cost')}")]
+        if not vals or all(v==0 for v in vals):
+            zero_cost_existing.append(x)
+    canonical=pick_canonical(zero_cost_existing) if zero_cost_existing else None
 
     sig_groups=collections.defaultdict(list)
     for e in locals_:sig_groups[static_sig(e)].append(e)
@@ -203,6 +218,12 @@ for nm,locals_ in list(local_by_norm.items()):
 
     # If no shared target exists, only universalise repeated compatible definitions.
     if canonical is None:
+        # A non-zero-cost shared wrapper is a contextual price/access package.
+        # Leave same-name locals alone rather than risking double costs or a second
+        # visible shared selection with the same name.
+        if existing:
+            skipped_incompatible += len(locals_)
+            continue
         if len(locals_)<3 or len(nonempty)>1:
             continue
         rep=(sig_groups[nonempty[0]][0] if nonempty else locals_[0])
@@ -239,60 +260,96 @@ for nm,locals_ in list(local_by_norm.items()):
         container.remove(e);container.insert(idx,link);converted+=1
 
 # ------------------------------------------------------------------
-# 4. Universalise static information of duplicate shared wrapper items.
-#    Pricing/access wrappers may remain separate, but their rule/profile text
-#    points to one canonical shared rule/profile source where compatible.
+# 4. Contextual shared wrappers.
 # ------------------------------------------------------------------
-# This pass strips exact duplicate local Rule/Profile payload from shared wrappers
-# only when another shared wrapper with same name already carries the same payload.
-# Selection/cost identity is retained to avoid changing eligibility/pricing semantics.
-shared_wrappers=collections.defaultdict(list)
-for e in sse.findall(C("selectionEntry")):
-    if e.get("type")=="upgrade":shared_wrappers[norm_name(e.get("name"))].append(e)
+# Shared wrappers with their own non-zero cost/eligibility are deliberately retained.
+# They are price/access packages rather than competing wargear definitions.
+# Their referenced rules/profiles are already shared where compatible.
 wrapper_payload_dedup=0
-for nm,arr in shared_wrappers.items():
-    if len(arr)<2:continue
-    canonical=pick_canonical(arr);csig=static_sig(canonical)
-    if csig==EMPTY_SIG:
-        non=[x for x in arr if static_sig(x)!=EMPTY_SIG]
-        sigs={static_sig(x) for x in non}
-        if len(sigs)==1 and non:
-            clone_payload(non[0],canonical,(canonical.get("id") or "canon")+"-r41wrap-");csig=static_sig(canonical)
-    if csig==EMPTY_SIG:continue
-    # Preserve wrappers but remove duplicate direct info and reference canonical shared info
-    # via one canonical rule/profile set only if exact payload matches.
-    for e in arr:
-        if e is canonical or static_sig(e)!=csig:continue
-        for tag in ("infoLinks","profiles","rules"):
-            x=e.find(C(tag))
-            if x is not None:e.remove(x)
-        # Add info links to canonical's shared rule/profile targets when those are already links.
-        cil=canonical.find(C("infoLinks"))
-        if cil is not None:
-            dst=cont(e,"infoLinks")
-            for x in cil:
-                dst.append(copy.deepcopy(x))
-        wrapper_payload_dedup+=1
+
+# ------------------------------------------------------------------
+# 5. Iron Halo: army-wide 0-1, Rosarius explicitly excluded.
+# ------------------------------------------------------------------
+IRON="gear-hq-iron-halo"
+if IRON not in ids:
+    raise RuntimeError("Canonical Iron Halo entry missing")
+
+HALO_CAT="r41-iron-halo-army-limit"
+# Hidden category in the game system.
+gce=groot.find(G("categoryEntries"))
+if gce is None:
+    gce=ET.SubElement(groot,G("categoryEntries"))
+hcat=next((z for z in gce.findall(G("categoryEntry")) if z.get("id")==HALO_CAT),None)
+if hcat is None:
+    hcat=ET.SubElement(gce,G("categoryEntry"))
+hcat.attrib.update({"id":HALO_CAT,"name":"Iron Halo — army-wide limit","hidden":"true"})
+
+# Force-level max 1 across every selected Iron Halo / built-in carrier.
+force=next((z for z in groot.iter(G("forceEntry")) if z.get("id")=="force-standard"),None)
+if force is None:
+    raise RuntimeError("Standard force entry missing for Iron Halo limit")
+fcls=cont(force,"categoryLinks")
+hfl=next((z for z in fcls.findall(G("categoryLink")) if z.get("id")=="r41-iron-halo-force"),None)
+if hfl is None:
+    hfl=ET.SubElement(fcls,G("categoryLink"))
+hfl.attrib.update({"id":"r41-iron-halo-force","name":"Iron Halo — army-wide limit","targetId":HALO_CAT,"hidden":"true"})
+cons(hfl,"r41-iron-halo-max","max",1,"selections","parent",True)
+
+# Any purchased Iron Halo counts automatically.
+catlink(ids[IRON],"r41-iron-halo-gear-cat","Iron Halo — army-wide limit",HALO_CAT)
+
+# Built-in Iron Halos count too. Rosarius never does: it is intentionally not tagged.
+# Generic Praetor always includes an Iron Halo.
+halo_carriers=[]
+praetor=ids.get("hq-praetor")
+if praetor is None:
+    raise RuntimeError("Legion Praetor missing")
+catlink(praetor,"r41-praetor-iron-halo-cat","Iron Halo — army-wide limit",HALO_CAT)
+halo_carriers.append(("hq-praetor",praetor.get("name")))
+
+# Named/top-level characters with an explicit built-in Iron Halo also count,
+# unless their own text explicitly says the Halo does not count toward the limit.
+for e in root.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
+    if e is praetor: continue
+    direct=[]
+    for r in e.findall(f"./{C('rules')}/{C('rule')}"):
+        direct.append((r.get("name") or "")+" "+(r.findtext(C("description")) or ""))
+    for il in e.findall(f"./{C('infoLinks')}/{C('infoLink')}"):
+        direct.append((il.get("name") or "")+" "+(il.get("targetId") or ""))
+    text=" ".join(direct).lower()
+    if "iron halo" not in text:
+        continue
+    if ("iron halo" in text and ("does not count toward" in text or "does not count towards" in text or "doesn't count toward" in text)):
+        continue
+    catlink(e,"r41-halo-carrier-"+hashlib.sha1((e.get("id") or "").encode()).hexdigest()[:12],"Iron Halo — army-wide limit",HALO_CAT)
+    halo_carriers.append((e.get("id"),e.get("name")))
 
 # ------------------------------------------------------------------
 # Validation + revision.
 # ------------------------------------------------------------------
 root.set("revision","41")
+root.set("gameSystemRevision","6")
+groot.set("revision","6")
 tree.write(CAT,encoding="utf-8",xml_declaration=True)
+ET.register_namespace("",GNS)
+gtree.write(GST,encoding="utf-8",xml_declaration=True)
 ET.register_namespace("",INS)
 it=ET.parse(IDX);ir=it.getroot()
 for x in ir.iter(I("dataIndexEntry")):
     if x.get("filePath")=="Legiones Astartes.cat":x.set("dataRevision","41")
+    if x.get("filePath")=="Prohammer 30k.gst":x.set("dataRevision","6")
 it.write(IDX,encoding="utf-8",xml_declaration=True)
 
-rr=ET.parse(CAT).getroot(); checks=[]
+rr=ET.parse(CAT).getroot(); gg=ET.parse(GST).getroot(); checks=[]
 def ck(n,o):
     checks.append((n,bool(o)))
     if not o:raise RuntimeError("R41 validation failed: "+n)
 
 ck("CAT revision 41",rr.get("revision")=="41")
 ck("Index revision 41",'dataRevision="41"' in IDX.read_text(encoding="utf-8"))
-ck("GST dependency remains 5",rr.get("gameSystemRevision")=="5")
+ck("CAT points to GST 6",rr.get("gameSystemRevision")=="6")
+ck("GST revision 6",gg.get("revision")=="6")
+ck("Index GST revision 6",'filePath="Prohammer 30k.gst"' in IDX.read_text(encoding="utf-8") and 'dataRevision="6"' in IDX.read_text(encoding="utf-8"))
 
 rids={e.get("id"):e for e in rr.iter() if e.get("id")}
 # Exact FOC visibility: default hidden and only one hidden modifier per root.
@@ -320,6 +377,16 @@ for l in rr.iter(C("entryLink")):
         p=pmap.get(p)
 ck("Mantle is not an armour replacement",not badmantle)
 
+# Iron Halo army-wide category and Rosarius exemption.
+gids={e.get("id"):e for e in gg.iter() if e.get("id")}
+ck("Iron Halo hidden category exists",HALO_CAT in gids)
+ck("Iron Halo force max exists","r41-iron-halo-force" in gids)
+ck("Canonical Iron Halo counts",any(x.get("targetId")==HALO_CAT for x in rids[IRON].findall(f"./{C('categoryLinks')}/{C('categoryLink')}")))
+ck("Praetor built-in Iron Halo counts",any(x.get("targetId")==HALO_CAT for x in rids["hq-praetor"].findall(f"./{C('categoryLinks')}/{C('categoryLink')}")))
+ros=ids.get("r29-gear-rosarius")
+if ros is not None:
+    ck("Rosarius does not count as Iron Halo",not any(x.get("targetId")==HALO_CAT for x in ros.findall(f"./{C('categoryLinks')}/{C('categoryLink')}")))
+
 # Global IDs unique.
 allids=[e.get("id") for e in rr.iter() if e.get("id")]
 dups=[x for x,c in collections.Counter(allids).items() if c>1]
@@ -330,7 +397,7 @@ ck("Universal wargear conversion performed",converted>0)
 
 lines=[
 "Live R41 — universal wargear + conditional FOC cleanup",
-"Input CAT=40 -> CAT=41; GST remains revision 5","",
+"Input CAT=40/GST=5 -> CAT=41/GST=6","",
 "RITE / CHARACTER FOC VISIBILITY:",
 "- Gal Vorbak Serrated Sun Troops are hidden by default and appear only with Word Bearers + Traitor + Last of the Serrated Sun.",
 "- Ashen Circle Reign of Fire Troops are hidden by default and appear only with Word Bearers + Traitor + Zardu Layak selected as Warlord.",
@@ -346,9 +413,15 @@ f"- Converted {converted} compatible local leaf wargear definitions into links t
 f"- Created {created_canon} new universal shared wargear definitions where repeated local items had one compatible definition.",
 f"- Reused existing shared wargear canonicals across {existing_canon_used} duplicate-name groups.",
 f"- Left {skipped_incompatible} context-specific entries local because their actual rule/profile payload differed from the canonical item.",
-f"- De-duplicated static payload on {wrapper_payload_dedup} compatible shared price/access wrappers without changing their pricing/eligibility.",
+"- Context-specific shared price/access wrappers with their own cost were deliberately retained so no discounts or Legion-specific prices were altered.",
 "- Costs, quantity limits, visibility conditions and replacement restrictions remain local to each selector/link; only the actual wargear definition is universal.",
 "- This is now the standing architecture: one actual wargear definition, many contextual links when prices or eligibility differ.","",
+"IRON HALO:",
+"- Iron Halo is now mechanically max 1 across the entire army.",
+"- The Praetor's included Iron Halo counts immediately, so selecting a Praetor prevents any other model from taking another Iron Halo.",
+f"- Detected and tagged {len(halo_carriers)-1} additional top-level Characters with built-in Iron Halos.",
+"- Purchased Iron Halos use the same army-wide counter.",
+"- Rosarius is explicitly outside this limit, matching the army-list rule.","",
 "VALIDATION:"
 ]+[f'- {"PASS" if ok else "FAIL"}: {n}' for n,ok in checks]
 OUT.write_text("\n".join(lines)+"\n",encoding="utf-8")
