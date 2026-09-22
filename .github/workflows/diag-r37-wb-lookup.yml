@@ -1,0 +1,19 @@
+name: Diagnose R37 WB Lookup
+on:
+  push:
+    paths: ['.github/workflows/diag-r37-wb-lookup.yml']
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r37_wb_lookup.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r37-wb-lookup.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R37: Word Bearers lookup"
+          git push
