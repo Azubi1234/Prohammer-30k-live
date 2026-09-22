@@ -1,0 +1,337 @@
+Live R49 — schema entryLink repair / Thousand Sons restore
+Input CAT=48/GST=11 -> CAT=49/GST remains 11
+
+ROOT CAUSE:
+- R41 universalisation converted compatible local selectionEntry nodes into entryLink nodes in place.
+- Those links were left inside selectionEntries containers instead of being moved to entryLinks containers.
+- XML parsing still succeeded, but New Recruit ignores entryLink elements in a selectionEntries container.
+- Thousand Sons were hit especially hard because Cult, Discipline and Psychic Power selectors are mostly links.
+
+FIX:
+- Moved 3162 misplaced entryLink elements across the catalogue into schema-correct entryLinks containers.
+- Of those, 942 were in immediately identifiable Thousand Sons / psychic / Cult contexts.
+- Existing IDs, target IDs, costs, constraints, Cult gates, discipline gates and power gates were preserved.
+- Empty selectionEntries containers created by the move were removed.
+- This is a structural repair only; it does not rebalance or rewrite any army rules.
+
+THOUSAND SONS:
+- Praetor and Centurion Cult selectors restored.
+- Tactical/Veteran/Terminator/Sekhmet/Ammitara Cult selectors restored.
+- Cult-correlated Psychic Discipline selectors restored.
+- Psychic Power selectors restored and remain gated by the selected discipline.
+- Existing mapping remains Pavoni→Biomancy, Raptora→Telekinesis, Corvidae→Divination, Athanaeans→Telepathy, Pyrae→Pyromancy.
+
+VALIDATION:
+- PASS: CAT49
+- PASS: GST dependency remains 11
+- PASS: Index49
+- PASS: Every selectionEntries container contains only selectionEntry
+- PASS: Every entryLinks container contains only entryLink
+- PASS: r45-cult-hq-praetor exists
+- PASS: r45-cult-hq-praetor has 5 proper entryLinks
+- PASS: r19-ts-praetor-disciplines exists
+- PASS: r19-ts-praetor-disciplines has 5 proper entryLinks
+- PASS: r19-ts-praetor-powers exists
+- PASS: r19-ts-praetor-powers has 35 proper entryLinks
+- PASS: r45-cult-hq-centurion exists
+- PASS: r45-cult-hq-centurion has 5 proper entryLinks
+- PASS: r19-ts-centurion-disciplines exists
+- PASS: r19-ts-centurion-disciplines has 5 proper entryLinks
+- PASS: r19-ts-centurion-powers exists
+- PASS: r19-ts-centurion-powers has 35 proper entryLinks
+- PASS: r45-cult-tactical-unit exists
+- PASS: r45-cult-tactical-unit has 5 proper entryLinks
+- PASS: r19-ts-tactical-brotherhood-disciplines exists
+- PASS: r19-ts-tactical-brotherhood-disciplines has 5 proper entryLinks
+- PASS: r19-ts-tactical-brotherhood-powers exists
+- PASS: r19-ts-tactical-brotherhood-powers has 35 proper entryLinks
+- PASS: r45-cult-veteran-unit exists
+- PASS: r45-cult-veteran-unit has 5 proper entryLinks
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines has 5 proper entryLinks
+- PASS: r19-ts-veteran-unit-brotherhood-powers exists
+- PASS: r19-ts-veteran-unit-brotherhood-powers has 35 proper entryLinks
+- PASS: r45-cult-terminator-unit exists
+- PASS: r45-cult-terminator-unit has 5 proper entryLinks
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines has 5 proper entryLinks
+- PASS: r19-ts-terminator-unit-brotherhood-powers exists
+- PASS: r19-ts-terminator-unit-brotherhood-powers has 35 proper entryLinks
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal exists
+- PASS: r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal has 5 proper entryLinks
+- PASS: r19-ts-sekhmet-disciplines exists
+- PASS: r19-ts-sekhmet-disciplines has 5 proper entryLinks
+- PASS: r19-ts-sekhmet-powers exists
+- PASS: r19-ts-sekhmet-powers has 35 proper entryLinks
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal exists
+- PASS: r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal has 5 proper entryLinks
+- PASS: r19-ts-ammitara-disciplines exists
+- PASS: r19-ts-ammitara-disciplines has 2 proper entryLinks
+- PASS: r19-ts-ammitara-powers exists
+- PASS: r19-ts-ammitara-powers has 14 proper entryLinks
+- PASS: r19-ts-praetor-disciplines Biomancy exists
+- PASS: r19-ts-praetor-disciplines Biomancy gated by Pavoni
+- PASS: r19-ts-praetor-disciplines Telekinesis exists
+- PASS: r19-ts-praetor-disciplines Telekinesis gated by Raptora
+- PASS: r19-ts-praetor-disciplines Divination exists
+- PASS: r19-ts-praetor-disciplines Divination gated by Corvidae
+- PASS: r19-ts-praetor-disciplines Telepathy exists
+- PASS: r19-ts-praetor-disciplines Telepathy gated by Athanaeans
+- PASS: r19-ts-praetor-disciplines Pyromancy exists
+- PASS: r19-ts-praetor-disciplines Pyromancy gated by Pyrae
+- PASS: r19-ts-centurion-disciplines Biomancy exists
+- PASS: r19-ts-centurion-disciplines Biomancy gated by Pavoni
+- PASS: r19-ts-centurion-disciplines Telekinesis exists
+- PASS: r19-ts-centurion-disciplines Telekinesis gated by Raptora
+- PASS: r19-ts-centurion-disciplines Divination exists
+- PASS: r19-ts-centurion-disciplines Divination gated by Corvidae
+- PASS: r19-ts-centurion-disciplines Telepathy exists
+- PASS: r19-ts-centurion-disciplines Telepathy gated by Athanaeans
+- PASS: r19-ts-centurion-disciplines Pyromancy exists
+- PASS: r19-ts-centurion-disciplines Pyromancy gated by Pyrae
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Biomancy exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Biomancy gated by Pavoni
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Telekinesis exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Telekinesis gated by Raptora
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Divination exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Divination gated by Corvidae
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Telepathy exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Telepathy gated by Athanaeans
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Pyromancy exists
+- PASS: r19-ts-veteran-unit-brotherhood-disciplines Pyromancy gated by Pyrae
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Biomancy exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Biomancy gated by Pavoni
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Telekinesis exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Telekinesis gated by Raptora
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Divination exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Divination gated by Corvidae
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Telepathy exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Telepathy gated by Athanaeans
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Pyromancy exists
+- PASS: r19-ts-terminator-unit-brotherhood-disciplines Pyromancy gated by Pyrae
+- PASS: r19-ts-sekhmet-disciplines Biomancy exists
+- PASS: r19-ts-sekhmet-disciplines Biomancy gated by Pavoni
+- PASS: r19-ts-sekhmet-disciplines Telekinesis exists
+- PASS: r19-ts-sekhmet-disciplines Telekinesis gated by Raptora
+- PASS: r19-ts-sekhmet-disciplines Divination exists
+- PASS: r19-ts-sekhmet-disciplines Divination gated by Corvidae
+- PASS: r19-ts-sekhmet-disciplines Telepathy exists
+- PASS: r19-ts-sekhmet-disciplines Telepathy gated by Athanaeans
+- PASS: r19-ts-sekhmet-disciplines Pyromancy exists
+- PASS: r19-ts-sekhmet-disciplines Pyromancy gated by Pyrae
+- PASS: r19-ts-praetor-power-biomancy-smite target resolves
+- PASS: r19-ts-praetor-power-biomancy-smite has discipline gate
+- PASS: r19-ts-praetor-power-biomancy-iron-arm target resolves
+- PASS: r19-ts-praetor-power-biomancy-iron-arm has discipline gate
+- PASS: r19-ts-praetor-power-biomancy-enfeeble target resolves
+- PASS: r19-ts-praetor-power-biomancy-enfeeble has discipline gate
+- PASS: r19-ts-praetor-power-biomancy-life-leech target resolves
+- PASS: r19-ts-praetor-power-biomancy-life-leech has discipline gate
+- PASS: r19-ts-praetor-power-biomancy-warp-speed target resolves
+- PASS: r19-ts-praetor-power-biomancy-warp-speed has discipline gate
+- PASS: r19-ts-praetor-power-biomancy-endurance target resolves
+- PASS: r19-ts-praetor-power-biomancy-endurance has discipline gate
+- PASS: r19-ts-praetor-power-biomancy-haemorrhage target resolves
+- PASS: r19-ts-praetor-power-biomancy-haemorrhage has discipline gate
+- PASS: r19-ts-praetor-power-divination-prescience target resolves
+- PASS: r19-ts-praetor-power-divination-prescience has discipline gate
+- PASS: r19-ts-praetor-power-divination-foreboding target resolves
+- PASS: r19-ts-praetor-power-divination-foreboding has discipline gate
+- PASS: r19-ts-praetor-power-divination-forewarning target resolves
+- PASS: r19-ts-praetor-power-divination-forewarning has discipline gate
+- PASS: r19-ts-praetor-power-divination-perfect-timing target resolves
+- PASS: r19-ts-praetor-power-divination-perfect-timing has discipline gate
+- PASS: r19-ts-praetor-power-divination-precognition target resolves
+- PASS: r19-ts-praetor-power-divination-precognition has discipline gate
+- PASS: r19-ts-praetor-power-divination-misfortune target resolves
+- PASS: r19-ts-praetor-power-divination-misfortune has discipline gate
+- PASS: r19-ts-praetor-power-divination-scrier-s-gaze target resolves
+- PASS: r19-ts-praetor-power-divination-scrier-s-gaze has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-flame-breath target resolves
+- PASS: r19-ts-praetor-power-pyromancy-flame-breath has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-fiery-form target resolves
+- PASS: r19-ts-praetor-power-pyromancy-fiery-form has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-molton-beam target resolves
+- PASS: r19-ts-praetor-power-pyromancy-molton-beam has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-fire-shield target resolves
+- PASS: r19-ts-praetor-power-pyromancy-fire-shield has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-sunburst target resolves
+- PASS: r19-ts-praetor-power-pyromancy-sunburst has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-inferno target resolves
+- PASS: r19-ts-praetor-power-pyromancy-inferno has discipline gate
+- PASS: r19-ts-praetor-power-pyromancy-spontaneous-combustion target resolves
+- PASS: r19-ts-praetor-power-pyromancy-spontaneous-combustion has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-assail target resolves
+- PASS: r19-ts-praetor-power-telekinesis-assail has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-crush target resolves
+- PASS: r19-ts-praetor-power-telekinesis-crush has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-objuration-mechanicum target resolves
+- PASS: r19-ts-praetor-power-telekinesis-objuration-mechanicum has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-shockwave target resolves
+- PASS: r19-ts-praetor-power-telekinesis-shockwave has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-levitation target resolves
+- PASS: r19-ts-praetor-power-telekinesis-levitation has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-telekine-dome target resolves
+- PASS: r19-ts-praetor-power-telekinesis-telekine-dome has discipline gate
+- PASS: r19-ts-praetor-power-telekinesis-psychic-maelstrom target resolves
+- PASS: r19-ts-praetor-power-telekinesis-psychic-maelstrom has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-psychic-shriek target resolves
+- PASS: r19-ts-praetor-power-telepathy-psychic-shriek has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-dominate target resolves
+- PASS: r19-ts-praetor-power-telepathy-dominate has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-mental-fortitude target resolves
+- PASS: r19-ts-praetor-power-telepathy-mental-fortitude has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-terrify target resolves
+- PASS: r19-ts-praetor-power-telepathy-terrify has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-hallucination target resolves
+- PASS: r19-ts-praetor-power-telepathy-hallucination has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-invisibility target resolves
+- PASS: r19-ts-praetor-power-telepathy-invisibility has discipline gate
+- PASS: r19-ts-praetor-power-telepathy-shrouding target resolves
+- PASS: r19-ts-praetor-power-telepathy-shrouding has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-smite target resolves
+- PASS: r19-ts-centurion-power-biomancy-smite has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-iron-arm target resolves
+- PASS: r19-ts-centurion-power-biomancy-iron-arm has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-enfeeble target resolves
+- PASS: r19-ts-centurion-power-biomancy-enfeeble has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-life-leech target resolves
+- PASS: r19-ts-centurion-power-biomancy-life-leech has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-warp-speed target resolves
+- PASS: r19-ts-centurion-power-biomancy-warp-speed has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-endurance target resolves
+- PASS: r19-ts-centurion-power-biomancy-endurance has discipline gate
+- PASS: r19-ts-centurion-power-biomancy-haemorrhage target resolves
+- PASS: r19-ts-centurion-power-biomancy-haemorrhage has discipline gate
+- PASS: r19-ts-centurion-power-divination-prescience target resolves
+- PASS: r19-ts-centurion-power-divination-prescience has discipline gate
+- PASS: r19-ts-centurion-power-divination-foreboding target resolves
+- PASS: r19-ts-centurion-power-divination-foreboding has discipline gate
+- PASS: r19-ts-centurion-power-divination-forewarning target resolves
+- PASS: r19-ts-centurion-power-divination-forewarning has discipline gate
+- PASS: r19-ts-centurion-power-divination-perfect-timing target resolves
+- PASS: r19-ts-centurion-power-divination-perfect-timing has discipline gate
+- PASS: r19-ts-centurion-power-divination-precognition target resolves
+- PASS: r19-ts-centurion-power-divination-precognition has discipline gate
+- PASS: r19-ts-centurion-power-divination-misfortune target resolves
+- PASS: r19-ts-centurion-power-divination-misfortune has discipline gate
+- PASS: r19-ts-centurion-power-divination-scrier-s-gaze target resolves
+- PASS: r19-ts-centurion-power-divination-scrier-s-gaze has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-flame-breath target resolves
+- PASS: r19-ts-centurion-power-pyromancy-flame-breath has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-fiery-form target resolves
+- PASS: r19-ts-centurion-power-pyromancy-fiery-form has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-molton-beam target resolves
+- PASS: r19-ts-centurion-power-pyromancy-molton-beam has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-fire-shield target resolves
+- PASS: r19-ts-centurion-power-pyromancy-fire-shield has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-sunburst target resolves
+- PASS: r19-ts-centurion-power-pyromancy-sunburst has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-inferno target resolves
+- PASS: r19-ts-centurion-power-pyromancy-inferno has discipline gate
+- PASS: r19-ts-centurion-power-pyromancy-spontaneous-combustion target resolves
+- PASS: r19-ts-centurion-power-pyromancy-spontaneous-combustion has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-assail target resolves
+- PASS: r19-ts-centurion-power-telekinesis-assail has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-crush target resolves
+- PASS: r19-ts-centurion-power-telekinesis-crush has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-objuration-mechanicum target resolves
+- PASS: r19-ts-centurion-power-telekinesis-objuration-mechanicum has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-shockwave target resolves
+- PASS: r19-ts-centurion-power-telekinesis-shockwave has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-levitation target resolves
+- PASS: r19-ts-centurion-power-telekinesis-levitation has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-telekine-dome target resolves
+- PASS: r19-ts-centurion-power-telekinesis-telekine-dome has discipline gate
+- PASS: r19-ts-centurion-power-telekinesis-psychic-maelstrom target resolves
+- PASS: r19-ts-centurion-power-telekinesis-psychic-maelstrom has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-psychic-shriek target resolves
+- PASS: r19-ts-centurion-power-telepathy-psychic-shriek has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-dominate target resolves
+- PASS: r19-ts-centurion-power-telepathy-dominate has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-mental-fortitude target resolves
+- PASS: r19-ts-centurion-power-telepathy-mental-fortitude has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-terrify target resolves
+- PASS: r19-ts-centurion-power-telepathy-terrify has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-hallucination target resolves
+- PASS: r19-ts-centurion-power-telepathy-hallucination has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-invisibility target resolves
+- PASS: r19-ts-centurion-power-telepathy-invisibility has discipline gate
+- PASS: r19-ts-centurion-power-telepathy-shrouding target resolves
+- PASS: r19-ts-centurion-power-telepathy-shrouding has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-smite target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-smite has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-iron-arm target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-iron-arm has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-enfeeble target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-enfeeble has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-life-leech target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-life-leech has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-warp-speed target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-warp-speed has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-endurance target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-endurance has discipline gate
+- PASS: r19-ts-sekhmet-power-biomancy-haemorrhage target resolves
+- PASS: r19-ts-sekhmet-power-biomancy-haemorrhage has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-prescience target resolves
+- PASS: r19-ts-sekhmet-power-divination-prescience has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-foreboding target resolves
+- PASS: r19-ts-sekhmet-power-divination-foreboding has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-forewarning target resolves
+- PASS: r19-ts-sekhmet-power-divination-forewarning has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-perfect-timing target resolves
+- PASS: r19-ts-sekhmet-power-divination-perfect-timing has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-precognition target resolves
+- PASS: r19-ts-sekhmet-power-divination-precognition has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-misfortune target resolves
+- PASS: r19-ts-sekhmet-power-divination-misfortune has discipline gate
+- PASS: r19-ts-sekhmet-power-divination-scrier-s-gaze target resolves
+- PASS: r19-ts-sekhmet-power-divination-scrier-s-gaze has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-flame-breath target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-flame-breath has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-fiery-form target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-fiery-form has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-molton-beam target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-molton-beam has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-fire-shield target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-fire-shield has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-sunburst target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-sunburst has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-inferno target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-inferno has discipline gate
+- PASS: r19-ts-sekhmet-power-pyromancy-spontaneous-combustion target resolves
+- PASS: r19-ts-sekhmet-power-pyromancy-spontaneous-combustion has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-assail target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-assail has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-crush target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-crush has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-objuration-mechanicum target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-objuration-mechanicum has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-shockwave target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-shockwave has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-levitation target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-levitation has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-telekine-dome target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-telekine-dome has discipline gate
+- PASS: r19-ts-sekhmet-power-telekinesis-psychic-maelstrom target resolves
+- PASS: r19-ts-sekhmet-power-telekinesis-psychic-maelstrom has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-psychic-shriek target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-psychic-shriek has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-dominate target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-dominate has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-mental-fortitude target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-mental-fortitude has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-terrify target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-terrify has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-hallucination target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-hallucination has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-invisibility target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-invisibility has discipline gate
+- PASS: r19-ts-sekhmet-power-telepathy-shrouding target resolves
+- PASS: r19-ts-sekhmet-power-telepathy-shrouding has discipline gate
+- PASS: r45-cult-hq-praetor XV-gated
+- PASS: r45-cult-hq-centurion XV-gated
+- PASS: r45-cult-tactical-unit XV-gated
+- PASS: r45-cult-veteran-unit XV-gated
+- PASS: r45-cult-terminator-unit XV-gated
+- PASS: No new/worsened duplicate IDs
