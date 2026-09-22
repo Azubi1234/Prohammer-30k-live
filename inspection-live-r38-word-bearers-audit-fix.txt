@@ -1,0 +1,27 @@
+Live R38 — Word Bearers audit fixes
+Input CAT=37/GST=3 -> CAT=38/GST=4
+
+FIXES:
+- Removed 12 accidental hard max-0 constraints from dynamic squad weapon groups; scaling caps can now function.
+- Canonicalised Accursed Crozius, Tainted Weapon, Burning Lore, Hex-Bolts, Icon of Chaos Undivided, Dark Channelling and Diabolist as shared rule definitions.
+- Mechanically gated 17 Dark Channelling links behind the presence of a Diabolist-equivalent.
+- Added 129 Tainted Weapon access links to eligible generic/unit-specific Word Bearers Characters at the matching Power Weapon cost.
+- Expanded Daemonkin's Feel No Pain result with the actual effect rather than a reference-only name.
+- Preserved normal XVII display capitalization.
+
+VALIDATION:
+- PASS: CAT revision 38
+- PASS: GST revision 4
+- PASS: CAT points GST4
+- PASS: Index 38/4
+- PASS: Dynamic weapon groups no hard max0
+- PASS: Shared canonical Accursed Crozius
+- PASS: Shared canonical Tainted Weapon
+- PASS: Shared canonical Burning Lore
+- PASS: Shared canonical Hex-Bolts
+- PASS: Shared canonical Icon of Chaos Undivided
+- PASS: Shared canonical Dark Channelling
+- PASS: Shared canonical Diabolist
+- PASS: Dark Channelling links exist
+- PASS: Dark Channelling links default hidden
+- PASS: No local duplicate WB armoury rule definitions
