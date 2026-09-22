@@ -1,0 +1,28 @@
+Live R50 — Moritat default pistol-pair swap
+Input CAT=49/GST=11 -> CAT=50/GST remains 11
+
+FIX:
+- Pistol Pair now uses selectionEntryGroup.defaultSelectionEntryId = Two Bolt Pistols.
+- Removed defaultAmount=1 from the Two Bolt Pistols child entry.
+- Pistol Pair remains min 1 / max 1.
+- Therefore New Recruit treats Two Bolt Pistols as the default member of the one-of group and swaps it when another pair is chosen.
+- Fulcrum Hand Cannons remain Raven Guard-only at +20 points.
+- Removed 0 stray child-level minimum constraint(s) from pistol-pair alternatives.
+
+VALIDATION:
+- PASS: CAT50
+- PASS: GST dependency 11
+- PASS: Index50
+- PASS: Pistol Pair default is Two Bolt Pistols
+- PASS: Bolt Pistols have no defaultAmount
+- PASS: Pistol Pair min1
+- PASS: Pistol Pair max1
+- PASS: r29-mor-bolt no child minimum
+- PASS: r29-mor-hand no child minimum
+- PASS: r29-mor-plasma no child minimum
+- PASS: r29-mor-calibanite no child minimum
+- PASS: r47-rg-mor-fulcrum-pair no child minimum
+- PASS: r74-ba-moritat-two-inferno no child minimum
+- PASS: Fulcrums remain +20
+- PASS: Fulcrums remain Raven Guard-only
+- PASS: No new/worsened duplicate IDs
