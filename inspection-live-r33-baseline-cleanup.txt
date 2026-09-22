@@ -1,0 +1,18 @@
+LIVE R33 — BASELINE CLEANUP
+Input CAT=32 -> target CAT=33
+GST remains revision 1
+
+CHANGES:
+- Bumped Legiones Astartes.cat revision from 32 to 33.
+- Updated index.xml catalogue dataRevision to 33.
+- Re-serialized index.xml with the canonical default BattleScribe data-index namespace.
+- Removed the ns0: namespace prefix from index.xml.
+- No army-list rules, costs, profiles, options or restrictions changed in this baseline pass.
+
+VALIDATION:
+- PASS: Catalogue revision is 33
+- PASS: GST revision remains 1
+- PASS: Index advertises catalogue revision 33
+- PASS: Index advertises GST revision 1
+- PASS: index.xml has no ns0 prefix
+- PASS: index.xml root uses dataIndex namespace
