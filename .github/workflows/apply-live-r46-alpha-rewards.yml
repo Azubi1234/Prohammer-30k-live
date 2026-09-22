@@ -26,3 +26,5 @@ jobs:
           git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r46-alpha-rewards.txt
           git diff --cached --quiet || git commit -m "Live R46: rebuild Alpha Legion Rewards of Treachery"
           git push
+
+# retry unresolved-reference diagnostic
