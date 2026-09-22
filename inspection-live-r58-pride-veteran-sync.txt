@@ -1,0 +1,41 @@
+Live R58 — Pride Veteran full-sync fix
+Input CAT57/GST14 -> CAT58/GST14
+
+ARCHITECTURE RULE:
+- A Rite/Theme FOC shift changes only category/visibility unless the written rule explicitly changes the unit.
+- The Pride of the Legion Veteran Troops entry is now rebuilt directly from the current live Legion Veteran Squad rather than maintained as an independent stale clone.
+
+FIX:
+- Pride Veteran remains a conditional Troops choice under Pride of the Legion.
+- Every current Veteran option is preserved: unit size, Veteran Tactics, melee/ranged replacements, specialist weapons, individual wargear, squad equipment, Sergeant Armoury, transports and Legion-specific upgrades.
+- Close Combat Weapon Replacements now use the same live dynamic scaling as the base Veteran Squad: 5 models -> up to 5 replacements; 10 models -> up to 10.
+- Thousand Sons Brotherhood of Psykers, Prosperine Cult, discipline and power access are retained because the source does not remove them when Veterans change FOC slot.
+- Fellowships of Prospero still changes the Brotherhood price from +25 to +15 normally.
+
+VALIDATION:
+- PASS: CAT revision 58
+- PASS: GST dependency remains 14
+- PASS: Index CAT58
+- PASS: Pride Veteran hidden by default
+- PASS: Pride Veteran is Troops primary
+- PASS: Pride Veteran is not Elites primary
+- PASS: Pride Veteran gated by Pride of the Legion
+- PASS: Direct model/upgrades mirror base
+- PASS: Direct option groups mirror base
+- PASS: Direct entry links mirror base
+- PASS: Pride melee group exists
+- PASS: Pride melee base max matches current Veteran
+- PASS: Pride ordinary Veterans still 4-9
+- PASS: Pride melee scales from current model selector
+- PASS: Pride keeps Brotherhood of Psykers
+- PASS: Pride keeps Fellowships Brotherhood price
+- PASS: Pride keeps Prosperine Cult
+- PASS: Pride keeps Psychic Brotherhood powers
+- PASS: Pride keeps Psychic Brotherhood disciplines
+- PASS: Pride keeps Veteran Tactic (choose one)
+- PASS: Pride keeps Bolter Replacements
+- PASS: Pride keeps Individual Wargear
+- PASS: Pride keeps Specialist Weapons (1 per 5 models)
+- PASS: Pride keeps Squad Equipment
+- PASS: Pride keeps Legion Veteran Sergeant — Additional Armoury (max 50 pts)
+- PASS: No new/worsened duplicate IDs
