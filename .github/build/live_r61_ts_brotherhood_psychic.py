@@ -84,6 +84,24 @@ CULT_TO_DISC={
 }
 disc_lower={v.lower():k for k,v in CULT_TO_DISC.items()}
 
+# Build a canonical power-target -> discipline map from any live Brotherhood
+# power option whose original ID still carries its discipline. This lets cloned
+# Veteran/Terminator entries use the same shared power targets even when their
+# clone prefixes obscure the original option ID.
+POWER_TARGET_DISC={}
+for g in root.iter(C("selectionEntryGroup")):
+    if not (g.get("name") or "").startswith("Psychic Brotherhood — Psychic Power"):
+        continue
+    for tag in ("selectionEntries","entryLinks"):
+        cc=g.find(C(tag))
+        if cc is None: continue
+        for opt in list(cc):
+            oid=(opt.get("id") or "").lower()
+            m=re.search(r"power-(biomancy|divination|pyromancy|telekinesis|telepathy)-",oid)
+            tid=opt.get("targetId")
+            if m and tid:
+                POWER_TARGET_DISC[tid]=m.group(1)
+
 # Identify live unit roots which actually contain the Brotherhood psychic UI.
 unit_roots=[]
 for e in root.iter(C("selectionEntry")):
@@ -171,9 +189,9 @@ for e in unit_roots:
         for opt in list(cc):
             oid=opt.get("id") or ""
             m=re.search(r"power-(biomancy|divination|pyromancy|telekinesis|telepathy)-",oid.lower())
-            if not m:
+            disc=m.group(1) if m else POWER_TARGET_DISC.get(opt.get("targetId"))
+            if not disc:
                 continue
-            disc=m.group(1)
             clear_mods(opt); opt.set("hidden","false")
             add_modifier(opt,oid+"-r61-discipline-lock","set","hidden","true",
                          [cond("lessThan",1,disc_ids[disc])])
