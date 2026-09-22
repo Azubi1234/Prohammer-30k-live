@@ -1,0 +1,20 @@
+name: Diagnose R34 Focused
+on:
+  push:
+    paths:
+      - '.github/workflows/diag-r34-focused.yml'
+permissions: {contents: write}
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: python .github/build/diag_r34_focused.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add inspection-r34-focused.txt
+          git diff --cached --quiet || git commit -m "Diagnostic R34: focused rule references"
+          git push
