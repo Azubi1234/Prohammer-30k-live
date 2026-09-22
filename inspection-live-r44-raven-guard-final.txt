@@ -1,0 +1,43 @@
+Live R44 — Raven Guard post-build correction
+Input CAT=43/GST=8 -> CAT=44/GST=9
+
+CORRECTIONS:
+- Kaedes Nex and both Sharrowkyn replacement selectors now default hidden and appear only in a Raven Guard roster.
+- Corrected Mor Deythan/Deliverer Combi-meltagun targets to gear-combi-melta and Mor Deythan Missile Launcher to gear-missile.
+- Removed 80 over-broad R43 Liberation Force hide modifiers that were incorrectly inherited from nested options.
+- Liberation Force now blocks only actual selections/options with Immobile or Slow and Purposeful: 2 direct entries and 134 links to them.
+- Legion Centurions, Recon Squads and Heavy Support Squads are no longer incorrectly hidden merely because a nested option elsewhere contains a forbidden rule.
+- Decapitation Strike now hides the Heavy Support Squad's ordinary transport group while its mandatory Drop Pod/Dreadclaw group is active, preventing two Dedicated Transports.
+- Removed 4 duplicate hidden-category tags from copied Raven Guard retinue units.
+- Confirmed all ten main XIX special unit/character entries retain real model stat profiles.
+
+VALIDATION:
+- PASS: CAT44
+- PASS: GST9
+- PASS: CAT points GST9
+- PASS: Index44/9
+- PASS: r43-rg-kaedes-replacement RG-only visibility
+- PASS: r43-rg-sharrowkyn-recon RG-only visibility
+- PASS: r43-rg-sharrowkyn-seeker RG-only visibility
+- PASS: r43-mor-ranged-combi-meltagun target resolves
+- PASS: r43-del-ranged-combi-meltagun target resolves
+- PASS: r43-mor-heavy-missile-launcher target resolves
+- PASS: hq-centurion not globally hidden by Liberation
+- PASS: recon-unit not globally hidden by Liberation
+- PASS: hs-heavy-support-squad not globally hidden by Liberation
+- PASS: transport-drop-pod blocked by Liberation
+- PASS: transport-dreadnought-pod blocked by Liberation
+- PASS: Decap hides normal HSS transport group
+- PASS: Decap mandatory transport remains
+- PASS: XIX entry 0 has stat profile
+- PASS: XIX entry 1 has stat profile
+- PASS: XIX entry 2 has stat profile
+- PASS: XIX entry 3 has stat profile
+- PASS: XIX entry 4 has stat profile
+- PASS: XIX entry 5 has stat profile
+- PASS: XIX entry 6 has stat profile
+- PASS: XIX entry 7 has stat profile
+- PASS: XIX entry 8 has stat profile
+- PASS: XIX entry 9 has stat profile
+- PASS: All R43/R44 link targets resolve
+- PASS: No new/worsened duplicate IDs
