@@ -1,0 +1,77 @@
+LOYALTY:
+allegiance-loyalist | Loyalist | Allegiance > Army Configuration > Legiones Astartes
+allegiance-traitor | Traitor | Allegiance > Army Configuration > Legiones Astartes
+
+SAL LINKS:
+r46-tactical-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Tactical Squad > Legiones Astartes
+r46-tactical-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Tactical Squad > Legiones Astartes
+r46-assault-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Assault Squad > Legiones Astartes
+r46-breacher-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Breacher Siege Squad > Legiones Astartes
+r46-recon-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Reconnaissance Squad > Legiones Astartes
+r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad > Legiones Astartes
+r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad > Legiones Astartes
+r46-dreadnought-unit-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Dreadnought > Legiones Astartes
+r46-contemptor-unit-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Contemptor Dreadnought > Legiones Astartes
+r46-fa-seeker-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Seeker Squad > Legiones Astartes
+r46-hs-heavy-support-squad-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Heavy Support Squad > Legiones Astartes
+r46-hs-predator-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Predator Strike Squadron > Legiones Astartes
+r46-hs-vindicator-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Vindicator Siege Tank Squadron > Legiones Astartes
+r46-hs-artillery-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > 0–1 Legion Artillery Tank Squadron > Legiones Astartes
+r46-hs-scorpius-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Whirlwind Scorpius > Legiones Astartes
+r46-hs-sicaran-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Sicaran Battle Tank > Legiones Astartes
+r46-hs-deredeo-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Deredeo Pattern Dreadnought > Legiones Astartes
+r46-hs-venator-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Sicaran Venator Tank Destroyer > Legiones Astartes
+r46-hs-achilles-alpha-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Achilles-Alpha Pattern Land Raider > Legiones Astartes
+r46-hs-leviathan-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Leviathan Siege Dreadnought > Legiones Astartes
+r46-hq-praetor-r46-sal-mantle | Salamanders Mantle -> r46-sal-mantle | Armour Replacement (counts toward 100 pt Armoury limit) > Legion Praetor > Legiones Astartes
+r46-hq-praetor-r46-sal-mastercrafted | Master-crafted Weapon — Salamanders price -> r46-sal-mastercrafted | Weapon Replacements (max 100 Armoury pts; max 2 weapons) > Legion Praetor > Legiones Astartes
+r46-hq-praetor-r46-sal-inferno-pistol | Inferno Pistol -> r46-sal-inferno-pistol | Additional Wargear (max 100 Armoury pts combined) > Legion Praetor > Legiones Astartes
+r46-hq-centurion-r46-sal-mantle | Salamanders Mantle -> r46-sal-mantle | Armour Replacement (counts toward 100 pt Armoury limit) > Legion Centurion > Legiones Astartes
+r46-hq-centurion-r46-sal-mastercrafted | Master-crafted Weapon — Salamanders price -> r46-sal-mastercrafted | Weapon Replacements (max 100 Armoury pts; max 2 weapons) > Legion Centurion > Legiones Astartes
+r46-hq-centurion-r46-sal-inferno-pistol | Inferno Pistol -> r46-sal-inferno-pistol | Additional Wargear (max 100 Armoury pts combined) > Legion Centurion > Legiones Astartes
+r60-ws-hibou-retinue-legion-veteran-squad-r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Hibou Khan > Legiones Astartes
+r60-ws-hibou-retinue-legion-veteran-squad-r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Hibou Khan > Legiones Astartes
+r60-ws-hasik-retinue-legion-veteran-squad-r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Hasik Noyan-Khan > Legiones Astartes
+r60-ws-hasik-retinue-legion-veteran-squad-r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Hasik Noyan-Khan > Legiones Astartes
+r71-nl-mal-ret-1-r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad > Command Retinue (does not occupy a separate Force Organisation slot) > Malcharion, the War-Sage > Legiones Astartes
+r71-nl-mal-ret-1-r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad > Command Retinue (does not occupy a separate Force Organisation slot) > Malcharion, the War-Sage > Legiones Astartes
+live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r46-assault-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Assault Squad > RETINUE — choose up to one (no separate FOC slot) > Shabran Darr > Legiones Astartes
+live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r46-fa-seeker-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Seeker Squad > Retinue (does not occupy a separate FOC slot) > Magistus Amon, the Hidden > Legiones Astartes
+live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Garviel Loken > Legiones Astartes
+live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Garviel Loken > Legiones Astartes
+live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Tybalt Marr, “the Either” > Legiones Astartes
+live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad > Retinue (does not occupy a separate FOC slot) > Tybalt Marr, “the Either” > Legiones Astartes
+live-r2-r41-unit-xx-7-ingo-pech-retinue-3-r46-fa-seeker-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Seeker Squad > Retinue (does not occupy a separate FOC slot) > Ingo Pech > Legiones Astartes
+r52-ec-sonic-hss-r46-hs-heavy-support-squad-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Heavy Support Squad — Sonic Weaponry > Legiones Astartes
+r57-iw-hammer-tactical-r46-tactical-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Tactical Squad — Hammer Compulsory > Legiones Astartes
+r57-iw-hammer-tactical-r46-tactical-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Tactical Squad — Hammer Compulsory > Legiones Astartes
+r57-iw-hammer-breacher-r46-breacher-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Breacher Siege Squad — Hammer Compulsory > Legiones Astartes
+r57-iw-ironfire-artillery-r46-hs-artillery-sal-ceramite | Armoured Ceramite — Salamanders price -> r46-sal-ceramite | Legion Wargear & Upgrades > Legion Artillery Tank Squadron — Artillery Column > Legiones Astartes
+r74-ba-rev-vet-r46-veteran-unit-sal-heavyflame | Heavy Flamer instead of Flamer -> r46-sal-heavy-flamer | Legion Wargear & Upgrades > Legion Veteran Squad (Jump Packs) — Day of Revelation > Legiones Astartes
+r74-ba-rev-vet-r46-veteran-unit-sal-artificer | Artificer Armour — Salamanders access -> r46-sal-artificer-armour | Legion Wargear & Upgrades > Legion Veteran Squad (Jump Packs) — Day of Revelation > Legiones Astartes
+
+CATEGORIES:
+r75-ba-cat-rev-warlord-jump | Day of Revelation — Warlord with Jump Pack hidden=true
+
+CORE TARGETS:
+transport-dreadnought-pod | Legion Dreadnought Drop Pod | type=model | Legiones Astartes
+dreadnought-unit | Legion Dreadnought | type=unit | Legiones Astartes
+dreadnought-p-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Primary Arm > Legion Dreadnought > Legiones Astartes
+dreadnought-s-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Secondary Arm > Legion Dreadnought > Legiones Astartes
+contemptor-unit | Legion Contemptor Dreadnought | type=unit | Legiones Astartes
+contemptor-p-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Primary Arm > Legion Contemptor Dreadnought > Legiones Astartes
+contemptor-s-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Secondary Arm > Legion Contemptor Dreadnought > Legiones Astartes
+hs-deredeo | Deredeo Pattern Dreadnought | type=unit | Legiones Astartes
+hs-leviathan | Leviathan Siege Dreadnought | type=unit | Legiones Astartes
+hq-consul-chaplain | Legion Chaplain Consul | type=upgrade | Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+hq-consul-librarian | Legion Librarian Consul | type=upgrade | Legion Consul Upgrade > Legion Centurion > Legiones Astartes
+r35-fury-dread-dreadnought-unit | Legion Dreadnought | type=unit | Legiones Astartes
+r35-fury-dread-dreadnought-p-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Primary Arm > Legion Dreadnought > Legiones Astartes
+r35-fury-dread-dreadnought-s-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Secondary Arm > Legion Dreadnought > Legiones Astartes
+r35-fury-contemptor-contemptor-unit | Legion Contemptor Dreadnought | type=unit | Legiones Astartes
+r35-fury-contemptor-contemptor-p-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Primary Arm > Legion Contemptor Dreadnought > Legiones Astartes
+r35-fury-contemptor-contemptor-s-dccw | Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Secondary Arm > Legion Contemptor Dreadnought > Legiones Astartes
+r52-ec-ryl-fixed-1 | Dreadnought Close Combat Weapon with built-in Heavy Flamer | type=upgrade | Rylanor the Unyielding > Legiones Astartes
+r41-unit-xv-4-contemptor-osiron-dreadnought | Contemptor-Osiron Dreadnought | type=unit | Legiones Astartes
+r41-unit-xvii-3-mhara-gal-tainted-dreadnought | Mhara Gal Tainted Dreadnought | type=unit | Legiones Astartes
+r37-wb-mhara-second-dccw | Second Dreadnought Close Combat Weapon with built-in Twin-linked Bolter | type=upgrade | Replace Plasma Cannon > Mhara Gal Tainted Dreadnought > Legiones Astartes
