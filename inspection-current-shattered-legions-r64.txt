@@ -1,0 +1,29 @@
+CAT=64 GST=15
+PASS: Theme exists
+PASS: Constituent selector exists
+PASS: Warlord selector exists
+PASS: 18 constituent Legions
+PASS: Constituent min2 max3
+PASS: 18 Warlord choices
+PASS: Warlord min1 max1
+PASS: Warlord choices gated by constituent
+PASS: Assignment selectors present
+PASS: Each assignment has 18 choices
+PASS: hq-praetor assignment
+PASS: hq-centurion assignment
+PASS: tactical-unit assignment
+PASS: veteran-unit assignment
+PASS: terminator-unit assignment
+PASS: recon-unit assignment
+PASS: Shattered special-unit 0-1 categories present
+PASS: Same-Legion HQ requirement modifiers present
+PASS: Primarchs detected
+FAIL: All Primarchs blocked in Shattered
+PASS: Shattered Alpha Mutable Tactic exists
+PASS: Legion config remains one-of
+PASS: Shattered Theme is inside Legion Configuration
+
+Assignment groups: 200
+Special 0-1 categories: 100
+HQ requirement modifiers: 89
+Primarchs checked: 12
