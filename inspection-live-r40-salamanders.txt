@@ -1,0 +1,49 @@
+Live R40 — Salamanders implementation
+Input CAT=39/GST=4 -> CAT=40/GST=5
+
+IMPLEMENTED:
+- Rebuilt the XVIII Legion selector into canonical shared rules: Promethean Cult, Sturdy, Never Give Up, Fire-based Warfare, Salamanders Mantle and Proscribed Munitions.
+- Added actual Salamanders Flame, Heavy Flamer and Inferno Pistol profiles.
+- Enforced the one-per-army Salamanders Mantle limit across the generic upgrade, Artellus Numeon and Nomus Rhy'tan.
+- Applied Proscribed Munitions visibility restrictions to 140 Phosphex entries/links.
+- Added Inferno Pistol access to 104 additional obvious Armoury/Sergeant groups.
+- Rebuilt Firedrakes, Pyroclasts, Infernus Destroyers, Adherents and Sanctifiers with actual special rules, dynamic squad-wide costs, shared weapon caps, Sergeant/leader options and Dedicated Transports.
+- Firedrake storm-shield replacements now share the correct 2-per-5 allowance; Infernus, Adherent and Sanctifier special weapon caps now scale from actual squad size.
+- Rebuilt the Covenant of Fire: non-compulsory Pyroclast/Infernus Troops copies, two genuine compulsory Troops requirement, Fast+Heavy <= Troops enforcement, Move Through Cover/Veneration/Obsidian rules and Deep Strike/Fortification limitations text.
+- Rebuilt the Awakening Fire: Fear/Fearless effects, mandatory Chaplain, Vulkan exclusion, max-one categories for Jump Infantry/Jetbike/Skimmer/Flyer, and Fury of the Salamander.
+- Added Fury of the Salamander to 2 Librarian psychic-power groups.
+- Rebuilt Artellus Numeon, Nomus Rhy'tan, Xiaphas Jurr, Cassian Dracos/Reborn and T'Kell with their source-listed rules and wargear effects.
+- Keeper of the Keys now exposes one Dreadnought or Contemptor as a non-compulsory HQ choice while Nomus is present.
+- Rebuilt Vulkan as Loyalist-only, removed the Legion numeral from his display name, added his armour/weapons/rules and all three Primarch retinue choices.
+- Removed obsolete XVIII Source Entry / Rite text-dump blocks and retained the R36+ shared-rule standard.
+
+VALIDATION:
+- PASS: CAT revision 40
+- PASS: GST revision 5
+- PASS: CAT points GST5
+- PASS: Index 40/5
+- PASS: r41-unit-xviii-0-firedrake-terminator-squad has Salamanders rule
+- PASS: r41-unit-xviii-1-pyroclast-squad has Salamanders rule
+- PASS: r41-unit-xviii-2-salamanders-infernus-destroyer-squad has Salamanders rule
+- PASS: r41-unit-xviii-3-adherent-squad has Salamanders rule
+- PASS: r41-unit-xviii-4-sanctifier-squad has Salamanders rule
+- PASS: Covenant Pyro Troops exists
+- PASS: Covenant Infernus Troops exists
+- PASS: Nomus Dread HQ exists
+- PASS: Nomus Contemptor HQ exists
+- PASS: Cassian Reborn exists
+- PASS: Vulkan retinue exists
+- PASS: Vulkan name has no numeral
+- PASS: No base-unit-only squad upgrade labels
+- PASS: r41-unit-xviii-0-firedrake-terminator-squad gated
+- PASS: r41-unit-xviii-1-pyroclast-squad gated
+- PASS: r41-unit-xviii-2-salamanders-infernus-destroyer-squad gated
+- PASS: r41-unit-xviii-3-adherent-squad gated
+- PASS: r41-unit-xviii-4-sanctifier-squad gated
+- PASS: r41-unit-xviii-5-artellus-numeon gated
+- PASS: r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan gated
+- PASS: r41-unit-xviii-7-xiaphas-jurr-prophet-of-fire gated
+- PASS: r41-unit-xviii-8-cassian-dracos gated
+- PASS: r41-unit-xviii-9-forgefather-t-kell gated
+- PASS: r41-unit-xviii-10-xviii-vulkan-the-forgefather gated
+- PASS: No XVIII Source Entry dumps
