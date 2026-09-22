@@ -32,3 +32,5 @@ jobs:
           git add 'Legiones Astartes.cat' 'Prohammer 30k.gst' index.xml inspection-live-r62-shattered-legions.txt
           git diff --cached --quiet || git commit -m "Live R62: add Shattered Legions Theme"
           git push
+
+# retry after unique modifier clone IDs
