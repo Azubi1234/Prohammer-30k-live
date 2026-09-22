@@ -205,6 +205,21 @@ def transform_node(node,donor_core_names,donor_core_targets,old_source_text,add_
         add_infolink(node,node.get("id")+"-al-la","Legiones Astartes (Alpha Legion)",AL_LA.get("id"),"rule")
     return had
 
+def uniquify_cloned_modifier_ids(e):
+    """Fix duplicate modifier IDs inherited from donor roots.
+    Modifier IDs are not link targets; suffixing repeated occurrences is safe.
+    Any duplicate non-modifier ID is treated as a real structural error."""
+    seen={}; fixed=0
+    for x in e.iter():
+        oid=x.get("id")
+        if not oid: continue
+        n=seen.get(oid,0); seen[oid]=n+1
+        if n==0: continue
+        if x.tag!=C("modifier"):
+            raise RuntimeError(f"Duplicate non-modifier ID inherited in {e.get('id')}: {oid} on {x.tag}")
+        x.set("id",f"{oid}-dup{n+1}"); fixed+=1
+    return fixed
+
 def add_alpha_root_rules(e):
     # Martial Hubris is an Alpha Legion army rule affecting this unit.
     if "martial hubris" not in direct_names(e):add_infolink(e,e.get("id")+"-al-hubris","Martial Hubris",HUB.get("id"),"rule")
@@ -243,6 +258,8 @@ for old in old_rewards:
                 if not any(x.get("targetId")=="r46-al-trans-unit" for x in cp.iter(C("entryLink"))):
                     l=elink(cp,rid+"-al-trans","Teleportation Transponders","r46-al-trans-unit",0,1,False)
                 term_units+=1
+    # Donor roots may contain old duplicated modifier IDs; make each clone structurally unique.
+    uniquify_cloned_modifier_ids(cp)
     # replace old in the same root position
     pos=list(root_container).index(old);root_container.remove(old);root_container.insert(pos,cp);rebuilt.append((rid,don.get("id"),don.get("name"),donor_la,loy))
 
