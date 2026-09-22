@@ -1,0 +1,15 @@
+name: Diagnose R51 Official Schema
+on:
+  push:
+    paths: ['.github/workflows/diag-r51-official-schema.yml']
+permissions: {contents: read}
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.x'}
+      - run: pip install lxml
+      - run: curl -L 'https://raw.githubusercontent.com/BSData/schemas/e8e59c70c8a5c9c74e5142a9c8e83aca6e38ddc9/src/xml/schema/v2_03/Catalogue.xsd' -o Catalogue.xsd
+      - run: python .github/build/diag_r51_official_schema.py
