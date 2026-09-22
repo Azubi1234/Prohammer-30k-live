@@ -315,7 +315,8 @@ f"- {la_units} donor units with a named Legiones Astartes rule were converted to
 "- Donor core Legion rules are stripped unless the unit's own old source entry explicitly listed that rule/equipment; unit-specific rules/options are retained.",
 f"- Preserved explicit donor allegiance gates on {loyalty_kept} Rewards where the current donor unit has a Loyalist/Traitor availability condition.",
 f"- Added Alpha Legion Teleportation Transponders to {term_units} eligible all-Terminator Rewards units.",
-"- Current donor stat profiles/options replace the old Source Entry-era clones; no Reward contains a Source Entry dump.",\nf"- Repaired {legacy_target_repairs} legacy catalogue links using retired Artificer Armour / Thunder Hammer / Rotor Cannon target IDs before cloning.","",
+"- Current donor stat profiles/options replace the old Source Entry-era clones; no Reward contains a Source Entry dump.",
+f"- Repaired {legacy_target_repairs} legacy catalogue links using retired Artificer Armour / Thunder Hammer / Rotor Cannon target IDs before cloning.","",
 "NATIVE CLEANUP:",
 f"- Removed {legacy_ret_removed} obsolete imported retinue group(s) left beside the new Dynat/Pech retinue selectors.","",
 "VALIDATION:"
