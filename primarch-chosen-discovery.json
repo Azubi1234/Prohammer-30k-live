@@ -1,0 +1,92 @@
+[
+  {
+    "file": "Legiones-Astartes-Generic.cat",
+    "tag": "selectionEntry",
+    "id": "da22-rite-primarchs-chosen",
+    "name": "Rite of War \u2014 Primarch's Chosen"
+  },
+  {
+    "file": "Legiones-Astartes-Generic.cat",
+    "tag": "rule",
+    "id": "da22-rule-primarchs-chosen",
+    "name": "Primarch's Chosen"
+  },
+  {
+    "file": "Alpha-Legion.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xx-2-lernaean-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Death-Guard.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xiv-0-deathshroud-terminators-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Emperor-s-Children.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-iii-1-phoenix-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Iron-Hands.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-x-1-gorgon-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Iron-Hands.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-x-2-morlock-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Night-Lords.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-viii-2-contekar-terminator-elite-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Raven-Guard.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xix-2-deliverer-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Salamanders.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xviii-0-firedrake-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Sons-of-Horus.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xvi-0-justaerin-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Space-Wolves.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-vi-5-varagyr-wolf-guard-terminators-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Thousand-Sons.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xv-0-sekhmet-terminator-cabal-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "Ultramarines.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xiii-1-fulmentarus-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  },
+  {
+    "file": "World-Eaters.cat",
+    "tag": "categoryLink",
+    "id": "r41-unit-xii-4-devourer-terminator-squad-primarchs-chosen-troops",
+    "name": "Troops \u2014 Pride / Primarch's Chosen"
+  }
+]
