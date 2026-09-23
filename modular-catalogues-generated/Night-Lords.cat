@@ -2621,27 +2621,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6" name="Molecular Acid Shells (for Heavy Bolter)" type="selectionEntry" targetId="da22-acid-hb" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="7" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-contekar-transport-spartan-hs-spartan-p6" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
+                    </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-contekar-transport-spartan-r49-legion-upgrades-hs-spartan" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -3837,27 +3817,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6" name="Molecular Acid Shells (for Heavy Bolter)" type="selectionEntry" targetId="da22-acid-hb" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="7" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-atramentar-transport-spartan-hs-spartan-p6" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
+                    </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-atramentar-transport-spartan-r49-legion-upgrades-hs-spartan" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -4153,7 +4113,7 @@ Fearless: Automatically passes all Morale and Pinning tests. May not Take Cover!
                             <cost name="Points" typeId="pts" value="60" />
                           </costs>
                         </entryLink>
-                      <entryLink id="r32-soh-maloghurst-link-8" name="Maloghurst the Twisted" hidden="false" type="selectionEntry" targetId="r32-soh-maloghurst-replacement" import="true"><constraints><constraint id="r32-soh-maloghurst-link-8-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r32-soh-maloghurst-link-8-legion" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></entryLinks>
+                      </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   </selectionEntry>
@@ -4478,86 +4438,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         <cost name="Points" typeId="pts" value="30" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Pistol" id="r71-nl-sev-ret-0-da22-alt-pp-18" type="selectionEntry" targetId="da22-plasma-pistol" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-sev-ret-0-da22-alt-pp-18-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Gun" id="r71-nl-sev-ret-0-da22-alt-pg-5" type="selectionEntry" targetId="da22-plasma-gun" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-sev-ret-0-da22-alt-pg-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Repeater" id="r71-nl-sev-ret-0-da22-alt-pr-5" type="selectionEntry" targetId="da22-plasma-repeater" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-sev-ret-0-da22-alt-pr-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Burner" id="r71-nl-sev-ret-0-da22-alt-pb-5" type="selectionEntry" targetId="da22-plasma-burner" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-sev-ret-0-da22-alt-pb-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="20" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="r71-nl-sev-ret-0-r40-da-warblade-hq-centurion-ret-command-w-15" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-sev-ret-0-r40-da-warblade-hq-centurion-ret-command-w-15-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  <entryLink id="r38-wb-tainted-r71-nl-sev-ret-0-hq-centurion-ret-command-weapons" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-sev-ret-0-hq-centurion-ret-command-weapons-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-sev-ret-0-hq-centurion-ret-command-weapons-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="15.0" /></costs></entryLink></entryLinks>
+                    <entryLink id="r38-wb-tainted-r71-nl-sev-ret-0-hq-centurion-ret-command-weapons" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-sev-ret-0-hq-centurion-ret-command-weapons-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-sev-ret-0-hq-centurion-ret-command-weapons-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="15.0" /></costs></entryLink></entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Per-model Equipment" id="r71-nl-sev-ret-0-hq-centurion-ret-command-eq" hidden="false">
                   <entryLinks>
@@ -4739,7 +4620,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                   <selectionEntries>
                     </selectionEntries>
                 </selectionEntryGroup>
-              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-7-fabius-bile" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-10-fulgrim-transfigured" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
+              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-sev-ret-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-sev-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="unit" name="Legion Terminator Command Squad" id="r71-nl-sev-ret-1-hq-praetor-ret-termcommand" hidden="false" import="true">
               <costs>
@@ -5180,44 +5061,6 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                   <costs>
                     <cost name="Points" typeId="pts" value="10" />
                   </costs>
-                </entryLink>
-                <entryLink id="r71-nl-sev-ret-1-r40-da-warblade-hq-praetor-ret-tc-pw" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
-                  <constraints>
-                    <constraint id="r71-nl-sev-ret-1-r40-da-warblade-hq-praetor-ret-tc-pw-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="pts" value="10" />
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="r71-nl-sev-ret-1-r40-da-trans-hq-praetor-ret-termcommand" name="Teleportation Transponders" type="selectionEntry" targetId="da22-transponders" hidden="true" import="true">
-                  <constraints>
-                    <constraint id="r71-nl-sev-ret-1-r40-da-trans-hq-praetor-ret-termcommand-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="pts" value="15" />
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
                 <entryLink id="r71-nl-sev-ret-1-r70-if-termcmd-trans-935" name="Teleportation Transponders" type="selectionEntry" targetId="r64-if-gear-trans-unit" hidden="false" import="true">
                   <constraints>
@@ -6306,27 +6149,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                           <entryLinks>
-                            <entryLink id="r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6" name="Molecular Acid Shells (for Heavy Bolter)" type="selectionEntry" targetId="da22-acid-hb" hidden="true" import="true">
-                              <constraints>
-                                <constraint id="r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                              </constraints>
-                              <costs>
-                                <cost name="Points" typeId="pts" value="7" />
-                              </costs>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-hs-spartan-p6" shared="true" includeChildSelections="true" />
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </entryLink>
-                          </entryLinks>
+                            </entryLinks>
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-r49-legion-upgrades-hs-spartan" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
                           <entryLinks>
@@ -6630,7 +6453,7 @@ Fearless: Automatically passes all Morale and Pinning tests. May not Take Cover!
                             <cost name="Points" typeId="pts" value="60" />
                           </costs>
                         </entryLink>
-                      <entryLink id="r32-soh-maloghurst-link-9" name="Maloghurst the Twisted" hidden="false" type="selectionEntry" targetId="r32-soh-maloghurst-replacement" import="true"><constraints><constraint id="r32-soh-maloghurst-link-9-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r32-soh-maloghurst-link-9-legion" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></entryLinks>
+                      </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   </selectionEntry>
@@ -6955,86 +6778,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         <cost name="Points" typeId="pts" value="30" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Pistol" id="r71-nl-oph-ret-0-da22-alt-pp-18" type="selectionEntry" targetId="da22-plasma-pistol" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-oph-ret-0-da22-alt-pp-18-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Gun" id="r71-nl-oph-ret-0-da22-alt-pg-5" type="selectionEntry" targetId="da22-plasma-gun" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-oph-ret-0-da22-alt-pg-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Repeater" id="r71-nl-oph-ret-0-da22-alt-pr-5" type="selectionEntry" targetId="da22-plasma-repeater" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-oph-ret-0-da22-alt-pr-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Burner" id="r71-nl-oph-ret-0-da22-alt-pb-5" type="selectionEntry" targetId="da22-plasma-burner" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-oph-ret-0-da22-alt-pb-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="20" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="r71-nl-oph-ret-0-r40-da-warblade-hq-centurion-ret-command-w-15" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-oph-ret-0-r40-da-warblade-hq-centurion-ret-command-w-15-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  <entryLink id="r38-wb-tainted-r71-nl-oph-ret-0-hq-centurion-ret-command-weapons" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-oph-ret-0-hq-centurion-ret-command-weapons-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-oph-ret-0-hq-centurion-ret-command-weapons-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="15.0" /></costs></entryLink></entryLinks>
+                    <entryLink id="r38-wb-tainted-r71-nl-oph-ret-0-hq-centurion-ret-command-weapons" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-oph-ret-0-hq-centurion-ret-command-weapons-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-oph-ret-0-hq-centurion-ret-command-weapons-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="15.0" /></costs></entryLink></entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Per-model Equipment" id="r71-nl-oph-ret-0-hq-centurion-ret-command-eq" hidden="false">
                   <entryLinks>
@@ -7216,7 +6960,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                   <selectionEntries>
                     </selectionEntries>
                 </selectionEntryGroup>
-              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-7-fabius-bile" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-10-fulgrim-transfigured" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
+              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-oph-ret-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-oph-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Contekar Terminator Elite" hidden="false" id="r71-nl-oph-ret-1-r41-unit-viii-2-contekar-terminator-elite">
               <categoryLinks><categoryLink id="r62-limit-link-7ffee6d7abf0" name="Shattered 0–1 — Contekar Terminator Elite" targetId="r62-shat-limit-f052193e1f7f" hidden="false" /></categoryLinks><modifiers><modifier id="r62-fixed-hide-const-4f2ab72252e2" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r62-shat-const-viii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier><modifier id="r62-shat-hqreq-4f2ab72252e2" type="set" field="hidden" value="true"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r62-shat-assign-b97272a82531" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r62-shat-assign-b692da9926c0" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-viii-4-jago-sevatarion" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-viii-5-kheron-ophion" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-viii-6-malcharion-the-war-sage" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-viii-7-shang" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-viii-8-flaymaster-mawdrym-llansahai" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers><infoLinks><infoLink id="r36-link-e149c4ab0078" name="Stubborn" hidden="false" targetId="r36-shared-stubborn-59f928d" type="rule" /><infoLink id="r36-link-8fc95dfbbec2" name="Nostraman Chainblade" hidden="false" targetId="r36-exact-nostraman-chainblade-a3b0d93" type="rule" /><infoLink id="r36-link-c4209c84c912" name="Escaton Power Claw" hidden="false" targetId="r36-exact-escaton-power-claw-c955405" type="rule" /></infoLinks><costs>
@@ -8133,27 +7877,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                           <entryLinks>
-                            <entryLink id="r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6" name="Molecular Acid Shells (for Heavy Bolter)" type="selectionEntry" targetId="da22-acid-hb" hidden="true" import="true">
-                              <constraints>
-                                <constraint id="r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                              </constraints>
-                              <costs>
-                                <cost name="Points" typeId="pts" value="7" />
-                              </costs>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-hs-spartan-p6" shared="true" includeChildSelections="true" />
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </entryLink>
-                          </entryLinks>
+                            </entryLinks>
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-r49-legion-upgrades-hs-spartan" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
                           <entryLinks>
@@ -8466,7 +8190,7 @@ Fearless: Automatically passes all Morale and Pinning tests. May not Take Cover!
                             <cost name="Points" typeId="pts" value="60" />
                           </costs>
                         </entryLink>
-                      <entryLink id="r32-soh-maloghurst-link-10" name="Maloghurst the Twisted" hidden="false" type="selectionEntry" targetId="r32-soh-maloghurst-replacement" import="true"><constraints><constraint id="r32-soh-maloghurst-link-10-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><modifiers><modifier id="r32-soh-maloghurst-link-10-legion" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></entryLinks>
+                      </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   </selectionEntry>
@@ -8791,86 +8515,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         <cost name="Points" typeId="pts" value="30" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Pistol" id="r71-nl-mal-ret-0-da22-alt-pp-18" type="selectionEntry" targetId="da22-plasma-pistol" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-0-da22-alt-pp-18-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Gun" id="r71-nl-mal-ret-0-da22-alt-pg-5" type="selectionEntry" targetId="da22-plasma-gun" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-0-da22-alt-pg-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Repeater" id="r71-nl-mal-ret-0-da22-alt-pr-5" type="selectionEntry" targetId="da22-plasma-repeater" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-0-da22-alt-pr-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Burner" id="r71-nl-mal-ret-0-da22-alt-pb-5" type="selectionEntry" targetId="da22-plasma-burner" hidden="false">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-0-da22-alt-pb-5-2" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="20" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="r71-nl-mal-ret-0-r40-da-warblade-hq-centurion-ret-command-w-15" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-0-r40-da-warblade-hq-centurion-ret-command-w-15-max" type="max" value="5" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  <entryLink id="r38-wb-tainted-r71-nl-mal-ret-0-hq-centurion-ret-command-weapons" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-mal-ret-0-hq-centurion-ret-command-weapons-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-mal-ret-0-hq-centurion-ret-command-weapons-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="15.0" /></costs></entryLink></entryLinks>
+                    <entryLink id="r38-wb-tainted-r71-nl-mal-ret-0-hq-centurion-ret-command-weapons" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-mal-ret-0-hq-centurion-ret-command-weapons-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-mal-ret-0-hq-centurion-ret-command-weapons-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="15.0" /></costs></entryLink></entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Per-model Equipment" id="r71-nl-mal-ret-0-hq-centurion-ret-command-eq" hidden="false">
                   <entryLinks>
@@ -9052,7 +8697,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                   <selectionEntries>
                     </selectionEntries>
                 </selectionEntryGroup>
-              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-7-fabius-bile" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-10-fulgrim-transfigured" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
+              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-vets" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-0-hq-centurion-ret-command-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-mal-ret-0-hq-centurion-ret-command-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Legion Veteran Squad" hidden="false" id="r71-nl-mal-ret-1-veteran-unit">
               <infoLinks><infoLink id="r36-link-895e3dd84997" name="Veteran Tactics" hidden="false" targetId="r36-exact-veteran-tactics-f7215db" type="rule" /></infoLinks><rules>
@@ -9266,26 +8911,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         <cost name="Points" typeId="pts" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink id="r71-nl-mal-ret-1-r40-da-warblade-veteran-melee-power" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-r40-da-warblade-veteran-melee-power-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="20" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  <entryLink id="r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="10.0" /></costs></entryLink></entryLinks>
+                    <entryLink id="r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee" name="Tainted Weapon — Word Bearers" targetId="r46-wb-tainted-weapon" type="selectionEntry" import="true" hidden="true"><modifiers><modifier id="r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers><constraints><constraint id="r38-wb-tainted-r71-nl-mal-ret-1-veteran-melee-max" type="max" value="10" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="10.0" /></costs></entryLink></entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Bolter Replacements" id="r71-nl-mal-ret-1-veteran-ranged" hidden="false">
                   <constraints>
@@ -9646,52 +9272,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         <cost name="Points" typeId="pts" value="20" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Gun" hidden="false" id="r71-nl-mal-ret-1-da22-alt-pg-2" type="selectionEntry" targetId="da22-plasma-gun">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-da22-alt-pg-2-2" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Repeater" hidden="false" id="r71-nl-mal-ret-1-da22-alt-pr-2" type="selectionEntry" targetId="da22-plasma-repeater">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-da22-alt-pr-2-2" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="25" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Burner" hidden="false" id="r71-nl-mal-ret-1-da22-alt-pb-2" type="selectionEntry" targetId="da22-plasma-burner">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-da22-alt-pb-2-2" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="20" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
+                    </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Squad Equipment" id="r71-nl-mal-ret-1-veteran-equipment" hidden="false">
                   <entryLinks>
@@ -9829,21 +9410,6 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                       <costs>
                         <cost name="Points" typeId="pts" value="5" />
                       </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Calibanite Plasma Pistol" hidden="false" id="r71-nl-mal-ret-1-da22-alt-pp-5" type="selectionEntry" targetId="da22-plasma-pistol">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-da22-alt-pp-5-2" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="15" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </entryLink>
                     <entryLink import="true" name="Refractor Field" hidden="false" id="r71-nl-mal-ret-1-rev24-veteran-unit-sgt-refractor" type="selectionEntry" targetId="gear-hq-refractor">
                       <constraints>
@@ -10063,27 +9629,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-mal-ret-1-r40-da-ammo-veteran-unit" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="r71-nl-mal-ret-1-r40-da-ammo-veteran-unit-veteran-sp-ml" name="Stasis Shells — Missile (for Missile Launcher with Suspensor Web (replaces Bolter))" type="selectionEntry" targetId="da22-stasis-missile" hidden="true" import="true">
-                      <constraints>
-                        <constraint id="r71-nl-mal-ret-1-r40-da-ammo-veteran-unit-veteran-sp-ml-max" type="max" value="2" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="pts" value="5" />
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-mal-ret-1-veteran-sp-ml" shared="true" includeChildSelections="true" />
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
+                    </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit" name="Steel Fist — Armoured Assault Dedicated Transport" hidden="true" collective="false" import="true">
                   <constraints>
@@ -10308,27 +9854,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                           <entryLinks>
-                            <entryLink id="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6" name="Molecular Acid Shells (for Heavy Bolter)" type="selectionEntry" targetId="da22-acid-hb" hidden="true" import="true">
-                              <constraints>
-                                <constraint id="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                              </constraints>
-                              <costs>
-                                <cost name="Points" typeId="pts" value="7" />
-                              </costs>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-hs-spartan-hs-spartan-p6" shared="true" includeChildSelections="true" />
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </entryLink>
-                          </entryLinks>
+                            </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                       <selectionEntries>
@@ -10723,7 +10249,7 @@ Pinning: Unsaved Wounds caused by this weapon force the unit to take a Pinning T
                   <entryLinks>
                     </entryLinks>
                 </selectionEntryGroup>
-              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r37-spear-veteran-transport-src-hq-praetor-ret-honour-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r37-spear-veteran-transport-src-hq-praetor-ret-honour-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-4" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r37-spear-veteran-transport-src-hq-praetor-ret-honour-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-5" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-6" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-7-fabius-bile" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-hide" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="r41-unit-iii-10-fulgrim-transfigured" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
+              <selectionEntryGroup id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-group" name="Fabius Bile" hidden="false" collective="false" import="true"><selectionEntries><entryLink id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit" name="Enhanced Warriors" targetId="r41-universal-gear-fee9d22f000bad" type="selectionEntry" import="true" hidden="false"><constraints><constraint id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs><modifiers><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-0" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-veteran-included" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-1" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-veteran-sergeant" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-2" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r37-spear-veteran-transport-src-hq-praetor-ret-honour-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-3" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r37-spear-veteran-transport-src-hq-praetor-ret-honour-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-4" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r37-spear-veteran-transport-src-hq-praetor-ret-honour-land-land-raider-achilles" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-5" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-phobos" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-scale-6" type="increment" field="pts" value="3"><repeats><repeat field="selections" scope="root-entry" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-r37-spear-tac-transport-src-hq-praetor-ret-honour-land-land-raider-proteus" repeats="1" roundUp="false" /></repeats></modifier><modifier id="live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></entryLink></selectionEntries></selectionEntryGroup><selectionEntryGroup id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-group" name="Special Upgrades" hidden="false" collective="false" import="true"><selectionEntries><selectionEntry id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit" name="Blessing of Slaanesh" type="upgrade" hidden="false" import="true"><costs><cost name="Points" typeId="pts" value="25" /></costs><constraints><constraint id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" /></constraints><rules><rule id="live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-rule" name="Blessing of Slaanesh" hidden="false"><description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers.</description></rule></rules><modifiers><modifier id="live-r2-live-r2-fulgrim-blessing-r71-nl-mal-ret-1-veteran-unit-hide" type="set" field="hidden" value="true"><conditions /></modifier></modifiers></selectionEntry></selectionEntries></selectionEntryGroup></selectionEntryGroups>
               <entryLinks>
                 <entryLink id="r71-nl-mal-ret-1-r64-if-veteran-unit-hammerfall-trans" name="Teleportation Transponders" type="selectionEntry" targetId="r64-if-gear-trans-unit" hidden="false" import="true">
                   <constraints>
@@ -12750,44 +12276,6 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                     <cost name="Points" typeId="pts" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink id="r71-nl-curze-ret-0-r40-da-warblade-hq-praetor-ret-tc-pw" name="Calibanite Warblade" type="selectionEntry" targetId="da22-warblade" hidden="true" import="true">
-                  <constraints>
-                    <constraint id="r71-nl-curze-ret-0-r40-da-warblade-hq-praetor-ret-tc-pw-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="pts" value="10" />
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="r71-nl-curze-ret-0-r40-da-trans-hq-praetor-ret-termcommand" name="Teleportation Transponders" type="selectionEntry" targetId="da22-transponders" hidden="true" import="true">
-                  <constraints>
-                    <constraint id="r71-nl-curze-ret-0-r40-da-trans-hq-praetor-ret-termcommand-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="pts" value="15" />
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
                 <entryLink id="r71-nl-curze-ret-0-r70-if-termcmd-trans-935" name="Teleportation Transponders" type="selectionEntry" targetId="r64-if-gear-trans-unit" hidden="false" import="true">
                   <constraints>
                     <constraint id="r71-nl-curze-ret-0-r70-if-termcmd-trans-935-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
@@ -13875,27 +13363,7 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan" name="Dark Angels Armoury — Ammunition" hidden="false" collective="false" import="true">
                           <entryLinks>
-                            <entryLink id="r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6" name="Molecular Acid Shells (for Heavy Bolter)" type="selectionEntry" targetId="da22-acid-hb" hidden="true" import="true">
-                              <constraints>
-                                <constraint id="r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
-                              </constraints>
-                              <costs>
-                                <cost name="Points" typeId="pts" value="7" />
-                              </costs>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" />
-                                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-hs-spartan-p6" shared="true" includeChildSelections="true" />
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </entryLink>
-                          </entryLinks>
+                            </entryLinks>
                         </selectionEntryGroup>
                         <selectionEntryGroup id="r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-r49-legion-upgrades-hs-spartan" name="Legion Wargear &amp; Upgrades" hidden="false" collective="false" import="true">
                           <entryLinks>
