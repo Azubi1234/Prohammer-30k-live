@@ -23,3 +23,5 @@ jobs:
           git diff --cached --quiet || git commit -m 'Deduplicate modular IDs and build release candidate'
           git pull --rebase origin modular-catalogues
           git push origin HEAD:modular-catalogues
+
+# Final serialized RC trigger after Generic index builder correction.
