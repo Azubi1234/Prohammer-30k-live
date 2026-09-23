@@ -1,0 +1,82 @@
+{
+  "Death-Guard.cat": {
+    "r13-dg-reaping-upgrades": [
+      "r13-dg-reaping-upgrades-moddup2",
+      "r13-dg-reaping-upgrades-moddup3",
+      "r13-dg-reaping-upgrades-moddup4"
+    ],
+    "r13-dg-reaping-upgrades-hide": [
+      "r13-dg-reaping-upgrades-hide-moddup2",
+      "r13-dg-reaping-upgrades-hide-moddup3",
+      "r13-dg-reaping-upgrades-hide-moddup4"
+    ]
+  },
+  "Legiones-Astartes-Generic.cat": {
+    "r41-unit-xiii-6-aeonid-thiel-profile-0": [
+      "r41-unit-xiii-6-aeonid-thiel-profile-0-moddup2"
+    ],
+    "r41-unit-xiii-6-aeonid-thiel-source": [
+      "r41-unit-xiii-6-aeonid-thiel-source-moddup2"
+    ],
+    "r13-dg-reaping-upgrades": [
+      "r13-dg-reaping-upgrades-moddup2"
+    ],
+    "r13-dg-reaping-upgrades-hide": [
+      "r13-dg-reaping-upgrades-hide-moddup2"
+    ],
+    "r36-long-relentless": [
+      "r36-long-relentless-moddup2"
+    ],
+    "r19-guard-sekhmet-troops": [
+      "r19-guard-sekhmet-troops-moddup2"
+    ],
+    "r19-guard-sekhmet-show-troops": [
+      "r19-guard-sekhmet-show-troops-moddup2"
+    ]
+  },
+  "Thousand-Sons.cat": {
+    "r19-guard-sekhmet-troops": [
+      "r19-guard-sekhmet-troops-moddup2"
+    ],
+    "r19-guard-sekhmet-show-troops": [
+      "r19-guard-sekhmet-show-troops-moddup2"
+    ],
+    "r18-ts-khenetai-scale--pts": [
+      "r18-ts-khenetai-scale--pts-moddup2"
+    ],
+    "r18-ts-ammitara-scale--pts": [
+      "r18-ts-ammitara-scale--pts-moddup2"
+    ],
+    "r18-final-ahriman-cabal-force-max": [
+      "r18-final-ahriman-cabal-force-max-moddup2"
+    ]
+  },
+  "White-Scars.cat": {
+    "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons": [
+      "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-moddup2",
+      "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-moddup3"
+    ],
+    "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-show": [
+      "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-show-moddup2",
+      "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-show-moddup3"
+    ],
+    "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-max": [
+      "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-max-moddup2",
+      "r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-max-moddup3"
+    ]
+  },
+  "Word-Bearers.cat": {
+    "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee": [
+      "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-moddup2",
+      "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-moddup3"
+    ],
+    "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-show": [
+      "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-show-moddup2",
+      "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-show-moddup3"
+    ],
+    "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-max": [
+      "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-max-moddup2",
+      "r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-max-moddup3"
+    ]
+  }
+}
