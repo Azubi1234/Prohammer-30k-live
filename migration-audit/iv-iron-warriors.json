@@ -1,0 +1,56 @@
+[
+  {
+    "id": "r41-unit-iv-0-tyrant-siege-terminator-squad",
+    "name": "Tyrant Siege Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-1-iron-havoc-squad",
+    "name": "Iron Havoc Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-2-dominator-cohort",
+    "name": "Dominator Cohort",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-4-narik-dreygur",
+    "name": "Nârik Dreygur",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-5-erasmus-golg",
+    "name": "Erasmus Golg",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-6-kyr-vhalen",
+    "name": "Kyr Vhalen",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-7-forrix-first-captain-of-the-iron-warriors",
+    "name": "Forrix, First Captain of the Iron Warriors",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-8-kroeger-the-bloody-handed",
+    "name": "Kroeger, the Bloody-Handed",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iv-9-iv-perturabo-the-lord-of-iron",
+    "name": "Perturabo, the Lord of Iron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

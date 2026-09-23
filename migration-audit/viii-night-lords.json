@@ -1,0 +1,80 @@
+[
+  {
+    "id": "r41-unit-viii-0-terror-squad",
+    "name": "Terror Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-1-night-raptor-squad",
+    "name": "Night Raptor Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-2-contekar-terminator-elite",
+    "name": "Contekar Terminator Elite",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-3-atramentar-flay-clade",
+    "name": "Atramentar Flay-Clade",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-4-jago-sevatarion",
+    "name": "Jago Sevatarion",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-5-kheron-ophion",
+    "name": "Kheron Ophion",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-6-malcharion-the-war-sage",
+    "name": "Malcharion, the War-Sage",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-7-shang",
+    "name": "Shang",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-8-flaymaster-mawdrym-llansahai",
+    "name": "Flaymaster Mawdrym Llansahai",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-viii-9-viii-konrad-curze-the-night-haunter",
+    "name": "Konrad Curze, the Night Haunter",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r71-nl-ta-raptor-r41-unit-viii-1-night-raptor-squad",
+    "name": "Night Raptor Squad — Terror Assault Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r71-nl-ta-terror-r41-unit-viii-0-terror-squad",
+    "name": "Terror Squad — Terror Assault Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r71-nl-hc-raptor-r41-unit-viii-1-night-raptor-squad",
+    "name": "Night Raptor Squad — Horror Cult Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "r41-unit-x-0-medusan-immortal-squad",
+    "name": "Medusan Immortal Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-x-1-gorgon-terminator-squad",
+    "name": "Gorgon Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-x-2-morlock-terminator-squad",
+    "name": "Morlock Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-x-4-shadrak-meduson",
+    "name": "Shadrak Meduson",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-x-5-autek-mor",
+    "name": "Autek Mor",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-x-6-gabriel-santar",
+    "name": "Gabriel Santar",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-x-7-x-ferrus-manus-the-gorgon",
+    "name": "Ferrus Manus, the Gorgon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r81-ih-bitter-role",
+    "name": "Medusan Immortal Squad — Company of Bitter Iron Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

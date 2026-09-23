@@ -1,0 +1,32 @@
+[
+  {
+    "id": "r41-unit-iii-4-lord-commander-eidolon",
+    "name": "Lord Commander Eidolon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-5-saul-tarvitz",
+    "name": "Saul Tarvitz",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-6-captain-lucius",
+    "name": "Captain Lucius",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-7-fabius-bile",
+    "name": "Fabius Bile",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-9-fulgrim-the-phoenician",
+    "name": "Fulgrim, the Phoenician",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

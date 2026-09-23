@@ -1,0 +1,122 @@
+[
+  {
+    "id": "r32-soh-maloghurst-replacement",
+    "name": "Maloghurst the Twisted",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r32-soh-kibre-upgrade",
+    "name": "Upgrade one Justaerin to Falkus Kibre",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r32-soh-torgaddon-upgrade",
+    "name": "Tarik Torgaddon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r32-soh-first-company-justaerin",
+    "name": "Justaerin Terminator Squad — Horus’ First Company",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r32-abaddon-extra-justaerin",
+    "name": "Justaerin Terminator Squad — Abaddon Warlord allowance",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-0-justaerin-terminator-squad",
+    "name": "Justaerin Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-1-reaver-attack-squad",
+    "name": "Reaver Attack Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-2-chieftain-squad",
+    "name": "Chieftain Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-3-luperci-pack",
+    "name": "Luperci Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-4-ezekyle-abaddon-first-captain",
+    "name": "Ezekyle Abaddon, First Captain",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-5-horus-aximand-little-horus",
+    "name": "Horus Aximand, “Little Horus”",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-6-garviel-loken",
+    "name": "Garviel Loken",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-7-maloghurst-the-twisted",
+    "name": "Maloghurst the Twisted",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-8-tybalt-marr-the-either",
+    "name": "Tybalt Marr, “the Either”",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-9-vheren-ashurhaddon",
+    "name": "Vheren Ashurhaddon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-10-falkus-kibre",
+    "name": "Falkus Kibre",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-11-tarik-torgaddon",
+    "name": "Tarik Torgaddon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-12-xvi-horus-lupercal-the-warmaster",
+    "name": "Horus Lupercal, the Warmaster",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvi-13-xvi-horus-ascended-the-warmaster",
+    "name": "Horus Ascended, the Warmaster",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad",
+    "name": "Reaver Attack Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

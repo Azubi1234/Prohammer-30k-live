@@ -1,0 +1,278 @@
+[
+  {
+    "id": "r45-al-legiones-astartes-alpha-legion",
+    "name": "Legiones Astartes (Alpha Legion)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r41-unit-xx-1-headhunter-kill-team",
+    "name": "Headhunter Kill Team",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-2-lernaean-terminator-squad",
+    "name": "Lernaean Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-3-effrit-disruption-cadre",
+    "name": "Effrit Disruption Cadre",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-4-armillus-dynat",
+    "name": "Armillus Dynat",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-5-exodus",
+    "name": "Exodus",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-6-autilon-skorr",
+    "name": "Autilon Skorr",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-8-mathias-herzog",
+    "name": "Mathias Herzog",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-9-sheed-ranko",
+    "name": "Sheed Ranko",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-10-xx-alpharius-the-hydra",
+    "name": "Alpharius, the Hydra",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-4",
+    "name": "Tyrant Siege Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-5",
+    "name": "Iron Havoc Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-6",
+    "name": "Dominator Cohort — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-18",
+    "name": "Terror Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-19",
+    "name": "Night Raptor Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-20",
+    "name": "Contekar Terminator Elite — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-21",
+    "name": "Dawnbreaker Cohort — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-22",
+    "name": "Crimson Paladin Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-23",
+    "name": "Angel's Tears Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-24",
+    "name": "Grav Chariot Squadron — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-25",
+    "name": "Medusan Immortal Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-26",
+    "name": "Gorgon Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-27",
+    "name": "Morlock Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-28",
+    "name": "Rampager Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-29",
+    "name": "Red Butcher Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-30",
+    "name": "Red Hand Destroyer Mortalis Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-31",
+    "name": "World Eaters Inductii Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-32",
+    "name": "Devourer Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-33",
+    "name": "Triarii Breacher Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-46",
+    "name": "Justaerin Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-47",
+    "name": "Reaver Attack Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-48",
+    "name": "Chieftain Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-49",
+    "name": "Luperci Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-50",
+    "name": "Gal Vorbak Dark Brethren — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-51",
+    "name": "Procurator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-52",
+    "name": "Possessed Marine Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-53",
+    "name": "Firedrake Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-54",
+    "name": "Pyroclast Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-55",
+    "name": "Salamanders Infernus Destroyer Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-56",
+    "name": "Adherent Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-57",
+    "name": "Sanctifier Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-58",
+    "name": "Mor Deythan Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-59",
+    "name": "Dark Fury Assault Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-60",
+    "name": "Deliverer Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-61",
+    "name": "Raptor Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r45-al-headhunter-troops",
+    "name": "Headhunter Kill Team — Headhunter Leviathal Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

@@ -1,0 +1,4826 @@
+[
+  {
+    "id": "gear-bolter",
+    "name": "Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-bolt-pistol",
+    "name": "Bolt Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-chainsword",
+    "name": "Chainsword",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-flamer",
+    "name": "Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-meltagun",
+    "name": "Meltagun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-plasma-gun",
+    "name": "Plasma Gun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-volkite-charger",
+    "name": "Volkite Charger",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-volkite-caliver",
+    "name": "Volkite Caliver",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-rotor",
+    "name": "Rotor Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-heavy-bolter",
+    "name": "Heavy Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-missile",
+    "name": "Missile Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-autocannon",
+    "name": "Autocannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-multimelta",
+    "name": "Multi-Melta",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-plasma-cannon",
+    "name": "Plasma Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-lascannon",
+    "name": "Lascannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hand-flamer",
+    "name": "Hand Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-plasma-pistol",
+    "name": "Plasma Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-volkite-serpenta",
+    "name": "Volkite Serpenta",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-storm-bolter",
+    "name": "Storm Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combi-bolter",
+    "name": "Combi-Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combi-flamer",
+    "name": "Combi-flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combi-grenade",
+    "name": "Combi-Grenade Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combi-melta",
+    "name": "Combi-meltagun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combi-plasma",
+    "name": "Combi-plasma gun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combi-volkite",
+    "name": "Combi-volkite charger",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-lightning-claw",
+    "name": "Lightning claw",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-pair-claws",
+    "name": "Pair of Lightning Claws",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-power-fist",
+    "name": "Power fist",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-power-weapon",
+    "name": "Power weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-rending",
+    "name": "Rending Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-thunder",
+    "name": "Thunder hammer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combat-shield",
+    "name": "Combat Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-auspex",
+    "name": "Auspex",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-bionics",
+    "name": "Bionics",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-melta-bombs",
+    "name": "Melta bombs",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-purity",
+    "name": "Purity Seals",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-homer",
+    "name": "Teleport Homer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-krak",
+    "name": "Krak grenades",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-vexilla",
+    "name": "Legion Vexilla",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-nuncio",
+    "name": "Nuncio Vox",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-tl-bolter",
+    "name": "Twin-linked Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-heavy-flamer",
+    "name": "Heavy Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hk",
+    "name": "Hunter-Killer Missile",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "transport-rhino",
+    "name": "Legion Rhino Armoured Carrier",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-havoc",
+    "name": "Havoc Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "transport-drop-pod",
+    "name": "Legion Drop Pod",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "transport-dreadclaw",
+    "name": "Anvillus Pattern Dreadclaw Drop Pod",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hardened-power-armour",
+    "name": "Hardened Power Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-boarding-shield",
+    "name": "Boarding Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-graviton-gun",
+    "name": "Graviton Gun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-lascutter",
+    "name": "Lascutter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-breaching-charge",
+    "name": "Breaching Charge",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-recon-armour",
+    "name": "Recon Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-astartes-shotgun",
+    "name": "Astartes Shotgun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-sniper-rifle",
+    "name": "Sniper Rifle",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-combat-blade",
+    "name": "Combat Blade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-cameleoline",
+    "name": "Cameleoline",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-foeblaster",
+    "name": "Foeblaster Boltgun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-heavy-flamer-susp",
+    "name": "Heavy Flamer with Suspensor Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-heavy-bolter-susp",
+    "name": "Heavy Bolter with Suspensor Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-missile-susp",
+    "name": "Missile Launcher with Suspensor Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-chainfist",
+    "name": "Chainfist",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-reaper-autocannon",
+    "name": "Reaper Autocannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-plasma-blaster",
+    "name": "Plasma Blaster",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-assault-cannon",
+    "name": "Assault Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-kheres",
+    "name": "Kheres Assault Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-cyclone",
+    "name": "Cyclone Missile Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-grenade-harness",
+    "name": "Grenade Harness",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-rad-grenades",
+    "name": "Rad Grenades",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-rad-missile",
+    "name": "Missile Launcher with Suspensor Web and Rad Missiles",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-phosphex-bomb",
+    "name": "Phosphex Bomb",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-volkite-culverin",
+    "name": "Volkite Culverin",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-conversion-beamer",
+    "name": "Conversion Beamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-heavy-conversion-beamer",
+    "name": "Heavy Conversion Beamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-graviton-cannon",
+    "name": "Graviton Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-laser-destroyer",
+    "name": "Laser Destroyer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-quad-heavy-bolter",
+    "name": "Quad Heavy Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "transport-dreadnought-pod",
+    "name": "Legion Dreadnought Drop Pod",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-stalker",
+    "name": "M.40 Targeter and Stalker Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-seeker-hb",
+    "name": "Heavy Bolter with Suspensor and Hellfire Rounds",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-tl-flamer",
+    "name": "Twin-linked Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-tl-melta",
+    "name": "Twin-linked Meltagun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-tl-plasma",
+    "name": "Twin-linked Plasma Gun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-typhoon",
+    "name": "Typhoon Missile Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-tl-cyclone",
+    "name": "Twin-linked Cyclone Missile Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "fa-gear-tl-las",
+    "name": "Twin-linked Lascannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-tl-heavy-bolter",
+    "name": "Twin-linked Heavy Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-tl-heavy-flamer",
+    "name": "Twin-linked Heavy Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-tl-multimelta",
+    "name": "Twin-linked Multi-Melta",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-tl-volkite-culverin",
+    "name": "Twin-linked Volkite Culverin",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-predator-cannon",
+    "name": "Predator Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-executioner",
+    "name": "Executioner Plasma Destroyer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-magna-melta",
+    "name": "Magna-Melta",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-laser-destroyer-array",
+    "name": "Laser Destroyer Array",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-quad-lascannon",
+    "name": "Quad Lascannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-scorpius",
+    "name": "Scorpius Multi-launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-accelerator",
+    "name": "Twin-linked Accelerator Autocannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-anvilus",
+    "name": "Anvilus Autocannon Battery",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-hellfire",
+    "name": "Hellfire Plasma Cannonade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-arachnus",
+    "name": "Arachnus Heavy Lascannon Battery",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-aiolos",
+    "name": "Aiolos Missile Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-neutron",
+    "name": "Neutron Beam Laser",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-lev-storm",
+    "name": "Leviathan Storm Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-lev-melta",
+    "name": "Cyclonic Melta Lance",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-gravflux",
+    "name": "Grav-flux Bombard",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-phosphex-dis",
+    "name": "Phosphex Discharger",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-flamestorm",
+    "name": "Flamestorm Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "hsgear-demolisher",
+    "name": "Demolisher Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-ccw",
+    "name": "Close Combat Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-chainaxe",
+    "name": "Chainaxe",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-force",
+    "name": "Force Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-relic",
+    "name": "Relic Blade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-artificer",
+    "name": "Artificer Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-terminator",
+    "name": "Terminator Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-tartaros",
+    "name": "Tartaros Terminator Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-cataphractii",
+    "name": "Cataphractii Terminator Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-refractor",
+    "name": "Refractor Field",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-iron-halo",
+    "name": "Iron Halo",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-boarding",
+    "name": "Boarding Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-combat-shield",
+    "name": "Combat Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-jump",
+    "name": "Jump Pack",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-bike",
+    "name": "Space Marine Bike",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-auspex",
+    "name": "Auspex",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-bionics",
+    "name": "Bionics",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-digital",
+    "name": "Digital Weapons",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-mastercraft",
+    "name": "Master-crafted Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-nuncio",
+    "name": "Nuncio Vox",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-hood",
+    "name": "Psychic Hood",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-purity",
+    "name": "Purity Seals",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-signum",
+    "name": "Signum",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-homer",
+    "name": "Teleport Homer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-honours",
+    "name": "Terminator Honours",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-melta-bombs",
+    "name": "Melta bombs",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-narthecium",
+    "name": "Narthecium",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-reductor",
+    "name": "Reductor",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-vexilla",
+    "name": "Legion Vexilla",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-sacred",
+    "name": "Sacred Standard",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-legion-standard",
+    "name": "Legion Standard",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "gear-hq-grenade-harness",
+    "name": "Grenade Harness",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-warblade",
+    "name": "Calibanite Warblade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-greatsword",
+    "name": "Terranic Greatsword",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-pistol",
+    "name": "Calibanite Plasma Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-gun",
+    "name": "Calibanite Plasma Gun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-cannon",
+    "name": "Calibanite Plasma Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-repeater",
+    "name": "Plasma Repeater",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-burner",
+    "name": "Plasma Burner",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-stasis-missile",
+    "name": "Stasis Shell — Missile",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-stasis-grenade",
+    "name": "Stasis Shell — Grenade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-acid-hb",
+    "name": "Molecular Acid Heavy Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-transponders",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-caster",
+    "name": "Plasma-caster",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-incinerator",
+    "name": "Plasma Incinerator with Suspensor Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-needle-pistol",
+    "name": "Needle Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-charge-blade",
+    "name": "Calibanite Charge-blade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-crozius",
+    "name": "Crozius Arcanum",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-rosarius",
+    "name": "Rosarius",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-servo-arm",
+    "name": "Servo-Arm",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-cognis-signum",
+    "name": "Cognis Signum",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-aether-shock-maul",
+    "name": "Aether-shock Maul",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-cortex-controller",
+    "name": "Cortex Controller",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-cortex-designator",
+    "name": "Cortex Designator",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r29-gear-special-issue-ammunition",
+    "name": "Special Issue Ammunition",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r37-gear-grenade-launcher",
+    "name": "Grenade Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r40-da-forward-deployment",
+    "name": "Forward Deployment — Infiltrate",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-phoenix-spear",
+    "name": "Phoenix Spear",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-digital-lasers",
+    "name": "Digital Lasers",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-sonic-shrieker",
+    "name": "Sonic Shrieker",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-line-apothecary",
+    "name": "Sergeant upgraded to Apothecary",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-vet-apothecary",
+    "name": "Veteran Sergeant upgraded to Apothecary",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-reductor",
+    "name": "Reductor",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-sonic-package",
+    "name": "Sonic Weaponry Package",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-sonic-sonic-blaster",
+    "name": "Sonic Blaster",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-sonic-doom-siren",
+    "name": "Doom Siren",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-sonic-blastmaster",
+    "name": "Blastmaster",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-ec-perfect-cacophony",
+    "name": "Perfect Cacophony — Fearless",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-iw-shrapnel-bolts",
+    "name": "Shrapnel Bolts",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-iw-servo-arm",
+    "name": "Servo-Arm",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r43-iw-bionics",
+    "name": "Bionics",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-chainglaive",
+    "name": "Nostraman Chainglaive",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-trophies",
+    "name": "Trophies of Judgement",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-stealth-ic",
+    "name": "Stealth Adept",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-stealth-unit",
+    "name": "Stealth Adept — legacy shared marker",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-kraken-bolts",
+    "name": "Kraken Light Bolts",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-transponder-character",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-nl-transponder-unit",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ba-death-mask",
+    "name": "Death Mask",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ba-inferno-pistol",
+    "name": "Inferno Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ba-blade-perdition",
+    "name": "Blade of Perdition",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ba-overcharged-engines",
+    "name": "Over-charged Engines",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ba-furioso-jump-pack",
+    "name": "Furioso-pattern Jump Pack",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ih-servo-arm",
+    "name": "Servo-Arm",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ih-mechadendrites",
+    "name": "Mechadendrites",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ih-gladius",
+    "name": "Albian Power Gladius",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ih-bionics-character",
+    "name": "Bionics",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ih-graviton-substitution",
+    "name": "Graviton Gun instead of Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r44-ih-autosimulacra",
+    "name": "Blessed Autosimulacra",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-we-chainaxe",
+    "name": "Chainaxe",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-we-caedere",
+    "name": "Caedere Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-we-chainaxe-berserker",
+    "name": "Chainaxe — Berserker Assault price",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-um-legatine-axe",
+    "name": "Legatine Axe",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-um-mantle",
+    "name": "Mantle of Ultramar",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-dg-manreaper",
+    "name": "Manreaper",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-dg-alchem-flamer",
+    "name": "Alchem Flamer replacement",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-force-weapon",
+    "name": "Prosperine Force Weapon upgrade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-arcane-litanies",
+    "name": "Arcane Litanies",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-asphyx-ic",
+    "name": "Asphyx Shells",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-asphyx-unit",
+    "name": "Asphyx Shells",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-trans-ic",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-trans-unit",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-aether-fire",
+    "name": "Æther-fire Cannon upgrade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-brotherhood",
+    "name": "Brotherhood of Psykers (Mastery Level 1)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-brotherhood-fellowship",
+    "name": "Brotherhood of Psykers (Fellowships price)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r45-ts-tactical-brotherhood",
+    "name": "Brotherhood of Psykers (20-model Tactical Squad)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-soh-banestrike-character",
+    "name": "Banestrike Ammunition",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-soh-banestrike-model",
+    "name": "Banestrike Ammunition — eligible model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-soh-culling-blade",
+    "name": "Cthonian Culling Blade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-soh-chainaxe",
+    "name": "Chainaxe",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-soh-transponder-character",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-soh-transponder-unit",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-wb-accursed-crozius",
+    "name": "Accursed Crozius",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-wb-tainted-weapon",
+    "name": "Tainted Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-wb-burning-lore",
+    "name": "Burning Lore",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-wb-hex-bolts",
+    "name": "Hex-Bolts",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-wb-icon-chaos-undivided",
+    "name": "Icon of Chaos Undivided",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-wb-dark-channelling",
+    "name": "Dark Channelling",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-sal-mantle",
+    "name": "Salamanders Mantle",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-sal-mastercrafted",
+    "name": "Master-crafted Weapon — Salamanders price",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-sal-artificer-armour",
+    "name": "Artificer Armour — Salamanders access",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-sal-inferno-pistol",
+    "name": "Inferno Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-sal-heavy-flamer",
+    "name": "Heavy Flamer instead of Flamer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-sal-ceramite",
+    "name": "Armoured Ceramite — Salamanders price",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-talons-model",
+    "name": "Raven’s Talons — Veteran model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-talons-character",
+    "name": "Upgrade Lightning Claws to Raven’s Talons",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-hand-cannon",
+    "name": "Fulcrum Hand Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-infravisor",
+    "name": "Infravisor",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-shroud-character",
+    "name": "Shroud Bombs",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-shroud-unit",
+    "name": "Shroud Bombs",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-cameleoline",
+    "name": "Cameleoline",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-trans-character",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-rg-trans-unit",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-al-banestrike-character",
+    "name": "Banestrike Ammunition",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-al-banestrike-model",
+    "name": "Banestrike Ammunition — eligible model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-al-power-dagger",
+    "name": "Power Dagger",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-al-venom-spheres",
+    "name": "Venom Spheres",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-al-trans-character",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r46-al-trans-unit",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r47-ws-horsetail-talisman",
+    "name": "Horsetail Talisman",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r47-ih-bionics-model",
+    "name": "Bionics — unit model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r47-ih-bionics-veteran-sergeant",
+    "name": "Bionics — Veteran Sergeant",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r47-ih-splinter-bolts",
+    "name": "Splinter Bolts",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r47-ts-prosperine-aether-disc",
+    "name": "Prosperine Æther-Disc",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r52-ec-sonic-character",
+    "name": "Sonic Weaponry (one Praetor or Centurion per army)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-frost",
+    "name": "Frost Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-frost-exchange",
+    "name": "Frost Weapon — exchange an existing Power Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-great-frost",
+    "name": "Great Frost Blade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-pelt",
+    "name": "Wolf Pelt",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-necklace",
+    "name": "Wolf Tooth Necklace",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-talisman",
+    "name": "Wolf Tail Talisman",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r63-sw-gear-runic-armour",
+    "name": "Runic Armour",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r64-if-gear-solarite",
+    "name": "Solarite Power Gauntlet",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r64-if-gear-solarite-exchange",
+    "name": "Solarite Power Gauntlet — exchange Power Fist",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r64-if-gear-vigil",
+    "name": "Vigil Pattern Storm Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r64-if-gear-trans-ic",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r64-if-gear-trans-unit",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r74-ba-blade-exchange",
+    "name": "Blade of Perdition — exchange existing Power Weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r32-soh-long-march-terminator-troops",
+    "name": "Legion Terminator Squad — Long March (non-compulsory Troops)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r32-soh-first-company-terminators",
+    "name": "Legion Terminator Squad — Horus’ First Company",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9513f2d8de2ed1",
+    "name": "Auxiliary Drive",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-78f70cd43f9732",
+    "name": "Teleport Assault (Orbital Assault)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-25f3e6c0dd23b0",
+    "name": "Stormwing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8f09e2393f817f",
+    "name": "Deathwing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-fc37a41f5e392e",
+    "name": "Dreadwing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-7c3997ba9d9ef3",
+    "name": "Ironwing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-005b2a0e856418",
+    "name": "Firewing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-648b2fcceaa8df",
+    "name": "Ravenwing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-6c7c0af4689688",
+    "name": "Two Laser Destroyers (replace both Quad Lascannons)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-e7ea745a2d0324",
+    "name": "Armoured Ceramite",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9201acbfa3614c",
+    "name": "Flare Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b478f13351e219",
+    "name": "Pavoni",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-672318630ac401",
+    "name": "Raptora",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-89023418208357",
+    "name": "Corvidae",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1cf60d95bdb439",
+    "name": "Athanaeans",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-79bc55e0fd1aa0",
+    "name": "Pyrae",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-706f9080995c1b",
+    "name": "Biomancy",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-bfc6aadae625e5",
+    "name": "Divination",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-60848d7505639d",
+    "name": "Pyromancy",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-009614a01cab65",
+    "name": "Telekinesis",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-dec7356b342f38",
+    "name": "Telepathy",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-c7f84ee6a7d024",
+    "name": "Smite",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b59d45b990ac38",
+    "name": "Iron Arm",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b765cfb494dc1c",
+    "name": "Enfeeble",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-0b06f466951744",
+    "name": "Life Leech",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-dc8a8cecf6f01e",
+    "name": "Warp Speed",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-7ec5bb87ee4e51",
+    "name": "Endurance",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-e8d90ff67879ac",
+    "name": "Haemorrhage",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1e798d8e0a2f2a",
+    "name": "Prescience",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9b7e1e9ae42a20",
+    "name": "Foreboding",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2a4d9749d9dbbe",
+    "name": "Forewarning",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-601cda563181d4",
+    "name": "Perfect Timing",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-0bbf15817bfa9f",
+    "name": "Precognition",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-89ed2a6b7d11a3",
+    "name": "Misfortune",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8db8b795cbc9c3",
+    "name": "Scrier's Gaze",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-67d5cdb19d0e0e",
+    "name": "Flame Breath",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8538eee6874e75",
+    "name": "Fiery Form",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-d0c66797c56bb7",
+    "name": "Molton Beam",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-792c969bd5d374",
+    "name": "Fire Shield",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-484f851e6309a5",
+    "name": "Sunburst",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-792883c4eebc3b",
+    "name": "Inferno",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-57aa5fc8db15fd",
+    "name": "Spontaneous Combustion",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3abfb055b2399f",
+    "name": "Assail",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-54eda0d3622b02",
+    "name": "Crush",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-18e98048a990f8",
+    "name": "Objuration Mechanicum",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-0e571bc63db94f",
+    "name": "Shockwave",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-af8c77262c55b4",
+    "name": "Levitation",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-87a49f67d767a4",
+    "name": "Telekine Dome",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-14f08f9bc7aee9",
+    "name": "Psychic Maelstrom",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1ca88e7d7e42ab",
+    "name": "Psychic Shriek",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9204a20d3c8add",
+    "name": "Dominate",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-d88f5d80196ec8",
+    "name": "Mental Fortitude",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b4d36dff6c666f",
+    "name": "Terrify",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2519c7581a7eb9",
+    "name": "Hallucination",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-96bc63a79f2538",
+    "name": "Invisibility",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-20fe37e7542eb4",
+    "name": "Shrouding",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-d7c129bcaf5077",
+    "name": "Furious Charge — Kibre’s squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-434de31d444ca1",
+    "name": "Fury of the Legion (Legion Tactical Company)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3938f19b5c3bd5",
+    "name": "Bolters + Bolt Pistols + Chainswords — entire squad (+2 pts/model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3629f1616d2072",
+    "name": "Exchange Bolters for Chainswords — entire squad (Free)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-0cae03c8e310b2",
+    "name": "Land Raider Phobos (Scions of Iron)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1c733a7c5d57e2",
+    "name": "Land Raider Proteus (Scions of Iron)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-86bea234785d28",
+    "name": "Chainaxes — entire squad (+4 pts/model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-c578d663f46366",
+    "name": "Counter-Attack",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-16d0a79c77d44e",
+    "name": "Move Through Cover",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-48ba9b91eaa8ed",
+    "name": "Tank Hunters",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-fe764f352b4574",
+    "name": "Sonic Shrieker — select once per model in the unit",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-fee9d22f000bad",
+    "name": "Enhanced Warriors",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b7875a2d8d95ae",
+    "name": "Upgrade to Plague Marines (+7 pts/model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-a04af5f26d85b5",
+    "name": "Pair of Lightning Claws (replaces Bolt Pistol and Chainsword)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-4a923840fad5ad",
+    "name": "Death from Above (Legion Assault Company)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-366c5f361cb4f4",
+    "name": "Bionics — entire squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-4e7a20843e2f67",
+    "name": "Resolve",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-207001cb86cbf2",
+    "name": "Assault Veterans",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-e6c7e888e0cf79",
+    "name": "Counter-Assault",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9b8f2da9c3707b",
+    "name": "Machine Killers",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-bf0ef34e5021e7",
+    "name": "Recon Veterans",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-31c8cb3e1929d1",
+    "name": "Marksmen",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-c4f540f3e13ac5",
+    "name": "Sniper Rifle (Recon Company; replaces Bolter or Bolt Pistol + Chainsword)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-37bec4258b69c7",
+    "name": "Rad Missiles (requires Missile Launcher and Techmarine Rad Grenades)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9bf28c72884f8f",
+    "name": "Dreadnought Close Combat Weapon with built-in Twin-linked Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-15d19874ded9f5",
+    "name": "Chainfist with built-in Twin-linked Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b9e812ed895555",
+    "name": "Armoured Sarcophagus",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b2d62f8d67b1d8",
+    "name": "Veteran Pilot",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2571ea4662a24f",
+    "name": "Rapid Encirclement (Sky Hunter Phalanx)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-44f91ea988fa6c",
+    "name": "Searchlight",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1a82881a741192",
+    "name": "Hardened Armour (entire squad)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-5130b53a7c28cc",
+    "name": "Armistos",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b0ff8d533592b9",
+    "name": "Siege Breaker",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-f8836c7ba378c5",
+    "name": "Power of the Machine Spirit",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-116694d1371da2",
+    "name": "Explorator Augury Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-4b3b58770277a1",
+    "name": "Hyperios Warheads (replace Vengeance & Castellan)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-98573737b15985",
+    "name": "Legion Standard Bearer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-6ef6e71c5c46ca",
+    "name": "Terminator Apothecary",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-ebbb1c58810cc6",
+    "name": "Terminator Champion",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-39491e1f09c638",
+    "name": "Azkaellon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8ac44edacbff09",
+    "name": "Frag grenades — entire squad (+1 pt/model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-51b6787e17a249",
+    "name": "Suzerain Legate",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-54b6d66012b244",
+    "name": "Exchange entire squad’s Terminator Armour for Cataphractii Terminator Armour — Free",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2b662c84247064",
+    "name": "Fenrisian Wolf Retinue — 2 Wolves",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-6ae5913a478127",
+    "name": "Legion Apothecary",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8254ae04d7735a",
+    "name": "Legion Champion",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3a250aa4010f2f",
+    "name": "Space Marine Bikes (entire squad)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-227a9173ce657e",
+    "name": "Space Marine Bikes (+20 pts/model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9da770195375e9",
+    "name": "Missile Launcher with Suspensor Web, Rad Missiles and Stasis Missiles",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8756e02b3872a0",
+    "name": "Krak Grenades — entire squad (+2 points per model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3a2484ee7d525d",
+    "name": "Space Marine Legion Crew",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-81a35a204be6f4",
+    "name": "Super-heavy Command Tank",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-ce9a292664f5eb",
+    "name": "Chaff Launcher",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-a70ce6a2a8794d",
+    "name": "Armoured Cockpit",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-8319182514a6cd",
+    "name": "Krak grenades — select once per squad model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3c0934c4e4d9a4",
+    "name": "Foeblaster boltgun — replace Storm bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-ad7b389ef8a832",
+    "name": "Power fist — replace Power weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-0337674f2dc2b4",
+    "name": "Chainfist — replace Power weapon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-c890f63f2dacaf",
+    "name": "Chainfist — replace Thunder Hammer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-7daf3b33fe2613",
+    "name": "Volkite charger — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b778cd724b5f78",
+    "name": "Combi-flamer — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-23b68605a0a9e0",
+    "name": "Combi-meltagun — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-3a48a7044ca63d",
+    "name": "Combi-plasma gun — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1f98ac6c415220",
+    "name": "Heavy flamer — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-4956b508d26002",
+    "name": "Reaper autocannon — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-708e42838a2fb6",
+    "name": "Multi-Melta — replace Combi-bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-488ecaa669dfa8",
+    "name": "Krak grenades — select once per model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-4fba1ae17721cd",
+    "name": "Melta bombs — select once per model",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-1496b3e55a8b88",
+    "name": "Nuncio-vox",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-b4b311b1ea5682",
+    "name": "Krak Grenades — whole pack",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2eb78c848cb0c8",
+    "name": "Frag Grenades — whole squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2b6bc7a66ab9d7",
+    "name": "Krak Grenades — whole squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-0df26c3cf1dfbe",
+    "name": "Melta Bombs — whole squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-a9fefd4170cdfc",
+    "name": "Beyond Judgement — Fear (Trophies already equipped)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-fceb331295ca1c",
+    "name": "Melta Bombs — up to two models",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9547d41e6be29d",
+    "name": "Upgrade Raptor Sergeant to Headtaker (WS5)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-e07ecabd2ec825",
+    "name": "Pair of Lightning Claws — replaces both weapons",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-be8c3b0f864d5e",
+    "name": "Assault Cannon with Suspensor Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-d926d50af82412",
+    "name": "Frag grenades",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-570af2234ab592",
+    "name": "One Phosphex Bomb",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-db5c018afba27a",
+    "name": "Caedere Weapons — entire squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9f10fcb36a3741",
+    "name": "Power Weapons — entire squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-d53ab3ebe88d0d",
+    "name": "Frag grenades — entire squad",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-5df21f709b5ebe",
+    "name": "Sekhmet Inceptor",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-273e5b87c8a6ca",
+    "name": "Khenetai Blademaster",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-2011022a34ff1a",
+    "name": "Krak grenades — entire Cabal (+2 pts/model)",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9355da9af68156",
+    "name": "Replace his Chainaxe with a Power fist",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-9cc512834d8eee",
+    "name": "a pair of Lightning Claws",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r41-universal-gear-c84600db386841",
+    "name": "Master-crafted Thunder Hammer",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r36-shared-acute-senses-19bf158",
+    "name": "Acute Senses",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-assault-vehicle-72eb9a3",
+    "name": "Assault Vehicle",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-crusader-de7431d",
+    "name": "Crusader",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-fleet-e199151",
+    "name": "Fleet",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-hit-run-14e1669",
+    "name": "Hit & Run",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-infiltrate-88c13dc",
+    "name": "Infiltrate",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-jink-8458eea",
+    "name": "Jink",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-move-through-cover-b95132d",
+    "name": "Move Through Cover",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-outflank-3be9c13",
+    "name": "Outflank",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-power-of-the-machine-spirit-cbed146",
+    "name": "Power of the Machine Spirit",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-relentless-93eeddf",
+    "name": "Relentless",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-scouts-acbb689",
+    "name": "Scouts",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-skilled-rider-854bc10",
+    "name": "Skilled Rider",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-slow-and-purposeful-06d4828",
+    "name": "Slow and Purposeful",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-swift-112ab02",
+    "name": "Swift",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-turbo-boosters-a0b56db",
+    "name": "Turbo-Boosters",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-adamantium-will-b9d0569",
+    "name": "Adamantium Will",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-and-they-shall-know-no-fear-c9d3c20",
+    "name": "And They Shall Know No Fear",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-brotherhood-of-psykers-0c2f807",
+    "name": "Brotherhood of Psykers",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-bulky-73510e7",
+    "name": "Bulky",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-counter-attack-478972a",
+    "name": "Counter-Attack",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-daemon-48e6659",
+    "name": "Daemon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-eternal-warrior-b45eccc",
+    "name": "Eternal Warrior",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-fear-689e027",
+    "name": "Fear",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-fearless-8699dbc",
+    "name": "Fearless",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-furious-charge-5750d05",
+    "name": "Furious Charge",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-hammer-of-wrath-571781e",
+    "name": "Hammer of Wrath",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-hatred-63d35cd",
+    "name": "Hatred",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-it-will-not-die-422c865",
+    "name": "It Will Not Die",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-night-vision-1c9da55",
+    "name": "Night Vision",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-preferred-enemy-23a2462",
+    "name": "Preferred Enemy",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-shrouded-dad3a22",
+    "name": "Shrouded",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-stealth-723e8dc",
+    "name": "Stealth",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-stubborn-59f928d",
+    "name": "Stubborn",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-swarms-7539893",
+    "name": "Swarms",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-tank-hunters-f3b906a",
+    "name": "Tank Hunters",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-vulnerable-to-blasts-templates-3339f89",
+    "name": "Vulnerable to Blasts/Templates",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-zealot-18abf21",
+    "name": "Zealot",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-armourbane-ad0cb72",
+    "name": "Armourbane",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-blind-dff70db",
+    "name": "Blind",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-concussive-a164bfd",
+    "name": "Concussive",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-fleshbane-648a6e6",
+    "name": "Fleshbane",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-gets-hot-e403485",
+    "name": "Gets Hot",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-haywire-15e7bc7",
+    "name": "Haywire",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-ignores-cover-1da6909",
+    "name": "Ignores Cover",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-interceptor-25e9733",
+    "name": "Interceptor",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-lance-1dae8a0",
+    "name": "Lance",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-master-crafted-30feea6",
+    "name": "Master-Crafted",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-melta-bd49f41",
+    "name": "Melta",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-monster-hunter-aeded09",
+    "name": "Monster Hunter",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-pinning-e5b0674",
+    "name": "Pinning",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-poison-6de0b0c",
+    "name": "Poison",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-rampage-a3efb7d",
+    "name": "Rampage",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-rending-9a78738",
+    "name": "Rending",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-shred-598a34d",
+    "name": "Shred",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-soul-blaze-f1f5c33",
+    "name": "Soul Blaze",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-split-fire-f4e76b7",
+    "name": "Split Fire",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-sniper-2081d06",
+    "name": "Sniper",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-strikedown-ea03c9b",
+    "name": "Strikedown",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-torrent-4d15a5d",
+    "name": "Torrent",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-twin-linked-815809b",
+    "name": "Twin-Linked",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-two-handed-6cfe89f",
+    "name": "Two-Handed",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-unwieldy-77ac1c7",
+    "name": "Unwieldy",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-scout-56be36a",
+    "name": "Scout",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-deep-strike-54cfd20",
+    "name": "Deep Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-independent-character-4fbd2ae",
+    "name": "Independent Character",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-master-of-the-legion-a3a88da",
+    "name": "Master of the Legion",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-primarch-842ed37",
+    "name": "Primarch",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-armoured-ceramite-4988a13",
+    "name": "Armoured Ceramite",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-armoured-cockpit-497e63f",
+    "name": "Armoured Cockpit",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-auxiliary-drive-e109f48",
+    "name": "Auxiliary Drive",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-flare-shield-569af7c",
+    "name": "Flare Shield",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-shared-implacable-advance-76d1b91",
+    "name": "Implacable Advance",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-power-weapon-a52227e",
+    "name": "Power Weapon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-lingering-death-99f0850",
+    "name": "Lingering Death",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-broken-body-865c3e9",
+    "name": "Broken Body",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-justaerin-primus-608cb10",
+    "name": "Justaerin Primus",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-terminator-armoury-restrictions-7b98b2d",
+    "name": "Terminator Armoury Restrictions",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-stormwing-2ce2a9c",
+    "name": "Stormwing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-deathwing-d3a4efd",
+    "name": "Deathwing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-dreadwing-070e9f9",
+    "name": "Dreadwing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-ironwing-d05ae6b",
+    "name": "Ironwing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-firewing-766dc98",
+    "name": "Firewing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-ravenwing-2423e23",
+    "name": "Ravenwing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-armoured-assault-f55622b",
+    "name": "Armoured Assault",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-arcana-quickblood-fe56b53",
+    "name": "Cult Arcana — Quickblood",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-mastery-quickblood-3c00118",
+    "name": "Cult Mastery — Quickblood",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-arcana-kine-shields-8796029",
+    "name": "Cult Arcana — Kine Shields",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-mastery-kine-shields-782eaf4",
+    "name": "Cult Mastery — Kine Shields",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-arcana-precognitive-strike-f527710",
+    "name": "Cult Arcana — Precognitive Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-mastery-precognitive-strike-9e2023b",
+    "name": "Cult Mastery — Precognitive Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-arcana-discipline-of-the-mind-884cb81",
+    "name": "Cult Arcana — Discipline of the Mind",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-mastery-discipline-of-the-mind-b906dda",
+    "name": "Cult Mastery — Discipline of the Mind",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-arcana-ashen-blow-887d335",
+    "name": "Cult Arcana — Ashen Blow",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cult-mastery-ashen-blow-a469105",
+    "name": "Cult Mastery — Ashen Blow",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-scrier-s-gaze-db52b69",
+    "name": "Scrier's Gaze",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-chosen-of-the-warmaster-42c596b",
+    "name": "Chosen of the Warmaster",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-fury-of-the-legion-91eb932",
+    "name": "Fury of the Legion",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-automatic-basic-wargear-8fe4c9d",
+    "name": "Automatic Basic Wargear",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-fury-of-the-legion-legion-tactical-company-81e339d",
+    "name": "Fury of the Legion (Legion Tactical Company)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-whole-squad-chainswords-c4be64f",
+    "name": "Whole-squad Chainswords",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-exchange-bolters-for-chainswords-cec229c",
+    "name": "Exchange Bolters for Chainswords",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-whole-squad-krak-grenades-d9ab905",
+    "name": "Whole-squad Krak Grenades",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-land-raider-dedicated-transport-c4ecfc6",
+    "name": "Land Raider Dedicated Transport",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-sergeant-replacement-9a2bb74",
+    "name": "Sergeant Replacement",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-aeonid-thiel-sergeant-replacement-24b0799",
+    "name": "Aeonid Thiel — Sergeant Replacement",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-sonic-shrieker-select-once-per-model-in-the-unit-2482570",
+    "name": "Sonic Shrieker — select once per model in the unit",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-plague-marines-37f20e9",
+    "name": "Plague Marines",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-death-from-above-legion-assault-company-bececed",
+    "name": "Death from Above (Legion Assault Company)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-shield-wall-legion-breacher-company-b32cde0",
+    "name": "Shield Wall (Legion Breacher Company)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-breacher-power-weapons-e78cb58",
+    "name": "Breacher Power Weapons",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-veteran-tactics-f7215db",
+    "name": "Veteran Tactics",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-resolve-ac7f958",
+    "name": "Resolve",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-assault-veterans-e7de20b",
+    "name": "Assault Veterans",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-counter-assault-b971205",
+    "name": "Counter-Assault",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-machine-killers-21b8827",
+    "name": "Machine Killers",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-recon-veterans-bd28893",
+    "name": "Recon Veterans",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-marksmen-99c95a0",
+    "name": "Marksmen",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-bolster-defences-c252a32",
+    "name": "Bolster Defences",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-field-team-4162de9",
+    "name": "Field Team",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-servo-arm-replacement-118d0ed",
+    "name": "Servo-Arm Replacement",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cybernetica-fcf88b4",
+    "name": "Cybernetica",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-rad-missiles-724468f",
+    "name": "Rad Missiles",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-dreadnought-close-combat-weapon-46aedbb",
+    "name": "Dreadnought Close Combat Weapon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-armoured-sarcophagus-26369d5",
+    "name": "Armoured Sarcophagus",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-veteran-pilot-156c46c",
+    "name": "Veteran Pilot",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-infiltrate-move-through-cover-32e000b",
+    "name": "Infiltrate & Move Through Cover",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-marked-for-death-44456f7",
+    "name": "Marked for Death",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-chogorian-warlance-b2fb377",
+    "name": "Chogorian Warlance",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-rapid-encirclement-f28ea51",
+    "name": "Rapid Encirclement",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-legiones-astartes-deep-strike-14ad105",
+    "name": "Legiones Astartes & Deep Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-strafing-run-429f705",
+    "name": "Strafing Run",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-hardened-armour-entire-squad-284b2e5",
+    "name": "Hardened Armour (entire squad)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-armistos-711ddfb",
+    "name": "Armistos",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-siege-breaker-adaa7fd",
+    "name": "Siege Breaker",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-explorator-augury-web-24da159",
+    "name": "Explorator Augury Web",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-ferromantic-invulnerability-cf44f00",
+    "name": "Ferromantic Invulnerability",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-new-recruit-note-03c4142",
+    "name": "New Recruit note",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-jetbike-command-fe352e1",
+    "name": "Jetbike Command",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-armoury-weapon-restrictions-a42b020",
+    "name": "Armoury Weapon Restrictions",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-terminator-apothecary-4682517",
+    "name": "Terminator Apothecary",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-terminator-standard-bearer-7642801",
+    "name": "Terminator Standard Bearer",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-terminator-champion-3460859",
+    "name": "Terminator Champion",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-perdition-weapon-dd10e4b",
+    "name": "Perdition Weapon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-master-of-the-seraphim-1c31788",
+    "name": "Master of the Seraphim",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-angelus-boltgun-db0a1b4",
+    "name": "Angelus Boltgun",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-servants-of-the-great-angel-2f75d8a",
+    "name": "Servants of the Great Angel",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-honour-guard-a16e5ff",
+    "name": "Honour Guard",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-whole-squad-melta-bombs-9e41e7a",
+    "name": "Whole-squad Melta Bombs",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cataphractii-armour-exchange-da22963",
+    "name": "Cataphractii Armour Exchange",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-power-glaive-16177ab",
+    "name": "Power Glaive",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-combi-plasma-gun-56db0b5",
+    "name": "Combi-plasma gun",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-scrier-s-gaze-97fc9df",
+    "name": "Scrier’s Gaze",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-sanctic-daemonology-6ca90af",
+    "name": "Sanctic Daemonology",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-banishment-7ba56ef",
+    "name": "Banishment",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-gate-of-infinity-d9c4809",
+    "name": "Gate of Infinity",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-hammerhand-729e952",
+    "name": "Hammerhand",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-sanctuary-826239c",
+    "name": "Sanctuary",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-purge-soul-994a88b",
+    "name": "Purge Soul",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cleansing-flame-60fb1ab",
+    "name": "Cleansing Flame",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-vortex-of-doom-3d483a6",
+    "name": "Vortex of Doom",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-standard-wargear-transport-9082ecb",
+    "name": "Standard Wargear & Transport",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-geo-locator-beacon-7b4ff91",
+    "name": "Geo-Locator Beacon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-command-vehicle-e6f43fb",
+    "name": "Command Vehicle",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-focused-bombardment-13226b6",
+    "name": "Focused Bombardment",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-twin-linked-bolter-5cdb6a5",
+    "name": "Twin-linked Bolter",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-heavy-bolter-9ea55af",
+    "name": "Heavy Bolter",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-apothecary-armoury-6175282",
+    "name": "Apothecary Armoury",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-standard-bearer-armoury-7b03aca",
+    "name": "Standard Bearer Armoury",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-champion-armoury-c8775ab",
+    "name": "Champion Armoury",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-mobility-restrictions-c790199",
+    "name": "Mobility Restrictions",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-death-sworn-companions-273def1",
+    "name": "Death-sworn Companions",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cytheron-aegis-c5a90cc",
+    "name": "Cytheron Aegis",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-structure-points-bdaf4a4",
+    "name": "Structure Points",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-massive-firepower-ca38600",
+    "name": "Massive Firepower",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-lumbering-war-engine-d6d008b",
+    "name": "Lumbering War Engine",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-super-heavy-tank-shock-5de7bbc",
+    "name": "Super-heavy Tank Shock",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-crushing-advance-d33dc05",
+    "name": "Crushing Advance",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-immense-machine-d938f52",
+    "name": "Immense Machine",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-catastrophic-destruction-38e2f78",
+    "name": "Catastrophic Destruction",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-massive-blast-a7579f3",
+    "name": "Massive Blast",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-titan-killer-77633b0",
+    "name": "Titan Killer",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-space-marine-legion-crew-e3e96a6",
+    "name": "Space Marine Legion Crew",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-super-heavy-command-tank-e7a7769",
+    "name": "Super-heavy Command Tank",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-chaff-launcher-09ce668",
+    "name": "Chaff Launcher",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-flyer-8945909",
+    "name": "Flyer",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-air-to-air-targeting-9041800",
+    "name": "Air-to-Air Targeting",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-agile-2160091",
+    "name": "Agile",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-supersonic-e19b530",
+    "name": "Supersonic",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-ground-tracking-auguries-b7d2fb9",
+    "name": "Ground-tracking Auguries",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-deep-striike-8d74325",
+    "name": "Deep Striike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-masters-of-the-storm-of-war-5d02d51",
+    "name": "Masters of the Storm of War",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-the-hammer-of-caliban-5ecfd6b",
+    "name": "The Hammer of Caliban",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-ravenwing-host-8e2128f",
+    "name": "Ravenwing Host",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-krak-grenades-select-once-per-squad-model-4aa3bc2",
+    "name": "Krak grenades — select once per squad model",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-blastmaster-replace-one-kakophoni-sonic-blaster-27e3130",
+    "name": "Blastmaster — replace one Kakophoni Sonic Blaster",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cacophony-f1ed045",
+    "name": "Cacophony",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-coordinated-bombardment-aa3d575",
+    "name": "Coordinated Bombardment",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-hatred-battle-automata-2fac22d",
+    "name": "Hatred (Battle-Automata)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-those-once-honoured-625548c",
+    "name": "Those Once Honoured",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-jetbike-weapons-cd7fa97",
+    "name": "Jetbike Weapons",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-dragon-dao-086ccb6",
+    "name": "Dragon Dao",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-jetbike-e0c15d0",
+    "name": "Jetbike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-upgrade-one-varagyr-to-a-thegn-f7927ee",
+    "name": "Upgrade one Varagyr to a Thegn",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-glory-seekers-a2b2ac2",
+    "name": "Glory Seekers",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-chosen-of-jarl-c023767",
+    "name": "Chosen of Jarl",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-combi-plasma-7db6fe6",
+    "name": "Combi-plasma",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-reaper-autocannon-28a99a7",
+    "name": "Reaper Autocannon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-assault-cannon-6ccc621",
+    "name": "Assault Cannon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-righteous-zeal-9d1abdc",
+    "name": "Righteous Zeal",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-spartan-condition-5250496",
+    "name": "Spartan condition",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-preferred-enemy-infantry-9a4bf8e",
+    "name": "Preferred Enemy (Infantry)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-headtaker-430c18f",
+    "name": "Headtaker",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-nostraman-chainblade-a3b0d93",
+    "name": "Nostraman Chainblade",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-escaton-power-claw-c955405",
+    "name": "Escaton Power Claw",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-gorgon-field-0a671f5",
+    "name": "Gorgon Field",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-the-gorgon-474fc9e",
+    "name": "The Gorgon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-master-of-the-forge-6ad54a1",
+    "name": "Master of the Forge",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-devourers-e6bc705",
+    "name": "Devourers",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-breachers-6165ad8",
+    "name": "Breachers",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-caedere-weapons-entire-squad-4c3587b",
+    "name": "Caedere Weapons — entire squad",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-power-weapons-entire-squad-30006b5",
+    "name": "Power Weapons — entire squad",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-frag-grenades-entire-squad-74097fd",
+    "name": "Frag grenades — entire squad",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-krak-grenades-entire-squad-e8d7e8e",
+    "name": "Krak grenades — entire squad",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-melta-bombs-404bfc7",
+    "name": "Melta bombs",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-bolt-pistol-b5f8436",
+    "name": "Bolt pistol",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-apothecary-3edecdc",
+    "name": "Apothecary",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-destroyer-officer-cfb42ee",
+    "name": "Destroyer Officer",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-barbaran-plate-f671ea2",
+    "name": "Barbaran Plate",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-barbaran-endurance-bf69330",
+    "name": "Barbaran Endurance",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-scarab-occult-34f5547",
+    "name": "Scarab Occult",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-prosperine-force-weapons-7d772a4",
+    "name": "Prosperine Force Weapons",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-the-crimson-king-s-guard-0804d94",
+    "name": "The Crimson King's Guard",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-jump-assault-6479381",
+    "name": "Jump Assault",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-cthonian-retinue-30f5f4e",
+    "name": "Cthonian Retinue",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-the-rewards-of-treachery-f8167f5",
+    "name": "The Rewards of Treachery",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-compulsory-troops-6f5a610",
+    "name": "Compulsory Troops",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r36-exact-shrapnel-bolts-free-for-compulsory-troops-9d9186e",
+    "name": "Shrapnel Bolts — free for compulsory Troops",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-fanatical-devotion",
+    "name": "Fanatical Devotion",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-the-dark-shepherds",
+    "name": "The Dark Shepherds",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-ritual-of-consecration",
+    "name": "Ritual of Consecration",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-daemonic-covenant",
+    "name": "Daemonic Covenant",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-daemonic-summoning",
+    "name": "Daemonic Summoning",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-hardened-armour",
+    "name": "Hardened Armour",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-bitter-duty",
+    "name": "Bitter Duty",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-primarch-armour",
+    "name": "Primarch Armour",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-feel-no-pain-6",
+    "name": "Feel No Pain (6+)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-preferred-enemy-loyalists",
+    "name": "Preferred Enemy (Loyalists)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-narthecium",
+    "name": "Narthecium",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-reductor",
+    "name": "Reductor",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-driven-to-slaughter",
+    "name": "Driven to Slaughter",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-expendable",
+    "name": "Expendable",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-daemonic-engine",
+    "name": "Daemonic Engine",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-shroud-of-dark-fire",
+    "name": "Shroud of Dark Fire",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-accursed",
+    "name": "Accursed",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-flesh-harvesters",
+    "name": "Flesh Harvesters",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-rule-daemonkin",
+    "name": "Daemonkin",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-accursed-crozius",
+    "name": "Accursed Crozius",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-tainted-weapon",
+    "name": "Tainted Weapon",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-burning-lore",
+    "name": "Burning Lore",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-hex-bolts",
+    "name": "Hex-Bolts",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-icon-of-chaos-undivided",
+    "name": "Icon of Chaos Undivided",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-dark-channelling",
+    "name": "Dark Channelling",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r38-wb-shared-diabolist",
+    "name": "Diabolist",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-promethean-cult",
+    "name": "Promethean Cult",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-sturdy",
+    "name": "Sturdy",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-never-give-up",
+    "name": "Never Give Up",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-salamanders-mantle",
+    "name": "Salamanders Mantle",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-inferno-pistol",
+    "name": "Inferno Pistol",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-fire-based-warfare",
+    "name": "Fire-based Warfare",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-proscribed-munitions",
+    "name": "Proscribed Munitions",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-dragonscale-storm-shield",
+    "name": "Dragonscale Storm Shield",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-firedrake-retinue",
+    "name": "Firedrake Retinue",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-pyroclast-flame-projector",
+    "name": "Pyroclast Flame Projector",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-dual-pistols",
+    "name": "Dual Pistols",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-destroyer-cadre",
+    "name": "Destroyer Cadre",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-guided-by-prophecy",
+    "name": "Guided by Prophecy",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-close-quarters-arsenal",
+    "name": "Close-Quarters Arsenal",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-battlesmith",
+    "name": "Battlesmith",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-sal-reinforced-ceramite",
+    "name": "Reinforced Ceramite",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r40-standard-support-squad",
+    "name": "Support Squad",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-surgical-strike",
+    "name": "Surgical Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-rapid-reaction",
+    "name": "Rapid Reaction",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-shadow-masters",
+    "name": "Shadow Masters",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-limited-vehicles",
+    "name": "Limited Vehicles",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-raven-s-talons",
+    "name": "Raven's Talons",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-infravisor",
+    "name": "Infravisor",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-shroud-bombs",
+    "name": "Shroud Bombs",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-cameleoline",
+    "name": "Cameleoline",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-teleportation-transponders",
+    "name": "Teleportation Transponders",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-fatal-strike",
+    "name": "Fatal Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-swooping-killers",
+    "name": "Swooping Killers",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-terran-veterans",
+    "name": "Terran Veterans",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-unstable-creation",
+    "name": "Unstable Creation",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-the-raven-s-due",
+    "name": "The Raven's Due",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-executioner-s-instinct",
+    "name": "Executioner's Instinct",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-master-of-descent",
+    "name": "Master of Descent",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-commander-of-the-talons",
+    "name": "Commander of the Talons",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-first-into-the-fray",
+    "name": "First Into the Fray",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-commander-of-the-survivors",
+    "name": "Commander of the Survivors",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-hold-fast",
+    "name": "Hold Fast",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-ghost-in-the-dark",
+    "name": "Ghost in the Dark",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-perfect-ambusher",
+    "name": "Perfect Ambusher",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-the-shadowed-lord",
+    "name": "The Shadowed Lord",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-sire-of-the-raven-guard",
+    "name": "Sire of the Raven Guard",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r43-rg-secret-deployment",
+    "name": "Secret Deployment",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-mutable-tactics",
+    "name": "Mutable Tactics",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-siege-specialists",
+    "name": "Siege Specialists",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-martial-hubris",
+    "name": "Martial Hubris",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-infiltration-network",
+    "name": "Infiltration Network",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-banestrike",
+    "name": "Banestrike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-power-dagger",
+    "name": "Power Dagger",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-venom-spheres",
+    "name": "Venom Spheres",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-pre-emptive-strike",
+    "name": "Pre-emptive Strike",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-teleportation-transponders",
+    "name": "Teleportation Transponders",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-operative-cell",
+    "name": "Operative Cell",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-human-agents",
+    "name": "Human Agents",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-all-as-planned",
+    "name": "All as Planned",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-hydra-s-wail",
+    "name": "Hydra's Wail",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-the-harrowing",
+    "name": "The Harrowing",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-weapon-mastery",
+    "name": "Weapon Mastery",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-lone-killer",
+    "name": "Lone Killer",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-deadshot",
+    "name": "Deadshot",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-execute-the-mandate",
+    "name": "Execute the Mandate",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-delegatus",
+    "name": "Delegatus",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-desperate-for-glory",
+    "name": "Desperate for Glory",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-master-of-deceit",
+    "name": "Master of Deceit",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-false-disposition",
+    "name": "False Disposition",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-headhunter-commander",
+    "name": "Headhunter Commander",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-hydra-s-resilience",
+    "name": "Hydra's Resilience",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-master-of-lies",
+    "name": "Master of Lies",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-the-hydra",
+    "name": "The Hydra",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-sire-of-the-alpha-legion",
+    "name": "Sire of the Alpha Legion",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r45-al-i-am-alpharius",
+    "name": "I Am Alpharius",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r64-ts-psyker-ml1",
+    "name": "Psyker (Mastery Level 1)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r64-ts-psyker-ml2",
+    "name": "Psyker (Mastery Level 2)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r37-wb-prof-axe-rake",
+    "name": "Axe-rake",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r37-wb-prof-custodian-spear",
+    "name": "Custodian Spear",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r37-wb-prof-custodian-gun",
+    "name": "Custodian Spear — Foeblaster Boltgun",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r37-wb-prof-illuminarum",
+    "name": "Illuminarum",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r37-wb-prof-crozius",
+    "name": "Accursed Crozius",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r37-wb-prof-anathame",
+    "name": "Anathame Dagger",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-flamer",
+    "name": "Salamanders Flamer",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-heavy-flamer",
+    "name": "Salamanders Heavy Flamer",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-inferno",
+    "name": "Inferno Pistol",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-pyro-flame",
+    "name": "Pyroclast Flame Projector — Flame",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-pyro-melta",
+    "name": "Pyroclast Flame Projector — Melta",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-fury",
+    "name": "Fury of the Salamander",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-ignatus",
+    "name": "Ignatus",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-darkstar",
+    "name": "Darkstar Falling",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-dreadfire",
+    "name": "Dreadfire Cannon",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-dawnbringer",
+    "name": "Dawnbringer",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-furnace",
+    "name": "Furnace's Heart",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r40-sal-prof-gauntlet",
+    "name": "Gauntlet of the Forge",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r43-rg-prof-fulcrum",
+    "name": "Fulcrum Hand Cannon",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r43-rg-prof-wrath",
+    "name": "Wrath & Justice",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r43-rg-prof-corvidine",
+    "name": "Corvidine Talons",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r43-rg-prof-tolaedus",
+    "name": "Tolaedus",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r43-rg-prof-sudden",
+    "name": "Sudden Blade",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r45-al-prof-banestrike",
+    "name": "Banestrike Bolter",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r45-al-prof-power-dagger",
+    "name": "Power Dagger",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r45-al-prof-rime-shard",
+    "name": "Rime-shard",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r45-al-prof-pale-spear",
+    "name": "Pale Spear",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r45-al-prof-hydras-spite",
+    "name": "Hydra's Spite",
+    "tag": "profile",
+    "container": "sharedProfiles"
+  },
+  {
+    "id": "r46-al-reward-0",
+    "name": "Palatine Blade Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-1",
+    "name": "Phoenix Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-2",
+    "name": "Kakophoni Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-3",
+    "name": "Sun Killer Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-7",
+    "name": "Iron Circle Domitar-Ferrum Maniple — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-8",
+    "name": "Golden Keshig Squadron — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-9",
+    "name": "Grey Slayer Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-10",
+    "name": "Grey Stalker Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-11",
+    "name": "Wolf Scout Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-12",
+    "name": "Deathsworn Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-13",
+    "name": "Jorlund Hunter Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-14",
+    "name": "Varagyr Wolf Guard Terminator Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-15",
+    "name": "Fenrisian Wolf Pack — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-16",
+    "name": "Templar Brethren Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-17",
+    "name": "Phalanx Warder Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-34",
+    "name": "Invictarus Suzerain Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-35",
+    "name": "Fulmentarus Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-36",
+    "name": "Locutarus Storm Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-37",
+    "name": "Nemesis Destroyer Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-38",
+    "name": "Deathshroud Terminators — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-39",
+    "name": "Grave Warden Terminator Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-40",
+    "name": "Mortus Poisoner Squad — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-41",
+    "name": "Sekhmet Terminator Cabal — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-42",
+    "name": "Khenetai Occult Blade Cabal — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-43",
+    "name": "Ammitara Occult Intercession Cabal — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-44",
+    "name": "Castellax-Achea Maniple — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-reward-45",
+    "name": "Numerologist Cabal — Rewards of Treachery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r47-ih-castrmen-orth",
+    "name": "Castrmen Orth — Tank Commander Upgrade",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

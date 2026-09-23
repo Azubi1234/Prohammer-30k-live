@@ -1,0 +1,68 @@
+[
+  {
+    "id": "r43-rg-legiones-astartes-raven-guard",
+    "name": "Legiones Astartes (Raven Guard)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r41-unit-xix-0-mor-deythan-squad",
+    "name": "Mor Deythan Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-1-dark-fury-assault-squad",
+    "name": "Dark Fury Assault Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-2-deliverer-terminator-squad",
+    "name": "Deliverer Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-3-raptor-squad",
+    "name": "Raptor Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-4-kaedes-nex",
+    "name": "Kaedes Nex",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-5-alvarex-maun",
+    "name": "Alvarex Maun",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-6-agapito-nev",
+    "name": "Agapito Nev",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-7-branne-nev",
+    "name": "Branne Nev",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-8-nykona-sharrowkyn",
+    "name": "Nykona Sharrowkyn",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xix-9-xix-corvus-corax-the-raven-lord",
+    "name": "Corvus Corax, the Raven-Lord",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

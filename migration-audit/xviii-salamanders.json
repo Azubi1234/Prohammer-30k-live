@@ -1,0 +1,80 @@
+[
+  {
+    "id": "r40-sal-legiones-astartes-salamanders",
+    "name": "Legiones Astartes (Salamanders)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r41-unit-xviii-0-firedrake-terminator-squad",
+    "name": "Firedrake Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-1-pyroclast-squad",
+    "name": "Pyroclast Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-2-salamanders-infernus-destroyer-squad",
+    "name": "Salamanders Infernus Destroyer Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-3-adherent-squad",
+    "name": "Adherent Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-4-sanctifier-squad",
+    "name": "Sanctifier Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-5-artellus-numeon",
+    "name": "Artellus Numeon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan",
+    "name": "Lord Chaplain Nomus Rhy'tan",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-7-xiaphas-jurr-prophet-of-fire",
+    "name": "Xiaphas Jurr, Prophet of Fire",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-9-forgefather-t-kell",
+    "name": "Forgefather T'Kell",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xviii-10-xviii-vulkan-the-forgefather",
+    "name": "Vulkan, the Forgefather",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-sal-cov-pyro",
+    "name": "Pyroclast Squad — Covenant of Fire Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-sal-cov-infernus",
+    "name": "Salamanders Infernus Destroyer Squad — Covenant of Fire Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

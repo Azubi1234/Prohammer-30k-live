@@ -1,0 +1,74 @@
+[
+  {
+    "id": "r36-exact-legiones-astartes-blood-angels-0837377",
+    "name": "Legiones Astartes (Blood Angels)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r41-unit-ix-0-dawnbreaker-cohort",
+    "name": "Dawnbreaker Cohort",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-1-crimson-paladin-squad",
+    "name": "Crimson Paladin Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-2-angel-s-tears-squad",
+    "name": "Angel's Tears Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-3-ofanim-court",
+    "name": "Ofanim Court",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-4-grav-chariot-squadron",
+    "name": "Grav Chariot Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-5-sanguinary-guard",
+    "name": "Sanguinary Guard",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-6-raldoron-the-blooded",
+    "name": "Raldoron, the Blooded",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-7-dominion-zephon",
+    "name": "Dominion Zephon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-8-aster-crohne",
+    "name": "Aster Crohne",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-10-nassir-amit-the-flesh-tearer",
+    "name": "Nassir Amit, the Flesh Tearer",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-ix-11-ix-sanguinius-the-great-angel",
+    "name": "Sanguinius, the Great Angel",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "catalogue_revision": "69",
+  "selectors": {
+    "I": [
+      "legion-i",
+      "Dark Angels"
+    ],
+    "III": [
+      "legion-iii",
+      "Emperor's Children"
+    ],
+    "IV": [
+      "legion-iv",
+      "Iron Warriors"
+    ],
+    "V": [
+      "legion-v",
+      "White Scars"
+    ],
+    "VI": [
+      "legion-vi",
+      "Space Wolves"
+    ],
+    "VII": [
+      "legion-vii",
+      "Imperial Fists"
+    ],
+    "VIII": [
+      "legion-viii",
+      "Night Lords"
+    ],
+    "IX": [
+      "legion-ix",
+      "Blood Angels"
+    ],
+    "X": [
+      "legion-x",
+      "Iron Hands"
+    ],
+    "XII": [
+      "legion-xii",
+      "World Eaters"
+    ],
+    "XIII": [
+      "legion-xiii",
+      "Ultramarines"
+    ],
+    "XIV": [
+      "legion-xiv",
+      "Death Guard"
+    ],
+    "XV": [
+      "legion-xv",
+      "Thousand Sons"
+    ],
+    "XVI": [
+      "legion-xvi",
+      "Sons of Horus"
+    ],
+    "XVII": [
+      "legion-xvii",
+      "Word Bearers"
+    ],
+    "XVIII": [
+      "legion-xviii",
+      "Salamanders"
+    ],
+    "XIX": [
+      "legion-xix",
+      "Raven Guard"
+    ],
+    "XX": [
+      "legion-xx",
+      "Alpha Legion"
+    ]
+  },
+  "counts": {
+    "GENERIC": 804,
+    "XVI": 20,
+    "IX": 12,
+    "XVII": 13,
+    "XVIII": 13,
+    "XIX": 11,
+    "XX": 46,
+    "III": 5,
+    "IV": 9,
+    "VIII": 13,
+    "X": 8
+  },
+  "ambiguous": 202,
+  "cross_owner_references": 48562
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "r37-wb-rule-legiones-astartes-word-bearers",
+    "name": "Legiones Astartes (Word Bearers)",
+    "tag": "rule",
+    "container": "sharedRules"
+  },
+  {
+    "id": "r41-unit-xvii-1-gal-vorbak-dark-brethren",
+    "name": "Gal Vorbak Dark Brethren",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-2-ashen-circle",
+    "name": "Ashen Circle",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-4-procurator-squad",
+    "name": "Procurator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-5-possessed-marine-squad",
+    "name": "Possessed Marine Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-6-argel-tal",
+    "name": "Argel Tal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-7-high-chaplain-erebus",
+    "name": "High Chaplain Erebus",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-8-kor-phaeron-the-black-cardinal",
+    "name": "Kor Phaeron, the Black Cardinal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-9-zardu-layak",
+    "name": "Zardu Layak",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-11-hol-beloth",
+    "name": "Hol Beloth",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-12-xvii-lorgar-aurelian-the-urizen",
+    "name": "Lorgar Aurelian, the Urizen",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r37-wb-serrated-gv-troops",
+    "name": "Gal Vorbak Dark Brethren — Serrated Sun Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r37-wb-zardu-ashen-troops",
+    "name": "Ashen Circle — Reign of Fire Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]
