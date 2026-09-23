@@ -1,0 +1,25 @@
+name: Deduplicate modular XML IDs
+on:
+  push:
+    branches: [modular-catalogues]
+    paths: ['.github/build/deduplicate_modular_ids.py','.github/workflows/deduplicate-modular-ids.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/build/deduplicate_modular_ids.py
+      - run: python .github/build/build_modular_staging_index.py
+      - run: python .github/build/validate_modular_family.py
+      - run: python .github/build/validate_modular_loadability.py
+      - run: python .github/build/validate_modular_release_candidate.py
+      - name: Commit RC
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add modular-catalogues-generated index-modular-staging.xml modular-deduplicate-audit.json modular-loadability-audit.json modular-release-candidate-audit.json
+          git diff --cached --quiet || git commit -m 'Deduplicate modular IDs and build release candidate'
+          git pull --rebase origin modular-catalogues
+          git push origin HEAD:modular-catalogues
