@@ -38,6 +38,7 @@ for iid,owners in id_owners.items():
 
 reports={}
 attrs=("targetId","childId")
+SCHEMA_TOKENS={"model","unit","upgrade","parent","root-entry","roster","force","self"}
 for fname,r in cats.items():
     local={x.get("id") for x in r.iter() if x.get("id")}
     valid_local=valid_generic=valid_gst=0
@@ -45,7 +46,7 @@ for fname,r in cats.items():
     for x in r.iter():
         for a in attrs:
             tid=x.get(a)
-            if not tid:continue
+            if not tid or tid in SCHEMA_TOKENS:continue
             if tid in local:
                 valid_local+=1;continue
             other=sorted(id_owners.get(tid,set())-{fname})
@@ -58,7 +59,15 @@ for fname,r in cats.items():
                 valid_gst+=1;continue
             # Some fields/condition IDs are intentionally local constraint IDs
             # and can be external to the generated owned subset. Record all for review.
-            unresolved.append({"from_id":x.get("id"),"from_name":x.get("name"),"tag":x.tag.split("}")[-1],"attribute":a,"target":tid})
+            anc=x
+            # Find the nearest meaningful selection object for diagnostics.
+            pm={ch:pa for pa in r.iter() for ch in pa}
+            while anc is not None and anc.tag.split("}")[-1] not in ("selectionEntry","selectionEntryGroup","entryLink"):
+                anc=pm.get(anc)
+            unresolved.append({"from_id":x.get("id"),"from_name":x.get("name"),"tag":x.tag.split("}")[-1],
+                               "attribute":a,"target":tid,
+                               "owner_id":anc.get("id") if anc is not None else None,
+                               "owner_name":anc.get("name") if anc is not None else None})
     reports[fname]={"local":valid_local,"generic_parent":valid_generic,"game_system":valid_gst,
                     "cross_legion_count":len(cross_legion),"unresolved_count":len(unresolved),
                     "cross_legion":cross_legion[:500],"unresolved":unresolved[:500]}
