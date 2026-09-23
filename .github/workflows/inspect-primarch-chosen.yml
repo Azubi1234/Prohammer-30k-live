@@ -1,0 +1,20 @@
+name: Inspect Primarch Chosen structure
+on:
+  push:
+    branches: [modular-catalogues]
+    paths: ['.github/build/inspect_primarch_chosen.py','.github/workflows/inspect-primarch-chosen.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/build/inspect_primarch_chosen.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add primarch-chosen-structure.json
+          git diff --cached --quiet || git commit -m 'Inspect Primarch Chosen structure'
+          git pull --rebase origin modular-catalogues
+          git push origin HEAD:modular-catalogues
