@@ -1,4 +1,4 @@
-name: Validate modular Legion references v1
+name: Validate modular Legion references v2
 
 on:
   push:
