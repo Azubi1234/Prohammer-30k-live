@@ -1,0 +1,36 @@
+name: Clean Thousand Sons modular references
+
+on:
+  push:
+    branches: [modular-catalogues]
+    paths:
+      - '.github/build/clean_ts_modular_refs.py'
+      - '.github/workflows/clean-ts-modular-refs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/build/clean_ts_modular_refs.py
+      - run: python .github/build/validate_modular_family.py
+      - run: python .github/build/validate_modular_references.py
+      - name: Require zero unresolved Legion references
+        run: python - <<'PY'
+          import json
+          x=json.load(open('modular-reference-audit.json'))
+          assert x['summary']['unresolved_total']==0,x['summary']
+          print('ZERO unresolved references across all 18 Legions')
+          PY
+      - name: Commit TS cleanup
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add modular-catalogues-generated/Thousand-Sons.cat modular-reference-audit.json
+          git diff --cached --quiet || git commit -m 'Clean final Thousand Sons modular references'
+          git pull --rebase origin modular-catalogues
+          git push origin HEAD:modular-catalogues
