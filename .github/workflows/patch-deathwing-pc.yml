@@ -1,0 +1,22 @@
+name: Patch Deathwing Primarch Chosen
+on:
+  push:
+    branches: [modular-catalogues]
+    paths: ['.github/build/patch_deathwing_pc.py','.github/workflows/patch-deathwing-pc.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/build/patch_deathwing_pc.py
+      - run: python .github/build/validate_modular_family.py
+      - run: python .github/build/validate_modular_loadability.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add modular-catalogues-generated/Dark-Angels.cat modular-loadability-audit.json
+          git diff --cached --quiet || git commit -m "Add Deathwing Companions to Primarch's Chosen"
+          git pull --rebase origin modular-catalogues
+          git push origin HEAD:modular-catalogues
