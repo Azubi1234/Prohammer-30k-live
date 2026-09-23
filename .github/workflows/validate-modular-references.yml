@@ -1,0 +1,29 @@
+name: Validate modular Legion references
+
+on:
+  push:
+    branches: [modular-catalogues]
+    paths:
+      - '.github/build/validate_modular_references.py'
+      - '.github/workflows/validate-modular-references.yml'
+      - 'modular-catalogues-generated/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate cross-catalogue references
+        run: python .github/build/validate_modular_references.py
+      - name: Commit reference audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add modular-reference-audit.json
+          git diff --cached --quiet || git commit -m 'Audit modular Legion references'
+          git pull --rebase origin modular-catalogues
+          git push origin HEAD:modular-catalogues
