@@ -4208,28 +4208,6 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink id="r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans" name="Teleportation Transponders (Hammerfall)" type="selectionEntry" targetId="r44-if-transponder-unit" hidden="false" import="true">
-                      <constraints>
-                        <constraint id="r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </constraints>
-                      <modifiers>
-                        <modifier id="r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-68" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          <condition type="lessThan" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions>
-                        </modifier>
-                        <modifier id="r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-69" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-vii-1-hammerfall-strike-force" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      <modifier id="r60-ws-hibou-retinue-legion-veteran-squad-r48-vis-68-r62-shat-ee79c383c53f" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r62-shat-assign-540a4b2a8645" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions>
-                        </modifier>
-                        </modifiers>
-                    </entryLink>
                     <entryLink id="r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-nl-kraken" name="Kraken Light Bolts" type="selectionEntry" targetId="r44-nl-kraken-bolts" hidden="false" import="true">
                       <constraints>
                         <constraint id="r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-nl-kraken-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -6912,28 +6890,6 @@ Fear: Enemy units in base contact must pass a Leadership test before resolving t
                           <condition type="atLeast" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions>
                         </modifier>
                       </modifiers>
-                    </entryLink>
-                    <entryLink id="r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans" name="Teleportation Transponders (Hammerfall)" type="selectionEntry" targetId="r44-if-transponder-unit" hidden="false" import="true">
-                      <constraints>
-                        <constraint id="r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" includeChildForces="false" />
-                      </constraints>
-                      <modifiers>
-                        <modifier id="r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-68" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vii" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          <condition type="lessThan" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions>
-                        </modifier>
-                        <modifier id="r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-69" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="r25-rite-vii-1-hammerfall-strike-force" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </modifier>
-                      <modifier id="r60-ws-hasik-retinue-legion-veteran-squad-r48-vis-68-r62-shat-176893183257" type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="r62-shat-assign-79e5a0fa54ee" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="r62-shattered-theme" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions>
-                        </modifier>
-                        </modifiers>
                     </entryLink>
                     <entryLink id="r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-nl-kraken" name="Kraken Light Bolts" type="selectionEntry" targetId="r44-nl-kraken-bolts" hidden="false" import="true">
                       <constraints>

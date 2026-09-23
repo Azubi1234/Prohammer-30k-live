@@ -8414,8 +8414,7 @@ Twin-Linked: Re-roll failed To Hit rolls with this weapon. Does not count as two
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="root-entry" childId="r71-nl-terror-extra" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
+                            </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -8794,8 +8793,7 @@ Stealth: Adds +1 to the value of Cover Saves conferred by terrain, to a maximum 
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="15" field="selections" scope="root-entry" childId="r71-nl-raptor-extra" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
+                            </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>

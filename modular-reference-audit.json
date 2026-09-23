@@ -3,7 +3,7 @@
     "files": 18,
     "duplicate_owned_count": 0,
     "cross_legion_total": 987,
-    "unresolved_total": 27
+    "unresolved_total": 15
   },
   "duplicate_owned": [],
   "catalogues": {
@@ -12,7 +12,7 @@
       "generic_parent": 2759,
       "game_system": 130,
       "cross_legion_count": 63,
-      "unresolved_count": 2,
+      "unresolved_count": 0,
       "cross_legion": [
         {
           "from_id": "r62-shat-assign-7e77c538ebbf-info-7b34de5e3857",
@@ -582,26 +582,7 @@
           ]
         }
       ],
-      "unresolved": [
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-terror-extra",
-          "owner_id": "r46-al-reward-18-donor-r71-nl-headsman-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-raptor-extra",
-          "owner_id": "r46-al-reward-19-donor-r71-nl-headtaker-arm-rf",
-          "owner_name": "Refractor Field"
-        }
-      ]
+      "unresolved": []
     },
     "Blood-Angels.cat": {
       "local": 177,
@@ -3873,7 +3854,7 @@
       "generic_parent": 1552,
       "game_system": 71,
       "cross_legion_count": 42,
-      "unresolved_count": 8,
+      "unresolved_count": 0,
       "cross_legion": [
         {
           "from_id": "r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan-hs-spartan-p6",
@@ -4254,80 +4235,7 @@
           ]
         }
       ],
-      "unresolved": [
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-terror-extra",
-          "owner_id": "r71-nl-headsman-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-raptor-extra",
-          "owner_id": "r71-nl-headtaker-arm-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-terror-extra",
-          "owner_id": "r71-nl-shang-ret-0-r71-nl-headsman-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-raptor-extra",
-          "owner_id": "r71-nl-curze-ret-2-r71-nl-headtaker-arm-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-terror-extra",
-          "owner_id": "r71-nl-curze-ret-3-r71-nl-headsman-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-raptor-extra",
-          "owner_id": "r71-nl-ta-raptor-r71-nl-headtaker-arm-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-terror-extra",
-          "owner_id": "r71-nl-ta-terror-r71-nl-headsman-rf",
-          "owner_name": "Refractor Field"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r71-nl-raptor-extra",
-          "owner_id": "r71-nl-hc-raptor-r71-nl-headtaker-arm-rf",
-          "owner_name": "Refractor Field"
-        }
-      ]
+      "unresolved": []
     },
     "Raven-Guard.cat": {
       "local": 108,
@@ -7622,11 +7530,11 @@
       "unresolved": []
     },
     "White-Scars.cat": {
-      "local": 336,
-      "generic_parent": 1439,
+      "local": 334,
+      "generic_parent": 1431,
       "game_system": 29,
       "cross_legion_count": 89,
-      "unresolved_count": 2,
+      "unresolved_count": 0,
       "cross_legion": [
         {
           "from_id": "r62-shat-assign-daa24196e6e4-info-7b34de5e3857",
@@ -8430,26 +8338,7 @@
           ]
         }
       ],
-      "unresolved": [
-        {
-          "from_id": "r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
-          "from_name": "Teleportation Transponders (Hammerfall)",
-          "tag": "entryLink",
-          "attribute": "targetId",
-          "target": "r44-if-transponder-unit",
-          "owner_id": "r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
-          "owner_name": "Teleportation Transponders (Hammerfall)"
-        },
-        {
-          "from_id": "r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
-          "from_name": "Teleportation Transponders (Hammerfall)",
-          "tag": "entryLink",
-          "attribute": "targetId",
-          "target": "r44-if-transponder-unit",
-          "owner_id": "r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
-          "owner_name": "Teleportation Transponders (Hammerfall)"
-        }
-      ]
+      "unresolved": []
     },
     "Word-Bearers.cat": {
       "local": 158,
