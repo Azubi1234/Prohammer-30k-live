@@ -1,4 +1,4 @@
-name: Clean modular legacy references
+name: Clean modular legacy references v2
 
 on:
   push:
