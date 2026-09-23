@@ -20,12 +20,7 @@ jobs:
       - run: python .github/build/validate_modular_family.py
       - run: python .github/build/validate_modular_references.py
       - name: Require zero unresolved Legion references
-        run: python - <<'PY'
-          import json
-          x=json.load(open('modular-reference-audit.json'))
-          assert x['summary']['unresolved_total']==0,x['summary']
-          print('ZERO unresolved references across all 18 Legions')
-          PY
+        run: python -c "import json; x=json.load(open('modular-reference-audit.json')); assert x['summary']['unresolved_total']==0, x['summary']; print('ZERO unresolved references across all 18 Legions')"
       - name: Commit TS cleanup
         run: |
           git config user.name 'github-actions[bot]'
