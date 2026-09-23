@@ -62,6 +62,9 @@ for x in root.iter():
     if fl:evidence[xid].add(fl)
     m=re.match(r"r41-unit-([ivxlcdm]+)-",xid,re.I)
     if m and m.group(1).upper() in selectors:evidence[xid].add(m.group(1).upper())
+    # Older Dark Angels package predates the r41 naming convention.
+    if xid.startswith("da22-") or xid.startswith("r40-da-"):
+        evidence[xid].add("I")
 
 # Roll descendant evidence up to root-level catalogue objects. We do NOT
 # automatically claim shared targets; cross references are reported separately.
@@ -74,9 +77,9 @@ for container_name in ("sharedSelectionEntries","sharedSelectionEntryGroups","sh
     for x in list(cont):
         xid=x.get("id")
         if not xid:continue
+        # Ownership belongs to the root object itself. Nested conditions/options
+        # referencing Legion selectors are dependencies, not ownership evidence.
         ev=set(evidence.get(xid,set()))
-        for y in x.iter():
-            if y.get("id"):ev |= evidence.get(y.get("id"),set())
         rec={"id":xid,"name":x.get("name"),"tag":x.tag.split("}")[-1],"container":container_name}
         if len(ev)==1:
             roman=next(iter(ev));buckets[roman].append(rec)
