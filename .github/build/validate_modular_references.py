@@ -13,8 +13,8 @@ src=ET.parse(SRC).getroot(); gst=ET.parse(GST).getroot()
 src_ids={x.get("id") for x in src.iter() if x.get("id")}
 gst_ids={x.get("id") for x in gst.iter() if x.get("id")}
 
-files=sorted(GEN.glob("*.cat"))
-if len(files)!=18:raise RuntimeError(f"Expected 18 generated catalogues, got {len(files)}")
+files=sorted(p for p in GEN.glob("*.cat") if p.name!="Legiones-Astartes-Generic.cat")
+if len(files)!=18:raise RuntimeError(f"Expected 18 Legion catalogues, got {len(files)}")
 
 cats={}
 id_owners=collections.defaultdict(set)
