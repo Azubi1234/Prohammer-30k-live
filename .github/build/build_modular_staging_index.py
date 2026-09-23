@@ -42,4 +42,4 @@ for e in entries:
         assert e.get("dataId")==r.get("id")
         assert e.get("dataName")==r.get("name")
         assert e.get("dataRevision")==r.get("revision")
-print("Staging entries:",len(entries),"selectable Legion catalogues:",len(files),"generic library indexed: no")
+print("Staging entries:",len(entries),"modular catalogues:",len(files),"generic library indexed: yes")
