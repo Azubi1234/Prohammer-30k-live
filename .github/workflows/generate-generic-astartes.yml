@@ -1,0 +1,27 @@
+name: Generate Generic Astartes library
+
+on:
+  push:
+    branches: [modular-catalogues]
+    paths:
+      - '.github/build/generate_generic_astartes.py'
+      - '.github/workflows/generate-generic-astartes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/build/generate_generic_astartes.py
+      - name: Commit Generic Astartes library
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add modular-catalogues-generated/Legiones-Astartes-Generic.cat
+          git diff --cached --quiet || git commit -m 'Generate Generic Astartes shared library'
+          git pull --rebase origin modular-catalogues
+          git push origin HEAD:modular-catalogues
