@@ -1,0 +1,14 @@
+{
+  "catalogues": 19,
+  "legions": 18,
+  "generic_library": "true",
+  "index_entries": 20,
+  "problems": [
+    "index missing modular-catalogues-generated/Legiones-Astartes-Generic.cat",
+    "Death-Guard.cat: duplicate element IDs ['r13-dg-reaping-upgrades', 'r13-dg-reaping-upgrades-hide']",
+    "Legiones-Astartes-Generic.cat: duplicate element IDs ['r41-unit-xiii-6-aeonid-thiel-profile-0', 'r41-unit-xiii-6-aeonid-thiel-source', 'r13-dg-reaping-upgrades', 'r13-dg-reaping-upgrades-hide', 'r36-long-relentless', 'r19-guard-sekhmet-troops', 'r19-guard-sekhmet-show-troops']",
+    "Thousand-Sons.cat: duplicate element IDs ['r19-guard-sekhmet-troops', 'r19-guard-sekhmet-show-troops', 'r18-ts-khenetai-scale--pts', 'r18-ts-ammitara-scale--pts', 'r18-final-ahriman-cabal-force-max']",
+    "White-Scars.cat: duplicate element IDs ['r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons', 'r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-show', 'r38-wb-tainted-e-legion-command-squad-hq-centurion-ret-command-weapons-max']",
+    "Word-Bearers.cat: duplicate element IDs ['r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee', 'r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-show', 'r38-wb-tainted--r41-unit-xvii-1-gal-vorbak-dark-brethren-special-melee-max']"
+  ]
+}
