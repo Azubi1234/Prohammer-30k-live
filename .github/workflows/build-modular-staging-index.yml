@@ -1,4 +1,4 @@
-name: Build modular staging index
+name: Build modular staging index v2
 
 on:
   push:
