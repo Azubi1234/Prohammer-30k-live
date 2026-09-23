@@ -13562,7 +13562,7 @@ Slow and Purposeful: Relentless and always moves as if in Difficult Terrain.</de
     <selectionEntry type="unit" import="true" name="Legion Veteran Squad" hidden="false" id="veteran-unit">
       <modifiers /><categoryLinks>
         <categoryLink targetId="cat-elites" id="veteran-unit-cat" primary="true" name="Elites" hidden="false" />
-      </categoryLinks>
+      <categoryLink targetId="cat-troops" id="veteran-unit-primarchs-chosen-troops" primary="true" name="Troops — Primarch's Chosen" hidden="true"><modifiers><modifier id="veteran-unit-pc-show-troops" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink></categoryLinks>
       <infoLinks><infoLink id="r36-link-88a9abb8a45a" name="Veteran Tactics" hidden="false" targetId="r36-exact-veteran-tactics-f7215db" type="rule" /></infoLinks><rules>
         <rule name="Standard Wargear" id="veteran-standard" hidden="false">
           <description>Every model is equipped with Power Armour, a Bolter, Bolt Pistol, Chainsword and Frag Grenades unless replaced by an option below.</description>
@@ -15428,7 +15428,7 @@ Slow and Purposeful: Relentless and always moves as if in Difficult Terrain.</de
     <selectionEntry type="unit" import="true" name="Legion Terminator Squad" hidden="false" id="terminator-unit">
       <categoryLinks>
         <categoryLink targetId="cat-elites" id="terminator-unit-cat" primary="true" name="Elites" hidden="false" />
-      </categoryLinks>
+      <categoryLink targetId="cat-troops" id="terminator-unit-primarchs-chosen-troops" primary="true" name="Troops — Primarch's Chosen" hidden="true"><modifiers><modifier id="terminator-unit-pc-show-troops" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="force" childId="da22-rite-primarchs-chosen" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers></categoryLink></categoryLinks>
       <infoLinks><infoLink id="r36-link-0ae33f42e137" name="Implacable Advance" hidden="false" targetId="r36-shared-implacable-advance-76d1b91" type="rule" /></infoLinks><rules>
         <rule name="Standard Wargear" id="terminator-standard" hidden="false">
           <description>Every model is equipped with the selected Terminator Armour pattern, a Combi-bolter and a Power Weapon unless replaced below.</description>

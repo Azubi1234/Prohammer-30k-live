@@ -1,0 +1,181 @@
+{
+  "Alpha-Legion.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xx-2-lernaean-terminator-squad",
+        "name": "Lernaean Terminator Squad"
+      }
+    ],
+    "missing_pc": [
+      {
+        "id": "r46-al-reward-4",
+        "name": "Tyrant Siege Terminator Squad \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-20",
+        "name": "Contekar Terminator Elite \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-26",
+        "name": "Gorgon Terminator Squad \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-27",
+        "name": "Morlock Terminator Squad \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-32",
+        "name": "Devourer Terminator Squad \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-46",
+        "name": "Justaerin Terminator Squad \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-53",
+        "name": "Firedrake Terminator Squad \u2014 Rewards of Treachery"
+      },
+      {
+        "id": "r46-al-reward-60",
+        "name": "Deliverer Terminator Squad \u2014 Rewards of Treachery"
+      }
+    ]
+  },
+  "Blood-Angels.cat": {
+    "with_pc": [],
+    "missing_pc": []
+  },
+  "Dark-Angels.cat": {
+    "with_pc": [],
+    "missing_pc": [
+      {
+        "id": "da22-deathwing-term-comp",
+        "name": "Deathwing Terminator Companion Detachment"
+      }
+    ]
+  },
+  "Death-Guard.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xiv-0-deathshroud-terminators",
+        "name": "Deathshroud Terminators"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Emperor-s-Children.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-iii-1-phoenix-terminator-squad",
+        "name": "Phoenix Terminator Squad"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Imperial-Fists.cat": {
+    "with_pc": [],
+    "missing_pc": []
+  },
+  "Iron-Hands.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-x-1-gorgon-terminator-squad",
+        "name": "Gorgon Terminator Squad"
+      },
+      {
+        "id": "r41-unit-x-2-morlock-terminator-squad",
+        "name": "Morlock Terminator Squad"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Iron-Warriors.cat": {
+    "with_pc": [],
+    "missing_pc": []
+  },
+  "Night-Lords.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-viii-2-contekar-terminator-elite",
+        "name": "Contekar Terminator Elite"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Raven-Guard.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xix-2-deliverer-terminator-squad",
+        "name": "Deliverer Terminator Squad"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Salamanders.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xviii-0-firedrake-terminator-squad",
+        "name": "Firedrake Terminator Squad"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Sons-of-Horus.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xvi-0-justaerin-terminator-squad",
+        "name": "Justaerin Terminator Squad"
+      }
+    ],
+    "missing_pc": [
+      {
+        "id": "r32-abaddon-extra-justaerin",
+        "name": "Justaerin Terminator Squad \u2014 Abaddon Warlord allowance"
+      }
+    ]
+  },
+  "Space-Wolves.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-vi-5-varagyr-wolf-guard-terminators",
+        "name": "Varagyr Wolf Guard Terminator Pack"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Thousand-Sons.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xv-0-sekhmet-terminator-cabal",
+        "name": "Sekhmet Terminator Cabal"
+      }
+    ],
+    "missing_pc": []
+  },
+  "Ultramarines.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xiii-1-fulmentarus-terminator-squad",
+        "name": "Fulmentarus Terminator Squad"
+      }
+    ],
+    "missing_pc": []
+  },
+  "White-Scars.cat": {
+    "with_pc": [],
+    "missing_pc": []
+  },
+  "Word-Bearers.cat": {
+    "with_pc": [],
+    "missing_pc": []
+  },
+  "World-Eaters.cat": {
+    "with_pc": [
+      {
+        "id": "r41-unit-xii-4-devourer-terminator-squad",
+        "name": "Devourer Terminator Squad"
+      }
+    ],
+    "missing_pc": []
+  }
+}
