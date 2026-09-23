@@ -3,7 +3,7 @@
     "files": 18,
     "duplicate_owned_count": 0,
     "cross_legion_total": 987,
-    "unresolved_total": 36
+    "unresolved_total": 27
   },
   "duplicate_owned": [],
   "catalogues": {
@@ -588,14 +588,18 @@
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-terror-extra"
+          "target": "r71-nl-terror-extra",
+          "owner_id": "r46-al-reward-18-donor-r71-nl-headsman-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-raptor-extra"
+          "target": "r71-nl-raptor-extra",
+          "owner_id": "r46-al-reward-19-donor-r71-nl-headtaker-arm-rf",
+          "owner_name": "Refractor Field"
         }
       ]
     },
@@ -4256,56 +4260,72 @@
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-terror-extra"
+          "target": "r71-nl-terror-extra",
+          "owner_id": "r71-nl-headsman-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-raptor-extra"
+          "target": "r71-nl-raptor-extra",
+          "owner_id": "r71-nl-headtaker-arm-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-terror-extra"
+          "target": "r71-nl-terror-extra",
+          "owner_id": "r71-nl-shang-ret-0-r71-nl-headsman-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-raptor-extra"
+          "target": "r71-nl-raptor-extra",
+          "owner_id": "r71-nl-curze-ret-2-r71-nl-headtaker-arm-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-terror-extra"
+          "target": "r71-nl-terror-extra",
+          "owner_id": "r71-nl-curze-ret-3-r71-nl-headsman-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-raptor-extra"
+          "target": "r71-nl-raptor-extra",
+          "owner_id": "r71-nl-ta-raptor-r71-nl-headtaker-arm-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-terror-extra"
+          "target": "r71-nl-terror-extra",
+          "owner_id": "r71-nl-ta-terror-r71-nl-headsman-rf",
+          "owner_name": "Refractor Field"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r71-nl-raptor-extra"
+          "target": "r71-nl-raptor-extra",
+          "owner_id": "r71-nl-hc-raptor-r71-nl-headtaker-arm-rf",
+          "owner_name": "Refractor Field"
         }
       ]
     },
@@ -5127,7 +5147,7 @@
       "generic_parent": 1736,
       "game_system": 33,
       "cross_legion_count": 91,
-      "unresolved_count": 1,
+      "unresolved_count": 0,
       "cross_legion": [
         {
           "from_id": "r63-sw-slayer-huscarl-da22-alt-pp-0",
@@ -5949,22 +5969,14 @@
           ]
         }
       ],
-      "unresolved": [
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        }
-      ]
+      "unresolved": []
     },
     "Thousand-Sons.cat": {
       "local": 458,
       "generic_parent": 2020,
       "game_system": 52,
       "cross_legion_count": 93,
-      "unresolved_count": 23,
+      "unresolved_count": 15,
       "cross_legion": [
         {
           "from_id": "r62-shat-assign-90e65537dc6d-info-7b34de5e3857",
@@ -6810,161 +6822,135 @@
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0",
+          "owner_id": "r19-ts-sekhmet-disc-biomancy",
+          "owner_name": "Biomancy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0",
+          "owner_id": "r19-ts-sekhmet-disc-biomancy",
+          "owner_name": "Biomancy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2",
+          "owner_id": "r19-ts-sekhmet-disc-divination",
+          "owner_name": "Divination"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2",
+          "owner_id": "r19-ts-sekhmet-disc-divination",
+          "owner_name": "Divination"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4",
+          "owner_id": "r19-ts-sekhmet-disc-pyromancy",
+          "owner_name": "Pyromancy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4",
+          "owner_id": "r19-ts-sekhmet-disc-pyromancy",
+          "owner_name": "Pyromancy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1",
+          "owner_id": "r19-ts-sekhmet-disc-telekinesis",
+          "owner_name": "Telekinesis"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1",
+          "owner_id": "r19-ts-sekhmet-disc-telekinesis",
+          "owner_name": "Telekinesis"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3",
+          "owner_id": "r19-ts-sekhmet-disc-telepathy",
+          "owner_name": "Telepathy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3"
+          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3",
+          "owner_id": "r19-ts-sekhmet-disc-telepathy",
+          "owner_name": "Telepathy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-2"
+          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-2",
+          "owner_id": "r19-ts-ammitara-disc-divination",
+          "owner_name": "Divination"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-2"
+          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-2",
+          "owner_id": "r19-ts-ammitara-disc-divination",
+          "owner_name": "Divination"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-3"
+          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-3",
+          "owner_id": "r19-ts-ammitara-disc-telepathy",
+          "owner_name": "Telepathy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "condition",
           "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-3"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
+          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-3",
+          "owner_id": "r19-ts-ammitara-disc-telepathy",
+          "owner_name": "Telepathy"
         },
         {
           "from_id": null,
           "from_name": null,
           "tag": "repeat",
           "attribute": "childId",
-          "target": "live-r2-r41-unit-xv-6-ahzek-ahriman-retinue-0-hq-centurion-ret-command-champ-pw"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "model"
+          "target": "live-r2-r41-unit-xv-6-ahzek-ahriman-retinue-0-hq-centurion-ret-command-champ-pw",
+          "owner_id": "r18-final-ahriman-cabal-force-group",
+          "owner_name": "Ahriman's Cabal — Prosperine Force Weapon upgrades"
         }
       ]
     },
@@ -8450,14 +8436,18 @@
           "from_name": "Teleportation Transponders (Hammerfall)",
           "tag": "entryLink",
           "attribute": "targetId",
-          "target": "r44-if-transponder-unit"
+          "target": "r44-if-transponder-unit",
+          "owner_id": "r60-ws-hibou-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
+          "owner_name": "Teleportation Transponders (Hammerfall)"
         },
         {
           "from_id": "r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
           "from_name": "Teleportation Transponders (Hammerfall)",
           "tag": "entryLink",
           "attribute": "targetId",
-          "target": "r44-if-transponder-unit"
+          "target": "r44-if-transponder-unit",
+          "owner_id": "r60-ws-hasik-retinue-legion-veteran-squad-r44-veteran-unit-if-hammerfall-trans",
+          "owner_name": "Teleportation Transponders (Hammerfall)"
         }
       ]
     },
