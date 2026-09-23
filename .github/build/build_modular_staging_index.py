@@ -43,3 +43,5 @@ for e in entries:
         assert e.get("dataName")==r.get("name")
         assert e.get("dataRevision")==r.get("revision")
 print("Staging entries:",len(entries),"modular catalogues:",len(files),"generic library indexed: yes")
+
+# RC rebuild trigger: include Generic library dependency in the current staging index.
