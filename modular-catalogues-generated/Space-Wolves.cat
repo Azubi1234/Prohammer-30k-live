@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="mod-vi-b770b7f06fbf579f91d4" name="Space Wolves" revision="1" battleScribeVersion="2.03" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="15" library="false"><catalogueLinks><catalogueLink id="link-generic-vi" name="Legiones Astartes — Generic" targetId="cat-7b24-e6f1-83a9-4c50" type="catalogue" /></catalogueLinks><selectionEntries><selectionEntry type="unit" import="true" name="Grey Slayer Pack" hidden="false" id="r41-unit-vi-0-grey-slayer-pack">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="mod-vi-b770b7f06fbf579f91d4" name="Space Wolves" revision="1" battleScribeVersion="2.03" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="15" library="false"><catalogueLinks><catalogueLink id="link-generic-vi" name="Legiones Astartes — Generic Library" targetId="cat-7b24-e6f1-83a9-4c50" type="catalogue" /></catalogueLinks><selectionEntries><selectionEntry type="unit" import="true" name="Grey Slayer Pack" hidden="false" id="r41-unit-vi-0-grey-slayer-pack">
       <costs>
         <cost name="Points" typeId="pts" value="15" />
       </costs>
