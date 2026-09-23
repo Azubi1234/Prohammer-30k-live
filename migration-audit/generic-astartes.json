@@ -834,96 +834,6 @@
     "container": "sharedSelectionEntries"
   },
   {
-    "id": "da22-warblade",
-    "name": "Calibanite Warblade",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-greatsword",
-    "name": "Terranic Greatsword",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-pistol",
-    "name": "Calibanite Plasma Pistol",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-gun",
-    "name": "Calibanite Plasma Gun",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-cannon",
-    "name": "Calibanite Plasma Cannon",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-repeater",
-    "name": "Plasma Repeater",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-burner",
-    "name": "Plasma Burner",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-stasis-missile",
-    "name": "Stasis Shell — Missile",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-stasis-grenade",
-    "name": "Stasis Shell — Grenade",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-acid-hb",
-    "name": "Molecular Acid Heavy Bolter",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-transponders",
-    "name": "Teleportation Transponders",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-caster",
-    "name": "Plasma-caster",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-plasma-incinerator",
-    "name": "Plasma Incinerator with Suspensor Web",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-needle-pistol",
-    "name": "Needle Pistol",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "da22-charge-blade",
-    "name": "Calibanite Charge-blade",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
     "id": "r29-gear-crozius",
     "name": "Crozius Arcanum",
     "tag": "selectionEntry",
@@ -974,12 +884,6 @@
   {
     "id": "r37-gear-grenade-launcher",
     "name": "Grenade Launcher",
-    "tag": "selectionEntry",
-    "container": "sharedSelectionEntries"
-  },
-  {
-    "id": "r40-da-forward-deployment",
-    "name": "Forward Deployment — Infiltrate",
     "tag": "selectionEntry",
     "container": "sharedSelectionEntries"
   },
@@ -4656,6 +4560,438 @@
     "container": "sharedProfiles"
   },
   {
+    "id": "tactical-unit",
+    "name": "Legion Tactical Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "assault-unit",
+    "name": "Legion Assault Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "breacher-unit",
+    "name": "Legion Breacher Siege Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "recon-unit",
+    "name": "Legion Reconnaissance Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "veteran-unit",
+    "name": "Legion Veteran Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "terminator-unit",
+    "name": "Legion Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "destroyer-unit",
+    "name": "Legion Destroyer Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "techmarine-covenant",
+    "name": "Techmarine Covenant",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "dreadnought-unit",
+    "name": "Legion Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "contemptor-unit",
+    "name": "Legion Contemptor Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "rapier-unit",
+    "name": "Legion Rapier Weapons Battery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "fa-seeker",
+    "name": "Legion Seeker Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "fa-bike",
+    "name": "Legion Bike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "fa-sky-hunter",
+    "name": "Legion Sky Hunter Jetbike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "fa-attack-bike",
+    "name": "Legion Attack Bike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "fa-land-speeder",
+    "name": "Legion Land Speeder Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "fa-javelin",
+    "name": "Legion Javelin Attack Speeder Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-heavy-support-squad",
+    "name": "Legion Heavy Support Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-predator",
+    "name": "Legion Predator Strike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-vindicator",
+    "name": "Legion Vindicator Siege Tank Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-land-raider",
+    "name": "Legion Land Raider Battle Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-artillery",
+    "name": "0–1 Legion Artillery Tank Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-scorpius",
+    "name": "Legion Whirlwind Scorpius",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-spartan",
+    "name": "Legion Spartan Assault Tank",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-sicaran",
+    "name": "Legion Sicaran Battle Tank",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-deredeo",
+    "name": "Deredeo Pattern Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-venator",
+    "name": "Sicaran Venator Tank Destroyer",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-achilles-alpha",
+    "name": "Achilles-Alpha Pattern Land Raider",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hs-leviathan",
+    "name": "Leviathan Siege Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hq-praetor",
+    "name": "Legion Praetor",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hq-centurion",
+    "name": "Legion Centurion",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "hq-damocles",
+    "name": "Damocles Command Rhino",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "config-army",
+    "name": "Army Configuration",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-cerberus",
+    "name": "Legion Cerberus Heavy Tank Destroyer",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-typhon",
+    "name": "Legion Typhon Heavy Siege Tank",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-falchion",
+    "name": "Legion Falchion Super-heavy Tank Destroyer",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-stormblade",
+    "name": "Legion Stormblade Super-heavy Tank",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-fellblade",
+    "name": "Legion Fellblade Super-heavy Tank",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-glaive",
+    "name": "Legion Glaive Super-heavy Special Weapons Tank",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-mastodon",
+    "name": "Legion Mastodon Heavy Assault Transport",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-transporter",
+    "name": "Legion Thunderhawk Transporter",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-thunderhawk",
+    "name": "Legion Thunderhawk Gunship",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-low-stormbird",
+    "name": "Sokar Pattern Stormbird",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-aero-lightning",
+    "name": "Primaris-Lightning Strike Fighter",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-aero-xiphon",
+    "name": "Xiphon Pattern Interceptor",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-aero-stormeagle",
+    "name": "Legion Storm Eagle Assault Gunship",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-aero-fireraptor",
+    "name": "Legion Fire Raptor Gunship",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r32-aero-caestus",
+    "name": "Legion Caestus Assault Ram",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-pride-veteran-veteran-unit",
+    "name": "Legion Veteran Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-pride-terminator-terminator-unit",
+    "name": "Legion Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-breakthrough-predator-hs-predator",
+    "name": "Legion Predator Strike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-destroyer-troops-destroyer-unit",
+    "name": "Legion Destroyer Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-fury-dread-dreadnought-unit",
+    "name": "Legion Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-fury-contemptor-contemptor-unit",
+    "name": "Legion Contemptor Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r35-sky-troops-fa-sky-hunter",
+    "name": "Legion Sky Hunter Jetbike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r27-guard-sekhmet-terminator-cabal",
+    "name": "Sekhmet Terminator Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-iii-1-effects-chosen-of-vairosean-kakophoni-squads-r41-unit-iii-2-kakophoni-squad",
+    "name": "Kakophoni Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-iv-1-legion-artillery-tank-squadron-hs-artillery",
+    "name": "0–1 Legion Artillery Tank Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-v-0-effects-ride-like-the-wind-legion-sky-hunter-jetbike-squadrons-fa-sky-hunter",
+    "name": "Legion Sky Hunter Jetbike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-vii-0-effects-warders-of-the-phalanx-phalanx-warder-squads-r41-unit-vii-1-phalanx-warder-squad",
+    "name": "Phalanx Warder Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-vii-1-effects-landing-force-phalanx-warder-squads-r41-unit-vii-1-phalanx-warder-squad",
+    "name": "Phalanx Warder Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-vii-2-effects-templar-host-templar-brethren-squads-r41-unit-vii-0-templar-brethren-squad",
+    "name": "Templar Brethren Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xii-0-effects-the-red-hand-rampager-squads-r41-unit-xii-0-rampager-squad",
+    "name": "Rampager Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xiv-0-effects-superior-firepower-legion-veteran-squads-veteran-unit",
+    "name": "Legion Veteran Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xiv-0-legion-heavy-support-squads-hs-heavy-support-squad",
+    "name": "Legion Heavy Support Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xv-1-initiates-of-the-scarab-sekhmet-terminator-cabals-r41-unit-xv-0-sekhmet-terminator-cabal",
+    "name": "Sekhmet Terminator Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xv-crimson-magnus-hq-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king",
+    "name": "Magnus the Red, the Crimson King",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r42-role-xx-1-effects-headhunter-elite-headhunter-kill-teams-r41-unit-xx-1-headhunter-kill-team",
+    "name": "Headhunter Kill Team",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r45-dg-bike",
+    "name": "Legion Bike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r45-dg-attack-bike",
+    "name": "Legion Attack Bike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r45-dg-land-speeder",
+    "name": "Legion Land Speeder Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r46-al-operative-aux",
+    "name": "Legion Operatives (slotless 0–2)",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r46-al-reward-0",
     "name": "Palatine Blade Squad — Rewards of Treachery",
     "tag": "selectionEntry",
@@ -4820,6 +5156,96 @@
   {
     "id": "r47-ih-castrmen-orth",
     "name": "Castrmen Orth — Tank Commander Upgrade",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r52-ec-sonic-hss",
+    "name": "Legion Heavy Support Squad — Sonic Weaponry",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r52-ec-third-kakophoni-troops",
+    "name": "Kakophoni Squad — 3rd Company Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r57-iw-golg-term-troops",
+    "name": "Legion Terminator Squad — Terminator Attack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r57-iw-hammer-tactical",
+    "name": "Legion Tactical Squad — Hammer Compulsory",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r57-iw-hammer-breacher",
+    "name": "Legion Breacher Siege Squad — Hammer Compulsory",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r57-iw-ironfire-artillery",
+    "name": "Legion Artillery Tank Squadron — Artillery Column",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r60-ws-bike-troops",
+    "name": "Legion Bike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r60-ws-sagyar-ebon-troops",
+    "name": "Ebon Keshig",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r64-if-stone-warders",
+    "name": "Phalanx Warder Squad — Stone Gauntlet Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r64-if-hammer-warders",
+    "name": "Phalanx Warder Squad — Hammerfall Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r64-if-templar-troops",
+    "name": "Templar Brethren Squad — Templar Assault Troops",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r74-ba-rev-vet-veteran-unit",
+    "name": "Legion Veteran Squad (Jump Packs) — Day of Revelation",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r79-ih-castrmen-orth",
+    "name": "Castrmen Orth",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-sal-nomus-dread-hq",
+    "name": "Legion Dreadnought — Keeper of the Keys",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-sal-nomus-contemptor-hq",
+    "name": "Legion Contemptor Dreadnought — Keeper of the Keys",
     "tag": "selectionEntry",
     "container": "selectionEntries"
   }

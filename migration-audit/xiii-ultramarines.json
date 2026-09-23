@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "r41-unit-xiii-0-invictarus-suzerain-squad",
+    "name": "Invictarus Suzerain Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-1-fulmentarus-terminator-squad",
+    "name": "Fulmentarus Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-2-locutarus-storm-squad",
+    "name": "Locutarus Storm Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-3-nemesis-destroyer-squad",
+    "name": "Nemesis Destroyer Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-4-marius-gage-first-master",
+    "name": "Marius Gage, First Master",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-5-remus-ventanus",
+    "name": "Remus Ventanus",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-6-aeonid-thiel",
+    "name": "Aeonid Thiel",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-7-honoured-telemechrus",
+    "name": "Honoured Telemechrus",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-8-titus-prayto",
+    "name": "Titus Prayto",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiii-9-xiii-roboute-guilliman-the-avenging-son",
+    "name": "Roboute Guilliman, the Avenging Son",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

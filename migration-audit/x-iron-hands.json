@@ -18,6 +18,12 @@
     "container": "selectionEntries"
   },
   {
+    "id": "r41-unit-x-3-venerable-forge-lord",
+    "name": "Venerable Forge Lord",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r41-unit-x-4-shadrak-meduson",
     "name": "Shadrak Meduson",
     "tag": "selectionEntry",

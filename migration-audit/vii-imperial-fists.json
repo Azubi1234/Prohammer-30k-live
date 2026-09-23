@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "r41-unit-vii-0-templar-brethren-squad",
+    "name": "Templar Brethren Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-1-phalanx-warder-squad",
+    "name": "Phalanx Warder Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-2-huscarl-terminator-retinue",
+    "name": "Huscarl Terminator Retinue",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-3-tarantula-sentry-gun-battery",
+    "name": "Tarantula Sentry Gun Battery",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-4-sigismund-first-captain",
+    "name": "Sigismund, First Captain",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-5-fafnir-rann",
+    "name": "Fafnir Rann",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-6-alexis-polux",
+    "name": "Alexis Polux",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-7-camba-diaz",
+    "name": "Camba Diaz",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-8-evander-garrius",
+    "name": "Evander Garrius",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vii-9-vii-rogal-dorn-the-praetorian-of-terra",
+    "name": "Rogal Dorn — The Praetorian of Terra",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

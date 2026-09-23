@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "r41-unit-xii-0-rampager-squad",
+    "name": "Rampager Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-1-red-butcher-squad",
+    "name": "Red Butcher Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-2-red-hand-destroyer-mortalis-squad",
+    "name": "Red Hand Destroyer Mortalis Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-3-world-eaters-inductii-squad",
+    "name": "World Eaters Inductii Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-4-devourer-terminator-squad",
+    "name": "Devourer Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-5-triarii-breacher-squad",
+    "name": "Triarii Breacher Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-6-kharn-the-bloody",
+    "name": "Khârn the Bloody",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-7-shabran-darr",
+    "name": "Shabran Darr",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-8-gahlan-surlak",
+    "name": "Gahlan Surlak",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-9-kargos-the-bloodspitter",
+    "name": "Kargos, the Bloodspitter",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-10-captain-ehrlen",
+    "name": "Captain Ehrlen",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-11-delvarus",
+    "name": "Delvarus",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-12-xii-angron-the-red-angel",
+    "name": "Angron, the Red Angel",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xii-13-angron-the-red-angel",
+    "name": "Angron, the Red Angel",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

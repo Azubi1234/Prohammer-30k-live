@@ -1,1 +1,224 @@
-[]
+[
+  {
+    "id": "da22-warblade",
+    "name": "Calibanite Warblade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-greatsword",
+    "name": "Terranic Greatsword",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-pistol",
+    "name": "Calibanite Plasma Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-gun",
+    "name": "Calibanite Plasma Gun",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-cannon",
+    "name": "Calibanite Plasma Cannon",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-repeater",
+    "name": "Plasma Repeater",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-burner",
+    "name": "Plasma Burner",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-stasis-missile",
+    "name": "Stasis Shell — Missile",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-stasis-grenade",
+    "name": "Stasis Shell — Grenade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-acid-hb",
+    "name": "Molecular Acid Heavy Bolter",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-transponders",
+    "name": "Teleportation Transponders",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-caster",
+    "name": "Plasma-caster",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-plasma-incinerator",
+    "name": "Plasma Incinerator with Suspensor Web",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-needle-pistol",
+    "name": "Needle Pistol",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-charge-blade",
+    "name": "Calibanite Charge-blade",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "r40-da-forward-deployment",
+    "name": "Forward Deployment — Infiltrate",
+    "tag": "selectionEntry",
+    "container": "sharedSelectionEntries"
+  },
+  {
+    "id": "da22-deathwing-companions",
+    "name": "Deathwing Companion Detachment",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-deathwing-term-comp",
+    "name": "Deathwing Terminator Companion Detachment",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-cenobium",
+    "name": "Inner Circle Knights Cenobium",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-interemptors",
+    "name": "Dreadwing Interemptor Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-enigmatus",
+    "name": "Firewing Enigmatus Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-corswain",
+    "name": "Corswain, Seneschal of the First Legion",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-sedras",
+    "name": "Marduk Sedras, Lord of the Twenty-Third Order",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-redloss",
+    "name": "Farith Redloss",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-holguin",
+    "name": "Holguin",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "da22-lion",
+    "name": "Lion El'Jonson, The First",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-storm-tactical",
+    "name": "Legion Tactical Squad (Storm of War compulsory)",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-storm-assault",
+    "name": "Legion Assault Squad (Storm of War compulsory)",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-vow-veteran",
+    "name": "Legion Veteran Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-vow-terminator",
+    "name": "Legion Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-eskaton-destroyer",
+    "name": "Legion Destroyer Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-eskaton-interemptor",
+    "name": "Dreadwing Interemptor Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-steel-predator",
+    "name": "Legion Predator Strike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-arrow-bike",
+    "name": "Legion Bike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-arrow-sky",
+    "name": "Legion Sky Hunter Jetbike Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-serpent-seeker",
+    "name": "Legion Seeker Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r40-da-serpent-assault",
+    "name": "Legion Assault Squad (Serpent’s Bane compulsory)",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

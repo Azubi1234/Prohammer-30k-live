@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "r41-unit-xiv-0-deathshroud-terminators",
+    "name": "Deathshroud Terminators",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-1-grave-warden-terminator-squad",
+    "name": "Grave Warden Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-2-mortus-poisoner-squad",
+    "name": "Mortus Poisoner Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-3-calas-typhon-first-captain",
+    "name": "Calas Typhon, First Captain",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-4-crysos-morturg",
+    "name": "Crysos Morturg",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-5-durak-rask",
+    "name": "Durak Rask",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-6-ignatius-grulgor",
+    "name": "Ignatius Grulgor",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-7-nathaniel-garro",
+    "name": "Nathaniel Garro",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-8-xiv-mortarion-the-reaper",
+    "name": "Mortarion, the Reaper",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xiv-9-mortarion-prince-of-decay",
+    "name": "Mortarion, Prince of Decay",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

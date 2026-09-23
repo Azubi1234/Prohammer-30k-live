@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "id": "r41-unit-xv-0-sekhmet-terminator-cabal",
+    "name": "Sekhmet Terminator Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-1-khenetai-occult-blade-cabal",
+    "name": "Khenetai Occult Blade Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-2-ammitara-occult-intercession-cabal",
+    "name": "Ammitara Occult Intercession Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-3-castellax-achea-maniple",
+    "name": "Castellax-Achea Maniple",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-4-contemptor-osiron-dreadnought",
+    "name": "Contemptor-Osiron Dreadnought",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-5-numerologist-cabal",
+    "name": "Numerologist Cabal",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-6-ahzek-ahriman",
+    "name": "Ahzek Ahriman",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-7-phosis-t-kar",
+    "name": "Phosis T'Kar",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-8-magistus-amon-the-hidden",
+    "name": "Magistus Amon, the Hidden",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-9-hathor-maat",
+    "name": "Hathor Maat",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-10-sanakht",
+    "name": "Sanakht",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-11-xv-magnus-the-red-the-crimson-king",
+    "name": "Magnus the Red, the Crimson King",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xv-12-magnus-shard-of-the-crimson-king",
+    "name": "Magnus, Shard of the Crimson King",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

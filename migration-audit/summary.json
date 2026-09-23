@@ -75,18 +75,26 @@
     ]
   },
   "counts": {
-    "GENERIC": 804,
+    "GENERIC": 875,
+    "I": 37,
     "XVI": 20,
-    "IX": 12,
-    "XVII": 13,
-    "XVIII": 13,
+    "IX": 13,
+    "XVII": 16,
+    "XVIII": 14,
     "XIX": 11,
-    "XX": 46,
-    "III": 5,
-    "IV": 9,
+    "XX": 48,
+    "III": 11,
+    "IV": 10,
+    "V": 10,
+    "VI": 12,
+    "VII": 10,
     "VIII": 13,
-    "X": 8
+    "X": 9,
+    "XII": 14,
+    "XIII": 10,
+    "XIV": 10,
+    "XV": 13
   },
-  "ambiguous": 202,
-  "cross_owner_references": 48562
+  "ambiguous": 0,
+  "cross_owner_references": 30744
 }

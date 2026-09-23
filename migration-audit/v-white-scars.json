@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "r41-unit-v-0-golden-keshig-squadron",
+    "name": "Golden Keshig Squadron",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-1-ebon-keshig",
+    "name": "Ebon Keshig",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-2-dark-sons-of-death",
+    "name": "Dark Sons of Death",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-3-falcons-claws",
+    "name": "Falcon’s Claws",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-4-qin-xa-master-of-the-keshig",
+    "name": "Qin Xa, Master of the Keshig",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-5-targutai-yesugei",
+    "name": "Targutai Yesugei",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-6-shiban-khan",
+    "name": "Shiban Khan",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-7-hibou-khan",
+    "name": "Hibou Khan",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-8-hasik-noyan-khan",
+    "name": "Hasik Noyan-Khan",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-v-9-v-jaghatai-khan-the-warhawk",
+    "name": "Jaghatai Khan, the Warhawk",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

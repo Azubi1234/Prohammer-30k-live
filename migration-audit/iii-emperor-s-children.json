@@ -1,5 +1,29 @@
 [
   {
+    "id": "r41-unit-iii-0-palatine-blade-squad",
+    "name": "Palatine Blade Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-1-phoenix-terminator-squad",
+    "name": "Phoenix Terminator Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-2-kakophoni-squad",
+    "name": "Kakophoni Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-3-sun-killer-squad",
+    "name": "Sun Killer Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r41-unit-iii-4-lord-commander-eidolon",
     "name": "Lord Commander Eidolon",
     "tag": "selectionEntry",
@@ -24,8 +48,20 @@
     "container": "selectionEntries"
   },
   {
+    "id": "r41-unit-iii-8-rylanor-the-unyielding",
+    "name": "Rylanor the Unyielding",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r41-unit-iii-9-fulgrim-the-phoenician",
     "name": "Fulgrim, the Phoenician",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-iii-10-fulgrim-transfigured",
+    "name": "Fulgrim Transfigured",
     "tag": "selectionEntry",
     "container": "selectionEntries"
   }

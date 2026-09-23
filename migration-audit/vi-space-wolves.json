@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "r41-unit-vi-0-grey-slayer-pack",
+    "name": "Grey Slayer Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-1-grey-stalker-pack",
+    "name": "Grey Stalker Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-2-wolf-scout-squad",
+    "name": "Wolf Scout Squad",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-3-deathsworn-pack",
+    "name": "Deathsworn Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-4-jorlund-hunter-pack",
+    "name": "Jorlund Hunter Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-5-varagyr-wolf-guard-terminators",
+    "name": "Varagyr Wolf Guard Terminator Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-6-fenrisian-wolf-pack",
+    "name": "Fenrisian Wolf Pack",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-7-hvarl-red-blade",
+    "name": "Hvarl Red-Blade",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-8-geigor-fell-hand",
+    "name": "Geigor Fell-Hand",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-9-bjorn-the-fell-handed",
+    "name": "Björn the Fell-Handed",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-10-ohthere-wyrdmake",
+    "name": "Ohthere Wyrdmake",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-vi-11-vi-leman-russ-the-wolf-king",
+    "name": "Leman Russ — The Wolf King",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  }
+]

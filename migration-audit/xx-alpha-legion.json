@@ -6,6 +6,12 @@
     "container": "sharedRules"
   },
   {
+    "id": "r41-unit-xx-0-legion-operatives",
+    "name": "Legion Operatives",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r41-unit-xx-1-headhunter-kill-team",
     "name": "Headhunter Kill Team",
     "tag": "selectionEntry",
@@ -38,6 +44,12 @@
   {
     "id": "r41-unit-xx-6-autilon-skorr",
     "name": "Autilon Skorr",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xx-7-ingo-pech",
+    "name": "Ingo Pech",
     "tag": "selectionEntry",
     "container": "selectionEntries"
   },

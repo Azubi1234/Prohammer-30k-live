@@ -60,6 +60,12 @@
     "container": "selectionEntries"
   },
   {
+    "id": "r41-unit-ix-9-azkaellon",
+    "name": "Azkaellon",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r41-unit-ix-10-nassir-amit-the-flesh-tearer",
     "name": "Nassir Amit, the Flesh Tearer",
     "tag": "selectionEntry",

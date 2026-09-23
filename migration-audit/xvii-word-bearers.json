@@ -6,6 +6,12 @@
     "container": "sharedRules"
   },
   {
+    "id": "r41-unit-xvii-0-covenant-zealot-mob",
+    "name": "Covenant Zealot Mob",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
     "id": "r41-unit-xvii-1-gal-vorbak-dark-brethren",
     "name": "Gal Vorbak Dark Brethren",
     "tag": "selectionEntry",
@@ -14,6 +20,12 @@
   {
     "id": "r41-unit-xvii-2-ashen-circle",
     "name": "Ashen Circle",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-3-mhara-gal-tainted-dreadnought",
+    "name": "Mhara Gal Tainted Dreadnought",
     "tag": "selectionEntry",
     "container": "selectionEntries"
   },
@@ -50,6 +62,12 @@
   {
     "id": "r41-unit-xvii-9-zardu-layak",
     "name": "Zardu Layak",
+    "tag": "selectionEntry",
+    "container": "selectionEntries"
+  },
+  {
+    "id": "r41-unit-xvii-10-anakatis-kul-blade-slaves",
+    "name": "Anakatis Kul Blade-Slaves",
     "tag": "selectionEntry",
     "container": "selectionEntries"
   },
