@@ -1,4 +1,4 @@
-name: Modular catalogue migration audit
+name: Modular catalogue migration audit v2
 
 on:
   workflow_dispatch:
