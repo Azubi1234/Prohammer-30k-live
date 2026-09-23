@@ -1,0 +1,1066 @@
+{
+  "Alpha-Legion.cat": [
+    {
+      "id": "r45-dyn-ret-0-live-r2-fabius-enhanced-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r45-dyn-ret-0-r16-dg-plague-group-hq-centurion-ret-command",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r45-pech-ret-0-live-r2-fabius-enhanced-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r45-pech-ret-0-r16-dg-plague-group-hq-centurion-ret-command",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r45-pech-ret-3-da-wing-fa-seeker",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r45-pech-ret-3-r40-da-steel-transport-fa-seeker-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r45-pech-ret-3-r40-da-steel-transport-fa-seeker-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r45-pech-ret-3-r52-fa-seeker-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "r45-pech-ret-3-live-r2-fabius-enhanced-fa-seeker-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r45-pech-ret-3-r16-dg-plague-group-fa-seeker",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r45-alp-ret-0-live-r2-fabius-enhanced-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r45-alp-ret-0-r16-dg-plague-group-hq-praetor-ret-honour",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r46-al-reward-4-donor-r57-iw-tyrant-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r46-al-reward-4-donor-r57-iw-tyrant-melee",
+      "name": "Melee Weapon Replacements"
+    },
+    {
+      "id": "r46-al-reward-4-donor-r57-iw-tyrant-master",
+      "name": "Tyrant Siege Master"
+    },
+    {
+      "id": "r46-al-reward-6-donor-r57-iw-dom-melee",
+      "name": "Melee Weapon Replacement"
+    },
+    {
+      "id": "r46-al-reward-6-donor-r57-iw-dom-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r46-al-reward-6-donor-r57-iw-dom-heavy",
+      "name": "Heavy Weapon (one per five models)"
+    },
+    {
+      "id": "r46-al-reward-6-donor-r57-iw-dom-warden",
+      "name": "Dominator Warden"
+    },
+    {
+      "id": "r46-al-reward-20-donor-r71-nl-contekar-transport-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r46-al-reward-20-donor-r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r46-al-reward-22-donor-r74-ba-pal-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r46-al-reward-22-donor-r74-ba-pal-lr-r40-da-ammo-hs-land-raider",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r46-al-reward-22-donor-r74-ba-pal-sp-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r46-al-reward-22-donor-r74-ba-pal-sp-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r46-al-reward-28-donor-r49-legion-upgrades-r41-unit-xii-0-rampager-squad",
+      "name": "Legion Wargear & Upgrades"
+    },
+    {
+      "id": "r46-al-reward-33-donor-live-r3-triarii-weapons-r41-unit-xii-5-triarii-breacher-squad",
+      "name": "Whole Squad Weapon Replacement"
+    },
+    {
+      "id": "r46-al-reward-47-donor-r41-unit-xvi-1-reaver-attack-squad-r32-melee",
+      "name": "Melee Replacements \u2014 1 per 5 models"
+    },
+    {
+      "id": "r46-al-reward-53-donor-r41-unit-xviii-0-firedrake-terminator-squad-mastercraft",
+      "name": "Master-crafted Thunder Hammer \u2014 any model"
+    }
+  ],
+  "Blood-Angels.cat": [
+    {
+      "id": "r74-ba-pal-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r74-ba-pal-lr-r40-da-ammo-hs-land-raider",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r74-ba-pal-sp-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r74-ba-pal-sp-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r74-ba-ral-cmd-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r74-ba-crohne-cmd-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r74-ba-amit-cmd-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r74-ba-sang-honour-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    }
+  ],
+  "Dark-Angels.cat": [
+    {
+      "id": "da22-dwtc-armour",
+      "name": "Terminator Armour Pattern"
+    },
+    {
+      "id": "live-r2-da22-holguin-retinue-0-da22-dwtc-armour",
+      "name": "Terminator Armour Pattern"
+    },
+    {
+      "id": "r40-da-storm-tactical-da-wing-tactical-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-storm-centurion-group-r40-da-storm-tactical-da-wing-hq-centurion",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-storm-assault-da-wing-assault-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-storm-centurion-group-r40-da-storm-assault-da-wing-hq-centurion",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-vow-veteran-veteran-tactics",
+      "name": "Veteran Tactic (choose one)"
+    },
+    {
+      "id": "r40-da-vow-veteran-da-wing-veteran-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r40-da-vow-veteran-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r40-da-vow-terminator-da-wing-terminator-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-eskaton-destroyer-da-wing-destroyer-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r40-da-eskaton-destroyer-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r40-da-steel-predator-da-wing-hs-predator",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-arrow-bike-da-wing-fa-bike",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-arrow-sky-da-wing-fa-sky-hunter",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r40-da-serpent-seeker-da-wing-fa-seeker",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r40-da-serpent-seeker-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r40-da-serpent-assault-da-wing-assault-unit",
+      "name": "Hexagrammaton Wing"
+    }
+  ],
+  "Death-Guard.cat": [
+    {
+      "id": "r11-dg-mp-master-phosphex",
+      "name": "Poison-master \u2014 Phosphex Bombs"
+    },
+    {
+      "id": "r16-dg-plague-group-r41-unit-xiv-2-mortus-poisoner-squad",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r16-dg-plague-group-live-r2-r41-unit-xiv-4-crysos-morturg-retinue-0-r41-unit-xiv-2-mortus-poisoner-squad",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r16-dg-plague-group-r41-unit-xiv-4-crysos-morturg",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r16-dg-plague-group-live-r2-r41-unit-xiv-5-durak-rask-retinue-0-hq-centurion-ret-command",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r16-dg-plague-group-r41-unit-xiv-5-durak-rask",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r16-dg-plague-group-live-r2-r41-unit-xiv-6-ignatius-grulgor-retinue-0-hq-centurion-ret-command",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r16-dg-plague-group-r41-unit-xiv-6-ignatius-grulgor",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r16-dg-plague-group-live-r2-r41-unit-xiv-7-nathaniel-garro-retinue-0-hq-centurion-ret-command",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r16-dg-plague-group-r41-unit-xiv-7-nathaniel-garro",
+      "name": "Sons of the Plague Father"
+    }
+  ],
+  "Emperor-s-Children.cat": [
+    {
+      "id": "r52-r41-unit-iii-0-palatine-blade-squad-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r41-unit-iii-0-palatine-blade-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r52-ec-ka-champ",
+      "name": "Cacophonic Champion Melee Weapon"
+    },
+    {
+      "id": "r52-r41-unit-iii-2-kakophoni-squad-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r41-unit-iii-2-kakophoni-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r52-r41-unit-iii-3-sun-killer-squad-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r41-unit-iii-3-sun-killer-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r52-ec-eid-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r52-ec-tar-options",
+      "name": "Options"
+    },
+    {
+      "id": "r52-ec-luc-options",
+      "name": "Options"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r52-ec-luc-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r52-ec-ful-honour-group",
+      "name": "Fabius Bile"
+    }
+  ],
+  "Imperial-Fists.cat": [
+    {
+      "id": "r64-if-templar-power",
+      "name": "Rending Weapon Replacements \u2014 up to five models"
+    },
+    {
+      "id": "r64-if-templar-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r64-if-warder-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r64-if-sig-templar-r64-if-templar-power",
+      "name": "Rending Weapon Replacements \u2014 up to five models"
+    },
+    {
+      "id": "r64-if-sig-templar-r64-if-templar-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r64-if-diaz-warder-r64-if-warder-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r64-if-diaz-command-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r64-if-dorn-honour-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r64-if-dorn-templar-r64-if-templar-power",
+      "name": "Rending Weapon Replacements \u2014 up to five models"
+    },
+    {
+      "id": "r64-if-dorn-templar-r64-if-templar-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    }
+  ],
+  "Iron-Hands.cat": [
+    {
+      "id": "live-r2-fabius-enhanced-r79-ih-meduson-command-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r79-ih-ferrus-honour-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    }
+  ],
+  "Iron-Warriors.cat": [
+    {
+      "id": "r57-iw-tyrant-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-tyrant-melee",
+      "name": "Melee Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-tyrant-master",
+      "name": "Tyrant Siege Master"
+    },
+    {
+      "id": "r57-iw-dom-melee",
+      "name": "Melee Weapon Replacement"
+    },
+    {
+      "id": "r57-iw-dom-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-dom-heavy",
+      "name": "Heavy Weapon (one per five models)"
+    },
+    {
+      "id": "r57-iw-dom-warden",
+      "name": "Dominator Warden"
+    },
+    {
+      "id": "r57-iw-narik-options",
+      "name": "Options"
+    },
+    {
+      "id": "r57-iw-golg-retinue-tyrant-siege-terminator-squad-r57-iw-tyrant-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-golg-retinue-tyrant-siege-terminator-squad-r57-iw-tyrant-melee",
+      "name": "Melee Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-golg-retinue-tyrant-siege-terminator-squad-r57-iw-tyrant-master",
+      "name": "Tyrant Siege Master"
+    },
+    {
+      "id": "r57-iw-golg-retinue-dominator-cohort-r57-iw-dom-melee",
+      "name": "Melee Weapon Replacement"
+    },
+    {
+      "id": "r57-iw-golg-retinue-dominator-cohort-r57-iw-dom-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-golg-retinue-dominator-cohort-r57-iw-dom-heavy",
+      "name": "Heavy Weapon (one per five models)"
+    },
+    {
+      "id": "r57-iw-golg-retinue-dominator-cohort-r57-iw-dom-warden",
+      "name": "Dominator Warden"
+    },
+    {
+      "id": "r57-iw-vhalen-options",
+      "name": "Options"
+    },
+    {
+      "id": "r57-iw-forrix-retinue-tyrant-siege-terminator-squad-r57-iw-tyrant-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-forrix-retinue-tyrant-siege-terminator-squad-r57-iw-tyrant-melee",
+      "name": "Melee Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-forrix-retinue-tyrant-siege-terminator-squad-r57-iw-tyrant-master",
+      "name": "Tyrant Siege Master"
+    },
+    {
+      "id": "r57-iw-kroeger-options",
+      "name": "Options"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r57-iw-kroeger-retinue-legion-command-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r57-iw-pert-retinue-legion-honour-guard-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r57-iw-pert-retinue-dominator-cohort-r57-iw-dom-melee",
+      "name": "Melee Weapon Replacement"
+    },
+    {
+      "id": "r57-iw-pert-retinue-dominator-cohort-r57-iw-dom-ranged",
+      "name": "Ranged Weapon Replacements"
+    },
+    {
+      "id": "r57-iw-pert-retinue-dominator-cohort-r57-iw-dom-heavy",
+      "name": "Heavy Weapon (one per five models)"
+    },
+    {
+      "id": "r57-iw-pert-retinue-dominator-cohort-r57-iw-dom-warden",
+      "name": "Dominator Warden"
+    }
+  ],
+  "Night-Lords.cat": [
+    {
+      "id": "r71-nl-contekar-transport-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r71-nl-atramentar-transport-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r71-nl-sev-ret-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-sev-ret-2-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r71-nl-oph-ret-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-oph-ret-1-r71-nl-contekar-transport-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r71-nl-mal-ret-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r71-nl-mal-ret-1-veteran-tactics",
+      "name": "Veteran Tactic (choose one)"
+    },
+    {
+      "id": "r71-nl-mal-ret-1-da-wing-veteran-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-mal-ret-1-r40-da-ammo-veteran-unit",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-mal-ret-1-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r71-nl-mal-ret-1-r52-veteran-unit-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r71-nl-mal-ret-1-veteran-unit-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r71-nl-curze-ret-1-r71-nl-atramentar-transport-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    }
+  ],
+  "Raven-Guard.cat": [
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xix-5-alvarex-maun-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r43-corax-ret-0-live-r2-fabius-enhanced-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r43-corax-ret-0-r16-dg-plague-group-hq-praetor-ret-honour",
+      "name": "Sons of the Plague Father"
+    }
+  ],
+  "Salamanders.cat": [
+    {
+      "id": "r41-unit-xviii-0-firedrake-terminator-squad-mastercraft",
+      "name": "Master-crafted Thunder Hammer \u2014 any model"
+    },
+    {
+      "id": "live-r2-r41-unit-xviii-5-artellus-numeon-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-mastercraft",
+      "name": "Master-crafted Thunder Hammer \u2014 any model"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xviii-5-artellus-numeon-retinue-1-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-0-r41-unit-xviii-0-firedrake-terminator-squad-mastercraft",
+      "name": "Master-crafted Thunder Hammer \u2014 any model"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xviii-6-lord-chaplain-nomus-rhy-tan-retinue-1-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r40-vul-ret-legion-honour-guard-squad-live-r2-fabius-enhanced-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r40-vul-ret-legion-honour-guard-squad-r16-dg-plague-group-hq-praetor-ret-honour",
+      "name": "Sons of the Plague Father"
+    },
+    {
+      "id": "r40-vul-ret-firedrake-terminator-squad-r41-unit-xviii-0-firedrake-terminator-squad-mastercraft",
+      "name": "Master-crafted Thunder Hammer \u2014 any model"
+    }
+  ],
+  "Sons-of-Horus.cat": [
+    {
+      "id": "r41-unit-xvi-1-reaver-attack-squad-r32-melee",
+      "name": "Melee Replacements \u2014 1 per 5 models"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xvi-5-horus-aximand-little-horus-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xvi-6-garviel-loken-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-tactics",
+      "name": "Veteran Tactic (choose one)"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-da-wing-veteran-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r40-da-ammo-veteran-unit",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r40-da-steel-transport-veteran-unit-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-r52-veteran-unit-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xvi-6-garviel-loken-retinue-1-veteran-unit-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-tactics",
+      "name": "Veteran Tactic (choose one)"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-da-wing-veteran-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r40-da-ammo-veteran-unit",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r40-da-steel-transport-veteran-unit-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-r52-veteran-unit-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-0-veteran-unit-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-8-tybalt-marr-the-either-retinue-1-r41-unit-xvi-1-reaver-attack-squad-r32-melee",
+      "name": "Melee Replacements \u2014 1 per 5 models"
+    },
+    {
+      "id": "live-r2-r41-unit-xvi-9-vheren-ashurhaddon-retinue-0-r41-unit-xvi-1-reaver-attack-squad-r32-melee",
+      "name": "Melee Replacements \u2014 1 per 5 models"
+    },
+    {
+      "id": "r42-role-xvi-1-effects-reaver-onslaught-reaver-attack-squads-r41-unit-xvi-1-reaver-attack-squad-r32-melee",
+      "name": "Melee Replacements \u2014 1 per 5 models"
+    }
+  ],
+  "Space-Wolves.cat": [
+    {
+      "id": "r63-sw-slayer-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r63-sw-slayer-transport-lr-r40-da-ammo-hs-land-raider",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r63-sw-scout-heavy",
+      "name": "Heavy Weapon \u2014 one Scout"
+    },
+    {
+      "id": "r63-sw-deathsworn-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r63-sw-deathsworn-transport-lr-r40-da-ammo-hs-land-raider",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r63-sw-jorlund-ranged",
+      "name": "Flame Weapon Replacements \u2014 one per five models"
+    },
+    {
+      "id": "r63-sw-varagyr-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r63-sw-varagyr-transport-lr-r40-da-ammo-hs-land-raider",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r63-sw-varagyr-transport-sp-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r63-sw-varagyr-transport-sp-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r63-sw-hvarl-varagyr-r63-sw-varagyr-transport-lr-da-wing-hs-land-raider",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r63-sw-hvarl-varagyr-r63-sw-varagyr-transport-lr-r40-da-ammo-hs-land-raider",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r63-sw-hvarl-varagyr-r63-sw-varagyr-transport-sp-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r63-sw-hvarl-varagyr-r63-sw-varagyr-transport-sp-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r63-sw-ohthere-command-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r63-sw-russ-honour-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    }
+  ],
+  "Thousand-Sons.cat": [
+    {
+      "id": "r19-ts-sekhmet-disciplines",
+      "name": "Scarab Occult \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-ts-sekhmet-powers",
+      "name": "Scarab Occult \u2014 Psychic Powers"
+    },
+    {
+      "id": "r19-ts-ammitara-disciplines",
+      "name": "Ammitara Psychic Brotherhood \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-ts-ammitara-powers",
+      "name": "Ammitara Psychic Brotherhood \u2014 Psychic Powers"
+    },
+    {
+      "id": "r19-ts-osiron-disciplines",
+      "name": "Psychic Dreadnought \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-ts-osiron-powers",
+      "name": "Psychic Dreadnought \u2014 Psychic Powers"
+    },
+    {
+      "id": "r45-cult-r41-unit-xv-6-ahzek-ahriman",
+      "name": "Prosperine Cult \u2014 fixed"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xv-6-ahzek-ahriman-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r19-ts-ahriman-cabal-powers",
+      "name": "Ahriman's Cabal \u2014 Divination"
+    },
+    {
+      "id": "r45-cult-r41-unit-xv-7-phosis-t-kar",
+      "name": "Prosperine Cult \u2014 fixed"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xv-7-phosis-t-kar-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r19-ts-phosis-powers",
+      "name": "Phosis T\u2019Kar \u2014 Telekinesis"
+    },
+    {
+      "id": "r45-cult-r41-unit-xv-8-magistus-amon-the-hidden",
+      "name": "Prosperine Cult \u2014 fixed"
+    },
+    {
+      "id": "live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-da-wing-fa-seeker",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r40-da-steel-transport-fa-seeker-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r40-da-steel-transport-fa-seeker-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-r52-fa-seeker-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xv-8-magistus-amon-the-hidden-retinue-1-fa-seeker-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r19-ts-amon-powers",
+      "name": "Magistus Amon \u2014 Telepathy"
+    },
+    {
+      "id": "r45-cult-r41-unit-xv-9-hathor-maat",
+      "name": "Prosperine Cult \u2014 fixed"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xv-9-hathor-maat-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r19-ts-hathor-powers",
+      "name": "Hathor Maat \u2014 Biomancy"
+    },
+    {
+      "id": "r45-cult-r41-unit-xv-10-sanakht",
+      "name": "Prosperine Cult \u2014 fixed"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-crimson-guard-cult",
+      "name": "Prosperine Cult \u2014 Brotherhood"
+    },
+    {
+      "id": "r19-r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-crimson-guard-power-disciplines",
+      "name": "Crimson King\u2019s Guard \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-0-hq-praetor-ret-honour-crimson-guard-power-powers",
+      "name": "Crimson King\u2019s Guard \u2014 Psychic Powers"
+    },
+    {
+      "id": "r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-1-hq-praetor-ret-termcommand-crimson-guard-cult",
+      "name": "Prosperine Cult \u2014 Brotherhood"
+    },
+    {
+      "id": "r19-r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-1-hq-praetor-ret-termcommand-crimson-guard-power-disciplines",
+      "name": "Crimson King\u2019s Guard \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-r18-ts-mag-live-r2-r41-unit-xv-11-xv-magnus-the-red-the-crimson-king-retinue-1-hq-praetor-ret-termcommand-crimson-guard-power-powers",
+      "name": "Crimson King\u2019s Guard \u2014 Psychic Powers"
+    },
+    {
+      "id": "r19-ts-magnus-disciplines",
+      "name": "Magnus \u2014 Selected Normal Powers \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-ts-magnus-powers",
+      "name": "Magnus \u2014 Selected Normal Powers \u2014 Psychic Powers"
+    },
+    {
+      "id": "r19-ts-shard-disciplines",
+      "name": "Magnus Shard \u2014 Selected Normal Powers \u2014 Psychic Discipline(s)"
+    },
+    {
+      "id": "r19-ts-shard-powers",
+      "name": "Magnus Shard \u2014 Selected Normal Powers \u2014 Psychic Powers"
+    }
+  ],
+  "Ultramarines.cat": [
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xiii-4-marius-gage-first-master-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xiii-5-remus-ventanus-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xiii-8-titus-prayto-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r6-guilliman-ret-0-live-r2-fabius-enhanced-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    }
+  ],
+  "White-Scars.cat": [
+    {
+      "id": "r60-ws-gold-squad",
+      "name": "Squad Equipment"
+    },
+    {
+      "id": "r60-ws-dark-speaker",
+      "name": "Death Speaker"
+    },
+    {
+      "id": "r60-ws-falcon-special",
+      "name": "Special Equipment"
+    },
+    {
+      "id": "r60-ws-yes-options",
+      "name": "Options"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r60-ws-shiban-retinue-legion-command-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r60-ws-hibou-retinue-legion-command-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r60-ws-hibou-retinue-legion-veteran-squad-veteran-tactics",
+      "name": "Veteran Tactic (choose one)"
+    },
+    {
+      "id": "r60-ws-hibou-retinue-legion-veteran-squad-da-wing-veteran-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r60-ws-hibou-retinue-legion-veteran-squad-r40-da-ammo-veteran-unit",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r60-ws-hibou-retinue-legion-veteran-squad-r40-da-steel-transport-veteran-unit-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r60-ws-hibou-retinue-legion-veteran-squad-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r60-ws-hibou-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r60-ws-hibou-retinue-legion-veteran-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r60-ws-hasik-retinue-legion-command-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r60-ws-hasik-retinue-legion-veteran-squad-veteran-tactics",
+      "name": "Veteran Tactic (choose one)"
+    },
+    {
+      "id": "r60-ws-hasik-retinue-legion-veteran-squad-da-wing-veteran-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r60-ws-hasik-retinue-legion-veteran-squad-r40-da-ammo-veteran-unit",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r60-ws-hasik-retinue-legion-veteran-squad-r40-da-steel-transport-veteran-unit-hs-spartan-da-wing-hs-spartan",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "r60-ws-hasik-retinue-legion-veteran-squad-r40-da-steel-transport-veteran-unit-hs-spartan-r40-da-ammo-hs-spartan",
+      "name": "Dark Angels Armoury \u2014 Ammunition"
+    },
+    {
+      "id": "r60-ws-hasik-retinue-legion-veteran-squad-r52-veteran-unit-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r60-ws-hasik-retinue-legion-veteran-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-r60-ws-jagh-retinue-legion-honour-guard-squad-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r60-ws-jagh-retinue-golden-keshig-squadron-r60-ws-gold-squad",
+      "name": "Squad Equipment"
+    }
+  ],
+  "Word-Bearers.cat": [
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xvii-7-high-chaplain-erebus-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "live-r2-fabius-enhanced-live-r2-r41-unit-xvii-11-hol-beloth-retinue-0-hq-centurion-ret-command-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r37-wb-lorgar-legion-honour-guard-squad-live-r2-fabius-enhanced-hq-praetor-ret-honour-group",
+      "name": "Fabius Bile"
+    },
+    {
+      "id": "r37-wb-lorgar-legion-honour-guard-squad-r16-dg-plague-group-hq-praetor-ret-honour",
+      "name": "Sons of the Plague Father"
+    }
+  ],
+  "World-Eaters.cat": [
+    {
+      "id": "r49-legion-upgrades-r41-unit-xii-0-rampager-squad",
+      "name": "Legion Wargear & Upgrades"
+    },
+    {
+      "id": "live-r3-triarii-weapons-r41-unit-xii-5-triarii-breacher-squad",
+      "name": "Whole Squad Weapon Replacement"
+    },
+    {
+      "id": "live-r3-we-r41-unit-xii-6-kharn-the-bloody-retinue-1-r49-legion-upgrades-r41-unit-xii-0-rampager-squad",
+      "name": "Legion Wargear & Upgrades"
+    },
+    {
+      "id": "live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-da-wing-assault-unit",
+      "name": "Hexagrammaton Wing"
+    },
+    {
+      "id": "live-r3-we-r41-unit-xii-7-shabran-darr-retinue-1-r52-assault-unit-third-shrieker",
+      "name": "3rd Company Elite \u2014 Sonic Assault"
+    },
+    {
+      "id": "r89-we-surlak-options",
+      "name": "Options"
+    },
+    {
+      "id": "live-r3-we-r41-unit-xii-11-delvarus-retinue-0-live-r3-triarii-weapons-r41-unit-xii-5-triarii-breacher-squad",
+      "name": "Whole Squad Weapon Replacement"
+    }
+  ]
+}
