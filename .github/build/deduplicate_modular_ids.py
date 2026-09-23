@@ -17,3 +17,5 @@ for p in sorted(D.glob("*.cat")):
  if changed:
   t.write(p,encoding="utf-8",xml_declaration=True);ET.parse(p);report[p.name]=changed
 Path("modular-deduplicate-audit.json").write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+
+# RC rerun after correcting Generic library index distribution.
