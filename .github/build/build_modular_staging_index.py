@@ -14,9 +14,10 @@ old_entries=old.find(I("dataIndexEntries"))
 for e in old_entries:
     if e.get("filePath")=="Legiones Astartes.cat":continue
     entries.append(e)
-# Add generic library first, then all 18 Legion catalogues.
-files=[D/"Legiones-Astartes-Generic.cat"]+sorted(p for p in D.glob("*.cat") if p.name!="Legiones-Astartes-Generic.cat")
-assert len(files)==19
+# Index only player-selectable Legion catalogues. Generic Astartes remains a linked
+# repository dependency and is deliberately not exposed as an army choice.
+files=sorted(p for p in D.glob("*.cat") if p.name!="Legiones-Astartes-Generic.cat")
+assert len(files)==18
 for p in files:
     r=ET.parse(p).getroot()
     ET.SubElement(entries,I("dataIndexEntry"),{
@@ -41,4 +42,4 @@ for e in entries:
         assert e.get("dataId")==r.get("id")
         assert e.get("dataName")==r.get("name")
         assert e.get("dataRevision")==r.get("revision")
-print("Staging entries:",len(entries),"modular catalogues:",len(files))
+print("Staging entries:",len(entries),"selectable Legion catalogues:",len(files),"generic library indexed: no")
