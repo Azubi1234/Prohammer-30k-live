@@ -3,7 +3,7 @@
     "files": 18,
     "duplicate_owned_count": 0,
     "cross_legion_total": 987,
-    "unresolved_total": 15
+    "unresolved_total": 0
   },
   "duplicate_owned": [],
   "catalogues": {
@@ -5884,7 +5884,7 @@
       "generic_parent": 2020,
       "game_system": 52,
       "cross_legion_count": 93,
-      "unresolved_count": 15,
+      "unresolved_count": 0,
       "cross_legion": [
         {
           "from_id": "r62-shat-assign-90e65537dc6d-info-7b34de5e3857",
@@ -6724,143 +6724,7 @@
           ]
         }
       ],
-      "unresolved": [
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0",
-          "owner_id": "r19-ts-sekhmet-disc-biomancy",
-          "owner_name": "Biomancy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-0",
-          "owner_id": "r19-ts-sekhmet-disc-biomancy",
-          "owner_name": "Biomancy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2",
-          "owner_id": "r19-ts-sekhmet-disc-divination",
-          "owner_name": "Divination"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-2",
-          "owner_id": "r19-ts-sekhmet-disc-divination",
-          "owner_name": "Divination"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4",
-          "owner_id": "r19-ts-sekhmet-disc-pyromancy",
-          "owner_name": "Pyromancy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-4",
-          "owner_id": "r19-ts-sekhmet-disc-pyromancy",
-          "owner_name": "Pyromancy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1",
-          "owner_id": "r19-ts-sekhmet-disc-telekinesis",
-          "owner_name": "Telekinesis"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-1",
-          "owner_id": "r19-ts-sekhmet-disc-telekinesis",
-          "owner_name": "Telekinesis"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3",
-          "owner_id": "r19-ts-sekhmet-disc-telepathy",
-          "owner_name": "Telepathy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-0-sekhmet-terminator-cabal-3",
-          "owner_id": "r19-ts-sekhmet-disc-telepathy",
-          "owner_name": "Telepathy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-2",
-          "owner_id": "r19-ts-ammitara-disc-divination",
-          "owner_name": "Divination"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-2",
-          "owner_id": "r19-ts-ammitara-disc-divination",
-          "owner_name": "Divination"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-3",
-          "owner_id": "r19-ts-ammitara-disc-telepathy",
-          "owner_name": "Telepathy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "condition",
-          "attribute": "childId",
-          "target": "r45-cult-r41-unit-xv-2-ammitara-occult-intercession-cabal-3",
-          "owner_id": "r19-ts-ammitara-disc-telepathy",
-          "owner_name": "Telepathy"
-        },
-        {
-          "from_id": null,
-          "from_name": null,
-          "tag": "repeat",
-          "attribute": "childId",
-          "target": "live-r2-r41-unit-xv-6-ahzek-ahriman-retinue-0-hq-centurion-ret-command-champ-pw",
-          "owner_id": "r18-final-ahriman-cabal-force-group",
-          "owner_name": "Ahriman's Cabal — Prosperine Force Weapon upgrades"
-        }
-      ]
+      "unresolved": []
     },
     "Ultramarines.cat": {
       "local": 179,
