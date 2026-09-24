@@ -76,7 +76,8 @@ for roman,lname in LEGIONS.items():
         "id":"link-generic-"+roman.lower(),
         "name":"Legiones Astartes — Generic",
         "targetId":root.get("id",""),
-        "type":"catalogue"
+        "type":"catalogue",
+        "importRootEntries":"true"
     })
     by_container={}
     for cname,x in owned[roman]:by_container.setdefault(cname,[]).append(x)
