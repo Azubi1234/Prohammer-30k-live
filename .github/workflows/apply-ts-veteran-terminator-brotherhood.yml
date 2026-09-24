@@ -1,0 +1,32 @@
+name: Apply TS Veteran and Terminator Brotherhood Fix
+on:
+  push:
+    paths:
+      - '.github/workflows/apply-ts-veteran-terminator-brotherhood.yml'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply psychic gating fix
+        run: python .github/build/live_r70_ts_veteran_terminator_brotherhood.py
+      - name: Validate XML
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse('Legiones-Astartes-Generic.cat')
+          ET.parse('index.xml')
+          print('XML validation passed')
+          PY
+      - name: Commit live catalogue
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add Legiones-Astartes-Generic.cat index.xml inspection-ts-veteran-terminator-brotherhood.txt
+          git diff --cached --quiet || git commit -m "Fix TS Veteran and Terminator Brotherhood psychic access"
+          git push
