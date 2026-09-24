@@ -10,3 +10,5 @@ for p in files:
         raise SystemExit(f"missing gameSystemRevision in {p}")
     p.write_text(s2, encoding="utf-8")
 print(f"Aligned {len(files)} modular catalogues to game system revision 16")
+
+# trigger live alignment
