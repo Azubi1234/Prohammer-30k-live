@@ -22,7 +22,10 @@ group=root.find(".//"+q("selectionEntryGroup")+"[@id='config-legion']")
 assert group is not None
 entries={e.get("id"):e for e in group.findall("./"+q("selectionEntries")+"/"+q("selectionEntry"))}
 for _,lid,marker in LEGIONS:
-    e=entries[lid]
+    e=entries.get(lid)
+    if e is None:
+        print(f"WARNING: Generic selector has no {lid}; skipping auto-selection wiring for this ID")
+        continue
     mods=e.find(q("modifiers"))
     if mods is None: mods=ET.Element(q("modifiers")); e.insert(0,mods)
     cons=e.find(q("constraints"))
