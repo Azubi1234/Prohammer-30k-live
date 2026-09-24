@@ -16,8 +16,8 @@ for p in sorted(DIR.glob("*.cat")):
     found=False
     for l in links.findall(C("catalogueLink")):
         if (l.get("name") or "").startswith("Legiones Astartes"):
-            l.set("targetId",gid);l.set("name","Legiones Astartes — Generic Library");l.set("type","catalogue");found=True
+            l.set("targetId",gid);l.set("name","Legiones Astartes — Generic Library");l.set("type","catalogue");l.set("importRootEntries","true");found=True
     if not found:
-        ET.SubElement(links,C("catalogueLink"),{"id":"link-generic-"+r.get("id","x")[-12:],"name":"Legiones Astartes — Generic Library","targetId":gid,"type":"catalogue"})
+        ET.SubElement(links,C("catalogueLink"),{"id":"link-generic-"+r.get("id","x")[-12:],"name":"Legiones Astartes — Generic Library","targetId":gid,"type":"catalogue","importRootEntries":"true"})
     t.write(p,encoding="utf-8",xml_declaration=True);ET.parse(p);changed+=1
 print("Generic id:",gid,"repointed:",changed)
