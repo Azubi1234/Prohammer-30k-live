@@ -1,0 +1,55 @@
+name: Refresh TS Veteran psychic selections
+on:
+  push:
+    paths:
+      - ".github/workflows/refresh-ts-veteran-psychic.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Veteran psychic data and bump live revisions
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          g=Path("Legiones-Astartes-Generic.cat")
+          t=Path("Thousand-Sons.cat")
+          i=Path("index.xml")
+          gs=g.read_text(encoding="utf-8")
+          ts=t.read_text(encoding="utf-8")
+          ix=i.read_text(encoding="utf-8")
+          required=[
+            "r45-veteran-unit-ts-brother",
+            "r45-cult-veteran-unit",
+            "r68-vet-biomancy-powers",
+            "r68-vet-telekinesis-powers",
+            "r68-vet-divination-powers",
+            "r68-vet-telepathy-powers",
+            "r68-vet-pyromancy-powers",
+          ]
+          missing=[x for x in required if x not in gs]
+          if missing:
+              raise SystemExit("Missing Veteran psychic structures: "+", ".join(missing))
+          for d in ("biomancy","telekinesis","divination","telepathy","pyromancy"):
+              if len(re.findall(fr'r68-vet-{d}-power-[0-6]"',gs)) < 7:
+                  raise SystemExit(f"{d}: expected seven Veteran powers")
+          gs=re.sub(r'(name="Legiones Astartes — Generic Library" revision=")\d+(")',r'\g<1>3\2',gs,count=1)
+          ts=re.sub(r'(name="Thousand Sons" revision=")\d+(")',r'\g<1>4\2',ts,count=1)
+          ix=re.sub(r'(dataName="Legiones Astartes — Generic Library" dataBattleScribeVersion="2\.03" dataRevision=")\d+(")',r'\g<1>3\2',ix,count=1)
+          ix=re.sub(r'(dataName="Thousand Sons" dataBattleScribeVersion="2\.03" dataRevision=")\d+(")',r'\g<1>4\2',ix,count=1)
+          g.write_text(gs,encoding="utf-8")
+          t.write_text(ts,encoding="utf-8")
+          i.write_text(ix,encoding="utf-8")
+          print("Validated: Brotherhood -> Cult-correlated 7-power pools are present; revisions refreshed.")
+          PY
+      - name: Commit live refresh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Legiones-Astartes-Generic.cat Thousand-Sons.cat index.xml
+          git diff --cached --quiet || git commit -m "Refresh TS Veteran Brotherhood psychic selection"
+          git push
