@@ -46,7 +46,9 @@ for fn,lid,marker in LEGIONS:
     links=r.findall("./"+q("catalogueLinks")+"/"+q("catalogueLink"))
     if not any(x.get("importRootEntries")=="true" for x in links):
         print(f"WARNING: {fn} root import flag not found; continuing")
-    ses=r.find("./"+q("selectionEntries")); assert ses is not None
+    ses=r.find("./"+q("selectionEntries"))
+    if ses is None:
+        ses=ET.SubElement(r,q("selectionEntries"))
     if not any(x.get("id")==marker for x in ses.findall("./"+q("selectionEntry"))):
         e=ET.Element(q("selectionEntry"),{"type":"upgrade","name":"Automatic Legion Identity","id":marker,"hidden":"true","import":"true"})
         cs=ET.SubElement(e,q("constraints"))
@@ -57,10 +59,12 @@ for fn,lid,marker in LEGIONS:
     r.set("revision","4"); t.write(p,encoding="utf-8",xml_declaration=True)
 
 ip=Path("index.xml"); it=ET.parse(ip); ir=it.getroot()
-ins="http://www.battlescribe.net/schema/dataIndexSchema"
-for e in ir.findall(f".//{{{ins}}}dataIndexEntry"):
-    fp=e.get("filePath")
-    if fp=="Legiones-Astartes-Generic.cat": e.set("dataRevision","2")
-    elif any(fp==x[0] for x in LEGIONS): e.set("dataRevision","4")
-ET.register_namespace("",ins); it.write(ip,encoding="utf-8",xml_declaration=True)
+ins=ir.tag.split("}")[0].lstrip("{") if "}" in ir.tag else ""
+for e in ir.iter():
+    if e.tag.endswith("dataIndexEntry"):
+        fp=e.get("filePath")
+        if fp=="Legiones-Astartes-Generic.cat": e.set("dataRevision","2")
+        elif any(fp==x[0] for x in LEGIONS): e.set("dataRevision","4")
+if ins: ET.register_namespace("",ins)
+it.write(ip,encoding="utf-8",xml_declaration=True)
 print("Patched Generic auto-Legion selection for all 18 Legion catalogues.")
