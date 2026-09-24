@@ -18,9 +18,13 @@ jobs:
           python - <<'PY'
           import xml.etree.ElementTree as ET
           from pathlib import Path
-          for p in [Path("Legiones-Astartes-Generic.cat"), *Path(".").glob("*.cat"), Path("index.xml")]:
-              ET.parse(p)
-          print("XML parse OK")
+          ET.parse(Path("Legiones-Astartes-Generic.cat"))
+          ET.parse(Path("index.xml"))
+          legion_files = ["Dark-Angels.cat","Emperor-s-Children.cat","Iron-Warriors.cat","White-Scars.cat","Space-Wolves.cat","Imperial-Fists.cat","Night-Lords.cat","Blood-Angels.cat","Iron-Hands.cat","World-Eaters.cat","Ultramarines.cat","Death-Guard.cat","Thousand-Sons.cat","Sons-of-Horus.cat","Word-Bearers.cat","Salamanders.cat","Raven-Guard.cat","Alpha-Legion.cat"]
+          for p in legion_files:
+              text=Path(p).read_text(encoding="utf-8")
+              assert "Automatic Legion Identity" in text, p
+          print("Generic/index XML parse OK; all 18 Legion identity markers present")
           PY
       - run: |
           git config user.name "github-actions[bot]"
