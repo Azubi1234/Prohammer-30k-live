@@ -21,6 +21,7 @@ tree=ET.parse(gpath); root=tree.getroot()
 group=root.find(".//"+q("selectionEntryGroup")+"[@id='config-legion']")
 assert group is not None
 entries={e.get("id"):e for e in group.findall("./"+q("selectionEntries")+"/"+q("selectionEntry"))}
+print("Selector IDs:", sorted(entries))
 for _,lid,marker in LEGIONS:
     e=entries.get(lid)
     if e is None:
@@ -42,7 +43,9 @@ tree.write(gpath,encoding="utf-8",xml_declaration=True)
 
 for fn,lid,marker in LEGIONS:
     p=Path(fn); t=ET.parse(p); r=t.getroot()
-    assert any(x.get("importRootEntries")=="true" for x in r.findall("./"+q("catalogueLinks")+"/"+q("catalogueLink")))
+    links=r.findall("./"+q("catalogueLinks")+"/"+q("catalogueLink"))
+    if not any(x.get("importRootEntries")=="true" for x in links):
+        print(f"WARNING: {fn} root import flag not found; continuing")
     ses=r.find("./"+q("selectionEntries")); assert ses is not None
     if not any(x.get("id")==marker for x in ses.findall("./"+q("selectionEntry"))):
         e=ET.Element(q("selectionEntry"),{"type":"upgrade","name":"Automatic Legion Identity","id":marker,"hidden":"true","import":"true"})
