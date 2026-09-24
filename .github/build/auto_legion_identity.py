@@ -58,13 +58,17 @@ for fn,lid,marker in LEGIONS:
         ses.insert(0,e)
     r.set("revision","4"); t.write(p,encoding="utf-8",xml_declaration=True)
 
-ip=Path("index.xml"); it=ET.parse(ip); ir=it.getroot()
-ins=ir.tag.split("}")[0].lstrip("{") if "}" in ir.tag else ""
-for e in ir.iter():
-    if e.tag.endswith("dataIndexEntry"):
-        fp=e.get("filePath")
-        if fp=="Legiones-Astartes-Generic.cat": e.set("dataRevision","2")
-        elif any(fp==x[0] for x in LEGIONS): e.set("dataRevision","4")
-if ins: ET.register_namespace("",ins)
-it.write(ip,encoding="utf-8",xml_declaration=True)
+ip=Path("index.xml")
+try:
+    it=ET.parse(ip); ir=it.getroot()
+    ins=ir.tag.split("}")[0].lstrip("{") if "}" in ir.tag else ""
+    for e in ir.iter():
+        if e.tag.endswith("dataIndexEntry"):
+            fp=e.get("filePath")
+            if fp=="Legiones-Astartes-Generic.cat": e.set("dataRevision","2")
+            elif any(fp==x[0] for x in LEGIONS): e.set("dataRevision","4")
+    if ins: ET.register_namespace("",ins)
+    it.write(ip,encoding="utf-8",xml_declaration=True)
+except Exception as exc:
+    print(f"WARNING: index revision update skipped: {exc}")
 print("Patched Generic auto-Legion selection for all 18 Legion catalogues.")
