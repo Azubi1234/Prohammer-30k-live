@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/build/auto_legion_identity.py'
       - '.github/workflows/apply-auto-legion-identity.yml'
+      - '.github/build/auto_legion_identity.py'
 permissions:
   contents: write
 jobs:
