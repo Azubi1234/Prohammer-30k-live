@@ -44,25 +44,21 @@ tree.write(gpath,encoding="utf-8",xml_declaration=True)
 
 for fn,lid,marker in LEGIONS:
     p=Path(fn)
-    try:
-        t=ET.parse(p); r=t.getroot()
-    except ET.ParseError as exc:
-        print(f"WARNING: {fn} is already malformed XML ({exc}); skipping it so healthy catalogues can still be patched")
-        continue
-    links=r.findall("./"+q("catalogueLinks")+"/"+q("catalogueLink"))
-    if not any(x.get("importRootEntries")=="true" for x in links):
-        print(f"WARNING: {fn} root import flag not found; continuing")
-    ses=r.find("./"+q("selectionEntries"))
-    if ses is None:
-        ses=ET.SubElement(r,q("selectionEntries"))
-    if not any(x.get("id")==marker for x in ses.findall("./"+q("selectionEntry"))):
-        e=ET.Element(q("selectionEntry"),{"type":"upgrade","name":"Automatic Legion Identity","id":marker,"hidden":"true","import":"true"})
-        cs=ET.SubElement(e,q("constraints"))
-        ET.SubElement(cs,q("constraint"),{"id":marker+"-min","type":"min","value":"1","field":"selections","scope":"parent","shared":"true","includeChildSelections":"false","automatic":"true"})
-        ET.SubElement(cs,q("constraint"),{"id":marker+"-max","type":"max","value":"1","field":"selections","scope":"parent","shared":"true","includeChildSelections":"false"})
-        costs=ET.SubElement(e,q("costs")); ET.SubElement(costs,q("cost"),{"name":"Points","typeId":"51b2-306e-1021-d207","value":"0"})
-        ses.insert(0,e)
-    r.set("revision","4"); t.write(p,encoding="utf-8",xml_declaration=True)
+    text=p.read_text(encoding="utf-8")
+    if marker not in text:
+        marker_xml=(f'<selectionEntry type="upgrade" name="Automatic Legion Identity" id="{marker}" hidden="true" import="true">'
+                    f'<constraints><constraint id="{marker}-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" />'
+                    f'<constraint id="{marker}-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" /></constraints>'
+                    f'<costs><cost name="Points" typeId="51b2-306e-1021-d207" value="0" /></costs></selectionEntry>')
+        if "<selectionEntries>" in text:
+            text=text.replace("<selectionEntries>","<selectionEntries>"+marker_xml,1)
+        elif "</catalogue>" in text:
+            text=text.replace("</catalogue>","<selectionEntries>"+marker_xml+"</selectionEntries></catalogue>",1)
+        else:
+            raise RuntimeError(f"{fn}: no safe insertion point")
+    text=re.sub(r'(<catalogue\\b[^>]*\\brevision=")[^"]+(")',r'\\g<1>4\\2',text,count=1)
+    p.write_text(text,encoding="utf-8")
+    print(f"Patched {fn}: {marker}")
 
 ip=Path("index.xml")
 try:
