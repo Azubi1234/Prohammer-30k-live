@@ -21,3 +21,5 @@ for p in sorted(DIR.glob("*.cat")):
         ET.SubElement(links,C("catalogueLink"),{"id":"link-generic-"+r.get("id","x")[-12:],"name":"Legiones Astartes — Generic Library","targetId":gid,"type":"catalogue","importRootEntries":"true"})
     t.write(p,encoding="utf-8",xml_declaration=True);ET.parse(p);changed+=1
 print("Generic id:",gid,"repointed:",changed)
+
+# Root-entry imports are required for New Recruit modular catalogue visibility.
