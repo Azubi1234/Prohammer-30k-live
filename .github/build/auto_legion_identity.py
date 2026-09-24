@@ -30,7 +30,8 @@ for _,lid,marker in LEGIONS:
     mods=e.find(q("modifiers"))
     if mods is None: mods=ET.Element(q("modifiers")); e.insert(0,mods)
     cons=e.find(q("constraints"))
-    assert cons is not None
+    if cons is None:
+        cons=ET.SubElement(e,q("constraints"))
     cid=lid+"-auto-min"
     if not any(x.get("id")==cid for x in cons):
         ET.SubElement(cons,q("constraint"),{"id":cid,"type":"min","value":"0","field":"selections","scope":"parent","shared":"true","includeChildSelections":"false","automatic":"true"})
@@ -54,7 +55,7 @@ for fn,lid,marker in LEGIONS:
         cs=ET.SubElement(e,q("constraints"))
         ET.SubElement(cs,q("constraint"),{"id":marker+"-min","type":"min","value":"1","field":"selections","scope":"parent","shared":"true","includeChildSelections":"false","automatic":"true"})
         ET.SubElement(cs,q("constraint"),{"id":marker+"-max","type":"max","value":"1","field":"selections","scope":"parent","shared":"true","includeChildSelections":"false"})
-        costs=ET.SubElement(e,q("costs")); ET.SubElement(costs,q("cost"),{"name":"Points","typeId":"pts","value":"0"})
+        costs=ET.SubElement(e,q("costs")); ET.SubElement(costs,q("cost"),{"name":"Points","typeId":"51b2-306e-1021-d207","value":"0"})
         ses.insert(0,e)
     r.set("revision","4"); t.write(p,encoding="utf-8",xml_declaration=True)
 
