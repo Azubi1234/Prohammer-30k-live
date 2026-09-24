@@ -1,0 +1,56 @@
+name: Clean modular Legion selectors
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/build/generate_generic_astartes.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate Generic library
+        run: python .github/build/generate_generic_astartes.py
+      - name: Verify chooser removed and shared content retained
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          p="modular-catalogues-generated/Legiones-Astartes-Generic.cat"
+          r=ET.parse(p).getroot()
+          ids={x.get("id") for x in r.iter() if x.get("id")}
+          assert "config-legion" not in ids, "Generic still exposes Legion chooser"
+          assert "veteran-unit" in ids, "Generic Veteran unit missing"
+          assert "terminator-unit" in ids, "Generic Terminator unit missing"
+          print("PASS: Generic chooser removed; shared units retained")
+          PY
+      - name: Publish Generic library to live root and bump revision
+        run: |
+          python - <<'PY'
+          import shutil,xml.etree.ElementTree as ET
+          src="modular-catalogues-generated/Legiones-Astartes-Generic.cat"
+          dst="Legiones-Astartes-Generic.cat"
+          NS="http://www.battlescribe.net/schema/catalogueSchema"
+          t=ET.parse(src); r=t.getroot()
+          old=int(r.get("revision","1")); new=max(old+1,2); r.set("revision",str(new))
+          t.write(src,encoding="utf-8",xml_declaration=True)
+          shutil.copyfile(src,dst)
+          it=ET.parse("index.xml"); ir=it.getroot()
+          for e in ir.iter():
+            if e.get("dataId")=="cat-7b24-e6f1-83a9-4c50":
+              e.set("dataRevision",str(new))
+          it.write("index.xml",encoding="utf-8",xml_declaration=True)
+          print("Generic revision",new)
+          PY
+      - name: Commit live cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modular-catalogues-generated/Legiones-Astartes-Generic.cat Legiones-Astartes-Generic.cat index.xml
+          git diff --cached --quiet || git commit -m "Publish cleaned Generic Legion selector"
+          git push
