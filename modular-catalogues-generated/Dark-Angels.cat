@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="mod-i-b65d119125bb53538b88" name="Dark Angels" revision="1" battleScribeVersion="2.03" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="16" library="false"><catalogueLinks><catalogueLink id="link-generic-i" name="Legiones Astartes — Generic Library" targetId="cat-7b24-e6f1-83a9-4c50" type="catalogue" /></catalogueLinks><sharedSelectionEntries><selectionEntry type="upgrade" import="true" name="Calibanite Warblade" hidden="false" id="da22-warblade">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="mod-i-b65d119125bb53538b88" name="Dark Angels" revision="2" battleScribeVersion="2.03" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="16" library="false"><catalogueLinks><catalogueLink id="link-generic-i" name="Legiones Astartes — Generic Library" targetId="cat-7b24-e6f1-83a9-4c50" type="catalogue"  importRootEntries="true" /></catalogueLinks><sharedSelectionEntries><selectionEntry type="upgrade" import="true" name="Calibanite Warblade" hidden="false" id="da22-warblade">
       <rules>
         <rule name="Calibanite Warblade" id="rule-da22-warblade" hidden="false">
           <description>Strength User +1; Power Weapon. Counts as a sword-type weapon for Mastery of the Blade and Deathwing rules.</description>
