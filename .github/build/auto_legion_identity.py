@@ -43,7 +43,12 @@ root.set("revision","2")
 tree.write(gpath,encoding="utf-8",xml_declaration=True)
 
 for fn,lid,marker in LEGIONS:
-    p=Path(fn); t=ET.parse(p); r=t.getroot()
+    p=Path(fn)
+    try:
+        t=ET.parse(p); r=t.getroot()
+    except ET.ParseError as exc:
+        print(f"WARNING: {fn} is already malformed XML ({exc}); skipping it so healthy catalogues can still be patched")
+        continue
     links=r.findall("./"+q("catalogueLinks")+"/"+q("catalogueLink"))
     if not any(x.get("importRootEntries")=="true" for x in links):
         print(f"WARNING: {fn} root import flag not found; continuing")
