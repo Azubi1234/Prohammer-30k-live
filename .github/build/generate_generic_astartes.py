@@ -42,12 +42,13 @@ for cname in containers:
         if owner(x):
             cont.remove(x);removed+=1
 
-# The Legion chooser belongs in the Legion-facing catalogues, not the generic library.
-sel=cat.find(C("selectionEntries"))
-if sel is not None:
-    for x in list(sel):
+# The Legion chooser is nested inside the Army Configuration root entry in the
+# monolith. Remove it recursively from the Generic library so importing Generic
+# root entries cannot expose all 18 Legions in every modular roster.
+for p in list(cat.iter()):
+    for x in list(p):
         if x.get("id")=="config-legion":
-            sel.remove(x);removed+=1
+            p.remove(x);removed+=1
 
 ET.ElementTree(cat).write(OUT,encoding="utf-8",xml_declaration=True)
 ET.parse(OUT)
