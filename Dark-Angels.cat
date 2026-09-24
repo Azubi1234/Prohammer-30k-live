@@ -201,7 +201,7 @@ Infiltrate: During deployment, may be set up after normal deployment. The unit m
         </rule>
       </rules>
     </selectionEntry>
-    </sharedSelectionEntries><selectionEntries><selectionEntry type="unit" import="true" name="Deathwing Companion Detachment" hidden="false" id="da22-deathwing-companions">
+    </sharedSelectionEntries><selectionEntries><selectionEntry type="upgrade" name="Automatic Legion Identity" id="auto-legion-marker-i" hidden="true" import="true"><constraints><constraint id="auto-legion-marker-i-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" /><constraint id="auto-legion-marker-i-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" /></constraints><costs><cost name="Points" typeId="51b2-306e-1021-d207" value="0" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Deathwing Companion Detachment" hidden="false" id="da22-deathwing-companions">
       <infoLinks><infoLink id="r36-link-b42efabf63ee" name="Death-sworn Companions" hidden="false" targetId="r36-exact-death-sworn-companions-273def1" type="rule" /><infoLink id="r36-link-ecfe53247868" name="Cytheron Aegis" hidden="false" targetId="r36-exact-cytheron-aegis-c5a90cc" type="rule" /></infoLinks><costs>
         <cost name="Points" typeId="pts" value="0.0" />
       </costs>
