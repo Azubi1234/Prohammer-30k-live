@@ -1,0 +1,23 @@
+name: Test TS Terminator psychic rendering
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/build/test_ts_terminator_psychic_rendering.py'
+      - '.github/build/live_r75_ts_terminator_psychic_visibility.py'
+      - 'Legiones-Astartes-Generic.cat'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python .github/build/test_ts_terminator_psychic_rendering.py
