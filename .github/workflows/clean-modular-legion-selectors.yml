@@ -49,24 +49,29 @@ jobs:
               assert len(lg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"))==1,fn
           ids={x.get("id"):x for x in g.iter() if x.get("id")}
           tcg=ids["r45-cult-terminator-unit"]
+          term=ids["terminator-unit"]
+          direct=term.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}")
+          assert not any("Psychic Brotherhood" in (x.get("name") or "") for x in direct), "stale sibling Terminator psychic selector remains"
           for cult in tcg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
               pgs=[x for x in cult.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if "Psychic Brotherhood Power" in (x.get("name") or "")]
               assert len(pgs)==1,cult.get("name")
-              cs=pgs[0].findall(f"./{C('constraints')}/{C('constraint')}")
+              pg=pgs[0]
+              assert pg.get("hidden")=="true",cult.get("name")
+              cs=pg.findall(f"./{C('constraints')}/{C('constraint')}")
               assert any(c.get("type")=="min" and c.get("value")=="0" for c in cs),cult.get("name")
               assert any(c.get("type")=="max" and c.get("value")=="1" for c in cs),cult.get("name")
-              assert pgs[0].get("hidden")!="true",cult.get("name")
-              txt=ET.tostring(pgs[0],encoding="unicode")
-              assert "-min1-" in txt,cult.get("name")
-              powers=pgs[0].findall(f"./{C('entryLinks')}/{C('entryLink')}")
+              mods=pg.findall(f"./{C('modifiers')}/{C('modifier')}")
+              assert any(m.get("field")=="hidden" and m.get("value")=="false" for m in mods),cult.get("name")
+              assert any(m.get("value")=="1" and (m.get("field") or "").endswith("-min") for m in mods),cult.get("name")
+              powers=pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
               assert len(powers)==7,cult.get("name")
               for power in powers:
                   pc=next(c for c in power.findall(f"./{C('constraints')}/{C('constraint')}") if c.get("type")=="max")
                   assert pc.get("value")=="1",(cult.get("name"),power.get("name"))
-                  assert any(m.get("field")==pc.get("id") and m.get("value")=="0" for m in power.findall(f"./{C('modifiers')}/{C('modifier')}")),(cult.get("name"),power.get("name"))
+                  assert not power.findall(f"./{C('modifiers')}/{C('modifier')}"),(cult.get("name"),power.get("name"))
           ET.parse("index.xml")
           ET.parse("index-modular-staging.xml")
-          print("PASS: fixed local Legion identity; Allegiance/Rites retained; TS Terminator powers constraint-gated after Brotherhood; staging index mirrors live")
+          print("PASS: fixed local Legion identity; Allegiance/Rites retained; TS Terminator powers use Veteran show/min gating after Brotherhood; staging index mirrors live")
           PY
 
       - name: Commit live catalogue
