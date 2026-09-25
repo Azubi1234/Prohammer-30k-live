@@ -1,0 +1,5 @@
+R75 Thousand Sons Terminator psychic visibility
+Generic revision 12 -> 13
+Patched Terminator Cult power groups: 5
+Patched Terminator Cult Mastery links: 5
+Each Terminator power group now listens to both the local Brotherhood link logic already present and the shared Brotherhood target IDs used successfully by Veterans.
