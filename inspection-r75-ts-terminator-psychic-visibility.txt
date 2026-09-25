@@ -1,5 +1,6 @@
-R75 Thousand Sons Terminator psychic visibility
-Generic revision 12 -> 13
-Patched Terminator Cult power groups: 5
-Patched Terminator Cult Mastery links: 5
-Each Terminator power group now listens to both the local Brotherhood link logic already present and the shared Brotherhood target IDs used successfully by Veterans.
+R76-style TS Terminator psychic rendering fix
+Generic revision 13 -> 14
+Patched Terminator power groups: 5
+Brotherhood-gated power links: 35
+Brotherhood-gated Cult Mastery links: 5
+Architecture: power group is structurally visible; each of its seven spell links is hidden until Brotherhood. Brotherhood also turns MIN 0 into MIN 1.
