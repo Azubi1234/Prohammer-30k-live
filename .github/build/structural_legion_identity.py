@@ -31,19 +31,18 @@ def sanitize(path):
     clean=re.sub(r'(\simportRootEntries="false")\s+importRootEntries="false"',r'\1',clean)
     if clean!=raw:path.write_text(clean,encoding="utf-8")
 
-# Take the authoritative current Army Configuration from Generic once.
+# On the first structural run, Generic still contains the full Army Configuration
+# and is the authoritative template. On later runs Generic is intentionally clean,
+# so reuse each Legion catalogue's already-local configuration instead.
 gt=ET.parse(GEN); gr=gt.getroot()
 config=next((e for e in gr.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}") if e.get("id")=="config-army"),None)
-if config is None:
-    raise RuntimeError("Generic Army Configuration template missing")
-template=copy.deepcopy(config)
+full_template=copy.deepcopy(config) if config is not None else None
 
-# Remove Army Configuration from Generic completely. Generic remains only shared
-# units/wargear/rules; Legion identity becomes local to the selected catalogue.
-gparent=parent_of(gr,config)
-gparent.remove(config)
-gr.set("revision",str(int(gr.get("revision","0"))+1))
-gt.write(GEN,encoding="utf-8",xml_declaration=True)
+if config is not None:
+    gparent=parent_of(gr,config)
+    gparent.remove(config)
+    gr.set("revision",str(int(gr.get("revision","0"))+1))
+    gt.write(GEN,encoding="utf-8",xml_declaration=True)
 
 revisions={GEN.name:int(gr.get("revision","0"))}
 for fn,lid in LEGIONS:
@@ -52,12 +51,18 @@ for fn,lid in LEGIONS:
     ses=r.find(C("selectionEntries"))
     if ses is None: ses=ET.SubElement(r,C("selectionEntries"))
 
+    existing=next((e for e in ses.findall(C("selectionEntry")) if e.get("id")=="config-army"),None)
+    if full_template is not None:
+        local=copy.deepcopy(full_template)
+    elif existing is not None:
+        local=copy.deepcopy(existing)
+    else:
+        raise RuntimeError(fn+": no Army Configuration available for idempotent rebuild")
+
     # Remove obsolete hidden identity marker and any previous local config.
     for e in list(ses):
         if e.get("id")=="config-army" or (e.get("id") or "").startswith("auto-legion-marker-"):
             ses.remove(e)
-
-    local=copy.deepcopy(template)
     group=next((g for g in local.iter(C("selectionEntryGroup")) if g.get("id")=="config-legion"),None)
     if group is None: raise RuntimeError(fn+": config-legion missing in template")
     ec=group.find(C("selectionEntries"))
