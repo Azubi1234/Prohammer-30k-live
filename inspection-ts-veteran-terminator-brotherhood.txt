@@ -1,0 +1,65 @@
+Thousand Sons Veteran + Legion Terminator Brotherhood psychic fix
+Generic catalogue revision 4 -> 5
+
+BEHAVIOUR:
+- Prosperine Cult selection remains available normally.
+- Cult Arcana remains the baseline benefit of choosing that Cult.
+- Purchasing Brotherhood of Psykers unlocks Cult Mastery.
+- Purchasing Brotherhood also unlocks exactly one psychic power from the selected Cult's correlated discipline.
+- Veteran and Legion Terminator Squads now use the same nested five-Cult/five-discipline architecture.
+- Fellowships of Prospero discounted Brotherhood is supported by the same gates.
+
+VALIDATION:
+- PASS: Veteran Cult remains selectable
+- PASS: Terminator Cult remains selectable
+- PASS: Old Terminator sibling power pool removed
+- PASS: veteran-unit Pavoni Arcana baseline
+- PASS: veteran-unit Pavoni Mastery Brotherhood-gated
+- PASS: veteran-unit Pavoni has one correlated power group
+- PASS: veteran-unit Pavoni has seven powers
+- PASS: veteran-unit Pavoni power group hidden until Brotherhood
+- PASS: veteran-unit Raptora Arcana baseline
+- PASS: veteran-unit Raptora Mastery Brotherhood-gated
+- PASS: veteran-unit Raptora has one correlated power group
+- PASS: veteran-unit Raptora has seven powers
+- PASS: veteran-unit Raptora power group hidden until Brotherhood
+- PASS: veteran-unit Corvidae Arcana baseline
+- PASS: veteran-unit Corvidae Mastery Brotherhood-gated
+- PASS: veteran-unit Corvidae has one correlated power group
+- PASS: veteran-unit Corvidae has seven powers
+- PASS: veteran-unit Corvidae power group hidden until Brotherhood
+- PASS: veteran-unit Athanaeans Arcana baseline
+- PASS: veteran-unit Athanaeans Mastery Brotherhood-gated
+- PASS: veteran-unit Athanaeans has one correlated power group
+- PASS: veteran-unit Athanaeans has seven powers
+- PASS: veteran-unit Athanaeans power group hidden until Brotherhood
+- PASS: veteran-unit Pyrae Arcana baseline
+- PASS: veteran-unit Pyrae Mastery Brotherhood-gated
+- PASS: veteran-unit Pyrae has one correlated power group
+- PASS: veteran-unit Pyrae has seven powers
+- PASS: veteran-unit Pyrae power group hidden until Brotherhood
+- PASS: terminator-unit Pavoni Arcana baseline
+- PASS: terminator-unit Pavoni Mastery Brotherhood-gated
+- PASS: terminator-unit Pavoni has one correlated power group
+- PASS: terminator-unit Pavoni has seven powers
+- PASS: terminator-unit Pavoni power group hidden until Brotherhood
+- PASS: terminator-unit Raptora Arcana baseline
+- PASS: terminator-unit Raptora Mastery Brotherhood-gated
+- PASS: terminator-unit Raptora has one correlated power group
+- PASS: terminator-unit Raptora has seven powers
+- PASS: terminator-unit Raptora power group hidden until Brotherhood
+- PASS: terminator-unit Corvidae Arcana baseline
+- PASS: terminator-unit Corvidae Mastery Brotherhood-gated
+- PASS: terminator-unit Corvidae has one correlated power group
+- PASS: terminator-unit Corvidae has seven powers
+- PASS: terminator-unit Corvidae power group hidden until Brotherhood
+- PASS: terminator-unit Athanaeans Arcana baseline
+- PASS: terminator-unit Athanaeans Mastery Brotherhood-gated
+- PASS: terminator-unit Athanaeans has one correlated power group
+- PASS: terminator-unit Athanaeans has seven powers
+- PASS: terminator-unit Athanaeans power group hidden until Brotherhood
+- PASS: terminator-unit Pyrae Arcana baseline
+- PASS: terminator-unit Pyrae Mastery Brotherhood-gated
+- PASS: terminator-unit Pyrae has one correlated power group
+- PASS: terminator-unit Pyrae has seven powers
+- PASS: terminator-unit Pyrae power group hidden until Brotherhood
