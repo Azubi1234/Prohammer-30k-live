@@ -1,0 +1,5 @@
+R78 TS Legion Terminator exact Veteran-pattern psychic fix
+Generic revision 15 -> 16
+Cults rebuilt: 5
+Architecture: parent power group hidden until local Brotherhood; seven child power links are always visible inside the revealed parent; MIN becomes 1 after Brotherhood.
+Removed accumulated child-link visibility modifiers from earlier Terminator attempts.
