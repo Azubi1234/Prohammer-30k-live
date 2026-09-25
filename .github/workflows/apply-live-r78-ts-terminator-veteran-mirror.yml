@@ -1,0 +1,41 @@
+name: Apply TS Terminator Veteran-pattern psychic fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/build/live_r78_ts_terminator_veteran_mirror.py'
+      - '.github/build/test_ts_terminator_psychic_rendering.py'
+      - '.github/workflows/apply-live-r78-ts-terminator-veteran-mirror.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Rebuild Terminator psychic UI from working Veteran pattern
+        run: python .github/build/live_r78_ts_terminator_veteran_mirror.py
+      - name: Test actual renderability pattern
+        run: python .github/build/test_ts_terminator_psychic_rendering.py
+      - name: Validate XML
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse("Legiones-Astartes-Generic.cat")
+          ET.parse("index.xml")
+          print("XML OK")
+          PY
+      - name: Commit live fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Legiones-Astartes-Generic.cat index.xml inspection-r78-ts-terminator-veteran-mirror.txt
+          git diff --cached --quiet || git commit -m "Mirror working Veteran psychic UI on TS Terminators"
+          git push
