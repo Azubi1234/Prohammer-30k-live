@@ -69,12 +69,14 @@ for name in cult_names:
 # canonical terminator-unit was repaired. New Recruit could therefore enforce the
 # old requirement while exposing no selectable powers.
 #
-# Veteran pattern (known-good in New Recruit):
-# - power group hidden by default
-# - MAX is always 1
-# - MIN is 0 normally
-# - purchasing Brotherhood reveals the group and sets MIN to 1
-# This avoids the non-rendering MAX0 behaviour seen on Terminators.
+# Terminator rendering pattern for New Recruit:
+# - power group is structurally visible under the selected Cult
+# - group MAX is always 1 and MIN is 0 normally
+# - each individual power is MAX1 by definition, but a constraint modifier
+#   forces it to MAX0 while no Brotherhood upgrade is present
+# - purchasing Brotherhood removes that MAX0 gate and sets group MIN to 1
+# This uses selection-limit modifiers only; New Recruit reliably evaluates those
+# even where hidden/show modifiers on nested groups fail to re-render.
 disc_for={"Pavoni":"biomancy","Raptora":"telekinesis","Corvidae":"divination","Athanaeans":"telepathy","Pyrae":"pyromancy"}
 shared_brother_targets={"r45-ts-brotherhood","r45-ts-brotherhood-fellowship"}
 
@@ -127,7 +129,7 @@ def wire_terminator_copy(unit,serial):
         disc=disc_for[name]
         gid=f"r72-term-{serial}-{disc}-powers"
         pg=ET.SubElement(gs,C("selectionEntryGroup"),{
-            "id":gid,"name":"Psychic Brotherhood Power — choose 1","hidden":"true"
+            "id":gid,"name":"Psychic Brotherhood Power — choose 1","hidden":"false"
         })
 
         links=ET.SubElement(pg,C("entryLinks"))
@@ -139,10 +141,32 @@ def wire_terminator_copy(unit,serial):
             oldmods=cl.find(C("modifiers"))
             if oldmods is not None:
                 cl.remove(oldmods)
+            maxc=None
             for c in cl.iter(C("constraint")):
-                c.set("id",f"r72-term-{serial}-{disc}-power-{j}-max")
+                c.set("id",f"r73-term-{serial}-{disc}-power-{j}-max")
                 if c.get("type")=="max":
                     c.set("value","1")
+                    maxc=c
+            if maxc is None:
+                lcs=cont(cl,"constraints")
+                maxc=ET.SubElement(lcs,C("constraint"),{
+                    "id":f"r73-term-{serial}-{disc}-power-{j}-max",
+                    "type":"max","value":"1","field":"selections","scope":"parent",
+                    "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+                })
+            # Keep the power visible, but make it unselectable until Brotherhood.
+            # One modifier with all no-Brotherhood conditions acts as an AND gate.
+            lmods=ET.SubElement(cl,C("modifiers"))
+            block=ET.SubElement(lmods,C("modifier"),{
+                "id":f"r73-term-{serial}-{disc}-power-{j}-lock",
+                "type":"set","field":maxc.get("id"),"value":"0"
+            })
+            bconds=ET.SubElement(block,C("conditions"))
+            for bid in gate_evidence:
+                ET.SubElement(bconds,C("condition"),{
+                    "type":"lessThan","value":"1","field":"selections","scope":"root-entry","childId":bid,
+                    "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+                })
             links.append(cl)
 
         mods=ET.SubElement(pg,C("modifiers"))
@@ -157,15 +181,6 @@ def wire_terminator_copy(unit,serial):
         })
 
         for i,bid in enumerate(gate_evidence):
-            show=ET.SubElement(mods,C("modifier"),{
-                "id":f"{gid}-show-{i}","type":"set","field":"hidden","value":"false"
-            })
-            sc=ET.SubElement(show,C("conditions"))
-            ET.SubElement(sc,C("condition"),{
-                "type":"atLeast","value":"1","field":"selections","scope":"root-entry","childId":bid,
-                "shared":"true","includeChildSelections":"true","includeChildForces":"false"
-            })
-
             req=ET.SubElement(mods,C("modifier"),{
                 "id":f"{gid}-min1-{i}","type":"set","field":mn.get("id"),"value":"1"
             })
@@ -229,7 +244,7 @@ for cult in vcg2.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
     ck(f"veteran {cult.get('name')} has seven powers",len(pgs[0].findall(f"./{C('entryLinks')}/{C('entryLink')}"))==7)
 
 # Every live Legion Terminator Squad copy with a Prosperine Cult must now use
-# the same renderable hidden/show + MIN0/MAX1 pattern.
+# the visible-group + constraint-gated power pattern.
 validated_terms=0
 for unit in rr.iter(C("selectionEntry")):
     if (unit.get("name") or "")!="Legion Terminator Squad":
@@ -248,13 +263,18 @@ for unit in rr.iter(C("selectionEntry")):
         if len(pgs)==1:
             pg=pgs[0]
             cons=pg.findall(f"./{C('constraints')}/{C('constraint')}")
-            ck(f"{unit.get('id')} {cult.get('name')} seven powers",len(pg.findall(f"./{C('entryLinks')}/{C('entryLink')}"))==7)
-            ck(f"{unit.get('id')} {cult.get('name')} hidden baseline",pg.get("hidden")=="true")
+            powers=pg.findall(f"./{C('entryLinks')}/{C('entryLink')}")
+            ck(f"{unit.get('id')} {cult.get('name')} seven powers",len(powers)==7)
+            ck(f"{unit.get('id')} {cult.get('name')} structurally visible",pg.get("hidden")!="true")
             ck(f"{unit.get('id')} {cult.get('name')} min0",any(c.get("type")=="min" and c.get("value")=="0" for c in cons))
             ck(f"{unit.get('id')} {cult.get('name')} max1",any(c.get("type")=="max" and c.get("value")=="1" for c in cons))
             txt=ET.tostring(pg,encoding="unicode")
-            ck(f"{unit.get('id')} {cult.get('name')} show gate","field=\"hidden\" value=\"false\"" in txt)
             ck(f"{unit.get('id')} {cult.get('name')} min1 gate","-min1-" in txt and 'value="1"' in txt)
+            for power in powers:
+                pmax=next((c for c in power.findall(f"./{C('constraints')}/{C('constraint')}") if c.get("type")=="max"),None)
+                pmods=power.findall(f"./{C('modifiers')}/{C('modifier')}")
+                ck(f"{power.get('id')} base max1",pmax is not None and pmax.get("value")=="1")
+                ck(f"{power.get('id')} locked without Brotherhood",any(m.get("field")==pmax.get("id") and m.get("value")=="0" for m in pmods))
 ck("At least one Terminator copy validated",validated_terms>0)
 
 OUT.write_text("\n".join([
