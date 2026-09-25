@@ -142,3 +142,5 @@ if fail:
     for x in fail: print("FAIL:",x)
     raise SystemExit(1)
 print("PASS: all Terminator Cult power groups, spells and Cult Mastery use local Brotherhood link IDs")
+
+# post-publish verification trigger
