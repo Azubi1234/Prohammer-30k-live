@@ -1,5 +1,5 @@
 Thousand Sons Veteran + Legion Terminator Brotherhood psychic fix
-Generic catalogue revision 10 -> 11
+Generic catalogue revision 11 -> 12
 
 BEHAVIOUR:
 - Prosperine Cult selection remains available normally.
@@ -23,110 +23,115 @@ VALIDATION:
 - PASS: veteran Athanaeans has seven powers
 - PASS: veteran Pyrae has one power group
 - PASS: veteran Pyrae has seven powers
-- PASS: terminator-unit no sibling Cult Power group
+- PASS: terminator-unit no sibling Brotherhood selectors
 - PASS: terminator-unit Pavoni mastery gated
 - PASS: terminator-unit Pavoni one nested power group
 - PASS: terminator-unit Pavoni seven powers
-- PASS: terminator-unit Pavoni structurally visible
+- PASS: terminator-unit Pavoni hidden baseline
 - PASS: terminator-unit Pavoni min0
 - PASS: terminator-unit Pavoni max1
-- PASS: terminator-unit Pavoni min1 gate
-- PASS: r72-term-0-terminator-unit-biomancy-power-0 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-0 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-biomancy-power-1 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-1 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-biomancy-power-2 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-2 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-biomancy-power-3 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-3 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-biomancy-power-4 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-4 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-biomancy-power-5 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-5 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-biomancy-power-6 base max1
-- PASS: r72-term-0-terminator-unit-biomancy-power-6 locked without Brotherhood
+- PASS: terminator-unit Pavoni has show gate
+- PASS: terminator-unit Pavoni has min1 gate
+- PASS: r74-term-0-terminator-unit-biomancy-power-0 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-0 no lock modifiers
+- PASS: r74-term-0-terminator-unit-biomancy-power-1 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-1 no lock modifiers
+- PASS: r74-term-0-terminator-unit-biomancy-power-2 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-2 no lock modifiers
+- PASS: r74-term-0-terminator-unit-biomancy-power-3 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-3 no lock modifiers
+- PASS: r74-term-0-terminator-unit-biomancy-power-4 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-4 no lock modifiers
+- PASS: r74-term-0-terminator-unit-biomancy-power-5 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-5 no lock modifiers
+- PASS: r74-term-0-terminator-unit-biomancy-power-6 plain max1
+- PASS: r74-term-0-terminator-unit-biomancy-power-6 no lock modifiers
 - PASS: terminator-unit Raptora mastery gated
 - PASS: terminator-unit Raptora one nested power group
 - PASS: terminator-unit Raptora seven powers
-- PASS: terminator-unit Raptora structurally visible
+- PASS: terminator-unit Raptora hidden baseline
 - PASS: terminator-unit Raptora min0
 - PASS: terminator-unit Raptora max1
-- PASS: terminator-unit Raptora min1 gate
-- PASS: r72-term-0-terminator-unit-telekinesis-power-0 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-0 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telekinesis-power-1 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-1 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telekinesis-power-2 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-2 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telekinesis-power-3 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-3 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telekinesis-power-4 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-4 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telekinesis-power-5 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-5 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telekinesis-power-6 base max1
-- PASS: r72-term-0-terminator-unit-telekinesis-power-6 locked without Brotherhood
+- PASS: terminator-unit Raptora has show gate
+- PASS: terminator-unit Raptora has min1 gate
+- PASS: r74-term-0-terminator-unit-telekinesis-power-0 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-0 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telekinesis-power-1 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-1 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telekinesis-power-2 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-2 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telekinesis-power-3 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-3 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telekinesis-power-4 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-4 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telekinesis-power-5 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-5 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telekinesis-power-6 plain max1
+- PASS: r74-term-0-terminator-unit-telekinesis-power-6 no lock modifiers
 - PASS: terminator-unit Corvidae mastery gated
 - PASS: terminator-unit Corvidae one nested power group
 - PASS: terminator-unit Corvidae seven powers
-- PASS: terminator-unit Corvidae structurally visible
+- PASS: terminator-unit Corvidae hidden baseline
 - PASS: terminator-unit Corvidae min0
 - PASS: terminator-unit Corvidae max1
-- PASS: terminator-unit Corvidae min1 gate
-- PASS: r72-term-0-terminator-unit-divination-power-0 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-0 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-divination-power-1 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-1 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-divination-power-2 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-2 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-divination-power-3 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-3 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-divination-power-4 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-4 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-divination-power-5 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-5 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-divination-power-6 base max1
-- PASS: r72-term-0-terminator-unit-divination-power-6 locked without Brotherhood
+- PASS: terminator-unit Corvidae has show gate
+- PASS: terminator-unit Corvidae has min1 gate
+- PASS: r74-term-0-terminator-unit-divination-power-0 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-0 no lock modifiers
+- PASS: r74-term-0-terminator-unit-divination-power-1 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-1 no lock modifiers
+- PASS: r74-term-0-terminator-unit-divination-power-2 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-2 no lock modifiers
+- PASS: r74-term-0-terminator-unit-divination-power-3 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-3 no lock modifiers
+- PASS: r74-term-0-terminator-unit-divination-power-4 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-4 no lock modifiers
+- PASS: r74-term-0-terminator-unit-divination-power-5 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-5 no lock modifiers
+- PASS: r74-term-0-terminator-unit-divination-power-6 plain max1
+- PASS: r74-term-0-terminator-unit-divination-power-6 no lock modifiers
 - PASS: terminator-unit Athanaeans mastery gated
 - PASS: terminator-unit Athanaeans one nested power group
 - PASS: terminator-unit Athanaeans seven powers
-- PASS: terminator-unit Athanaeans structurally visible
+- PASS: terminator-unit Athanaeans hidden baseline
 - PASS: terminator-unit Athanaeans min0
 - PASS: terminator-unit Athanaeans max1
-- PASS: terminator-unit Athanaeans min1 gate
-- PASS: r72-term-0-terminator-unit-telepathy-power-0 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-0 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telepathy-power-1 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-1 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telepathy-power-2 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-2 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telepathy-power-3 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-3 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telepathy-power-4 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-4 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telepathy-power-5 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-5 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-telepathy-power-6 base max1
-- PASS: r72-term-0-terminator-unit-telepathy-power-6 locked without Brotherhood
+- PASS: terminator-unit Athanaeans has show gate
+- PASS: terminator-unit Athanaeans has min1 gate
+- PASS: r74-term-0-terminator-unit-telepathy-power-0 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-0 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telepathy-power-1 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-1 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telepathy-power-2 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-2 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telepathy-power-3 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-3 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telepathy-power-4 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-4 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telepathy-power-5 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-5 no lock modifiers
+- PASS: r74-term-0-terminator-unit-telepathy-power-6 plain max1
+- PASS: r74-term-0-terminator-unit-telepathy-power-6 no lock modifiers
 - PASS: terminator-unit Pyrae mastery gated
 - PASS: terminator-unit Pyrae one nested power group
 - PASS: terminator-unit Pyrae seven powers
-- PASS: terminator-unit Pyrae structurally visible
+- PASS: terminator-unit Pyrae hidden baseline
 - PASS: terminator-unit Pyrae min0
 - PASS: terminator-unit Pyrae max1
-- PASS: terminator-unit Pyrae min1 gate
-- PASS: r72-term-0-terminator-unit-pyromancy-power-0 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-0 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-pyromancy-power-1 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-1 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-pyromancy-power-2 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-2 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-pyromancy-power-3 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-3 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-pyromancy-power-4 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-4 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-pyromancy-power-5 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-5 locked without Brotherhood
-- PASS: r72-term-0-terminator-unit-pyromancy-power-6 base max1
-- PASS: r72-term-0-terminator-unit-pyromancy-power-6 locked without Brotherhood
+- PASS: terminator-unit Pyrae has show gate
+- PASS: terminator-unit Pyrae has min1 gate
+- PASS: r74-term-0-terminator-unit-pyromancy-power-0 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-0 no lock modifiers
+- PASS: r74-term-0-terminator-unit-pyromancy-power-1 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-1 no lock modifiers
+- PASS: r74-term-0-terminator-unit-pyromancy-power-2 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-2 no lock modifiers
+- PASS: r74-term-0-terminator-unit-pyromancy-power-3 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-3 no lock modifiers
+- PASS: r74-term-0-terminator-unit-pyromancy-power-4 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-4 no lock modifiers
+- PASS: r74-term-0-terminator-unit-pyromancy-power-5 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-5 no lock modifiers
+- PASS: r74-term-0-terminator-unit-pyromancy-power-6 plain max1
+- PASS: r74-term-0-terminator-unit-pyromancy-power-6 no lock modifiers
 - PASS: At least one Terminator copy validated
