@@ -151,3 +151,5 @@ it.write(ip,encoding="utf-8",xml_declaration=True)
 
 print("Generic auto-Legion wiring:", "updated" if generic_changed else "already current", "revision", generic_rev)
 print("Legion identity markers changed:", changed_legions if changed_legions else "none")
+
+# stable shared-list trigger
