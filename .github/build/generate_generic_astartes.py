@@ -42,13 +42,11 @@ for cname in containers:
         if owner(x):
             cont.remove(x);removed+=1
 
-# The Legion chooser is nested inside the Army Configuration root entry in the
-# monolith. Remove it recursively from the Generic library so importing Generic
-# root entries cannot expose all 18 Legions in every modular roster.
-for p in list(cat.iter()):
-    for x in list(p):
-        if x.get("id")=="config-legion":
-            p.remove(x);removed+=1
+# Keep the Legion chooser structure in Generic. The live modular build applies
+# catalogue-specific auto-Legion identity after generation, hiding the other
+# 17 choices and automatically selecting the Legion belonging to the catalogue.
+# Removing config-legion here would also remove the chosen Legion from Army
+# Configuration, which is not the intended New Recruit UI.
 
 ET.ElementTree(cat).write(OUT,encoding="utf-8",xml_declaration=True)
 ET.parse(OUT)

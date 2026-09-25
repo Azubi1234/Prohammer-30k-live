@@ -13,7 +13,7 @@ I=lambda t:f"{{{INS}}}{t}"
 tree=ET.parse(CAT); root=tree.getroot()
 ids={x.get("id"):x for x in root.iter() if x.get("id")}
 VET="veteran-unit"; TERM="terminator-unit"
-for req in [VET,TERM,"r45-cult-veteran-unit","r45-cult-terminator-unit","r19-ts-terminator-unit-brotherhood-powers"]:
+for req in [VET,TERM,"r45-cult-veteran-unit","r45-cult-terminator-unit"]:
     if req not in ids: raise RuntimeError("Missing "+req)
 
 def cont(p,tag):
@@ -87,10 +87,11 @@ for name in cult_names:
     clone.set("name","Psychic Brotherhood Power — choose 1")
     gs.append(clone)
 
-old=ids["r19-ts-terminator-unit-brotherhood-powers"]
-p=parent_of(old)
-if p is None: raise RuntimeError("Old Terminator power pool parent missing")
-p.remove(old)
+old=ids.get("r19-ts-terminator-unit-brotherhood-powers")
+if old is not None:
+    p=parent_of(old)
+    if p is None: raise RuntimeError("Old Terminator power pool parent missing")
+    p.remove(old)
 
 # Bump generic library revision and index.
 oldrev=int(root.get("revision","0"))

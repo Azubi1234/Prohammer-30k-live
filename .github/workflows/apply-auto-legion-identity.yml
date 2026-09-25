@@ -1,12 +1,10 @@
 name: Apply automatic Legion identity
 on:
-  push:
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   patch:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,6 +27,6 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Legiones-Astartes-Generic.cat Dark-Angels.cat Emperor-s-Children.cat Iron-Warriors.cat White-Scars.cat Space-Wolves.cat Imperial-Fists.cat Night-Lords.cat Blood-Angels.cat Iron-Hands.cat World-Eaters.cat Ultramarines.cat Death-Guard.cat Thousand-Sons.cat Sons-of-Horus.cat Word-Bearers.cat Salamanders.cat Raven-Guard.cat Alpha-Legion.cat index.xml
-          git diff --cached --quiet || git commit -m "Auto-select Legion identity in Legion catalogues"
+          git add Legiones-Astartes-Generic.cat *.cat index.xml
+          git diff --cached --quiet || git commit -m "Refresh automatic Legion identity"
           git push

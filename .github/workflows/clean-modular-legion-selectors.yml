@@ -1,56 +1,97 @@
-name: Clean modular Legion selectors
+name: Refresh modular Army Configuration
 
 on:
   push:
     branches: [main]
     paths:
       - '.github/build/generate_generic_astartes.py'
+      - '.github/build/auto_legion_identity.py'
+      - '.github/build/live_r70_ts_veteran_terminator_brotherhood.py'
+      - '.github/workflows/clean-modular-legion-selectors.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  clean:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Regenerate Generic library
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate Generic base
         run: python .github/build/generate_generic_astartes.py
-      - name: Verify chooser removed and shared content retained
-        run: |
-          python - <<'PY'
-          import xml.etree.ElementTree as ET
-          p="modular-catalogues-generated/Legiones-Astartes-Generic.cat"
-          r=ET.parse(p).getroot()
-          ids={x.get("id") for x in r.iter() if x.get("id")}
-          assert "config-legion" not in ids, "Generic still exposes Legion chooser"
-          assert "veteran-unit" in ids, "Generic Veteran unit missing"
-          assert "terminator-unit" in ids, "Generic Terminator unit missing"
-          print("PASS: Generic chooser removed; shared units retained")
-          PY
-      - name: Publish Generic library to live root and bump revision
+
+      - name: Publish Generic base without revision regression
         run: |
           python - <<'PY'
           import shutil,xml.etree.ElementTree as ET
           src="modular-catalogues-generated/Legiones-Astartes-Generic.cat"
           dst="Legiones-Astartes-Generic.cat"
-          NS="http://www.battlescribe.net/schema/catalogueSchema"
-          t=ET.parse(src); r=t.getroot()
-          old=int(r.get("revision","1")); new=max(old+1,2); r.set("revision",str(new))
+          current=int(ET.parse(dst).getroot().get("revision","0"))
+          t=ET.parse(src); r=t.getroot(); r.set("revision",str(current+1))
           t.write(src,encoding="utf-8",xml_declaration=True)
           shutil.copyfile(src,dst)
           it=ET.parse("index.xml"); ir=it.getroot()
           for e in ir.iter():
-            if e.get("dataId")=="cat-7b24-e6f1-83a9-4c50":
-              e.set("dataRevision",str(new))
+              if e.get("filePath")==dst:
+                  e.set("dataRevision",str(current+1))
           it.write("index.xml",encoding="utf-8",xml_declaration=True)
-          print("Generic revision",new)
+          print("Published Generic base revision",current+1)
           PY
-      - name: Commit live cleanup
+
+      - name: Apply catalogue-specific Legion identity
+        run: python .github/build/auto_legion_identity.py
+
+      - name: Apply TS Veteran and Terminator Brotherhood wiring
+        run: python .github/build/live_r70_ts_veteran_terminator_brotherhood.py
+
+      - name: Synchronize staged Generic with live Generic
+        run: cp Legiones-Astartes-Generic.cat modular-catalogues-generated/Legiones-Astartes-Generic.cat
+
+      - name: Validate Army Configuration and TS Terminators
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          NS="http://www.battlescribe.net/schema/catalogueSchema"; C=lambda t:f"{{{NS}}}{t}"
+          p="Legiones-Astartes-Generic.cat"; r=ET.parse(p).getroot()
+          ids={x.get("id"):x for x in r.iter() if x.get("id")}
+          cfg=ids.get("config-legion"); assert cfg is not None, "Legion group missing"
+          legs=cfg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
+          assert len(legs)==18, f"Expected 18 underlying Legion identities, got {len(legs)}"
+          for e in legs:
+              assert e.get("hidden")=="true", f"{e.get('name')} not hidden by default"
+              mids={m.get("id") for m in e.findall(f"./{C('modifiers')}/{C('modifier')}")}
+              assert e.get("id")+"-auto-hide" in mids
+              assert e.get("id")+"-auto-min-on" in mids
+          names=[x.get("name") or "" for x in r.iter()]
+          assert "Loyalist" in names and "Traitor" in names, "Allegiance choices missing"
+          assert any("Rite" in n for n in names), "Rites of War content missing"
+
+          tcg=ids["r45-cult-terminator-unit"]
+          cults=tcg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
+          assert len(cults)==5, f"Terminator Cult count {len(cults)}"
+          for cult in cults:
+              pgs=[g for g in cult.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if "Psychic Brotherhood Power" in (g.get("name") or "")]
+              assert len(pgs)==1, f"{cult.get('name')}: power group count {len(pgs)}"
+              assert pgs[0].get("hidden")=="true", f"{cult.get('name')}: Brotherhood gate not hidden"
+              assert len(pgs[0].findall(f"./{C('entryLinks')}/{C('entryLink')}"))==7, f"{cult.get('name')}: wrong power count"
+
+          legion_files=["Dark-Angels.cat","Emperor-s-Children.cat","Iron-Warriors.cat","White-Scars.cat","Space-Wolves.cat","Imperial-Fists.cat","Night-Lords.cat","Blood-Angels.cat","Iron-Hands.cat","World-Eaters.cat","Ultramarines.cat","Death-Guard.cat","Thousand-Sons.cat","Sons-of-Horus.cat","Word-Bearers.cat","Salamanders.cat","Raven-Guard.cat","Alpha-Legion.cat"]
+          for fn in legion_files:
+              ET.parse(fn)
+              assert "Automatic Legion Identity" in open(fn,encoding="utf-8").read(), fn+" marker missing"
+          ET.parse("index.xml")
+          print("PASS: one catalogue-driven Legion identity + Allegiance/Rites preserved + TS Terminators wired")
+          PY
+
+      - name: Commit stable shared-list refresh
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add modular-catalogues-generated/Legiones-Astartes-Generic.cat Legiones-Astartes-Generic.cat index.xml
-          git diff --cached --quiet || git commit -m "Publish cleaned Generic Legion selector"
+          git add Legiones-Astartes-Generic.cat modular-catalogues-generated/Legiones-Astartes-Generic.cat *.cat index.xml inspection-ts-veteran-terminator-brotherhood.txt
+          git diff --cached --quiet || git commit -m "Stabilize modular Army Configuration and TS Terminators"
           git push

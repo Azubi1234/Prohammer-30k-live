@@ -1,5 +1,4 @@
 from pathlib import Path
-import re
 import xml.etree.ElementTree as ET
 
 LEGIONS = [
@@ -16,61 +15,110 @@ NS="http://www.battlescribe.net/schema/catalogueSchema"
 ET.register_namespace("",NS)
 q=lambda x:f"{{{NS}}}{x}"
 
-gpath=Path("Legiones-Astartes-Generic.cat")
-tree=ET.parse(gpath); root=tree.getroot()
-group=root.find(".//"+q("selectionEntryGroup")+"[@id='config-legion']")
-assert group is not None
-entries={e.get("id"):e for e in group.findall("./"+q("selectionEntries")+"/"+q("selectionEntry"))}
-print("Selector IDs:", sorted(entries))
-for _,lid,marker in LEGIONS:
-    e=entries.get(lid)
-    if e is None:
-        print(f"WARNING: Generic selector has no {lid}; skipping auto-selection wiring for this ID")
-        continue
-    mods=e.find(q("modifiers"))
-    if mods is None: mods=ET.Element(q("modifiers")); e.insert(0,mods)
-    cons=e.find(q("constraints"))
-    if cons is None:
-        cons=ET.SubElement(e,q("constraints"))
-    cid=lid+"-auto-min"
-    if not any(x.get("id")==cid for x in cons):
-        ET.SubElement(cons,q("constraint"),{"id":cid,"type":"min","value":"0","field":"selections","scope":"parent","shared":"true","includeChildSelections":"false","automatic":"true"})
-    m=ET.SubElement(mods,q("modifier"),{"id":lid+"-auto-hide","type":"set","field":"hidden","value":"true"})
-    cs=ET.SubElement(m,q("conditions")); ET.SubElement(cs,q("condition"),{"type":"lessThan","value":"1","field":"selections","scope":"roster","childId":marker,"shared":"true","includeChildSelections":"true","includeChildForces":"false"})
-    m=ET.SubElement(mods,q("modifier"),{"id":lid+"-auto-min-on","type":"set","field":cid,"value":"1"})
-    cs=ET.SubElement(m,q("conditions")); ET.SubElement(cs,q("condition"),{"type":"atLeast","value":"1","field":"selections","scope":"roster","childId":marker,"shared":"true","includeChildSelections":"true","includeChildForces":"false"})
-root.set("revision","2")
-tree.write(gpath,encoding="utf-8",xml_declaration=True)
+def cont(parent, tag):
+    x=parent.find(q(tag))
+    if x is None:
+        x=ET.SubElement(parent,q(tag))
+    return x
 
-for fn,lid,marker in LEGIONS:
-    p=Path(fn)
-    text=p.read_text(encoding="utf-8")
-    if marker not in text:
-        marker_xml=(f'<selectionEntry type="upgrade" name="Automatic Legion Identity" id="{marker}" hidden="true" import="true">'
-                    f'<constraints><constraint id="{marker}-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" />'
-                    f'<constraint id="{marker}-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" /></constraints>'
-                    f'<costs><cost name="Points" typeId="51b2-306e-1021-d207" value="0" /></costs></selectionEntry>')
-        if "<selectionEntries>" in text:
-            text=text.replace("<selectionEntries>","<selectionEntries>"+marker_xml,1)
-        elif "</catalogue>" in text:
-            text=text.replace("</catalogue>","<selectionEntries>"+marker_xml+"</selectionEntries></catalogue>",1)
-        else:
-            raise RuntimeError(f"{fn}: no safe insertion point")
-    text=re.sub(r'(<catalogue\\b[^>]*\\brevision=")[^"]+(")',r'\\g<1>4\\2',text,count=1)
-    p.write_text(text,encoding="utf-8")
-    print(f"Patched {fn}: {marker}")
+def patch_generic(path):
+    tree=ET.parse(path); root=tree.getroot()
+    before=ET.tostring(root,encoding="utf-8")
+    group=root.find(".//"+q("selectionEntryGroup")+"[@id='config-legion']")
+    if group is None:
+        raise RuntimeError(f"{path}: config-legion missing")
+    entries={e.get("id"):e for e in group.findall("./"+q("selectionEntries")+"/"+q("selectionEntry"))}
+    missing=[lid for _,lid,_ in LEGIONS if lid not in entries]
+    if missing:
+        raise RuntimeError(f"{path}: missing Legion selectors {missing}")
+    for _,lid,marker in LEGIONS:
+        e=entries[lid]
+        e.set("hidden","true")
+        cons=cont(e,"constraints")
+        for c in list(cons):
+            if c.get("id")==lid+"-auto-min":
+                cons.remove(c)
+        cid=lid+"-auto-min"
+        ET.SubElement(cons,q("constraint"),{
+            "id":cid,"type":"min","value":"0","field":"selections","scope":"parent",
+            "shared":"true","includeChildSelections":"false","automatic":"true"
+        })
+        mods=cont(e,"modifiers")
+        for m in list(mods):
+            if (m.get("id") or "").startswith(lid+"-auto-"):
+                mods.remove(m)
+        m=ET.SubElement(mods,q("modifier"),{"id":lid+"-auto-hide","type":"set","field":"hidden","value":"false"})
+        cs=ET.SubElement(m,q("conditions"))
+        ET.SubElement(cs,q("condition"),{
+            "type":"atLeast","value":"1","field":"selections","scope":"roster","childId":marker,
+            "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+        })
+        m=ET.SubElement(mods,q("modifier"),{"id":lid+"-auto-min-on","type":"set","field":cid,"value":"1"})
+        cs=ET.SubElement(m,q("conditions"))
+        ET.SubElement(cs,q("condition"),{
+            "type":"atLeast","value":"1","field":"selections","scope":"roster","childId":marker,
+            "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+        })
+    changed=ET.tostring(root,encoding="utf-8")!=before
+    if changed:
+        root.set("revision",str(int(root.get("revision","0"))+1))
+        tree.write(path,encoding="utf-8",xml_declaration=True)
+    return int(root.get("revision","0")),changed
+
+def patch_legion(path, marker):
+    tree=ET.parse(path); root=tree.getroot()
+    before=ET.tostring(root,encoding="utf-8")
+    ses=cont(root,"selectionEntries")
+    e=next((x for x in ses.findall(q("selectionEntry")) if x.get("id")==marker),None)
+    if e is None:
+        e=ET.SubElement(ses,q("selectionEntry"),{
+            "type":"upgrade","name":"Automatic Legion Identity","id":marker,
+            "hidden":"true","import":"true"
+        })
+    e.set("hidden","true"); e.set("import","true")
+    cons=cont(e,"constraints")
+    for c in list(cons):
+        if c.get("id") in (marker+"-min",marker+"-max"):
+            cons.remove(c)
+    ET.SubElement(cons,q("constraint"),{
+        "id":marker+"-min","type":"min","value":"1","field":"selections","scope":"parent",
+        "shared":"true","includeChildSelections":"false","automatic":"true"
+    })
+    ET.SubElement(cons,q("constraint"),{
+        "id":marker+"-max","type":"max","value":"1","field":"selections","scope":"parent",
+        "shared":"true","includeChildSelections":"false"
+    })
+    costs=cont(e,"costs")
+    if not any(c.get("typeId")=="51b2-306e-1021-d207" for c in costs.findall(q("cost"))):
+        ET.SubElement(costs,q("cost"),{"name":"Points","typeId":"51b2-306e-1021-d207","value":"0"})
+    changed=ET.tostring(root,encoding="utf-8")!=before
+    if changed:
+        root.set("revision",str(int(root.get("revision","0"))+1))
+        tree.write(path,encoding="utf-8",xml_declaration=True)
+    return int(root.get("revision","0")),changed
+
+generic_rev,generic_changed=patch_generic(Path("Legiones-Astartes-Generic.cat"))
+revs={"Legiones-Astartes-Generic.cat":generic_rev}
+changed_legions=[]
+for fn,_,marker in LEGIONS:
+    rev,changed=patch_legion(Path(fn),marker)
+    revs[fn]=rev
+    if changed: changed_legions.append(fn)
+
+# Keep the staged Generic library in sync when present. Legion staging files are
+# not rewritten here; this avoids unrelated Legion churn during shared-list fixes.
+staged=Path("modular-catalogues-generated/Legiones-Astartes-Generic.cat")
+if staged.exists():
+    patch_generic(staged)
 
 ip=Path("index.xml")
-try:
-    it=ET.parse(ip); ir=it.getroot()
-    ins=ir.tag.split("}")[0].lstrip("{") if "}" in ir.tag else ""
-    for e in ir.iter():
-        if e.tag.endswith("dataIndexEntry"):
-            fp=e.get("filePath")
-            if fp=="Legiones-Astartes-Generic.cat": e.set("dataRevision","2")
-            elif any(fp==x[0] for x in LEGIONS): e.set("dataRevision","4")
-    if ins: ET.register_namespace("",ins)
-    it.write(ip,encoding="utf-8",xml_declaration=True)
-except Exception as exc:
-    print(f"WARNING: index revision update skipped: {exc}")
-print("Patched Generic auto-Legion selection for all 18 Legion catalogues.")
+it=ET.parse(ip); ir=it.getroot()
+for e in ir.iter():
+    if not e.tag.endswith("dataIndexEntry"): continue
+    fp=e.get("filePath")
+    if fp in revs:
+        e.set("dataRevision",str(revs[fp]))
+it.write(ip,encoding="utf-8",xml_declaration=True)
+
+print("Generic auto-Legion wiring:", "updated" if generic_changed else "already current", "revision", generic_rev)
+print("Legion identity markers changed:", changed_legions if changed_legions else "none")
