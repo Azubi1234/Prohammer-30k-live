@@ -60,7 +60,7 @@ def patch_generic(path):
             "type":"atLeast","value":"1","field":"selections","scope":"roster","childId":marker,
             "shared":"true","includeChildSelections":"true","includeChildForces":"false"
         })
-    changed=precleaned or ET.tostring(root,encoding="utf-8")!=before
+    changed=ET.tostring(root,encoding="utf-8")!=before
     if changed:
         root.set("revision",str(int(root.get("revision","0"))+1))
         tree.write(path,encoding="utf-8",xml_declaration=True)
@@ -101,7 +101,7 @@ def patch_legion(path, marker):
     costs=cont(e,"costs")
     if not any(c.get("typeId")=="51b2-306e-1021-d207" for c in costs.findall(q("cost"))):
         ET.SubElement(costs,q("cost"),{"name":"Points","typeId":"51b2-306e-1021-d207","value":"0"})
-    changed=ET.tostring(root,encoding="utf-8")!=before
+    changed=precleaned or ET.tostring(root,encoding="utf-8")!=before
     if changed:
         root.set("revision",str(int(root.get("revision","0"))+1))
         tree.write(path,encoding="utf-8",xml_declaration=True)
