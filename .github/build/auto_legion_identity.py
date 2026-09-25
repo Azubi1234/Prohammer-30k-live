@@ -71,8 +71,8 @@ def patch_legion(path, marker):
     # attribute in at least one Legion catalogue. Repair only the exact duplicate
     # attribute form before XML parsing; no rules/options are otherwise touched.
     raw=path.read_text(encoding="utf-8")
-    clean=re.sub(r'(\\simportRootEntries="true")\\s+importRootEntries="true"',r'\\1',raw)
-    clean=re.sub(r'(\\simportRootEntries="false")\\s+importRootEntries="false"',r'\\1',clean)
+    clean=re.sub(r'(\simportRootEntries="true")\s+importRootEntries="true"',r'\1',raw)
+    clean=re.sub(r'(\simportRootEntries="false")\s+importRootEntries="false"',r'\1',clean)
     precleaned=clean!=raw
     if precleaned:
         path.write_text(clean,encoding="utf-8")
