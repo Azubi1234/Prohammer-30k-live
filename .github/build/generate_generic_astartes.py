@@ -2,6 +2,10 @@ from pathlib import Path
 import copy,re,xml.etree.ElementTree as ET
 
 SRC=Path("Legiones Astartes.cat")
+if not SRC.exists():
+    # The live modular repository no longer carries the retired monolithic
+    # catalogue. Rebuild from the current Generic library instead.
+    SRC=Path("Legiones-Astartes-Generic.cat")
 OUT=Path("modular-catalogues-generated/Legiones-Astartes-Generic.cat")
 NS="http://www.battlescribe.net/schema/catalogueSchema"
 ET.register_namespace("",NS)
