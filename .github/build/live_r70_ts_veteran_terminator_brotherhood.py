@@ -64,54 +64,137 @@ for name in cult_names:
     pgs=[g for g in pgs if "Psychic Brotherhood Power" in (g.get("name") or "")]
     if len(pgs)!=1: raise RuntimeError(f"Veteran {name}: expected one Brotherhood power group")
 
-# Rebuild Terminator psychic selection from the proven Veteran POWER CONTENT,
-# but do not rely on hidden=true -> show modifiers. New Recruit was enforcing
-# the MIN constraint while still hiding the group. Instead each Cult owns a
-# visible structural group with baseline MIN0/MAX0; Brotherhood changes both
-# limits to 1, making exactly one power selectable.
-tcg=ids["r45-cult-terminator-unit"]
-tmap={x.get("name"):x for x in tcg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")}
+# Rebuild EVERY Legion Terminator Squad copy using the proven Veteran UI pattern.
+# Several Rite/Pride copies still carried the old sibling power pool even after the
+# canonical terminator-unit was repaired. New Recruit could therefore enforce the
+# old requirement while exposing no selectable powers.
+#
+# Veteran pattern (known-good in New Recruit):
+# - power group hidden by default
+# - MAX is always 1
+# - MIN is 0 normally
+# - purchasing Brotherhood reveals the group and sets MIN to 1
+# This avoids the non-rendering MAX0 behaviour seen on Terminators.
 disc_for={"Pavoni":"biomancy","Raptora":"telekinesis","Corvidae":"divination","Athanaeans":"telepathy","Pyrae":"pyromancy"}
-for name in cult_names:
-    if name not in tmap: raise RuntimeError("Terminator missing Cult "+name)
-    t=tmap[name]
-    gs=cont(t,"selectionEntryGroups")
-    # Remove every prior Brotherhood power group in this Cult, regardless of revision.
-    for g in list(gs):
-        if "Psychic Brotherhood Power" in (g.get("name") or ""):
-            gs.remove(g)
+shared_brother_targets={"r45-ts-brotherhood","r45-ts-brotherhood-fellowship"}
 
-    src=[g for g in vmap[name].findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if "Psychic Brotherhood Power" in (g.get("name") or "")][0]
-    disc=disc_for[name]
-    gid="r71-term-"+disc+"-powers"
-    pg=ET.SubElement(gs,C("selectionEntryGroup"),{"id":gid,"name":"Psychic Brotherhood Power — choose 1","hidden":"false"})
+def direct_group(unit,name):
+    return next((g for g in unit.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if (g.get("name") or "")==name),None)
 
-    links=ET.SubElement(pg,C("entryLinks"))
-    for j,l in enumerate(src.findall(f"./{C('entryLinks')}/{C('entryLink')}")):
-        cl=copy.deepcopy(l)
-        cl.set("id",f"r71-term-{disc}-power-{j}")
-        # keep canonical targetId/name but give constraints unique IDs
-        for c in cl.iter(C("constraint")):
-            c.set("id",f"r71-term-{disc}-power-{j}-max")
-        links.append(cl)
+def wire_terminator_copy(unit,serial):
+    cg=direct_group(unit,"Prosperine Cult")
+    if cg is None:
+        return False
 
-    mods=ET.SubElement(pg,C("modifiers"))
-    cs=ET.SubElement(pg,C("constraints"))
-    mn=ET.SubElement(cs,C("constraint"),{"id":gid+"-min","type":"min","value":"0","field":"selections","scope":"parent","shared":"true","includeChildSelections":"true","includeChildForces":"false"})
-    mx=ET.SubElement(cs,C("constraint"),{"id":gid+"-max","type":"max","value":"0","field":"selections","scope":"parent","shared":"true","includeChildSelections":"true","includeChildForces":"false"})
+    cults={x.get("name"):x for x in cg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")}
+    if not all(n in cults for n in cult_names):
+        raise RuntimeError(f"{unit.get('id')}: incomplete Prosperine Cult choices")
 
-    for i,bid in enumerate(evidence[TERM]):
-        for field,value,suffix in [(mn.get("id"),"1","min1"),(mx.get("id"),"1","max1")]:
-            m=ET.SubElement(mods,C("modifier"),{"id":f"{gid}-{suffix}-{i}","type":"set","field":field,"value":value})
-            conds=ET.SubElement(m,C("conditions"))
-            ET.SubElement(conds,C("condition"),{"type":"atLeast","value":"1","field":"selections","scope":"root-entry","childId":bid,
-                "shared":"true","includeChildSelections":"true","includeChildForces":"false"})
+    local_brothers=[
+        x for x in unit.iter(C("entryLink"))
+        if x.get("targetId") in shared_brother_targets
+    ]
+    if not local_brothers:
+        raise RuntimeError(f"{unit.get('id')}: no Brotherhood entryLinks found")
+    local_evidence=[x.get("id") for x in local_brothers if x.get("id")]
+    gate_evidence=local_evidence+sorted(shared_brother_targets)
 
-old=ids.get("r19-ts-terminator-unit-brotherhood-powers")
-if old is not None:
-    p=parent_of(old)
-    if p is None: raise RuntimeError("Old Terminator power pool parent missing")
-    p.remove(old)
+    # Remove obsolete sibling Brotherhood power pools from this unit copy.
+    direct=cont(unit,"selectionEntryGroups")
+    for g in list(direct):
+        n=g.get("name") or ""
+        if "Psychic Brotherhood" in n and "Power" in n:
+            direct.remove(g)
+
+    for name in cult_names:
+        cult=cults[name]
+
+        # Baseline Arcana remains visible; Mastery appears only with Brotherhood.
+        infos=cont(cult,"infoLinks")
+        arc=[x for x in infos.findall(C("infoLink")) if "Cult Arcana" in (x.get("name") or "")]
+        mas=[x for x in infos.findall(C("infoLink")) if "Cult Mastery" in (x.get("name") or "")]
+        if len(arc)!=1 or len(mas)!=1:
+            raise RuntimeError(f"{unit.get('id')} {name}: Arcana/Mastery mismatch")
+        arc[0].set("hidden","false")
+        add_show(mas[0],f"r72-term-{serial}-{disc_for[name]}-mastery-show-",gate_evidence)
+
+        gs=cont(cult,"selectionEntryGroups")
+        for g in list(gs):
+            if "Psychic Brotherhood Power" in (g.get("name") or ""):
+                gs.remove(g)
+
+        src=[g for g in vmap[name].findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if "Psychic Brotherhood Power" in (g.get("name") or "")][0]
+        disc=disc_for[name]
+        gid=f"r72-term-{serial}-{disc}-powers"
+        pg=ET.SubElement(gs,C("selectionEntryGroup"),{
+            "id":gid,"name":"Psychic Brotherhood Power — choose 1","hidden":"true"
+        })
+
+        links=ET.SubElement(pg,C("entryLinks"))
+        for j,l in enumerate(src.findall(f"./{C('entryLinks')}/{C('entryLink')}")):
+            cl=copy.deepcopy(l)
+            cl.set("id",f"r72-term-{serial}-{disc}-power-{j}")
+            # Veteran content is cloned only for canonical target/name. Remove its
+            # old show/min modifiers if any and keep each power selectable max 1.
+            oldmods=cl.find(C("modifiers"))
+            if oldmods is not None:
+                cl.remove(oldmods)
+            for c in cl.iter(C("constraint")):
+                c.set("id",f"r72-term-{serial}-{disc}-power-{j}-max")
+                if c.get("type")=="max":
+                    c.set("value","1")
+            links.append(cl)
+
+        mods=ET.SubElement(pg,C("modifiers"))
+        cs=ET.SubElement(pg,C("constraints"))
+        mn=ET.SubElement(cs,C("constraint"),{
+            "id":gid+"-min","type":"min","value":"0","field":"selections","scope":"parent",
+            "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+        })
+        ET.SubElement(cs,C("constraint"),{
+            "id":gid+"-max","type":"max","value":"1","field":"selections","scope":"parent",
+            "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+        })
+
+        for i,bid in enumerate(gate_evidence):
+            show=ET.SubElement(mods,C("modifier"),{
+                "id":f"{gid}-show-{i}","type":"set","field":"hidden","value":"false"
+            })
+            sc=ET.SubElement(show,C("conditions"))
+            ET.SubElement(sc,C("condition"),{
+                "type":"atLeast","value":"1","field":"selections","scope":"root-entry","childId":bid,
+                "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+            })
+
+            req=ET.SubElement(mods,C("modifier"),{
+                "id":f"{gid}-min1-{i}","type":"set","field":mn.get("id"),"value":"1"
+            })
+            rc=ET.SubElement(req,C("conditions"))
+            ET.SubElement(rc,C("condition"),{
+                "type":"atLeast","value":"1","field":"selections","scope":"root-entry","childId":bid,
+                "shared":"true","includeChildSelections":"true","includeChildForces":"false"
+            })
+    return True
+
+term_copies=[
+    e for e in root.iter(C("selectionEntry"))
+    if (e.get("name") or "")=="Legion Terminator Squad"
+    and direct_group(e,"Prosperine Cult") is not None
+]
+if not term_copies:
+    raise RuntimeError("No Legion Terminator Squad copies with Prosperine Cult found")
+
+wired=[]
+for i,unit in enumerate(term_copies):
+    serial=f"{i}-{(unit.get('id') or 'term').replace(' ','-')[:48]}"
+    if wire_terminator_copy(unit,serial):
+        wired.append(unit.get("id"))
+
+# Defensive cleanup: no old sibling Cult Power group may remain anywhere in Generic.
+for p in root.iter():
+    for g in list(p):
+        if g.tag==C("selectionEntryGroup") and (g.get("name") or "")=="Psychic Brotherhood — Cult Power (requires Brotherhood; choose 1)":
+            p.remove(g)
 
 # Bump generic library revision and index.
 oldrev=int(root.get("revision","0"))
@@ -136,25 +219,43 @@ def ck(n,v):
 
 ck("Veteran Cult remains selectable","r45-cult-veteran-unit" in rid)
 ck("Terminator Cult remains selectable","r45-cult-terminator-unit" in rid)
-ck("Old Terminator sibling power pool removed","r19-ts-terminator-unit-brotherhood-powers" not in rid)
-for unit,cgid in [(VET,"r45-cult-veteran-unit"),(TERM,"r45-cult-terminator-unit")]:
-    cg=rid[cgid]
+ck("Old Terminator sibling power pools removed",not any((g.get("name") or "")=="Psychic Brotherhood — Cult Power (requires Brotherhood; choose 1)" for g in rr.iter(C("selectionEntryGroup"))))
+
+# Veterans remain unchanged and continue to use their known-good R68 pattern.
+vcg2=rid["r45-cult-veteran-unit"]
+for cult in vcg2.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
+    pgs=[g for g in cult.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if "Psychic Brotherhood Power" in (g.get("name") or "")]
+    ck(f"veteran {cult.get('name')} has one power group",len(pgs)==1)
+    ck(f"veteran {cult.get('name')} has seven powers",len(pgs[0].findall(f"./{C('entryLinks')}/{C('entryLink')}"))==7)
+
+# Every live Legion Terminator Squad copy with a Prosperine Cult must now use
+# the same renderable hidden/show + MIN0/MAX1 pattern.
+validated_terms=0
+for unit in rr.iter(C("selectionEntry")):
+    if (unit.get("name") or "")!="Legion Terminator Squad":
+        continue
+    cg=next((g for g in unit.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if (g.get("name") or "")=="Prosperine Cult"),None)
+    if cg is None:
+        continue
+    validated_terms+=1
+    direct=unit.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}")
+    ck(f"{unit.get('id')} no sibling Cult Power group",not any("Psychic Brotherhood" in (g.get("name") or "") and "Power" in (g.get("name") or "") for g in direct))
     for cult in cg.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}"):
-        arc=[x for x in cult.findall(f"./{C('infoLinks')}/{C('infoLink')}") if "Cult Arcana" in (x.get("name") or "")]
         mas=[x for x in cult.findall(f"./{C('infoLinks')}/{C('infoLink')}") if "Cult Mastery" in (x.get("name") or "")]
-        ck(f"{unit} {cult.get('name')} Arcana baseline",len(arc)==1 and arc[0].get("hidden")=="false")
-        ck(f"{unit} {cult.get('name')} Mastery Brotherhood-gated",len(mas)==1 and mas[0].get("hidden")=="true" and len(mas[0].findall(f"./{C('modifiers')}/{C('modifier')}"))>=4)
+        ck(f"{unit.get('id')} {cult.get('name')} mastery gated",len(mas)==1 and mas[0].get("hidden")=="true")
         pgs=[g for g in cult.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if "Psychic Brotherhood Power" in (g.get("name") or "")]
-        ck(f"{unit} {cult.get('name')} has one correlated power group",len(pgs)==1)
-        ck(f"{unit} {cult.get('name')} has seven powers",len(pgs[0].findall(f"./{C('entryLinks')}/{C('entryLink')}"))==7)
-        if unit==VET:
-            ck(f"{unit} {cult.get('name')} power group hidden until Brotherhood",pgs[0].get("hidden")=="true")
-        else:
-            cons=pgs[0].findall(f"./{C('constraints')}/{C('constraint')}")
-            ck(f"{unit} {cult.get('name')} power group structurally visible",pgs[0].get("hidden")!="true")
-            ck(f"{unit} {cult.get('name')} baseline max0",any(c.get("type")=="max" and c.get("value")=="0" for c in cons))
-            txt=ET.tostring(pgs[0],encoding="unicode")
-            ck(f"{unit} {cult.get('name')} Brotherhood sets max1","max1" in txt and 'value="1"' in txt)
+        ck(f"{unit.get('id')} {cult.get('name')} one nested power group",len(pgs)==1)
+        if len(pgs)==1:
+            pg=pgs[0]
+            cons=pg.findall(f"./{C('constraints')}/{C('constraint')}")
+            ck(f"{unit.get('id')} {cult.get('name')} seven powers",len(pg.findall(f"./{C('entryLinks')}/{C('entryLink')}"))==7)
+            ck(f"{unit.get('id')} {cult.get('name')} hidden baseline",pg.get("hidden")=="true")
+            ck(f"{unit.get('id')} {cult.get('name')} min0",any(c.get("type")=="min" and c.get("value")=="0" for c in cons))
+            ck(f"{unit.get('id')} {cult.get('name')} max1",any(c.get("type")=="max" and c.get("value")=="1" for c in cons))
+            txt=ET.tostring(pg,encoding="unicode")
+            ck(f"{unit.get('id')} {cult.get('name')} show gate","field=\"hidden\" value=\"false\"" in txt)
+            ck(f"{unit.get('id')} {cult.get('name')} min1 gate","-min1-" in txt and 'value="1"' in txt)
+ck("At least one Terminator copy validated",validated_terms>0)
 
 OUT.write_text("\n".join([
  "Thousand Sons Veteran + Legion Terminator Brotherhood psychic fix",
