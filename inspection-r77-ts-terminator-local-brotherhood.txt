@@ -1,0 +1,6 @@
+R77 TS canonical Legion Terminator Brotherhood local-ID fix
+Generic revision 14 -> 15
+Power groups patched: 5
+Power links patched: 35
+Cult Mastery links patched: 5
+Only canonical r45-cult-terminator-unit was changed; other Legion-specific Terminator copies were left untouched.
