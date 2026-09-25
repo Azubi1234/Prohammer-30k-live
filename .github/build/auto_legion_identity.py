@@ -28,7 +28,13 @@ def patch_generic(path):
     group=root.find(".//"+q("selectionEntryGroup")+"[@id='config-legion']")
     if group is None:
         raise RuntimeError(f"{path}: config-legion missing")
-    entries={e.get("id"):e for e in group.findall("./"+q("selectionEntries")+"/"+q("selectionEntry"))}
+    all_entries=group.findall("./"+q("selectionEntries")+"/"+q("selectionEntry"))
+    entries={e.get("id"):e for e in all_entries}
+    # A normal Legion catalogue must not expose Shattered Legions Theme or any
+    # other alternate identity selector. Hide everything first; the matching
+    # Legion is selectively revealed by its automatic catalogue marker below.
+    for e in all_entries:
+        e.set("hidden","true")
     missing=[lid for _,lid,_ in LEGIONS if lid not in entries]
     if missing:
         raise RuntimeError(f"{path}: missing Legion selectors {missing}")
