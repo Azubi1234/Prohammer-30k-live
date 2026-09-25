@@ -53,7 +53,7 @@ def has_min_trigger(group, local_ids):
 fail=[]
 checked=[]
 
-# Canonical package is mandatory.
+# Canonical Legion Terminator package is the hard regression target.
 canonical=next((g for g in root.iter(C("selectionEntryGroup")) if g.get("id")=="r45-cult-terminator-unit"),None)
 if canonical is None:
     fail.append("canonical r45-cult-terminator-unit missing")
@@ -61,7 +61,9 @@ if canonical is None:
 else:
     groups=[canonical]
 
-# Also test copied Terminator Cult packages that actually carry Brotherhood links.
+# Old Rite/character copies are reported only. They belong to other Legion-specific
+# paths and must not be mutated by this Thousand Sons fix.
+warnings=[]
 for g in root.iter(C("selectionEntryGroup")):
     if g is canonical or (g.get("name") or "")!="Prosperine Cult":
         continue
@@ -69,7 +71,13 @@ for g in root.iter(C("selectionEntryGroup")):
         continue
     u=nearest_unit(g)
     if u is not None and local_brotherhood_ids(u):
-        groups.append(g)
+        pcount=sum(
+            1 for cult in g.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")
+            for pg in cult.findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}")
+            if (pg.get("name") or "")=="Psychic Brotherhood Power — choose 1"
+        )
+        if pcount==0:
+            warnings.append(f"{g.get('id')}: stale copied Terminator Cult package has no psychic groups")
 
 for cg in groups:
     unit=nearest_unit(cg)
@@ -110,9 +118,25 @@ for cg in groups:
 
     checked.append((cg.get("id"),unit.get("id"),bids))
 
+# Veteran control: Terminator powers must match the working Veteran discipline contents.
+vet=next((g for g in root.iter(C("selectionEntryGroup")) if g.get("id")=="r45-cult-veteran-unit"),None)
+if canonical is not None and vet is not None:
+    vm={c.get("name"):c for c in vet.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")}
+    tm={c.get("name"):c for c in canonical.findall(f"./{C('selectionEntries')}/{C('selectionEntry')}")}
+    for cname in ("Pavoni","Raptora","Corvidae","Athanaeans","Pyrae"):
+        vg=[g for g in vm[cname].findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if (g.get("name") or "")=="Psychic Brotherhood Power — choose 1"]
+        tg=[g for g in tm[cname].findall(f"./{C('selectionEntryGroups')}/{C('selectionEntryGroup')}") if (g.get("name") or "")=="Psychic Brotherhood Power — choose 1"]
+        if len(vg)==1 and len(tg)==1:
+            vt=[x.get("targetId") for x in vg[0].findall(f"./{C('entryLinks')}/{C('entryLink')}")]
+            tt=[x.get("targetId") for x in tg[0].findall(f"./{C('entryLinks')}/{C('entryLink')}")]
+            if vt!=tt:
+                fail.append(f"{cname}: Terminator power targets differ from working Veteran discipline")
+
 print("TS Terminator psychic rendering regression test")
 for cg,unit,bids in checked:
     print("CHECKED",cg,"unit",unit,"brotherhood",",".join(bids))
+for w in warnings:
+    print("WARN:",w)
 if fail:
     print("FAILURES:",len(fail))
     for x in fail: print("FAIL:",x)
