@@ -32,6 +32,19 @@ def patch_generic(path):
     missing=[lid for _,lid,_ in LEGIONS if lid not in entries]
     if missing:
         raise RuntimeError(f"{path}: missing Legion selectors {missing}")
+
+    # Shattered Legions is a separate army-building mode, not an alternative
+    # Legion choice inside every normal modular Legion roster. Preserve all of
+    # its rules/data but hide the theme selector in standard Legion catalogues.
+    shattered=entries.get("r62-shattered-theme")
+    if shattered is not None:
+        shattered.set("hidden","true")
+        sms=shattered.find(q("modifiers"))
+        if sms is not None:
+            for m in list(sms):
+                if m.get("field")=="hidden" and m.get("value")=="false":
+                    sms.remove(m)
+
     for _,lid,marker in LEGIONS:
         e=entries[lid]
         e.set("hidden","true")
