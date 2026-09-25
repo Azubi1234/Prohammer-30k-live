@@ -1,0 +1,36 @@
+name: Apply R75 TS Terminator psychic visibility
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/build/live_r75_ts_terminator_psychic_visibility.py'
+      - '.github/workflows/apply-live-r75-ts-terminator-psychic-visibility.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Patch live Generic Terminator psychic visibility
+        run: python .github/build/live_r75_ts_terminator_psychic_visibility.py
+      - name: Validate XML
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse("Legiones-Astartes-Generic.cat")
+          ET.parse("index.xml")
+          print("PASS XML")
+          PY
+      - name: Commit live R75
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Legiones-Astartes-Generic.cat index.xml inspection-r75-ts-terminator-psychic-visibility.txt
+          git diff --cached --quiet || git commit -m "Fix TS Terminator psychic power visibility"
+          git push
