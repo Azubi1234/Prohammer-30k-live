@@ -1,5 +1,5 @@
 Thousand Sons Veteran + Legion Terminator Brotherhood psychic fix
-Generic catalogue revision 8 -> 9
+Generic catalogue revision 9 -> 10
 
 BEHAVIOUR:
 - Prosperine Cult selection remains available normally.
@@ -12,64 +12,56 @@ BEHAVIOUR:
 VALIDATION:
 - PASS: Veteran Cult remains selectable
 - PASS: Terminator Cult remains selectable
-- PASS: Old Terminator sibling power pool removed
-- PASS: veteran-unit Pavoni Arcana baseline
-- PASS: veteran-unit Pavoni Mastery Brotherhood-gated
-- PASS: veteran-unit Pavoni has one correlated power group
-- PASS: veteran-unit Pavoni has seven powers
-- PASS: veteran-unit Pavoni power group hidden until Brotherhood
-- PASS: veteran-unit Raptora Arcana baseline
-- PASS: veteran-unit Raptora Mastery Brotherhood-gated
-- PASS: veteran-unit Raptora has one correlated power group
-- PASS: veteran-unit Raptora has seven powers
-- PASS: veteran-unit Raptora power group hidden until Brotherhood
-- PASS: veteran-unit Corvidae Arcana baseline
-- PASS: veteran-unit Corvidae Mastery Brotherhood-gated
-- PASS: veteran-unit Corvidae has one correlated power group
-- PASS: veteran-unit Corvidae has seven powers
-- PASS: veteran-unit Corvidae power group hidden until Brotherhood
-- PASS: veteran-unit Athanaeans Arcana baseline
-- PASS: veteran-unit Athanaeans Mastery Brotherhood-gated
-- PASS: veteran-unit Athanaeans has one correlated power group
-- PASS: veteran-unit Athanaeans has seven powers
-- PASS: veteran-unit Athanaeans power group hidden until Brotherhood
-- PASS: veteran-unit Pyrae Arcana baseline
-- PASS: veteran-unit Pyrae Mastery Brotherhood-gated
-- PASS: veteran-unit Pyrae has one correlated power group
-- PASS: veteran-unit Pyrae has seven powers
-- PASS: veteran-unit Pyrae power group hidden until Brotherhood
-- PASS: terminator-unit Pavoni Arcana baseline
-- PASS: terminator-unit Pavoni Mastery Brotherhood-gated
-- PASS: terminator-unit Pavoni has one correlated power group
-- PASS: terminator-unit Pavoni has seven powers
-- PASS: terminator-unit Pavoni power group structurally visible
-- PASS: terminator-unit Pavoni baseline max0
-- PASS: terminator-unit Pavoni Brotherhood sets max1
-- PASS: terminator-unit Raptora Arcana baseline
-- PASS: terminator-unit Raptora Mastery Brotherhood-gated
-- PASS: terminator-unit Raptora has one correlated power group
-- PASS: terminator-unit Raptora has seven powers
-- PASS: terminator-unit Raptora power group structurally visible
-- PASS: terminator-unit Raptora baseline max0
-- PASS: terminator-unit Raptora Brotherhood sets max1
-- PASS: terminator-unit Corvidae Arcana baseline
-- PASS: terminator-unit Corvidae Mastery Brotherhood-gated
-- PASS: terminator-unit Corvidae has one correlated power group
-- PASS: terminator-unit Corvidae has seven powers
-- PASS: terminator-unit Corvidae power group structurally visible
-- PASS: terminator-unit Corvidae baseline max0
-- PASS: terminator-unit Corvidae Brotherhood sets max1
-- PASS: terminator-unit Athanaeans Arcana baseline
-- PASS: terminator-unit Athanaeans Mastery Brotherhood-gated
-- PASS: terminator-unit Athanaeans has one correlated power group
-- PASS: terminator-unit Athanaeans has seven powers
-- PASS: terminator-unit Athanaeans power group structurally visible
-- PASS: terminator-unit Athanaeans baseline max0
-- PASS: terminator-unit Athanaeans Brotherhood sets max1
-- PASS: terminator-unit Pyrae Arcana baseline
-- PASS: terminator-unit Pyrae Mastery Brotherhood-gated
-- PASS: terminator-unit Pyrae has one correlated power group
-- PASS: terminator-unit Pyrae has seven powers
-- PASS: terminator-unit Pyrae power group structurally visible
-- PASS: terminator-unit Pyrae baseline max0
-- PASS: terminator-unit Pyrae Brotherhood sets max1
+- PASS: Old Terminator sibling power pools removed
+- PASS: veteran Pavoni has one power group
+- PASS: veteran Pavoni has seven powers
+- PASS: veteran Raptora has one power group
+- PASS: veteran Raptora has seven powers
+- PASS: veteran Corvidae has one power group
+- PASS: veteran Corvidae has seven powers
+- PASS: veteran Athanaeans has one power group
+- PASS: veteran Athanaeans has seven powers
+- PASS: veteran Pyrae has one power group
+- PASS: veteran Pyrae has seven powers
+- PASS: terminator-unit no sibling Cult Power group
+- PASS: terminator-unit Pavoni mastery gated
+- PASS: terminator-unit Pavoni one nested power group
+- PASS: terminator-unit Pavoni seven powers
+- PASS: terminator-unit Pavoni hidden baseline
+- PASS: terminator-unit Pavoni min0
+- PASS: terminator-unit Pavoni max1
+- PASS: terminator-unit Pavoni show gate
+- PASS: terminator-unit Pavoni min1 gate
+- PASS: terminator-unit Raptora mastery gated
+- PASS: terminator-unit Raptora one nested power group
+- PASS: terminator-unit Raptora seven powers
+- PASS: terminator-unit Raptora hidden baseline
+- PASS: terminator-unit Raptora min0
+- PASS: terminator-unit Raptora max1
+- PASS: terminator-unit Raptora show gate
+- PASS: terminator-unit Raptora min1 gate
+- PASS: terminator-unit Corvidae mastery gated
+- PASS: terminator-unit Corvidae one nested power group
+- PASS: terminator-unit Corvidae seven powers
+- PASS: terminator-unit Corvidae hidden baseline
+- PASS: terminator-unit Corvidae min0
+- PASS: terminator-unit Corvidae max1
+- PASS: terminator-unit Corvidae show gate
+- PASS: terminator-unit Corvidae min1 gate
+- PASS: terminator-unit Athanaeans mastery gated
+- PASS: terminator-unit Athanaeans one nested power group
+- PASS: terminator-unit Athanaeans seven powers
+- PASS: terminator-unit Athanaeans hidden baseline
+- PASS: terminator-unit Athanaeans min0
+- PASS: terminator-unit Athanaeans max1
+- PASS: terminator-unit Athanaeans show gate
+- PASS: terminator-unit Athanaeans min1 gate
+- PASS: terminator-unit Pyrae mastery gated
+- PASS: terminator-unit Pyrae one nested power group
+- PASS: terminator-unit Pyrae seven powers
+- PASS: terminator-unit Pyrae hidden baseline
+- PASS: terminator-unit Pyrae min0
+- PASS: terminator-unit Pyrae max1
+- PASS: terminator-unit Pyrae show gate
+- PASS: terminator-unit Pyrae min1 gate
+- PASS: At least one Terminator copy validated
