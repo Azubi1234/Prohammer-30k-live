@@ -1,5 +1,1534 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="mod-xx-d9dc5631630a58b49efc" name="Alpha Legion" revision="3" battleScribeVersion="2.03" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="16" library="false"><catalogueLinks><catalogueLink id="link-generic-xx" name="Legiones Astartes — Generic Library" targetId="cat-7b24-e6f1-83a9-4c50" type="catalogue" importRootEntries="true" /></catalogueLinks><sharedRules><rule id="r45-al-legiones-astartes-alpha-legion" name="Legiones Astartes (Alpha Legion)" hidden="false"><description>This model belongs to the XX Legion. It follows the normal Legiones Astartes rules and is affected by rules referring to Legiones Astartes (Alpha Legion). A model may possess only one named Legiones Astartes rule.</description></rule></sharedRules><selectionEntries><selectionEntry type="upgrade" name="Automatic Legion Identity" id="auto-legion-marker-xx" hidden="true" import="true"><constraints><constraint id="auto-legion-marker-xx-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" /><constraint id="auto-legion-marker-xx-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" /></constraints><costs><cost name="Points" typeId="51b2-306e-1021-d207" value="0" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Legion Operatives" hidden="true" id="r41-unit-xx-0-legion-operatives">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="mod-xx-d9dc5631630a58b49efc" name="Alpha Legion" revision="4" battleScribeVersion="2.03" gameSystemId="sys-6f3a-91d2-b47c-5e08" gameSystemRevision="16" library="false"><catalogueLinks><catalogueLink id="link-generic-xx" name="Legiones Astartes — Generic Library" targetId="cat-7b24-e6f1-83a9-4c50" type="catalogue" importRootEntries="true" /></catalogueLinks><sharedRules><rule id="r45-al-legiones-astartes-alpha-legion" name="Legiones Astartes (Alpha Legion)" hidden="false"><description>This model belongs to the XX Legion. It follows the normal Legiones Astartes rules and is affected by rules referring to Legiones Astartes (Alpha Legion). A model may possess only one named Legiones Astartes rule.</description></rule></sharedRules><selectionEntries><selectionEntry type="upgrade" name="Army Configuration" id="config-army" hidden="false" import="true">
+      <modifiers /><constraints>
+        <constraint id="config-army-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" />
+        <constraint id="config-army-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="pts" value="0" />
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cat-config" id="config-army-cat" primary="true" name="Configuration" hidden="false" />
+      </categoryLinks>
+      <rules>
+        <rule name="Choose a Legion" id="config-army-rule" hidden="false">
+          <description>Every Legiones Astartes Detachment must belong to exactly one Legion and must declare an Allegiance. The chosen Legion applies its named Legiones Astartes rule to eligible models in the Detachment. Legion-specific units, wargear, characters and Rites of War are only available where their own entries permit them.</description>
+        </rule>
+        <rule id="r34-supplement-banner" name="Supplementary Units — Opponent Agreement" hidden="false">
+          <description>Lords of War and Aeronautica are supplementary choices. Before the battle, agree with your opponent whether these units are permitted and whether your mission, event, or agreed game size imposes any additional restrictions.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Legion" id="config-legion" hidden="false" defaultSelectionEntryId="legion-xx">
+          <constraints>
+            <constraint id="config-legion-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" automatic="true" />
+            <constraint id="config-legion-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" name="XX Legion — Alpha Legion" id="legion-xx" hidden="false" import="true" defaultAmount="1">
+              <infoLinks><infoLink id="legion-xx-named" name="Legiones Astartes (Alpha Legion)" targetId="r45-al-legiones-astartes-alpha-legion" type="rule" hidden="false" /><infoLink id="legion-xx-mutable-rule" name="Mutable Tactics" targetId="r45-al-mutable-tactics" type="rule" hidden="false" /><infoLink id="legion-xx-hubris" name="Martial Hubris" targetId="r45-al-martial-hubris" type="rule" hidden="false" /><infoLink id="legion-xx-network" name="Infiltration Network" targetId="r45-al-infiltration-network" type="rule" hidden="false" /></infoLinks><modifiers /><constraints>
+                <constraint id="legion-xx-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              <constraint id="legion-xx-fixed-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" automatic="true" /></constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="r46-al-mutable-tactics" name="Mutable Tactics — choose exactly one" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint id="r46-al-mutable-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /><constraint id="r46-al-mutable-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints>
+                  <selectionEntries><selectionEntry id="r46-al-mutable-0" name="Counter-Attack" type="upgrade" hidden="false"><infoLinks><infoLink id="r46-al-mutable-0-effect" name="Counter-Attack" targetId="r36-shared-counter-attack-478972a" type="rule" hidden="false" /></infoLinks><constraints><constraint id="r46-al-mutable-0-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry><selectionEntry id="r46-al-mutable-1" name="Furious Charge" type="upgrade" hidden="false"><infoLinks><infoLink id="r46-al-mutable-1-effect" name="Furious Charge" targetId="r36-shared-furious-charge-5750d05" type="rule" hidden="false" /></infoLinks><constraints><constraint id="r46-al-mutable-1-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry><selectionEntry id="r46-al-mutable-2" name="Infiltrate" type="upgrade" hidden="false"><infoLinks><infoLink id="r46-al-mutable-2-effect" name="Infiltrate" targetId="r36-shared-infiltrate-88c13dc" type="rule" hidden="false" /></infoLinks><constraints><constraint id="r46-al-mutable-2-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry><selectionEntry id="r46-al-mutable-3" name="Move Through Cover" type="upgrade" hidden="false"><infoLinks><infoLink id="r46-al-mutable-3-effect" name="Move Through Cover" targetId="r36-shared-move-through-cover-b95132d" type="rule" hidden="false" /></infoLinks><constraints><constraint id="r46-al-mutable-3-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry><selectionEntry id="r46-al-mutable-4" name="Siege Specialists" type="upgrade" hidden="false"><infoLinks><infoLink id="r46-al-mutable-4-effect" name="Siege Specialists" targetId="r45-al-siege-specialists" type="rule" hidden="false" /></infoLinks><constraints><constraint id="r46-al-mutable-4-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry><selectionEntry id="r46-al-mutable-5" name="Tank Hunters" type="upgrade" hidden="false"><infoLinks><infoLink id="r46-al-mutable-5-effect" name="Tank Hunters" targetId="r36-shared-tank-hunters-f3b906a" type="rule" hidden="false" /></infoLinks><constraints><constraint id="r46-al-mutable-5-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry></selectionEntries></selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Allegiance" id="config-allegiance" hidden="false">
+          <constraints>
+            <constraint id="config-allegiance-min" type="min" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+            <constraint id="config-allegiance-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" name="Loyalist" id="allegiance-loyalist" hidden="false" import="true">
+              <constraints>
+                <constraint id="allegiance-loyalist-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Allegiance: Loyalist" id="allegiance-loyalist-rule" hidden="false">
+                  <description>The Detachment has declared Loyalist Allegiance. Apply any unit, character, wargear or Rite of War restrictions which refer to Allegiance.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Traitor" id="allegiance-traitor" hidden="false" import="true">
+              <constraints>
+                <constraint id="allegiance-traitor-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Allegiance: Traitor" id="allegiance-traitor-rule" hidden="false">
+                  <description>The Detachment has declared Traitor Allegiance. Apply any unit, character, wargear or Rite of War restrictions which refer to Allegiance.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Rite of War (optional)" id="config-rites" hidden="false">
+          <constraints>
+            <constraint id="config-rites-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="true" />
+          </constraints>
+          <rules>
+            <rule name="Rites of War" id="config-rites-rule" hidden="false">
+              <description>A Detachment may normally use no more than one Rite of War and may only do so if it contains a model with Master of the Legion, unless the Rite itself states otherwise. All requirements and limitations of the chosen Rite must be obeyed.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" name="Pride of the Legion" id="rite-pride" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-pride-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Pride of the Legion" id="rite-pride-rule" hidden="false">
+                  <description>Effects — The Legion’s Finest: Legion Veteran Squads and Legion Terminator Squads may be selected as Troops choices. Any Legion-specific Terminator unit which would normally occupy an Elites choice may also be selected as a Troops choice. The army’s compulsory Troops choices must be selected from these units. Limitations — Price of Failure: if every Veteran, Terminator and Legion-specific Terminator unit selected as Troops has been destroyed by the end of the battle, the enemy receives +150 Victory Points in missions using Victory Points.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-pride-of-the-legion" hidden="false">
+                  <description>Veteran and Terminator Troops entries are enabled automatically. Compulsory-Troops composition and Price of Failure still apply.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Orbital Assault" id="rite-orbital" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-orbital-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Orbital Assault" id="rite-orbital-rule" hidden="false">
+                  <description>Effects — Any Legiones Astartes Infantry unit which can be carried by a Drop Pod or Dreadclaw may purchase one at normal cost. Castraferrum and Contemptor Dreadnoughts may purchase a Drop Pod for +50 or Dreadclaw for +65. Units entirely in Terminator or Cataphractii Armour may Deep Strike even if the mission normally forbids it. Any unit which possesses Deep Strike may use it regardless of mission restrictions. If every unit is placed in Reserve through this Rite, the army may begin with no models deployed. Limitations — every unit must either possess Deep Strike or begin embarked in a Drop Pod or Dreadclaw; Independent Characters may satisfy this by joining an eligible unit.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-orbital-assault" hidden="false">
+                  <description>The Rite’s transport, Deep Strike and Reserve permissions apply exactly as written. Capacity and deployment legality remain the player’s responsibility.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Armoured Spearhead" id="rite-spearhead" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-spearhead-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Armoured Spearhead" id="rite-spearhead-rule" hidden="false">
+                  <description>Effects — Any Legiones Astartes Infantry unit which fits entirely within a Land Raider may purchase one for +250 even if normally unavailable. Enemy units suffer -1 Leadership on Morale tests caused by Tank Shock from this army. Limitations — every Infantry unit must begin embarked in a Tank Transport; Independent Characters may join embarked units if capacity permits. Broken Spearhead: if every Tank in the army is destroyed, the enemy receives +150 Victory Points in VP missions.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-armoured-spearhead" hidden="false">
+                  <description>Land Raider transport eligibility and the all-Infantry embarked requirement apply exactly as written.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Armoured Breakthrough" id="rite-breakthrough" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-breakthrough-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Armoured Breakthrough" id="rite-breakthrough-rule" hidden="false">
+                  <description>Effects — Up to two Troops choices may be Predator Squadrons of 1–3 Legion Predators, purchased and upgraded normally; these may satisfy compulsory Troops and follow Vehicle Squadron rules. Predators remain available as Heavy Support normally. Limitations — no more than one Fast Attack choice.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-armoured-breakthrough" hidden="false">
+                  <description>A Troops Predator entry is enabled automatically and limited to two selections. The one-Fast-Attack limit still applies.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Legion Assault Company" id="rite-assault" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-assault-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Legion Assault Company" id="rite-assault-rule" hidden="false">
+                  <description>Effects — compulsory Troops must be Legion Assault Squads and compulsory squads may not remove Jump Packs. Legion Veteran Squads may equip every model with Jump Packs for +10/model and then may not take a Transport. Units entirely equipped with Jump Packs may Deep Strike even if normally forbidden. Limitations — at least one Independent Character must have a Jump Pack; no more than one Heavy Support choice.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-legion-assault-company" hidden="false">
+                  <description>Veterans receive the +10 pts/model squad-wide Jump Pack option automatically; selecting it removes their Transport options. Compulsory Assault Squads, character and Heavy Support requirements still apply.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Legion Breacher Company" id="rite-breacher" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-breacher-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Legion Breacher Company" id="rite-breacher-rule" hidden="false">
+                  <description>Effects — compulsory Troops must be Legion Breacher Squads. Models with Boarding Shields may re-roll results of 1 when making an Invulnerable Save granted by the Boarding Shield. Limitations — at least one Independent Character must have a Boarding Shield; no more than one Fast Attack choice.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-legion-breacher-company" hidden="false">
+                  <description>Boarding Shield rerolls, compulsory Breachers, character requirement and Fast Attack limit apply exactly as written.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Legion Recon Company" id="rite-recon" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-recon-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Legion Recon Company" id="rite-recon-rule" hidden="false">
+                  <description>Effects — compulsory Troops must be Legion Reconnaissance Squads. Units in this army which possess Infiltrate may use it even if the mission would not normally permit Infiltrators. Any model in a Legion Veteran Squad may replace its bolter, or both its bolt pistol and close-combat weapon, with a Sniper Rifle for +5 points. A unit which deployed using Infiltrate or made a pre-game Scout move improves any Cover Save it receives by +1 during the first game turn, to a maximum of 3+. Limitations — no model in the army may be equipped with Terminator Armour or Cataphractii Terminator Armour. All Heavy Support choices must begin the battle in Reserve and enter play using the normal Reserve rules.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-legion-recon-company" hidden="false">
+                  <description>The Veteran Sniper Rifle option is enabled automatically. Generic selectable Terminator armour and the generic Terminator Squad are hidden; any remaining Terminator-armoured model is still prohibited.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Legion Destroyer Company" id="rite-destroyer" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-destroyer-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Legion Destroyer Company" id="rite-destroyer-rule" hidden="false">
+                  <description>Effects — Legion Destroyer Squads may be Troops and compulsory Troops must be Destroyers; Legion-specific Destroyer selection limits are ignored. Up to four models in each Destroyer Squad may replace one bolt pistol with a flamer or grenade launcher for +10/model. Limitations — at least one Destroyer Squad must upgrade its Sergeant to a Moritat; no more than one Heavy Support choice.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-legion-destroyer-company" hidden="false">
+                  <description>A Destroyer Troops entry and Rite-only special-pistol block are enabled automatically. The Moritat and Heavy Support clauses still apply.</description>
+                </rule>
+                <rule id="r39-destroyer-rite-rule" name="Rite of War" hidden="false">
+                  <description>Destroyer Formation: Legion Destroyer Squads may be selected as Troops choices. The army’s compulsory Troops choices must be Legion Destroyer Squads. Any Legion-specific restriction limiting the number of Legion Destroyer Squads which may be selected is ignored while using this Rite of War.
+
+Forbidden Arsenal: Any Legiones Astartes Character in the army that does not normally have access to Phosphex Bombs may take one Phosphex Bomb for +10 points. In addition, for every five models in a Legion Destroyer Squad, up to two Legion Destroyers may replace one Bolt Pistol with a Missile Launcher with Suspensor Web and Rad Missiles for +25 points per model, instead of the normal limit of one model per five. A Missile Launcher equipped with Rad Missiles may only fire Rad Missiles and may not use Frag or Krak Missiles.
+
+Limitations: At least one Legion Destroyer Squad in the army must upgrade its Sergeant to a Moritat. The army may include no more than one Heavy Support choice.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Fury of the Ancients" id="rite-ancients" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-ancients-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Fury of the Ancients" id="rite-ancients-rule" hidden="false">
+                  <description>Effects — Castraferrum and Contemptor Dreadnoughts may be Troops; compulsory Troops must be chosen from them and they do not also occupy Elites. Limitations — at least one Techmarine or Techmarine Coven is required; each destroyed Dreadnought grants the enemy +50 Victory Points in VP missions; no more than one Fast Attack choice.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-fury-of-the-ancients" hidden="false">
+                  <description>Castraferrum and Contemptor Troops entries are enabled automatically. Techmarine, compulsory selection, Fast Attack and Victory Point clauses still apply.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Sky Hunter Phalanx" id="rite-skyhunter" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-skyhunter-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Sky Hunter Phalanx" id="rite-skyhunter-rule" hidden="false">
+                  <description>Effects — Legion Sky Hunter Jetbike Squadrons may be selected as Troops choices. The army’s compulsory Troops choices must be Legion Sky Hunter Jetbike Squadrons. These units do not also occupy a Fast Attack choice. An Independent Character equipped with a Space Marine Bike may upgrade it to a Jetbike for an additional +5 points. The model follows the normal rules for Jetbikes. Once per battle, each Legion Sky Hunter Jetbike Squadron may voluntarily leave the battlefield. If every model can move completely off a table edge, remove the unit to Ongoing Reserves; it returns during the controlling player’s following turn using the normal Outflank rules. Limitations — at least one Independent Character in the army must be mounted on a Jetbike. The army may not include Castraferrum or Contemptor Dreadnoughts. The army may include no more than one Heavy Support choice.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-sky-hunter-phalanx" hidden="false">
+                  <description>Sky Hunters gain a Troops entry and the two generic Dreadnought choices are hidden automatically. The Jetbike character and Heavy Support clauses still apply.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" name="Legion Tactical Company" id="rite-tactical" hidden="false" import="true">
+              <constraints>
+                <constraint id="rite-tactical-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" />
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="pts" value="0" />
+              </costs>
+              <rules>
+                <rule name="Legion Tactical Company" id="rite-tactical-rule" hidden="false">
+                  <description>Effects — compulsory Troops must be Legion Tactical Squads. Once per battle, each Legion Tactical Squad which remained stationary may use Fury of the Legion: each bolter fires one additional shot that Shooting phase; other weapons receive no extra shots; the unit may not charge that turn. Limitations — the army must include at least three Legion Tactical Squads.</description>
+                </rule>
+                <rule name="Builder Effects" id="r35-note-legion-tactical-company" hidden="false">
+                  <description>The three-Tactical-Squad minimum, compulsory Tactical choices and Fury of the Legion rule apply exactly as written.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rite of War — Primarch's Chosen" hidden="false" id="da22-rite-primarchs-chosen">
+              <rules>
+                <rule name="Primarch's Chosen" id="da22-rule-primarchs-chosen" hidden="false">
+                  <description>Requirements: include the Primarch of the Legion; the Primarch is Warlord; army at least 1,500 points. Effects: the Primarch fulfils the compulsory HQ requirement and may be fielded from 1,500 points; Legion Veteran Squads, Legion Terminator Squads, and Legion-specific Terminator units which normally occupy an Elites choice may be selected as Troops and must provide the two compulsory Troops; the Primarch may take an Honour Guard or appropriate Legion bodyguard as a slotless retinue. Limitations: no other Lord of War; no Allied Detachment; no more than one other Master of the Legion; at least half the army's non-vehicle units must have Legiones Astartes; if the Primarch is destroyed all other units in the Detachment cease to be Scoring for the rest of the battle, but may contest.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels Rite of War — The Storm of War" hidden="false" id="da22-rite-storm">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Storm of War" id="da22-rite-storm-rule" hidden="false">
+                  <description>Effects: A 20-model Legion Tactical or Assault Squad may include one Legion Centurion at normal cost; he occupies no HQ slot, becomes part of the squad, may not leave, take a Consul upgrade or be Warlord, and must be Stormwing. Stationary Stormwing units gain their Stormwing re-roll during normal Shooting as well as First Fire/Overwatch. A Stormwing Infantry unit containing a Stormwing Character is Stubborn. Limitations: Warlord must be Stormwing; compulsory Troops must be 20-model Stormwing Tactical or Assault Squads; those compulsory units may not take Dedicated Transports.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels Rite of War — The Unbroken Vow" hidden="false" id="da22-rite-vow">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Unbroken Vow" id="da22-rite-vow-rule" hidden="false">
+                  <description>Effects: Legion Veteran and Terminator Squads may be Troops and compulsory. A Deathwing unit within 6" of an Objective gains Feel No Pain (6+), or improves existing Feel No Pain one step to max 4+. A Deathwing Independent Character within 12" of an Objective gains +1 Attack. Place an additional Oath Objective as close as possible to battlefield centre. Limitations: Warlord Deathwing; compulsory Troops Veteran/Terminator Deathwing. At battle end enemy gains 150 VP if Dark Angels do not control Oath Objective, or 300 VP if enemy controls it, in missions using Victory Points.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels Rite of War — The Eskaton Imperative" hidden="false" id="da22-rite-eskaton">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Eskaton Imperative" id="da22-rite-eskaton-rule" hidden="false">
+                  <description>Effects: Legion Destroyer Squads and Dreadwing Interemptor Squads may be Troops and compulsory. Open ground outside deployment zones is Difficult Terrain. Before deployment place up to three Eskaton Markers outside deployment zones, at least 6" from an edge and 12" apart; within 6" is also Dangerous Terrain. Dreadwing Infantry gain Move Through Cover and Dreadwing models re-roll failed Dangerous Terrain tests. Enemy units within 12" and line of sight of the Warlord suffer -1 Leadership; Fearless unaffected. Limitations: Warlord Dreadwing; compulsory Troops Destroyers/Interemptors Dreadwing. Enemy gains 150 VP at battle end for an eligible unit remaining in its deployment zone, 300 if that unit is Scoring, in VP missions.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels Rite of War — The Steel Fist" hidden="false" id="da22-rite-steel">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Steel Fist" id="da22-rite-steel-rule" hidden="false">
+                  <description>Effects: Legion Predator Strike Squadrons may be Troops and compulsory. Ironwing Infantry of 10 or fewer may buy Land Raider Phobos/Proteus as Dedicated Transport; 11-20 may buy a Spartan, normal capacities apply. A Transport carrying an Ironwing Independent Character gains 6+ invulnerable against shooting, or improves an existing invulnerable by one to max 4+. Limitations: Warlord Ironwing; compulsory Troops Ironwing Predators; every transportable Infantry unit begins embarked; max one Fast Attack choice.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels Rite of War — The Seeker's Arrow" hidden="false" id="da22-rite-arrow">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Seeker's Arrow" id="da22-rite-arrow-rule" hidden="false">
+                  <description>Effects: Legion Bike and Sky Hunter Jetbike Squadrons may be Troops and compulsory. Ravenwing Infantry, Bikes and Jetbikes gain Outflank; Ravenwing Bikes/Jetbikes gain Hit &amp; Run. At start of each Dark Angels turn choose +2" Turbo-Boost/Advance, +2" charge distance, or +2" Consolidation for all Ravenwing units until next Dark Angels turn. Limitations: Warlord Ravenwing; compulsory Troops Ravenwing Bike/Sky Hunter units; max one Heavy Support; no Vehicle unless Fast, Skimmer or both.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dark Angels Rite of War — The Serpent's Bane" hidden="false" id="da22-rite-serpent">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-i" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Serpent's Bane" id="da22-rite-serpent-rule" hidden="false">
+                  <description>Effects: nominate three enemy Priority Targets after armies are selected, chosen from HQ, Elites or Lords of War (or as many as possible). Firewing models attacking a Priority Target re-roll To Hit rolls of 1 and To Wound rolls of 1; against Vehicles re-roll Armour Penetration rolls of 1 instead of To Wound. A Firewing Independent Character gains +1 Attack in melee with a Priority Target. Up to three Firewing Troops units gain Infiltrate. Legion Seeker Squads may be Troops and compulsory. Limitations: Warlord Firewing; compulsory Troops must be Firewing Seeker or Assault Squads. Enemy gains 150 VP for each Priority Target still on battlefield at battle end in VP missions.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Emperor'S Children Rite of War — The Maru Skara" hidden="false" id="r25-rite-iii-0-the-maru-skara">
+              <constraints>
+                <constraint id="r25-rite-iii-0-the-maru-skara-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Maru Skara" id="r25-rite-iii-0-the-maru-skara-rule" hidden="false">
+                  <description>The Maru Skara is one of the most celebrated battle doctrines of the Emperor's Children: a carefully orchestrated feint in which the visible strength of the Legion fixes the enemy in place while a concealed blade manoeuvres to deliver the killing stroke.
+EFFECTS
+THE OPEN BLADE
+All units deployed normally at the beginning of the battle form the Open Blade.
+The army's Warlord must form part of the Open Blade and must begin the battle on the battlefield.
+THE HIDDEN BLADE
+Before deployment, nominate up to three Emperor's Children units selected from the following:
+• Legion Assault Squads
+• Legion Veteran Squads
+• Legion Terminator Squads
+• Palatine Blade Squads
+• Phoenix Terminator Squads
+• Legion Bike Squadrons
+• Legion Sky Hunter Jetbike Squadrons
+An Independent Character may accompany a nominated unit normally.
+Dedicated Transports purchased for a nominated unit form part of the Hidden Blade with that unit.
+All units forming the Hidden Blade must begin the battle in Reserve.
+PERFECTLY TIMED STRIKE
+After deployment zones have been determined but before either army deploys, secretly record:
+• either game turn 2 or game turn 3;
+• either the left or right side table edge.
+Do not reveal this choice to the opposing player.
+At the beginning of the chosen Emperor's Children turn, reveal the recorded choice.
+Every surviving unit of the Hidden Blade becomes available automatically without making a Reserve roll.
+These units enter play from the chosen side table edge.
+They may act normally during the turn in which they arrive.
+THE KILLING STROKE
+During the player turn in which the Hidden Blade arrives, all Emperor's Children units may re-roll failed Advance rolls and failed Charge distance rolls. The second result must be accepted.
+LIMITATIONS
+The army's Warlord must begin the battle as part of the Open Blade.
+The Hidden Blade may contain no more than three units, excluding attached Independent Characters and Dedicated Transports.
+The army may include no more than two Heavy Support choices.
+Immobile units may not be selected.</description>
+                </rule>
+                <rule id="r52-ec-maru-builder" name="New Recruit Effects" hidden="false">
+                  <description>The army may include no more than two Heavy Support choices. Hidden Blade deployment, arrival turn/edge and Killing Stroke are resolved during play as described by the Rite.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Emperor'S Children Rite of War — 3Rd Company Elite" hidden="false" id="r25-rite-iii-1-3rd-company-elite">
+              <constraints>
+                <constraint id="r25-rite-iii-1-3rd-company-elite-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="3Rd Company Elite" id="r25-rite-iii-1-3rd-company-elite-rule" hidden="false">
+                  <description>TRAITOR ONLY
+As the III Legion descended into corruption, entire formations embraced the experimental sonic augmentations first developed amongst the Kakophoni. The most infamous of these formations was the 3rd Company, whose warriors willingly submitted themselves to increasingly extreme surgical and sonic modification.
+EFFECTS
+CHOSEN OF VAIROSEAN
+Kakophoni Squads may be selected as Troops choices. Kakophoni Squads selected as Troops may fulfil compulsory Troops selections.
+All Kakophoni Squads in the Detachment gain the Relentless special rule.
+SONIC ASSAULT
+Any Emperor's Children Infantry unit composed entirely of models wearing Power Armour or Artificer Armour may purchase Sonic Shriekers for +2 points per model. Every eligible model in the unit must purchase the upgrade.
+A unit equipped in this manner follows the normal Sonic Shrieker rules.
+ARMOURY OF EXCESS
+The normal restriction allowing only one Legion Heavy Support Squad to select Sonic Weaponry is removed.
+Up to two Legion Heavy Support Squads may select Sonic Weaponry when using this Rite of War.
+PERFECT CACOPHONY
+A unit in which every surviving model is equipped with either a Sonic Weapon or Sonic Shrieker gains the Fear special rule.
+LIMITATIONS
+This Rite of War may only be selected by a Traitor Emperor's Children Detachment.
+The army must include at least one Kakophoni Squad.
+The army's Warlord must either:
+• be equipped with a Sonic Shrieker; or
+• be a named Character whose rules specifically associate him with the Kakophoni or 3rd Company.
+The army may include no more than one Fortification.</description>
+                </rule>
+                <rule id="r52-ec-third-builder" name="New Recruit Effects" hidden="false">
+                  <description>Kakophoni are available as compulsory-capable Troops and gain Relentless; eligible Power/Artificer Armoured Infantry gain per-model Sonic Shrieker purchases; up to two Sonic Weaponry Heavy Support Squads may be selected. Army requirements from the Rite still apply: Traitor only, at least one Kakophoni, qualifying Warlord, and no more than one Fortification.
+
+Relentless: Model may move and fire Heavy, Ordnance, Salvo or Rapid Fire weapons as if it remained stationary. It may still charge even after firing such weapons.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron Warriors Rite of War — The Hammer Of Olympia" hidden="false" id="r25-rite-iv-0-the-hammer-of-olympia">
+              <constraints>
+                <constraint id="r25-rite-iv-0-the-hammer-of-olympia-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Hammer Of Olympia" id="r25-rite-iv-0-the-hammer-of-olympia-rule" hidden="false">
+                  <description>The Hammer of Olympia represents the characteristic method of war favoured by Perturabo's Grand Battalions: massed infantry advancing beneath disciplined fire while armoured formations grind inexorably forward alongside them.
+EFFECTS
+THE IRON LINE
+The army's compulsory Troops choices must be selected from:
+• Legion Tactical Squads
+• Legion Breacher Siege Squads
+Compulsory Troops choices gain Shrapnel Bolts at no additional points cost.
+HAIL OF FIRE
+Iron Warriors Tactical Squads and Breacher Siege Squads equipped with Shrapnel Bolts may declare a charge after firing Rapid Fire weapons during the Shooting phase. A unit which does so does not receive the normal +1 Attack bonus for charging during that Assault phase.
+A unit which used Fury of the Legion during the same player turn may not benefit from this rule.
+FURY OF OLYMPIA
+Models equipped with Shrapnel Bolts may re-roll To Hit rolls of 1 when firing those weapons at an enemy unit within 12".
+This benefit does not apply when firing Snap Shots.
+ARMOURED RESOLVE
+The following Iron Warriors vehicles ignore Crew Shaken and Crew Stunned results:
+• Legion Predator Strike Squadrons
+• Legion Vindicator Siege Tank Squadrons
+• Land Raiders
+• Legion Spartan Assault Tanks
+Other results on the Vehicle Damage table apply normally.
+LIMITATIONS
+The army's Warlord must possess the Master of the Legion special rule.
+The army's compulsory Troops choices must be Legion Tactical Squads or Legion Breacher Siege Squads.
+No Iron Warriors unit may deploy using Deep Strike.
+Units which are required to enter play by Deep Strike may not be selected.</description>
+                </rule>
+                <rule id="r57-iw-hammer-iron-line" name="The Iron Line" hidden="false">
+                  <description>Compulsory Troops choices must be Legion Tactical Squads or Legion Breacher Siege Squads. Compulsory Troops gain Shrapnel Bolts for free.</description>
+                </rule>
+                <rule id="r57-iw-hammer-hail" name="Hail of Fire" hidden="false">
+                  <description>Iron Warriors Tactical Squads and Breacher Siege Squads with Shrapnel Bolts may charge after firing Rapid Fire weapons. A unit doing so receives no +1 Attack for charging. A unit that used Fury of the Legion that turn may not benefit.</description>
+                </rule>
+                <rule id="r57-iw-hammer-fury" name="Fury of Olympia" hidden="false">
+                  <description>Models equipped with Shrapnel Bolts may re-roll To Hit rolls of 1 when firing those weapons at an enemy within 12". Does not apply to Snap Shots.</description>
+                </rule>
+                <rule id="r57-iw-hammer-armour" name="Armoured Resolve" hidden="false">
+                  <description>Iron Warriors Predator Strike Squadrons, Vindicator Siege Tank Squadrons, Land Raiders and Spartan Assault Tanks ignore Crew Shaken and Crew Stunned results. Other Vehicle Damage results apply normally.</description>
+                </rule>
+                <rule id="r57-iw-hammer-limits" name="Limitations" hidden="false">
+                  <description>The Warlord must possess Master of the Legion. Compulsory Troops must be Tactical Squads or Breacher Siege Squads. No Iron Warriors unit may deploy using Deep Strike, and units required to enter by Deep Strike may not be selected.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron Warriors Rite of War — The Ironfire" hidden="false" id="r25-rite-iv-1-the-ironfire">
+              <constraints>
+                <constraint id="r25-rite-iv-1-the-ironfire-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-iv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Ironfire" id="r25-rite-iv-1-the-ironfire-rule" hidden="false">
+                  <description>The Ironfire is a siege doctrine in which artillery fire is advanced across the battlefield immediately ahead of the Legion's assault formations.
+Iron Warriors infantry advance through explosions, collapsing structures and clouds of debris, trusting their gunners to place each successive salvo only metres ahead of their position.
+EFFECTS
+ARTILLERY COLUMN
+One Legion Artillery Tank Squadron may be selected as a non-compulsory Troops choice.
+An Artillery Tank Squadron selected in this manner:
+• does not occupy a Heavy Support choice;
+• may not fulfil a compulsory Troops selection;
+• does not count as a Scoring Unit unless it would normally do so for another reason.
+The normal 0–1 restriction on Legion Artillery Tank Squadrons still applies.
+ROLLING BOMBARDMENT
+When an Iron Warriors Barrage weapon fires at a point within 12" of a friendly Iron Warriors unit, reduce its scatter distance.
+If the attack would normally scatter 2D6", it scatters only D6" instead.
+After resolving the Barrage attack, place an Ironfire Marker at the final centre point of the Blast marker.
+WALKING THE FIRE
+When another Iron Warriors Barrage weapon fires, it does not scatter if the initial target point is:
+• within 18" of an Ironfire Marker; AND
+• within 6" of a friendly Iron Warriors unit.
+After resolving the attack, place a new Ironfire Marker at the centre of the Blast marker as normal.
+If an Iron Warriors Shooting phase ends without a new Ironfire Marker being placed, remove all Ironfire Markers from the battlefield.
+RIDE THE IRONFIRE
+Iron Warriors Infantry units with at least one model within 6" of an Ironfire Marker gain the Fearless special rule.
+This benefit lasts only while at least one model in the unit remains within 6" of an Ironfire Marker.
+LIMITATIONS
+The army's Warlord must possess the Master of the Legion special rule.
+The army must contain at least one unit equipped with a Barrage weapon.
+If the mission designates one player as the Attacker and the other as the Defender, the Iron Warriors must be the Attacker.
+The army may not include a Fortification.</description>
+                </rule>
+                <rule id="r57-iw-ironfire-column" name="Artillery Column" hidden="false">
+                  <description>One Legion Artillery Tank Squadron may be selected as a non-compulsory Troops choice. It does not occupy Heavy Support, may not fulfil compulsory Troops, and is not Scoring unless it would normally be. The normal 0–1 restriction still applies.</description>
+                </rule>
+                <rule id="r57-iw-ironfire-rolling" name="Rolling Bombardment" hidden="false">
+                  <description>When an Iron Warriors Barrage weapon fires at a point within 12" of a friendly Iron Warriors unit, reduce scatter from 2D6" to D6". After resolving it, place an Ironfire Marker at the final centre point of the Blast marker.</description>
+                </rule>
+                <rule id="r57-iw-ironfire-walking" name="Walking the Fire" hidden="false">
+                  <description>A later Iron Warriors Barrage weapon does not scatter if its initial target point is within 18" of an Ironfire Marker and within 6" of a friendly Iron Warriors unit. After resolving, place a new Ironfire Marker. If the Shooting phase ends without placing a new Ironfire Marker, remove all Ironfire Markers.</description>
+                </rule>
+                <rule id="r57-iw-ironfire-ride" name="Ride the Ironfire" hidden="false">
+                  <description>Iron Warriors Infantry units with at least one model within 6" of an Ironfire Marker gain Fearless while that condition remains true.
+
+Fearless: Automatically passes all Morale and Pinning tests. May not Take Cover! or choose to voluntarily fail a break test.</description>
+                </rule>
+                <rule id="r57-iw-ironfire-limits" name="Limitations" hidden="false">
+                  <description>The Warlord must possess Master of the Legion. The army must contain at least one Barrage weapon. If the mission has Attacker/Defender roles, the Iron Warriors must be the Attacker. The army may not include a Fortification.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="White Scars Rite of War — Chogorian Brotherhood" hidden="false" id="r25-rite-v-0-chogorian-brotherhood">
+              <constraints>
+                <constraint id="r25-rite-v-0-chogorian-brotherhood-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-v" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Chogorian Brotherhood" id="r25-rite-v-0-chogorian-brotherhood-rule" hidden="false">
+                  <description>The Chogorian Brotherhood is the archetypal war formation of the V Legion: a rapidly moving host of mounted warriors supported by mobile infantry and reconnaissance elements, striking from unexpected directions before disappearing beyond retaliation.
+EFFECTS
+RIDE LIKE THE WIND
+Legion Sky Hunter Jetbike Squadrons may be selected as Troops choices.
+Legion Bike Squadrons and Legion Sky Hunter Jetbike Squadrons may fulfil compulsory Troops selections.
+LIGHTNING ENCIRCLEMENT
+The following White Scars units gain the Outflank special rule:
+• Legion Bike Squadrons
+• Legion Sky Hunter Jetbike Squadrons
+• Legion Attack Bike Squadrons
+• Legion Land Speeder Squadrons
+• Javelin Attack Speeder Squadrons
+In addition, White Scars Infantry units gain Outflank provided that the unit contains no model wearing Terminator Armour or carrying a Heavy weapon. A Dedicated Transport purchased for a unit deploying by Outflank may enter play with that unit.
+MASTER OF THE HUNT
+The White Scars player may re-roll Reserve rolls for units in this Detachment. The player may choose to re-roll either a successful or failed Reserve roll. The second result must be accepted.
+STRIKE AND VANISH
+A White Scars Bike or Jetbike unit which successfully uses Hit &amp; Run may roll one additional D6 for its Hit &amp; Run movement and discard the lowest result.
+LIMITATIONS
+The army's Warlord must be mounted on either:
+• a Space Marine Bike; or
+• a Jetbike.
+The army's compulsory Troops choices must be Legion Bike Squadrons or Legion Sky Hunter Jetbike Squadrons.
+The army may include no more than one Heavy Support choice. If every Bike and Jetbike unit in the Detachment has been completely destroyed by the end of the battle, the enemy receives an additional 150 Victory Points. This penalty only applies in missions using Victory Points.</description>
+                </rule>
+                <rule id="r60-ws-chog-mechanics" name="Implemented Roster Effects" hidden="false">
+                  <description>Sky Hunter Jetbike Squadrons become Troops; Bike and Sky Hunter Squadrons may fulfil compulsory Troops; Heavy Support is limited to one choice. Apply Lightning Encirclement, Master of the Hunt, Strike and Vanish and Warlord/compulsory-Troops restrictions as written in the Rite.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="White Scars Rite of War — The Sagyar Mazan" hidden="false" id="r25-rite-v-1-the-sagyar-mazan">
+              <constraints>
+                <constraint id="r25-rite-v-1-the-sagyar-mazan-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-v" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Sagyar Mazan" id="r25-rite-v-1-the-sagyar-mazan-rule" hidden="false">
+                  <description>LOYALIST ONLY
+The Sagyar Mazan are warriors condemned by dishonour, disobedience or catastrophic failure. Rather than face execution at the hands of their brothers, these penitents are permitted to seek absolution through death in battle.
+They do not fight for survival. They fight so that their deaths may have meaning.
+EFFECTS
+DEATH SEEKERS
+Whenever a non-vehicle White Scars unit from this Detachment is completely destroyed and would award Victory Points to the enemy, roll a D6.
+1–3: Resolve Victory Points normally.
+4–5: The destroyed unit awards no Victory Points.
+6: The destroyed unit awards no Victory Points and the White Scars player instead gains 50 Victory Points.
+This roll is made separately for each destroyed unit.
+THE SERPENT'S EYE
+During the first round of any close combat, non-vehicle White Scars units from this Detachment gain the Fearless special rule. This applies whether the unit charged or was charged.
+NOT YET DEAD
+Non-vehicle White Scars units gain Feel No Pain (6+). If a unit already possesses Feel No Pain, improve its Feel No Pain roll by one step, to a maximum of 4+.
+EBON KESHIG
+Ebon Keshig units may be selected as Troops choices. They may fulfil compulsory Troops selections. This rule has no effect until the Ebon Keshig army list entry is used.
+LIMITATIONS
+SEEK DEATH, DO NOT HIDE FROM IT
+No unit in the Detachment may voluntarily begin the battle in Reserve. Units which are required by their own rules to begin in Reserve may not be selected.
+NO PATH OF RETREAT
+Units in this Detachment may not voluntarily withdraw from close combat. If they win a close combat and the enemy retreats, they must Pursue whenever they are able to do so.
+THE PENITENT HOST
+This Rite may only be used by a Loyalist White Scars Detachment. The Detachment may not include Jaghatai Khan.The army may not include a Fortification. The army may never contain more Vehicle units than non-vehicle Infantry units.</description>
+                </rule>
+                <rule id="r60-ws-sag-mechanics" name="Implemented Roster Effects" hidden="false">
+                  <description>Ebon Keshig become Troops and may fulfil compulsory Troops. This Rite is Loyalist only, may not include Jaghatai Khan, may not include Fortifications and may never contain more Vehicle units than non-vehicle Infantry units. Death Seekers, The Serpent’s Eye, Not Yet Dead and No Path of Retreat apply as written.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Space Wolves Rite of War — The Pale Hunters" hidden="false" id="r25-rite-vi-0-the-pale-hunters">
+              <constraints>
+                <constraint id="r25-rite-vi-0-the-pale-hunters-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Pale Hunters" id="r25-rite-vi-0-the-pale-hunters-rule" hidden="false">
+                  <description>The Pale Hunters represent the Rout at its most patient. The prey is encircled, exhausted and driven from safety before the Wolves close from every direction for the kill.
+EFFECTS
+THE GREAT HUNT
+Add +1 to Reserve rolls made for Space Wolves units in this Detachment.
+HUNTERS WITHOUT PEER
+All non-vehicle Space Wolves units gain the Hit &amp; Run special rule provided that the unit contains no model wearing any form of Terminator Armour. Unlike normal Hit &amp; Run, a unit which gains the rule through The Pale Hunters moves 2D6" after successfully disengaging rather than the normal 3D6".
+THE KILLING BLOW
+During an Assault phase in which a Space Wolves unit successfully charged, models in that unit gain one additional Attack.
+This is in addition to the normal +1 Attack for charging. This bonus does not apply to a unit making a Disordered Charge or to a unit which would otherwise receive no charging bonus.
+PACK HUNTERS
+When two or more friendly Space Wolves units are engaged with the same enemy unit, each participating Space Wolves unit adds +1 to its combat-resolution score. This bonus is not cumulative regardless of how many Space Wolves units are involved.
+LIMITATIONS
+The army may include no more than one Heavy Support choice.
+The army may not include:
+• Legion Artillery Tank Squadrons;
+• Rapier Weapons Batteries;
+• Drop Pods;
+• Dreadnought Drop Pods;
+• Dreadclaw Drop Pods.
+A model wearing any form of Terminator Armour does not gain Hit &amp; Run from this Rite.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Space Wolves Rite of War — The Bloodied Claws" hidden="false" id="r25-rite-vi-1-the-bloodied-claws">
+              <constraints>
+                <constraint id="r25-rite-vi-1-the-bloodied-claws-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Bloodied Claws" id="r25-rite-vi-1-the-bloodied-claws-rule" hidden="false">
+                  <description>There are battles in which manoeuvre and patience serve no purpose. When Russ orders the enemy line broken, the Rout commits itself to a single overwhelming assault intended to tear the heart from the foe in one act of controlled savagery.
+EFFECTS
+BREAK THE LINE
+Space Wolves units add +1 to their combat-resolution score while at least half of the models in the unit are within the enemy deployment zone.
+This bonus is not cumulative with itself.
+HOWL OF THE DEATH WOLF
+Once per battle, at the beginning of a Space Wolves turn, the Warlord may unleash the Howl of the Death Wolf.
+Until the end of that player turn:
+• Space Wolves units may re-roll their Advance roll;
+• the normal charge distance of Space Wolves units is increased from 6" to 7".
+A re-rolled Advance result must be accepted.
+UNSTOPPABLE VIOLENCE
+During an Assault phase in which a Space Wolves unit charges an enemy unit that is already engaged by another friendly Space Wolves unit, that charging unit gains the Furious Charge special rule for that Assault phase.
+BLOODIED CLAWS
+Grey Slayer Squads and Legion Assault Squads must declare a charge during the Assault phase if there is an enemy unit within their legal charge distance. If more than one enemy unit is within range, the Space Wolves player may choose which enemy unit is charged.
+LIMITATIONS
+NO PREY LEFT UNHUNTED
+Grey Slayer Squads may fulfil compulsory Troops selections when using this Rite.
+At least one compulsory Troops choice must be a Grey Slayer Squad.
+NO PATH OF RETREAT
+Units in this Detachment may not voluntarily withdraw from close combat.
+If a Space Wolves unit wins a close combat and an enemy unit retreats, the Space Wolves must Pursue whenever they are able to do so.
+THE BREAKING OF THE LINE
+The Detachment may not include:
+• Artillery units;
+• units with the Slow and Purposeful special rule;
+• Immobile units;
+• Fortifications.
+The Detachment may not include an Allied Detachment belonging to another Space Marine Legion.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Imperial Fists Rite of War — The Stone Gauntlet" hidden="false" id="r25-rite-vii-0-the-stone-gauntlet">
+              <constraints>
+                <constraint id="r25-rite-vii-0-the-stone-gauntlet-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Stone Gauntlet" id="r25-rite-vii-0-the-stone-gauntlet-rule" hidden="false">
+                  <description>The Stone Gauntlet is the embodiment of the VII Legion's doctrine of unyielding defence.
+Warriors advance shoulder to shoulder behind interlocking shields, absorbing the fury of the enemy before crushing resistance beneath a methodical counter-assault.
+EFFECTS
+WARDERS OF THE PHALANX
+Phalanx Warder Squads may be selected as Troops choices.
+They may fulfil compulsory Troops selections.
+Legion Breacher Siege Squads may also fulfil compulsory Troops selections normally.
+SHIELD WALL
+An Imperial Fists Infantry unit in which every model is equipped with either a Boarding Shield or Vigil Pattern Storm Shield may form a Shield Wall. The Shield Wall is active provided that:
+• the unit did not Advance during its preceding Movement phase;
+• the unit is not Falling Back;
+• the unit did not charge during the current player turn.
+While the Shield Wall is active, models in the unit may re-roll failed Invulnerable Saves granted by Boarding Shields or Vigil Pattern Storm Shields. A re-rolled save may never be re-rolled again.
+UNYIELDING LINE
+While its Shield Wall is active, the unit gains the Stubborn special rule and may re-roll failed Pinning tests.
+THE HAMMER BEHIND THE SHIELD
+Models equipped with Boarding Shields gain the Hammer of Wrath special rule.
+This uses the normal ProHammer definition of Hammer of Wrath.
+A model does not receive an additional attack; instead, one of its normally allowed attacks may be resolved at Initiative 10 during a turn in which it charges.
+LIMITATIONS
+The army's compulsory Troops choices must be selected from:
+• Legion Breacher Siege Squads
+• Phalanx Warder Squads
+The Detachment must include at least one Independent Character equipped with either a Boarding Shield or Vigil Pattern Storm Shield.
+No unit in the Detachment may voluntarily deploy using Deep Strike.
+The army may include no more than one Fast Attack choice.</description>
+                </rule>
+                <rule id="r64-if-r25-rite-vii-0-the-stone-gauntlet-full" name="The Stone Gauntlet" hidden="false">
+                  <description>Phalanx Warder Squads may be selected as Troops and fulfil compulsory Troops; Breacher Siege Squads may also fulfil compulsory Troops. A shield-equipped Infantry unit may form a Shield Wall if it did not Advance in its preceding Movement phase, is not Falling Back and did not charge this player turn. While active, failed Invulnerable Saves from Boarding Shields or Vigil Pattern Storm Shields may be re-rolled; the unit gains Stubborn and may re-roll failed Pinning tests. Boarding Shield models gain Hammer of Wrath using the ProHammer definition. Compulsory Troops must be Breacher Siege Squads or Phalanx Warders. The Detachment must include at least one Independent Character with a Boarding Shield or Vigil Pattern Storm Shield. No unit may voluntarily deploy by Deep Strike. Maximum one Fast Attack choice.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Imperial Fists Rite of War — Hammerfall Strike Force" hidden="false" id="r25-rite-vii-1-hammerfall-strike-force">
+              <constraints>
+                <constraint id="r25-rite-vii-1-hammerfall-strike-force-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r67-if-hammer-hide-dorn" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="r41-unit-vii-9-vii-rogal-dorn-the-praetorian-of-terra" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Hammerfall Strike Force" id="r25-rite-vii-1-hammerfall-strike-force-rule" hidden="false">
+                  <description>Originally devised for forces deployed from the Phalanx, the Hammerfall Strike Force concentrates elite ship-borne formations for sudden teleport assaults into the heart of the enemy position.
+EFFECTS
+LANDING FORCE
+Phalanx Warder Squads may be selected as Troops choices.
+They may fulfil compulsory Troops selections.
+TELEPORT ARRAY
+Any Imperial Fists Infantry unit may purchase Teleportation Transponders for +15 points per unit.
+An Imperial Fists Independent Character may purchase Teleportation Transponders for +10 points.
+This overrides the normal restriction limiting Teleportation Transponders to models wearing Terminator Armour.
+A unit equipped with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike.
+An Independent Character intending to Deep Strike as part of another unit must purchase Teleportation Transponders separately.
+BLINDING LUMINESCENCE
+An Imperial Fists unit arriving by Deep Strike using Teleportation Transponders gains the Shrouded special rule from the moment it is placed on the battlefield until the beginning of its next player turn.
+After the unit has been placed, every enemy unit with at least one model:
+• within 12" of the arriving unit; and
+• with line of sight to at least one model in the arriving unit
+must immediately take an Initiative test. If the test is failed, that enemy unit suffers the effects of the Blind special rule:
+• Weapon Skill 1
+• Ballistic Skill 1
+until the end of its next player turn.
+Each enemy unit only makes one such test per arriving Imperial Fists unit.
+LIMITATIONS
+The army's Warlord must be equipped with Teleportation Transponders.
+Every Vehicle in the Detachment must begin the battle in Reserve.
+The Detachment may not include a Fortification.</description>
+                </rule>
+                <rule id="r64-if-r25-rite-vii-1-hammerfall-strike-force-full" name="Hammerfall Strike Force" hidden="false">
+                  <description>Phalanx Warder Squads may be selected as Troops and fulfil compulsory Troops. Any Imperial Fists Infantry unit may buy Teleportation Transponders for +15 points per unit and any Imperial Fists Independent Character for +10, overriding the Terminator-only restriction. A unit arriving by Deep Strike using Transponders gains Shrouded until the beginning of its next player turn; after placement, enemy units within 12 inches and line of sight test Initiative or suffer Blind until the end of their next player turn. The Warlord must have Transponders; every Vehicle must begin in Reserve; no Fortification may be included.</description>
+                </rule>
+              </rules>
+              <selectionEntryGroups>
+                </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Imperial Fists Rite of War — Templar Assault" hidden="false" id="r25-rite-vii-2-templar-assault">
+              <constraints>
+                <constraint id="r25-rite-vii-2-templar-assault-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-vii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Templar Assault" id="r25-rite-vii-2-templar-assault-rule" hidden="false">
+                  <description>The Templar brethren represent the martial traditions of the VII Legion at their most aggressive.
+Where other Imperial Fists formations hold the line or break fortifications through methodical siegecraft, a Templar assault is a direct application of overwhelming force intended to destroy the enemy in close combat.
+EFFECTS
+TEMPLAR HOST
+Templar Brethren Squads may be selected as Troops choices.
+They may fulfil compulsory Troops selections.
+CRUSADING ASSAULT
+During an Assault phase in which a Templar Brethren Squad charged after disembarking from a vehicle with the Assault Vehicle special rule during the same player turn, the squad gains the Furious Charge special rule. In addition, its normal charge distance is increased from 6" to 7" for that Assault phase.
+SWORDS OF THE LEGION
+During the first round of a close combat in which a Templar Brethren Squad charged, models in that squad may re-roll To Hit rolls of 1 with:
+• Rending Weapons
+• Power Weapons
+• Relic Blades
+• other weapons specifically stated to count as swords
+ASSAULT TRANSPORTS
+A Templar Brethren Squad may select one of the following as a Dedicated Transport at its normal points cost:
+• Land Raider Phobos
+• Land Raider Proteus
+A Templar Brethren Squad of a size which cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost.
+All normal Transport Capacity restrictions apply.
+LIMITATIONS
+The army's compulsory Troops choices must be Templar Brethren Squads.
+The army may include no more than one Fast Attack choice.
+The army may not include a Fortification.
+The army's Warlord must be equipped with a Power Weapon, Rending Weapon, Relic Blade or another sword-like close-combat weapon which ignores Armour Saves.</description>
+                </rule>
+                <rule id="r64-if-r25-rite-vii-2-templar-assault-full" name="Templar Assault" hidden="false">
+                  <description>Templar Brethren Squads may be selected as Troops and fulfil compulsory Troops. If a Templar Brethren Squad charges after disembarking from an Assault Vehicle in the same turn it gains Furious Charge and its normal charge distance increases from 6 inches to 7 inches. In the first round of a combat in which it charged, models may re-roll To Hit rolls of 1 with Rending Weapons, Power Weapons, Relic Blades and other sword-like weapons. Compulsory Troops must be Templar Brethren. While Templar Assault is selected, Templar Brethren Squads ignore their normal 0–1 restriction. Maximum one Fast Attack choice; no Fortification. The Warlord must have a Power Weapon, Rending Weapon, Relic Blade or other sword-like close-combat weapon which ignores Armour Saves.</description>
+                </rule>
+              </rules>
+              <selectionEntryGroups>
+                </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Night Lords Rite of War — Terror Assault" hidden="false" id="r25-rite-viii-0-terror-assault">
+              <constraints>
+                <constraint id="r25-rite-viii-0-terror-assault-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r71-nl-ta-0" name="Cover of Darkness" hidden="false">
+                  <description>The first Battle Round uses Night Fighting. At the beginning of the second Battle Round roll a D6; on a 3+ Night Fighting remains for round two. If it remained in round two, roll at the beginning of round three; on a 6 Night Fighting remains for round three. It ends automatically at the beginning of round four. Night Lords use their normal Night Vision throughout.</description>
+                </rule>
+                <rule id="r71-nl-ta-1" name="Terror Formations" hidden="false">
+                  <description>Night Raptor Squads and Terror Squads may be selected as Troops and may fulfil compulsory Troops selections. At least one compulsory Troops selection must be a Night Raptor Squad or Terror Squad.</description>
+                </rule>
+                <rule id="r71-nl-ta-2" name="Terror Attack" hidden="false">
+                  <description>Whenever the opposing player makes Reserve rolls, after all rolls have been made, the Night Lords player may force one successful Reserve roll to be re-rolled. The second result is accepted and a die may never be re-rolled more than once.</description>
+                </rule>
+                <rule id="r71-nl-ta-3" name="Rapid Strike Force" hidden="false">
+                  <description>The Detachment uses 0–4 Fast Attack and 0–1 Heavy Support. All other Force Organisation limits remain unchanged.</description>
+                </rule>
+                <rule id="r71-nl-ta-4" name="Limitations" hidden="false">
+                  <description>The Detachment must include at least one Night Raptor Squad or Terror Squad, may include no more than one Heavy Support choice, and may not include a Fortification.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Night Lords Rite of War — Horror Cult" hidden="false" id="r25-rite-viii-1-horror-cult">
+              <constraints>
+                <constraint id="r25-rite-viii-1-horror-cult-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-viii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r71-nl-hc-traitor" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r71-nl-hc-0" name="Raptor Cult" hidden="false">
+                  <description>Night Raptor Squads may be selected as Troops and may fulfil compulsory Troops selections. At least one compulsory Troops selection must be a Night Raptor Squad.</description>
+                </rule>
+                <rule id="r71-nl-hc-1" name="Beyond Judgement" hidden="false">
+                  <description>Any Night Lords Infantry or Jump Infantry squad may purchase the Beyond Judgement upgrade for +25 points per unit. Every model is treated as equipped with Trophies of Judgement; measure the 8-inch penalty from any model. The unit also gains Fear. Leadership penalties from multiple Trophies remain non-cumulative.
+
+Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee engagement.</description>
+                </rule>
+                <rule id="r71-nl-hc-2" name="Vox-Scream Broadcast" hidden="false">
+                  <description>Once per battle, at the beginning of any Night Lords player turn, declare a Vox-Scream Broadcast. Until the beginning of the next Night Lords player turn all enemy units suffer -1 Leadership. This may combine with Trophies of Judgement.</description>
+                </rule>
+                <rule id="r71-nl-hc-3" name="The Scent of Blood" hidden="false">
+                  <description>A non-Vehicle Night Lords unit using this Rite must declare a charge in its Assault phase if it is normally eligible to charge and at least one legal enemy target is within its current charge distance. If several targets are eligible, the Night Lords player chooses. A unit is never required to declare an illegal charge.</description>
+                </rule>
+                <rule id="r71-nl-hc-4" name="Limitations" hidden="false">
+                  <description>Traitor Night Lords only. The Detachment may not include a Fortification. A Night Lords unit using this Rite may not voluntarily withdraw from close combat.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blood Angels Rite of War — The Day Of Revelation" hidden="true" id="r25-rite-ix-0-the-day-of-revelation">
+              <constraints>
+                <constraint id="r25-rite-ix-0-the-day-of-revelation-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-ix" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r74-ba-rev-legion" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-ix" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r75-ba-rev-legion-show" type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-ix" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r75-ba-rev-host" name="Host of Angels" hidden="false">
+                  <description>Legion Veteran Squads equipped with Jump Packs may be selected as Troops choices and may fulfil compulsory Troops selections. Legion Assault Squads remain Troops choices normally.</description>
+                </rule>
+                <rule id="r75-ba-rev-revealed" name="The Day is Revealed" hidden="false">
+                  <description>Blood Angels units composed entirely of Jump Infantry may deploy using Deep Strike even if the mission would not normally permit it. All Jump Infantry units placed in Reserve using this Rite must enter play using Deep Strike.</description>
+                </rule>
+                <rule id="r75-ba-rev-wings" name="On Wings of Fire" hidden="false">
+                  <description>At the beginning of the second Blood Angels player turn, all Blood Angels Jump Infantry units currently held in Reserve become available automatically. No Reserve rolls are made and they must enter play during that turn using Deep Strike.</description>
+                </rule>
+                <rule id="r75-ba-rev-shock" name="Angelic Shock Assault" hidden="false">
+                  <description>A Blood Angels Jump Infantry unit which charges during the same turn it arrived using Deep Strike receives the normal +1 Attack bonus for charging and the normal benefits of any Assault Grenades it carries. This overrides the normal ProHammer restriction on charging after Deep Strike. All other Deep Strike rules apply normally.</description>
+                </rule>
+                <rule id="r75-ba-rev-limits" name="Limitations" hidden="false">
+                  <description>The army Warlord must be equipped with a Jump Pack. At least half of the non-Vehicle units in the Detachment, rounding up, must be composed entirely of models equipped with Jump Packs. Every Jump Infantry unit must begin the battle in Reserve and enter play using Deep Strike. The Detachment may include no more than one Heavy Support choice and may not include a Fortification. New Recruit enforces the Warlord, compulsory Troops and Heavy Support restrictions; the half-army ratio and deployment-state restrictions remain player-checked.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blood Angels Rite of War — The Day Of Sorrows" hidden="true" id="r25-rite-ix-1-the-day-of-sorrows">
+              <constraints>
+                <constraint id="r25-rite-ix-1-the-day-of-sorrows-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-ix" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r74-ba-sor-legion" type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-ix" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier id="r75-ba-sor-legion-show" type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-ix" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r75-ba-sor-bitter" name="The Bitter End" hidden="false">
+                  <description>When a non-Vehicle Blood Angels unit is reduced to half or fewer of the number of models with which it began the battle, it gains Stubborn and Feel No Pain (6+). These rules remain for the rest of the battle. If it already has Feel No Pain, improve that roll by one step instead, to a maximum of 4+.
+
+Stubborn: Ignore negative Leadership modifiers on Morale and Pinning tests.</description>
+                </rule>
+                <rule id="r75-ba-sor-fury" name="Sorrow Becomes Fury" hidden="false">
+                  <description>A Blood Angels unit affected by The Bitter End gains +1 to its combat-resolution score whenever it wins a close combat. This bonus is not cumulative.</description>
+                </rule>
+                <rule id="r75-ba-sor-death" name="No Death Unremembered" hidden="false">
+                  <description>Whenever a Blood Angels unit affected by The Bitter End is completely destroyed, every friendly non-Vehicle Blood Angels unit with at least one model within 6 inches may re-roll its next failed Morale or Pinning test before the end of the following Blood Angels player turn.
+
+Pinning: Unsaved Wounds caused by this weapon force the unit to take a Pinning Test.</description>
+                </rule>
+                <rule id="r75-ba-sor-hold" name="Hold Until the Last" hidden="false">
+                  <description>Legion Tactical Squads and Legion Breacher Siege Squads may re-roll failed Pinning tests while they have at least one model within 6 inches of an Objective.</description>
+                </rule>
+                <rule id="r75-ba-sor-limits" name="Limitations" hidden="false">
+                  <description>The army compulsory Troops choices must be selected from Legion Tactical Squads, Legion Assault Squads or Legion Breacher Siege Squads. Units affected by The Bitter End may not voluntarily withdraw from close combat. If such a unit wins a close combat and the enemy retreats, it must Pursue whenever normally permitted. The Detachment may not include a Fortification.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron Hands Rite of War — The Head Of The Gorgon" hidden="true" id="r25-rite-x-0-the-head-of-the-gorgon">
+              <constraints>
+                <constraint id="r25-rite-x-0-the-head-of-the-gorgon-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier id="r81-ih-head-visible" type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-x" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r81-ih-head-ground" name="Ground of Choice" hidden="false">
+                  <description>All Iron Hands Infantry units gain Stubborn while at least half of the unit’s surviving models are within the Iron Hands deployment zone.
+
+Stubborn: Ignore negative Leadership modifiers on Morale and Pinning tests.</description>
+                </rule>
+                <rule id="r81-ih-head-relic" name="Relics of War" hidden="false">
+                  <description>All Iron Hands Vehicles in the Detachment receive Blessed Autosimulacra at no additional points cost.</description>
+                </rule>
+                <rule id="r81-ih-head-scions" name="Scions of Iron" hidden="false">
+                  <description>Any Iron Hands Infantry unit of ten models or fewer which may normally select a Rhino as a Dedicated Transport may instead select a Land Raider Phobos or Land Raider Proteus as a Dedicated Transport at normal points cost. Normal Transport Capacity restrictions apply.</description>
+                </rule>
+                <rule id="r81-ih-head-encirclement" name="Armoured Encirclement" hidden="false">
+                  <description>Iron Hands Vehicles with the Tank unit type gain Outflank if placed in Reserve. A Dedicated Transport carrying a unit may Outflank with its passengers as one Reserve entry.
+
+Outflank: When units with this ability enter from Reserve, roll a D6: on 1-2 enter from the player's left table edge; on 3-4 enter from the player's right; on 5-6 the player chooses the side edge. The unit may alternatively enter from Reserve normally from the player's normal table edge(s).</description>
+                </rule>
+                <rule id="r81-ih-head-limits" name="Limitations" hidden="false">
+                  <description>No more than one Fast Attack choice. No more than one Consul, excluding Forge Lords. No Allied Detachment drawn from another Space Marine Legion.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron Hands Rite of War — Company Of Bitter Iron" hidden="true" id="r25-rite-x-1-company-of-bitter-iron">
+              <constraints>
+                <constraint id="r25-rite-x-1-company-of-bitter-iron-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier id="r81-ih-bitter-visible" type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-x" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r81-ih-bitter-company" name="Company of Immortals" hidden="false">
+                  <description>Medusan Immortal Squads may be selected as Troops and fulfil compulsory Troops selections. At least one compulsory Troops choice must be a Medusan Immortal Squad.</description>
+                </rule>
+                <rule id="r81-ih-bitter-hatred" name="Immortal Hatred" hidden="false">
+                  <description>All units with Legiones Astartes (Iron Hands) gain Hatred against Traitor forces.
+
+Hatred: If a unit with Hatred is engaged in melee combat against a hated enemy type, and was not engaged in melee combat with that enemy type during the prior turn, the unit may re-roll all failed close combat To Hit rolls against the hated target.</description>
+                </rule>
+                <rule id="r81-ih-bitter-duty" name="Bitter Duty" hidden="false">
+                  <description>A Medusan Immortal Squad gains Fearless while the majority of its surviving models are within the enemy deployment zone.
+
+Fearless: Automatically passes all Morale and Pinning tests. May not Take Cover! or choose to voluntarily fail a break test.</description>
+                </rule>
+                <rule id="r81-ih-bitter-purpose" name="No Death Without Purpose" hidden="false">
+                  <description>When a Medusan Immortal Squad is destroyed while the majority of its models were within the enemy deployment zone immediately before destruction, every friendly Iron Hands unit within 6 inches may immediately re-roll any failed Morale or Pinning test required as a result.</description>
+                </rule>
+                <rule id="r81-ih-bitter-limits" name="Limitations" hidden="false">
+                  <description>Loyalist Iron Hands only. No Allied Detachment. Ferrus Manus may not be included.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World Eaters Rite of War — Berserker Assault" hidden="false" id="r25-rite-xii-0-berserker-assault">
+              <constraints>
+                <constraint id="r25-rite-xii-0-berserker-assault-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Berserker Assault" id="r25-rite-xii-0-berserker-assault-rule" hidden="false">
+                  <description>A Berserker Assault commits the XII Legion to a single overwhelming attack, massed assault formations racing ahead of their support elements to close with the enemy before disciplined resistance can be organised.
+EFFECTS
+THE RED HAND
+Rampager Squads may be selected as Troops choices and may fulfil compulsory Troops selections.
+Legion Assault Squads may fulfil compulsory Troops selections normally.
+HEADLONG ASSAULT
+World Eaters Infantry and Jump Infantry units gain the Fleet special rule.
+A unit with Fleet may charge after making an Advance move, following the normal ProHammer rules.
+WEAPONS OF THE PITS
+World Eaters models in Legion Assault Squads and Rampager Squads may purchase Chainaxes for +2 points per model instead of the normal +4 points.
+BLOOD FORWARD
+A non-Vehicle World Eaters unit must declare a charge during its Assault phase if it is normally eligible to charge and at least one enemy unit is within its current charge distance.
+If more than one legal target is available, the World Eaters player may choose which unit is charged.
+LIMITATIONS
+The army's compulsory Troops choices must be Legion Assault Squads or Rampager Squads.
+At least one compulsory Troops choice must be a Rampager Squad.
+The army's Warlord must be equipped with a Chainaxe, Caedere Weapon, Rending Weapon, Power Weapon or another close-combat weapon.
+The Detachment may include no more than one Heavy Support choice.
+The Detachment may not include a Fortification.</description>
+                </rule>
+              <rule id="r86-berserker-full" name="Berserker Assault — Effects &amp; Limitations" hidden="false"><description>THE RED HAND
+Rampager Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Legion Assault Squads may fulfil compulsory Troops selections normally.
+
+HEADLONG ASSAULT
+World Eaters Infantry and Jump Infantry units gain Fleet. A unit with Fleet may charge after making an Advance move, following the normal ProHammer rules.
+
+WEAPONS OF THE PITS
+World Eaters models in Legion Assault Squads and Rampager Squads may purchase Chainaxes for +2 points per model instead of the normal +4 points.
+
+BLOOD FORWARD
+A non-Vehicle World Eaters unit must declare a charge during its Assault phase if it is normally eligible to charge and at least one enemy unit is within its current charge distance. If more than one legal target is available, the World Eaters player chooses which unit is charged.
+
+LIMITATIONS
+The army's compulsory Troops choices must be Legion Assault Squads or Rampager Squads. At least one compulsory Troops choice must be a Rampager Squad. The army's Warlord must be equipped with a Chainaxe, Caedere Weapon, Rending Weapon, Power Weapon or another close-combat weapon. The Detachment may include no more than one Heavy Support choice and may not include a Fortification.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="World Eaters Rite of War — The Crimson Path" hidden="false" id="r25-rite-xii-1-the-crimson-path">
+              <constraints>
+                <constraint id="r25-rite-xii-1-the-crimson-path-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Crimson Path" id="r25-rite-xii-1-the-crimson-path-rule" hidden="false">
+                  <description>From the earliest years of the Great Crusade, the XII Legion was willing to accept casualties that other Legions would consider catastrophic. As the World Eaters descended further into madness, entire formations became capable of enduring horrific wounds for the few moments necessary to reach the enemy and drag them into death.
+EFFECTS
+FORLORN HOPE
+World Eaters Infantry models gain Feel No Pain (5+) while they are within the enemy deployment zone.
+If a model already possesses Feel No Pain, improve its Feel No Pain roll by one step while it remains within the enemy deployment zone, to a maximum of 3+.
+UNTO DEATH
+World Eaters Independent Characters gain the It Will Not Die special rule while they are within the enemy deployment zone.
+If a Character already possesses It Will Not Die, it instead regains a lost Wound on a roll of 4+ while within the enemy deployment zone.
+THE PATH MUST END IN BLOOD
+At the end of the battle, if the World Eaters have no surviving non-Vehicle unit at least partially within the enemy deployment zone, the opposing player gains an additional 150 Victory Points.
+In addition, if the opposing army has completely destroyed more World Eaters units than the World Eaters have completely destroyed enemy units, the opposing player gains an additional 150 Victory Points.
+These penalties only apply in missions using Victory Points.
+LIMITATIONS
+The Detachment may not include units with the Slow and Purposeful special rule.
+The Detachment may not include Immobile units.
+The Detachment may not include a Fortification.
+The Detachment may not include an Allied Detachment drawn from another Space Marine Legion.</description>
+                </rule>
+              <rule id="r86-crimson-full" name="The Crimson Path — Effects &amp; Limitations" hidden="false"><description>FORLORN HOPE
+World Eaters Infantry models gain Feel No Pain (5+) while within the enemy deployment zone. If a model already possesses Feel No Pain, improve it by one step while it remains within the enemy deployment zone, to a maximum of 3+.
+
+UNTO DEATH
+World Eaters Independent Characters gain It Will Not Die while within the enemy deployment zone. If a Character already possesses It Will Not Die, it instead regains a lost Wound on a 4+ while within the enemy deployment zone.
+
+THE PATH MUST END IN BLOOD
+At the end of the battle, if the World Eaters have no surviving non-Vehicle unit at least partially within the enemy deployment zone, the opposing player gains +150 Victory Points. If the opposing army has completely destroyed more World Eaters units than the World Eaters have completely destroyed enemy units, the opposing player gains another +150 Victory Points. These penalties only apply in missions using Victory Points.
+
+LIMITATIONS
+The Detachment may not include units with Slow and Purposeful, Immobile units, Fortifications, or an Allied Detachment drawn from another Space Marine Legion.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ultramarines Rite of War — The Logos Lectora" hidden="false" id="r25-rite-xiii-0-the-logos-lectora">
+              <constraints>
+                <constraint id="r25-rite-xiii-0-the-logos-lectora-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Logos Lectora" id="r25-rite-xiii-0-the-logos-lectora-rule" hidden="false">
+                  <description>The Logos Lectora is the battlefield application of the immense body of tactical theory compiled by the XIII Legion. Through disciplined command, precise communication and carefully coordinated formations, an Ultramarines force may alter its method of war as the tactical situation demands.
+EFFECTS
+TACTICAL COMMAND
+At the beginning of each Ultramarines player turn, choose one of the following three commands: Full March, Hold Fast or Retribution Strike.
+The chosen command applies until the beginning of the next Ultramarines player turn. Only one command may be active at a time.
+FULL MARCH
+All Ultramarines non-Vehicle units may re-roll the D6 used to determine the additional distance of an Advance Move. The second result must be accepted.
+HOLD FAST
+Ultramarines non-Vehicle units which remain stationary during their Movement phase may re-roll To Hit rolls of 1 when resolving First Fire or Overwatch Fire.
+In addition, any Snap Fire attacks made by such a unit hit on a 5+ instead of the normal 6+. Ultramarines Dreadnoughts may also benefit from this command if they remained stationary.
+RETRIBUTION STRIKE
+All Ultramarines non-Vehicle units gain the Counter-Attack special rule.
+An Ultramarines Dreadnought which was not already engaged and is successfully charged instead gains +1 Attack during that Assault phase.
+LIMITATIONS
+The Detachment must take one additional compulsory HQ choice. This additional choice must be a Legion Master of Signals Consul or a Damocles Command Rhino.
+The Detachment must take one additional compulsory Troops choice.
+The Detachment may not include more Vehicles with the Tank or Flyer type than it includes Infantry units.
+Units in the Detachment may not deploy using Infiltrate or enter play using Deep Strike. Normal Reserves may still be used.
+Units which are required to enter play using Deep Strike, such as Legion Drop Pods, may not be selected.</description>
+                </rule>
+              <rule id="r25-rite-xiii-0-the-logos-lectora-r7-validation-note" name="New Recruit validation" hidden="false"><description>New Recruit enforces the Drop Pod/Dreadclaw prohibition from this Rite where those selections are represented in the catalogue. The additional compulsory HQ/Troops requirements and Tank/Flyer-to-Infantry ratio remain roster requirements to check when building the army.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ultramarines Rite of War — Vigil Opertii Mission" hidden="false" id="r25-rite-xiii-1-vigil-opertii-mission">
+              <constraints>
+                <constraint id="r25-rite-xiii-1-vigil-opertii-mission-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="r25-rite-xiii-1-vigil-opertii-mission-r7-loyalist" type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+              <rules>
+                <rule name="Vigil Opertii Mission" id="r25-rite-xiii-1-vigil-opertii-mission-rule" hidden="false">
+                  <description>The Vigil Opertii are one of the less celebrated instruments of Ultramar's rule, employing veteran Legionaries and carefully selected mortal auxiliaries in counter-insurgency, reconnaissance and internal security operations throughout the Five Hundred Worlds.
+EFFECTS
+VIGIL AUXILIA
+All Infantry units in the army's allied Imperialis Militia Detachment gain the Infiltrate special rule.
+SACRED DUTY
+All Infantry units in the allied Imperialis Militia Detachment gain Implacable Advance and count as Scoring Units regardless of their normal battlefield role.
+OVERSEERS
+Ultramarines Legion Reconnaissance Squads lose the Support Squad special rule and may therefore be selected to fulfil compulsory Troops choices.
+LIMITATIONS
+This Rite of War may only be used by a Loyalist Ultramarines Detachment.
+The army must include an Allied Detachment drawn from the Imperialis Militia &amp; Cults Army List.
+The Allied Detachment must possess both the Gene-crafted and Warrior Elite Provenances of War.
+The Allied Detachment may not include Inducted Levy Squads.
+The Ultramarines Detachment must include a Legion Vigilator Consul.</description>
+                </rule>
+              <rule id="r25-rite-xiii-1-vigil-opertii-mission-r7-validation-note" name="New Recruit validation" hidden="false"><description>New Recruit enforces the Loyalist-only restriction. The required allied Imperialis Militia Detachment, Gene-crafted and Warrior Elite Provenances, exclusion of Inducted Levy Squads, and required Vigilator remain cross-detachment requirements to verify when building the army.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death Guard Rite of War — The Reaping" hidden="false" id="r25-rite-xiv-0-the-reaping">
+              <constraints>
+                <constraint id="r25-rite-xiv-0-the-reaping-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="The Reaping" id="r25-rite-xiv-0-the-reaping-rule" hidden="true">
+                  <description>The Reaping is one of the characteristic attack formations of the XIV Legion. Heavy infantry and fire-support units advance in a relentless column, purging shattered cities and fortified battlefields through weight of fire and remorseless attrition.
+EFFECTS
+SUPERIOR FIREPOWER
+Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices.
+They may not fulfil compulsory Troops selections unless another rule specifically permits them to do so.
+IMPLACABLE
+All Death Guard Infantry units gain the Move Through Cover special rule.
+This includes models wearing any form of Terminator Armour.
+DARK ARSENAL
+Any Death Guard Character or Independent Character may purchase Rad Grenades for +10 points.
+Rad Grenades follow the normal rules presented in the Legiones Astartes Army List.
+LIMITATIONS
+Units in the Detachment may not make Advance Moves.
+Vehicles in the Detachment may not move Flat Out.
+Units in the Detachment may not deploy using Deep Strike. Units which are required to deploy using Deep Strike may not be selected.
+The normal Death Guard restriction on Fast Attack choices from Footslogging Killers continues to apply.</description>
+                </rule>
+              <rule id="r13-dg-reaping-superior" name="Superior Firepower" hidden="false"><description>Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices. They may not fulfil compulsory Troops selections unless another rule specifically permits them to do so.</description></rule><rule id="r13-dg-reaping-implacable" name="Implacable" hidden="false"><description>All Death Guard Infantry units gain Move Through Cover, including models wearing any form of Terminator Armour.
+
+Move Through Cover: Roll 3D6 for Difficult Terrain tests instead of 2D6 and choose the highest.</description></rule><rule id="r13-dg-reaping-dark-arsenal" name="Dark Arsenal" hidden="false"><description>Any Death Guard Character or Independent Character may purchase Rad Grenades for +10 points.</description></rule><rule id="r13-dg-reaping-limitations" name="Limitations" hidden="false"><description>Units in the Detachment may not make Advance Moves. Vehicles may not move Flat Out. Units may not deploy using Deep Strike, and units which are required to deploy using Deep Strike may not be selected. Footslogging Killers continues to apply.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death Guard Rite of War — Creeping Death" hidden="false" id="r25-rite-xiv-1-creeping-death">
+              <constraints>
+                <constraint id="r25-rite-xiv-1-creeping-death-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xiv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Creeping Death" id="r25-rite-xiv-1-creeping-death-rule" hidden="true">
+                  <description>As the Horus Heresy progressed, the Death Guard unleashed ever greater quantities of forbidden chemical and biological weapons. Entire regions were reduced to poisoned wastelands through which the warriors of the XIV Legion advanced seemingly untouched.
+EFFECTS
+MIST-CLAD
+Death Guard Infantry models in open ground receive a 5+ Cover Save against shooting attacks provided there is no enemy model within 12".
+This does not improve an existing Cover Save.
+BIO-PHAGE BOMBARDMENT
+After both armies have deployed, including Scouts and Infiltrators, roll a D6 for every piece of terrain representing a wood or jungle.
+On a 4+, that terrain is reduced to a fetid chemical mire for the remainder of the battle.
+Any Cover Save provided by that terrain is worsened by 1. For example, a 4+ Cover Save becomes 5+, while a 6+ Cover Save is lost.
+The terrain also counts as Dangerous Terrain to all models except models with the Legiones Astartes (Death Guard) special rule.
+TOXIN WEAPONS
+Frag Missiles fired by Death Guard models are resolved at Strength 5 instead of Strength 4.
+In addition, Death Guard Frag Grenades used against Vehicles have Strength 5 + D6 Armour Penetration instead of the normal Strength 4 + D6.
+All other rules for Frag Grenades and Frag Missiles remain unchanged.
+LIMITATIONS
+This Rite of War may only be selected by a Traitor Death Guard Detachment.
+The Detachment must include at least one Legion Heavy Support Squad whose Sergeant has been upgraded to a Siege Breaker.
+In missions which designate one player as the Attacker and the other as the Defender, the Death Guard must be the Attacker.
+The Detachment may not include a Fortification or an Allied Detachment.</description>
+                </rule>
+              <rule id="r13-dg-creeping-mist" name="Mist-Clad" hidden="false"><description>Death Guard Infantry models in open ground receive a 5+ Cover Save against shooting attacks provided there is no enemy model within 12 inches. This does not improve an existing Cover Save.</description></rule><rule id="r13-dg-creeping-biophage" name="Bio-Phage Bombardment" hidden="false"><description>After both armies have deployed, including Scouts and Infiltrators, roll a D6 for every wood or jungle terrain piece. On a 4+, its Cover Save is worsened by 1 and it counts as Dangerous Terrain to all models except models with Legiones Astartes (Death Guard).</description></rule><rule id="r13-dg-creeping-traitor" name="Traitor Only" hidden="false"><description>Creeping Death may only be selected by a Traitor Death Guard army.</description></rule></rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thousand Sons Rite of War — The Axis Of Dissolution" hidden="false" id="r25-rite-xv-0-the-axis-of-dissolution">
+              <constraints>
+                <constraint id="r25-rite-xv-0-the-axis-of-dissolution-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r19-axis-intro" name="The Axis of Dissolution" hidden="false"><description>A prepared Thousand Sons tactical configuration built around selected ground, disciplined resistance and the destruction of an enemy drawn into the pattern.</description></rule><rule id="r19-axis-alembic" name="The Alembic of Adamant" hidden="false"><description>Thousand Sons units automatically pass Morale and Pinning tests while at least one model is within 6" of an Objective. If the mission has no Objectives, nominate one terrain feature outside the enemy deployment zone after deployment zones are determined; its centre counts as an Objective for this rule only.</description></rule><rule id="r19-axis-caustic" name="The Caustic of Grace" hidden="false"><description>Thousand Sons Infantry may enter Overwatch even if they moved in their preceding Movement phase, provided they did not Advance. All other ProHammer Overwatch requirements apply.</description></rule><rule id="r19-axis-vitriol" name="The Transition of Vitriol" hidden="false"><description>Thousand Sons models may re-roll failed To Hit and To Wound rolls against an enemy unit which is Falling Back. Against Vehicles affected by a mission retreat/withdrawal rule, re-roll failed Armour Penetration rolls instead of failed To Wound rolls.</description></rule><rule id="r19-axis-limits" name="Limitations" hidden="false"><description>Every Troops choice must be taken at its maximum permitted unit size. The Detachment may not contain more Tank/Flyer Vehicles than Infantry units and may not include a Fortification. The unit-size restriction is enforced in New Recruit; the cross-unit Vehicle ratio remains stated here because the catalogue cannot safely count every nested/linked unit type.</description></rule></rules>
+            <categoryLinks><categoryLink id="r19-ts-rite-cat-0" name="Thousand Sons Rite of War 0-1" targetId="r19-ts-cat-rite-limit" primary="false" hidden="false" /></categoryLinks></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thousand Sons Rite of War — The Guard Of The Crimson King" hidden="false" id="r25-rite-xv-1-the-guard-of-the-crimson-king">
+              <constraints>
+                <constraint id="r25-rite-xv-1-the-guard-of-the-crimson-king-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r19-guard-intro" name="The Guard of the Crimson King" hidden="false"><description>The XV Legion’s Sekhmet and greatest sorcerers are concentrated into a single psychic spearhead.</description></rule><rule id="r19-guard-astral" name="Astral Warfare" hidden="false"><description>The first two psychic powers successfully invoked by Thousand Sons Psykers during each player turn are ignored when determining Disturbance in the Warp penalties.</description></rule><rule id="r19-guard-lightning" name="Wreathed in Lightning, They Rend the Veil" hidden="false"><description>All Thousand Sons units composed entirely of Terminator Armour gain Teleportation Transponders free. Thousand Sons Independent Characters may purchase them for +10 points regardless of armour. A unit/Character arriving by Deep Strike with them gains Fear and may re-roll Invulnerable Save rolls of 1 until the beginning of the next Thousand Sons player turn.
+
+Fear: Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee engagement.
+Deep Strike: Units that enter play from Reserves by Deepstriking are placed directly on the board and do not have to move onto the table from a table edge.
+
+1. Determine Target Location: when the unit is available to enter play, place one model (the centre model) anywhere on the table more than 2" from enemy models.
+2. Roll for Deepstrike Scattering: roll 2D6 and a Scatter die. On a Hit, proceed to placement. On an arrow, determine an adjusted location 2D6" in that direction. If that location would be on a friendly model, stop 2" short. If it falls in impassable terrain, off the table, or on top of or within 2" of an enemy model, a Deepstrike Mishap occurs.
+Deepstrike Mishap: the opposing player instead places the centre model within 12" of the target location. The chosen location may not be in impassable terrain, off the table, within 2" of an enemy model, or within 2" of its original position. If no viable position exists, the unit returns to Reserves to redeploy next turn. The unit must also pass a Pinning Test or become Pinned for the remainder of the turn.
+3. Place Remaining Models: place all other models within 2" of the centre model. Models may not be placed in impassable terrain or within 2" of enemy models. Models that cannot fit within 2" may be placed in base contact with another model and as close to the centre as possible; any model that still cannot be placed is destroyed.
+
+Using Deepstriking Units: models arriving by Deepstrike or disembarking from Deepstriking Vehicles may not make a normal move after arriving, but may shoot, Advance D6", or assault. Units charging in the turn they arrived by Deepstrike gain no bonus Attacks for charging and no benefit from assault grenades. Deepstriking Vehicles count as having moved at Cruising Speed on the turn they arrive.</description></rule><rule id="r19-guard-scarab" name="Initiates of the Scarab" hidden="false"><description>Sekhmet Terminator Cabals are Troops choices and must fulfil the compulsory Troops selections. While using The Guard of the Crimson King, ignore the normal 0–1 restriction on Sekhmet Terminator Cabals.</description></rule><rule id="r19-guard-bidding" name="The Bidding of the Crimson King" hidden="false"><description>Magnus the Red may fulfil a compulsory HQ selection and does not occupy a Lord of War selection while using this Rite.</description></rule><rule id="r19-guard-limits" name="Limitations" hidden="false"><description>The Warlord must be Magnus, Ahzek Ahriman or a Thousand Sons Praetor. A Praetor Warlord may upgrade from Mastery Level 2 to 3 for +25 points. Vehicle units may not exceed units with Legiones Astartes (Thousand Sons). No Allied Detachment or Fortification. Warlord and cross-unit ratio requirements remain explicit because the current roster schema has no dependable marker/counter for them.</description></rule></rules>
+            <categoryLinks><categoryLink id="r19-ts-rite-cat-1" name="Thousand Sons Rite of War 0-1" targetId="r19-ts-cat-rite-limit" primary="false" hidden="false" /></categoryLinks></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thousand Sons Rite of War — The Fellowships Of Prospero" hidden="false" id="r25-rite-xv-2-the-fellowships-of-prospero">
+              <constraints>
+                <constraint id="r25-rite-xv-2-the-fellowships-of-prospero-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xv" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="r19-fellows-intro" name="The Fellowships of Prospero" hidden="false"><description>Great Fellowship formations in which entire companies fight as extensions of their sorcerous commanders.</description></rule><rule id="r19-fellows-circles" name="Circles of Initiates" hidden="false"><description>A 20-model Legion Tactical Squad may purchase Brotherhood of Psykers (Mastery Level 1) for +25 points. It selects one power from the Psychic Discipline associated with its chosen Prosperine Cult, gains that Cult Mastery and follows the normal Psychic Brotherhood rules.</description></rule><rule id="r19-fellows-vets" name="Fellowship Veterans" hidden="false"><description>Legion Veteran and Legion Terminator Squads purchase Brotherhood of Psykers for +15 points per squad instead of +25.</description></rule><rule id="r19-fellows-magister" name="Magister Templi" hidden="false"><description>At the beginning of each Thousand Sons player turn, the Warlord may nominate one friendly Psychic Brotherhood within 12". Until the next Thousand Sons turn it may use the Warlord’s Leadership for Psychic Tests, overriding the normal attached-Independent-Character restriction.</description></rule><rule id="r19-fellows-order" name="Order of the Cults" hidden="false"><description>Every Psychic Brotherhood must belong to the same Prosperine Cult as at least one Thousand Sons Independent Character in the army. This remains a roster rule rather than an unsafe cross-root automatic validator.</description></rule><rule id="r19-fellows-limits" name="Limitations" hidden="false"><description>The Warlord must be a Thousand Sons Psyker. The Detachment must include at least two Psychic Brotherhoods. Tactical Brotherhoods require 20 models. Maximum one Fast Attack choice. No Allied Detachment. The Brotherhood-count and Fast Attack restrictions are enforced in New Recruit.</description></rule></rules>
+            <categoryLinks><categoryLink id="r19-ts-rite-cat-2" name="Thousand Sons Rite of War 0-1" targetId="r19-ts-cat-rite-limit" primary="false" hidden="false" /></categoryLinks></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sons of Horus Rite of War — The Long March" hidden="false" id="r25-rite-xvi-0-the-long-march">
+              <constraints>
+                <constraint id="r25-rite-xvi-0-the-long-march-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks><infoLink id="r36-long-relentless" name="Relentless" hidden="false" targetId="r36-shared-relentless-93eeddf" type="rule" /><infoLink id="r36-long-fleet" name="Fleet" hidden="false" targetId="r36-shared-fleet-e199151" type="rule" /><infoLink id="r36-long-crusader" name="Crusader" hidden="false" targetId="r36-shared-crusader-de7431d" type="rule" /></infoLinks><rules><rule id="r36-long-relentless-moddup2" name="Relentless March" hidden="false"><description>At the beginning of each Sons of Horus player turn, determine the position of the majority of the surviving models in each Sons of Horus Infantry unit. Until the beginning of the next Sons of Horus player turn:
+• Within the Sons of Horus deployment zone — the unit gains Relentless.
+• Outside either player's deployment zone — the unit gains Fleet.
+• Within the enemy deployment zone — the unit gains Crusader.
+If a unit is equally divided between two areas, the controlling player chooses which applicable rule it gains.</description></rule><rule id="r36-long-portion" name="The Warmaster's Portion" hidden="false"><description>During the first Sons of Horus player turn, all units in the Detachment may re-roll To Hit rolls of 1.
+Legion Terminator Squads may also be selected as non-compulsory Troops choices. They may not fulfil compulsory Troops selections.</description></rule><rule id="r36-long-limit" name="The Long March — Limitations" hidden="false"><description>This Rite may only be selected by a Traitor Sons of Horus Detachment.
+Models with Slow and Purposeful may only be included if they begin the battle embarked aboard a Transport or enter play using Deep Strike.
+The Detachment may not include a Fortification or an Allied Detachment.</description></rule></rules></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sons of Horus Rite of War — The Black Reaving" hidden="false" id="r25-rite-xvi-1-the-black-reaving">
+              <constraints>
+                <constraint id="r25-rite-xvi-1-the-black-reaving-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvi" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks><infoLink id="r36-black-outflank" name="Outflank" hidden="false" targetId="r36-shared-outflank-3be9c13" type="rule" /><infoLink id="r36-black-fleet" name="Fleet" hidden="false" targetId="r36-shared-fleet-e199151" type="rule" /></infoLinks><rules><rule id="r36-black-onslaught" name="Reaver Onslaught" hidden="false"><description>Reaver Attack Squads may be selected as Troops choices and may fulfil compulsory Troops selections. At least one of the Detachment's compulsory Troops choices must be a Reaver Attack Squad.</description></rule><rule id="r36-black-encirclement" name="Cthonian Encirclement" hidden="false"><description>After both armies have been selected, nominate up to two Sons of Horus Infantry units. These units gain Outflank. Any Dedicated Transport purchased for one of these units also gains Outflank and enters play together with its passengers. An Independent Character which begins the battle attached to one of these nominated units may Outflank with it.
+When one of the two nominated units enters play, the Sons of Horus player may choose the side table edge from which that unit enters instead of rolling to determine the edge. The other nominated unit follows the normal ProHammer Outflank rules.</description></rule><rule id="r36-black-lodge" name="Lodge Ceremony" hidden="false"><description>Once per battle, at the beginning of a Sons of Horus player turn, the Warlord may declare a Lodge Ceremony. Until the end of that player turn, all non-Vehicle Sons of Horus units gain Fleet.</description></rule><rule id="r36-black-cut" name="Cut Them Apart" hidden="false"><description>During the first round of a close combat, a Sons of Horus unit which charged an enemy unit that was already engaged with another friendly Sons of Horus unit may re-roll To Hit rolls of 1. This benefit applies only during the player turn in which the unit charged.</description></rule><rule id="r36-black-limit" name="The Black Reaving — Limitations" hidden="false"><description>The Detachment must include a Legion Centurion upgraded to a Master of Signals Consul.
+At least one compulsory Troops choice must be a Reaver Attack Squad.
+The Detachment must include at least as many Fast Attack choices as Heavy Support choices.
+The Detachment may not include a Fortification or an Allied Detachment.</description></rule></rules></selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Word Bearers Rite of War — The Dark Brethren" hidden="true" id="r25-rite-xvii-0-the-dark-brethren">
+              <rules><rule id="r37-wb-dark-arch" name="Arch-Traitors" hidden="false"><description>All Word Bearers Independent Characters in the Detachment may re-roll failed close-combat To Hit rolls against Loyalist models.</description></rule><rule id="r37-wb-dark-signs" name="Signs and Portents" hidden="false"><description>After deployment but before the first turn, select one Word Bearers Troops unit and roll D6. On 1–3, all enemy units may re-roll failed close-combat To Hit rolls against that unit. On 4–6, the selected unit may re-roll failed close-combat To Hit rolls against all enemy units.</description></rule><rule id="r37-wb-dark-beyond" name="From Beyond" hidden="false"><description>If the army includes its Daemons of the Ruinstorm Covenant, that Covenant may use the normal Ruinstorm Allied Detachment chart instead of the restricted Covenant chart: HQ 1; Troops 1–2; Elites 0–1; Fast Attack 0–1; Heavy Support 0–1. The 25% Covenant cap is removed and normal Allied points restrictions apply. Word Bearers and Ruinstorm Daemons are Sworn Brothers. Before deployment each Ruinstorm Daemon unit is designated Manifested or Summoned: Manifested units use normal Ruinstorm deployment/Manifestation rules; Summoned units begin in Reserve and use Daemonic Summoning. In addition, the Rite specifically permits an Allied Detachment selected from Codex: Chaos Daemons without preventing the Word Bearers' normal Covenant.</description></rule><rule id="r37-wb-dark-hell" name="Hell Follows With Them" hidden="false"><description>Whenever an enemy Psyker suffers a Wound from Perils of the Warp, that Wound becomes a Massive Wound and inflicts D3 Wounds instead of 1.</description></rule><rule id="r37-wb-dark-limit" name="Limitations" hidden="false"><description>Traitor Word Bearers only. Must include at least one Diabolist. May include no more than one Heavy Support choice. No Fortification or Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Chaos Daemons is treated as Desperate Allies.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xvii-0-the-dark-brethren-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="r25-rite-xvii-0-the-dark-brethren-r37-show" type="set" field="hidden" value="false"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Word Bearers Rite of War — Last of the Serrated Sun" hidden="true" id="r25-rite-xvii-1-last-of-the-serrated-sun">
+              <rules><rule id="r37-wb-serr-company" name="Company of Monsters" hidden="false"><description>Gal Vorbak Dark Brethren may be selected as Troops and may fulfil compulsory Troops selections. Every Gal Vorbak unit in the Detachment must purchase either a Legion Drop Pod or a Dreadclaw Drop Pod as a Dedicated Transport.</description></rule><rule id="r37-wb-serr-drop" name="Drop Elite" hidden="false"><description>Any Word Bearers Infantry unit which may normally purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost.</description></rule><rule id="r37-wb-serr-burning" name="Burning Sun" hidden="false"><description>Whenever a Legion Drop Pod or Dreadclaw belonging to this Detachment arrives by Deep Strike, every enemy unit with at least one model within 12" of its final position immediately takes a Pinning test. A unit takes only one test for each arriving Pod.</description></rule><rule id="r37-wb-serr-limit" name="Limitations" hidden="false"><description>Traitor Word Bearers only. All Infantry must begin in Reserve and enter using a Deep Striking Drop Pod, Teleportation Transponders or embarked aboard a Flyer Transport. The army may not include Immobile units, a Fortification or an Allied Detachment.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xvii-1-last-of-the-serrated-sun-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="r25-rite-xvii-1-last-of-the-serrated-sun-r37-show" type="set" field="hidden" value="false"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Salamanders Rite of War — The Covenant of Fire" hidden="true" id="r25-rite-xviii-0-the-covenant-of-fire">
+              <infoLinks><infoLink id="r25-rite-xviii-0-the-covenant-of-fire-move-through-cover" name="Move Through Cover" targetId="r36-shared-move-through-cover-b95132d" type="rule" hidden="false" /></infoLinks><rules><rule id="r40-cov-disc" name="Disciples of the Flame" hidden="false"><description>Pyroclast Squads and Salamanders Infernus Destroyer Squads may be selected as non-compulsory Troops choices. They may not fulfil compulsory Troops selections.</description></rule><rule id="r40-cov-walk" name="Walk Through Fire" hidden="false"><description>Salamanders Infantry units gain Move Through Cover.</description></rule><rule id="r40-cov-wrath" name="Veneration of Wrath" hidden="false"><description>When a Salamanders model makes an Armour Penetration roll with a Melta weapon, one individual Armour Penetration die that rolls a natural 1 may be re-rolled. The second result is accepted. This also applies to Melta Bombs.</description></rule><rule id="r40-cov-obs" name="Obsidian Forged" hidden="false"><description>Each time a Salamanders Vehicle or Dreadnought suffers a Glancing or Penetrating Hit from a Flame, Melta, Plasma or Volkite attack, roll D6 before Vehicle Damage; on 5+ the hit is ignored. This also applies to Melta Bombs.</description></rule><rule id="r40-cov-limit" name="Limitations" hidden="false"><description>Units may not deploy using Deep Strike. Units that must deploy by Deep Strike may not be selected. The combined number of Fast Attack and Heavy Support choices may not exceed the number of Troops choices. No Fortification.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xviii-0-the-covenant-of-fire-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xviii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="r25-rite-xviii-0-the-covenant-of-fire-r40-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xviii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Salamanders Rite of War — The Awakening Fire" hidden="true" id="r25-rite-xviii-1-the-awakening-fire">
+              <infoLinks><infoLink id="r25-rite-xviii-1-the-awakening-fire-fear" name="Fear" targetId="r36-shared-fear-689e027" type="rule" hidden="false" /><infoLink id="r25-rite-xviii-1-the-awakening-fire-fearless" name="Fearless" targetId="r36-shared-fearless-8699dbc" type="rule" hidden="false" /><infoLink id="r40-aw-fury-profile" name="Fury of the Salamander" targetId="r40-sal-prof-fury" type="profile" hidden="false" /></infoLinks><rules><rule id="r40-aw-devils" name="Devils from the Dark" hidden="false"><description>Salamanders Infantry units gain Fear.</description></rule><rule id="r40-aw-fires" name="Unto the Fires" hidden="false"><description>Never Give Up functions normally. During the additional complete game turn generated by Never Give Up, all Salamanders Infantry units gain Fearless.</description></rule><rule id="r40-aw-fury" name="Fury of the Salamander" hidden="false"><description>Salamanders Librarians may select Fury of the Salamander as a Pyromancy power: Range 18", Strength 5, AP1, Witchfire — Beam, Assault 1. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds, it immediately takes a Morale test with a Leadership penalty equal to those unsaved Wounds.</description></rule><rule id="r40-aw-limit" name="Limitations" hidden="false"><description>The Detachment must include a Legion Chaplain Consul. It may include no more than one unit of each type: Jump Infantry, Jetbike, Skimmer and Flyer. Vulkan may not be included. No Fortification or Allied Detachment.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xviii-1-the-awakening-fire-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="legion-xviii" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              <modifier id="r25-rite-xviii-1-the-awakening-fire-r40-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xviii" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Raven Guard Rite of War — Decapitation Strike" hidden="true" id="r25-rite-xix-0-decapitation-strike">
+              <rules><rule id="r43-dec-bell" name="For Whom the Bell Tolls" hidden="false"><description>All Raven Guard units gain Preferred Enemy (Independent Characters). An enemy unit containing one or more Independent Characters counts as a Preferred Enemy until all Independent Characters in it have been slain or left the unit.</description></rule><rule id="r43-dec-pred" name="Predatory Strike" hidden="false"><description>If the mission requires a roll for deployment order, deployment zone choice or which player takes the first turn, the Raven Guard player may re-roll that roll. The entire result is re-rolled and the second result accepted. This may be used once per battle.</description></rule><rule id="r43-dec-fury" name="Fury From Above" hidden="false"><description>Raven Guard Legion Heavy Support Squads must select either a Legion Drop Pod or Anvillus Dreadclaw Drop Pod as a Dedicated Transport at normal cost. Normal Transport Capacity and deployment restrictions apply.</description></rule><rule id="r43-dec-limit" name="Limitations" hidden="false"><description>The Detachment may include no more than one Heavy Support choice and no more than one Centurion upgraded to a Consul. It may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xix-0-decapitation-strike-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier id="r25-rite-xix-0-decapitation-strike-r43-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xix" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Raven Guard Rite of War — Liberation Force" hidden="true" id="r25-rite-xix-1-liberation-force">
+              <rules><rule id="r43-lib-freedom" name="Freedom Fighters" hidden="false"><description>Once per battle, at the beginning of any Game Turn, the Raven Guard player may declare Freedom Fighters. Until the end of that Game Turn, every model in the Raven Guard Detachment and any allied Imperialis Militia Detachment gains Zealot.</description></rule><rule id="r43-lib-slayer" name="Slayers of Tyrants" hidden="false"><description>If the mission awards Victory Points for slaying the enemy Warlord, replace the normal award with D3 times its normal value.</description></rule><rule id="r43-lib-example" name="Lead by Example" hidden="false"><description>Models in an allied Imperialis Militia Detachment gain Fearless while at least one model is within 6 inches of a friendly model with Legiones Astartes (Raven Guard).</description></rule><rule id="r43-lib-liberators" name="Liberators" hidden="false"><description>An Allied Detachment drawn from the Imperialis Militia may be included without preventing use of this Rite. All other Allied Detachment rules continue to apply.</description></rule><rule id="r43-lib-limit" name="Limitations" hidden="false"><description>Loyalist Raven Guard only. The Detachment may not include units with Immobile or Slow and Purposeful, and may not include a Fortification.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xix-1-liberation-force-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier id="r25-rite-xix-1-liberation-force-r43-show" type="set" field="hidden" value="false"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xix" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-loyalist" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Alpha Legion Rite of War — The Coils Of The Hydra" hidden="true" id="r25-rite-xx-0-the-coils-of-the-hydra">
+              <rules><rule id="r45-coils-sub" name="Subterfuge" hidden="false"><description>Before determining which player takes the first turn, choose either +1 to the Alpha Legion roll to determine who takes the first turn, or re-roll a failed Seize the Initiative attempt. Choose before relevant dice are rolled.</description></rule><rule id="r45-coils-sig" name="Signal Corruption" hidden="false"><description>Enemy Reserve rolls suffer -1. This applies to normal Reserve rolls but not units entering automatically on a specified turn.</description></rule><rule id="r45-coils-reward" name="The Rewards of Treachery" hidden="false"><description>The Detachment may include one Legion-specific unit normally available only to another Space Marine Legion. It may not be a Primarch, named Character, Independent Character or Unique unit. It is selected as Elites, retains its profile, equipment, options and unit-specific rules, replaces its original named Legiones Astartes rule with Legiones Astartes (Alpha Legion), and benefits from Alpha Legion rules including Mutable Tactics but not the core Legion rules of its original Legion.</description></rule><rule id="r45-coils-limit" name="Limitations" hidden="false"><description>The Detachment has three compulsory Troops choices. Every Infantry unit must possess Infiltrate or Deep Strike, or have access to and purchase a Dedicated Transport; if relying on Mutable Tactics, Infiltrate must be selected. No more than one non-Vigilator Consul. No Fortification or Allied Detachment from another Space Marine Legion.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xx-0-the-coils-of-the-hydra-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier id="r25-rite-xx-0-the-coils-of-the-hydra-r45-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xx" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+              </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Alpha Legion Rite of War — Headhunter Leviathal" hidden="true" id="r25-rite-xx-1-headhunter-leviathal">
+              <rules><rule id="r45-head-sudden" name="Sudden Strike" hidden="false"><description>The Alpha Legion player may re-roll the dice used to determine which player takes the first turn. The entire result is re-rolled and the second result accepted.</description></rule><rule id="r45-head-flags" name="False Flags" hidden="false"><description>During the first Game Turn, an enemy unit declaring a shooting attack against an Alpha Legion unit must first pass a Leadership test unless that enemy unit has already been fired upon by an Alpha Legion unit during the current player turn. On failure it may not make that shooting attack. This does not affect Overwatch, Return Fire or Stand &amp; Shoot.</description></rule><rule id="r45-head-serpent" name="Leave No Head Upon the Serpent" hidden="false"><description>The Alpha Legion must destroy the enemy Warlord before battle ends. If the enemy Warlord survives, the opponent gains an additional D3 × 50 Victory Points. No effect in missions without Victory Points.</description></rule><rule id="r45-head-limit" name="Limitations" hidden="false"><description>Every Alpha Legion Vehicle must begin the battle in Reserve unless the mission specifically prohibits it. The Detachment may not include an Allied Detachment.</description></rule></rules><constraints>
+                <constraint id="r25-rite-xx-1-headhunter-leviathal-max" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" type="max" />
+              </constraints>
+              <modifiers>
+                <modifier id="r25-rite-xx-1-headhunter-leviathal-r45-show" type="set" field="hidden" value="false"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xx" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></modifier></modifiers>
+              </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry id="r50-data-marker" name="Data Revision 50 loaded — Legion packages refreshed" type="upgrade" hidden="false" import="true">
+          <constraints>
+            <constraint id="r50-data-marker-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </selectionEntry>
+      <selectionEntry id="r37-wb-covenant-config" name="Daemonic Covenant — external Ruinstorm Allied Detachment" type="upgrade" hidden="true" defaultAmount="True"><infoLinks><infoLink id="r37-wb-cov-rule" name="Daemonic Covenant" targetId="r37-wb-rule-daemonic-covenant" type="rule" hidden="false" /><infoLink id="r37-wb-cov-summ" name="Daemonic Summoning" targetId="r37-wb-rule-daemonic-summoning" type="rule" hidden="false" /></infoLinks><modifiers><modifier id="r37-wb-covenant-config-r37-show" type="set" field="hidden" value="false"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="legion-xvii" shared="true" includeChildSelections="true" includeChildForces="false" /><condition type="atLeast" value="1" field="selections" scope="roster" childId="allegiance-traitor" shared="true" includeChildSelections="true" includeChildForces="false" /></conditions></conditionGroup></conditionGroups></modifier></modifiers><constraints><constraint id="r37-wb-covenant-config-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints><costs><cost name="Points" typeId="pts" value="0" /></costs></selectionEntry></selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Operatives" hidden="true" id="r41-unit-xx-0-legion-operatives">
       <entryLinks><entryLink id="r45-op-krak-grenades-entire-squad" name="Krak Grenades — entire squad" targetId="gear-krak" type="selectionEntry" import="true" hidden="false"><modifiers><modifier id="r45-op-krak-grenades-entire-squad-cost" type="increment" field="pts" value="1"><repeats><repeat field="selections" scope="root-entry" value="1" shared="true" childId="r41-unit-xx-0-legion-operatives-additional" includeChildSelections="false" includeChildForces="false" repeats="1" roundUp="false" /></repeats></modifier></modifiers><constraints><constraint id="r45-op-krak-grenades-entire-squad-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints></entryLink><entryLink id="r45-op-melta-bombs-entire-squad" name="Melta Bombs — entire squad" targetId="gear-melta-bombs" type="selectionEntry" import="true" hidden="false"><modifiers><modifier id="r45-op-melta-bombs-entire-squad-cost" type="increment" field="pts" value="2"><repeats><repeat field="selections" scope="root-entry" value="1" shared="true" childId="r41-unit-xx-0-legion-operatives-additional" includeChildSelections="false" includeChildForces="false" repeats="1" roundUp="false" /></repeats></modifier></modifiers><constraints><constraint id="r45-op-melta-bombs-entire-squad-max" type="max" value="1" field="selections" scope="parent" shared="true" includeChildSelections="false" includeChildForces="false" /></constraints></entryLink></entryLinks><infoLinks><infoLink id="r41-unit-xx-0-legion-operatives-operative-cell" name="Operative Cell" targetId="r45-al-operative-cell" type="rule" hidden="false" /><infoLink id="r41-unit-xx-0-legion-operatives-human-agents" name="Human Agents" targetId="r45-al-human-agents" type="rule" hidden="false" /></infoLinks><rules><rule id="r45-op-wg" name="Wargear" hidden="false"><description>Close-combat weapon and either a Laspistol or Autopistol.</description></rule></rules><costs>
         <cost name="Points" typeId="pts" value="0.0" />
       </costs>

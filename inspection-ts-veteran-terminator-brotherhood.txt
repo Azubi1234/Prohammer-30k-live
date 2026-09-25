@@ -1,5 +1,5 @@
 Thousand Sons Veteran + Legion Terminator Brotherhood psychic fix
-Generic catalogue revision 6 -> 7
+Generic catalogue revision 8 -> 9
 
 BEHAVIOUR:
 - Prosperine Cult selection remains available normally.
@@ -42,24 +42,34 @@ VALIDATION:
 - PASS: terminator-unit Pavoni Mastery Brotherhood-gated
 - PASS: terminator-unit Pavoni has one correlated power group
 - PASS: terminator-unit Pavoni has seven powers
-- PASS: terminator-unit Pavoni power group hidden until Brotherhood
+- PASS: terminator-unit Pavoni power group structurally visible
+- PASS: terminator-unit Pavoni baseline max0
+- PASS: terminator-unit Pavoni Brotherhood sets max1
 - PASS: terminator-unit Raptora Arcana baseline
 - PASS: terminator-unit Raptora Mastery Brotherhood-gated
 - PASS: terminator-unit Raptora has one correlated power group
 - PASS: terminator-unit Raptora has seven powers
-- PASS: terminator-unit Raptora power group hidden until Brotherhood
+- PASS: terminator-unit Raptora power group structurally visible
+- PASS: terminator-unit Raptora baseline max0
+- PASS: terminator-unit Raptora Brotherhood sets max1
 - PASS: terminator-unit Corvidae Arcana baseline
 - PASS: terminator-unit Corvidae Mastery Brotherhood-gated
 - PASS: terminator-unit Corvidae has one correlated power group
 - PASS: terminator-unit Corvidae has seven powers
-- PASS: terminator-unit Corvidae power group hidden until Brotherhood
+- PASS: terminator-unit Corvidae power group structurally visible
+- PASS: terminator-unit Corvidae baseline max0
+- PASS: terminator-unit Corvidae Brotherhood sets max1
 - PASS: terminator-unit Athanaeans Arcana baseline
 - PASS: terminator-unit Athanaeans Mastery Brotherhood-gated
 - PASS: terminator-unit Athanaeans has one correlated power group
 - PASS: terminator-unit Athanaeans has seven powers
-- PASS: terminator-unit Athanaeans power group hidden until Brotherhood
+- PASS: terminator-unit Athanaeans power group structurally visible
+- PASS: terminator-unit Athanaeans baseline max0
+- PASS: terminator-unit Athanaeans Brotherhood sets max1
 - PASS: terminator-unit Pyrae Arcana baseline
 - PASS: terminator-unit Pyrae Mastery Brotherhood-gated
 - PASS: terminator-unit Pyrae has one correlated power group
 - PASS: terminator-unit Pyrae has seven powers
-- PASS: terminator-unit Pyrae power group hidden until Brotherhood
+- PASS: terminator-unit Pyrae power group structurally visible
+- PASS: terminator-unit Pyrae baseline max0
+- PASS: terminator-unit Pyrae Brotherhood sets max1
