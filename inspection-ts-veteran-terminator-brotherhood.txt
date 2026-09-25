@@ -1,5 +1,5 @@
 Thousand Sons Veteran + Legion Terminator Brotherhood psychic fix
-Generic catalogue revision 4 -> 5
+Generic catalogue revision 6 -> 7
 
 BEHAVIOUR:
 - Prosperine Cult selection remains available normally.
