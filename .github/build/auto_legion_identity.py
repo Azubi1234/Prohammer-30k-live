@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 import xml.etree.ElementTree as ET
 
 LEGIONS = [
@@ -59,13 +60,22 @@ def patch_generic(path):
             "type":"atLeast","value":"1","field":"selections","scope":"roster","childId":marker,
             "shared":"true","includeChildSelections":"true","includeChildForces":"false"
         })
-    changed=ET.tostring(root,encoding="utf-8")!=before
+    changed=precleaned or ET.tostring(root,encoding="utf-8")!=before
     if changed:
         root.set("revision",str(int(root.get("revision","0"))+1))
         tree.write(path,encoding="utf-8",xml_declaration=True)
     return int(root.get("revision","0")),changed
 
 def patch_legion(path, marker):
+    # Older string-based modular patches left a duplicate importRootEntries
+    # attribute in at least one Legion catalogue. Repair only the exact duplicate
+    # attribute form before XML parsing; no rules/options are otherwise touched.
+    raw=path.read_text(encoding="utf-8")
+    clean=re.sub(r'(\\simportRootEntries="true")\\s+importRootEntries="true"',r'\\1',raw)
+    clean=re.sub(r'(\\simportRootEntries="false")\\s+importRootEntries="false"',r'\\1',clean)
+    precleaned=clean!=raw
+    if precleaned:
+        path.write_text(clean,encoding="utf-8")
     tree=ET.parse(path); root=tree.getroot()
     before=ET.tostring(root,encoding="utf-8")
     ses=cont(root,"selectionEntries")
